@@ -39,7 +39,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
               <stop offset="0%" stopColor="#F7E7A9" />
               <stop offset="35%" stopColor="#D4AF37" />
               <stop offset="70%" stopColor="#AA820A" />
-              <stop offset="100%" stop-color="#F5D77F" />
+              <stop offset="100%" stopColor="#F5D77F" />
             </linearGradient>
             <linearGradient id="amberCopper" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#E67E22" />

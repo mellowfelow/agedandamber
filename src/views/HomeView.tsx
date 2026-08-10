@@ -19,12 +19,14 @@ import {
 } from 'lucide-react';
 import { SITE, BRAND, SHOP, CONTACT } from '../config/site';
 
+import { getRouteUrl } from '../utils/routes';
+
 interface HomeViewProps {
   products: Product[];
   onAddToCart: (p: Product, quantity?: number) => void;
   onQuickView: (p: Product) => void;
   onSelectProduct: (p: Product) => void;
-  setCurrentView: (view: string) => void;
+  setCurrentView: (view: string, category?: string) => void;
   setSelectedCategory: (cat: string) => void;
 }
 
@@ -151,23 +153,33 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                  <button
-                    onClick={() => {
-                      setCurrentView('shop');
-                      setSelectedCategory(slide.categorySlug);
+                  <a
+                    href={getRouteUrl.shop(slide.categorySlug)}
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                        e.preventDefault();
+                        setCurrentView('shop', slide.categorySlug);
+                        setSelectedCategory(slide.categorySlug);
+                      }
                     }}
                     className="w-full sm:w-auto py-4 px-8 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-sm hover:bg-[#E5C158] transition-all shadow-xl shadow-[#D4AF37]/20 flex items-center justify-center gap-2 group"
                   >
                     {slide.ctaText}
                     <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                  </button>
+                  </a>
 
-                  <button
-                    onClick={() => setCurrentView('wholesale')}
+                  <a
+                    href={getRouteUrl.wholesale()}
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                        e.preventDefault();
+                        setCurrentView('wholesale');
+                      }
+                    }}
                     className="w-full sm:w-auto py-4 px-8 rounded-xl bg-amber-950/60 text-amber-200 border border-amber-800/60 font-medium text-sm hover:bg-amber-900/60 backdrop-blur-sm transition-all"
                   >
                     Wholesale & Private Allocations
-                  </button>
+                  </a>
                 </div>
               </div>
             );
@@ -240,27 +252,35 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h2>
           </div>
 
-          <button
-            onClick={() => {
-              setCurrentView('shop');
-              setSelectedCategory('all');
+          <a
+            href={getRouteUrl.shop()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                setCurrentView('shop', 'all');
+                setSelectedCategory('all');
+              }
             }}
             className="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1"
           >
             View All Categories ({CATEGORIES.length})
             <ChevronRight className="w-4 h-4" />
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {CATEGORIES.map((category) => (
-            <div
+            <a
               key={category.slug}
-              onClick={() => {
-                setCurrentView('shop');
-                setSelectedCategory(category.slug);
+              href={getRouteUrl.shop(category.slug)}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  setCurrentView('shop', category.slug);
+                  setSelectedCategory(category.slug);
+                }
               }}
-              className="group relative rounded-3xl overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/60 transition-all duration-300 cursor-pointer h-80 flex flex-col justify-end p-6 shadow-xl"
+              className="group relative rounded-3xl overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/60 transition-all duration-300 cursor-pointer h-80 flex flex-col justify-end p-6 shadow-xl block"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -301,7 +321,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
@@ -318,16 +338,20 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h2>
           </div>
 
-          <button
-            onClick={() => {
-              setCurrentView('shop');
-              setSelectedCategory('all');
+          <a
+            href={getRouteUrl.shop()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                setCurrentView('shop', 'all');
+                setSelectedCategory('all');
+              }
             }}
             className="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1"
           >
             View Full Vault ({products.length} bottles)
             <ChevronRight className="w-4 h-4" />
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -369,12 +393,18 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
 
             <div className="pt-4 flex items-center gap-6">
-              <button
-                onClick={() => setCurrentView('about')}
+              <a
+                href={getRouteUrl.about()}
+                onClick={(e) => {
+                  if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                    e.preventDefault();
+                    setCurrentView('about');
+                  }
+                }}
                 className="py-3 px-6 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-xs hover:bg-[#E5C158] transition-all"
               >
                 Read Master Distiller Story
-              </button>
+              </a>
 
               <div className="flex items-center gap-2 text-xs text-amber-400">
                 <MapPin className="w-4 h-4 text-[#D4AF37]" />
@@ -412,21 +442,33 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h2>
           </div>
 
-          <button
-            onClick={() => setCurrentView('blog')}
+          <a
+            href={getRouteUrl.blog()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                setCurrentView('blog');
+              }
+            }}
             className="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1"
           >
             Explore All Journal Articles
             <ChevronRight className="w-4 h-4" />
-          </button>
+          </a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {BLOG_POSTS.map((post) => (
-            <div
+            <a
               key={post.slug}
-              onClick={() => setCurrentView('blog')}
-              className="bg-[#1A120B] rounded-2xl border border-amber-900/30 overflow-hidden cursor-pointer hover:border-[#D4AF37]/50 transition-all group flex flex-col justify-between"
+              href={getRouteUrl.blog(post.slug)}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  setCurrentView('blog');
+                }
+              }}
+              className="bg-[#1A120B] rounded-2xl border border-amber-900/30 overflow-hidden cursor-pointer hover:border-[#D4AF37]/50 transition-all group flex flex-col justify-between block"
             >
               <div>
                 <div className="aspect-video relative overflow-hidden bg-stone-900">
@@ -460,7 +502,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 Read Article
                 <ArrowRight className="w-3.5 h-3.5" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
@@ -509,12 +551,18 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </div>
 
         <div className="text-center pt-2">
-          <button
-            onClick={() => setCurrentView('faq')}
-            className="py-3 px-6 rounded-xl bg-amber-950/50 text-amber-200 border border-amber-800/50 text-xs font-semibold hover:bg-amber-900/50 transition-all"
+          <a
+            href={getRouteUrl.faq()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                setCurrentView('faq');
+              }
+            }}
+            className="inline-block py-3 px-6 rounded-xl bg-amber-950/50 text-amber-200 border border-amber-800/50 text-xs font-semibold hover:bg-amber-900/50 transition-all"
           >
             View Complete FAQ Center
-          </button>
+          </a>
         </div>
       </section>
     </div>
