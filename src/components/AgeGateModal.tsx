@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, Wine, AlertCircle } from 'lucide-react';
+import { ShieldCheck, AlertCircle } from 'lucide-react';
 import { SITE, COMPLIANCE } from '../config/site';
+import { BrandLogo } from './BrandLogo';
 
 export const AgeGateModal: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,8 +31,8 @@ export const AgeGateModal: React.FC = () => {
         {/* Glow accent */}
         <div className="absolute -top-24 -left-24 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
         
-        <div className="mx-auto w-16 h-16 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center justify-center mb-6">
-          <Wine className="w-8 h-8 text-[#D4AF37]" />
+        <div className="flex justify-center mb-6">
+          <BrandLogo size="xl" showText={false} />
         </div>
 
         <span className="text-xs font-semibold tracking-widest text-[#D4AF37] uppercase mb-2 block">

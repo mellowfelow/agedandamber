@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Wine, Search, ShoppingBag, Menu, X, ChevronDown, ShieldCheck, Coins, PhoneCall } from 'lucide-react';
+import { Search, ShoppingBag, Menu, X, ChevronDown, ShieldCheck, Coins, PhoneCall } from 'lucide-react';
 import { SITE, SHOP, CONTACT } from '../config/site';
 import { CATEGORIES } from '../data/products';
+import { BrandLogo } from './BrandLogo';
+import { getRouteUrl } from '../utils/routes';
 
 interface HeaderProps {
   currentView: string;
@@ -89,31 +91,33 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         {/* Brand Logo */}
-        <div
-          onClick={() => handleNav('home')}
-          className="flex items-center gap-3 cursor-pointer group shrink-0"
+        <a
+          href={getRouteUrl.home()}
+          onClick={(e) => {
+            if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+              e.preventDefault();
+              handleNav('home');
+            }
+          }}
+          className="cursor-pointer shrink-0"
         >
-          <div className="w-10 h-10 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/40 flex items-center justify-center group-hover:bg-[#D4AF37]/20 transition-all shadow-md">
-            <Wine className="w-6 h-6 text-[#D4AF37] transform group-hover:rotate-12 transition-transform" />
-          </div>
-          <div>
-            <span className="font-serif font-bold text-xl md:text-2xl text-amber-100 tracking-tight block leading-none">
-              {SITE.name}
-            </span>
-            <span className="text-[10px] text-[#D4AF37] font-sans tracking-widest uppercase block mt-1">
-              Craft Spirits & Rare Casks
-            </span>
-          </div>
-        </div>
+          <BrandLogo size="md" />
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
-          <button
-            onClick={() => handleNav('home')}
+          <a
+            href={getRouteUrl.home()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('home');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'home' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Home
-          </button>
+          </a>
 
           {/* Shop Mega Dropdown */}
           <div
@@ -121,23 +125,35 @@ export const Header: React.FC<HeaderProps> = ({
             onMouseEnter={() => setShopDropdownOpen(true)}
             onMouseLeave={() => setShopDropdownOpen(false)}
           >
-            <button
-              onClick={() => handleNav('shop')}
+            <a
+              href={getRouteUrl.shop()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('shop');
+                }
+              }}
               className={`hover:text-[#D4AF37] transition-colors flex items-center gap-1 py-2 ${currentView === 'shop' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
             >
               Shop Vault
               <ChevronDown className="w-4 h-4 opacity-70" />
-            </button>
+            </a>
 
             {shopDropdownOpen && (
               <div className="absolute top-full -left-20 w-[640px] max-h-[80vh] overflow-y-auto p-6 bg-[#1C140E] rounded-2xl border border-[#D4AF37]/30 shadow-2xl z-50 animate-fade-in space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-amber-900/40">
-                  <button
-                    onClick={() => handleNav('shop', 'all')}
+                  <a
+                    href={getRouteUrl.shop('all')}
+                    onClick={(e) => {
+                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                        e.preventDefault();
+                        handleNav('shop', 'all');
+                      }
+                    }}
                     className="font-serif font-bold text-amber-100 text-sm hover:text-[#D4AF37]"
                   >
                     All Spirits Collection ({CATEGORIES.length} Categories)
-                  </button>
+                  </a>
                   <span className="text-[11px] text-[#D4AF37] font-sans">
                     Napa Cellar Direct
                   </span>
@@ -146,21 +162,33 @@ export const Header: React.FC<HeaderProps> = ({
                 <div className="grid grid-cols-2 gap-x-6 gap-y-4">
                   {CATEGORIES.map((cat) => (
                     <div key={cat.slug} className="space-y-1">
-                      <button
-                        onClick={() => handleNav('shop', cat.slug)}
+                      <a
+                        href={getRouteUrl.shop(cat.slug)}
+                        onClick={(e) => {
+                          if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                            e.preventDefault();
+                            handleNav('shop', cat.slug);
+                          }
+                        }}
                         className="w-full text-left text-xs font-bold text-[#D4AF37] hover:underline block"
                       >
                         {cat.name}
-                      </button>
+                      </a>
                       <div className="pl-2 space-y-0.5">
                         {cat.subcategories.slice(0, 4).map((sub) => (
-                          <button
+                          <a
                             key={sub}
-                            onClick={() => handleNav('shop', cat.slug)}
+                            href={getRouteUrl.shop(cat.slug)}
+                            onClick={(e) => {
+                              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                                e.preventDefault();
+                                handleNav('shop', cat.slug);
+                              }
+                            }}
                             className="block text-[11px] text-amber-200/70 hover:text-amber-100 text-left truncate w-full"
                           >
                             • {sub}
-                          </button>
+                          </a>
                         ))}
                       </div>
                     </div>
@@ -170,40 +198,70 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </div>
 
-          <button
-            onClick={() => handleNav('about')}
+          <a
+            href={getRouteUrl.about()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('about');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'about' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Our Story
-          </button>
+          </a>
 
-          <button
-            onClick={() => handleNav('blog')}
+          <a
+            href={getRouteUrl.blog()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('blog');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'blog' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Cask Blog
-          </button>
+          </a>
 
-          <button
-            onClick={() => handleNav('faq')}
+          <a
+            href={getRouteUrl.faq()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('faq');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'faq' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             FAQ
-          </button>
+          </a>
 
-          <button
-            onClick={() => handleNav('wholesale')}
+          <a
+            href={getRouteUrl.wholesale()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('wholesale');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'wholesale' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Wholesale
-          </button>
+          </a>
 
-          <button
-            onClick={() => handleNav('contact')}
+          <a
+            href={getRouteUrl.contact()}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                handleNav('contact');
+              }
+            }}
             className={`hover:text-[#D4AF37] transition-colors ${currentView === 'contact' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Contact
-          </button>
+          </a>
         </nav>
 
         {/* Right Actions */}
@@ -261,61 +319,109 @@ export const Header: React.FC<HeaderProps> = ({
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#160E08] border-b border-[#D4AF37]/30 p-6 space-y-4 animate-fade-in max-h-[85vh] overflow-y-auto">
           <div className="grid grid-cols-1 gap-3">
-            <button
-              onClick={() => handleNav('home')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            <a
+              href={getRouteUrl.home()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('home');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Home
-            </button>
-            <button
-              onClick={() => handleNav('shop')}
-              className="text-left font-serif font-bold text-[#D4AF37] text-lg"
+            </a>
+            <a
+              href={getRouteUrl.shop()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('shop');
+                }
+              }}
+              className="text-left font-serif font-bold text-[#D4AF37] text-lg block"
             >
               Shop All Spirits
-            </button>
+            </a>
 
             <div className="pl-4 space-y-2 border-l border-amber-900/40 my-2">
               {CATEGORIES.map((cat) => (
-                <button
+                <a
                   key={cat.slug}
-                  onClick={() => handleNav('shop', cat.slug)}
+                  href={getRouteUrl.shop(cat.slug)}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      handleNav('shop', cat.slug);
+                    }
+                  }}
                   className="block text-left text-xs text-amber-300 hover:text-amber-100"
                 >
                   • {cat.name}
-                </button>
+                </a>
               ))}
             </div>
 
-            <button
-              onClick={() => handleNav('about')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            <a
+              href={getRouteUrl.about()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('about');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Our Story
-            </button>
-            <button
-              onClick={() => handleNav('blog')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            </a>
+            <a
+              href={getRouteUrl.blog()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('blog');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Cask Blog
-            </button>
-            <button
-              onClick={() => handleNav('faq')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            </a>
+            <a
+              href={getRouteUrl.faq()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('faq');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               FAQ
-            </button>
-            <button
-              onClick={() => handleNav('wholesale')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            </a>
+            <a
+              href={getRouteUrl.wholesale()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('wholesale');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Wholesale
-            </button>
-            <button
-              onClick={() => handleNav('contact')}
-              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37]"
+            </a>
+            <a
+              href={getRouteUrl.contact()}
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  handleNav('contact');
+                }
+              }}
+              className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Contact
-            </button>
+            </a>
           </div>
         </div>
       )}

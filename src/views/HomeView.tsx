@@ -13,6 +13,7 @@ import {
   Flame,
   MapPin,
   ChevronRight,
+  ChevronDown,
   Truck,
   ChevronLeft,
 } from 'lucide-react';
@@ -38,6 +39,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const featuredProducts = products.filter((p) => p.featured);
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
 
   // Hero Carousel Data with SEO captions and image slugs
   const heroSlides = [
@@ -475,19 +477,35 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </div>
 
         <div className="space-y-4">
-          {FAQ_ITEMS.slice(0, 4).map((faq, idx) => (
-            <div
-              key={idx}
-              className="p-5 rounded-2xl bg-[#1A120B] border border-amber-900/40 text-amber-100 space-y-2"
-            >
-              <h3 className="font-serif font-bold text-base text-[#D4AF37]">
-                {faq.question}
-              </h3>
-              <p className="text-xs text-amber-200/80 leading-relaxed">
-                {faq.answer}
-              </p>
-            </div>
-          ))}
+          {FAQ_ITEMS.slice(0, 5).map((faq, idx) => {
+            const isOpen = openFaqIdx === idx;
+            return (
+              <div
+                key={idx}
+                className="rounded-2xl bg-[#1A120B] border border-amber-900/40 text-amber-100 overflow-hidden transition-all duration-300 hover:border-[#D4AF37]/40 shadow-md"
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenFaqIdx(isOpen ? null : idx)}
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 focus:outline-none group cursor-pointer"
+                  aria-expanded={isOpen}
+                >
+                  <h3 className="font-serif font-bold text-base text-[#D4AF37] group-hover:text-[#E5C158] transition-colors pr-2">
+                    {faq.question}
+                  </h3>
+                  <div className={`p-1.5 rounded-lg bg-stone-900/80 border border-amber-900/30 text-[#D4AF37] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-amber-950/60 border-[#D4AF37]/50' : ''}`}>
+                    <ChevronDown className="w-4 h-4" />
+                  </div>
+                </button>
+
+                {isOpen && (
+                  <div className="px-5 pb-5 pt-0 text-xs text-amber-200/80 leading-relaxed border-t border-amber-900/20 mt-1 pt-3 animate-fadeIn">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
         <div className="text-center pt-2">

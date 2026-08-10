@@ -1,9 +1,11 @@
 import React from 'react';
-import { Wine, ShieldCheck, Mail, Phone, MapPin, Award, Coins, Lock } from 'lucide-react';
+import { ShieldCheck, Mail, Phone, MapPin, Award, Coins, Lock } from 'lucide-react';
 import { SITE, CONTACT, BRAND, COMPLIANCE, SHOP } from '../config/site';
+import { BrandLogo } from './BrandLogo';
+import { getRouteUrl } from '../utils/routes';
 
 interface FooterProps {
-  setCurrentView: (view: string) => void;
+  setCurrentView: (view: string, category?: string) => void;
   setSelectedCategory: (cat: string) => void;
 }
 
@@ -58,14 +60,18 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-[#D4AF37]/20 border border-[#D4AF37]/40 flex items-center justify-center">
-                <Wine className="w-5 h-5 text-[#D4AF37]" />
-              </div>
-              <span className="font-serif font-bold text-2xl text-amber-100 tracking-tight">
-                {SITE.name}
-              </span>
-            </div>
+            <a 
+              href={getRouteUrl.home()} 
+              onClick={(e) => {
+                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                  e.preventDefault();
+                  setCurrentView('home');
+                }
+              }} 
+              className="cursor-pointer inline-block"
+            >
+              <BrandLogo size="lg" />
+            </a>
 
             <p className="text-xs text-amber-200/70 leading-relaxed max-w-sm">
               {BRAND.description} Headquartered in Napa Valley and San Francisco, California.
@@ -94,45 +100,60 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <button
-                  onClick={() => {
-                    setCurrentView('shop');
-                    setSelectedCategory('bourbon-rye');
+                <a
+                  href={getRouteUrl.shop('bourbon-rye')}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('shop', 'bourbon-rye');
+                    }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
                   Bourbon & Rye Whiskey
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => {
-                    setCurrentView('shop');
-                    setSelectedCategory('single-malt-scotch');
+                <a
+                  href={getRouteUrl.shop('single-malt-scotch')}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('shop', 'single-malt-scotch');
+                    }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
                   Single Malt & Scotch
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => {
-                    setCurrentView('shop');
-                    setSelectedCategory('rare-cask-tequila');
+                <a
+                  href={getRouteUrl.shop('rare-cask-tequila')}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('shop', 'rare-cask-tequila');
+                    }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
                   Rare Cask & Tequila
-                </button>
+                </a>
               </li>
               <li>
-                <button
-                  onClick={() => setCurrentView('wholesale')}
+                <a
+                  href={getRouteUrl.wholesale()}
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('wholesale');
+                    }
+                  }}
                   className="hover:text-[#D4AF37] transition-colors"
                 >
                   Wholesale Allocations
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -144,24 +165,60 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <button onClick={() => setCurrentView('about')} className="hover:text-[#D4AF37]">
+                <a 
+                  href={getRouteUrl.about()} 
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('about');
+                    }
+                  }} 
+                  className="hover:text-[#D4AF37]"
+                >
                   Master Distiller Story
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => setCurrentView('blog')} className="hover:text-[#D4AF37]">
+                <a 
+                  href={getRouteUrl.blog()} 
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('blog');
+                    }
+                  }} 
+                  className="hover:text-[#D4AF37]"
+                >
                   Cask & Wood Journal
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => setCurrentView('faq')} className="hover:text-[#D4AF37]">
+                <a 
+                  href={getRouteUrl.faq()} 
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('faq');
+                    }
+                  }} 
+                  className="hover:text-[#D4AF37]"
+                >
                   Frequently Asked Questions
-                </button>
+                </a>
               </li>
               <li>
-                <button onClick={() => setCurrentView('contact')} className="hover:text-[#D4AF37]">
+                <a 
+                  href={getRouteUrl.contact()} 
+                  onClick={(e) => {
+                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                      e.preventDefault();
+                      setCurrentView('contact');
+                    }
+                  }} 
+                  className="hover:text-[#D4AF37]"
+                >
                   Concierge Support
-                </button>
+                </a>
               </li>
             </ul>
           </div>

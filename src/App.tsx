@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Product, CartItem } from './types';
 import { PRODUCTS } from './data/products';
 import { SITE } from './config/site';
+import { parseHash, getRouteUrl } from './utils/routes';
 
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -31,6 +32,62 @@ export default function App() {
 
   const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
   const [checkoutModalOpen, setCheckoutModalOpen] = useState(false);
+
+  // Synchronize location hash with app state
+  useEffect(() => {
+    const handleLocationChange = () => {
+      const route = parseHash(window.location.hash);
+      setCurrentView(route.view);
+      setSelectedCategory(route.category);
+
+      if (route.view === 'product-detail' && route.productSlug) {
+        const found = PRODUCTS.find(
+          (p) => p.slug === route.productSlug || p.id === route.productSlug
+        );
+        if (found) {
+          setSelectedProduct(found);
+        } else {
+          // Fallback if product slug not found
+          setCurrentView('shop');
+        }
+      }
+    };
+
+    // Initialize on mount
+    handleLocationChange();
+
+    window.addEventListener('hashchange', handleLocationChange);
+    return () => window.removeEventListener('hashchange', handleLocationChange);
+  }, []);
+
+  // Navigation handlers that update hash location
+  const handleNavView = (view: string, category: string = 'all') => {
+    let url = '#/';
+    if (view === 'home') url = getRouteUrl.home();
+    else if (view === 'shop') url = getRouteUrl.shop(category);
+    else if (view === 'about') url = getRouteUrl.about();
+    else if (view === 'blog') url = getRouteUrl.blog();
+    else if (view === 'faq') url = getRouteUrl.faq();
+    else if (view === 'wholesale') url = getRouteUrl.wholesale();
+    else if (view === 'contact') url = getRouteUrl.contact();
+
+    if (window.location.hash !== url) {
+      window.location.hash = url;
+    } else {
+      setCurrentView(view);
+      setSelectedCategory(category);
+    }
+  };
+
+  const handleSelectProduct = (product: Product) => {
+    setSelectedProduct(product);
+    const url = getRouteUrl.product(product.slug);
+    if (window.location.hash !== url) {
+      window.location.hash = url;
+    } else {
+      setCurrentView('product-detail');
+    }
+  };
 
   // Cart State with localStorage
   const [cart, setCart] = useState<CartItem[]>(() => {
@@ -90,9 +147,8 @@ export default function App() {
     setCart([]);
   };
 
-  const handleSelectProduct = (product: Product) => {
-    setSelectedProduct(product);
-    setCurrentView('product-detail');
+  const handleNav = (view: string, category?: string) => {
+    handleNavView(view, category);
   };
 
   return (
@@ -107,9 +163,9 @@ export default function App() {
       {/* Main Header Nav */}
       <Header
         currentView={currentView}
-        setCurrentView={setCurrentView}
+        setCurrentView={handleNav}
         selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        setSelectedCategory={(cat) => handleNavView('shop', cat)}
         cartCount={cart.reduce((sum, item) => sum + item.quantity, 0)}
         onOpenCart={() => setCartDrawerOpen(true)}
         searchQuery={searchQuery}
@@ -124,8 +180,8 @@ export default function App() {
             onAddToCart={handleAddToCart}
             onQuickView={(p) => setQuickViewProduct(p)}
             onSelectProduct={handleSelectProduct}
-            setCurrentView={setCurrentView}
-            setSelectedCategory={setSelectedCategory}
+            setCurrentView={handleNav}
+            setSelectedCategory={(cat) => handleNavView('shop', cat)}
           />
         )}
 
@@ -133,7 +189,7 @@ export default function App() {
           <ShopView
             products={PRODUCTS}
             selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
+            setSelectedCategory={(cat) => handleNavView('shop', cat)}
             searchQuery={searchQuery}
             setSearchQuery={setSearchQuery}
             onAddToCart={handleAddToCart}
@@ -148,7 +204,7 @@ export default function App() {
             <ProductDetailView
               product={selectedProduct}
               allProducts={PRODUCTS}
-              onBack={() => setCurrentView('shop')}
+              onBack={() => handleNavView('shop')}
               onAddToCart={handleAddToCart}
               onQuickView={(p) => setQuickViewProduct(p)}
               onSelectProduct={handleSelectProduct}
@@ -165,8 +221,8 @@ export default function App() {
 
       {/* Main Footer */}
       <Footer
-        setCurrentView={setCurrentView}
-        setSelectedCategory={setSelectedCategory}
+        setCurrentView={handleNav}
+        setSelectedCategory={(cat) => handleNavView('shop', cat)}
       />
 
       {/* Modals & Overlays */}

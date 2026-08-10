@@ -3,6 +3,7 @@ import { Product } from '../types';
 import { SmartImage } from './SmartImage';
 import { ShoppingBag, Eye, Flame, Award, Plus, Minus, Check } from 'lucide-react';
 import { SITE } from '../config/site';
+import { getRouteUrl } from '../utils/routes';
 
 interface ProductCardProps {
   product: Product;
@@ -56,22 +57,28 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </span>
 
         {/* Image */}
-        <div 
+        <a 
+          href={getRouteUrl.product(product.slug)}
           className="w-full h-full flex items-center justify-center cursor-pointer transform group-hover:scale-105 transition-transform duration-500"
-          onClick={() => onSelectProduct(product)}
+          onClick={(e) => {
+            if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+              e.preventDefault();
+              onSelectProduct(product);
+            }
+          }}
         >
           <SmartImage
             src={product.images[0]}
             alt={product.name}
             className="max-h-full max-w-full object-contain filter drop-shadow-xl"
           />
-        </div>
+        </a>
 
         {/* Quick View Hover Overlay */}
-        <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 backdrop-blur-[2px]">
+        <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 backdrop-blur-[2px] pointer-events-none">
           <button
             onClick={() => onQuickView(product)}
-            className="py-2.5 px-4 rounded-xl bg-white text-stone-900 font-semibold text-xs hover:bg-[#D4AF37] hover:text-[#140D08] transition-colors shadow-lg flex items-center gap-1.5"
+            className="py-2.5 px-4 rounded-xl bg-white text-stone-900 font-semibold text-xs hover:bg-[#D4AF37] hover:text-[#140D08] transition-colors shadow-lg flex items-center gap-1.5 pointer-events-auto"
           >
             <Eye className="w-4 h-4" />
             Quick View
@@ -87,12 +94,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <span>{product.volume}</span>
           </div>
 
-          <h3 
-            onClick={() => onSelectProduct(product)}
-            className="font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] cursor-pointer transition-colors line-clamp-2 leading-snug"
+          <a 
+            href={getRouteUrl.product(product.slug)}
+            onClick={(e) => {
+              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
+                e.preventDefault();
+                onSelectProduct(product);
+              }
+            }}
+            className="font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] cursor-pointer transition-colors line-clamp-2 leading-snug block"
           >
             {product.name}
-          </h3>
+          </a>
 
           <p className="text-amber-200/60 text-xs mt-2 line-clamp-2 leading-relaxed">
             {product.shortDescription}
