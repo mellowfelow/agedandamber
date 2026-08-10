@@ -3,44 +3,348 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://agedandamber.com/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/shop/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/about/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/blog/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/faq/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/wholesale/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agedandamber.com/contact/</loc>
-    <lastmod>2026-08-09</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/scotch-whisky/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/irish-whiskey/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/japanese-whisky/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/other-whiskey/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/vodka/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/tequila-mezcal/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/gin/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/rum/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/cognac-brandy/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/rtd-liqueurs/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/fine-wine/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/champagne-sparkling/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/na-wine/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/na-champagne-sparkling/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/na-spirits/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/na-rtd-cocktails/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/na-beer-cider/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/1792-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/1792-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/angels-envy-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/angels-envy-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/basil-hayden-kentucky-straight-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/basil-hayden-kentucky-straight-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/blantons-original-single-barrel-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/blantons-original-single-barrel-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/bookers-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/bookers-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/buffalo-trace-kentucky-straight-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/buffalo-trace-kentucky-straight-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/bulleit-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/bulleit-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/colonel-eh-taylor-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/colonel-eh-taylor-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/elijah-craig-barrel-proof-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/elijah-craig-barrel-proof-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/elijah-craig-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/elijah-craig-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/evan-williams-black-label-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/evan-williams-black-label-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/four-roses-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/four-roses-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/four-roses-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/four-roses-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/four-roses-small-batch-select-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/four-roses-small-batch-select-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/jim-beam-kentucky-straight-bourbon-whiskey/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/jim-beam-kentucky-straight-bourbon-whiskey.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/knob-creek-9-year-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/knob-creek-9-year-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/knob-creek-single-barrel-reserve-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/knob-creek-single-barrel-reserve-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/larceny-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/larceny-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/makers-mark-46-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/makers-mark-46-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/makers-mark-kentucky-straight-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/makers-mark-kentucky-straight-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/michters-us1-small-batch-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/michters-us1-small-batch-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/old-forester-86-proof-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/old-forester-86-proof-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/russells-reserve-single-barrel-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/russells-reserve-single-barrel-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/wl-weller-special-reserve-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/wl-weller-special-reserve-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/wild-turkey-101-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/wild-turkey-101-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/wild-turkey-rare-breed-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/wild-turkey-rare-breed-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/woodford-reserve-double-oaked-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/woodford-reserve-double-oaked-bourbon.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://agedandamber.com/shop/bourbon-whiskey/woodford-reserve-kentucky-straight-bourbon/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://agedandamber.com/images/products/bourbon/woodford-reserve-kentucky-straight-bourbon.webp</image:loc></image:image>
   </url>
 </urlset>

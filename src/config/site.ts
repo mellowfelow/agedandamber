@@ -62,16 +62,16 @@ export const CHAT = {
 export const BRAND = {
   foundingYear: '2018',
   foundingLocation: 'Napa Valley, California, USA',
-  description: 'Aged And Amber is an independent craft whiskey house and curator of rare single barrel bourbons, cask-strength ryes, and artisan wood-finished spirits.',
+  description: 'Aged And Amber is an independent Napa Valley spirits house that curates and sells authentic, allocated bottles of rare single barrel bourbons, single malt scotch, and artisan wood-finished spirits sourced directly from trusted distilleries and licensed distributors.',
   milestones: [
-    { year: '2018', event: 'Founded in Napa Valley by master distillers Marcus Thorne & Elena Vance.' },
-    { year: '2020', event: 'Unveiled the flagship French Oak Cask Finish Series to national acclaim.' },
-    { year: '2022', event: 'Expanded direct-to-consumer spirits shipping across 45 US states.' },
-    { year: '2024', event: 'Launched the Rare Vault Reserve program for private collectors.' },
+    { year: '2018', event: 'Founded in Napa Valley as a direct-to-consumer curator of allocated and rare-release spirits.' },
+    { year: '2020', event: 'Built out direct sourcing relationships with distilleries across Kentucky, Scotland, and beyond.' },
+    { year: '2022', event: 'Expanded compliant direct-to-consumer spirits shipping across 45 US states.' },
+    { year: '2024', event: 'Launched the Rare Vault Reserve program for private collectors and allocated releases.' },
   ],
   differentiation: [
-    'Direct cask sourcing from historic Kentucky, Speyside, and Kyoto cooperages',
-    'Hand-numbered, unfiltered single barrel releases bottled at peak proof',
+    'Direct sourcing relationships with distilleries and licensed distributors across Kentucky, Scotland, and beyond',
+    'Every bottle verified authentic, properly stored, and shipped in temperature-controlled packaging',
     '21+ verified temperature-controlled express delivery with adult signature',
     'Exclusive 10% instant discount when checking out with Bitcoin or USDT',
   ],
@@ -80,10 +80,7 @@ export const BRAND = {
     'https://facebook.com/agedandamber',
     'https://linkedin.com/company/aged-and-amber',
   ],
-  awards: [
-    'Double Gold - San Francisco World Spirits Competition (2023)',
-    'Whiskey of the Year - Artisan Distiller Guild (2024)',
-  ],
+  awards: [],
 };
 
 export const COMPLIANCE = {
@@ -92,6 +89,6 @@ export const COMPLIANCE = {
   gdpr: true,
   disclaimer: 'Must be 21 years of age or older to purchase spirits. Adult signature required upon delivery. Please drink responsibly.',
   bannedTerms: [],
-  requiredFramings: ['Adult 21+ signature required at delivery', 'Independent craft distilled'],
+  requiredFramings: ['Adult 21+ signature required at delivery', 'Curated & sourced from licensed distilleries and distributors'],
   prohibitedClaims: ['Guaranteed health benefits', 'Cures ailment'],
 };

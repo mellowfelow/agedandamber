@@ -1,7 +1,7 @@
 {
   "protocol": { "name": "acp", "version": "0.1.0" },
   "name": "Aged And Amber",
-  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
   "api_base_url": "https://agedandamber.com",
   "homepage": "https://agedandamber.com",
   "transports": ["https"],
@@ -21,7 +21,7 @@
     "age_restriction": "21+",
     "region": "US (45 states)",
     "ships_to": "US mainland compliant states",
-    "product_type": "Distilled Spirits",
+    "product_type": "Bourbon, Whiskey & Rare Spirits",
     "compliance": "Adult 21+ signature required upon delivery."
   }
 }

@@ -1,7 +1,7 @@
 # Strategy Document — Aged And Amber
 
 ## Brand Overview
-Aged And Amber is an independent craft distillery and direct-to-consumer spirits allocations platform based in Napa Valley, California.
+Aged And Amber is an independent Napa Valley spirits house and direct-to-consumer curator of authentic, allocated bourbon, scotch, and rare cask spirits — sourced directly from trusted distilleries and licensed distributors, not self-distilled.
 
 ## Products & Pricing
 - Small Batch Bourbon & Straight Rye ($110 - $220)

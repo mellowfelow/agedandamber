@@ -5,7 +5,7 @@
   "schema": "https://ucp.dev/schema/v1.json",
   "site": "https://agedandamber.com",
   "name": "Aged And Amber",
-  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
   "services": [
     { "id": "product-catalog", "type": "catalog", "url": "https://agedandamber.com/shop/", "description": "Full spirits catalog" },
     { "id": "mcp-server", "type": "mcp", "url": "https://agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
@@ -27,7 +27,7 @@
   "payment_methods": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
   "legal": {
     "age_restriction": "21+",
-    "product_type": "Distilled Spirits",
+    "product_type": "Bourbon, Whiskey & Rare Spirits",
     "compliance": "Mandatory adult 21+ signature required upon delivery."
   }
 }

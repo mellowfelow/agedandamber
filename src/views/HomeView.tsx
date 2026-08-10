@@ -47,37 +47,61 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const heroSlides = [
     {
       id: 'slide-1',
-      badge: 'Napa Valley Independent Craft Spirits House',
-      headingText: 'Crafted Whiskeys, Small-Batch Spirits & Rare Cask Finishes',
+      badge: 'Napa Valley Curated Spirits House',
+      headingText: 'Authentic Allocated Bourbon, Scotch & Rare Cask Spirits',
       isH1: true, // Only slide 1 has H1
-      caption: 'Hand-selected single barrel bourbons, cask-strength ryes, and rare sherry-finished single malts shipped directly from our Napa Valley cellars.',
-      image: 'https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&q=80&w=1600',
-      imageAlt: 'Hand-numbered single barrel bourbon maturing in toasted French oak casks at Napa Valley rickhouse',
-      slug: 'napa-valley-oak-cask-bourbon-maturation',
+      caption: 'Every bottle is sourced directly from trusted distilleries and licensed distributors, verified for authenticity, and shipped from our Napa Valley cellar.',
+      image: '/images/hero/hero-1.webp',
+      imageAlt: 'Amber bourbon whiskey poured into a crystal tumbler beside aging oak barrels in a dim spirits cellar',
+      slug: 'bourbon-whiskey-pour-napa-valley-cellar',
       categorySlug: 'bourbon-whiskey',
       ctaText: 'Explore Spirits Vault',
     },
     {
       id: 'slide-2',
-      badge: 'Direct Import Speyside & Highland Single Malts',
-      headingText: 'First-Fill Oloroso Sherry & Peated Islay Cask Reserve',
+      badge: 'Hand-Selected Allocations',
+      headingText: 'Rare Cask Finishes & Single Barrel Releases',
       isH1: false,
-      caption: 'Uncompromised single malt scotches aged up to two decades in historic Spanish sherry butts and maritime Islay stills.',
-      image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1600',
-      imageAlt: 'Sherry cask single malt scotch poured into crystal tasting glass with amber reflections',
-      slug: 'speyside-sherry-cask-single-malt-scotch',
+      caption: 'A rotating lineup of allocated bourbons, single malts, and añejo tequilas sourced directly from distillery partners across Kentucky, Scotland, and Mexico.',
+      image: '/images/hero/hero-5.webp',
+      imageAlt: 'Lineup of rare cask-strength whiskey, vodka, and tequila decanters displayed on a bar shelf',
+      slug: 'rare-cask-strength-spirits-lineup',
+      categorySlug: 'all',
+      ctaText: 'Shop Rare Vault',
+    },
+    {
+      id: 'slide-3',
+      badge: 'Direct Import Speyside & Highland Single Malts',
+      headingText: 'First-Fill Sherry & Highland Single Malt Scotch',
+      isH1: false,
+      caption: 'Authentic single malt scotch sourced directly from distillery allocations, including sherry-finished and Highland expressions.',
+      image: '/images/hero/hero-7.webp',
+      imageAlt: 'Single malt Scotch whisky bottles lined up in a moody, softly lit bar display',
+      slug: 'single-malt-scotch-whisky-collection',
       categorySlug: 'scotch-whisky',
       ctaText: 'Shop Rare Scotch',
     },
     {
-      id: 'slide-3',
-      badge: 'Artisanal Tequila & Kyoto Mizunara Oak',
-      headingText: 'Extra Añejo Agave & Japanese Mizunara Wood Finishes',
+      id: 'slide-4',
+      badge: 'Small Batch & Single Barrel Bourbon',
+      headingText: 'Hand-Selected Bourbon From Trusted Distilleries',
       isH1: false,
-      caption: '5-year aged Blue Weber agaves and rare Hokkaido forest Mizunara oak malts for collector palates.',
-      image: 'https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&q=80&w=1600',
-      imageAlt: 'Extra Anejo agave tequila resting in oak barrels with toasted butterscotch aroma',
-      slug: 'extra-anejo-agave-bourbon-barrel-rested',
+      caption: '28 real, verified bourbon bottlings sourced directly and shipped with mandatory adult-signature delivery.',
+      image: '/images/hero/hero-10.webp',
+      imageAlt: 'Single barrel bourbon whiskey bottles resting in a black presentation case',
+      slug: 'small-batch-single-barrel-bourbon-whiskey',
+      categorySlug: 'bourbon-whiskey',
+      ctaText: 'Shop Bourbon Whiskey',
+    },
+    {
+      id: 'slide-5',
+      badge: 'Artisanal Tequila & Mezcal',
+      headingText: 'Blanco Tequila & Artisanal Mezcal, Sourced Direct',
+      isH1: false,
+      caption: '100% agave tequila and small-batch mezcal sourced directly from Jalisco and Oaxaca producers for collectors and mixologists alike.',
+      image: '/images/hero/hero-3.webp',
+      imageAlt: 'Close-up of blanco tequila and artisanal mezcal bottles with a cocktail shaker on a bar counter',
+      slug: 'artisanal-tequila-mezcal-agave-spirits',
       categorySlug: 'tequila-mezcal',
       ctaText: 'Discover Artisanal Tequila',
     },
@@ -376,11 +400,11 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-amber-100 leading-tight">
-              About Aged And Amber: Napa Valley Craft Distilling House
+              About Aged And Amber: Napa Valley Curated Spirits House
             </h2>
 
             <p className="text-amber-200/80 text-sm leading-relaxed">
-              Founded in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was established with a singular vision: to distill and curate uncompromised small-batch spirits using historic wood finishes and non-chill filtered bottling.
+              Founded in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was established with a singular vision: to source and curate uncompromised, authentic allocated spirits directly from trusted distilleries and licensed distributors.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">
@@ -403,7 +427,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 }}
                 className="py-3 px-6 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-xs hover:bg-[#E5C158] transition-all"
               >
-                Read Master Distiller Story
+                Read Our Sourcing Story
               </a>
 
               <div className="flex items-center gap-2 text-xs text-amber-400">
@@ -415,15 +439,15 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
           <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&q=80&w=1200"
-              alt="Oak Barrels in Napa Rickhouse"
+              src="/images/hero/hero-9.webp"
+              alt="Rows of wine and spirits bottles resting in a climate-controlled Napa Valley cellar rack"
               className="w-full h-full object-cover filter brightness-90"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-stone-950/80 backdrop-blur-md border border-stone-800 text-amber-100 text-xs">
-              <p className="font-serif font-bold text-sm text-[#D4AF37]">Napa Valley Barrel Cellar</p>
+              <p className="font-serif font-bold text-sm text-[#D4AF37]">Napa Valley Spirits Cellar</p>
               <p className="text-amber-300/70 text-[11px] mt-1">
-                Temperature-controlled oak maturation rickhouse housing over 2,000 single barrels.
+                Temperature-controlled storage cellar holding thousands of curated, allocated bottles.
               </p>
             </div>
           </div>

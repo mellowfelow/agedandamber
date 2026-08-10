@@ -18,12 +18,12 @@ When a mature 10-year or 18-year bourbon is transferred into seasoned Spanish Ol
 2. **Tawny Port Pipes**: Impart juicy ripe figs, blackcurrants, dark chocolate truffle, and velvety tannins.
 3. **Toasted French Oak**: Contributes subtle nutmeg, clove, structured wood tannins, and a silky, lingering mouthfeel.
 
-## Master Blending Precision
-At Aged And Amber, master distiller Marcus Thorne personally inspects every cooperage cask before filling. Secondary finishing ranges from 6 months up to 24 months, monitored weekly via hydrometer and organoleptic tasting.
+## What We Look For When Sourcing
+When selecting allocated bottlings for Aged And Amber, our spirits team prioritizes distilleries that are transparent about cask provenance and finishing time — whether that's 6 months or 24 months in a secondary cask.
 
-When you sip our *Highland Cask 21-Year Sherry Finish* or *Single Barrel Port Wood Bourbon*, you are tasting decades of wood craft and barrel provenance.
+When you sip a sherry-finished single malt or a port-wood-finished bourbon from our vault, you're tasting decades of wood craft and barrel provenance from the distilleries we source it from.
     `,
-    author: 'Marcus Thorne, Master Distiller',
+    author: 'The Aged And Amber Spirits Team',
     category: 'Cask Craft',
     date: 'August 2, 2026',
     readTime: '6 min read',
@@ -32,26 +32,26 @@ When you sip our *Highland Cask 21-Year Sherry Finish* or *Single Barrel Port Wo
   },
   {
     slug: 'the-art-of-small-batch-blending',
-    title: 'The Art of Small Batch Blending: A Conversation with Master Distiller Marcus Thorne',
-    excerpt: 'Go behind the scenes at our Napa Valley rickhouse as we discuss barrel proof selection, mash bill ratios, and batch consistency.',
+    title: 'The Art of Small Batch Blending: What "Small Batch" Actually Means',
+    excerpt: 'A guide to what distinguishes true small batch bourbon from mass-market blends, and how to evaluate barrel proof selection and mash bill ratios.',
     content: `
-# The Art of Small Batch Blending: A Conversation with Master Distiller Marcus Thorne
+# The Art of Small Batch Blending: What "Small Batch" Actually Means
 
 Unlike industrial high-volume distilleries that dump hundreds of barrels together to achieve a uniform average taste, small batch distilling is an exercise in meticulous balance and artistic expression.
 
 ## What Defines a True Small Batch?
-At Aged And Amber, a "Small Batch" never exceeds 12 hand-selected barrels per release. Each barrel is chosen for its unique floor location in our climate-controlled Napa Valley rickhouse.
+There's no strict legal definition of "small batch," but the best examples are blended from a limited, hand-selected number of barrels rather than hundreds. Barrel floor location within a rickhouse matters too — top floors see more heat and extraction, while lower floors age more slowly.
 
-"The top floor barrels experience higher summer heat, drawing intense color and sugars from deep within the charred wood staves," explains Thorne. "Bottom floor barrels age slowly, preserving delicate floral aromatics and fruit esters. Blending them is like composing a symphony."
+Distilleries that lean into barrel selection tend to describe the process like composing a symphony: each barrel contributes its own character, and blending is where the final profile comes together.
 
-## Bottling at Peak Proof
-We bottle our *18-Year Small Batch Bourbon* at an uncompromising 114 proof. This preserves natural essential oils, lipid compounds, and rich wood sugars that would otherwise be stripped away by chill-filtering or heavy dilution.
+## Bottling at Barrel or Cask Strength
+Many of the bottlings we carry are released at barrel or cask strength — often 110 proof and up — without dilution. This preserves natural essential oils, lipid compounds, and rich wood sugars that would otherwise be stripped away by chill-filtering or heavy dilution.
 
 ### How to Taste Cask Proof Whiskey:
 - **Neat**: Take a small sip first to acclimatize your palate to high proof.
 - **Add 2-3 Drops of Pure Spring Water**: This lowers surface tension and releases trapped aromatic bouquet—vanilla blossom, candied orange, and warm leather.
     `,
-    author: 'Elena Vance, Spirits Journalist',
+    author: 'The Aged And Amber Spirits Team',
     category: 'Distillery Insights',
     date: 'July 18, 2026',
     readTime: '5 min read',
@@ -83,7 +83,7 @@ Established by the US Bottled-In-Bond Act of 1897, spirits bearing this label mu
 
 At Aged And Amber, we respect both traditions, offering cask-strength single barrel expressions alongside masterfully proofed reserve releases.
     `,
-    author: 'Marcus Thorne',
+    author: 'The Aged And Amber Spirits Team',
     category: 'Spirits Guide',
     date: 'June 29, 2026',
     readTime: '4 min read',

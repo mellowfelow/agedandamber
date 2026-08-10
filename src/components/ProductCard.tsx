@@ -58,7 +58,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
         {/* Image */}
         <a 
-          href={getRouteUrl.product(product.slug)}
+          href={getRouteUrl.product(product.category, product.slug)}
           className="w-full h-full flex items-center justify-center cursor-pointer transform group-hover:scale-105 transition-transform duration-500"
           onClick={(e) => {
             if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
@@ -95,7 +95,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
 
           <a 
-            href={getRouteUrl.product(product.slug)}
+            href={getRouteUrl.product(product.category, product.slug)}
             onClick={(e) => {
               if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
                 e.preventDefault();

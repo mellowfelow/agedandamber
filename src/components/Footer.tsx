@@ -101,11 +101,11 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
             <ul className="space-y-2 text-xs">
               <li>
                 <a
-                  href={getRouteUrl.shop('bourbon-rye')}
+                  href={getRouteUrl.shop('bourbon-whiskey')}
                   onClick={(e) => {
                     if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
                       e.preventDefault();
-                      setCurrentView('shop', 'bourbon-rye');
+                      setCurrentView('shop', 'bourbon-whiskey');
                     }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
@@ -115,11 +115,11 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
               </li>
               <li>
                 <a
-                  href={getRouteUrl.shop('single-malt-scotch')}
+                  href={getRouteUrl.shop('scotch-whisky')}
                   onClick={(e) => {
                     if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
                       e.preventDefault();
-                      setCurrentView('shop', 'single-malt-scotch');
+                      setCurrentView('shop', 'scotch-whisky');
                     }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
@@ -129,11 +129,11 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
               </li>
               <li>
                 <a
-                  href={getRouteUrl.shop('rare-cask-tequila')}
+                  href={getRouteUrl.shop('tequila-mezcal')}
                   onClick={(e) => {
                     if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
                       e.preventDefault();
-                      setCurrentView('shop', 'rare-cask-tequila');
+                      setCurrentView('shop', 'tequila-mezcal');
                     }
                   }}
                   className="hover:text-[#D4AF37] transition-colors"
@@ -175,7 +175,7 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
                   }} 
                   className="hover:text-[#D4AF37]"
                 >
-                  Master Distiller Story
+                  Our Sourcing Story
                 </a>
               </li>
               <li>

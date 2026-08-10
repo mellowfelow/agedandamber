@@ -33,10 +33,10 @@ export default function App() {
   const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
   const [checkoutModalOpen, setCheckoutModalOpen] = useState(false);
 
-  // Synchronize location pathname and hash with app state
+  // Synchronize location pathname with app state
   useEffect(() => {
     const handleLocationChange = () => {
-      const route = parseRoute(window.location.pathname, window.location.hash);
+      const route = parseRoute(window.location.pathname);
       setCurrentView(route.view);
       setSelectedCategory(route.category);
 
@@ -57,16 +57,20 @@ export default function App() {
     handleLocationChange();
 
     window.addEventListener('popstate', handleLocationChange);
-    window.addEventListener('hashchange', handleLocationChange);
     return () => {
       window.removeEventListener('popstate', handleLocationChange);
-      window.removeEventListener('hashchange', handleLocationChange);
     };
   }, []);
 
-  // Navigation handlers that update window location hash
+  // Navigation handlers that push standard path-based URLs
+  const navigateTo = (url: string) => {
+    if (window.location.pathname !== url) {
+      window.history.pushState({}, '', url);
+    }
+  };
+
   const handleNavView = (view: string, category: string = 'all') => {
-    let url = '/#/';
+    let url = '/';
     if (view === 'home') url = getRouteUrl.home();
     else if (view === 'shop') url = getRouteUrl.shop(category);
     else if (view === 'about') url = getRouteUrl.about();
@@ -75,26 +79,17 @@ export default function App() {
     else if (view === 'wholesale') url = getRouteUrl.wholesale();
     else if (view === 'contact') url = getRouteUrl.contact();
 
-    const targetHash = url.substring(url.indexOf('#'));
-    if (window.location.hash !== targetHash) {
-      window.location.hash = targetHash;
-    } else {
-      setCurrentView(view);
-      setSelectedCategory(category);
-      window.scrollTo(0, 0);
-    }
+    navigateTo(url);
+    setCurrentView(view);
+    setSelectedCategory(category);
+    window.scrollTo(0, 0);
   };
 
   const handleSelectProduct = (product: Product) => {
+    navigateTo(getRouteUrl.product(product.category, product.slug));
     setSelectedProduct(product);
-    const url = getRouteUrl.product(product.slug);
-    const targetHash = url.substring(url.indexOf('#'));
-    if (window.location.hash !== targetHash) {
-      window.location.hash = targetHash;
-    } else {
-      setCurrentView('product-detail');
-      window.scrollTo(0, 0);
-    }
+    setCurrentView('product-detail');
+    window.scrollTo(0, 0);
   };
 
   // Cart State with localStorage

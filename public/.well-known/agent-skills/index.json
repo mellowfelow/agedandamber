@@ -2,7 +2,7 @@
   "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
   "name": "Aged And Amber",
   "url": "https://agedandamber.com",
-  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
   "skills": [
     {
       "name": "search-products",
