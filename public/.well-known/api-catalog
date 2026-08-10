@@ -1,0 +1,40 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://agedandamber.com/",
+      "https://www.iana.org/assignments/link-relations/service-doc": [{ "href": "https://agedandamber.com/faq/" }],
+      "title": "Aged And Amber — Boutique Craft Whiskey & Spirits"
+    },
+    {
+      "anchor": "https://agedandamber.com/shop/",
+      "type": "text/html",
+      "title": "Aged And Amber Product Catalog"
+    },
+    {
+      "anchor": "https://agedandamber.com/wholesale/",
+      "type": "text/html",
+      "title": "Aged And Amber Wholesale Allocations"
+    },
+    {
+      "anchor": "https://agedandamber.com/api/products",
+      "type": "application/json",
+      "title": "Aged And Amber Products API"
+    },
+    {
+      "anchor": "https://agedandamber.com/api/categories",
+      "type": "application/json",
+      "title": "Aged And Amber Categories API"
+    },
+    {
+      "anchor": "https://agedandamber.com/api/search",
+      "type": "application/json",
+      "title": "Aged And Amber Search API"
+    },
+    {
+      "anchor": "https://agedandamber.com/api/mcp",
+      "type": "application/json",
+      "https://www.iana.org/assignments/link-relations/service-desc": [{ "href": "https://agedandamber.com/.well-known/mcp/server-card.json" }],
+      "title": "Aged And Amber MCP Server"
+    }
+  ]
+}

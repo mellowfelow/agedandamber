@@ -1,0 +1,6 @@
+{
+  "name": "Aged And Amber",
+  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

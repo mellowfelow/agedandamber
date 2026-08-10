@@ -1,0 +1,33 @@
+{
+  "ucp": "1.0",
+  "protocol_version": "1.0",
+  "spec": "https://ucp.dev/specification/overview/",
+  "schema": "https://ucp.dev/schema/v1.json",
+  "site": "https://agedandamber.com",
+  "name": "Aged And Amber",
+  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "services": [
+    { "id": "product-catalog", "type": "catalog", "url": "https://agedandamber.com/shop/", "description": "Full spirits catalog" },
+    { "id": "mcp-server", "type": "mcp", "url": "https://agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
+    { "id": "order", "type": "commerce", "url": "https://agedandamber.com/shop/", "description": "Place orders via 21+ verified checkout" },
+    { "id": "wholesale", "type": "b2b", "url": "https://agedandamber.com/wholesale/", "description": "Wholesale case pricing and single barrel allocations" }
+  ],
+  "capabilities": ["browse", "search", "inquiry", "wholesale", "content", "mcp"],
+  "endpoints": {
+    "mcp": "https://agedandamber.com/api/mcp",
+    "catalog": "https://agedandamber.com/shop/",
+    "contact": "https://agedandamber.com/contact/",
+    "agent_skills": "https://agedandamber.com/.well-known/agent-skills/index.json",
+    "mcp_server_card": "https://agedandamber.com/.well-known/mcp/server-card.json",
+    "api_catalog": "https://agedandamber.com/.well-known/api-catalog",
+    "llms_txt": "https://agedandamber.com/llms.txt"
+  },
+  "currency": "USD",
+  "minimum_order_usd": "200",
+  "payment_methods": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
+  "legal": {
+    "age_restriction": "21+",
+    "product_type": "Distilled Spirits",
+    "compliance": "Mandatory adult 21+ signature required upon delivery."
+  }
+}

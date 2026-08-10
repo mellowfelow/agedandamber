@@ -1,0 +1,27 @@
+{
+  "protocol": { "name": "acp", "version": "0.1.0" },
+  "name": "Aged And Amber",
+  "description": "Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors",
+  "api_base_url": "https://agedandamber.com",
+  "homepage": "https://agedandamber.com",
+  "transports": ["https"],
+  "capabilities": {
+    "services": ["product-catalog", "wholesale", "blog", "faq", "mcp-server"],
+    "ordering": "human-assisted",
+    "payment_methods": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
+    "currency": "USD",
+    "minimum_order_usd": "200",
+    "free_shipping_threshold_usd": "300"
+  },
+  "contact": {
+    "email": "concierge@agedandamber.com",
+    "phone": "+1 (800) 555-AMBER"
+  },
+  "legal": {
+    "age_restriction": "21+",
+    "region": "US (45 states)",
+    "ships_to": "US mainland compliant states",
+    "product_type": "Distilled Spirits",
+    "compliance": "Adult 21+ signature required upon delivery."
+  }
+}

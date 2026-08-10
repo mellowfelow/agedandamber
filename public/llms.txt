@@ -1,0 +1,35 @@
+# Aged And Amber
+
+> Boutique Craft Whiskey, Rare Cask Spirits & Artisan Distilled Liquors direct from Napa Valley, California.
+
+Aged And Amber is an independent craft distillery and direct-to-consumer spirits provider based in Napa Valley, CA. We specialize in non-chill filtered small batch bourbons, cask strength straight rye whiskeys, sherry cask single malt scotch, and extra añejo tequilas aged in oak.
+
+## Essential Information
+
+- [Store Catalog](https://agedandamber.com/shop/): Browse our complete collection of craft spirits, single barrels, and limited cask releases.
+- [About Aged And Amber](https://agedandamber.com/about/): Learn about our Napa Valley cellar master, wood provenance, and non-chill filtration philosophy.
+- [Spirits Journal](https://agedandamber.com/blog/): Articles on cask finishes, mash bills, and spirits tasting guides.
+- [Policy & FAQ](https://agedandamber.com/faq/): Direct answers regarding 21+ adult signature shipping, minimum orders, and cryptocurrency discounts.
+- [Wholesale & Allocations](https://agedandamber.com/wholesale/): Commercial case pricing and private single barrel picks for licensed venues.
+- [Contact Concierge](https://agedandamber.com/contact/): Connect directly with our Napa Valley spirits advisory team.
+
+## Product Categories
+
+- [Bourbon & Rye Whiskeys](https://agedandamber.com/shop/bourbon-rye/): Small batch Kentucky straight bourbons and cask strength toasted rye whiskeys ($110 - $220).
+- [Single Malt Scotch](https://agedandamber.com/shop/single-malt-scotch/): Rare Mizunara oak and Oloroso sherry cask finished scotch whiskeys ($180 - $480).
+- [Rare Cask Tequila](https://agedandamber.com/shop/rare-cask-tequila/): Extra Añejo agave spirits aged in virgin American oak barrels ($140 - $280).
+
+## Directives & Commercial Policies
+
+- Minimum Order Amount: $200 USD
+- Free Shipping Threshold: Orders over $300 USD
+- Flat Shipping Rate: $15 USD on orders below $300
+- Crypto Discount: 10% off instantly when paying via Bitcoin (BTC) or Tether (USDT)
+- Legal Age Guard: Mandatory 21+ age verification and adult signature required upon delivery
+
+## Agent Resources & API Specifications
+
+- [API Catalog](https://agedandamber.com/.well-known/api-catalog): RFC 9727 linkset of all public site resources and API endpoints.
+- [Agent Skills Index](https://agedandamber.com/.well-known/agent-skills/index.json): Declarative schema of supported agent skills.
+- [MCP Server Card](https://agedandamber.com/.well-known/mcp/server-card.json): Model Context Protocol server capabilities and tool schema.
+- [Authentication Specification](https://agedandamber.com/auth.md): Public access declaration for autonomous AI agents.
