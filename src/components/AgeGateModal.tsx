@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, AlertCircle } from 'lucide-react';
 import { SITE, COMPLIANCE } from '../config/site';

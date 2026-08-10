@@ -1,7 +1,11 @@
+'use client';
+
 import React, { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { CATEGORIES } from '../data/products';
+import { getRouteUrl } from '../utils/routes';
 import {
   Search,
   Filter,
@@ -20,28 +24,21 @@ import {
   SlidersHorizontal,
 } from 'lucide-react';
 import { SITE } from '../config/site';
+import { useAppState } from '../../app/providers';
 
 interface ShopViewProps {
   products: Product[];
   selectedCategory: string;
-  setSelectedCategory: (cat: string) => void;
-  searchQuery: string;
-  setSearchQuery: (q: string) => void;
-  onAddToCart: (p: Product, quantity?: number) => void;
-  onQuickView: (p: Product) => void;
-  onSelectProduct: (p: Product) => void;
 }
 
-export const ShopView: React.FC<ShopViewProps> = ({
-  products,
-  selectedCategory,
-  setSelectedCategory,
-  searchQuery,
-  setSearchQuery,
-  onAddToCart,
-  onQuickView,
-  onSelectProduct,
-}) => {
+export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }) => {
+  const router = useRouter();
+  const { searchQuery, setSearchQuery } = useAppState();
+
+  const setSelectedCategory = (cat: string) => {
+    router.push(getRouteUrl.shop(cat));
+  };
+
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'proof-desc' | 'name-asc'>('featured');
   const [minPrice, setMinPrice] = useState(0);
@@ -733,13 +730,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {sortedProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onAddToCart={onAddToCart}
-                  onQuickView={onQuickView}
-                  onSelectProduct={onSelectProduct}
-                />
+                <ProductCard key={product.id} product={product} />
               ))}
             </div>
           )}
@@ -781,4 +772,3 @@ export const ShopView: React.FC<ShopViewProps> = ({
     </div>
   );
 };
-

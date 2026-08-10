@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { SITE, FORMS, CONTACT } from '../config/site';
 import { Building2, ShieldCheck, Award, ArrowRight, CheckCircle2 } from 'lucide-react';

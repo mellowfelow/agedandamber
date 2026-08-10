@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { SITE, CONTACT, FORMS } from '../config/site';
 import { Mail, Phone, MapPin, Clock, MessageSquare, CheckCircle2, Send } from 'lucide-react';

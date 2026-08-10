@@ -1,15 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 import { ShieldCheck, Mail, Phone, MapPin, Award, Coins, Lock } from 'lucide-react';
 import { SITE, CONTACT, BRAND, COMPLIANCE, SHOP } from '../config/site';
 import { BrandLogo } from './BrandLogo';
 import { getRouteUrl } from '../utils/routes';
 
-interface FooterProps {
-  setCurrentView: (view: string, category?: string) => void;
-  setSelectedCategory: (cat: string) => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCategory }) => {
+export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#100905] text-amber-200/80 border-t border-[#D4AF37]/30 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -60,18 +56,9 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <a 
-              href={getRouteUrl.home()} 
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  setCurrentView('home');
-                }
-              }} 
-              className="cursor-pointer inline-block"
-            >
+            <Link href={getRouteUrl.home()} className="cursor-pointer inline-block">
               <BrandLogo size="lg" />
-            </a>
+            </Link>
 
             <p className="text-xs text-amber-200/70 leading-relaxed max-w-sm">
               {BRAND.description} Headquartered in Napa Valley and San Francisco, California.
@@ -100,60 +87,24 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <a
-                  href={getRouteUrl.shop('bourbon-whiskey')}
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('shop', 'bourbon-whiskey');
-                    }
-                  }}
-                  className="hover:text-[#D4AF37] transition-colors"
-                >
+                <Link href={getRouteUrl.shop('bourbon-whiskey')} className="hover:text-[#D4AF37] transition-colors">
                   Bourbon & Rye Whiskey
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href={getRouteUrl.shop('scotch-whisky')}
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('shop', 'scotch-whisky');
-                    }
-                  }}
-                  className="hover:text-[#D4AF37] transition-colors"
-                >
+                <Link href={getRouteUrl.shop('scotch-whisky')} className="hover:text-[#D4AF37] transition-colors">
                   Single Malt & Scotch
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href={getRouteUrl.shop('tequila-mezcal')}
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('shop', 'tequila-mezcal');
-                    }
-                  }}
-                  className="hover:text-[#D4AF37] transition-colors"
-                >
+                <Link href={getRouteUrl.shop('tequila-mezcal')} className="hover:text-[#D4AF37] transition-colors">
                   Rare Cask & Tequila
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href={getRouteUrl.wholesale()}
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('wholesale');
-                    }
-                  }}
-                  className="hover:text-[#D4AF37] transition-colors"
-                >
+                <Link href={getRouteUrl.wholesale()} className="hover:text-[#D4AF37] transition-colors">
                   Wholesale Allocations
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -165,60 +116,24 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView, setSelectedCateg
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <a 
-                  href={getRouteUrl.about()} 
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('about');
-                    }
-                  }} 
-                  className="hover:text-[#D4AF37]"
-                >
+                <Link href={getRouteUrl.about()} className="hover:text-[#D4AF37]">
                   Our Sourcing Story
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href={getRouteUrl.blog()} 
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('blog');
-                    }
-                  }} 
-                  className="hover:text-[#D4AF37]"
-                >
+                <Link href={getRouteUrl.blog()} className="hover:text-[#D4AF37]">
                   Cask & Wood Journal
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href={getRouteUrl.faq()} 
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('faq');
-                    }
-                  }} 
-                  className="hover:text-[#D4AF37]"
-                >
+                <Link href={getRouteUrl.faq()} className="hover:text-[#D4AF37]">
                   Frequently Asked Questions
-                </a>
+                </Link>
               </li>
               <li>
-                <a 
-                  href={getRouteUrl.contact()} 
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      setCurrentView('contact');
-                    }
-                  }} 
-                  className="hover:text-[#D4AF37]"
-                >
+                <Link href={getRouteUrl.contact()} className="hover:text-[#D4AF37]">
                   Concierge Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,30 +1,20 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { Search, ShoppingBag, Menu, X, ChevronDown, ShieldCheck, Coins, PhoneCall } from 'lucide-react';
 import { SITE, SHOP, CONTACT } from '../config/site';
 import { CATEGORIES } from '../data/products';
 import { BrandLogo } from './BrandLogo';
 import { getRouteUrl } from '../utils/routes';
+import { useAppState } from '../../app/providers';
 
-interface HeaderProps {
-  currentView: string;
-  setCurrentView: (view: string) => void;
-  selectedCategory: string;
-  setSelectedCategory: (cat: string) => void;
-  cartCount: number;
-  onOpenCart: () => void;
-  searchQuery: string;
-  setSearchQuery: (q: string) => void;
-}
+export const Header: React.FC = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+  const { cartCount, setCartDrawerOpen, searchQuery, setSearchQuery } = useAppState();
 
-export const Header: React.FC<HeaderProps> = ({
-  currentView,
-  setCurrentView,
-  setSelectedCategory,
-  cartCount,
-  onOpenCart,
-  searchQuery,
-  setSearchQuery,
-}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [announcementIdx, setAnnouncementIdx] = useState(0);
@@ -44,14 +34,25 @@ export const Header: React.FC<HeaderProps> = ({
     return () => clearInterval(interval);
   }, [announcements.length]);
 
-  const handleNav = (view: string, category: string = '') => {
-    setCurrentView(view);
-    if (category) {
-      setSelectedCategory(category);
-    }
+  const closeMenus = () => {
     setMobileMenuOpen(false);
     setShopDropdownOpen(false);
   };
+
+  const handleSearchChange = (value: string) => {
+    setSearchQuery(value);
+    if (!pathname.startsWith('/shop')) {
+      router.push('/shop/');
+    }
+  };
+
+  const isHome = pathname === '/';
+  const isShop = pathname.startsWith('/shop');
+  const isAbout = pathname === '/about/';
+  const isBlog = pathname.startsWith('/blog');
+  const isFaq = pathname === '/faq/';
+  const isWholesale = pathname === '/wholesale/';
+  const isContact = pathname === '/contact/';
 
   return (
     <header className="sticky top-0 z-40 bg-[#140D08]/95 border-b border-[#D4AF37]/20 backdrop-blur-md text-amber-50">
@@ -91,33 +92,18 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         {/* Brand Logo */}
-        <a
-          href={getRouteUrl.home()}
-          onClick={(e) => {
-            if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-              e.preventDefault();
-              handleNav('home');
-            }
-          }}
-          className="cursor-pointer shrink-0"
-        >
+        <Link href={getRouteUrl.home()} onClick={closeMenus} className="cursor-pointer shrink-0">
           <BrandLogo size="md" />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8 text-sm font-medium">
-          <a
+          <Link
             href={getRouteUrl.home()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('home');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'home' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isHome ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Home
-          </a>
+          </Link>
 
           {/* Shop Mega Dropdown */}
           <div
@@ -125,35 +111,24 @@ export const Header: React.FC<HeaderProps> = ({
             onMouseEnter={() => setShopDropdownOpen(true)}
             onMouseLeave={() => setShopDropdownOpen(false)}
           >
-            <a
+            <Link
               href={getRouteUrl.shop()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('shop');
-                }
-              }}
-              className={`hover:text-[#D4AF37] transition-colors flex items-center gap-1 py-2 ${currentView === 'shop' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+              className={`hover:text-[#D4AF37] transition-colors flex items-center gap-1 py-2 ${isShop ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
             >
               Shop Vault
               <ChevronDown className="w-4 h-4 opacity-70" />
-            </a>
+            </Link>
 
             {shopDropdownOpen && (
               <div className="absolute top-full -left-20 w-[640px] max-h-[80vh] overflow-y-auto p-6 bg-[#1C140E] rounded-2xl border border-[#D4AF37]/30 shadow-2xl z-50 animate-fade-in space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-amber-900/40">
-                  <a
+                  <Link
                     href={getRouteUrl.shop('all')}
-                    onClick={(e) => {
-                      if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                        e.preventDefault();
-                        handleNav('shop', 'all');
-                      }
-                    }}
+                    onClick={closeMenus}
                     className="font-serif font-bold text-amber-100 text-sm hover:text-[#D4AF37]"
                   >
                     All Spirits Collection ({CATEGORIES.length} Categories)
-                  </a>
+                  </Link>
                   <span className="text-[11px] text-[#D4AF37] font-sans">
                     Napa Cellar Direct
                   </span>
@@ -162,33 +137,23 @@ export const Header: React.FC<HeaderProps> = ({
                 <div className="grid grid-cols-2 gap-x-6 gap-y-4">
                   {CATEGORIES.map((cat) => (
                     <div key={cat.slug} className="space-y-1">
-                      <a
+                      <Link
                         href={getRouteUrl.shop(cat.slug)}
-                        onClick={(e) => {
-                          if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                            e.preventDefault();
-                            handleNav('shop', cat.slug);
-                          }
-                        }}
+                        onClick={closeMenus}
                         className="w-full text-left text-xs font-bold text-[#D4AF37] hover:underline block"
                       >
                         {cat.name}
-                      </a>
+                      </Link>
                       <div className="pl-2 space-y-0.5">
                         {cat.subcategories.slice(0, 4).map((sub) => (
-                          <a
+                          <Link
                             key={sub}
                             href={getRouteUrl.shop(cat.slug)}
-                            onClick={(e) => {
-                              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                                e.preventDefault();
-                                handleNav('shop', cat.slug);
-                              }
-                            }}
+                            onClick={closeMenus}
                             className="block text-[11px] text-amber-200/70 hover:text-amber-100 text-left truncate w-full"
                           >
                             • {sub}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -198,70 +163,40 @@ export const Header: React.FC<HeaderProps> = ({
             )}
           </div>
 
-          <a
+          <Link
             href={getRouteUrl.about()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('about');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'about' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isAbout ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Our Story
-          </a>
+          </Link>
 
-          <a
+          <Link
             href={getRouteUrl.blog()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('blog');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'blog' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isBlog ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Cask Blog
-          </a>
+          </Link>
 
-          <a
+          <Link
             href={getRouteUrl.faq()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('faq');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'faq' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isFaq ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             FAQ
-          </a>
+          </Link>
 
-          <a
+          <Link
             href={getRouteUrl.wholesale()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('wholesale');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'wholesale' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isWholesale ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Wholesale
-          </a>
+          </Link>
 
-          <a
+          <Link
             href={getRouteUrl.contact()}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                handleNav('contact');
-              }
-            }}
-            className={`hover:text-[#D4AF37] transition-colors ${currentView === 'contact' ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+            className={`hover:text-[#D4AF37] transition-colors ${isContact ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Right Actions */}
@@ -277,7 +212,7 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Cart Trigger */}
           <button
-            onClick={onOpenCart}
+            onClick={() => setCartDrawerOpen(true)}
             className="p-2.5 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold hover:bg-[#E5C158] transition-all shadow-md flex items-center gap-2"
           >
             <ShoppingBag className="w-5 h-5" />
@@ -298,10 +233,7 @@ export const Header: React.FC<HeaderProps> = ({
               autoFocus
               placeholder="Search rare bourbons, single malts, tequila, proof, cask type..."
               value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                if (currentView !== 'shop') setCurrentView('shop');
-              }}
+              onChange={(e) => handleSearchChange(e.target.value)}
               className="w-full p-3.5 pr-10 rounded-xl bg-stone-900 border border-amber-800/40 text-amber-100 placeholder-stone-500 text-sm focus:outline-none focus:border-[#D4AF37]"
             />
             <button
@@ -319,109 +251,69 @@ export const Header: React.FC<HeaderProps> = ({
       {mobileMenuOpen && (
         <div className="lg:hidden bg-[#160E08] border-b border-[#D4AF37]/30 p-6 space-y-4 animate-fade-in max-h-[85vh] overflow-y-auto">
           <div className="grid grid-cols-1 gap-3">
-            <a
+            <Link
               href={getRouteUrl.home()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('home');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href={getRouteUrl.shop()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('shop');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-[#D4AF37] text-lg block"
             >
               Shop All Spirits
-            </a>
+            </Link>
 
             <div className="pl-4 space-y-2 border-l border-amber-900/40 my-2">
               {CATEGORIES.map((cat) => (
-                <a
+                <Link
                   key={cat.slug}
                   href={getRouteUrl.shop(cat.slug)}
-                  onClick={(e) => {
-                    if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                      e.preventDefault();
-                      handleNav('shop', cat.slug);
-                    }
-                  }}
+                  onClick={closeMenus}
                   className="block text-left text-xs text-amber-300 hover:text-amber-100"
                 >
                   • {cat.name}
-                </a>
+                </Link>
               ))}
             </div>
 
-            <a
+            <Link
               href={getRouteUrl.about()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('about');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Our Story
-            </a>
-            <a
+            </Link>
+            <Link
               href={getRouteUrl.blog()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('blog');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Cask Blog
-            </a>
-            <a
+            </Link>
+            <Link
               href={getRouteUrl.faq()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('faq');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               FAQ
-            </a>
-            <a
+            </Link>
+            <Link
               href={getRouteUrl.wholesale()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('wholesale');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Wholesale
-            </a>
-            <a
+            </Link>
+            <Link
               href={getRouteUrl.contact()}
-              onClick={(e) => {
-                if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                  e.preventDefault();
-                  handleNav('contact');
-                }
-              }}
+              onClick={closeMenus}
               className="text-left font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] block"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       )}

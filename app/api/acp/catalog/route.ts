@@ -1,0 +1,28 @@
+import { NextResponse } from 'next/server';
+import { PRODUCTS, CATEGORIES } from '@/src/data/products';
+import { SITE, SHOP } from '@/src/config/site';
+
+export async function GET() {
+  return NextResponse.json(
+    {
+      catalog: CATEGORIES.map((c) => ({
+        ...c,
+        url: `https://${SITE.domain}/shop/${c.slug}/`,
+        products: PRODUCTS.filter((p) => p.category === c.slug).map((p) => ({
+          slug: p.slug,
+          name: p.name,
+          price: p.price,
+          proof: p.proof,
+          age: p.age,
+          currency: SITE.currency,
+          url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+        })),
+      })),
+      currency: SITE.currency,
+      minimumOrderUSD: SHOP.minOrder,
+      freeShippingThresholdUSD: SHOP.freeShippingThreshold,
+      paymentMethods: SHOP.paymentMethods,
+    },
+    { headers: { 'Access-Control-Allow-Origin': '*' } }
+  );
+}

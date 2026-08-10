@@ -1,27 +1,22 @@
+'use client';
+
 import React from 'react';
-import { CartItem } from '../types';
-import { SmartImage } from './SmartImage';
 import { X, Trash2, ShoppingBag, ArrowRight, ShieldCheck, AlertCircle, Coins, Truck } from 'lucide-react';
 import { SITE, SHOP } from '../config/site';
+import { SmartImage } from './SmartImage';
+import { useAppState } from '../../app/providers';
 
-interface CartDrawerProps {
-  isOpen: boolean;
-  onClose: () => void;
-  cart: CartItem[];
-  onUpdateQuantity: (productId: string, quantity: number) => void;
-  onRemoveItem: (productId: string) => void;
-  onOpenCheckout: () => void;
-}
+export const CartDrawer: React.FC = () => {
+  const {
+    cart,
+    cartDrawerOpen,
+    setCartDrawerOpen,
+    updateQuantity,
+    removeItem,
+    setCheckoutModalOpen,
+  } = useAppState();
 
-export const CartDrawer: React.FC<CartDrawerProps> = ({
-  isOpen,
-  onClose,
-  cart,
-  onUpdateQuantity,
-  onRemoveItem,
-  onOpenCheckout,
-}) => {
-  if (!isOpen) return null;
+  if (!cartDrawerOpen) return null;
 
   const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
   const minOrderMet = subtotal >= SHOP.minOrder;
@@ -33,7 +28,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/80 backdrop-blur-sm animate-fade-in">
       <div className="absolute inset-y-0 right-0 max-w-full flex pl-10">
         <div className="w-screen max-w-md bg-[#160E08] border-l border-[#D4AF37]/30 text-amber-50 shadow-2xl flex flex-col">
-          
+
           {/* Header */}
           <div className="p-6 border-b border-amber-900/40 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -43,7 +38,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </h2>
             </div>
             <button
-              onClick={onClose}
+              onClick={() => setCartDrawerOpen(false)}
               className="p-2 rounded-full text-amber-300 hover:text-amber-100 hover:bg-amber-950/60 transition-all"
             >
               <X className="w-5 h-5" />
@@ -116,7 +111,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     <div className="flex items-center justify-between mt-2">
                       <div className="flex items-center bg-stone-800 rounded-lg border border-stone-700">
                         <button
-                          onClick={() => onUpdateQuantity(item.product.id, item.quantity - 1)}
+                          onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
                           className="px-2 py-0.5 text-xs text-amber-300 hover:bg-stone-700 rounded-l-lg"
                         >
                           -
@@ -125,7 +120,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           {item.quantity}
                         </span>
                         <button
-                          onClick={() => onUpdateQuantity(item.product.id, item.quantity + 1)}
+                          onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
                           className="px-2 py-0.5 text-xs text-amber-300 hover:bg-stone-700 rounded-r-lg"
                         >
                           +
@@ -139,7 +134,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   </div>
 
                   <button
-                    onClick={() => onRemoveItem(item.product.id)}
+                    onClick={() => removeItem(item.product.id)}
                     className="text-stone-500 hover:text-red-400 p-1"
                   >
                     <Trash2 className="w-4 h-4" />
@@ -175,8 +170,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               <button
                 disabled={!minOrderMet}
                 onClick={() => {
-                  onClose();
-                  onOpenCheckout();
+                  setCartDrawerOpen(false);
+                  setCheckoutModalOpen(true);
                 }}
                 className={`w-full py-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition-all shadow-lg ${
                   minOrderMet

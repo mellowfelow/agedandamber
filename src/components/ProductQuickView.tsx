@@ -1,27 +1,22 @@
+'use client';
+
 import React, { useState } from 'react';
-import { Product } from '../types';
 import { SmartImage } from './SmartImage';
 import { X, Flame, Shield, Truck, Coins, ShoppingBag, Check } from 'lucide-react';
 import { SITE, SHOP } from '../config/site';
+import { useAppState } from '../../app/providers';
 
-interface ProductQuickViewProps {
-  product: Product | null;
-  onClose: () => void;
-  onAddToCart: (product: Product, quantity: number) => void;
-}
-
-export const ProductQuickView: React.FC<ProductQuickViewProps> = ({
-  product,
-  onClose,
-  onAddToCart,
-}) => {
+export const ProductQuickView: React.FC = () => {
+  const { quickViewProduct: product, setQuickViewProduct, addToCart } = useAppState();
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
 
   if (!product) return null;
 
+  const onClose = () => setQuickViewProduct(null);
+
   const handleAdd = () => {
-    onAddToCart(product, quantity);
+    addToCart(product, quantity);
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };

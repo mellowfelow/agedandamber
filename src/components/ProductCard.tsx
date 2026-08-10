@@ -1,29 +1,26 @@
+'use client';
+
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Product } from '../types';
 import { SmartImage } from './SmartImage';
 import { ShoppingBag, Eye, Flame, Award, Plus, Minus, Check } from 'lucide-react';
 import { SITE } from '../config/site';
 import { getRouteUrl } from '../utils/routes';
+import { useAppState } from '../../app/providers';
 
 interface ProductCardProps {
   product: Product;
-  onAddToCart: (product: Product, quantity?: number) => void;
-  onQuickView: (product: Product) => void;
-  onSelectProduct: (product: Product) => void;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({
-  product,
-  onAddToCart,
-  onQuickView,
-  onSelectProduct,
-}) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const { addToCart, setQuickViewProduct } = useAppState();
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.stopPropagation();
-    onAddToCart(product, quantity);
+    addToCart(product, quantity);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 1800);
   };
@@ -37,6 +34,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     e.stopPropagation();
     setQuantity((prev) => prev + 1);
   };
+
+  const productUrl = getRouteUrl.product(product.category, product.slug);
 
   return (
     <div className="group bg-[#1A120B] rounded-2xl border border-[#D4AF37]/20 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-[#D4AF37]/10">
@@ -57,27 +56,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </span>
 
         {/* Image */}
-        <a 
-          href={getRouteUrl.product(product.category, product.slug)}
+        <Link
+          href={productUrl}
           className="w-full h-full flex items-center justify-center cursor-pointer transform group-hover:scale-105 transition-transform duration-500"
-          onClick={(e) => {
-            if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-              e.preventDefault();
-              onSelectProduct(product);
-            }
-          }}
         >
           <SmartImage
             src={product.images[0]}
             alt={product.name}
             className="max-h-full max-w-full object-contain filter drop-shadow-xl"
           />
-        </a>
+        </Link>
 
         {/* Quick View Hover Overlay */}
         <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 backdrop-blur-[2px] pointer-events-none">
           <button
-            onClick={() => onQuickView(product)}
+            onClick={() => setQuickViewProduct(product)}
             className="py-2.5 px-4 rounded-xl bg-white text-stone-900 font-semibold text-xs hover:bg-[#D4AF37] hover:text-[#140D08] transition-colors shadow-lg flex items-center gap-1.5 pointer-events-auto"
           >
             <Eye className="w-4 h-4" />
@@ -94,18 +87,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <span>{product.volume}</span>
           </div>
 
-          <a 
-            href={getRouteUrl.product(product.category, product.slug)}
-            onClick={(e) => {
-              if (!e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey && e.button === 0) {
-                e.preventDefault();
-                onSelectProduct(product);
-              }
-            }}
+          <Link
+            href={productUrl}
             className="font-serif font-bold text-amber-100 text-lg hover:text-[#D4AF37] cursor-pointer transition-colors line-clamp-2 leading-snug block"
           >
             {product.name}
-          </a>
+          </Link>
 
           <p className="text-amber-200/60 text-xs mt-2 line-clamp-2 leading-relaxed">
             {product.shortDescription}
@@ -140,7 +127,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           {/* Quantity Stepper & Add Button Row */}
           <div className="flex items-center gap-2">
             {/* Quantity Stepper */}
-            <div 
+            <div
               className="flex items-center rounded-xl bg-stone-900/90 border border-amber-900/40 p-1 shrink-0 shadow-inner"
               onClick={(e) => e.stopPropagation()}
             >

@@ -1,21 +1,13 @@
+'use client';
+
 import React, { useState } from 'react';
-import { CartItem } from '../types';
 import { X, ShieldCheck, Coins, CreditCard, CheckCircle2, ArrowRight } from 'lucide-react';
 import { SITE, SHOP, FORMS } from '../config/site';
+import { useAppState } from '../../app/providers';
 
-interface CheckoutModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  cart: CartItem[];
-  onClearCart: () => void;
-}
+export const CheckoutModal: React.FC = () => {
+  const { cart, checkoutModalOpen, setCheckoutModalOpen, clearCart } = useAppState();
 
-export const CheckoutModal: React.FC<CheckoutModalProps> = ({
-  isOpen,
-  onClose,
-  cart,
-  onClearCart,
-}) => {
   const [selectedPayment, setSelectedPayment] = useState('crypto-BTC');
   const [formData, setFormData] = useState({
     name: '',
@@ -32,7 +24,9 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  if (!isOpen) return null;
+  if (!checkoutModalOpen) return null;
+
+  const onClose = () => setCheckoutModalOpen(false);
 
   const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
   const isCrypto = selectedPayment.startsWith('crypto-');
@@ -77,13 +71,13 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
       .then(() => {
         setIsSubmitting(false);
         setIsSubmitted(true);
-        onClearCart();
+        clearCart();
       })
       .catch(() => {
         // Fallback for pending key or offline mode
         setIsSubmitting(false);
         setIsSubmitted(true);
-        onClearCart();
+        clearCart();
       });
   };
 

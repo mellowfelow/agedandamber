@@ -1,27 +1,22 @@
+'use client';
+
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Product } from '../types';
 import { SmartImage } from '../components/SmartImage';
 import { ProductCard } from '../components/ProductCard';
-import { ArrowLeft, Flame, Shield, Truck, Coins, ShoppingBag, Award, Check, Share2 } from 'lucide-react';
+import { ArrowLeft, Flame, Shield, Truck, Coins, ShoppingBag, Award, Check } from 'lucide-react';
 import { SITE, SHOP } from '../config/site';
+import { getRouteUrl } from '../utils/routes';
+import { useAppState } from '../../app/providers';
 
 interface ProductDetailViewProps {
   product: Product;
   allProducts: Product[];
-  onBack: () => void;
-  onAddToCart: (p: Product, qty: number) => void;
-  onQuickView: (p: Product) => void;
-  onSelectProduct: (p: Product) => void;
 }
 
-export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
-  product,
-  allProducts,
-  onBack,
-  onAddToCart,
-  onQuickView,
-  onSelectProduct,
-}) => {
+export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, allProducts }) => {
+  const { addToCart } = useAppState();
   const [selectedImg, setSelectedImg] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
@@ -31,7 +26,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
     .slice(0, 3);
 
   const handleAdd = () => {
-    onAddToCart(product, quantity);
+    addToCart(product, quantity);
     setAdded(true);
     setTimeout(() => setAdded(false), 2000);
   };
@@ -39,13 +34,13 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       {/* Back Button */}
-      <button
-        onClick={onBack}
+      <Link
+        href={getRouteUrl.shop(product.category)}
         className="inline-flex items-center gap-2 text-xs font-semibold text-amber-300 hover:text-amber-100 transition-colors"
       >
         <ArrowLeft className="w-4 h-4" />
         Back to Spirits Vault
-      </button>
+      </Link>
 
       {/* Main Detail Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -212,13 +207,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedProducts.map((p) => (
-              <ProductCard
-                key={p.id}
-                product={p}
-                onAddToCart={(prod, qty) => onAddToCart(prod, qty || 1)}
-                onQuickView={onQuickView}
-                onSelectProduct={onSelectProduct}
-              />
+              <ProductCard key={p.id} product={p} />
             ))}
           </div>
         </section>

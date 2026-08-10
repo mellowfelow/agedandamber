@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { MessageSquare, MessageCircle, Mail, Phone, X, ChevronUp } from 'lucide-react';
 import { CHAT, CONTACT } from '../config/site';

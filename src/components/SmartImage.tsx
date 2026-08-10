@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 
 interface SmartImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
