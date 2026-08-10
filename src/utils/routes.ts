@@ -1,12 +1,12 @@
 export const getRouteUrl = {
-  home: () => '/',
-  shop: (category?: string) => (category && category !== 'all' ? `/shop/${category}` : '/shop'),
-  product: (slug: string) => `/product/${slug}`,
-  about: () => '/about',
-  blog: (postSlug?: string) => (postSlug ? `/blog/${postSlug}` : '/blog'),
-  faq: () => '/faq',
-  wholesale: () => '/wholesale',
-  contact: () => '/contact',
+  home: () => '/#/',
+  shop: (category?: string) => (category && category !== 'all' ? `/#/shop/${category}` : '/#/shop'),
+  product: (slug: string) => `/#/product/${slug}`,
+  about: () => '/#/about',
+  blog: (postSlug?: string) => (postSlug ? `/#/blog/${postSlug}` : '/#/blog'),
+  faq: () => '/#/faq',
+  wholesale: () => '/#/wholesale',
+  contact: () => '/#/contact',
 };
 
 export interface RouteState {
@@ -17,12 +17,16 @@ export interface RouteState {
 }
 
 export function parseRoute(pathname: string, hash: string): RouteState {
-  // Support hash routing for fallback if needed
-  if (hash && hash.startsWith('#/')) {
-    const cleanHash = hash.replace(/^#\/?/, '').trim();
+  // Primary: Support hash routing for SPA deep-linking
+  if (hash && hash.includes('#/')) {
+    const cleanHash = hash.substring(hash.indexOf('#/') + 2).trim();
+    if (!cleanHash) {
+      return { view: 'home', category: 'all', productSlug: null, blogSlug: null };
+    }
     return parsePathParts(cleanHash.split('/'));
   }
 
+  // Fallback: Support pathname routing if hash is absent
   const cleanPath = pathname.replace(/^\/+|\/+$/g, '').trim();
   if (!cleanPath || cleanPath === 'home') {
     return { view: 'home', category: 'all', productSlug: null, blogSlug: null };

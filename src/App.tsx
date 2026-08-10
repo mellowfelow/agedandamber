@@ -64,9 +64,9 @@ export default function App() {
     };
   }, []);
 
-  // Navigation handlers that update window location pushState
+  // Navigation handlers that update window location hash
   const handleNavView = (view: string, category: string = 'all') => {
-    let url = '/';
+    let url = '/#/';
     if (view === 'home') url = getRouteUrl.home();
     else if (view === 'shop') url = getRouteUrl.shop(category);
     else if (view === 'about') url = getRouteUrl.about();
@@ -75,22 +75,26 @@ export default function App() {
     else if (view === 'wholesale') url = getRouteUrl.wholesale();
     else if (view === 'contact') url = getRouteUrl.contact();
 
-    if (window.location.pathname !== url) {
-      window.history.pushState({}, '', url);
+    const targetHash = url.substring(url.indexOf('#'));
+    if (window.location.hash !== targetHash) {
+      window.location.hash = targetHash;
+    } else {
+      setCurrentView(view);
+      setSelectedCategory(category);
+      window.scrollTo(0, 0);
     }
-    setCurrentView(view);
-    setSelectedCategory(category);
-    window.scrollTo(0, 0);
   };
 
   const handleSelectProduct = (product: Product) => {
     setSelectedProduct(product);
     const url = getRouteUrl.product(product.slug);
-    if (window.location.pathname !== url) {
-      window.history.pushState({}, '', url);
+    const targetHash = url.substring(url.indexOf('#'));
+    if (window.location.hash !== targetHash) {
+      window.location.hash = targetHash;
+    } else {
+      setCurrentView('product-detail');
+      window.scrollTo(0, 0);
     }
-    setCurrentView('product-detail');
-    window.scrollTo(0, 0);
   };
 
   // Cart State with localStorage
