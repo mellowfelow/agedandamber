@@ -338,11 +338,17 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, () => {
-    console.log(`[Aged And Amber] Server running on http://localhost:${PORT}`);
-  });
+  if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+      console.log(`[Aged And Amber] Server running on http://localhost:${PORT}`);
+    });
+  }
 }
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;
 
 
