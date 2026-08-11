@@ -1,0 +1,821 @@
+[
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Armand de Brignac Gold Brut Champagne.jpg",
+    "slug": "armand-de-brignac-gold-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/armand-de-brignac-gold-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Billecart-Salmon Brut Rosé Champagne.jpg",
+    "slug": "billecart-salmon-brut-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/billecart-salmon-brut-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Billecart-Salmon Brut Réserve Champagne.jpg",
+    "slug": "billecart-salmon-brut-reserve-champagne",
+    "imagePath": "/images/products/champagne-sparkling/billecart-salmon-brut-reserve-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Bollinger La Grande Année Champagne.jpg",
+    "slug": "bollinger-la-grande-annee-champagne",
+    "imagePath": "/images/products/champagne-sparkling/bollinger-la-grande-annee-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Bollinger Special Cuvée Brut Champagne.jpg",
+    "slug": "bollinger-special-cuvee-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/bollinger-special-cuvee-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Delamotte Blanc de Blancs Champagne.webp",
+    "slug": "delamotte-blanc-de-blancs-champagne",
+    "imagePath": "/images/products/champagne-sparkling/delamotte-blanc-de-blancs-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Dom Pérignon Rosé Champagne.jpg",
+    "slug": "dom-perignon-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/dom-perignon-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Dom Pérignon Vintage Champagne.png",
+    "slug": "dom-perignon-vintage-champagne",
+    "imagePath": "/images/products/champagne-sparkling/dom-perignon-vintage-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Krug Grande Cuvée Champagne.webp",
+    "slug": "krug-grande-cuvee-champagne",
+    "imagePath": "/images/products/champagne-sparkling/krug-grande-cuvee-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Laurent-Perrier Cuvée Rosé Champagne.jpg",
+    "slug": "laurent-perrier-cuvee-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/laurent-perrier-cuvee-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Laurent-Perrier La Cuvée Brut Champagne.jpg",
+    "slug": "laurent-perrier-la-cuvee-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/laurent-perrier-la-cuvee-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Louis Roederer Cristal Champagne.png",
+    "slug": "louis-roederer-cristal-champagne",
+    "imagePath": "/images/products/champagne-sparkling/louis-roederer-cristal-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Moët & Chandon Grand Vintage Champagne.webp",
+    "slug": "moet-chandon-grand-vintage-champagne",
+    "imagePath": "/images/products/champagne-sparkling/moet-chandon-grand-vintage-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Moët & Chandon Impérial Brut Champagne.jpg",
+    "slug": "moet-chandon-imperial-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/moet-chandon-imperial-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Moët & Chandon Impérial Rosé Champagne.jpg",
+    "slug": "moet-chandon-imperial-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/moet-chandon-imperial-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Nicolas Feuillatte Réserve Exclusive Brut Champagne.jpg",
+    "slug": "nicolas-feuillatte-reserve-exclusive-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/nicolas-feuillatte-reserve-exclusive-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Perrier-Jouët Blanc de Blancs Champagne.jpg",
+    "slug": "perrier-jouet-blanc-de-blancs-champagne",
+    "imagePath": "/images/products/champagne-sparkling/perrier-jouet-blanc-de-blancs-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Pierre Péters Cuvée de Réserve Blanc de Blancs.webp",
+    "slug": "pierre-peters-cuvee-de-reserve-blanc-de-blancs",
+    "imagePath": "/images/products/champagne-sparkling/pierre-peters-cuvee-de-reserve-blanc-de-blancs.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Piper-Heidsieck Cuvée Brut Champagne.jpg",
+    "slug": "piper-heidsieck-cuvee-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/piper-heidsieck-cuvee-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Ruinart Blanc de Blancs Champagne.jpg",
+    "slug": "ruinart-blanc-de-blancs-champagne",
+    "imagePath": "/images/products/champagne-sparkling/ruinart-blanc-de-blancs-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Taittinger Brut La Française Champagne.jpg",
+    "slug": "taittinger-brut-la-francaise-champagne",
+    "imagePath": "/images/products/champagne-sparkling/taittinger-brut-la-francaise-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Taittinger Prestige Rosé Champagne.jpg",
+    "slug": "taittinger-prestige-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/taittinger-prestige-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Veuve Clicquot Rosé Champagne.jpg",
+    "slug": "veuve-clicquot-rose-champagne",
+    "imagePath": "/images/products/champagne-sparkling/veuve-clicquot-rose-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Veuve Clicquot Vintage Champagne.jpg",
+    "slug": "veuve-clicquot-vintage-champagne",
+    "imagePath": "/images/products/champagne-sparkling/veuve-clicquot-vintage-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Champagne",
+    "originalFile": "champagne/Veuve Clicquot Yellow Label Brut Champagne.jpg",
+    "slug": "veuve-clicquot-yellow-label-brut-champagne",
+    "imagePath": "/images/products/champagne-sparkling/veuve-clicquot-yellow-label-brut-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Albert Bichot Crémant de Bourgogne Brut Réserve.jpg",
+    "slug": "albert-bichot-cremant-de-bourgogne-brut-reserve",
+    "imagePath": "/images/products/champagne-sparkling/albert-bichot-cremant-de-bourgogne-brut-reserve.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/Bottega Gold Prosecco.webp",
+    "slug": "bottega-gold-prosecco",
+    "imagePath": "/images/products/champagne-sparkling/bottega-gold-prosecco.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Chandon California Brut Classic.jpg",
+    "slug": "chandon-california-brut-classic",
+    "imagePath": "/images/products/champagne-sparkling/chandon-california-brut-classic.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/Chandon California Brut Rosé.png",
+    "slug": "chandon-california-brut-rose",
+    "imagePath": "/images/products/champagne-sparkling/chandon-california-brut-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Codorníu Clásico Brut Cava.avif",
+    "slug": "codorniu-clasico-brut-cava",
+    "imagePath": "/images/products/champagne-sparkling/codorniu-clasico-brut-cava.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Freixenet Cordon Negro Brut Cava.webp",
+    "slug": "freixenet-cordon-negro-brut-cava",
+    "imagePath": "/images/products/champagne-sparkling/freixenet-cordon-negro-brut-cava.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/Freixenet Italian Rosé Sparkling Wine.jpg",
+    "slug": "freixenet-italian-rose-sparkling-wine",
+    "imagePath": "/images/products/champagne-sparkling/freixenet-italian-rose-sparkling-wine.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Gramona Imperial Gran Reserva Cava.webp",
+    "slug": "gramona-imperial-gran-reserva-cava",
+    "imagePath": "/images/products/champagne-sparkling/gramona-imperial-gran-reserva-cava.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Juvé & Camps Reserva de la Familia Cava.jpg",
+    "slug": "juve-camps-reserva-de-la-familia-cava",
+    "imagePath": "/images/products/champagne-sparkling/juve-camps-reserva-de-la-familia-cava.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Korbel Brut California Champagne.png",
+    "slug": "korbel-brut-california-champagne",
+    "imagePath": "/images/products/champagne-sparkling/korbel-brut-california-champagne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/La Marca Luminore Prosecco.webp",
+    "slug": "la-marca-luminore-prosecco",
+    "imagePath": "/images/products/champagne-sparkling/la-marca-luminore-prosecco.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/La Marca Prosecco Rosé.jpg",
+    "slug": "la-marca-prosecco-rose",
+    "imagePath": "/images/products/champagne-sparkling/la-marca-prosecco-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/La Marca Prosecco.webp",
+    "slug": "la-marca-prosecco",
+    "imagePath": "/images/products/champagne-sparkling/la-marca-prosecco.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Louis Bouillot Perle de Vigne Crémant de Bourgogne.jpg",
+    "slug": "louis-bouillot-perle-de-vigne-cremant-de-bourgogne",
+    "imagePath": "/images/products/champagne-sparkling/louis-bouillot-perle-de-vigne-cremant-de-bourgogne.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/Lucien Albrecht Crémant d'Alsace Brut Rosé.jpg",
+    "slug": "lucien-albrecht-cremant-dalsace-brut-rose",
+    "imagePath": "/images/products/champagne-sparkling/lucien-albrecht-cremant-dalsace-brut-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Lucien Albrecht Crémant d'Alsace Brut.jpg",
+    "slug": "lucien-albrecht-cremant-dalsace-brut",
+    "imagePath": "/images/products/champagne-sparkling/lucien-albrecht-cremant-dalsace-brut.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/Mionetto Prosecco Brut.webp",
+    "slug": "mionetto-prosecco-brut",
+    "imagePath": "/images/products/champagne-sparkling/mionetto-prosecco-brut.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/Mionetto Prosecco Rosé.webp",
+    "slug": "mionetto-prosecco-rose",
+    "imagePath": "/images/products/champagne-sparkling/mionetto-prosecco-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Mumm Napa Brut Prestige.webp",
+    "slug": "mumm-napa-brut-prestige",
+    "imagePath": "/images/products/champagne-sparkling/mumm-napa-brut-prestige.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/Nino Franco Rustico Valdobbiadene Prosecco Superiore.jpg",
+    "slug": "nino-franco-rustico-valdobbiadene-prosecco-superiore",
+    "imagePath": "/images/products/champagne-sparkling/nino-franco-rustico-valdobbiadene-prosecco-superiore.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "sparkling wine/Roederer Estate Brut Rosé.png",
+    "slug": "roederer-estate-brut-rose",
+    "imagePath": "/images/products/champagne-sparkling/roederer-estate-brut-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Roederer Estate Brut Sparkling Wine.webp",
+    "slug": "roederer-estate-brut-sparkling-wine",
+    "imagePath": "/images/products/champagne-sparkling/roederer-estate-brut-sparkling-wine.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/Ruffino Prosecco.jpg",
+    "slug": "ruffino-prosecco",
+    "imagePath": "/images/products/champagne-sparkling/ruffino-prosecco.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Prosecco",
+    "originalFile": "sparkling wine/Santa Margherita Prosecco Superiore DOCG.webp",
+    "slug": "santa-margherita-prosecco-superiore-docg",
+    "imagePath": "/images/products/champagne-sparkling/santa-margherita-prosecco-superiore-docg.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Wine",
+    "originalFile": "sparkling wine/Schramsberg Blanc de Blancs Sparkling Wine.webp",
+    "slug": "schramsberg-blanc-de-blancs-sparkling-wine",
+    "imagePath": "/images/products/champagne-sparkling/schramsberg-blanc-de-blancs-sparkling-wine.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Segura Viudas Brut Reserva Cava.jpg",
+    "slug": "segura-viudas-brut-reserva-cava",
+    "imagePath": "/images/products/champagne-sparkling/segura-viudas-brut-reserva-cava.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Cava",
+    "originalFile": "sparkling wine/Segura Viudas Heredad Reserva Cava.webp",
+    "slug": "segura-viudas-heredad-reserva-cava",
+    "imagePath": "/images/products/champagne-sparkling/segura-viudas-heredad-reserva-cava.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/Alvear Solera 1927 Pedro Ximénez Sherry.jpg",
+    "slug": "alvear-solera-1927-pedro-ximenez-sherry",
+    "imagePath": "/images/products/fine-wine/alvear-solera-1927-pedro-ximenez-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Avaline Red Vegan Wine.jpg",
+    "slug": "avaline-red-vegan-wine",
+    "imagePath": "/images/products/fine-wine/avaline-red-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Avaline Rosé Vegan Wine.webp",
+    "slug": "avaline-rose-vegan-wine",
+    "imagePath": "/images/products/fine-wine/avaline-rose-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Avaline White Vegan Wine.jpg",
+    "slug": "avaline-white-vegan-wine",
+    "imagePath": "/images/products/fine-wine/avaline-white-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Banfi Rosa Regale Brachetto d'Acqui.webp",
+    "slug": "banfi-rosa-regale-brachetto-dacqui",
+    "imagePath": "/images/products/fine-wine/banfi-rosa-regale-brachetto-dacqui.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Benziger Organic Cabernet Sauvignon.webp",
+    "slug": "benziger-organic-cabernet-sauvignon",
+    "imagePath": "/images/products/fine-wine/benziger-organic-cabernet-sauvignon.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Bonterra Organic Cabernet Sauvignon.png",
+    "slug": "bonterra-organic-cabernet-sauvignon",
+    "imagePath": "/images/products/fine-wine/bonterra-organic-cabernet-sauvignon.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Bonterra Organic Chardonnay.webp",
+    "slug": "bonterra-organic-chardonnay",
+    "imagePath": "/images/products/fine-wine/bonterra-organic-chardonnay.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Bonterra Organic Merlot.jpg",
+    "slug": "bonterra-organic-merlot",
+    "imagePath": "/images/products/fine-wine/bonterra-organic-merlot.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Bonterra Organic Sauvignon Blanc.jpg",
+    "slug": "bonterra-organic-sauvignon-blanc",
+    "imagePath": "/images/products/fine-wine/bonterra-organic-sauvignon-blanc.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Broc Cellars Love Red Natural Wine.jpg",
+    "slug": "broc-cellars-love-red-natural-wine",
+    "imagePath": "/images/products/fine-wine/broc-cellars-love-red-natural-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Broc Cellars Love Rosé Natural Wine.webp",
+    "slug": "broc-cellars-love-rose-natural-wine",
+    "imagePath": "/images/products/fine-wine/broc-cellars-love-rose-natural-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/Croft Original Pale Cream Sherry.webp",
+    "slug": "croft-original-pale-cream-sherry",
+    "imagePath": "/images/products/fine-wine/croft-original-pale-cream-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Domaine Bousquet Organic Malbec.jpg",
+    "slug": "domaine-bousquet-organic-malbec",
+    "imagePath": "/images/products/fine-wine/domaine-bousquet-organic-malbec.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Dr. Loosen Riesling Eiswein.jpg",
+    "slug": "dr-loosen-riesling-eiswein",
+    "imagePath": "/images/products/fine-wine/dr-loosen-riesling-eiswein.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Emiliana Natura Cabernet Sauvignon Vegan Wine.webp",
+    "slug": "emiliana-natura-cabernet-sauvignon-vegan-wine",
+    "imagePath": "/images/products/fine-wine/emiliana-natura-cabernet-sauvignon-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Emiliana Natura Chardonnay Vegan Wine.webp",
+    "slug": "emiliana-natura-chardonnay-vegan-wine",
+    "imagePath": "/images/products/fine-wine/emiliana-natura-chardonnay-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Field Recordings Skins Orange Wine.webp",
+    "slug": "field-recordings-skins-orange-wine",
+    "imagePath": "/images/products/fine-wine/field-recordings-skins-orange-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Fonseca Bin 27 Finest Reserve Port.jpg",
+    "slug": "fonseca-bin-27-finest-reserve-port",
+    "imagePath": "/images/products/fine-wine/fonseca-bin-27-finest-reserve-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Foradori Teroldego Natural Wine.webp",
+    "slug": "foradori-teroldego-natural-wine",
+    "imagePath": "/images/products/fine-wine/foradori-teroldego-natural-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Frey Organic Natural Red Blend.webp",
+    "slug": "frey-organic-natural-red-blend",
+    "imagePath": "/images/products/fine-wine/frey-organic-natural-red-blend.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Frey Organic Pinot Noir.jpg",
+    "slug": "frey-organic-pinot-noir",
+    "imagePath": "/images/products/fine-wine/frey-organic-pinot-noir.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/González Byass Néctar Pedro Ximénez Sherry.jpg",
+    "slug": "gonzalez-byass-nectar-pedro-ximenez-sherry",
+    "imagePath": "/images/products/fine-wine/gonzalez-byass-nectar-pedro-ximenez-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Graham's 10 Year Old Tawny Port.jpg",
+    "slug": "grahams-10-year-old-tawny-port",
+    "imagePath": "/images/products/fine-wine/grahams-10-year-old-tawny-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Graham's 20 Year Old Tawny Port.jpg",
+    "slug": "grahams-20-year-old-tawny-port",
+    "imagePath": "/images/products/fine-wine/grahams-20-year-old-tawny-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Graham's Late Bottled Vintage Port.webp",
+    "slug": "grahams-late-bottled-vintage-port",
+    "imagePath": "/images/products/fine-wine/grahams-late-bottled-vintage-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Graham's Six Grapes Reserve Port.jpg",
+    "slug": "grahams-six-grapes-reserve-port",
+    "imagePath": "/images/products/fine-wine/grahams-six-grapes-reserve-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/Harveys Bristol Cream Sherry.jpg",
+    "slug": "harveys-bristol-cream-sherry",
+    "imagePath": "/images/products/fine-wine/harveys-bristol-cream-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Inniskillin Cabernet Franc Icewine.webp",
+    "slug": "inniskillin-cabernet-franc-icewine",
+    "imagePath": "/images/products/fine-wine/inniskillin-cabernet-franc-icewine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Inniskillin Vidal Icewine.jpg",
+    "slug": "inniskillin-vidal-icewine",
+    "imagePath": "/images/products/fine-wine/inniskillin-vidal-icewine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Jackson-Triggs Vidal Icewine.webp",
+    "slug": "jackson-triggs-vidal-icewine",
+    "imagePath": "/images/products/fine-wine/jackson-triggs-vidal-icewine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Las Jaras Superbloom Natural Wine.webp",
+    "slug": "las-jaras-superbloom-natural-wine",
+    "imagePath": "/images/products/fine-wine/las-jaras-superbloom-natural-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/Lustau East India Solera Sherry.webp",
+    "slug": "lustau-east-india-solera-sherry",
+    "imagePath": "/images/products/fine-wine/lustau-east-india-solera-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Sherry",
+    "originalFile": "wine 2/Lustau San Emilio Pedro Ximénez Sherry.webp",
+    "slug": "lustau-san-emilio-pedro-ximenez-sherry",
+    "imagePath": "/images/products/fine-wine/lustau-san-emilio-pedro-ximenez-sherry.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Martha Stoumen Post Flirtation Red Wine.webp",
+    "slug": "martha-stoumen-post-flirtation-red-wine",
+    "imagePath": "/images/products/fine-wine/martha-stoumen-post-flirtation-red-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Meinklang Mulatschak Natural Wine.webp",
+    "slug": "meinklang-mulatschak-natural-wine",
+    "imagePath": "/images/products/fine-wine/meinklang-mulatschak-natural-wine.webp"
+  },
+  {
+    "category": "na-champagne-sparkling",
+    "subcategory": "Non-Alcoholic Sparkling Wine",
+    "originalFile": "wine 2/Noughty Alcohol-Free Sparkling Chardonnay Vegan Wine.webp",
+    "slug": "noughty-alcohol-free-sparkling-chardonnay-vegan-wine",
+    "imagePath": "/images/products/na-champagne-sparkling/noughty-alcohol-free-sparkling-chardonnay-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Peller Estates Vidal Icewine.webp",
+    "slug": "peller-estates-vidal-icewine",
+    "imagePath": "/images/products/fine-wine/peller-estates-vidal-icewine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Pizzolato Organic Pinot Grigio.jpeg",
+    "slug": "pizzolato-organic-pinot-grigio",
+    "imagePath": "/images/products/fine-wine/pizzolato-organic-pinot-grigio.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Icewine & Dessert Wine",
+    "originalFile": "wine 2/Royal Tokaji 5 Puttonyos Aszú.avif",
+    "slug": "royal-tokaji-5-puttonyos-aszu",
+    "imagePath": "/images/products/fine-wine/royal-tokaji-5-puttonyos-aszu.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Stellar Organics Running Duck Red Wine.jpg",
+    "slug": "stellar-organics-running-duck-red-wine",
+    "imagePath": "/images/products/fine-wine/stellar-organics-running-duck-red-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/Subject to Change Lune Juice Natural Wine.webp",
+    "slug": "subject-to-change-lune-juice-natural-wine",
+    "imagePath": "/images/products/fine-wine/subject-to-change-lune-juice-natural-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Taylor Fladgate 10 Year Old Tawny Port.webp",
+    "slug": "taylor-fladgate-10-year-old-tawny-port",
+    "imagePath": "/images/products/fine-wine/taylor-fladgate-10-year-old-tawny-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Taylor Fladgate 20 Year Old Tawny Port.jpg",
+    "slug": "taylor-fladgate-20-year-old-tawny-port",
+    "imagePath": "/images/products/fine-wine/taylor-fladgate-20-year-old-tawny-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Taylor Fladgate 40 Year Old Tawny Port.webp",
+    "slug": "taylor-fladgate-40-year-old-tawny-port",
+    "imagePath": "/images/products/fine-wine/taylor-fladgate-40-year-old-tawny-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Taylor Fladgate First Estate Reserve Ruby Port.webp",
+    "slug": "taylor-fladgate-first-estate-reserve-ruby-port",
+    "imagePath": "/images/products/fine-wine/taylor-fladgate-first-estate-reserve-ruby-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Port",
+    "originalFile": "wine 2/Taylor Fladgate Late Bottled Vintage Port.webp",
+    "slug": "taylor-fladgate-late-bottled-vintage-port",
+    "imagePath": "/images/products/fine-wine/taylor-fladgate-late-bottled-vintage-port.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/The Organic Wine Co. Our Daily Red Blend.jpg",
+    "slug": "the-organic-wine-co-our-daily-red-blend",
+    "imagePath": "/images/products/fine-wine/the-organic-wine-co-our-daily-red-blend.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Organic & Natural Wine",
+    "originalFile": "wine 2/The Vegan Vine Red Blend Vegan Wine.jpg",
+    "slug": "the-vegan-vine-red-blend-vegan-wine",
+    "imagePath": "/images/products/fine-wine/the-vegan-vine-red-blend-vegan-wine.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/AIX Côtes de Provence Rosé.avif",
+    "slug": "aix-cotes-de-provence-rose",
+    "imagePath": "/images/products/fine-wine/aix-cotes-de-provence-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Barefoot Pink Moscato.webp",
+    "slug": "barefoot-pink-moscato",
+    "imagePath": "/images/products/fine-wine/barefoot-pink-moscato.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Bartenura Rosé.webp",
+    "slug": "bartenura-rose",
+    "imagePath": "/images/products/fine-wine/bartenura-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Chateau d'Esclans Rock Angel Rosé.webp",
+    "slug": "chateau-desclans-rock-angel-rose",
+    "imagePath": "/images/products/fine-wine/chateau-desclans-rock-angel-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Domaines Ott Château de Selle Rosé.jpg",
+    "slug": "domaines-ott-chateau-de-selle-rose",
+    "imagePath": "/images/products/fine-wine/domaines-ott-chateau-de-selle-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Hampton Water Rosé.jpg",
+    "slug": "hampton-water-rose",
+    "imagePath": "/images/products/fine-wine/hampton-water-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/La Vieille Ferme Rosé.jpg",
+    "slug": "la-vieille-ferme-rose",
+    "imagePath": "/images/products/fine-wine/la-vieille-ferme-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/M de Minuty Côtes de Provence Rosé.jpg",
+    "slug": "m-de-minuty-cotes-de-provence-rose",
+    "imagePath": "/images/products/fine-wine/m-de-minuty-cotes-de-provence-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Miraval Côtes de Provence Rosé.webp",
+    "slug": "miraval-cotes-de-provence-rose",
+    "imagePath": "/images/products/fine-wine/miraval-cotes-de-provence-rose.webp"
+  },
+  {
+    "category": "champagne-sparkling",
+    "subcategory": "Sparkling Rosé",
+    "originalFile": "wine 2/rose wine/Mumm Napa Brut Rosé.webp",
+    "slug": "mumm-napa-brut-rose",
+    "imagePath": "/images/products/champagne-sparkling/mumm-napa-brut-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Risata Moscato Rosé.jpg",
+    "slug": "risata-moscato-rose",
+    "imagePath": "/images/products/fine-wine/risata-moscato-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Stella Rosa Pink Rosé.jpg",
+    "slug": "stella-rosa-pink-rose",
+    "imagePath": "/images/products/fine-wine/stella-rosa-pink-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Stella Rosa Strawberry Rosé.webp",
+    "slug": "stella-rosa-strawberry-rose",
+    "imagePath": "/images/products/fine-wine/stella-rosa-strawberry-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Sutter Home White Zinfandel Rosé.webp",
+    "slug": "sutter-home-white-zinfandel-rose",
+    "imagePath": "/images/products/fine-wine/sutter-home-white-zinfandel-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/The Palm by Whispering Angel Rosé.webp",
+    "slug": "the-palm-by-whispering-angel-rose",
+    "imagePath": "/images/products/fine-wine/the-palm-by-whispering-angel-rose.webp"
+  },
+  {
+    "category": "fine-wine",
+    "subcategory": "Rosé Wine",
+    "originalFile": "wine 2/rose wine/Whispering Angel Côtes de Provence Rosé.webp",
+    "slug": "whispering-angel-cotes-de-provence-rose",
+    "imagePath": "/images/products/fine-wine/whispering-angel-cotes-de-provence-rose.webp"
+  }
+]
