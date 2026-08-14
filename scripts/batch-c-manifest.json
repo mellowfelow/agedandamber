@@ -1,0 +1,1738 @@
+[
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "312 Urban Wheat Ale",
+    "originalFile": "beer/312 Urban Wheat Ale — 6 x 12oz bottles.jpg",
+    "slug": "312-urban-wheat-ale",
+    "imagePath": "/images/products/beer/312-urban-wheat-ale.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Allagash White Belgian-Style Wheat Beer (6 x 12oz bottles)",
+    "originalFile": "beer/Allagash White Belgian-Style Wheat Beer — 6 x 12oz bottles.jpg",
+    "slug": "allagash-white-belgian-style-wheat-beer-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/allagash-white-belgian-style-wheat-beer-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Allagash White Belgian-Style Wheat Beer (6 x 12oz can)",
+    "originalFile": "beer/Allagash White Belgian-Style Wheat Beer — 6 x 12oz can.jpg",
+    "slug": "allagash-white-belgian-style-wheat-beer-6-x-12oz-can",
+    "imagePath": "/images/products/beer/allagash-white-belgian-style-wheat-beer-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Asahi Super Dry Japanese Lager",
+    "originalFile": "beer/Asahi Super Dry Japanese Lager — 6 x 12oz bottles.webp",
+    "slug": "asahi-super-dry-japanese-lager",
+    "imagePath": "/images/products/beer/asahi-super-dry-japanese-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Bell's Oberon Wheat Ale (6 x 12oz bottles)",
+    "originalFile": "beer/Bell's Oberon Wheat Ale — 6 x 12oz bottles.webp",
+    "slug": "bells-oberon-wheat-ale-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/bells-oberon-wheat-ale-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Bell's Oberon Wheat Ale (6 x 12oz can)",
+    "originalFile": "beer/Bell's Oberon Wheat Ale — 6 x 12oz can.jpg",
+    "slug": "bells-oberon-wheat-ale-6-x-12oz-can",
+    "imagePath": "/images/products/beer/bells-oberon-wheat-ale-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Bell's Two Hearted Ale (6 x 12oz bottles)",
+    "originalFile": "beer/Bell's Two Hearted Ale — 6 x 12oz bottles.avif",
+    "slug": "bells-two-hearted-ale-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/bells-two-hearted-ale-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Bell's Two Hearted Ale (6 x 12oz can)",
+    "originalFile": "beer/Bell's Two Hearted Ale — 6 x 12oz can.webp",
+    "slug": "bells-two-hearted-ale-6-x-12oz-can",
+    "imagePath": "/images/products/beer/bells-two-hearted-ale-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Blue Moon Belgian White (6 x 12oz bottles)",
+    "originalFile": "beer/Blue Moon Belgian White — 6 x 12oz bottles.avif",
+    "slug": "blue-moon-belgian-white-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/blue-moon-belgian-white-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Blue Moon Belgian White (6 x 12oz can)",
+    "originalFile": "beer/Blue Moon Belgian White — 6 x 12oz can.avif",
+    "slug": "blue-moon-belgian-white-6-x-12oz-can",
+    "imagePath": "/images/products/beer/blue-moon-belgian-white-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Brooklyn Lager (6 x 12oz bottles)",
+    "originalFile": "beer/Brooklyn Lager — 6 x 12oz bottles.webp",
+    "slug": "brooklyn-lager-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/brooklyn-lager-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Brooklyn Lager (6 x 12oz can)",
+    "originalFile": "beer/Brooklyn Lager — 6 x 12oz can.jpg",
+    "slug": "brooklyn-lager-6-x-12oz-can",
+    "imagePath": "/images/products/beer/brooklyn-lager-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Brooklyn Pilsner",
+    "originalFile": "beer/Brooklyn Pilsner — 6 x 12oz cans.jpg",
+    "slug": "brooklyn-pilsner",
+    "imagePath": "/images/products/beer/brooklyn-pilsner.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Bud Light American Light Lager",
+    "originalFile": "beer/Bud Light American Light Lager — 12 x 12oz cans.avif",
+    "slug": "bud-light-american-light-lager",
+    "imagePath": "/images/products/beer/bud-light-american-light-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Budweiser American Lager",
+    "originalFile": "beer/Budweiser American Lager — 12 x 12oz cans.jpg",
+    "slug": "budweiser-american-lager",
+    "imagePath": "/images/products/beer/budweiser-american-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Busch Light American Light Lager",
+    "originalFile": "beer/Busch Light American Light Lager — 12 x 12oz cans.jpg",
+    "slug": "busch-light-american-light-lager",
+    "imagePath": "/images/products/beer/busch-light-american-light-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Chimay Blue Belgian Strong Ale",
+    "originalFile": "beer/Chimay Blue Belgian Strong Ale — 750ml bottle.webp",
+    "slug": "chimay-blue-belgian-strong-ale",
+    "imagePath": "/images/products/beer/chimay-blue-belgian-strong-ale.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Coors Banquet American Lager",
+    "originalFile": "beer/Coors Banquet American Lager — 12 x 12oz cans.webp",
+    "slug": "coors-banquet-american-lager",
+    "imagePath": "/images/products/beer/coors-banquet-american-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Coors Light American Light Lager",
+    "originalFile": "beer/Coors Light American Light Lager — 12 x 12oz cans.webp",
+    "slug": "coors-light-american-light-lager",
+    "imagePath": "/images/products/beer/coors-light-american-light-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Corona Extra Mexican Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Corona Extra Mexican Lager — 12 x 12oz bottles.webp",
+    "slug": "corona-extra-mexican-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/corona-extra-mexican-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Corona Extra Mexican Lager (12 x 12oz cans)",
+    "originalFile": "beer/Corona Extra Mexican Lager — 12 x 12oz cans.webp",
+    "slug": "corona-extra-mexican-lager-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/corona-extra-mexican-lager-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Corona Light Mexican Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Corona Light Mexican Lager — 12 x 12oz bottles.webp",
+    "slug": "corona-light-mexican-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/corona-light-mexican-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Corona Light Mexican Lager (12 x 12oz cans)",
+    "originalFile": "beer/Corona Light Mexican Lager — 12 x 12oz cans.webp",
+    "slug": "corona-light-mexican-lager-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/corona-light-mexican-lager-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Delirium Tremens Belgian Strong Ale",
+    "originalFile": "beer/Delirium Tremens Belgian Strong Ale — 750ml bottle.jpg",
+    "slug": "delirium-tremens-belgian-strong-ale",
+    "imagePath": "/images/products/beer/delirium-tremens-belgian-strong-ale.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Deschutes Black Butte Porter",
+    "originalFile": "beer/Deschutes Black Butte Porter — 6 x 12oz bottles.png",
+    "slug": "deschutes-black-butte-porter",
+    "imagePath": "/images/products/beer/deschutes-black-butte-porter.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Dogfish Head 60 Minute IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Dogfish Head 60 Minute IPA — 6 x 12oz bottles.webp",
+    "slug": "dogfish-head-60-minute-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/dogfish-head-60-minute-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Dogfish Head 60 Minute IPA (6 x 12oz cans)",
+    "originalFile": "beer/Dogfish Head 60 Minute IPA — 6 x 12oz cans.webp",
+    "slug": "dogfish-head-60-minute-ipa-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/dogfish-head-60-minute-ipa-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Dogfish Head 90 Minute Imperial IPA (4 x 12oz bottles)",
+    "originalFile": "beer/Dogfish Head 90 Minute Imperial IPA — 4 x 12oz bottles.jpg",
+    "slug": "dogfish-head-90-minute-imperial-ipa-4-x-12oz-bottles",
+    "imagePath": "/images/products/beer/dogfish-head-90-minute-imperial-ipa-4-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Dogfish Head 90 Minute Imperial IPA (4 x 12oz can)",
+    "originalFile": "beer/Dogfish Head 90 Minute Imperial IPA — 4 x 12oz can.avif",
+    "slug": "dogfish-head-90-minute-imperial-ipa-4-x-12oz-can",
+    "imagePath": "/images/products/beer/dogfish-head-90-minute-imperial-ipa-4-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Dos Equis Lager Especial",
+    "originalFile": "beer/Dos Equis Lager Especial — 12 x 12oz bottles.webp",
+    "slug": "dos-equis-lager-especial",
+    "imagePath": "/images/products/beer/dos-equis-lager-especial.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Duvel Belgian Golden Ale",
+    "originalFile": "beer/Duvel Belgian Golden Ale — 4 x 11.2oz bottles.webp",
+    "slug": "duvel-belgian-golden-ale",
+    "imagePath": "/images/products/beer/duvel-belgian-golden-ale.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Elysian Space Dust IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Elysian Space Dust IPA — 6 x 12oz bottles.avif",
+    "slug": "elysian-space-dust-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/elysian-space-dust-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Elysian Space Dust IPA (6 x 12oz cans)",
+    "originalFile": "beer/Elysian Space Dust IPA — 6 x 12oz cans.webp",
+    "slug": "elysian-space-dust-ipa-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/elysian-space-dust-ipa-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Firestone Walker Parabola Imperial Stout",
+    "originalFile": "beer/Firestone Walker Parabola Imperial Stout — 12oz bottle.webp",
+    "slug": "firestone-walker-parabola-imperial-stout",
+    "imagePath": "/images/products/beer/firestone-walker-parabola-imperial-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Firestone Walker Union Jack IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Firestone Walker Union Jack IPA — 6 x 12oz bottles.webp",
+    "slug": "firestone-walker-union-jack-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/firestone-walker-union-jack-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Firestone Walker Union Jack IPA (6 x 12oz cans)",
+    "originalFile": "beer/Firestone Walker Union Jack IPA — 6 x 12oz cans.jpg",
+    "slug": "firestone-walker-union-jack-ipa-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/firestone-walker-union-jack-ipa-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Founders All Day IPA",
+    "originalFile": "beer/Founders All Day IPA — 15 x 12oz cans.jpg",
+    "slug": "founders-all-day-ipa",
+    "imagePath": "/images/products/beer/founders-all-day-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Founders Breakfast Stout",
+    "originalFile": "beer/Founders Breakfast Stout — 4 x 12oz bottles.webp",
+    "slug": "founders-breakfast-stout",
+    "imagePath": "/images/products/beer/founders-breakfast-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Founders KBS Imperial Stout",
+    "originalFile": "beer/Founders KBS Imperial Stout — 4 x 12oz bottles.webp",
+    "slug": "founders-kbs-imperial-stout",
+    "imagePath": "/images/products/beer/founders-kbs-imperial-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Founders Porter",
+    "originalFile": "beer/Founders Porter — 6 x 12oz bottles.jpg",
+    "slug": "founders-porter",
+    "imagePath": "/images/products/beer/founders-porter.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Goose Island Bourbon County Brand Stout",
+    "originalFile": "beer/Goose Island Bourbon County Brand Stout — 16.9oz bottle.jpg",
+    "slug": "goose-island-bourbon-county-brand-stout",
+    "imagePath": "/images/products/beer/goose-island-bourbon-county-brand-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Goose Island IPA",
+    "originalFile": "beer/Goose Island IPA — 6 x 12oz bottles.jpg",
+    "slug": "goose-island-ipa",
+    "imagePath": "/images/products/beer/goose-island-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Great Lakes Edmund Fitzgerald Porter",
+    "originalFile": "beer/Great Lakes Edmund Fitzgerald Porter — 6 x 12oz bottles.png",
+    "slug": "great-lakes-edmund-fitzgerald-porter",
+    "imagePath": "/images/products/beer/great-lakes-edmund-fitzgerald-porter.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Guinness Draught Irish Stout (4 x 14.9oz cans)",
+    "originalFile": "beer/Guinness Draught Irish Stout — 4 x 14.9oz cans.avif",
+    "slug": "guinness-draught-irish-stout-4-x-149oz-cans",
+    "imagePath": "/images/products/beer/guinness-draught-irish-stout-4-x-149oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Guinness Draught Irish Stout (8 x 14.9oz cans)",
+    "originalFile": "beer/Guinness Draught Irish Stout — 8 x 14.9oz cans.jpeg",
+    "slug": "guinness-draught-irish-stout-8-x-149oz-cans",
+    "imagePath": "/images/products/beer/guinness-draught-irish-stout-8-x-149oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Heineken Original Dutch Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Heineken Original Dutch Lager — 12 x 12oz bottles.avif",
+    "slug": "heineken-original-dutch-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/heineken-original-dutch-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Heineken Original Dutch Lager (12 x 12oz cans)",
+    "originalFile": "beer/Heineken Original Dutch Lager — 12 x 12oz cans.avif",
+    "slug": "heineken-original-dutch-lager-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/heineken-original-dutch-lager-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Kirin Ichiban Japanese Lager",
+    "originalFile": "beer/Kirin Ichiban Japanese Lager — 6 x 12oz bottles.webp",
+    "slug": "kirin-ichiban-japanese-lager",
+    "imagePath": "/images/products/beer/kirin-ichiban-japanese-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Kona Big Wave Golden Ale (6 x 12oz bottles)",
+    "originalFile": "beer/Kona Big Wave Golden Ale — 6 x 12oz bottles.jpg",
+    "slug": "kona-big-wave-golden-ale-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/kona-big-wave-golden-ale-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Kona Big Wave Golden Ale (6 x 12oz can)",
+    "originalFile": "beer/Kona Big Wave Golden Ale — 6 x 12oz can.webp",
+    "slug": "kona-big-wave-golden-ale-6-x-12oz-can",
+    "imagePath": "/images/products/beer/kona-big-wave-golden-ale-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Lagunitas IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Lagunitas IPA — 6 x 12oz bottles.jpg",
+    "slug": "lagunitas-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/lagunitas-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Lagunitas IPA (6 x 12oz can)",
+    "originalFile": "beer/Lagunitas IPA — 6 x 12oz can.webp",
+    "slug": "lagunitas-ipa-6-x-12oz-can",
+    "imagePath": "/images/products/beer/lagunitas-ipa-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Left Hand Milk Stout Nitro",
+    "originalFile": "beer/Left Hand Milk Stout Nitro — 6 x 12oz bottles.webp",
+    "slug": "left-hand-milk-stout-nitro",
+    "imagePath": "/images/products/beer/left-hand-milk-stout-nitro.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Leinenkugel's Summer Shandy",
+    "originalFile": "beer/Leinenkugel's Summer Shandy — 6 x 12oz bottles.avif",
+    "slug": "leinenkugels-summer-shandy",
+    "imagePath": "/images/products/beer/leinenkugels-summer-shandy.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Leinenkugel's Sunset Wheat",
+    "originalFile": "beer/Leinenkugel's Sunset Wheat — 6 x 12oz bottles.jpg",
+    "slug": "leinenkugels-sunset-wheat",
+    "imagePath": "/images/products/beer/leinenkugels-sunset-wheat.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Michelob Ultra Light Lager",
+    "originalFile": "beer/Michelob Ultra Light Lager — 12 x 12oz cans.jpg",
+    "slug": "michelob-ultra-light-lager",
+    "imagePath": "/images/products/beer/michelob-ultra-light-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Miller High Life American Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Miller High Life American Lager — 12 x 12oz bottles.avif",
+    "slug": "miller-high-life-american-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/miller-high-life-american-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Miller High Life American Lager (12 x 12oz cans)",
+    "originalFile": "beer/Miller High Life American Lager — 12 x 12oz cans.avif",
+    "slug": "miller-high-life-american-lager-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/miller-high-life-american-lager-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Miller Lite American Light Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Miller Lite American Light Lager — 12 x 12oz bottles.jpg",
+    "slug": "miller-lite-american-light-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/miller-lite-american-light-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Miller Lite American Light Lager (12 x 12oz cans)",
+    "originalFile": "beer/Miller Lite American Light Lager — 12 x 12oz cans.jpg",
+    "slug": "miller-lite-american-light-lager-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/miller-lite-american-light-lager-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Modelo Especial Mexican Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Modelo Especial Mexican Lager — 12 x 12oz bottles.jpg",
+    "slug": "modelo-especial-mexican-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/modelo-especial-mexican-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Modelo Especial Mexican Lager (12 x 12oz can)",
+    "originalFile": "beer/Modelo Especial Mexican Lager — 12 x 12oz can.jpg",
+    "slug": "modelo-especial-mexican-lager-12-x-12oz-can",
+    "imagePath": "/images/products/beer/modelo-especial-mexican-lager-12-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Modelo Negra Mexican Dark Lager",
+    "originalFile": "beer/Modelo Negra Mexican Dark Lager — 6 x 12oz bottles.webp",
+    "slug": "modelo-negra-mexican-dark-lager",
+    "imagePath": "/images/products/beer/modelo-negra-mexican-dark-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Murphy's Irish Stout",
+    "originalFile": "beer/Murphy's Irish Stout — 4 x 14.9oz cans.jpg",
+    "slug": "murphys-irish-stout",
+    "imagePath": "/images/products/beer/murphys-irish-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Natural Light American Light Lager",
+    "originalFile": "beer/Natural Light American Light Lager — 12 x 12oz cans.webp",
+    "slug": "natural-light-american-light-lager",
+    "imagePath": "/images/products/beer/natural-light-american-light-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "New Belgium Fat Tire Ale (12 x 12oz bottles)",
+    "originalFile": "beer/New Belgium Fat Tire Ale — 12 x 12oz bottles.jpg",
+    "slug": "new-belgium-fat-tire-ale-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/new-belgium-fat-tire-ale-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "New Belgium Fat Tire Ale (12 x 12oz cans)",
+    "originalFile": "beer/New Belgium Fat Tire Ale — 12 x 12oz cans.webp",
+    "slug": "new-belgium-fat-tire-ale-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/new-belgium-fat-tire-ale-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "New Belgium Voodoo Ranger Variety Pack",
+    "originalFile": "beer/New Belgium Voodoo Ranger Variety Pack — 12 x 12oz cans.webp",
+    "slug": "new-belgium-voodoo-ranger-variety-pack",
+    "imagePath": "/images/products/beer/new-belgium-voodoo-ranger-variety-pack.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Other Half All Citra Everything Hazy IPA",
+    "originalFile": "beer/Other Half All Citra Everything Hazy IPA — 16oz can.png",
+    "slug": "other-half-all-citra-everything-hazy-ipa",
+    "imagePath": "/images/products/beer/other-half-all-citra-everything-hazy-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Pabst Blue Ribbon American Lager",
+    "originalFile": "beer/Pabst Blue Ribbon American Lager — 12 x 12oz cans.webp",
+    "slug": "pabst-blue-ribbon-american-lager",
+    "imagePath": "/images/products/beer/pabst-blue-ribbon-american-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Pacifico Clara Mexican Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Pacifico Clara Mexican Lager — 12 x 12oz bottles.webp",
+    "slug": "pacifico-clara-mexican-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/pacifico-clara-mexican-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Pacifico Clara Mexican Lager (12 x 12oz can)",
+    "originalFile": "beer/Pacifico Clara Mexican Lager — 12 x 12oz can.jpg",
+    "slug": "pacifico-clara-mexican-lager-12-x-12oz-can",
+    "imagePath": "/images/products/beer/pacifico-clara-mexican-lager-12-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Peroni Nastro Azzurro Italian Lager (6 x 12oz bottles)",
+    "originalFile": "beer/Peroni Nastro Azzurro Italian Lager — 6 x 12oz bottles.webp",
+    "slug": "peroni-nastro-azzurro-italian-lager-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/peroni-nastro-azzurro-italian-lager-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Peroni Nastro Azzurro Italian Lager (6 x 12oz can)",
+    "originalFile": "beer/Peroni Nastro Azzurro Italian Lager — 6 x 12oz can.webp",
+    "slug": "peroni-nastro-azzurro-italian-lager-6-x-12oz-can",
+    "imagePath": "/images/products/beer/peroni-nastro-azzurro-italian-lager-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Prairie Artisan Ales Bomb! Imperial Stout",
+    "originalFile": "beer/Prairie Artisan Ales Bomb! Imperial Stout — 12oz bottle.webp",
+    "slug": "prairie-artisan-ales-bomb-imperial-stout",
+    "imagePath": "/images/products/beer/prairie-artisan-ales-bomb-imperial-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Russian River Pliny the Elder Double IPA bottle",
+    "originalFile": "beer/Russian River Pliny the Elder Double IPA bottle.jpg",
+    "slug": "russian-river-pliny-the-elder-double-ipa-bottle",
+    "imagePath": "/images/products/beer/russian-river-pliny-the-elder-double-ipa-bottle.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Samuel Adams Boston Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Samuel Adams Boston Lager — 12 x 12oz bottles.avif",
+    "slug": "samuel-adams-boston-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/samuel-adams-boston-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Samuel Adams Boston Lager (12 x 12oz can)",
+    "originalFile": "beer/Samuel Adams Boston Lager — 12 x 12oz can.jpg",
+    "slug": "samuel-adams-boston-lager-12-x-12oz-can",
+    "imagePath": "/images/products/beer/samuel-adams-boston-lager-12-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Samuel Adams Utopias",
+    "originalFile": "beer/Samuel Adams Utopias — 24.5oz bottle.webp",
+    "slug": "samuel-adams-utopias",
+    "imagePath": "/images/products/beer/samuel-adams-utopias.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "Samuel Smith Organic Chocolate Stout",
+    "originalFile": "beer/Samuel Smith Organic Chocolate Stout — 4 x 12oz bottles.avif",
+    "slug": "samuel-smith-organic-chocolate-stout",
+    "imagePath": "/images/products/beer/samuel-smith-organic-chocolate-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Sapporo Premium Japanese Lager (6 x 12oz bottles)",
+    "originalFile": "beer/Sapporo Premium Japanese Lager — 6 x 12oz bottles.jpg",
+    "slug": "sapporo-premium-japanese-lager-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/sapporo-premium-japanese-lager-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Sapporo Premium Japanese Lager (6 x 12oz cans)",
+    "originalFile": "beer/Sapporo Premium Japanese Lager — 6 x 12oz cans.webp",
+    "slug": "sapporo-premium-japanese-lager-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/sapporo-premium-japanese-lager-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Shiner Bock",
+    "originalFile": "beer/Shiner Bock — 6 x 12oz bottles.avif",
+    "slug": "shiner-bock",
+    "imagePath": "/images/products/beer/shiner-bock.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Shock Top Belgian White",
+    "originalFile": "beer/Shock Top Belgian White — 6 x 12oz bottles.jpg",
+    "slug": "shock-top-belgian-white",
+    "imagePath": "/images/products/beer/shock-top-belgian-white.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Sierra Nevada Celebration IPA",
+    "originalFile": "beer/Sierra Nevada Celebration IPA — 6 x 12oz bottles.jpg",
+    "slug": "sierra-nevada-celebration-ipa",
+    "imagePath": "/images/products/beer/sierra-nevada-celebration-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Sierra Nevada Hazy Little Thing IPA",
+    "originalFile": "beer/Sierra Nevada Hazy Little Thing IPA — 6 x 12oz cans.webp",
+    "slug": "sierra-nevada-hazy-little-thing-ipa",
+    "imagePath": "/images/products/beer/sierra-nevada-hazy-little-thing-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Sierra Nevada Pale Ale (12 x 12oz bottles)",
+    "originalFile": "beer/Sierra Nevada Pale Ale — 12 x 12oz bottles.jpg",
+    "slug": "sierra-nevada-pale-ale-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/sierra-nevada-pale-ale-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "Sierra Nevada Pale Ale (12 x 12oz cans)",
+    "originalFile": "beer/Sierra Nevada Pale Ale — 12 x 12oz cans.webp",
+    "slug": "sierra-nevada-pale-ale-12-x-12oz-cans",
+    "imagePath": "/images/products/beer/sierra-nevada-pale-ale-12-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Sierra Nevada Torpedo Extra IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Sierra Nevada Torpedo Extra IPA — 6 x 12oz bottles.jpg",
+    "slug": "sierra-nevada-torpedo-extra-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/sierra-nevada-torpedo-extra-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Sierra Nevada Torpedo Extra IPA (6 x 12oz cans)",
+    "originalFile": "beer/Sierra Nevada Torpedo Extra IPA — 6 x 12oz cans.jpg",
+    "slug": "sierra-nevada-torpedo-extra-ipa-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/sierra-nevada-torpedo-extra-ipa-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Stella Artois Belgian Lager (12 x 11.2oz bottles)",
+    "originalFile": "beer/Stella Artois Belgian Lager — 12 x 11.2oz bottles.avif",
+    "slug": "stella-artois-belgian-lager-12-x-112oz-bottles",
+    "imagePath": "/images/products/beer/stella-artois-belgian-lager-12-x-112oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Stella Artois Belgian Lager (12 x 11.2oz can)",
+    "originalFile": "beer/Stella Artois Belgian Lager — 12 x 11.2oz can.webp",
+    "slug": "stella-artois-belgian-lager-12-x-112oz-can",
+    "imagePath": "/images/products/beer/stella-artois-belgian-lager-12-x-112oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Stone IPA (6 x 12oz bottles)",
+    "originalFile": "beer/Stone IPA — 6 x 12oz bottles.jpg",
+    "slug": "stone-ipa-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/stone-ipa-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Stone IPA (6 x 12oz can)",
+    "originalFile": "beer/Stone IPA — 6 x 12oz can.webp",
+    "slug": "stone-ipa-6-x-12oz-can",
+    "imagePath": "/images/products/beer/stone-ipa-6-x-12oz-can.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "SweetWater 420 Extra Pale Ale (6 x 12oz bottles)",
+    "originalFile": "beer/SweetWater 420 Extra Pale Ale — 6 x 12oz bottles.jpg",
+    "slug": "sweetwater-420-extra-pale-ale-6-x-12oz-bottles",
+    "imagePath": "/images/products/beer/sweetwater-420-extra-pale-ale-6-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Ale & Wheat",
+    "displayName": "SweetWater 420 Extra Pale Ale (6 x 12oz cans)",
+    "originalFile": "beer/SweetWater 420 Extra Pale Ale — 6 x 12oz cans.webp",
+    "slug": "sweetwater-420-extra-pale-ale-6-x-12oz-cans",
+    "imagePath": "/images/products/beer/sweetwater-420-extra-pale-ale-6-x-12oz-cans.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Tecate Mexican Lager",
+    "originalFile": "beer/Tecate Mexican Lager — 12 x 12oz cans.jpg",
+    "slug": "tecate-mexican-lager",
+    "imagePath": "/images/products/beer/tecate-mexican-lager.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Stout & Porter",
+    "displayName": "The Bruery Black Tuesday Imperial Stout",
+    "originalFile": "beer/The Bruery Black Tuesday Imperial Stout — 750ml bottle.webp",
+    "slug": "the-bruery-black-tuesday-imperial-stout",
+    "imagePath": "/images/products/beer/the-bruery-black-tuesday-imperial-stout.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Tree House Julius Hazy IPA",
+    "originalFile": "beer/Tree House Julius Hazy IPA — 16oz can.jpg",
+    "slug": "tree-house-julius-hazy-ipa",
+    "imagePath": "/images/products/beer/tree-house-julius-hazy-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Trillium Congress Street IPA",
+    "originalFile": "beer/Trillium Congress Street IPA — 16oz can.jpg",
+    "slug": "trillium-congress-street-ipa",
+    "imagePath": "/images/products/beer/trillium-congress-street-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Voodoo Ranger Imperial IPA",
+    "originalFile": "beer/Voodoo Ranger Imperial IPA — 6 x 12oz cans.jpg",
+    "slug": "voodoo-ranger-imperial-ipa",
+    "imagePath": "/images/products/beer/voodoo-ranger-imperial-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "Voodoo Ranger Juicy Haze IPA",
+    "originalFile": "beer/Voodoo Ranger Juicy Haze IPA — 6 x 12oz cans.webp",
+    "slug": "voodoo-ranger-juicy-haze-ipa",
+    "imagePath": "/images/products/beer/voodoo-ranger-juicy-haze-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "IPA",
+    "displayName": "WeldWerks Juicy Bits Hazy IPA",
+    "originalFile": "beer/WeldWerks Juicy Bits Hazy IPA — 16oz can.jpg",
+    "slug": "weldwerks-juicy-bits-hazy-ipa",
+    "imagePath": "/images/products/beer/weldwerks-juicy-bits-hazy-ipa.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Yuengling Traditional Lager (12 x 12oz bottles)",
+    "originalFile": "beer/Yuengling Traditional Lager — 12 x 12oz bottles.avif",
+    "slug": "yuengling-traditional-lager-12-x-12oz-bottles",
+    "imagePath": "/images/products/beer/yuengling-traditional-lager-12-x-12oz-bottles.webp"
+  },
+  {
+    "category": "beer",
+    "subcategory": "Lager",
+    "displayName": "Yuengling Traditional Lager (12 x 12oz can)",
+    "originalFile": "beer/Yuengling Traditional Lager — 12 x 12oz can.webp",
+    "slug": "yuengling-traditional-lager-12-x-12oz-can",
+    "imagePath": "/images/products/beer/yuengling-traditional-lager-12-x-12oz-can.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "2 Towns Ciderhouse BrightCider",
+    "originalFile": "cider/2 Towns Ciderhouse BrightCider — 4 x 16oz cans.jpg",
+    "slug": "2-towns-ciderhouse-brightcider",
+    "imagePath": "/images/products/cider/2-towns-ciderhouse-brightcider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "ACE Apple Hard Cider",
+    "originalFile": "cider/ACE Apple Hard Cider — 6 x 12oz bottles.webp",
+    "slug": "ace-apple-hard-cider",
+    "imagePath": "/images/products/cider/ace-apple-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "ACE Mango Hard Cider",
+    "originalFile": "cider/ACE Mango Hard Cider — 6 x 12oz cans.webp",
+    "slug": "ace-mango-hard-cider",
+    "imagePath": "/images/products/cider/ace-mango-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "ACE Pineapple Hard Cider",
+    "originalFile": "cider/ACE Pineapple Hard Cider — 6 x 12oz bottles.webp",
+    "slug": "ace-pineapple-hard-cider",
+    "imagePath": "/images/products/cider/ace-pineapple-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Angry Orchard Crisp Apple Hard Cider",
+    "originalFile": "cider/Angry Orchard Crisp Apple Hard Cider — 6 x 12oz bottles.jpg",
+    "slug": "angry-orchard-crisp-apple-hard-cider",
+    "imagePath": "/images/products/cider/angry-orchard-crisp-apple-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Angry Orchard Green Apple Hard Cider",
+    "originalFile": "cider/Angry Orchard Green Apple Hard Cider — 6 x 12oz bottles.webp",
+    "slug": "angry-orchard-green-apple-hard-cider",
+    "imagePath": "/images/products/cider/angry-orchard-green-apple-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Austin Eastciders Blood Orange Cider",
+    "originalFile": "cider/Austin Eastciders Blood Orange Cider — 6 x 12oz cans.webp",
+    "slug": "austin-eastciders-blood-orange-cider",
+    "imagePath": "/images/products/cider/austin-eastciders-blood-orange-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Austin Eastciders Original Dry Cider",
+    "originalFile": "cider/Austin Eastciders Original Dry Cider — 6 x 12oz cans.webp",
+    "slug": "austin-eastciders-original-dry-cider",
+    "imagePath": "/images/products/cider/austin-eastciders-original-dry-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Austin Eastciders Pineapple Cider",
+    "originalFile": "cider/Austin Eastciders Pineapple Cider — 6 x 12oz cans.webp",
+    "slug": "austin-eastciders-pineapple-cider",
+    "imagePath": "/images/products/cider/austin-eastciders-pineapple-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Blake's Triple Jam Hard Cider",
+    "originalFile": "cider/Blake's Triple Jam Hard Cider — 6 x 12oz cans.avif",
+    "slug": "blakes-triple-jam-hard-cider",
+    "imagePath": "/images/products/cider/blakes-triple-jam-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Citizen Cider Unified Press Hard Cider",
+    "originalFile": "cider/Citizen Cider Unified Press Hard Cider — 4 x 16oz cans.jpg",
+    "slug": "citizen-cider-unified-press-hard-cider",
+    "imagePath": "/images/products/cider/citizen-cider-unified-press-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Crispin Original Hard Cider",
+    "originalFile": "cider/Crispin Original Hard Cider — 6 x 12oz cans.webp",
+    "slug": "crispin-original-hard-cider",
+    "imagePath": "/images/products/cider/crispin-original-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Downeast Cider House Aloha Friday Cider",
+    "originalFile": "cider/Downeast Cider House Aloha Friday Cider — 4 x 16oz cans.webp",
+    "slug": "downeast-cider-house-aloha-friday-cider",
+    "imagePath": "/images/products/cider/downeast-cider-house-aloha-friday-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Downeast Cider House Blackberry Cider",
+    "originalFile": "cider/Downeast Cider House Blackberry Cider — 4 x 16oz cans.webp",
+    "slug": "downeast-cider-house-blackberry-cider",
+    "imagePath": "/images/products/cider/downeast-cider-house-blackberry-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Farnum Hill Extra Dry Cider",
+    "originalFile": "cider/Farnum Hill Extra Dry Cider — 750ml bottle.jpg",
+    "slug": "farnum-hill-extra-dry-cider",
+    "imagePath": "/images/products/cider/farnum-hill-extra-dry-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Golden State Cider Mighty Dry Cider",
+    "originalFile": "cider/Golden State Cider Mighty Dry Cider — 4 x 16oz cans.avif",
+    "slug": "golden-state-cider-mighty-dry-cider",
+    "imagePath": "/images/products/cider/golden-state-cider-mighty-dry-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Original Sin Dry Cider",
+    "originalFile": "cider/Original Sin Dry Cider — 6 x 12oz bottles.jpeg",
+    "slug": "original-sin-dry-cider",
+    "imagePath": "/images/products/cider/original-sin-dry-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Strongbow Original Dry Hard Cider",
+    "originalFile": "cider/Strongbow Original Dry Hard Cider — 4 x 16.9oz cans.jpg",
+    "slug": "strongbow-original-dry-hard-cider",
+    "imagePath": "/images/products/cider/strongbow-original-dry-hard-cider.webp"
+  },
+  {
+    "category": "cider",
+    "subcategory": "Hard Cider",
+    "displayName": "Woodchuck Amber Hard Cider",
+    "originalFile": "cider/Woodchuck Amber Hard Cider — 6 x 12oz bottles.webp",
+    "slug": "woodchuck-amber-hard-cider",
+    "imagePath": "/images/products/cider/woodchuck-amber-hard-cider.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Bitters",
+    "displayName": "Angostura Aromatic Bitters",
+    "originalFile": "bitters/Angostura Aromatic Bitters — 4oz bottle.jpg",
+    "slug": "angostura-aromatic-bitters",
+    "imagePath": "/images/products/bar-essentials/angostura-aromatic-bitters.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Bitters",
+    "displayName": "Angostura Orange Bitters",
+    "originalFile": "bitters/Angostura Orange Bitters — 4oz bottle.webp",
+    "slug": "angostura-orange-bitters",
+    "imagePath": "/images/products/bar-essentials/angostura-orange-bitters.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Bitters",
+    "displayName": "Bittermens Xocolatl Mole Bitters",
+    "originalFile": "bitters/Bittermens Xocolatl Mole Bitters — 5oz bottle.webp",
+    "slug": "bittermens-xocolatl-mole-bitters",
+    "imagePath": "/images/products/bar-essentials/bittermens-xocolatl-mole-bitters.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Bundaberg Ginger Beer",
+    "originalFile": "bitters/Bundaberg Ginger Beer — 4 x 12.7oz bottles.jpg",
+    "slug": "bundaberg-ginger-beer",
+    "imagePath": "/images/products/bar-essentials/bundaberg-ginger-beer.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Canada Dry Club Soda",
+    "originalFile": "bitters/Canada Dry Club Soda — 1L bottle.jpg",
+    "slug": "canada-dry-club-soda",
+    "imagePath": "/images/products/bar-essentials/canada-dry-club-soda.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Carpano Antica Formula Sweet Vermouth",
+    "originalFile": "bitters/Carpano Antica Formula Sweet Vermouth.webp",
+    "slug": "carpano-antica-formula-sweet-vermouth",
+    "imagePath": "/images/products/bar-essentials/carpano-antica-formula-sweet-vermouth.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Demitri's Classic Recipe Bloody Mary Seasoning",
+    "originalFile": "bitters/Demitri's Classic Recipe Bloody Mary Seasoning.webp",
+    "slug": "demitris-classic-recipe-bloody-mary-seasoning",
+    "imagePath": "/images/products/bar-essentials/demitris-classic-recipe-bloody-mary-seasoning.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Dirty Sue Premium Olive Juice",
+    "originalFile": "bitters/Dirty Sue Premium Olive Juice.avif",
+    "slug": "dirty-sue-premium-olive-juice",
+    "imagePath": "/images/products/bar-essentials/dirty-sue-premium-olive-juice.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Dolin Dry Vermouth de Chambéry",
+    "originalFile": "bitters/Dolin Dry Vermouth de Chambéry.jpg",
+    "slug": "dolin-dry-vermouth-de-chambery",
+    "imagePath": "/images/products/bar-essentials/dolin-dry-vermouth-de-chambery.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Dolin Rouge Sweet Vermouth de Chambéry",
+    "originalFile": "bitters/Dolin Rouge Sweet Vermouth de Chambéry.jpg",
+    "slug": "dolin-rouge-sweet-vermouth-de-chambery",
+    "imagePath": "/images/products/bar-essentials/dolin-rouge-sweet-vermouth-de-chambery.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Bitters",
+    "displayName": "Fee Brothers Black Walnut Bitters",
+    "originalFile": "bitters/Fee Brothers Black Walnut Bitters — 5oz bottle.jpg",
+    "slug": "fee-brothers-black-walnut-bitters",
+    "imagePath": "/images/products/bar-essentials/fee-brothers-black-walnut-bitters.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Fever-Tree Club Soda",
+    "originalFile": "bitters/Fever-Tree Club Soda — 4 x 200ml bottles.avif",
+    "slug": "fever-tree-club-soda",
+    "imagePath": "/images/products/bar-essentials/fever-tree-club-soda.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Fever-Tree Light Tonic Water",
+    "originalFile": "bitters/Fever-Tree Light Tonic Water — 4 x 200ml bottles.jpg",
+    "slug": "fever-tree-light-tonic-water",
+    "imagePath": "/images/products/bar-essentials/fever-tree-light-tonic-water.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Fever-Tree Premium Ginger Beer",
+    "originalFile": "bitters/Fever-Tree Premium Ginger Beer — 4 x 200ml bottles.avif",
+    "slug": "fever-tree-premium-ginger-beer",
+    "imagePath": "/images/products/bar-essentials/fever-tree-premium-ginger-beer.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Fever-Tree Premium Indian Tonic Water",
+    "originalFile": "bitters/Fever-Tree Premium Indian Tonic Water — 4 x 200ml bottles.webp",
+    "slug": "fever-tree-premium-indian-tonic-water",
+    "imagePath": "/images/products/bar-essentials/fever-tree-premium-indian-tonic-water.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Filthy Black Cherries",
+    "originalFile": "bitters/Filthy Black Cherries.webp",
+    "slug": "filthy-black-cherries",
+    "imagePath": "/images/products/bar-essentials/filthy-black-cherries.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Filthy Blue Cheese Stuffed Olives",
+    "originalFile": "bitters/Filthy Blue Cheese Stuffed Olives.webp",
+    "slug": "filthy-blue-cheese-stuffed-olives",
+    "imagePath": "/images/products/bar-essentials/filthy-blue-cheese-stuffed-olives.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Filthy Olive Brine",
+    "originalFile": "bitters/Filthy Olive Brine.webp",
+    "slug": "filthy-olive-brine",
+    "imagePath": "/images/products/bar-essentials/filthy-olive-brine.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Filthy Pimento Olives",
+    "originalFile": "bitters/Filthy Pimento Olives.webp",
+    "slug": "filthy-pimento-olives",
+    "imagePath": "/images/products/bar-essentials/filthy-pimento-olives.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Finest Call Premium Margarita Mix",
+    "originalFile": "bitters/Finest Call Premium Margarita Mix — 1L bottle.jpg",
+    "slug": "finest-call-premium-margarita-mix",
+    "imagePath": "/images/products/bar-essentials/finest-call-premium-margarita-mix.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Goslings Ginger Beer",
+    "originalFile": "bitters/Goslings Ginger Beer — 6 x 12oz cans.jpg",
+    "slug": "goslings-ginger-beer",
+    "imagePath": "/images/products/bar-essentials/goslings-ginger-beer.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Liber & Co. Orgeat Almond Syrup",
+    "originalFile": "bitters/Liber & Co. Orgeat Almond Syrup — 9.5oz bottle.jpg",
+    "slug": "liber-co-orgeat-almond-syrup",
+    "imagePath": "/images/products/bar-essentials/liber-co-orgeat-almond-syrup.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Liber & Co. Passion Fruit Syrup",
+    "originalFile": "bitters/Liber & Co. Passion Fruit Syrup — 9.5oz bottle.jpg",
+    "slug": "liber-co-passion-fruit-syrup",
+    "imagePath": "/images/products/bar-essentials/liber-co-passion-fruit-syrup.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Luxardo Maraschino Cherries",
+    "originalFile": "bitters/Luxardo Maraschino Cherries.jpg",
+    "slug": "luxardo-maraschino-cherries",
+    "imagePath": "/images/products/bar-essentials/luxardo-maraschino-cherries.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Martini & Rossi Extra Dry Vermouth 750ml",
+    "originalFile": "bitters/Martini & Rossi Extra Dry Vermouth 750ml.jpg",
+    "slug": "martini-rossi-extra-dry-vermouth-750ml",
+    "imagePath": "/images/products/bar-essentials/martini-rossi-extra-dry-vermouth-750ml.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Martini & Rossi Rosso Sweet Vermouth",
+    "originalFile": "bitters/Martini & Rossi Rosso Sweet Vermouth.webp",
+    "slug": "martini-rossi-rosso-sweet-vermouth",
+    "imagePath": "/images/products/bar-essentials/martini-rossi-rosso-sweet-vermouth.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Master of Mixes Margarita Mix",
+    "originalFile": "bitters/Master of Mixes Margarita Mix — 1L bottle.jpg",
+    "slug": "master-of-mixes-margarita-mix",
+    "imagePath": "/images/products/bar-essentials/master-of-mixes-margarita-mix.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "McClure's Bloody Mary Mix 32oz",
+    "originalFile": "bitters/McClure's Bloody Mary Mix 32oz.jpg",
+    "slug": "mcclures-bloody-mary-mix-32oz",
+    "imagePath": "/images/products/bar-essentials/mcclures-bloody-mary-mix-32oz.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Mezzetta Spanish Queen Olives",
+    "originalFile": "bitters/Mezzetta Spanish Queen Olives.jpg",
+    "slug": "mezzetta-spanish-queen-olives",
+    "imagePath": "/images/products/bar-essentials/mezzetta-spanish-queen-olives.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Monin Grenadine Syrup",
+    "originalFile": "bitters/Monin Grenadine Syrup — 750ml bottle.jpg",
+    "slug": "monin-grenadine-syrup",
+    "imagePath": "/images/products/bar-essentials/monin-grenadine-syrup.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Monin Mojito Mint Syrup",
+    "originalFile": "bitters/Monin Mojito Mint Syrup — 750ml bottle.png",
+    "slug": "monin-mojito-mint-syrup",
+    "imagePath": "/images/products/bar-essentials/monin-mojito-mint-syrup.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Monin Pure Cane Syrup",
+    "originalFile": "bitters/Monin Pure Cane Syrup — 750ml bottle.webp",
+    "slug": "monin-pure-cane-syrup",
+    "imagePath": "/images/products/bar-essentials/monin-pure-cane-syrup.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Mr & Mrs T Bold & Spicy Bloody Mary Mix 1L",
+    "originalFile": "bitters/Mr & Mrs T Bold & Spicy Bloody Mary Mix 1L.jpg",
+    "slug": "mr-mrs-t-bold-spicy-bloody-mary-mix-1l",
+    "imagePath": "/images/products/bar-essentials/mr-mrs-t-bold-spicy-bloody-mary-mix-1l.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Mr & Mrs T Original Margarita Mix",
+    "originalFile": "bitters/Mr & Mrs T Original Margarita Mix — 1L bottle.jpg",
+    "slug": "mr-mrs-t-original-margarita-mix",
+    "imagePath": "/images/products/bar-essentials/mr-mrs-t-original-margarita-mix.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Vermouth",
+    "displayName": "Noilly Prat Original Dry Vermouth 75cl",
+    "originalFile": "bitters/Noilly Prat Original Dry Vermouth 75cl.webp",
+    "slug": "noilly-prat-original-dry-vermouth-75cl",
+    "imagePath": "/images/products/bar-essentials/noilly-prat-original-dry-vermouth-75cl.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Bitters",
+    "displayName": "Peychaud's Aromatic Bitters",
+    "originalFile": "bitters/Peychaud's Aromatic Bitters — 5oz bottle.webp",
+    "slug": "peychauds-aromatic-bitters",
+    "imagePath": "/images/products/bar-essentials/peychauds-aromatic-bitters.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Polar Seltzer Original",
+    "originalFile": "bitters/Polar Seltzer Original — 12 x 12oz cans.jpg",
+    "slug": "polar-seltzer-original",
+    "imagePath": "/images/products/bar-essentials/polar-seltzer-original.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Q Mixers Ginger Beer",
+    "originalFile": "bitters/Q Mixers Ginger Beer — 4 x 7.5oz cans.jpg",
+    "slug": "q-mixers-ginger-beer",
+    "imagePath": "/images/products/bar-essentials/q-mixers-ginger-beer.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Q Mixers Indian Tonic Water",
+    "originalFile": "bitters/Q Mixers Indian Tonic Water — 4 x 7.5oz cans.webp",
+    "slug": "q-mixers-indian-tonic-water",
+    "imagePath": "/images/products/bar-essentials/q-mixers-indian-tonic-water.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Reed's Extra Ginger Beer",
+    "originalFile": "bitters/Reed's Extra Ginger Beer — 4 x 12oz bottles.jpg",
+    "slug": "reeds-extra-ginger-beer",
+    "imagePath": "/images/products/bar-essentials/reeds-extra-ginger-beer.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Reàl Coconut Cream",
+    "originalFile": "bitters/Reàl Coconut Cream — 16.9oz squeeze bottle.avif",
+    "slug": "real-coconut-cream",
+    "imagePath": "/images/products/bar-essentials/real-coconut-cream.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Schweppes Tonic Water",
+    "originalFile": "bitters/Schweppes Tonic Water — 1L bottle.webp",
+    "slug": "schweppes-tonic-water",
+    "imagePath": "/images/products/bar-essentials/schweppes-tonic-water.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Tillen Farms Bada Bing Cherries",
+    "originalFile": "bitters/Tillen Farms Bada Bing Cherries.webp",
+    "slug": "tillen-farms-bada-bing-cherries",
+    "imagePath": "/images/products/bar-essentials/tillen-farms-bada-bing-cherries.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Mixers & Syrups",
+    "displayName": "Topo Chico Mineral Water",
+    "originalFile": "bitters/Topo Chico Mineral Water — 12 x 12oz bottles.avif",
+    "slug": "topo-chico-mineral-water",
+    "imagePath": "/images/products/bar-essentials/topo-chico-mineral-water.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Tres Agaves Organic Margarita",
+    "originalFile": "bitters/Tres Agaves Organic Margarita.webp",
+    "slug": "tres-agaves-organic-margarita",
+    "imagePath": "/images/products/bar-essentials/tres-agaves-organic-margarita.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Garnishes",
+    "displayName": "Woodford Reserve Bourbon Cherries",
+    "originalFile": "bitters/Woodford Reserve Bourbon Cherries.jpg",
+    "slug": "woodford-reserve-bourbon-cherries",
+    "imagePath": "/images/products/bar-essentials/woodford-reserve-bourbon-cherries.webp"
+  },
+  {
+    "category": "bar-essentials",
+    "subcategory": "Cocktail Mixes",
+    "displayName": "Zing Zang Bloody Mary Mix",
+    "originalFile": "bitters/Zing Zang Bloody Mary Mix.jpg",
+    "slug": "zing-zang-bloody-mary-mix",
+    "imagePath": "/images/products/bar-essentials/zing-zang-bloody-mary-mix.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "1800 Ultimate Margarita Original",
+    "originalFile": "cocktails/1800 Ultimate Margarita Original — 1.75L bottle.avif",
+    "slug": "1800-ultimate-margarita-original",
+    "imagePath": "/images/products/rtd-liqueurs/1800-ultimate-margarita-original.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "AriZona Hard Green Tea",
+    "originalFile": "cocktails/AriZona Hard Green Tea — 12 x 12oz cans.avif",
+    "slug": "arizona-hard-green-tea",
+    "imagePath": "/images/products/rtd-liqueurs/arizona-hard-green-tea.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Babe Rosé with Bubbles",
+    "originalFile": "cocktails/Babe Rosé with Bubbles — 4 x 250ml cans.webp",
+    "slug": "babe-rose-with-bubbles",
+    "imagePath": "/images/products/rtd-liqueurs/babe-rose-with-bubbles.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Bacardí Mojito Ready-to-Drink Cocktail",
+    "originalFile": "cocktails/Bacardí Mojito Ready-to-Drink Cocktail — 4 x 12oz cans.jpg",
+    "slug": "bacardi-mojito-ready-to-drink-cocktail",
+    "imagePath": "/images/products/rtd-liqueurs/bacardi-mojito-ready-to-drink-cocktail.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Bev Glam Sparkling Rosé",
+    "originalFile": "cocktails/Bev Glam Sparkling Rosé — 4 x 250ml cans.webp",
+    "slug": "bev-glam-sparkling-rose",
+    "imagePath": "/images/products/rtd-liqueurs/bev-glam-sparkling-rose.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Bombay Sapphire Gin and Tonic Ready-to-Drink",
+    "originalFile": "cocktails/Bombay Sapphire Gin and Tonic Ready-to-Drink — 4 x 250ml cans.jpg",
+    "slug": "bombay-sapphire-gin-and-tonic-ready-to-drink",
+    "imagePath": "/images/products/rtd-liqueurs/bombay-sapphire-gin-and-tonic-ready-to-drink.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Bulleit Old Fashioned Cocktail",
+    "originalFile": "cocktails/Bulleit Old Fashioned Cocktail — 375ml bottle.jpg",
+    "slug": "bulleit-old-fashioned-cocktail",
+    "imagePath": "/images/products/rtd-liqueurs/bulleit-old-fashioned-cocktail.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Gin and Tonic",
+    "originalFile": "cocktails/Cutwater Gin and Tonic — 4 x 12oz cans.jpg",
+    "slug": "cutwater-gin-and-tonic",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-gin-and-tonic.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Lime Margarita",
+    "originalFile": "cocktails/Cutwater Lime Margarita — 4 x 12oz cans.webp",
+    "slug": "cutwater-lime-margarita",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-lime-margarita.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Mai Tai",
+    "originalFile": "cocktails/Cutwater Mai Tai — 4 x 12oz cans.webp",
+    "slug": "cutwater-mai-tai",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-mai-tai.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Mango Margarita",
+    "originalFile": "cocktails/Cutwater Mango Margarita — 4 x 12oz cans.webp",
+    "slug": "cutwater-mango-margarita",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-mango-margarita.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Piña Colada",
+    "originalFile": "cocktails/Cutwater Piña Colada — 4 x 12oz cans.webp",
+    "slug": "cutwater-pina-colada",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-pina-colada.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Tequila Paloma",
+    "originalFile": "cocktails/Cutwater Tequila Paloma — 4 x 12oz cans.jpg",
+    "slug": "cutwater-tequila-paloma",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-tequila-paloma.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater Vodka Mule",
+    "originalFile": "cocktails/Cutwater Vodka Mule — 4 x 12oz cans.webp",
+    "slug": "cutwater-vodka-mule",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-vodka-mule.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Cutwater White Russian Cocktail",
+    "originalFile": "cocktails/Cutwater White Russian Cocktail — 4 x 12oz cans.webp",
+    "slug": "cutwater-white-russian-cocktail",
+    "imagePath": "/images/products/rtd-liqueurs/cutwater-white-russian-cocktail.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "High Noon Vodka Iced Tea Variety Pack",
+    "originalFile": "cocktails/High Noon Vodka Iced Tea Variety Pack — 8 x 12oz cans.webp",
+    "slug": "high-noon-vodka-iced-tea-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/high-noon-vodka-iced-tea-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "High Noon Vodka Seltzer Variety Pack",
+    "originalFile": "cocktails/High Noon Vodka Seltzer Variety Pack — 8 x 12oz cans.jpg",
+    "slug": "high-noon-vodka-seltzer-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/high-noon-vodka-seltzer-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "High West Barrel Finished Old Fashioned Cocktail",
+    "originalFile": "cocktails/High West Barrel Finished Old Fashioned Cocktail — 375ml bottle.webp",
+    "slug": "high-west-barrel-finished-old-fashioned-cocktail",
+    "imagePath": "/images/products/rtd-liqueurs/high-west-barrel-finished-old-fashioned-cocktail.webp"
+  },
+  {
+    "category": "na-rtd-cocktails",
+    "subcategory": "Non-Alcoholic Canned Cocktails",
+    "displayName": "Hiyo Non-Alcoholic Social Tonic Variety Pack",
+    "originalFile": "cocktails/Hiyo Non-Alcoholic Social Tonic Variety Pack — 4 x 12oz cans.avif",
+    "slug": "hiyo-non-alcoholic-social-tonic-variety-pack",
+    "imagePath": "/images/products/na-rtd-cocktails/hiyo-non-alcoholic-social-tonic-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "House Wine Red Blend",
+    "originalFile": "cocktails/House Wine Red Blend — 4 x 375ml cans.webp",
+    "slug": "house-wine-red-blend",
+    "imagePath": "/images/products/rtd-liqueurs/house-wine-red-blend.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Jack Daniel's and Coca-Cola",
+    "originalFile": "cocktails/Jack Daniel's and Coca-Cola — 4 x 12oz cans.avif",
+    "slug": "jack-daniels-and-coca-cola",
+    "imagePath": "/images/products/rtd-liqueurs/jack-daniels-and-coca-cola.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Jose Cuervo Golden Margarita Ready-to-Drink",
+    "originalFile": "cocktails/Jose Cuervo Golden Margarita Ready-to-Drink — 1.75L bottle.avif",
+    "slug": "jose-cuervo-golden-margarita-ready-to-drink",
+    "imagePath": "/images/products/rtd-liqueurs/jose-cuervo-golden-margarita-ready-to-drink.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Lipton Hard Iced Tea Lemon",
+    "originalFile": "cocktails/Lipton Hard Iced Tea Lemon — 12 x 12oz cans.png",
+    "slug": "lipton-hard-iced-tea-lemon",
+    "imagePath": "/images/products/rtd-liqueurs/lipton-hard-iced-tea-lemon.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Malibu Piña Colada Ready-to-Drink Cocktail",
+    "originalFile": "cocktails/Malibu Piña Colada Ready-to-Drink Cocktail — 4 x 12oz cans.jpg",
+    "slug": "malibu-pina-colada-ready-to-drink-cocktail",
+    "imagePath": "/images/products/rtd-liqueurs/malibu-pina-colada-ready-to-drink-cocktail.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Mike's Hard Lemonade Original",
+    "originalFile": "cocktails/Mike's Hard Lemonade Original — 6 x 12oz bottles.jpg",
+    "slug": "mikes-hard-lemonade-original",
+    "imagePath": "/images/products/rtd-liqueurs/mikes-hard-lemonade-original.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Mike's Hard Lemonade Variety Pack",
+    "originalFile": "cocktails/Mike's Hard Lemonade Variety Pack — 12 x 12oz cans.avif",
+    "slug": "mikes-hard-lemonade-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/mikes-hard-lemonade-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Nütrl Vodka Seltzer Variety Pack",
+    "originalFile": "cocktails/Nütrl Vodka Seltzer Variety Pack — 12 x 12oz cans.webp",
+    "slug": "nutrl-vodka-seltzer-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/nutrl-vodka-seltzer-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "On The Rocks The Margarita",
+    "originalFile": "cocktails/On The Rocks The Margarita — 375ml bottle.jpg",
+    "slug": "on-the-rocks-the-margarita",
+    "imagePath": "/images/products/rtd-liqueurs/on-the-rocks-the-margarita.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "On The Rocks The Old Fashioned",
+    "originalFile": "cocktails/On The Rocks The Old Fashioned — 375ml bottle.jpg",
+    "slug": "on-the-rocks-the-old-fashioned",
+    "imagePath": "/images/products/rtd-liqueurs/on-the-rocks-the-old-fashioned.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Simply Spiked Lemonade Variety Pack",
+    "originalFile": "cocktails/Simply Spiked Lemonade Variety Pack — 12 x 12oz cans.webp",
+    "slug": "simply-spiked-lemonade-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/simply-spiked-lemonade-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Smirnoff Ice Pink Lemonade",
+    "originalFile": "cocktails/Smirnoff Ice Pink Lemonade — 6 x 12oz bottles.jpg",
+    "slug": "smirnoff-ice-pink-lemonade",
+    "imagePath": "/images/products/rtd-liqueurs/smirnoff-ice-pink-lemonade.webp"
+  },
+  {
+    "category": "na-rtd-cocktails",
+    "subcategory": "Non-Alcoholic Cocktails",
+    "displayName": "St. Agrestis Phony Negroni Non-Alcoholic Cocktail",
+    "originalFile": "cocktails/St. Agrestis Phony Negroni Non-Alcoholic Cocktail — 4 x 200ml bottles.jpg",
+    "slug": "st-agrestis-phony-negroni-non-alcoholic-cocktail",
+    "imagePath": "/images/products/na-rtd-cocktails/st-agrestis-phony-negroni-non-alcoholic-cocktail.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Surfside Half & Half Vodka Iced Tea Lemonade",
+    "originalFile": "cocktails/Surfside Half & Half Vodka Iced Tea Lemonade — 8 x 12oz cans.webp",
+    "slug": "surfside-half-half-vodka-iced-tea-lemonade",
+    "imagePath": "/images/products/rtd-liqueurs/surfside-half-half-vodka-iced-tea-lemonade.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Tanqueray Gin and Tonic Ready-to-Drink",
+    "originalFile": "cocktails/Tanqueray Gin and Tonic Ready-to-Drink — 4 x 250ml cans.avif",
+    "slug": "tanqueray-gin-and-tonic-ready-to-drink",
+    "imagePath": "/images/products/rtd-liqueurs/tanqueray-gin-and-tonic-ready-to-drink.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Tip Top Proper Cocktails Bee's Knees",
+    "originalFile": "cocktails/Tip Top Proper Cocktails Bee's Knees — 4 x 100ml.webp",
+    "slug": "tip-top-proper-cocktails-bees-knees",
+    "imagePath": "/images/products/rtd-liqueurs/tip-top-proper-cocktails-bees-knees.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Tip Top Proper Cocktails Espresso Martini",
+    "originalFile": "cocktails/Tip Top Proper Cocktails Espresso Martini — 4 x 100ml.jpg",
+    "slug": "tip-top-proper-cocktails-espresso-martini",
+    "imagePath": "/images/products/rtd-liqueurs/tip-top-proper-cocktails-espresso-martini.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Tip Top Proper Cocktails Old Fashioned",
+    "originalFile": "cocktails/Tip Top Proper Cocktails Old Fashioned — 4 x 100ml cans.webp",
+    "slug": "tip-top-proper-cocktails-old-fashioned",
+    "imagePath": "/images/products/rtd-liqueurs/tip-top-proper-cocktails-old-fashioned.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Topo Chico Hard Seltzer Variety Pack",
+    "originalFile": "cocktails/Topo Chico Hard Seltzer Variety Pack — 12 x 12oz cans.avif",
+    "slug": "topo-chico-hard-seltzer-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/topo-chico-hard-seltzer-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Truly Hard Seltzer Berry Variety Pack",
+    "originalFile": "cocktails/Truly Hard Seltzer Berry Variety Pack — 12 x 12oz cans.avif",
+    "slug": "truly-hard-seltzer-berry-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/truly-hard-seltzer-berry-variety-pack.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Twisted Tea Half & Half Hard Iced Tea",
+    "originalFile": "cocktails/Twisted Tea Half & Half Hard Iced Tea — 12 x 12oz cans.avif",
+    "slug": "twisted-tea-half-half-hard-iced-tea",
+    "imagePath": "/images/products/rtd-liqueurs/twisted-tea-half-half-hard-iced-tea.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Twisted Tea Original Hard Iced Tea",
+    "originalFile": "cocktails/Twisted Tea Original Hard Iced Tea — 12 x 12oz cans.webp",
+    "slug": "twisted-tea-original-hard-iced-tea",
+    "imagePath": "/images/products/rtd-liqueurs/twisted-tea-original-hard-iced-tea.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Underwood Pinot Gris",
+    "originalFile": "cocktails/Underwood Pinot Gris — 4 x 375ml cans.webp",
+    "slug": "underwood-pinot-gris",
+    "imagePath": "/images/products/rtd-liqueurs/underwood-pinot-gris.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Underwood Pinot Noir— 4 x 375ml cans",
+    "originalFile": "cocktails/Underwood Pinot Noir— 4 x 375ml cans.webp",
+    "slug": "underwood-pinot-noir-4-x-375ml-cans",
+    "imagePath": "/images/products/rtd-liqueurs/underwood-pinot-noir-4-x-375ml-cans.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "Underwood Rosé",
+    "originalFile": "cocktails/Underwood Rosé — 4 x 375ml cans.webp",
+    "slug": "underwood-rose",
+    "imagePath": "/images/products/rtd-liqueurs/underwood-rose.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "White Claw Black Cherry Hard Seltzer",
+    "originalFile": "cocktails/White Claw Black Cherry Hard Seltzer — 12 x 12oz cans.avif",
+    "slug": "white-claw-black-cherry-hard-seltzer",
+    "imagePath": "/images/products/rtd-liqueurs/white-claw-black-cherry-hard-seltzer.webp"
+  },
+  {
+    "category": "rtd-liqueurs",
+    "subcategory": "Craft Cocktails",
+    "displayName": "White Claw Hard Seltzer Variety Pack",
+    "originalFile": "cocktails/White Claw Hard Seltzer Variety Pack — 12 x 12oz cans.avif",
+    "slug": "white-claw-hard-seltzer-variety-pack",
+    "imagePath": "/images/products/rtd-liqueurs/white-claw-hard-seltzer-variety-pack.webp"
+  }
+]
