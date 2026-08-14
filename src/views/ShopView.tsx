@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
@@ -48,6 +48,8 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   const [macroGroup, setMacroGroup] = useState<'all' | 'whiskey' | 'spirits' | 'na'>('all');
   const [categorySearch, setCategorySearch] = useState('');
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const PRODUCTS_PER_PAGE = 12;
 
   // Category collapse state - defaults to all expanded so clients immediately see all subcategories
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(() => {
@@ -186,6 +188,17 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
     if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
     return 0; // featured
   });
+
+  // Reset to page 1 whenever the filtered/sorted set changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory, selectedSubcategory, sortBy, minPrice, maxPrice, proofFilter, inStockOnly, searchQuery]);
+
+  const totalPages = Math.max(1, Math.ceil(sortedProducts.length / PRODUCTS_PER_PAGE));
+  const paginatedProducts = sortedProducts.slice(
+    (currentPage - 1) * PRODUCTS_PER_PAGE,
+    currentPage * PRODUCTS_PER_PAGE
+  );
 
   const activeCategoryObj = CATEGORIES.find((c) => c.slug === selectedCategory);
 
@@ -728,11 +741,60 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {sortedProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {paginatedProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+
+              {totalPages > 1 && (
+                <div className="flex items-center justify-center gap-2 pt-4">
+                  <button
+                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    disabled={currentPage === 1}
+                    className="px-3 py-2 rounded-lg text-xs font-bold border border-amber-900/40 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-amber-900/20 transition-all"
+                  >
+                    Prev
+                  </button>
+
+                  <div className="flex items-center gap-1 flex-wrap justify-center">
+                    {Array.from({ length: totalPages }, (_, i) => i + 1)
+                      .filter(
+                        (page) =>
+                          page === 1 ||
+                          page === totalPages ||
+                          Math.abs(page - currentPage) <= 1
+                      )
+                      .map((page, idx, arr) => (
+                        <React.Fragment key={page}>
+                          {idx > 0 && arr[idx - 1] !== page - 1 && (
+                            <span className="px-2 text-amber-600/50 text-xs">...</span>
+                          )}
+                          <button
+                            onClick={() => setCurrentPage(page)}
+                            className={`w-9 h-9 rounded-lg text-xs font-bold transition-all ${
+                              page === currentPage
+                                ? 'bg-[#D4AF37] text-[#140D08]'
+                                : 'border border-amber-900/40 text-amber-200 hover:bg-amber-900/20'
+                            }`}
+                          >
+                            {page}
+                          </button>
+                        </React.Fragment>
+                      ))}
+                  </div>
+
+                  <button
+                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    disabled={currentPage === totalPages}
+                    className="px-3 py-2 rounded-lg text-xs font-bold border border-amber-900/40 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-amber-900/20 transition-all"
+                  >
+                    Next
+                  </button>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
