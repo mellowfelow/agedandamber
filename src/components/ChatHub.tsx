@@ -3,12 +3,18 @@
 import React, { useState } from 'react';
 import { MessageSquare, MessageCircle, Mail, Phone, X, ChevronUp } from 'lucide-react';
 import { CHAT, CONTACT } from '../config/site';
+import { useAppState } from '../../app/providers';
 
 export const ChatHub: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { cookieBannerVisible } = useAppState();
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+    <div
+      className={`fixed bottom-6 right-4 md:right-6 z-40 flex-col items-end ${
+        cookieBannerVisible ? 'hidden md:flex' : 'flex'
+      }`}
+    >
       {/* Expanded Menu */}
       {isOpen && (
         <div className="mb-3 w-72 p-4 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/40 text-amber-50 shadow-2xl space-y-3 animate-fade-in">

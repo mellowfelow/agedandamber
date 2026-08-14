@@ -200,7 +200,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           {/* Search Trigger */}
           <button
             onClick={() => setSearchOpen(!searchOpen)}

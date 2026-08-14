@@ -19,6 +19,8 @@ interface AppState {
   setQuickViewProduct: (product: Product | null) => void;
   searchQuery: string;
   setSearchQuery: (q: string) => void;
+  cookieBannerVisible: boolean;
+  setCookieBannerVisible: (visible: boolean) => void;
 }
 
 const AppStateContext = createContext<AppState | null>(null);
@@ -30,6 +32,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [checkoutModalOpen, setCheckoutModalOpen] = useState(false);
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [cookieBannerVisible, setCookieBannerVisible] = useState(false);
 
   useEffect(() => {
     try {
@@ -100,6 +103,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         setQuickViewProduct,
         searchQuery,
         setSearchQuery,
+        cookieBannerVisible,
+        setCookieBannerVisible,
       }}
     >
       {children}

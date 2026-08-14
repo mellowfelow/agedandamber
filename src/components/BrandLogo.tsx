@@ -13,13 +13,13 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 }) => {
   const dimensions = {
     sm: { box: 'w-8 h-8', icon: 32, text: 'text-lg', sub: 'text-[9px]' },
-    md: { box: 'w-11 h-11', icon: 44, text: 'text-xl md:text-2xl', sub: 'text-[10px]' },
+    md: { box: 'w-9 h-9 sm:w-11 sm:h-11', icon: 44, text: 'text-base sm:text-xl md:text-2xl', sub: 'text-[10px]' },
     lg: { box: 'w-14 h-14', icon: 56, text: 'text-2xl md:text-3xl', sub: 'text-[11px]' },
     xl: { box: 'w-20 h-20', icon: 80, text: 'text-3xl md:text-4xl', sub: 'text-[12px]' },
   }[size];
 
   return (
-    <div className={`flex items-center gap-3.5 group select-none ${className}`}>
+    <div className={`flex items-center gap-2 sm:gap-3.5 group select-none min-w-0 ${className}`}>
       {/* Emblem Crest Seal */}
       <div className={`relative ${dimensions.box} shrink-0 flex items-center justify-center rounded-xl bg-gradient-to-br from-[#2B1B0E] via-[#1A1008] to-[#0A0603] p-1 border border-[#D4AF37]/50 shadow-xl group-hover:border-[#D4AF37] group-hover:shadow-[0_0_20px_rgba(212,175,55,0.25)] transition-all duration-300`}>
         {/* Subtle Gold Foil Accent Corners */}
@@ -87,7 +87,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           <span className={`font-serif font-bold text-amber-100 tracking-tight leading-none ${dimensions.text} drop-shadow-sm`}>
             Aged <span className="text-[#D4AF37] font-serif font-normal">&amp;</span> Amber
           </span>
-          <span className={`text-[#D4AF37]/90 font-sans tracking-[0.22em] uppercase font-semibold mt-1.5 block leading-none ${dimensions.sub}`}>
+          <span className={`hidden sm:block text-[#D4AF37]/90 font-sans tracking-[0.22em] uppercase font-semibold mt-1.5 leading-none ${dimensions.sub}`}>
             Fine Spirits &amp; Rare Casks
           </span>
         </div>

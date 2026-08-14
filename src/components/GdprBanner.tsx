@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { Cookie, X } from 'lucide-react';
+import { useAppState } from '../../app/providers';
 
 export const GdprBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { setCookieBannerVisible } = useAppState();
 
   useEffect(() => {
     const consent = localStorage.getItem('aged-and-amber-cookie-consent');
@@ -12,6 +14,10 @@ export const GdprBanner: React.FC = () => {
       setIsVisible(true);
     }
   }, []);
+
+  useEffect(() => {
+    setCookieBannerVisible(isVisible);
+  }, [isVisible, setCookieBannerVisible]);
 
   const handleAccept = () => {
     localStorage.setItem('aged-and-amber-cookie-consent', 'accepted');
@@ -21,7 +27,7 @@ export const GdprBanner: React.FC = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-md z-40 p-5 rounded-2xl bg-[#1C140E]/95 border border-[#D4AF37]/30 text-amber-100 shadow-2xl backdrop-blur-md animate-fade-in">
+    <div className="fixed bottom-4 left-4 right-4 md:right-auto md:max-w-md z-40 p-5 rounded-2xl bg-[#1C140E]/95 border border-[#D4AF37]/30 text-amber-100 shadow-2xl backdrop-blur-md animate-fade-in">
       <div className="flex items-start gap-3">
         <div className="p-2 rounded-lg bg-[#D4AF37]/10 text-[#D4AF37] shrink-0 mt-0.5">
           <Cookie className="w-5 h-5" />
