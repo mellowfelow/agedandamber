@@ -82,7 +82,8 @@ export const CheckoutModal: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md p-4 flex items-center justify-center animate-fade-in">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md p-4 animate-fade-in">
+      <div className="min-h-full flex items-start justify-center">
       <div className="relative w-full max-w-2xl bg-[#1A120B] rounded-3xl border border-[#D4AF37]/30 text-amber-50 shadow-2xl p-6 md:p-8 my-8">
         <button
           onClick={onClose}
@@ -138,37 +139,6 @@ export const CheckoutModal: React.FC = () => {
               <h2 className="text-2xl font-serif font-bold text-amber-100">
                 Spirits Vault Checkout
               </h2>
-            </div>
-
-            {/* Payment Method Selector */}
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-amber-300 uppercase tracking-wider block">
-                Select Payment Method
-              </label>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-2.5">
-                {SHOP.paymentMethods.map((pm) => (
-                  <button
-                    key={pm.id}
-                    type="button"
-                    onClick={() => setSelectedPayment(pm.id)}
-                    className={`p-3 rounded-xl border text-left text-xs transition-all flex flex-col justify-between ${
-                      selectedPayment === pm.id
-                        ? 'bg-[#D4AF37]/15 border-[#D4AF37] text-amber-100 shadow-md'
-                        : 'bg-stone-900/50 border-stone-800 text-amber-300/70 hover:bg-stone-800'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-semibold">{pm.name}</span>
-                      {pm.discount && (
-                        <span className="py-0.5 px-1.5 rounded bg-emerald-950 text-emerald-400 text-[9px] font-bold">
-                          10% OFF
-                        </span>
-                      )}
-                    </div>
-                  </button>
-                ))}
-              </div>
             </div>
 
             {/* Customer Details */}
@@ -258,6 +228,37 @@ export const CheckoutModal: React.FC = () => {
               </label>
             </div>
 
+            {/* Payment Method Selector */}
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-amber-300 uppercase tracking-wider block">
+                Select Payment Method
+              </label>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2.5">
+                {SHOP.paymentMethods.map((pm) => (
+                  <button
+                    key={pm.id}
+                    type="button"
+                    onClick={() => setSelectedPayment(pm.id)}
+                    className={`p-3 rounded-xl border text-left text-xs transition-all flex flex-col justify-between ${
+                      selectedPayment === pm.id
+                        ? 'bg-[#D4AF37]/15 border-[#D4AF37] text-amber-100 shadow-md'
+                        : 'bg-stone-900/50 border-stone-800 text-amber-300/70 hover:bg-stone-800'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="font-semibold">{pm.name}</span>
+                      {pm.discount && (
+                        <span className="py-0.5 px-1.5 rounded bg-emerald-950 text-emerald-400 text-[9px] font-bold">
+                          10% OFF
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Summary */}
             <div className="p-4 rounded-2xl bg-stone-950/80 border border-stone-800 text-xs space-y-2">
               <div className="flex justify-between">
@@ -296,6 +297,7 @@ export const CheckoutModal: React.FC = () => {
             </button>
           </form>
         )}
+      </div>
       </div>
     </div>
   );
