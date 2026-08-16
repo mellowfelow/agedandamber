@@ -29,6 +29,11 @@ export const SHOP = {
   freeShippingThreshold: 300,
   shippingFee: 15,
   cryptoDiscount: 10,
+  sameDayStates: ['Arizona', 'Idaho', 'Nevada', 'New Mexico', 'Oregon', 'Utah'],
+  sameDayCutoff: '2:00 PM local time',
+  standardDelivery: '2-5 business days',
+  shippingEligibility:
+    'We ship only to states with laws permitting direct-to-consumer alcohol shipping, under compliant licensed liquor carrier permits.',
   paymentMethods: [
     { id: 'card', name: 'Credit / Debit Card', icon: 'CreditCard' },
     { id: 'applepay', name: 'Apple Pay', icon: 'Smartphone' },

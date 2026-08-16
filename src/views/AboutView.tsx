@@ -60,7 +60,7 @@ export const AboutView: React.FC = () => {
           Direct Allocations & 21+ Compliant Shipping
         </h2>
         <p>
-          Through our direct-to-consumer platform, enthusiasts across 45 US states gain access to single barrel picks, limited cask-strength releases, and allocated bottlings that are often difficult to find at retail.
+          Through our direct-to-consumer platform, enthusiasts across every state where direct-to-consumer alcohol shipping is legally permitted gain access to single barrel picks, limited cask-strength releases, and allocated bottlings that are often difficult to find at retail. Orders placed before 2:00 PM local time to Arizona, Idaho, Nevada, New Mexico, Oregon, or Utah qualify for same-day dispatch; all other states we serve receive spirits within 2-5 business days.
         </p>
         <p>
           Every order shipped from our Napa Valley headquarters is packed in climate-controlled temperature shields and dispatched via compliant spirits carriers requiring mandatory adult signature and 21+ ID verification upon delivery.

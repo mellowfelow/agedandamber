@@ -24,6 +24,9 @@ Aged And Amber is an independent Napa Valley spirits house that curates and sell
 - Minimum Order Amount: $200 USD
 - Free Shipping Threshold: Orders over $300 USD
 - Flat Shipping Rate: $15 USD on orders below $300
+- Same-Day Delivery: Orders placed before 2:00 PM local time to Arizona, Idaho, Nevada, New Mexico, Oregon, or Utah
+- Standard Delivery: 2-5 business days to all other states we ship to
+- Shipping Eligibility: We ship only to states with laws permitting direct-to-consumer alcohol shipping, under compliant licensed liquor carrier permits
 - Crypto Discount: 10% off instantly when paying via Bitcoin (BTC) or Tether (USDT)
 - Legal Age Guard: Mandatory 21+ age verification and adult signature required upon delivery
 

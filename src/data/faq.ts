@@ -1,10 +1,11 @@
 import { FaqItem } from '../types';
+import { SHOP } from '../config/site';
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'ordering',
     question: 'What is the minimum order requirement for spirits delivery?',
-    answer: 'Aged And Amber maintains a minimum order requirement of $200 for all direct-to-consumer spirits shipments. Orders exceeding $300 qualify for complimentary temperature-controlled express shipping across 45 US states.',
+    answer: 'Aged And Amber maintains a minimum order requirement of $200 for all direct-to-consumer spirits shipments. Orders exceeding $300 qualify for complimentary temperature-controlled express shipping to every state we ship to.',
   },
   {
     category: 'shipping',
@@ -29,6 +30,11 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'shipping',
     question: 'Which states do you ship spirits to?',
-    answer: 'We ship directly to 45 US states under compliant liquor carrier permits. Due to state regulations, we currently cannot ship spirits to Alabama, Alaska, Hawaii, Mississippi, or Utah.',
+    answer: `${SHOP.shippingEligibility} Coverage and delivery speed vary by state — contact our concierge team to confirm eligibility and transit time for your address.`,
+  },
+  {
+    category: 'shipping',
+    question: 'Do you offer same-day spirits delivery?',
+    answer: `Yes. Orders placed before ${SHOP.sameDayCutoff} to ${SHOP.sameDayStates.slice(0, -1).join(', ')}, or ${SHOP.sameDayStates[SHOP.sameDayStates.length - 1]} qualify for same-day dispatch through our compliant liquor carrier network. All other states we ship to receive spirits within ${SHOP.standardDelivery}.`,
   },
 ];
