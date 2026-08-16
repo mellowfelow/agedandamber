@@ -23,6 +23,13 @@ export const CheckoutModal: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [completedOrder, setCompletedOrder] = useState<{
+    orderNumber: string;
+    grandTotal: number;
+    selectedPayment: string;
+    name: string;
+    email: string;
+  } | null>(null);
 
   if (!checkoutModalOpen) return null;
 
@@ -43,17 +50,26 @@ export const CheckoutModal: React.FC = () => {
 
     setIsSubmitting(true);
 
+    // Snapshot the order BEFORE the cart is cleared, so the confirmation
+    // screen shows what was actually ordered and paid, not a recomputed
+    // (by then empty) cart.
+    const orderNumber = `AA-${new Date().toISOString().slice(2, 10).replace(/-/g, '')}-${Math.random()
+      .toString(36)
+      .slice(2, 6)
+      .toUpperCase()}`;
+
     // Web3Forms CORS fetch submission
     const accessKey = FORMS.web3formsKey;
     const bodyFormData = new FormData();
     bodyFormData.append('access_key', accessKey || 'YOUR-WEB3FORMS-KEY-PENDING');
-    bodyFormData.append('subject', `Spirits Order Request from ${formData.name}`);
+    bodyFormData.append('subject', `Spirits Order ${orderNumber} from ${formData.name}`);
     bodyFormData.append('from_name', SITE.name);
     bodyFormData.append('email', formData.email);
     bodyFormData.append('replyto', formData.email);
     bodyFormData.append(
       'message',
-      `Order Items:\n${cart.map((i) => `- ${i.product.name} x${i.quantity} ($${i.product.price * i.quantity})`).join('\n')}\n\n` +
+      `Order Number: ${orderNumber}\n\n` +
+        `Order Items:\n${cart.map((i) => `- ${i.product.name} x${i.quantity} ($${i.product.price * i.quantity})`).join('\n')}\n\n` +
         `Subtotal: $${subtotal}\n` +
         `Crypto Discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
         `Shipping: $${shippingFee}\n` +
@@ -62,23 +78,27 @@ export const CheckoutModal: React.FC = () => {
         `Customer Info:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nAddress: ${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\nNotes: ${formData.notes}`
     );
 
+    const finalizeSuccess = () => {
+      setCompletedOrder({
+        orderNumber,
+        grandTotal,
+        selectedPayment,
+        name: formData.name,
+        email: formData.email,
+      });
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      clearCart();
+    };
+
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { Accept: 'application/json' },
       body: bodyFormData,
     })
       .then((r) => r.json())
-      .then(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        clearCart();
-      })
-      .catch(() => {
-        // Fallback for pending key or offline mode
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        clearCart();
-      });
+      .then(finalizeSuccess)
+      .catch(finalizeSuccess); // Fallback for pending key or offline mode
   };
 
   return (
@@ -92,7 +112,7 @@ export const CheckoutModal: React.FC = () => {
           <X className="w-5 h-5" />
         </button>
 
-        {isSubmitted ? (
+        {isSubmitted && completedOrder ? (
           <div className="text-center py-8 space-y-4">
             <div className="w-16 h-16 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
               <CheckCircle2 className="w-8 h-8" />
@@ -103,20 +123,24 @@ export const CheckoutModal: React.FC = () => {
             </h2>
 
             <p className="text-amber-200/80 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong className="text-amber-100">{formData.name}</strong>. Your spirits order draft has been logged with our Napa Valley concierge.
+              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your spirits order draft has been logged with our Napa Valley concierge.
             </p>
 
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800 text-xs text-left max-w-md mx-auto space-y-2">
               <div className="flex justify-between border-b border-stone-800 pb-2">
+                <span className="text-amber-400/60">Order Number:</span>
+                <span className="font-bold text-amber-200">{completedOrder.orderNumber}</span>
+              </div>
+              <div className="flex justify-between border-b border-stone-800 pb-2">
                 <span className="text-amber-400/60">Selected Payment Method:</span>
-                <span className="font-bold text-amber-200">{selectedPayment}</span>
+                <span className="font-bold text-amber-200">{completedOrder.selectedPayment}</span>
               </div>
               <div className="flex justify-between border-b border-stone-800 pb-2">
                 <span className="text-amber-400/60">Total Order Amount:</span>
-                <span className="font-bold text-[#D4AF37]">${grandTotal.toFixed(2)}</span>
+                <span className="font-bold text-[#D4AF37]">${completedOrder.grandTotal.toFixed(2)}</span>
               </div>
               <p className="text-[11px] text-amber-300/70 pt-1">
-                A confirmation email has been dispatched to <strong>{formData.email}</strong> with payment routing details and adult signature tracking.
+                A confirmation email has been dispatched to <strong>{completedOrder.email}</strong> with payment routing details and adult signature tracking. Please reference your order number above in any follow-up with our concierge.
               </p>
             </div>
 
