@@ -19,7 +19,7 @@ export const CONTACT = {
   email: 'concierge@agedandamber.com',
   phone: '+1 (562) 732-4044',
   whatsapp: '+15627324044',
-  address: '1450 Oak Barrel Way, Napa Valley, CA 94558',
+  address: '72 Bellevue Ave, Napa, CA 94558',
   hq: 'Napa Valley & San Francisco, California, USA',
   country: 'USA',
 };

@@ -26,8 +26,10 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           },
           address: {
             '@type': 'PostalAddress',
-            addressLocality: 'Napa Valley',
+            streetAddress: '72 Bellevue Ave',
+            addressLocality: 'Napa',
             addressRegion: 'CA',
+            postalCode: '94558',
             addressCountry: 'US',
           },
           telephone: CONTACT.phone,
