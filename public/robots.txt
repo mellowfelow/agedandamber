@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /thank-you-contact/
 Disallow: /thank-you-order/
 Disallow: /thank-you-wholesale/
-Sitemap: https://agedandamber.com/sitemap.xml
+Sitemap: https://www.agedandamber.com/sitemap.xml
 
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 
@@ -44,7 +44,7 @@ User-agent: cohere-ai
 Allow: /
 
 # Agent-readable resources
-# llms.txt: https://agedandamber.com/llms.txt
-# API Catalog: https://agedandamber.com/.well-known/api-catalog
-# Agent Skills: https://agedandamber.com/.well-known/agent-skills/index.json
-# MCP Server Card: https://agedandamber.com/.well-known/mcp/server-card.json
+# llms.txt: https://www.agedandamber.com/llms.txt
+# API Catalog: https://www.agedandamber.com/.well-known/api-catalog
+# Agent Skills: https://www.agedandamber.com/.well-known/agent-skills/index.json
+# MCP Server Card: https://www.agedandamber.com/.well-known/mcp/server-card.json

@@ -1,49 +1,49 @@
 {
   "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
   "name": "Aged And Amber",
-  "url": "https://agedandamber.com",
+  "url": "https://www.agedandamber.com",
   "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
   "skills": [
     {
       "name": "search-products",
       "type": "commerce",
       "description": "Search spirits catalog by keyword, category, or maximum price",
-      "url": "https://agedandamber.com/api/mcp",
+      "url": "https://www.agedandamber.com/api/mcp",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "browse-catalog",
       "type": "navigation",
       "description": "Browse spirits catalog by cask category",
-      "url": "https://agedandamber.com/shop/",
+      "url": "https://www.agedandamber.com/shop/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "order-draft",
       "type": "commerce",
       "description": "Create a prefilled order draft for adult 21+ verification. Human completes order.",
-      "url": "https://agedandamber.com/api/mcp",
+      "url": "https://www.agedandamber.com/api/mcp",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "wholesale-inquiry",
       "type": "commerce",
       "description": "Wholesale pricing tiers and single barrel allocations",
-      "url": "https://agedandamber.com/wholesale/",
+      "url": "https://www.agedandamber.com/wholesale/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "product-education",
       "type": "content",
       "description": "Educational articles on cask wood finishes and non-chill filtration",
-      "url": "https://agedandamber.com/blog/",
+      "url": "https://www.agedandamber.com/blog/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "name": "contact",
       "type": "support",
       "description": "Contact Aged And Amber spirits advisory concierge",
-      "url": "https://agedandamber.com/contact/",
+      "url": "https://www.agedandamber.com/contact/",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   ]

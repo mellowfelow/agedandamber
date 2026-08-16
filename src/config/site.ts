@@ -1,7 +1,7 @@
 export const SITE = {
   name: 'Aged And Amber',
   tagline: 'Crafted Whiskeys, Small-Batch Spirits & Rare Cask Finishes',
-  domain: 'agedandamber.com',
+  domain: 'www.agedandamber.com',
   locale: 'en-US',
   currency: 'USD',
   currencySymbol: '$',
@@ -17,8 +17,8 @@ export const SITE = {
 
 export const CONTACT = {
   email: 'concierge@agedandamber.com',
-  phone: '+1 (800) 555-AMBER',
-  whatsapp: '+18005552623',
+  phone: '+1 (562) 732-4044',
+  whatsapp: '+15627324044',
   address: '1450 Oak Barrel Way, Napa Valley, CA 94558',
   hq: 'Napa Valley & San Francisco, California, USA',
   country: 'USA',
@@ -42,20 +42,21 @@ export const SHOP = {
 
 export const FORMS = {
   provider: 'web3forms',
-  web3formsKey: 'YOUR-WEB3FORMS-KEY-PENDING',
+  web3formsKey: '87a1bafe-52c9-424c-bee3-ff40ff8a6243',
   resendFrom: 'orders@agedandamber.com',
   turnstileSiteKey: '',
 };
 
 export const CHAT = {
   channels: [
-    { type: 'whatsapp', name: 'WhatsApp Concierge', value: '+18005552623' },
+    { type: 'whatsapp', name: 'WhatsApp Concierge', value: '+15627324044' },
     { type: 'email', name: 'Spirits Advisor Email', value: 'concierge@agedandamber.com' },
-    { type: 'phone', name: 'Direct Phone Line', value: '+1 (800) 555-AMBER' },
+    { type: 'phone', name: 'Direct Phone Line', value: '+1 (562) 732-4044' },
   ],
   widget: {
     type: 'tawk',
-    propertyId: '65f8a0211ec1082f0539c',
+    propertyId: '6a81e0adffd6811d48496109',
+    widgetId: '1k05lb9hq',
   },
 };
 

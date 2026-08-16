@@ -3,24 +3,24 @@
   "protocol_version": "1.0",
   "spec": "https://ucp.dev/specification/overview/",
   "schema": "https://ucp.dev/schema/v1.json",
-  "site": "https://agedandamber.com",
+  "site": "https://www.agedandamber.com",
   "name": "Aged And Amber",
   "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
   "services": [
-    { "id": "product-catalog", "type": "catalog", "url": "https://agedandamber.com/shop/", "description": "Full spirits catalog" },
-    { "id": "mcp-server", "type": "mcp", "url": "https://agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
-    { "id": "order", "type": "commerce", "url": "https://agedandamber.com/shop/", "description": "Place orders via 21+ verified checkout" },
-    { "id": "wholesale", "type": "b2b", "url": "https://agedandamber.com/wholesale/", "description": "Wholesale case pricing and single barrel allocations" }
+    { "id": "product-catalog", "type": "catalog", "url": "https://www.agedandamber.com/shop/", "description": "Full spirits catalog" },
+    { "id": "mcp-server", "type": "mcp", "url": "https://www.agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
+    { "id": "order", "type": "commerce", "url": "https://www.agedandamber.com/shop/", "description": "Place orders via 21+ verified checkout" },
+    { "id": "wholesale", "type": "b2b", "url": "https://www.agedandamber.com/wholesale/", "description": "Wholesale case pricing and single barrel allocations" }
   ],
   "capabilities": ["browse", "search", "inquiry", "wholesale", "content", "mcp"],
   "endpoints": {
-    "mcp": "https://agedandamber.com/api/mcp",
-    "catalog": "https://agedandamber.com/shop/",
-    "contact": "https://agedandamber.com/contact/",
-    "agent_skills": "https://agedandamber.com/.well-known/agent-skills/index.json",
-    "mcp_server_card": "https://agedandamber.com/.well-known/mcp/server-card.json",
-    "api_catalog": "https://agedandamber.com/.well-known/api-catalog",
-    "llms_txt": "https://agedandamber.com/llms.txt"
+    "mcp": "https://www.agedandamber.com/api/mcp",
+    "catalog": "https://www.agedandamber.com/shop/",
+    "contact": "https://www.agedandamber.com/contact/",
+    "agent_skills": "https://www.agedandamber.com/.well-known/agent-skills/index.json",
+    "mcp_server_card": "https://www.agedandamber.com/.well-known/mcp/server-card.json",
+    "api_catalog": "https://www.agedandamber.com/.well-known/api-catalog",
+    "llms_txt": "https://www.agedandamber.com/llms.txt"
   },
   "currency": "USD",
   "minimum_order_usd": "200",

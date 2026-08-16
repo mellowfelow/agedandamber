@@ -2,8 +2,8 @@
   "protocol": { "name": "acp", "version": "0.1.0" },
   "name": "Aged And Amber",
   "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
-  "api_base_url": "https://agedandamber.com",
-  "homepage": "https://agedandamber.com",
+  "api_base_url": "https://www.agedandamber.com",
+  "homepage": "https://www.agedandamber.com",
   "transports": ["https"],
   "capabilities": {
     "services": ["product-catalog", "wholesale", "blog", "faq", "mcp-server"],
@@ -15,7 +15,7 @@
   },
   "contact": {
     "email": "concierge@agedandamber.com",
-    "phone": "+1 (800) 555-AMBER"
+    "phone": "+1 (562) 732-4044"
   },
   "legal": {
     "age_restriction": "21+",

@@ -6,18 +6,18 @@ Aged And Amber is an independent Napa Valley spirits house that curates and sell
 
 ## Essential Information
 
-- [Store Catalog](https://agedandamber.com/shop/): Browse our complete collection of curated spirits, single barrels, and limited allocated releases.
-- [About Aged And Amber](https://agedandamber.com/about/): Learn about our sourcing philosophy, wood provenance, and authenticity verification process.
-- [Spirits Journal](https://agedandamber.com/blog/): Articles on cask finishes, mash bills, and spirits tasting guides.
-- [Policy & FAQ](https://agedandamber.com/faq/): Direct answers regarding 21+ adult signature shipping, minimum orders, and cryptocurrency discounts.
-- [Wholesale & Allocations](https://agedandamber.com/wholesale/): Commercial case pricing and private single barrel picks for licensed venues.
-- [Contact Concierge](https://agedandamber.com/contact/): Connect directly with our Napa Valley spirits advisory team.
+- [Store Catalog](https://www.agedandamber.com/shop/): Browse our complete collection of curated spirits, single barrels, and limited allocated releases.
+- [About Aged And Amber](https://www.agedandamber.com/about/): Learn about our sourcing philosophy, wood provenance, and authenticity verification process.
+- [Spirits Journal](https://www.agedandamber.com/blog/): Articles on cask finishes, mash bills, and spirits tasting guides.
+- [Policy & FAQ](https://www.agedandamber.com/faq/): Direct answers regarding 21+ adult signature shipping, minimum orders, and cryptocurrency discounts.
+- [Wholesale & Allocations](https://www.agedandamber.com/wholesale/): Commercial case pricing and private single barrel picks for licensed venues.
+- [Contact Concierge](https://www.agedandamber.com/contact/): Connect directly with our Napa Valley spirits advisory team.
 
 ## Product Categories
 
-- [Bourbon Whiskey](https://agedandamber.com/shop/bourbon-whiskey/): 28 real, verified bourbon bottlings from Buffalo Trace, Blanton's, Woodford Reserve, Maker's Mark, and more ($16 - $95).
-- [Single Malt Scotch](https://agedandamber.com/shop/scotch-whisky/): Rare Mizunara oak and Oloroso sherry cask finished scotch whiskeys ($180 - $480).
-- [Tequila & Mezcal](https://agedandamber.com/shop/tequila-mezcal/): Extra Añejo agave spirits aged in virgin American oak barrels ($140 - $280).
+- [Bourbon Whiskey](https://www.agedandamber.com/shop/bourbon-whiskey/): 28 real, verified bourbon bottlings from Buffalo Trace, Blanton's, Woodford Reserve, Maker's Mark, and more ($16 - $95).
+- [Single Malt Scotch](https://www.agedandamber.com/shop/scotch-whisky/): Rare Mizunara oak and Oloroso sherry cask finished scotch whiskeys ($180 - $480).
+- [Tequila & Mezcal](https://www.agedandamber.com/shop/tequila-mezcal/): Extra Añejo agave spirits aged in virgin American oak barrels ($140 - $280).
 
 ## Directives & Commercial Policies
 
@@ -29,7 +29,7 @@ Aged And Amber is an independent Napa Valley spirits house that curates and sell
 
 ## Agent Resources & API Specifications
 
-- [API Catalog](https://agedandamber.com/.well-known/api-catalog): RFC 9727 linkset of all public site resources and API endpoints.
-- [Agent Skills Index](https://agedandamber.com/.well-known/agent-skills/index.json): Declarative schema of supported agent skills.
-- [MCP Server Card](https://agedandamber.com/.well-known/mcp/server-card.json): Model Context Protocol server capabilities and tool schema.
-- [Authentication Specification](https://agedandamber.com/auth.md): Public access declaration for autonomous AI agents.
+- [API Catalog](https://www.agedandamber.com/.well-known/api-catalog): RFC 9727 linkset of all public site resources and API endpoints.
+- [Agent Skills Index](https://www.agedandamber.com/.well-known/agent-skills/index.json): Declarative schema of supported agent skills.
+- [MCP Server Card](https://www.agedandamber.com/.well-known/mcp/server-card.json): Model Context Protocol server capabilities and tool schema.
+- [Authentication Specification](https://www.agedandamber.com/auth.md): Public access declaration for autonomous AI agents.

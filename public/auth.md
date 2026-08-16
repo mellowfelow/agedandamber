@@ -8,11 +8,11 @@ No authentication required. All resources and API endpoints are publicly accessi
 ## Public Resources
 | Resource | URL |
 |---|---|
-| Product Catalog | https://agedandamber.com/shop/ |
-| Spirits Journal | https://agedandamber.com/blog/ |
-| Policy FAQ | https://agedandamber.com/faq/ |
-| Wholesale Allocations | https://agedandamber.com/wholesale/ |
-| MCP Streamable Server | https://agedandamber.com/api/mcp |
+| Product Catalog | https://www.agedandamber.com/shop/ |
+| Spirits Journal | https://www.agedandamber.com/blog/ |
+| Policy FAQ | https://www.agedandamber.com/faq/ |
+| Wholesale Allocations | https://www.agedandamber.com/wholesale/ |
+| MCP Streamable Server | https://www.agedandamber.com/api/mcp |
 
 ## Authentication
 

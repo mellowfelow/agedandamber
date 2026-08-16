@@ -1,11 +1,11 @@
 {
-  "resource": "https://agedandamber.com",
+  "resource": "https://www.agedandamber.com",
   "resource_name": "Aged And Amber Public Catalog",
   "authorization_servers": [],
   "scopes_supported": [],
   "bearer_methods_supported": [],
-  "resource_documentation": "https://agedandamber.com/auth.md",
-  "resource_policy_uri": "https://agedandamber.com/faq/",
+  "resource_documentation": "https://www.agedandamber.com/auth.md",
+  "resource_policy_uri": "https://www.agedandamber.com/faq/",
   "tls_client_certificate_bound_access_tokens": false,
-  "note": "All resources on agedandamber.com are publicly accessible. No OAuth tokens required."
+  "note": "All resources on www.agedandamber.com are publicly accessible. No OAuth tokens required."
 }

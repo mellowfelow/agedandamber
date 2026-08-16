@@ -1,5 +1,5 @@
 {
-  "issuer": "https://agedandamber.com",
+  "issuer": "https://www.agedandamber.com",
   "authorization_endpoint": null,
   "token_endpoint": null,
   "jwks_uri": null,
@@ -8,14 +8,14 @@
   "scopes_supported": [],
   "note": "Aged And Amber has no protected APIs. All resources publicly accessible.",
   "public_resources": [
-    "https://agedandamber.com/shop/",
-    "https://agedandamber.com/blog/",
-    "https://agedandamber.com/faq/",
-    "https://agedandamber.com/wholesale/",
-    "https://agedandamber.com/llms.txt",
-    "https://agedandamber.com/.well-known/api-catalog",
-    "https://agedandamber.com/.well-known/agent-skills/index.json",
-    "https://agedandamber.com/.well-known/mcp/server-card.json"
+    "https://www.agedandamber.com/shop/",
+    "https://www.agedandamber.com/blog/",
+    "https://www.agedandamber.com/faq/",
+    "https://www.agedandamber.com/wholesale/",
+    "https://www.agedandamber.com/llms.txt",
+    "https://www.agedandamber.com/.well-known/api-catalog",
+    "https://www.agedandamber.com/.well-known/agent-skills/index.json",
+    "https://www.agedandamber.com/.well-known/mcp/server-card.json"
   ],
   "agent_auth": {
     "register_uri": null,

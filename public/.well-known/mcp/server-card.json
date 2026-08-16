@@ -4,15 +4,15 @@
     "name": "Aged And Amber",
     "version": "1.0.0",
     "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
-    "homepage": "https://agedandamber.com",
+    "homepage": "https://www.agedandamber.com",
     "contact": {
       "email": "concierge@agedandamber.com",
-      "phone": "+1 (800) 555-AMBER"
+      "phone": "+1 (562) 732-4044"
     }
   },
   "transport": {
     "type": "streamable-http",
-    "endpoint": "https://agedandamber.com/api/mcp"
+    "endpoint": "https://www.agedandamber.com/api/mcp"
   },
   "capabilities": {
     "tools": [
@@ -71,17 +71,17 @@
       {
         "name": "product-catalog",
         "description": "Full product catalog",
-        "uri": "https://agedandamber.com/shop/"
+        "uri": "https://www.agedandamber.com/shop/"
       },
       {
         "name": "wholesale",
         "description": "Wholesale pricing and barrel picks",
-        "uri": "https://agedandamber.com/wholesale/"
+        "uri": "https://www.agedandamber.com/wholesale/"
       },
       {
         "name": "blog",
         "description": "Spirits education journal",
-        "uri": "https://agedandamber.com/blog/"
+        "uri": "https://www.agedandamber.com/blog/"
       }
     ],
     "commerce": {

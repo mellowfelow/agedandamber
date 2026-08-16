@@ -18,7 +18,7 @@
           if (query) params.set('q', query);
           if (category) params.set('category', category);
           if (max_price) params.set('max_price', max_price);
-          const res = await fetch(`https://agedandamber.com/api/search?${params}`);
+          const res = await fetch(`https://www.agedandamber.com/api/search?${params}`);
           return res.json();
         }
       },
@@ -32,7 +32,7 @@
           }
         },
         execute: async ({ category }) => {
-          const url = category ? `https://agedandamber.com/shop/${category}/` : `https://agedandamber.com/shop/`;
+          const url = category ? `https://www.agedandamber.com/shop/${category}/` : `https://www.agedandamber.com/shop/`;
           window.location.href = url;
           return { url };
         }
@@ -42,8 +42,8 @@
         description: "Get wholesale pricing tiers and single barrel allocation info",
         inputSchema: { type: "object", properties: {} },
         execute: async () => {
-          window.location.href = `https://agedandamber.com/wholesale/`;
-          return { url: `https://agedandamber.com/wholesale/` };
+          window.location.href = `https://www.agedandamber.com/wholesale/`;
+          return { url: `https://www.agedandamber.com/wholesale/` };
         }
       },
       {
@@ -51,8 +51,8 @@
         description: "Contact Aged And Amber spirits concierge",
         inputSchema: { type: "object", properties: {} },
         execute: async () => {
-          window.location.href = `https://agedandamber.com/contact/`;
-          return { url: `https://agedandamber.com/contact/` };
+          window.location.href = `https://www.agedandamber.com/contact/`;
+          return { url: `https://www.agedandamber.com/contact/` };
         }
       }
     ]

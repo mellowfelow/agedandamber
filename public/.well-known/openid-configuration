@@ -1,5 +1,5 @@
 {
-  "issuer": "https://agedandamber.com",
+  "issuer": "https://www.agedandamber.com",
   "note": "Aged And Amber does not operate an OpenID Connect provider. All resources publicly accessible.",
   "public_site": true,
   "authorization_endpoint": null,
