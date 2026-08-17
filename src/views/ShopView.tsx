@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useMemo, useEffect } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { CATEGORIES } from '../data/products';
+import { SUBCATEGORY_HUBS } from '../data/subcategoryHubs';
 import { getRouteUrl } from '../utils/routes';
 import {
   Search,
@@ -533,6 +535,24 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
             {activeCategoryObj.seo.transactionalCTA}
           </p>
         )}
+        {activeCategoryObj && selectedSubcategory === 'all' && (() => {
+          const hubs = SUBCATEGORY_HUBS.filter((h) => h.categorySlug === activeCategoryObj.slug);
+          if (hubs.length === 0) return null;
+          return (
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <span className="text-[11px] text-amber-400/60 font-semibold uppercase tracking-wider">Shop by style:</span>
+              {hubs.map((h) => (
+                <Link
+                  key={h.hubSlug}
+                  href={getRouteUrl.product(h.categorySlug, h.hubSlug)}
+                  className="text-xs font-semibold text-[#D4AF37] hover:underline"
+                >
+                  {h.name}
+                </Link>
+              ))}
+            </div>
+          );
+        })()}
         {!activeCategoryObj && (
           <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
             Buy whiskey online — direct from distillery allocations, shipped to every state with compliant direct-to-consumer alcohol shipping laws. Adult signature required.

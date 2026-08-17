@@ -41,6 +41,14 @@ export interface Category {
   seo?: CategorySeo;
 }
 
+export interface SubcategoryHub {
+  categorySlug: string;
+  hubSlug: string;
+  subcategoryName: string;
+  name: string;
+  seo: CategorySeo;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
