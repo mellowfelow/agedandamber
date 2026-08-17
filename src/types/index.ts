@@ -23,12 +23,22 @@ export interface Product {
   distilleryLocation: string;
 }
 
+export interface CategorySeo {
+  titleTag: string;
+  h1: string;
+  metaDescription: string;
+  definitionHook: string;
+  transactionalCTA?: string;
+  faqs: { question: string; answer: string }[];
+}
+
 export interface Category {
   slug: string;
   name: string;
   description: string;
   image: string;
   subcategories: string[];
+  seo?: CategorySeo;
 }
 
 export interface BlogPost {

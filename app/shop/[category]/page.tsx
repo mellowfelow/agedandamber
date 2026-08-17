@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS, CATEGORIES } from '@/src/data/products';
 import { ShopView } from '@/src/views/ShopView';
+import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
 
 interface Props {
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) return {};
   return {
-    title: `${cat.name} — Shop`,
-    description: cat.description,
+    title: cat.seo?.titleTag || `${cat.name} — Shop`,
+    description: cat.seo?.metaDescription || cat.description,
     alternates: { canonical: `https://${SITE.domain}/shop/${cat.slug}/` },
   };
 }
@@ -28,5 +29,17 @@ export default async function ShopCategoryPage({ params }: Props) {
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) notFound();
 
-  return <ShopView products={PRODUCTS} selectedCategory={category} />;
+  const categoryProducts = PRODUCTS.filter((p) => p.category === cat.slug);
+
+  return (
+    <>
+      {cat.seo && (
+        <>
+          <JsonLd type="itemlist" data={{ name: cat.name, products: categoryProducts }} />
+          <JsonLd type="faq" data={cat.seo.faqs} />
+        </>
+      )}
+      <ShopView products={PRODUCTS} selectedCategory={category} />
+    </>
+  );
 }

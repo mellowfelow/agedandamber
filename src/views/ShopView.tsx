@@ -49,6 +49,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   const [categorySearch, setCategorySearch] = useState('');
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const PRODUCTS_PER_PAGE = 12;
 
   // Category collapse state - defaults to all expanded so clients immediately see all subcategories
@@ -102,7 +103,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
       return ['fine-wine', 'champagne-sparkling', 'na-wine', 'na-champagne-sparkling'].includes(slug);
     }
     if (group === 'spirits') {
-      return ['tequila-mezcal', 'vodka', 'gin', 'rum', 'cognac-brandy', 'rtd-liqueurs'].includes(slug);
+      return ['tequila-mezcal', 'craft-vodka', 'artisanal-gin', 'aged-dark-rum', 'cognac-brandy', 'rtd-liqueurs'].includes(slug);
     }
     if (group === 'na') {
       return slug.startsWith('na-');
@@ -515,13 +516,28 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           <span>{products.length} Direct Allocations</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-serif font-bold text-amber-100 tracking-tight">
-          {activeCategoryObj ? activeCategoryObj.name : 'Complete Spirits Catalogue'}
+          {activeCategoryObj
+            ? activeCategoryObj.seo?.h1 || activeCategoryObj.name
+            : `Buy Whiskey Online — ${products.length} Direct Allocations`}
         </h1>
         <p className="text-sm text-amber-200/70 max-w-3xl leading-relaxed">
           {activeCategoryObj
-            ? activeCategoryObj.description
+            ? activeCategoryObj.seo?.definitionHook || activeCategoryObj.description
             : 'Explore our complete direct allocation list of rare bourbons, cask strength ryes, single malt scotches, aged tequilas, and zero-proof non-alcoholic fine wines and spirits.'}
         </p>
+        {activeCategoryObj?.seo && selectedSubcategory === 'all' && (
+          <div className="text-[11px] text-amber-400/50">Last updated: August 2026</div>
+        )}
+        {activeCategoryObj?.seo?.transactionalCTA && selectedSubcategory === 'all' && (
+          <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
+            {activeCategoryObj.seo.transactionalCTA}
+          </p>
+        )}
+        {!activeCategoryObj && (
+          <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
+            Buy whiskey online — direct from distillery allocations, shipped to every state with compliant direct-to-consumer alcohol shipping laws. Adult signature required.
+          </p>
+        )}
       </div>
 
       {/* Macro Collection Group Filter Tabs */}
@@ -798,6 +814,40 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           )}
         </div>
       </div>
+
+      {/* Category FAQ */}
+      {activeCategoryObj?.seo?.faqs && activeCategoryObj.seo.faqs.length > 0 && selectedSubcategory === 'all' && (
+        <div className="max-w-3xl space-y-4 pt-4">
+          <h2 className="text-xl font-serif font-bold text-amber-100">
+            {activeCategoryObj.name} — Frequently Asked Questions
+          </h2>
+          <div className="space-y-3">
+            {activeCategoryObj.seo.faqs.map((item, idx) => (
+              <div
+                key={idx}
+                className="rounded-2xl bg-[#1A120B] border border-amber-900/40 overflow-hidden transition-all"
+              >
+                <button
+                  onClick={() => setOpenFaqIdx(openFaqIdx === idx ? null : idx)}
+                  className="w-full p-4 text-left flex items-center justify-between gap-4 font-serif font-bold text-sm text-amber-100 hover:text-[#D4AF37] transition-colors"
+                >
+                  <span>{item.question}</span>
+                  <ChevronDown
+                    className={`w-4 h-4 text-[#D4AF37] shrink-0 transition-transform ${
+                      openFaqIdx === idx ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                {openFaqIdx === idx && (
+                  <div className="p-4 pt-0 text-xs text-amber-200/80 leading-relaxed border-t border-amber-900/20">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Mobile Slide-Over Filter Drawer */}
       {mobileFilterOpen && (

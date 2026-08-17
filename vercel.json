@@ -8,6 +8,21 @@
       "has": [{ "type": "host", "value": "agedandamber.com" }],
       "destination": "https://www.agedandamber.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/shop/vodka/:path*",
+      "destination": "/shop/craft-vodka/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/shop/gin/:path*",
+      "destination": "/shop/artisanal-gin/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/shop/rum/:path*",
+      "destination": "/shop/aged-dark-rum/:path*",
+      "permanent": true
     }
   ],
   "headers": [

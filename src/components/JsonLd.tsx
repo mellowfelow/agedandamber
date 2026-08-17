@@ -2,7 +2,7 @@ import React from 'react';
 import { SITE, CONTACT, BRAND, SHOP } from '../config/site';
 
 interface JsonLdProps {
-  type: 'homepage' | 'product' | 'article' | 'faq';
+  type: 'homepage' | 'product' | 'article' | 'faq' | 'itemlist';
   data?: any;
 }
 
@@ -79,6 +79,19 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           name: SITE.name,
         },
       },
+    };
+  } else if (type === 'itemlist' && data) {
+    schemaData = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: data.name,
+      numberOfItems: data.products.length,
+      itemListElement: data.products.map((p: any, idx: number) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+        name: p.name,
+      })),
     };
   } else if (type === 'faq' && data) {
     schemaData = {
