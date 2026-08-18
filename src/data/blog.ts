@@ -2298,4 +2298,556 @@ As with whiskey and tequila, save your most complex, extensively aged, sipping-g
       { question: "Why does a Mai Tai use two different rums?", answer: "The classic Mai Tai blends funky, ester-forward Jamaican rum with richer Demerara rum to achieve a layered depth that a single rum style can't replicate on its own." },
     ],
   },
+  {
+    slug: 'cognac-vs-brandy',
+    title: "Cognac vs Brandy: What's the Actual Difference?",
+    excerpt: "Every cognac is brandy, but not every brandy is cognac — here's the exact legal and production line that separates the two.",
+    content: `
+Cognac and brandy get used almost interchangeably in casual conversation, but the real relationship mirrors bourbon and whiskey: cognac is a specific, tightly regulated type of brandy, not a separate category running alongside it.
+
+## Brandy Is the Umbrella Category
+
+Brandy is the broad term for any spirit distilled from fermented fruit — most commonly grapes, though apple brandy (Calvados), pear brandy, and other fruit brandies exist too. Brandy can be produced almost anywhere in the world, from a huge range of grape varieties and production methods.
+
+## Cognac: A Specific, Protected Type of Brandy
+
+Cognac is brandy that meets a narrow, legally protected set of requirements:
+
+1. Made from specific grape varieties (primarily Ugni Blanc), grown in the designated Cognac region of France.
+2. Double-distilled in copper pot stills (charentais stills), following methods specific to the region.
+3. Aged a minimum of two years in French oak, typically Limousin or Tronçais.
+4. Produced within the legally defined Cognac appellation — no exceptions for grapes or production grown or done elsewhere, no matter how similar the process.
+
+## The Cognac Cru System
+
+Within the Cognac region, six official growing zones (crus) are ranked by soil quality and reputation, with Grande Champagne and Petite Champagne considered the top two. Cognac blending Grande and Petite Champagne grapes exclusively can be labelled "Fine Champagne" — a designation of quality and origin, unrelated to the sparkling wine region of the same name.
+
+## Cognac's Age Categories
+
+- **VS (Very Special)** — minimum 2 years in oak.
+- **VSOP (Very Superior Old Pale)** — minimum 4 years in oak.
+- **XO (Extra Old)** — minimum 10 years in oak.
+
+## Other Notable Brandies (Not Cognac)
+
+**Armagnac**, from a different, older region of southwest France, is typically single-distilled (versus cognac's double distillation) in column stills, producing a generally more rustic, robust character. **Calvados** is French apple brandy from Normandy. **American brandy** and **Spanish brandy (Brandy de Jerez)** each follow their own regional traditions, entirely outside the Cognac appellation.
+
+## Why the Distinction Matters When Buying
+
+If a bottle says "cognac," you're guaranteed a specific region, specific grapes, specific double-pot-still distillation, and a minimum ageing period — all enforced by French law. "Brandy" alone guarantees none of that specificity; it could be an inexpensive grape spirit from anywhere in the world, or an excellent Armagnac or Calvados built to an entirely different regional standard. Knowing which one you're actually buying tells you far more than the word "brandy" alone ever will.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cognac Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/cognac-brandy.webp',
+    tags: ['Cognac', 'Brandy', 'Spirits Education'],
+    faqs: [
+      { question: "Is all cognac brandy?", answer: "Yes — cognac is a specific, legally protected type of brandy that must be produced in the Cognac region of France from specific grapes, double-distilled in copper pot stills, and aged a minimum of two years. Brandy is the broader category covering any fruit-based distilled spirit." },
+      { question: "What is the difference between cognac and Armagnac?", answer: "Both are French brandies, but cognac comes from the Cognac region and is double-distilled, while Armagnac comes from a different, older region of southwest France and is typically single-distilled in column stills, producing a generally more rustic character." },
+    ],
+  },
+  {
+    slug: 'what-is-cognac',
+    title: "What Is Cognac? The Legal Rules and the VS/VSOP/XO System Explained",
+    excerpt: "Cognac is one of the most tightly regulated spirits in the world — here's exactly what the law requires, and what VS, VSOP, and XO actually mean.",
+    content: `
+Cognac is one of the most rigorously protected spirits categories in the world — a designation of origin, like Champagne or Scotch, tied to a specific region of France and a specific production method.
+
+## The Legal Requirements
+
+To be called cognac, a spirit must be:
+
+1. Distilled from grapes (primarily Ugni Blanc, with smaller amounts of other approved varieties) grown within the legally defined Cognac appellation in southwest France.
+2. Double-distilled in traditional copper pot stills called alembic charentais, following the region's specific distillation method.
+3. Aged a minimum of two years in French oak barrels, typically Limousin or Tronçais.
+4. Bottled at no less than 40% ABV.
+
+## From Grape to Bottle
+
+Grapes are harvested and fermented into a low-alcohol, high-acid base wine — deliberately not built for drinking on its own, since acidity (not sweetness) is what makes for good distillation material. That wine is then double-distilled in copper pot stills, producing a clear spirit called eau-de-vie ("water of life"), which is then aged in French oak, where it develops its colour and characteristic dried fruit, vanilla, and rancio complexity over years or decades.
+
+## The Age Categories, Explained
+
+- **VS (Very Special):** the youngest eau-de-vie in the blend is aged a minimum of 2 years. The entry point into cognac, typically showing bright fruit and light oak character.
+- **VSOP (Very Superior Old Pale):** minimum 4 years. Noticeably more rounded and complex than VS, often considered the sweet spot for both sipping and cocktails.
+- **XO (Extra Old):** minimum 10 years. Rich, dense, and layered, with pronounced dried fruit, leather, and rancio notes — cognac's serious sipping tier.
+
+Note that these are minimums for the youngest component in the blend — many cognac houses blend considerably older eau-de-vie into their VSOP and XO releases well beyond the legal floor.
+
+## The Cru System
+
+Cognac production is divided into six official growing zones (crus), ranked by soil and reputation: Grande Champagne, Petite Champagne, Borderies, Fins Bois, Bons Bois, and Bois Ordinaires. Grande Champagne is considered the most prestigious, producing the most age-worthy eau-de-vie; a cognac blending only Grande and Petite Champagne grapes can carry the "Fine Champagne" designation.
+
+## Why Cognac's Rules Matter
+
+Every requirement — the region, the grape, the double pot-still distillation, the French oak — is enforced by French and EU law, not just marketing convention. That legal backing is exactly why "cognac" carries the international reputation it does: the name itself is a verifiable guarantee of a specific origin and production method, not just a style descriptor.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cognac Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/cognac-brandy.webp',
+    tags: ['Cognac', 'VSOP', 'XO', 'Spirits Education'],
+    faqs: [
+      { question: "What is the difference between VS, VSOP, and XO cognac?", answer: "These designations reflect the minimum age of the youngest eau-de-vie in the blend: VS is aged at least 2 years, VSOP at least 4 years, and XO at least 10 years. Older designations generally show deeper, more complex flavour." },
+      { question: "Can cognac be made outside France?", answer: "No — cognac is a legally protected designation of origin that can only be produced within the Cognac appellation of southwest France, using specific grapes and double pot-still distillation. A spirit made the same way elsewhere must be labelled as brandy, not cognac." },
+    ],
+  },
+  {
+    slug: 'types-of-gin',
+    title: "Types of Gin: London Dry, Plymouth, Old Tom & More Explained",
+    excerpt: "Gin covers a wider stylistic range than most drinkers realise — here's how London Dry, Plymouth, Old Tom, and modern contemporary gin actually differ.",
+    content: `
+Gin is defined by one requirement above all others — a predominant juniper flavour — but within that single rule sits a surprisingly wide range of production styles and historical traditions.
+
+## The Basic Definition
+
+Gin is a spirit redistilled or infused with botanicals, with juniper required to be the predominant flavour. Beyond that core requirement, individual styles diverge considerably in production method, additional botanicals, and geographic origin.
+
+## London Dry Gin
+
+Despite the name, London Dry is a production method, not a location — it can legally be made anywhere in the world. The requirement is that all botanicals must be added during distillation, with no artificial flavouring or colouring added afterward, and it must be bottled at a minimum 37.5% ABV. This produces gin's crispest, most juniper-forward, classic style — Tanqueray and Beefeater are archetypal examples.
+
+## Plymouth Gin
+
+A protected geographical designation tied specifically to the city of Plymouth, England — currently produced by only one distillery. Plymouth gin uses a higher proportion of root botanicals relative to citrus, producing a slightly earthier, less astringent profile than a typical London Dry.
+
+## Old Tom Gin
+
+A historical style, slightly sweetened compared to London Dry, that fell out of favour for much of the 20th century before a recent revival driven largely by classic cocktail enthusiasts researching pre-Prohibition recipes. Many 19th-century cocktail recipes calling simply for "gin" were originally written with Old Tom in mind, not the drier London Dry style that later became standard.
+
+## Genever (Dutch Gin)
+
+Gin's direct historical ancestor, genever is made from a malted grain base (closer to a light whiskey) infused with juniper and other botanicals — considerably maltier and less crisply dry than modern London Dry gin. Genever is technically a distinct spirits category from gin under EU law, though it's gin's clear stylistic and historical predecessor.
+
+## Contemporary (New Western) Gin
+
+A looser, modern category that still requires juniper presence but allows other botanicals to share the spotlight more equally — citrus, floral, or even fruit-forward gins fall here. Hendrick's (rose and cucumber) and Empress 1908 (butterfly pea flower) are well-known examples of this more experimental approach.
+
+## Navy Strength Gin
+
+Not a separate flavour category but a proof designation — bottled at a minimum 57% ABV (114 proof), a nod to the historical claim that gin at this strength wouldn't prevent gunpowder from igniting if accidentally spilled aboard a ship. Navy strength gin delivers noticeably more intensity and is often used specifically in cocktails where dilution needs to be counteracted.
+
+## Choosing a Style
+
+- **Classic, juniper-forward martinis and G&Ts:** London Dry.
+- **Something historically accurate for pre-Prohibition cocktails:** Old Tom.
+- **Exploring gin's malty origins:** Genever.
+- **Modern, botanical-forward, sippable on its own:** contemporary/New Western gin.
+- **Maximum intensity for a stirred cocktail:** Navy Strength.
+
+Understanding these categories turns gin from "juniper spirit, mostly interchangeable" into a genuinely wide-ranging category worth exploring style by style, the same way whiskey or tequila rewards deeper attention.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Gin Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/gin.webp',
+    tags: ['Gin', 'London Dry', 'Spirits Education'],
+    faqs: [
+      { question: "Is London Dry gin only made in London?", answer: "No — despite the name, London Dry refers to a production method, not a location. It requires all botanicals to be added during distillation with no artificial flavouring or colouring added afterward, and it can legally be made anywhere in the world." },
+      { question: "What is the difference between gin and genever?", answer: "Genever is gin's historical ancestor, made from a malted grain base infused with juniper and other botanicals, giving it a maltier, less crisply dry profile. Genever is technically classified as a distinct spirit from gin under EU law." },
+    ],
+  },
+  {
+    slug: 'how-to-build-a-home-bar',
+    title: "How to Build a Home Bar: The Essential Bottles, Tools & Setup",
+    excerpt: "A practical guide to building a home bar from scratch — the core spirits, mixers, tools, and glassware that cover the vast majority of classic cocktails.",
+    content: `
+Building a home bar doesn't require buying dozens of bottles at once — a genuinely well-planned core setup, added to gradually, will let you make the large majority of classic cocktails competently.
+
+## The Core Spirits (Start Here)
+
+1. **A solid bourbon or rye** (Rittenhouse Bottled-in-Bond is an excellent, affordable starting point) — covers Old Fashioneds, Manhattans, and whiskey sours.
+2. **A 100% agave Blanco tequila** — covers Margaritas, Palomas, and most tequila cocktails.
+3. **A London Dry gin** — covers Martinis, Gin & Tonics, and Negronis.
+4. **A white rum** — covers Daiquiris and Mojitos.
+5. **A vodka** — the most neutral base, useful for cocktails where you want the other ingredients to lead.
+
+That five-bottle base alone unlocks the overwhelming majority of classic cocktail recipes.
+
+## Essential Modifiers and Liqueurs
+
+- **Dry and sweet vermouth** — for Martinis, Manhattans, and Negronis. Keep refrigerated once opened; vermouth is a fortified wine and does spoil faster than spirits.
+- **Orange liqueur** (triple sec or Cointreau) — for Margaritas and countless other classics.
+- **Angostura and Peychaud's bitters** — the backbone of an Old Fashioned, Manhattan, and Sazerac.
+- **Campari** — for a Negroni.
+
+## Mixers and Fresh Ingredients
+
+- **Fresh lemons and limes** — bottled citrus juice is a genuine downgrade in almost every classic cocktail; buy fresh and juice as needed.
+- **Simple syrup** — trivially easy to make at home (equal parts sugar and water, heated until dissolved).
+- **Soda water and tonic water** — for highballs and G&Ts.
+- **Good quality ice** — larger cubes melt slower and dilute less; consider a dedicated ice tray for large-format cubes if you'll be making a lot of Old Fashioneds.
+
+## Essential Tools
+
+- **A cocktail shaker** (Boston shaker or cobbler shaker).
+- **A jigger** — for accurate measuring; eyeballing ratios is the single most common source of poorly balanced home cocktails.
+- **A bar spoon** — for stirred drinks like a Manhattan or Martini.
+- **A fine strainer** and a **Hawthorne strainer** — for double-straining shaken cocktails to remove ice shards and fruit pulp.
+- **A muddler** — for Old Fashioneds and any cocktail requiring crushed sugar or herbs.
+
+## Glassware Worth Having
+
+- **Rocks glasses** — for Old Fashioneds and any drink served over ice.
+- **Coupe or Nick and Nora glasses** — for shaken or stirred drinks served "up," like a Daiquiri or Manhattan.
+- **Highball glasses** — for G&Ts, Palomas, and other tall mixed drinks.
+
+## Building Out From There
+
+Once the core five spirits and essential tools are covered, expand based on what you actually enjoy drinking — a good mezcal if you loved exploring tequila, an aged rum if the Mai Tai became a favourite, a rye whiskey once you understand how it differs from bourbon in a Manhattan. A focused, well-chosen core setup will teach you more about what to add next than buying broadly and randomly ever will.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/hero/hero-3.webp',
+    tags: ['Home Bar', 'Cocktail Guide', 'Bar Essentials'],
+    faqs: [
+      { question: "What are the five essential spirits for a home bar?", answer: "A solid bourbon or rye, a 100% agave Blanco tequila, a London Dry gin, a white rum, and a vodka — together, these five spirits cover the large majority of classic cocktail recipes." },
+      { question: "Do I really need fresh citrus juice for cocktails?", answer: "Yes — bottled citrus juice is a genuine downgrade in nearly every classic cocktail recipe. Fresh lemon and lime juice makes a meaningfully noticeable difference and is worth the small extra effort." },
+    ],
+  },
+  {
+    slug: 'best-non-alcoholic-cocktails',
+    title: "Best Non-Alcoholic Cocktails: Real Recipes That Don't Taste Like an Afterthought",
+    excerpt: "Non-alcoholic cocktails have moved well past sugary mocktails — here's how to make genuinely well-balanced zero-proof drinks using real spirit alternatives.",
+    content: `
+The best non-alcoholic cocktails today are built the same way their alcoholic counterparts are — with genuine balance between spirit character, acid, sweetness, and dilution — rather than as an afterthought sugary substitute. Here's how to make them properly.
+
+## Non-Alcoholic Old Fashioned
+
+**Recipe:**
+1. Add a sugar cube (or 1/4 oz simple syrup) and 2–3 dashes of Angostura bitters (most cocktail bitters contain trace alcohol from the extraction process, but the amount per dash is negligible) to a rocks glass.
+2. Add a splash of water and muddle until dissolved.
+3. Add 2 oz non-alcoholic whiskey alternative and one large ice cube.
+4. Stir until well chilled and express an orange peel over the top.
+
+A quality zero-proof whiskey alternative, built to replicate oak, vanilla, and spice character through genuine botanical distillation rather than simply removing alcohol from a finished product, holds up remarkably well in this format.
+
+## Non-Alcoholic Margarita
+
+**Recipe:**
+1. Combine 2 oz non-alcoholic tequila alternative, 1 oz fresh lime juice, and 1/2 oz agave syrup in a shaker with ice.
+2. Shake hard and strain into a salt-rimmed rocks glass over fresh ice.
+
+## Non-Alcoholic Gin & Tonic
+
+**Recipe:**
+1. Fill a highball glass with ice.
+2. Add 1.5–2 oz non-alcoholic gin alternative.
+3. Top with tonic water.
+4. Garnish with a lime wedge and a sprig of rosemary or juniper berries if available.
+
+A genuinely botanical-forward zero-proof gin alternative — one built around real juniper and citrus distillation rather than just flavouring — makes this one of the most convincing non-alcoholic cocktails available.
+
+## Non-Alcoholic Mule
+
+**Recipe:**
+1. Fill a copper mug or highball glass with ice.
+2. Add 2 oz non-alcoholic gin or "vodka-style" neutral alternative and the juice of half a lime.
+3. Top with ginger beer and stir gently.
+4. Garnish with a lime wheel and mint sprig.
+
+## Non-Alcoholic Spritz
+
+**Recipe:**
+1. Fill a wine glass with ice.
+2. Add 2 oz non-alcoholic amaro or aperitif-style alternative.
+3. Top with sparkling water or non-alcoholic sparkling wine.
+4. Garnish with an orange slice.
+
+## Why Quality of the Alternative Matters More Than the Recipe
+
+The single biggest factor in whether a non-alcoholic cocktail tastes convincing is the quality of the zero-proof base spirit — genuinely distilled, botanically layered alternatives hold up far better than simple flavoured syrups marketed as spirit substitutes. Treat the non-alcoholic base the same way you'd treat a real spirit: use fresh citrus, proper ratios, and real ice, rather than assuming a "mocktail" gets a pass on technique.
+
+## A Note on Age Verification
+
+Because genuine zero-proof spirits contain no alcohol, they ship and sell without the 21+ adult signature requirement that applies to alcoholic products — making them a genuinely accessible way to build out a home bar for guests who aren't drinking, without treating the experience as an afterthought.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/hero/hero-3.webp',
+    tags: ['Non-Alcoholic Cocktails', 'Zero Proof', 'Cocktail Guide'],
+    faqs: [
+      { question: "Do non-alcoholic cocktails need age verification to purchase the ingredients?", answer: "No — genuine zero-proof spirit alternatives contain no alcohol, so they ship and sell without the 21+ adult signature requirement that applies to alcoholic products." },
+      { question: "What makes a non-alcoholic cocktail taste convincing?", answer: "The quality of the zero-proof base spirit matters most — genuinely distilled, botanically layered alternatives hold up far better than simple flavoured syrups. Using fresh citrus and proper ratios, the same way you would for an alcoholic cocktail, also makes a significant difference." },
+    ],
+  },
+  {
+    slug: 'best-whiskey-gifts',
+    title: "Best Whiskey Gifts: What to Buy at Every Budget",
+    excerpt: "From an approachable bottle for a casual drinker to a genuine collector's pick — a practical guide to buying whiskey gifts at every price point.",
+    content: `
+Buying whiskey as a gift is easy to get wrong in one of two directions — either playing it too safe with something forgettable, or overspending on something the recipient's palate isn't ready to fully appreciate. Here's how to calibrate the choice properly.
+
+## For a Casual Drinker or Whiskey Newcomer
+
+Stick to approachable, broadly appealing styles rather than anything too intense or niche. A wheated bourbon (soft, sweet, easy to enjoy) or a Speyside single malt Scotch (fruity, elegant, low-intensity) are both safe, genuinely enjoyable choices that won't overwhelm someone still developing their palate.
+
+## For Someone Who Already Has a Go-To Bottle
+
+Look for something adjacent to what they already drink, but distinct enough to be interesting — if they're a bourbon regular, a well-made rye introduces genuine spice contrast without being an unfamiliar category entirely. If they drink Speyside Scotch, an Islay malt offers a dramatic, memorable departure.
+
+## For the Serious Collector or Enthusiast
+
+This is where allocated, single barrel, or cask-strength releases make sense as gifts — something they'd be unlikely to pick up casually for themselves, or a specific barrel pick or limited annual release with genuine collector interest. A gift at this level signals that you've paid attention to their specific taste, not just "whiskey" as a broad category.
+
+## Gift-Worthy Presentation Matters
+
+Beyond the liquid itself, presentation genuinely affects how a whiskey gift lands — a bottle with distinctive, well-designed packaging (Clase Azul's hand-painted ceramic decanters, or Crystal Head Vodka's skull bottle in the vodka category, are extreme examples of packaging as part of the gift) reads as more thoughtful than an identical liquid in generic packaging.
+
+## Pairing With Bar Accessories
+
+For a more complete gift, pair a bottle with a proper tasting glass (a Glencairn glass is the whiskey-specific standard, designed to concentrate aromatics far better than a standard rocks glass) or a set of whiskey stones for someone who prefers their whiskey chilled without dilution.
+
+## A Quick Budget Guide
+
+- **Under $50:** a well-regarded standard bourbon or blended Scotch — genuinely enjoyable without a large investment.
+- **$50–$100:** a small batch or entry single malt Scotch — a meaningful step up in complexity.
+- **$100–$250:** a single barrel bourbon, aged Irish single pot still, or a mid-tier aged Scotch (15–18 Year) — genuinely special-occasion territory.
+- **$250+:** allocated, cask-strength, or extensively aged releases — reserved for serious enthusiasts or major occasions.
+
+## The Golden Rule
+
+Match the gift to what the recipient actually enjoys, not to what's most impressive in the abstract — a $60 bottle in exactly the right style will be appreciated far more than a $200 bottle in a style they don't particularly like. When in doubt, a well-regarded bottle one clear step above what they currently drink regularly is almost always the right call.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Whiskey Gifts', 'Gift Guide', 'Whiskey Education'],
+    faqs: [
+      { question: "What is the best whiskey gift for a beginner?", answer: "A wheated bourbon or a Speyside single malt Scotch are both safe, approachable choices — soft, fruity, and low-intensity, unlikely to overwhelm someone still developing their palate." },
+      { question: "Should I buy an expensive bottle as a whiskey gift?", answer: "Only if it matches the recipient's actual taste. A well-chosen $60 bottle in exactly the right style is generally appreciated more than a $200 bottle in a style they don't particularly enjoy." },
+    ],
+  },
+  {
+    slug: 'best-bourbon-whiskey',
+    title: "Best Bourbon Whiskey: A Buying Guide by Style and Budget",
+    excerpt: "From everyday sippers to allocated collector releases — a practical guide to choosing the best bourbon for your palate and budget.",
+    content: `
+"Best bourbon" depends heavily on what you're actually looking for — an everyday pour, a cocktail base, or a slow-sipping special-occasion bottle all call for genuinely different choices. Here's how to navigate the category by purpose.
+
+## Best Everyday Sipping Bourbon
+
+Look for a standard-mash-bill bourbon in the 90–100 proof range with genuine barrel character but a reasonable price point — this is the category where bottled-in-bond releases shine, offering a guaranteed minimum four years of ageing and full 100 proof strength without a premium price tag.
+
+## Best Bourbon for Cocktails
+
+A solid, mid-range bourbon (roughly $25–$45) with enough proof and structure to stand up to dilution and other cocktail ingredients — save your allocated, cask-strength bottles for sipping neat, since a Manhattan or Old Fashioned's other ingredients are genuine flavour partners, not camouflage.
+
+## Best Wheated Bourbon
+
+Wheated bourbon — using wheat instead of rye as the secondary grain — delivers the category's softest, sweetest, most approachable style. Weller's range is the benchmark, offering the same wheated recipe that underpins the much harder-to-find Pappy Van Winkle line.
+
+## Best High-Rye Bourbon
+
+For a spicier, drier profile, look toward high-rye mash bills — Four Roses' "E" recipes and Bulleit are well-known examples of the style, offering more pepper and structure than a standard or wheated mash bill.
+
+## Best Single Barrel Bourbon
+
+Blanton's Original popularised the modern single barrel category and remains a benchmark, with each bottle drawn from one individual barrel — genuinely unique character bottle to bottle, with the barrel number often printed on the label.
+
+## Best Small Batch Bourbon
+
+Elijah Craig Small Batch and Four Roses Small Batch Select both offer a curated, consistent, still-nuanced profile — a reliable middle ground between mass-produced large-batch bourbon and the variability of single barrel releases.
+
+## Best Cask-Strength Bourbon
+
+Elijah Craig Barrel Proof has built a reputation for exceptional quality at a relatively attainable price point compared to many other allocated cask-strength releases — bottled undiluted, typically in the 120–140 proof range.
+
+## A Quick Decision Guide
+
+- **Everyday sipping, best value:** bottled-in-bond bourbon.
+- **Building cocktails:** a solid $25–$45 standard bourbon.
+- **Soft and approachable:** wheated bourbon (Weller).
+- **Spicy and structured:** high-rye bourbon (Four Roses, Bulleit).
+- **Chasing individual barrel character:** single barrel (Blanton's).
+- **Wanting consistency with real depth:** small batch (Elijah Craig, Four Roses Small Batch Select).
+- **Maximum intensity:** cask strength (Elijah Craig Barrel Proof).
+
+There's no single universally "best" bourbon — matching the bottle to the actual occasion (sipping, mixing, gifting, collecting) will consistently serve you better than chasing a single top-ranked bottle regardless of purpose.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Bourbon', 'Whiskey Guide', 'Best Bourbon'],
+    faqs: [
+      { question: "What is the best bourbon for everyday sipping?", answer: "A bottled-in-bond bourbon offers strong value — a guaranteed minimum four years of ageing and full 100 proof strength, typically at a lower price than comparable non-bonded releases." },
+      { question: "What is the best bourbon for a Manhattan or Old Fashioned?", answer: "A solid, mid-range bourbon in the $25–$45 range with enough proof and structure to stand up to dilution — save allocated, cask-strength bottles for sipping neat rather than mixing them into a cocktail." },
+    ],
+  },
+  {
+    slug: 'best-tequila',
+    title: "Best Tequila Brands: A Complete Buying Guide",
+    excerpt: "From everyday mixing tequila to ultra-premium sipping Extra Añejo — a practical guide to choosing the best tequila brand for your needs and budget.",
+    content: `
+"Best tequila" varies enormously depending on whether you're building Margaritas for a party or looking for something to sip slowly on its own — here's how to navigate the major brands by actual purpose.
+
+## Best Everyday Mixing Tequila
+
+For Margaritas and other citrus-forward cocktails, prioritise 100% agave Blanco over brand prestige — a well-made $30–$45 Blanco (Espolòn, Cazadores, or similar) will make an excellent Margarita without the premium of a more famous name whose subtlety would be lost in the mix anyway.
+
+## Best Widely Available Premium Tequila
+
+Don Julio and Casamigos both offer a reliable, well-regarded step up in quality across their full range, from Blanco through Añejo — a safe, broadly appealing choice whether sipping or mixing, and widely available compared to smaller-production brands.
+
+## Best Ultra-Premium Sipping Tequila
+
+Clase Azul's hand-painted ceramic decanters house genuinely well-regarded liquid — the Reposado is the most accessible entry point, with Añejo and the rare Ultra expression at the collectible high end.
+
+## Best Traditional, Purist-Focused Tequila
+
+Fortaleza uses a traditional tahona stone wheel and small copper pot still, deliberately favouring old-fashioned methods over industrial efficiency — a favourite among bartenders and tequila purists who prioritise traditional production over brand recognition.
+
+## Best Celebrity-Backed Tequila (Genuinely Well-Regarded)
+
+Casamigos, co-founded by George Clooney and Rande Gerber, is consistently well-reviewed independent of the celebrity association — proof that celebrity involvement and genuine quality aren't mutually exclusive.
+
+## A Quick Decision Guide
+
+- **Margaritas and mixing:** any well-made 100% agave Blanco — brand prestige matters less here than the agave-purity label.
+- **Reliable, widely available premium:** Don Julio or Casamigos.
+- **Ultra-premium and collectible:** Clase Azul.
+- **Traditional, purist production:** Fortaleza.
+- **Sipping neat, ultra-aged:** look specifically for Extra Añejo across any of the above brands.
+
+## The One Rule That Matters Most
+
+Regardless of brand, always check for "100% agave" on the label before anything else — a mixto tequila (legally permitted to contain up to 49% non-agave sugars) from a famous brand will still underperform a lesser-known but genuinely 100% agave option. Brand recognition is a much less reliable quality signal in tequila than the agave-purity label itself.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Best Tequila', 'Tequila Guide'],
+    faqs: [
+      { question: "What is the most important thing to check when choosing tequila?", answer: "Always check for \"100% agave\" on the label before considering brand name or price. A mixto tequila (up to 49% non-agave sugars permitted) from a famous brand will generally underperform a lesser-known but genuinely 100% agave option." },
+      { question: "What is the best tequila for Margaritas specifically?", answer: "A well-made 100% agave Blanco in the $30–$45 range is ideal — brand prestige matters less here than agave purity, since the citrus and orange liqueur will mask the subtlety of a more expensive, aged tequila anyway." },
+    ],
+  },
+  {
+    slug: 'best-gin',
+    title: "Best Gin: A Buying Guide by Style and Occasion",
+    excerpt: "From classic London Dry to modern botanical-forward styles — a practical guide to choosing the right gin for a Martini, a G&T, or sipping neat.",
+    content: `
+Gin's stylistic range — from crisp, juniper-forward London Dry to modern, citrus- and floral-led contemporary styles — means "best gin" depends heavily on what you're actually planning to do with the bottle.
+
+## Best Classic London Dry Gin
+
+Tanqueray remains a benchmark for crisp, juniper-forward London Dry character, distilled from a recipe that's changed little since 1830 — the right choice for a classic Martini or Gin & Tonic where you want gin's traditional character to lead clearly.
+
+## Best for a Modern, Botanical-Forward G&T
+
+Hendrick's, with its distinctive rose and cucumber infusion, helped launch the modern craft gin movement and remains one of the most recognisable departures from classic London Dry style — an excellent choice if you want your G&T to taste distinctly different from a traditional one.
+
+## Best for Maximum Botanical Complexity
+
+Monkey 47, distilled in Germany's Black Forest from 47 botanicals including regional ingredients like lingonberry and spruce sprouts, offers a genuinely dense, layered profile well beyond gin's typical botanical count — worth sipping slowly to actually appreciate the complexity.
+
+## Best Island-Inspired Botanical Gin
+
+The Botanist, distilled by Bruichladdich on Islay using 22 hand-foraged local botanicals alongside classic gin aromatics, offers a genuinely distinctive coastal, herbal character shaped by its specific island terroir.
+
+## Best for an Unusual, Striking Presentation
+
+Empress 1908's natural butterfly pea blossom colouring gives it a striking indigo hue that shifts toward pink or purple when mixed with citrus or tonic — a gin that's as much a visual conversation piece as a drink.
+
+## Best Japanese-Style Gin
+
+Roku blends eight traditional gin botanicals with distinctly Japanese ingredients — sakura flower, sencha tea, yuzu peel — each distilled separately before blending, for a lighter, more delicately layered profile than a typical London Dry.
+
+## A Quick Decision Guide
+
+- **Classic Martini or G&T:** Tanqueray (London Dry).
+- **Modern, floral G&T:** Hendrick's.
+- **Maximum complexity, sipping-worthy:** Monkey 47.
+- **Distinctive island character:** The Botanist.
+- **Visual impact plus flavour:** Empress 1908.
+- **Something genuinely different:** Roku.
+
+## Why Style Matters More Than "Best" Here
+
+Unlike categories with a clearer quality hierarchy, gin's biggest differentiator is genuinely stylistic rather than a strict better-or-worse ranking — a London Dry and a contemporary botanical-forward gin aren't competing on the same axis, similar to comparing a Speyside and an Islay Scotch. Picking the right style for your specific drink matters more than chasing a single "best" bottle across the whole category.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Gin Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/gin.webp',
+    tags: ['Gin', 'Best Gin', 'Gin Guide'],
+    faqs: [
+      { question: "What is the best gin for a classic Martini?", answer: "A traditional London Dry gin, like Tanqueray, is the classic choice — its crisp, juniper-forward character is what most classic Martini recipes were built around." },
+      { question: "What gin has the most botanicals?", answer: "Monkey 47, distilled in Germany's Black Forest, uses 47 botanicals — a considerably higher count than most gins, including regional ingredients like lingonberry and spruce sprouts for a dense, layered profile." },
+    ],
+  },
+  {
+    slug: 'best-vodka',
+    title: "Best Vodka: A Buying Guide by Style and Occasion",
+    excerpt: "From ultra-smooth sipping vodka to reliable everyday mixing bottles — a practical guide to choosing the right vodka for the occasion.",
+    content: `
+Vodka's defining characteristic — a clean, neutral profile — makes "best vodka" a genuinely different question than it is for whiskey or gin, where individual character is the whole point. Here's how to actually think about choosing one.
+
+## Best for Cocktails Where Vodka Should Stay Neutral
+
+For a Vodka Martini, a Moscow Mule, or a Bloody Mary, prioritise clean smoothness over distinctive character — Tito's or Grey Goose both deliver reliable, well-made neutrality that won't clash with other ingredients.
+
+## Best Ultra-Premium Sipping Vodka
+
+Belvedere, a Polish rye vodka distilled from a single estate grain and quadruple distilled for exceptional purity, and Ketel One, distilled by the Nolet family using a blend of column and traditional copper pot still spirit, are both genuinely worth sipping chilled on their own — smoother and more textured than standard mixing vodka.
+
+## Best Grape-Based Vodka
+
+Cîroc, distilled from French grapes rather than the grain or potato base most vodka uses, offers a naturally smoother, subtly fruit-forward character — a genuinely different starting material from the rest of the category.
+
+## Best American Craft Vodka
+
+Tito's, distilled in old-fashioned pot stills at Austin's first legal distillery since Prohibition, has become one of the best-selling American vodkas by leaning into a genuinely different, corn-based, gluten-free production story.
+
+## Best for Distinctive Presentation
+
+Crystal Head, co-founded by actor Dan Aykroyd, is filtered through layers of Herkimer diamond crystal and housed in an unmistakable skull-shaped bottle — a genuine conversation piece as much as a drink.
+
+## A Quick Decision Guide
+
+- **Mixing where vodka should stay neutral:** Tito's or Grey Goose.
+- **Sipping chilled, want real smoothness:** Belvedere or Ketel One.
+- **Want a grape-based, naturally smoother base:** Cîroc.
+- **Want an American craft story:** Tito's.
+- **Gift or conversation-piece bottle:** Crystal Head.
+
+## Does Vodka Quality Actually Vary That Much?
+
+Yes, more than casual drinkers often assume — while vodka is defined by neutrality, factors like base ingredient (grain, potato, grape), number of distillations, and filtration method genuinely affect mouthfeel and smoothness, even if the flavour differences are subtler than in whiskey or gin. A well-made premium vodka is noticeably smoother sipped chilled than a bargain bottle, even though both would disappear similarly into a mixed cocktail.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Vodka Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/vodka.webp',
+    tags: ['Vodka', 'Best Vodka', 'Vodka Guide'],
+    faqs: [
+      { question: "Does the base ingredient matter in vodka?", answer: "Yes — grain, potato, and grape bases each produce subtly different textures and mouthfeel. Cîroc, for example, uses French grapes for a naturally smoother, subtly fruit-forward character distinct from grain-based vodkas." },
+      { question: "What is the best vodka for a Martini?", answer: "A clean, reliably neutral vodka like Tito's or Grey Goose works best for a Vodka Martini — the goal is smoothness that won't clash with the vermouth, rather than a highly distinctive individual character." },
+    ],
+  },
 ];
