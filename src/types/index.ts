@@ -65,9 +65,11 @@ export interface BlogPost {
   author: string;
   category: string;
   date: string;
+  isoDate: string;
   readTime: string;
   image: string;
   tags: string[];
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface FaqItem {

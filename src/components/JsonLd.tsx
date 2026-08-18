@@ -80,6 +80,26 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
         },
       },
     };
+  } else if (type === 'article' && data) {
+    schemaData = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: data.title,
+      description: data.excerpt,
+      image: data.image,
+      author: { '@type': 'Organization', name: data.author || SITE.name },
+      publisher: {
+        '@type': 'Organization',
+        name: SITE.name,
+        logo: { '@type': 'ImageObject', url: `https://${SITE.domain}/favicon.svg` },
+      },
+      datePublished: data.isoDate,
+      dateModified: data.isoDate,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `https://${SITE.domain}/blog/${data.slug}/`,
+      },
+    };
   } else if (type === 'itemlist' && data) {
     schemaData = {
       '@context': 'https://schema.org',
