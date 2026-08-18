@@ -356,6 +356,16 @@ export const CATEGORIES: Category[] = [
       'Non-Alcoholic Beer',
       'Non-Alcoholic Cider',
     ],
+    seo: {
+      titleTag: 'Non-Alcoholic Beer & Cider — Buy Online',
+      h1: 'Non-Alcoholic Beer & Cider — Buy Zero-Proof Craft Brews Online',
+      metaDescription: 'Buy non-alcoholic beer and cider online — craft-brewed zero-proof IPAs, stouts, lagers, and apple ciders. No age or shipping restrictions apply.',
+      transactionalCTA: 'Buy non-alcoholic beer and cider online — zero-proof craft brews shipped nationwide, no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic beer and cider are brewed using the same craft techniques as their alcoholic counterparts — full mash bills, real hops, and traditional fermentation — with the alcohol removed or capped after brewing, typically below 0.5% ABV.',
+      faqs: [
+        { question: 'Is non-alcoholic beer completely alcohol-free?', answer: 'Most non-alcoholic beer contains a trace amount of alcohol, typically under 0.5% ABV — similar to the level found naturally in some fruit juices or bread. It ships without age verification or alcohol shipping restrictions.' },
+      ],
+    },
   },
   {
     slug: 'beer',
@@ -390,6 +400,17 @@ export const CATEGORIES: Category[] = [
       'Cocktail Mixes',
       'Garnishes',
     ],
+    seo: {
+      titleTag: 'Bar Essentials — Bitters, Vermouth & Cocktail Mixers',
+      h1: 'Bar Essentials — Buy Bitters, Vermouth & Cocktail Mixers Online',
+      metaDescription: 'Buy bar essentials online — cocktail bitters, vermouth, mixers, syrups, and garnishes to build a proper cocktail from scratch. Free shipping on $300+.',
+      transactionalCTA: 'Buy bar essentials online — bitters, vermouth, mixers, and syrups shipped nationwide alongside your spirits order.',
+      definitionHook: 'Bar essentials are the supporting ingredients every proper cocktail bar needs beyond the base spirit — aromatic bitters for depth, dry and sweet vermouth for classics like the Martini and Manhattan, and mixers, syrups, and garnishes to round out a drink built entirely from scratch.',
+      faqs: [
+        { question: 'Do bitters contain alcohol?', answer: 'Yes — most cocktail bitters are alcohol-based concentrated flavoring extracts, but they are used in dashes (a few drops per drink), so the actual alcohol contribution to a finished cocktail is negligible.' },
+        { question: 'What is the difference between dry and sweet vermouth?', answer: 'Dry vermouth is lighter, less sweet, and herbaceous — the classic choice for a Martini. Sweet (red) vermouth is richer and more caramelized, used in a Manhattan or Negroni. Both are fortified, aromatized wines, not spirits.' },
+      ],
+    },
   },
 ];
 
