@@ -115,6 +115,22 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  {
+    categorySlug: 'scotch-whisky',
+    hubSlug: 'campbeltown-scotch',
+    subcategoryName: 'Campbeltown Scotch',
+    name: 'Campbeltown Scotch',
+    seo: {
+      titleTag: 'Campbeltown Scotch Whisky — Allocated',
+      h1: 'Campbeltown Scotch Whisky — Buy Allocated Single Malt Online',
+      metaDescription: 'Buy Campbeltown scotch online — allocated single malt from Scotland’s smallest whisky region, prized for its briny, oily, lightly smoky character.',
+      transactionalCTA: 'Buy Campbeltown scotch online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Campbeltown is the smallest of Scotland’s official whisky regions, once home to over 30 distilleries and now just three. Campbeltown single malts are known for a distinctive briny, oily, lightly smoky character shaped by the peninsula’s maritime climate.',
+      faqs: [
+        { question: 'Why are there so few Campbeltown distilleries left?', answer: 'Campbeltown once had over 30 distilleries in the early 1900s, but overproduction, poor-quality whisky, and Prohibition-era export collapse wiped out most of them. Only three working distilleries remain today, though the region kept its official designation for its distinctive style.' },
+      ],
+    },
+  },
   // IRISH
   {
     categorySlug: 'irish-whiskey',
