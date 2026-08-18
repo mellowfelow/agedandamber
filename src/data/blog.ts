@@ -796,4 +796,907 @@ If you want to understand what all the attention is about without chasing the im
       { question: "Why is Pappy Van Winkle so hard to find?", answer: "Pappy Van Winkle's oldest expressions require up to 23 years of ageing, and production has never scaled to meet demand even after significant investment from Buffalo Trace. Decades of media attention have further driven demand, making it one of the most sought-after bourbons in the US." },
     ],
   },
+  {
+    slug: 'bourbon-vs-whiskey',
+    title: "Bourbon vs Whiskey: What's the Actual Difference?",
+    excerpt: "Bourbon is whiskey, but not all whiskey is bourbon — here's the exact legal line that separates the two, explained clearly.",
+    content: `
+"Is bourbon just whiskey?" is one of the most common questions from anyone starting to explore American spirits — and the honest answer is that bourbon is a specific, legally defined type of whiskey, not a separate category sitting alongside it.
+
+## Whiskey Is the Umbrella Category
+
+"Whiskey" (or "whisky") is the broad term for any spirit distilled from fermented grain mash and aged in wood. Under that umbrella sit dozens of legally distinct styles — Scotch, Irish whiskey, Canadian whisky, Japanese whisky, rye whiskey, and bourbon among them. Every bourbon is a whiskey. Not every whiskey is a bourbon.
+
+## What Specifically Makes a Whiskey "Bourbon"
+
+To be labelled bourbon in the United States, a whiskey must meet every one of these requirements:
+
+1. Produced in the United States (any state, not just Kentucky).
+2. Distilled from a grain mash of at least 51% corn.
+3. Distilled to no more than 160 proof.
+4. Entered into a new, charred oak container at no more than 125 proof.
+5. Bottled at no less than 80 proof.
+6. No added colouring, flavouring, or blending material.
+
+Miss any one of those, and it isn't legally bourbon — no matter how similar it tastes.
+
+## Common Misconceptions
+
+**"Bourbon has to be made in Kentucky."** False. Bourbon can be made anywhere in the US. Kentucky simply produces the overwhelming majority of it, for historical and practical reasons (limestone-filtered water, ideal ageing climate, generations of expertise).
+
+**"Bourbon and Tennessee whiskey are the same thing."** Close, but not quite. Tennessee whiskey must meet every bourbon requirement, plus one extra step — the Lincoln County Process, filtering the spirit through sugar maple charcoal before barrelling.
+
+**"All whiskey is basically bourbon with a different name."** Not remotely. Scotch, for example, has none of bourbon's grain or barrel requirements — it must simply be made in Scotland from malted grain and aged a minimum of three years, with no new-oak or corn-percentage rule at all.
+
+## Why the Distinction Matters When Buying
+
+Knowing bourbon's specific rules tells you exactly what you're getting: a corn-forward, new-oak-aged, additive-free American spirit with a naturally sweeter, fuller profile than most other whiskey styles. If a bottle can't legally call itself bourbon, that's a meaningful signal about how it was made — not just a marketing choice.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Bourbon', 'Whiskey Education', 'American Whiskey'],
+    faqs: [
+      { question: "Is all bourbon whiskey?", answer: "Yes — bourbon is a specific, legally defined style of whiskey. Every bourbon is a whiskey, but not every whiskey qualifies as bourbon, since bourbon has additional requirements around grain content, barrel type, and where it can be made." },
+      { question: "What is the minimum corn content for bourbon?", answer: "Bourbon must be distilled from a grain mash containing at least 51% corn, along with other grains like rye, wheat, or malted barley making up the remainder." },
+    ],
+  },
+  {
+    slug: 'what-is-bourbon',
+    title: "What Is Bourbon? A Straightforward Explanation",
+    excerpt: "A clear, no-jargon explanation of what bourbon actually is — the grain rules, the barrel rules, and what makes it distinctly American.",
+    content: `
+Bourbon is America's native spirit — but the word gets used loosely enough in everyday conversation that a lot of drinkers can't confidently say what actually makes a whiskey a bourbon. Here's the straightforward version.
+
+## The Short Answer
+
+Bourbon is an American whiskey distilled from a grain mash of at least 51% corn, aged in new charred oak barrels, with no added colouring or flavouring. It can be made anywhere in the United States — not just Kentucky — though Kentucky produces the large majority of it.
+
+## Where the Name Comes From
+
+The most widely accepted origin story ties the name to Bourbon County, Kentucky, a major shipping point for barrels of corn whiskey heading down the Mississippi in the early 1800s. The exact history is debated among historians, but the name has been tied to Kentucky corn whiskey for close to two centuries.
+
+## The Rules, in Plain English
+
+- **Grain:** At least 51% corn in the mash bill. The rest is typically rye or wheat (for flavour), plus a small amount of malted barley (needed for fermentation).
+- **Barrel:** Must go into a brand-new, charred oak barrel — never reused. This is a major reason so many other spirits categories (Scotch, Irish whiskey, rum, tequila) age in used bourbon barrels afterward.
+- **Proof:** Distilled to no more than 160 proof, barrelled at no more than 125 proof, bottled at no less than 80 proof.
+- **Purity:** No added colouring, flavouring, or blending agents of any kind — what's in the bottle came entirely from the grain, the yeast, the water, and the barrel.
+
+## What Bourbon Tastes Like
+
+Because of the corn-forward mash bill and new-oak ageing, bourbon typically shows vanilla, caramel, and baking spice notes up front, with the depth of oak character growing the longer it ages. Compared to Scotch or Irish whiskey — which almost always use used barrels — bourbon tends to pull noticeably more flavour directly from new wood, which is part of why it reads sweeter and more oak-forward than most other whiskey styles.
+
+## A Few Bourbon Terms Worth Knowing
+
+- **Straight bourbon:** Aged a minimum of two years, no added colouring or flavouring.
+- **Single barrel:** Bottled from one individual barrel, unblended.
+- **Small batch:** Blended from a limited, hand-selected group of barrels.
+- **Wheated bourbon:** Uses wheat instead of rye as the secondary grain, for a softer profile.
+- **Bottled-in-bond:** A stricter quality standard — one distiller, one season, four years minimum, bottled at exactly 100 proof.
+
+Once you know these basics, reading a bourbon label stops being guesswork — every term on it is telling you something specific and verifiable about how the whiskey was actually made.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Bourbon', 'Whiskey Education', 'American Whiskey'],
+    faqs: [
+      { question: "Does bourbon have to be made in Kentucky?", answer: "No — bourbon can legally be made anywhere in the United States. Kentucky simply produces the large majority of the world's bourbon due to its long distilling history and favourable water and climate." },
+      { question: "Why is bourbon aged in new barrels only?", answer: "US federal regulations require bourbon to be aged in new, charred oak containers — it cannot legally be aged in a barrel that has previously held bourbon or any other spirit." },
+    ],
+  },
+  {
+    slug: 'types-of-bourbon',
+    title: "Types of Bourbon: Wheated, High-Rye, Single Barrel & More Explained",
+    excerpt: "Bourbon isn't one flavour — wheated, high-rye, single barrel, small batch, and bottled-in-bond all taste distinctly different. Here's how.",
+    content: `
+Every bourbon follows the same core legal rules, but within that framework, producers make choices — mash bill ratio, barrel selection, blending approach — that create genuinely distinct styles. Here's how to tell them apart.
+
+## By Mash Bill: Wheated vs High-Rye
+
+The secondary grain (after corn) is the single biggest lever on bourbon's flavour.
+
+- **Wheated bourbon** uses wheat instead of rye as the secondary grain, producing a softer, sweeter, more approachable profile with less spice. Maker's Mark and Weller are the best-known examples of the style.
+- **High-rye bourbon** leans into rye for a drier, spicier, more peppery character. Bulleit and Four Roses' "E" mash bill recipes sit at the high-rye end of the spectrum.
+- **Traditional bourbon** sits between the two, typically around 10–15% rye — the most common approach across the category.
+
+## By Blending Approach: Single Barrel vs Small Batch vs Standard
+
+- **Single barrel** bourbon comes from exactly one barrel, unblended — maximum variation between releases, maximum individual barrel character.
+- **Small batch** bourbon blends a limited, hand-selected group of barrels for a consistent but still nuanced profile.
+- **Standard (large batch)** bourbon blends hundreds or thousands of barrels for maximum consistency at scale — most widely available, everyday bottles fall into this category.
+
+## By Proof: Standard vs Cask Strength
+
+- **Standard proof** bourbon is diluted with water before bottling, typically to 80–90 proof, for a smoother, more approachable pour.
+- **Cask strength (barrel proof)** bourbon is bottled with little or no dilution, often 110+ proof, preserving maximum flavour intensity and letting the drinker control dilution themselves with ice or water.
+
+## By Regulatory Standard: Straight vs Bottled-in-Bond
+
+- **Straight bourbon** is aged a minimum of two years with no added colouring or flavouring.
+- **Bottled-in-bond** goes further: one distiller, one distillery, one distilling season, a minimum of four years of ageing in a federally bonded warehouse, and bottled at exactly 100 proof.
+
+## Putting the Styles Together
+
+A bottle can combine several of these categories at once — a wheated, single barrel, cask-strength bourbon is a real, if unusually intense, combination. Understanding each axis independently (grain, blending, proof, regulatory standard) makes it much easier to predict what any bourbon on the shelf will actually taste like, rather than relying on the brand name alone.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Bourbon', 'Wheated Bourbon', 'High-Rye Bourbon', 'Whiskey Education'],
+    faqs: [
+      { question: "What is the difference between wheated and high-rye bourbon?", answer: "Wheated bourbon uses wheat as the secondary grain for a softer, sweeter profile. High-rye bourbon uses more rye for a spicier, drier character. Both start from the same base requirement of at least 51% corn." },
+      { question: "Is cask strength bourbon stronger than regular bourbon?", answer: "Yes — cask strength (or barrel proof) bourbon is bottled with little to no dilution, often 110 proof or higher, compared to the 80–90 proof typical of standard bottlings." },
+    ],
+  },
+  {
+    slug: 'single-malt-whiskey-guide',
+    title: "Single Malt Whiskey Guide: What It Means and Why It Matters",
+    excerpt: "Single malt isn't a flavour or a quality tier — it's a specific production method. Here's what the term actually requires, in Scotch, Irish, and American whiskey.",
+    content: `
+"Single malt" is one of the most-used and least-understood terms in whiskey. It doesn't refer to a flavour profile, an age, or a quality tier — it refers to two very specific facts about how the whiskey was made.
+
+## What "Single Malt" Actually Means
+
+**"Single"** means the whiskey came from one distillery — not blended with whiskey made anywhere else.
+
+**"Malt"** means it was distilled entirely from malted barley — barley that has been soaked, allowed to partially germinate, then dried, a process that unlocks the grain's fermentable sugars.
+
+Put together: single malt whiskey is 100% malted barley, made at one distillery, in pot stills. It can still be a blend of multiple barrels or even multiple age statements from that one distillery — "single" refers to the distillery, not the barrel.
+
+## Single Malt vs Blended Whiskey
+
+Blended whiskey (blended Scotch, blended Irish whiskey) combines whiskies from multiple distilleries — often mixing malt whiskey with lighter, cheaper grain whiskey — to hit a specific, consistent, repeatable flavour profile at a lower cost. Single malt is generally positioned as the more prestigious, distillery-specific expression, though a well-made blend is not automatically inferior — it's simply built for a different goal: consistency across a huge annual volume rather than showcasing one distillery's individual character.
+
+## Single Malt Scotch
+
+Scotland's single malt rules are the strictest and best-known: malted barley only, one distillery, pot still distillation, and a minimum of three years' maturation in oak casks in Scotland. This is the category that made "single malt" a household term — The Macallan, Glenfiddich, and The Glenlivet are among the best-selling examples worldwide.
+
+## Single Malt Irish Whiskey
+
+Ireland's single malt category follows the same core logic — 100% malted barley, one distillery — but is typically triple distilled (versus double distillation for most Scotch), producing a lighter, smoother spirit.
+
+## American Single Malt
+
+The newest single malt category, formally recognised by US regulators only in 2025. American producers aren't bound by Scotch's rules on cask type or peating level, giving the young category unusually wide stylistic range — from delicate, unpeated expressions to heavily smoked ones that rival Islay Scotch.
+
+## Why "Single Malt" Isn't a Quality Guarantee
+
+A single malt is not automatically better than a well-made blend, and single malt from one distillery is not automatically better than single malt from another. The term guarantees a production method and a single point of origin — not a specific flavour, age, or price point. Understanding that distinction is the difference between choosing a whiskey based on marketing versus choosing one based on what's actually in the bottle.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Single Malt', 'Scotch Whisky', 'Whiskey Education'],
+    faqs: [
+      { question: "Is single malt always better than blended whiskey?", answer: "No — single malt and blended whiskey are built for different goals. Single malt showcases one distillery's individual character; blended whiskey is built for consistency and balance across a large volume. Neither is objectively superior." },
+      { question: "Can single malt whiskey be a blend of different barrels?", answer: "Yes — \"single\" refers to the whiskey coming from one distillery, not from one barrel. A single malt can combine many barrels and even multiple age statements from that same distillery." },
+    ],
+  },
+  {
+    slug: 'best-whiskey-for-old-fashioned',
+    title: "Best Whiskey for an Old Fashioned: Bourbon, Rye or Something Else?",
+    excerpt: "The Old Fashioned works with almost any whiskey — here's how bourbon and rye each change the drink, and how to pick the right bottle for your glass.",
+    content: `
+The Old Fashioned is built on so few ingredients — spirit, sugar, water, bitters — that the whiskey you choose does almost all of the heavy lifting. Here's how to think about picking the right one.
+
+## Bourbon: The Rounder, Sweeter Choice
+
+Bourbon's corn-forward sweetness and new-oak vanilla and caramel notes make for a fuller, rounder Old Fashioned. It's the more forgiving starting point for anyone new to the drink, since the sugar and bitters have less work to do balancing out sharp or spicy notes.
+
+**Good bourbon styles for an Old Fashioned:** wheated bourbon (extra soft and sweet) or a standard-mash-bill bourbon in the 90–100 proof range — high enough to stand up to dilution, not so high that it overwhelms the sugar and bitters.
+
+## Rye: The Drier, Spicier Choice
+
+Rye whiskey's peppery spice cuts more assertively through the sugar, producing a drier, more bracing Old Fashioned. This is closer to how the cocktail was originally made in the 19th century, when rye — not bourbon — was America's dominant whiskey.
+
+**Good rye styles for an Old Fashioned:** a bottled-in-bond rye at 100 proof gives excellent structure without being prohibitively expensive.
+
+## Should You Use a Cask-Strength or Allocated Bottle?
+
+Generally, no — save your most expensive, cask-strength, single barrel bottles for sipping neat. An Old Fashioned's other ingredients (sugar, bitters, citrus oil from the garnish) are genuine flavour partners, not a way to disguise a lesser whiskey, so a well-made $30–$50 bottle at 90–100 proof is usually the better choice than an ultra-premium pour whose nuance will simply get folded into the drink.
+
+## A Quick Rule of Thumb
+
+- **Want it rounder and more approachable:** bourbon, ideally wheated.
+- **Want it drier and spicier, closer to the original 19th-century drink:** rye.
+- **Want maximum structure for the price:** a bottled-in-bond bourbon or rye at 100 proof.
+
+There's no single "correct" answer — the Old Fashioned is one of the few cocktails flexible enough to genuinely showcase either style well. Try the same recipe with a bourbon and then a rye side by side, and the difference will make the whole category click in a way reading about it never quite manages.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/hero/hero-3.webp',
+    tags: ['Old Fashioned', 'Bourbon', 'Rye Whiskey', 'Cocktail Guide'],
+    faqs: [
+      { question: "Is bourbon or rye better for an Old Fashioned?", answer: "Neither is objectively better — bourbon gives a rounder, sweeter drink, while rye gives a drier, spicier one closer to the cocktail's original 19th-century recipe. It comes down to personal preference." },
+      { question: "What proof whiskey is best for an Old Fashioned?", answer: "Whiskey in the 90–100 proof range generally works best — high enough to stand up to dilution from ice and stirring, without being so intense that it overwhelms the sugar and bitters." },
+    ],
+  },
+  {
+    slug: 'how-is-whiskey-made',
+    title: "How Is Whiskey Made? From Grain to Glass, Step by Step",
+    excerpt: "Every whiskey — bourbon, Scotch, rye, or Japanese — follows the same basic five-step process. Here's exactly what happens at each stage.",
+    content: `
+Every style of whiskey — no matter how different the final flavour — is built from the same five fundamental steps: malting (when applicable), mashing, fermentation, distillation, and maturation. The differences between a bourbon and a Scotch come down to variations within these steps, not a different process entirely.
+
+## Step 1: Malting (Barley-Based Whiskies Only)
+
+For single malt whiskies, grain (barley) is soaked in water to begin germination, which activates enzymes that will later convert the grain's starches into fermentable sugar. Germination is stopped by drying the grain in a kiln — traditionally over peat fires for smoky Scotch styles, or simply hot air for unpeated whisky. Bourbon and rye skip this step for their primary grain, since corn and rye don't need malting the way barley does (though a small amount of malted barley is still included in most American whiskey mash bills to aid fermentation).
+
+## Step 2: Mashing
+
+The grain is ground and mixed with hot water in a large vessel called a mash tun, activating enzymes that convert starches into fermentable sugars. The resulting sugary liquid is called "wort" (for malt whisky) or simply the "mash" for grain whiskies like bourbon.
+
+## Step 3: Fermentation
+
+Yeast is added to the wort or mash, converting sugars into alcohol over roughly 2–5 days. The result, called "wash" or "distiller's beer," is a low-alcohol liquid (typically 7–10% ABV) — essentially a rough, unhopped beer at this stage, not yet whiskey.
+
+## Step 4: Distillation
+
+The wash is distilled to concentrate the alcohol and separate out unwanted compounds. Pot stills (used for Scotch single malt, Irish pot still whiskey, and traditional bourbon) distil in batches and preserve more character from the original grain. Column stills (used for most bourbon and grain whisky production) run continuously and produce a purer, higher-proof spirit more efficiently. Most whiskies are distilled twice; Irish whiskey is traditionally distilled a third time for extra smoothness.
+
+## Step 5: Maturation
+
+The clear "new-make spirit" coming off the still is entered into wooden barrels, where it will spend anywhere from a legal minimum (three years for Scotch and Irish whiskey; no strict minimum but typically two-plus years for straight bourbon) up to several decades. This stage is where the vast majority of a whiskey's final colour and flavour actually develops — through oak sugar extraction, oxidation, and (for used barrels) the influence of whatever the barrel previously held, whether bourbon, sherry, port, or something else entirely.
+
+## Why the Details Matter
+
+Every choice within these five steps — peated or unpeated malt, pot still or column still, new or used oak, three years or thirty — is a deliberate lever a distiller pulls to shape the final spirit. Once you can trace a whiskey's flavour back to a specific step in this process, tasting notes on a label stop being abstract marketing language and start being genuinely explainable.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '7 min read',
+    image: '/images/categories/other-whiskey.webp',
+    tags: ['Whiskey Education', 'Distilling', 'How Whiskey Is Made'],
+    faqs: [
+      { question: "What is the difference between pot still and column still distillation?", answer: "Pot stills distil in batches and preserve more character from the original grain, typically producing a fuller-flavoured spirit. Column stills run continuously and produce a purer, higher-proof spirit more efficiently — most bourbon and grain whisky uses column stills." },
+      { question: "How much of whiskey's flavour comes from the barrel?", answer: "The large majority — most distillers and experts estimate that 60–80% of a whiskey's final flavour and virtually all of its colour come from barrel maturation, not from distillation or the original grain alone." },
+    ],
+  },
+  {
+    slug: 'most-expensive-whiskey',
+    title: "The Most Expensive Whiskey in the World: What Drives the Price",
+    excerpt: "From record-breaking Macallan auction sales to ultra-rare Japanese single malts — what actually makes a whiskey worth six or seven figures.",
+    content: `
+Whiskey pricing at the extreme high end has almost nothing to do with the cost of producing it, and everything to do with scarcity, age, provenance, and collector demand. Here's what actually drives a bottle into the six- or seven-figure range.
+
+## The Main Drivers of Extreme Whiskey Prices
+
+**Extreme age.** Every year in the barrel means warehouse space, insurance, and inventory tied up for longer, plus a meaningful percentage of the spirit lost to evaporation — the "angel's share." A whiskey aged 40, 50, or even 70+ years represents an enormous, decades-long bet by a distillery, with only a tiny surviving volume by the time it's bottled.
+
+**Genuine scarcity.** Some of the most valuable bottles come from distilleries that have since closed (making the whiskey literally impossible to replicate) or from single-cask releases yielding only a few hundred bottles total.
+
+**Auction and collector demand.** As whiskey collecting has grown into a genuine global investment category — particularly in Asian markets — auction houses have driven record prices for the rarest bottles, often well beyond what any "drinking value" alone would suggest.
+
+**Provenance and history.** A bottle tied to a significant historical moment, a closed distillery, or a documented unbroken chain of ownership commands a premium collectors are willing to pay independent of the liquid inside.
+
+## Notable Record-Setting Sales
+
+The most expensive bottle of whisky ever sold at auction is a 1926 Macallan Adami, which sold for over £2.1 million in 2023 — one of only a handful of surviving bottles from that vintage. Rare Japanese releases, particularly discontinued Karuizawa vintage single malts (the distillery closed in 2000), have also fetched six-figure sums as Japanese whisky's global reputation grew through the 2010s.
+
+## Does Price Reflect Quality at This Level?
+
+Largely, no — not in a way that scales proportionally. A $500,000 bottle is not 10,000 times better tasting than a $50 bottle. At the extreme end, price reflects scarcity and collector demand far more than a proportional jump in drinking enjoyment. Most whiskey experts agree that genuinely excellent, complex whiskey is readily available well under $500 — the ultra-rare tier is a different market entirely, closer to fine art or rare wine than to everyday drinking.
+
+## What This Means for Regular Drinkers
+
+You don't need to spend anywhere close to record-setting prices to drink excellent whiskey. Understanding what drives extreme pricing — age, scarcity, and collector demand rather than proportional quality — is mostly useful for recognising that the enjoyable, well-aged, allocated whiskey most enthusiasts actually drink sits nowhere near these headline-grabbing auction numbers.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Whiskey Investment', 'Rare Whiskey', 'Whiskey Education'],
+    faqs: [
+      { question: "What is the most expensive bottle of whisky ever sold?", answer: "A 1926 Macallan Adami sold at auction in 2023 for over £2.1 million, making it the most expensive bottle of whisky ever sold — one of only a small handful of surviving bottles from that vintage." },
+      { question: "Does expensive whiskey taste proportionally better?", answer: "No — at the extreme high end, price reflects scarcity, age, and collector demand far more than a proportional increase in drinking enjoyment. Genuinely excellent whiskey is widely available well under $500." },
+    ],
+  },
+  {
+    slug: 'elijah-craig-barrel-proof-guide',
+    title: "Elijah Craig Barrel Proof Guide: Batches, Proof & What to Expect",
+    excerpt: "Elijah Craig Barrel Proof is one of bourbon's most consistently well-reviewed cask-strength releases — here's how the batch system works.",
+    content: `
+Elijah Craig Barrel Proof has built a reputation as one of the most reliably excellent, relatively accessible cask-strength bourbons on the market — a rare combination in a category where high scores usually come with high allocation and higher prices.
+
+## What Makes It a "Barrel Proof" Release
+
+Unlike the standard Elijah Craig Small Batch (bottled at a fixed 94 proof), Barrel Proof is bottled with no dilution at all — straight from a hand-selected batch of barrels, at whatever proof they happen to be. That means the proof varies release to release, typically landing somewhere in the 120–140 range depending on the specific barrels selected.
+
+## How the Batch System Works
+
+Elijah Craig Barrel Proof is released three times per year, and each release is labelled with a batch code (for example, "Batch C925" or similar) rather than a simple age statement. Every batch is blended from a different, hand-selected group of barrels aged roughly 8–13 years, so proof, colour, and flavour intensity shift meaningfully from one batch to the next — part of what keeps the release exciting for repeat buyers.
+
+## What to Expect on the Palate
+
+Because it's uncut and unfiltered, Barrel Proof preserves the full range of natural oils and wood sugars typically stripped out by dilution and chill-filtering. Expect a full-bodied mouthfeel with pronounced vanilla, brown sugar, and oak spice up front, and a long, warming finish driven by the elevated proof. Adding a few drops of water is common practice with a whiskey this strong — it opens up aromatics that can otherwise be masked by the alcohol heat.
+
+## How to Taste It
+
+1. Take a small neat sip first to acclimatise your palate to the high proof.
+2. Add a few drops of room-temperature water and taste again — this often reveals more of the underlying fruit and spice notes.
+3. Compare against the standard 94-proof Elijah Craig Small Batch to see exactly how much extra structure and intensity the barrel-proof version adds.
+
+## Why It's Considered Strong Value
+
+Compared to many other allocated cask-strength bourbons that have become difficult to find near retail price, Elijah Craig Barrel Proof has remained relatively attainable while consistently scoring well in independent reviews — making it one of the more reliable entry points into cask-strength bourbon for drinkers who want to understand what all the "barrel proof" enthusiasm is actually about.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Elijah Craig', 'Bourbon', 'Cask Strength', 'Whiskey Education'],
+    faqs: [
+      { question: "How often is Elijah Craig Barrel Proof released?", answer: "Elijah Craig Barrel Proof is released three times per year, with each release carrying its own batch code and typically bottled somewhere in the 120–140 proof range depending on the barrels selected." },
+      { question: "Should I add water to Elijah Craig Barrel Proof?", answer: "Many drinkers do — adding a few drops of room-temperature water can open up aromatics that the high alcohol proof can otherwise mask. Try it neat first, then add water gradually to taste." },
+    ],
+  },
+  {
+    slug: 'new-bourbon-releases-2026',
+    title: "How Bourbon's Annual Release Cycle Works (And How to Track New Releases)",
+    excerpt: "Limited bourbon releases follow a predictable annual rhythm — here's how the cycle works, and the most reliable ways to find out what's actually new.",
+    content: `
+Bourbon's most sought-after limited releases don't appear randomly — most major distilleries follow a fairly predictable annual rhythm, shaped by ageing timelines, seasonal allocation, and long-running flagship release traditions. Understanding that rhythm is far more useful than chasing rumours.
+
+## Why Bourbon Releases Follow a Calendar
+
+Unlike many consumer products, a limited bourbon release can't simply be produced on demand — the whiskey inside it may have been aging for a decade or more before a single bottle reaches a shelf. Distilleries plan flagship annual releases years in advance, timing them around barrels that have finally reached the intended age and proof profile. That's why so many of the most-anticipated bourbons — annual barrel-proof editions, single-barrel-select programs, and heritage collections — reliably reappear around the same time each year rather than launching unpredictably.
+
+## The General Shape of the Bourbon Release Year
+
+- **Spring:** A number of distilleries use spring for smaller single-barrel and store-pick programs, alongside standard core-range restocks.
+- **Fall:** Historically the busiest season for major limited and allocated releases, as many flagship annual bourbons are traditionally timed for autumn and the approaching holiday season.
+- **Holiday season:** Gift sets, commemorative packaging, and premium bundles cluster here, alongside continued allocation of the fall releases still working through distribution.
+
+Exact timing varies by distillery and by year, and allocation to any individual retailer is never guaranteed — but this general spring/fall rhythm holds fairly consistently across the bourbon industry.
+
+## How to Actually Track New Releases (Reliably)
+
+The most trustworthy sources for what's genuinely new are the distilleries themselves — official distillery newsletters and press announcements are the only way to confirm a release is real, rather than secondhand rumour or speculation. Beyond that:
+
+1. **Follow official distillery channels directly** rather than relying on secondhand social media claims.
+2. **Ask your retailer about allocation timing** — many stores get advance notice of what's coming and when, even if exact quantities remain uncertain until delivery.
+3. **Be skeptical of "leaked" release claims** without an official distillery source — bourbon hype cycles generate a lot of premature or simply inaccurate rumours every year.
+
+## Why We Don't Publish Speculative Release Lists
+
+We deliberately don't publish predictions or rumoured release lists — a huge amount of "upcoming bourbon" content online turns out to be speculation, outdated information, or regional-availability confusion presented as settled fact. If you're chasing a specific allocated release, your reliable path is confirmed news directly from the distillery, not aggregated rumour lists. When something genuinely new lands in our own vault, it appears on the relevant category and brand pages the moment it's actually in stock — not before.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Bourbon', 'Limited Releases', 'Bourbon Education'],
+    faqs: [
+      { question: "When do most limited bourbon releases come out?", answer: "Many distilleries cluster their biggest flagship annual releases in the fall, timed for the approaching holiday season, with smaller single-barrel and store-pick programs often appearing in spring — though exact timing varies by distillery and year." },
+      { question: "How can I find out about real upcoming bourbon releases?", answer: "The most reliable sources are official distillery newsletters and press announcements, plus direct conversations with your retailer about allocation timing. Be cautious of unofficial \"leaked\" release lists, which are frequently speculative or inaccurate." },
+    ],
+  },
+  {
+    slug: 'what-is-scotch-whisky',
+    title: "What Is Scotch Whisky? The Legal Rules and What Makes It Distinct",
+    excerpt: "Scotch has stricter legal requirements than most whiskey styles — here's exactly what has to be true for a bottle to legally call itself Scotch.",
+    content: `
+"Scotch" isn't just whisky made in Scotland in a loose, informal sense — it's a legally protected term (a Protected Geographical Indication) with a precise set of production requirements enforced by Scottish and UK law.
+
+## The Legal Definition
+
+To be called Scotch whisky, a spirit must be:
+
+1. Distilled at a distillery in Scotland from water and malted barley (with or without other whole cereal grains), to which only whole yeast has been added for fermentation.
+2. Distilled to an alcoholic strength of less than 94.8% ABV, so the resulting spirit retains an aroma and taste derived from its raw materials.
+3. Matured entirely in Scotland, in oak casks of no more than 700 litres, for a minimum of three years.
+4. Bottled at no less than 40% ABV, with no added substances except water and (for some styles) plain caramel colouring.
+
+Miss any one of these, and it cannot legally be labelled Scotch whisky — even if it's produced using identical equipment and technique just across the border.
+
+## The Five Legal Categories of Scotch
+
+1. **Single malt Scotch whisky** — 100% malted barley, one distillery, pot still distillation.
+2. **Single grain Scotch whisky** — one distillery, but other cereal grains and continuous stills permitted.
+3. **Blended malt Scotch whisky** — a blend of single malts from multiple distilleries.
+4. **Blended grain Scotch whisky** — a blend of single grain whiskies from multiple distilleries.
+5. **Blended Scotch whisky** — the most widely consumed category worldwide, combining malt and grain whiskies from multiple distilleries.
+
+## Why "Minimum Three Years" Is a Meaningful Floor, Not a Target
+
+Three years is the legal minimum, not a typical age — most Scotch on the market, even at the accessible end, is aged well beyond that floor, commonly 8–12 years for core-range single malts. The three-year rule exists mainly to prevent unaged or barely-aged spirit from being sold as genuine Scotch.
+
+## Scotch vs "Scottish-Style" Whisky Made Elsewhere
+
+Because "Scotch" is a legally protected term tied specifically to Scotland, no whisky produced anywhere else — no matter how closely it follows Scotch production methods — can legally use the name. This is exactly why Japanese whisky, which deliberately follows Scotch-style production, must be marketed and labelled under its own distinct national category rather than as "Japanese Scotch."
+
+## The Bottom Line
+
+"Scotch" is a promise backed by law: made in Scotland, from the required ingredients, aged the required minimum time, in the required cask size. That legal weight is part of why Scotch carries the international reputation it does — the term itself guarantees a specific, verifiable production standard, not just a geographic label.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Scotch Whisky', 'Whiskey Education', 'Whisky Regulations'],
+    faqs: [
+      { question: "What is the minimum age for Scotch whisky?", answer: "Scotch whisky must be matured in oak casks in Scotland for a minimum of three years. Most Scotch on the market is aged well beyond this legal floor, commonly 8–12 years or more for core-range single malts." },
+      { question: "Can Scotch whisky be made outside Scotland?", answer: "No — \"Scotch whisky\" is a legally protected term that can only be used for whisky distilled and matured entirely in Scotland. Whisky made elsewhere using similar methods must use a different name, regardless of similarity in production style." },
+    ],
+  },
+  {
+    slug: 'best-scotch-whisky',
+    title: "Best Scotch Whisky: How to Choose the Right Bottle for You",
+    excerpt: "There's no single \"best\" Scotch — the right bottle depends on whether you want fruity and elegant, smoky and intense, or something in between. Here's how to choose.",
+    content: `
+Asking for "the best Scotch whisky" is a bit like asking for "the best restaurant" — the honest answer depends entirely on what you're actually in the mood for. Scotch spans an enormous stylistic range, and the right bottle depends far more on matching style to preference than chasing a universal ranking.
+
+## Start With Style, Not Brand
+
+Before reaching for a specific bottle, it's worth knowing roughly where on the flavour spectrum you want to land:
+
+- **Light, fruity, and approachable:** Speyside single malts (The Macallan, Glenfiddich, The Glenlivet) are the safest, most broadly appealing starting point.
+- **Smoky and intense:** Islay single malts (Laphroaig, Ardbeg, Lagavulin) deliver bold peat, medicinal, and maritime character.
+- **Balanced and consistent:** A quality blended Scotch (built by a master blender combining dozens of malt and grain whiskies) offers reliability and smoothness at a lower price point than most single malts.
+- **Rich, sherried, and complex:** GlenDronach, Aberlour A'bunadh, and other sherry-cask-forward expressions lean toward dried fruit, chocolate, and deep spice.
+- **Rare and collectible:** Springbank and other allocated Campbeltown releases sit at the enthusiast end, prized for scarcity and traditional, entirely on-site production.
+
+## Matching Scotch to the Occasion
+
+**New to Scotch entirely?** Start with a Speyside single malt or a well-regarded blend — both are built to be approachable and won't overwhelm an untrained palate.
+
+**Hosting a tasting or want to impress?** A well-aged single malt with a clear regional identity (an Islay for smoke, a sherried Highland malt for richness) gives guests something distinctive to talk about.
+
+**Building a cocktail?** A solid blended Scotch works better than an expensive single malt in most Scotch cocktails — the other ingredients are meant to be genuine partners to the whisky, not something an ultra-premium pour needs to be "wasted" on.
+
+**Want something to sip slowly and study?** A well-aged single malt, ideally cask strength or at minimum non-chill-filtered, rewards the kind of close attention a blend generally isn't built for.
+
+## Why Ratings Alone Aren't the Full Answer
+
+Scotch review scores are useful for comparing bottles within a similar style, but a 95-point Islay malt and a 95-point Speyside malt are excellent in completely different ways — the score doesn't tell you which one you'll actually prefer. The most useful approach is identifying your preferred style first, then using ratings to compare options within that style, rather than chasing a single top-scoring bottle regardless of profile.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Scotch Whisky', 'Whisky Guide', 'Single Malt'],
+    faqs: [
+      { question: "What is the best Scotch whisky for beginners?", answer: "Speyside single malts (like Glenfiddich or The Glenlivet) or a well-regarded blended Scotch are generally the most approachable starting points — lighter, fruitier, and less intense than a smoky Islay malt." },
+      { question: "Is single malt Scotch always better than blended Scotch?", answer: "No — single malt showcases one distillery's character, while blended Scotch is built for balance and consistency by combining multiple whiskies. Neither is objectively superior; they're built for different goals." },
+    ],
+  },
+  {
+    slug: 'islay-vs-speyside-scotch',
+    title: "Islay vs Speyside Scotch: Comparing Scotland's Smokiest and Fruitiest Regions",
+    excerpt: "Islay and Speyside sit at opposite ends of the Scotch flavour spectrum — here's exactly how they differ, and which one matches your palate.",
+    content: `
+If Scotland's whisky regions had to be reduced to a single axis, it would run from Islay's intense, smoky peat at one end to Speyside's light, fruity elegance at the other. Understanding that contrast is one of the fastest ways to start navigating Scotch.
+
+## Islay: Peat, Smoke, and Maritime Intensity
+
+Islay (pronounced "EYE-luh") is a small island off Scotland's west coast where barley is traditionally dried over peat fires before distillation. The resulting smoke compounds survive fermentation and distillation, giving Islay single malts their signature intensely smoky, medicinal, and maritime character — often described as tasting of iodine, seaweed, and bonfire smoke.
+
+**Representative distilleries:** Laphroaig, Ardbeg, Lagavulin, Bruichladdich.
+
+**Best for:** Drinkers who want bold, unmistakable, polarising flavour — Islay Scotch tends to be a "love it or hate it" style with very few drinkers landing in the middle.
+
+## Speyside: Fruit, Elegance, and Approachability
+
+Speyside is Scotland's most concentrated whisky-producing region, clustered around the River Spey in northeast Scotland, and home to more distilleries — including some of the world's best-known names — than anywhere else in the country. Speyside single malts typically show fruity, floral, honeyed character, often deepened by sherry-cask maturation, with little to no smoke.
+
+**Representative distilleries:** The Macallan, Glenfiddich, The Glenlivet, Aberlour, GlenDronach.
+
+**Best for:** Drinkers new to Scotch, or anyone who prefers elegance and balance over intensity — Speyside is consistently the most broadly appealing regional style.
+
+## Side-by-Side Comparison
+
+- **Smoke level** — Islay: heavy (most expressions). Speyside: essentially none.
+- **Typical flavour notes** — Islay: iodine, seaweed, bonfire smoke, brine. Speyside: apple, pear, honey, sherry-driven dried fruit.
+- **Approachability** — Islay: intense, divisive. Speyside: broadly appealing, gentle entry point.
+- **Best for beginners** — Speyside is the safer starting point; Islay is worth trying once you know you enjoy smoky flavours generally (mezcal, peated whisky, smoked foods).
+
+## Which Should You Try First?
+
+If you've never had Scotch before, start with Speyside — it's far more likely to be enjoyable on a first try and won't colour your first impression of the entire category with an intensity some drinkers need time to appreciate. Once you're comfortable with Speyside's fruitier style, Islay is worth exploring specifically because it's such a dramatic departure — there's genuinely nothing else in Scotch quite like it.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Islay', 'Speyside', 'Scotch Whisky', 'Whisky Regions'],
+    faqs: [
+      { question: "Should a Scotch beginner start with Islay or Speyside?", answer: "Speyside is the safer, more approachable starting point — its whiskies are fruity and elegant with little to no smoke. Islay's intensely smoky, peated style is worth exploring once you're comfortable with Scotch generally." },
+      { question: "Why does Islay Scotch taste smoky?", answer: "Islay distilleries traditionally dry malted barley over peat fires, and the resulting smoke compounds survive fermentation and distillation into the finished whisky, giving Islay single malts their signature smoky, medicinal character." },
+    ],
+  },
+  {
+    slug: 'what-is-irish-whiskey',
+    title: "What Is Irish Whiskey? The Legal Rules and What Makes It Unique",
+    excerpt: "Irish whiskey has its own distinct legal category and its own unique style — single pot still — found nowhere else in the world. Here's what defines it.",
+    content: `
+Irish whiskey is one of the world's oldest whiskey traditions — Ireland is widely credited as the birthplace of whiskey distillation itself — and it has its own distinct legal framework, separate from both Scotch and American whiskey.
+
+## The Legal Definition
+
+To be called Irish whiskey, a spirit must be:
+
+1. Distilled on the island of Ireland (which includes both the Republic of Ireland and Northern Ireland) from a mash of malted cereals, with or without whole grains of other cereals.
+2. Distilled to an alcoholic strength of less than 94.8% ABV.
+3. Matured in wooden casks (typically oak) on the island of Ireland for a minimum of three years.
+4. Bottled at no less than 40% ABV.
+
+## The Four Legal Styles
+
+1. **Single malt Irish whiskey** — 100% malted barley, one distillery, similar to Scotch single malt but typically triple distilled.
+2. **Single pot still whiskey** — Ireland's most distinctive style, made from a mash of both malted and unmalted barley, distilled in a traditional copper pot still.
+3. **Single grain Irish whiskey** — made at one distillery using grains beyond malted barley, in continuous column stills.
+4. **Blended Irish whiskey** — the most widely consumed style, combining grain and malt or pot still whiskeys from one or more distilleries.
+
+## Why Triple Distillation Matters
+
+Most Irish whiskey is distilled three times, one more pass than the double distillation typical of Scotch. Each additional distillation pass removes more heavier, harsher compounds, producing a lighter, smoother spirit — one of the most consistent stylistic signatures separating Irish whiskey from Scotch.
+
+## Single Pot Still: The Style Unique to Ireland
+
+Single pot still whiskey deserves particular attention because it exists nowhere else in the world. By combining malted and unmalted barley in one mash (a historical response to a punitive 19th-century British tax on malted barley), Irish distillers created a spicier, creamier, more full-bodied style than single malt — Redbreast and the Spot range are the best-known modern examples.
+
+## Why Ireland Is Considered Whiskey's Birthplace
+
+Documentary evidence of distillation in Ireland dates back centuries, and the word "whiskey" itself derives from the Irish "uisce beatha" ("water of life"). Irish whiskey production nearly collapsed in the 20th century — down to just two operating distilleries by the 1980s — before a remarkable revival over the past two decades brought dozens of new distilleries online and restored Ireland to genuine global relevance in the category it's credited with founding.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Irish Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/irish-whiskey.webp',
+    tags: ['Irish Whiskey', 'Whiskey Education', 'Single Pot Still'],
+    faqs: [
+      { question: "Why is Irish whiskey smoother than Scotch?", answer: "Most Irish whiskey is triple distilled, one more pass through the still than the double distillation typical of Scotch. Each additional pass removes more heavier, harsher compounds, producing a lighter, smoother spirit." },
+      { question: "What is single pot still whiskey?", answer: "Single pot still whiskey is a style unique to Ireland, made from a mash of both malted and unmalted barley and distilled in a traditional copper pot still — giving a spicier, creamier body than single malt whiskey." },
+    ],
+  },
+  {
+    slug: 'best-irish-whiskey',
+    title: "Best Irish Whiskey: How to Choose Across Every Style",
+    excerpt: "From easy-mixing blends to Ireland's unique single pot still style — a guide to choosing the right Irish whiskey for your palate and budget.",
+    content: `
+Irish whiskey has grown from a nearly-extinct category in the 1980s into one of the fastest-growing whiskey markets in the world — and its range now spans everything from simple, mixable blends to some of the most distinctive whiskey styles anywhere. Here's how to choose.
+
+## If You Want an Easy, Reliable Everyday Pour
+
+A quality blended Irish whiskey — Jameson or Bushmills Black Bush, for example — delivers a smooth, approachable, consistently reliable profile that works equally well neat, on ice, or in a cocktail. This is the right starting point if you're new to Irish whiskey generally.
+
+## If You Want to Try Ireland's Signature Style
+
+Single pot still whiskey — made from a mash of both malted and unmalted barley — exists nowhere else in the world, and is arguably the most genuinely distinctive thing Irish whiskey offers. Redbreast 12 is the benchmark expression; the Spot range (Green Spot, Yellow Spot, Blue Spot, Red Spot) offers a wider spread of cask finishes within the same style.
+
+## If You Want Something to Sip Slowly
+
+Look toward cask-strength or higher-proof expressions — Redbreast 12 Cask Strength, or aged single malts like Bushmills 16 or 21 Year. These reward slower, more deliberate tasting the way a well-aged Scotch or bourbon does, rather than being built primarily for mixing.
+
+## If You Want a Peated, Smoky Style (Unusual for Irish Whiskey)
+
+Connemara is the rare Irish whiskey made from peat-dried barley in the traditional Scotch style, giving it a smoky character almost never found in the category — worth seeking out specifically because it's such an outlier.
+
+## If You Want Something Rare and Collectible
+
+Knappogue Castle's aged single malt range (12, 14, 16, and a rare 21 Year) offers small-production, collector-oriented bottlings named for the restored County Clare castle pictured on the label.
+
+## A Simple Decision Guide
+
+- **New to Irish whiskey:** a quality blend (Jameson, Bushmills).
+- **Want the category's most distinctive style:** single pot still (Redbreast, the Spot range).
+- **Want something smoky:** Connemara.
+- **Want to sip slowly:** a cask-strength or aged single malt release.
+- **Building a Manhattan or Old Fashioned:** a solid blend works fine — Irish whiskey's lighter, triple-distilled profile makes for a gentler cocktail than a bourbon or rye base.
+
+There's no single "best" bottle across the entire category — the honest answer depends on whether you want something reliable and mixable, or something genuinely unique to explore slowly. Irish whiskey, unusually among major whiskey categories, can comfortably deliver both.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Irish Whiskey Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/irish-whiskey.webp',
+    tags: ['Irish Whiskey', 'Single Pot Still', 'Whiskey Guide'],
+    faqs: [
+      { question: "What is the most distinctive style of Irish whiskey?", answer: "Single pot still whiskey — made from a mash of both malted and unmalted barley, distilled in a traditional copper pot still — is a style found nowhere else in the world. Redbreast and the Spot range are the best-known examples." },
+      { question: "Is there a smoky Irish whiskey?", answer: "Yes, though it's unusual for the category — Connemara is made from peat-dried barley in the traditional Scotch style, giving it a distinctly smoky character rarely found in Irish whiskey." },
+    ],
+  },
+  {
+    slug: 'best-japanese-whiskey',
+    title: "Best Japanese Whisky: A Style-by-Style Buying Guide",
+    excerpt: "From smooth entry-level blends to rare single malts — a guide to choosing the right Japanese whisky based on style, budget, and occasion.",
+    content: `
+Japanese whisky's global reputation was built on a relatively small number of internationally famous names, but the category is considerably wider than Yamazaki and Hibiki alone. Here's how to navigate it by style and purpose.
+
+## If You Want an Easy, Mixable Entry Point
+
+Suntory Toki was purpose-built for the Japanese highball — light, clean, and specifically formulated to hold up against soda water. It's the most approachable, least intimidating way into the category.
+
+## If You Want the Classic "Suntory House Style"
+
+Yamazaki is Japan's oldest and most storied distillery, and its single malt — particularly the 12 Year — set the template most people picture when they think "Japanese whisky": balanced, layered, with real depth from varied cask maturation including rare Mizunara oak.
+
+## If You Want Smoothness and Balance Above All
+
+Hibiki Japanese Harmony, a blended whisky combining malt and grain whiskies from across the Suntory portfolio, is widely considered the smoothest and most deliberately balanced Japanese whisky on the market — designed for elegance over raw intensity.
+
+## If You Want a Different House Style Entirely
+
+Nikka, founded by Masataka Taketsuru (the distiller who trained in Scotland and helped establish Japanese whisky production itself), offers a genuinely different profile from the Suntory range — From The Barrel and the Coffey Grain/Coffey Malt expressions are worth exploring specifically because they taste distinct from the Yamazaki/Hibiki house style.
+
+## If You Want Something Smoky (Unusual for Japan)
+
+Hakushu's Heavily Peated expression is one of the only widely available smoky Japanese whiskies — most Japanese whisky leans light and delicate, making this a genuine outlier worth seeking out if you enjoy Islay Scotch.
+
+## If You Want to Explore Beyond the Big Two Producers
+
+Japan's whisky scene extends well past Suntory and Nikka — Mars Shinshu (distilled at Japan's highest-altitude distillery), Akashi, and Togouchi (matured in a converted railway tunnel) each offer a genuinely different, smaller-scale perspective on the category, often at a lower price point than the internationally famous names.
+
+## A Quick Decision Guide
+
+- **New to Japanese whisky, want something mixable:** Suntory Toki.
+- **Want the archetypal Japanese single malt experience:** Yamazaki.
+- **Want maximum smoothness and balance:** Hibiki Japanese Harmony.
+- **Want a different house style:** Nikka.
+- **Want something smoky:** Hakushu Heavily Peated.
+- **Want to explore smaller producers:** Mars Shinshu, Akashi, or Togouchi.
+
+Because genuine Japanese whisky requires full production in Japan under the country's 2021 regulations, and demand has consistently outpaced supply since international awards in the 2000s and 2010s, availability shifts — the smaller producers listed above are often a more consistently attainable way into the category than chasing specific aged Yamazaki or Hibiki expressions.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Japanese Whisky Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/japanese-whisky.webp',
+    tags: ['Japanese Whisky', 'Yamazaki', 'Hibiki', 'Whisky Guide'],
+    faqs: [
+      { question: "What is the smoothest Japanese whisky?", answer: "Hibiki Japanese Harmony is widely considered the smoothest and most approachable Japanese whisky — a blended malt specifically designed for balance and elegance over raw intensity." },
+      { question: "Is there a smoky Japanese whisky?", answer: "Yes — Hakushu's Heavily Peated expression is one of the few widely available smoky Japanese whiskies. Most Japanese whisky leans light and delicate, so this is a genuine style outlier worth seeking out." },
+    ],
+  },
+  {
+    slug: 'japanese-whisky-brands-guide',
+    title: "Japanese Whisky Brands Guide: Every Major Producer Explained",
+    excerpt: "From Suntory and Nikka to Mars Shinshu and Kavalan — a complete guide to the distilleries shaping modern Japanese whisky.",
+    content: `
+Japanese whisky is often discussed as though it were made by only two companies — but the category includes a genuinely wider range of producers, each with a distinct house style and production philosophy.
+
+## Suntory
+
+Japan's largest and most internationally recognised whisky producer, operating three distinct distilleries under one roof:
+
+- **Yamazaki** — Japan's first and most storied distillery, founded 1923, known for depth and Mizunara oak influence.
+- **Hakushu** — a mountain distillery in the Japanese Alps, known for a fresher, greener, more herbal character, plus the outlier Heavily Peated expression.
+- **Chita** — a grain whisky distillery whose output forms the backbone of blends like Suntory Toki and Hibiki.
+
+**Suntory Toki** and **Hibiki** are blends drawing on all three distilleries.
+
+## Nikka
+
+Founded by Masataka Taketsuru, the distiller who trained in Scotland and is widely credited with helping establish Japanese whisky production itself. Nikka's Yoichi and Miyagikyo distilleries produce a noticeably different house style from Suntory — From The Barrel, Coffey Grain, and Coffey Malt are among its best-known expressions.
+
+## Mars Shinshu
+
+Operated by Hombo Shuzo, Mars Shinshu is Japan's highest-altitude whisky distillery, set in the Japanese Alps above 800 metres. The cool climate slows maturation for a lighter, more delicate spirit, bottled under the Komagatake and Maltage Cosmo labels, alongside the Iwai range named for pioneering distiller Kiichiro Iwai.
+
+## Akashi (White Oak Distillery)
+
+One of Japan's older and smaller whisky producers, distilling since 1919 in Hyogo Prefecture — offering a genuinely different, smaller-scale entry point into the category distinct from the major Suntory and Nikka houses.
+
+## Togouchi
+
+A blended Japanese whisky matured in a decommissioned railway tunnel in Hiroshima Prefecture, using the tunnel's naturally stable temperature and humidity for maturation — one of the more unusual production stories in Japanese whisky.
+
+## Kavalan (Taiwan — Japanese-Style, Not Japanese)
+
+Worth mentioning specifically because it's frequently confused with Japanese whisky: Kavalan is a Taiwanese distillery, not Japanese, though it follows a broadly similar single malt production philosophy. Taiwan's subtropical climate accelerates maturation dramatically compared to Japan or Scotland, and Kavalan has won blind-tasting awards against both Scotch and Japanese rivals.
+
+## Why Knowing the Producers Matters
+
+Because genuine "Japanese whisky" has required full in-country production since 2021 regulations took effect, knowing which company actually distilled a given bottle — rather than just recognising a label — is the fastest way to understand what you're actually buying, and to find real alternatives when a famous name is out of stock or allocated beyond reach.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Japanese Whisky Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/japanese-whisky.webp',
+    tags: ['Japanese Whisky', 'Suntory', 'Nikka', 'Whisky Guide'],
+    faqs: [
+      { question: "Is Kavalan a Japanese whisky?", answer: "No — Kavalan is a Taiwanese distillery, not Japanese, though it follows a broadly similar single malt production philosophy. It's frequently confused with Japanese whisky due to the stylistic similarity." },
+      { question: "What is the difference between Suntory and Nikka?", answer: "Suntory operates the Yamazaki and Hakushu distilleries and produces blends like Hibiki and Toki. Nikka, founded by Masataka Taketsuru (who trained in Scotland), operates the Yoichi and Miyagikyo distilleries and has a distinctly different house style, including the Coffey Grain and Coffey Malt expressions." },
+    ],
+  },
+  {
+    slug: 'best-rye-whiskey',
+    title: "Best Rye Whiskey: A Buying Guide, Plus the Best Rye for a Manhattan",
+    excerpt: "From bottled-in-bond value picks to high-proof collector releases — a guide to choosing rye whiskey, including exactly what to reach for in a Manhattan.",
+    content: `
+Rye whiskey has driven much of American whiskey's growth over the past two decades, reviving a style that was nearly extinct by the mid-20th century. Here's how to choose the right bottle, whether you're sipping or mixing.
+
+## What Makes Rye Whiskey Distinct
+
+Rye whiskey must be distilled from a grain mash of at least 51% rye, giving it a drier, spicier, more peppery character than corn-forward bourbon. Before Prohibition, rye — not bourbon — was America's dominant whiskey style, particularly in the mid-Atlantic and Northeast.
+
+## Best Value: Bottled-in-Bond Rye
+
+Rittenhouse Bottled-in-Bond Rye is the benchmark value pick in the category — full-proof (100 proof, per the bottled-in-bond standard), genuinely well-made, and priced well below its quality level. It's the rye most professional bartenders reach for by default.
+
+## Best for Sipping Neat
+
+WhistlePig's aged range (10 Year, 12 Year Old World, 15 Year) and the annual Boss Hog release are built specifically for slow, neat sipping, with age and cask finishing adding real complexity beyond rye's typical spice-forward profile.
+
+## Best High-Proof, Collector-Oriented Pick
+
+Pikesville Rye, bottled at 110 proof, revives a historic Maryland rye style and has developed a strong collector following for its intensity and relatively accessible pricing compared to other high-proof allocated ryes.
+
+## Best for an Annual Limited Release
+
+Sazerac Rye's standard 6 Year bottling is a reliable, widely available choice — while Thomas H. Handy Sazerac (part of the annual Buffalo Trace Antique Collection) is one of the most allocated cask-strength ryes released each year.
+
+## The Best Rye for a Manhattan
+
+Rye is the traditional, correct choice for a Manhattan — its spice cuts through the sweet vermouth in a way bourbon's softer sweetness often can't match as cleanly. For a Manhattan specifically:
+
+- **Rittenhouse Bottled-in-Bond** is an excellent, affordable everyday choice — 100 proof gives the cocktail real structure without breaking the bank.
+- **Sazerac Rye** is a slightly softer, still very solid alternative.
+- **For a special-occasion Manhattan,** a higher-proof pick like WhistlePig 10 Year adds noticeably more depth and spice.
+
+Avoid using your most expensive, delicate, cask-strength collector bottles in a Manhattan — the vermouth and bitters are genuine flavour partners, and a rye in the $25–$45 range at 90–100+ proof is typically the better structural choice than an ultra-premium sipping rye whose nuance gets folded into the drink regardless.
+
+## Quick Recommendations by Use Case
+
+- **Everyday sipping or mixing:** Rittenhouse Bottled-in-Bond.
+- **Slow, neat sipping:** WhistlePig 10 Year or 12 Year Old World.
+- **High-proof and collectible:** Pikesville Rye.
+- **Manhattan, specifically:** Rittenhouse or Sazerac Rye.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Bourbon Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/bourbon-whiskey.webp',
+    tags: ['Rye Whiskey', 'Manhattan', 'Whiskey Guide'],
+    faqs: [
+      { question: "What is the best rye whiskey for a Manhattan?", answer: "Rittenhouse Bottled-in-Bond is an excellent, affordable choice for a Manhattan — its 100 proof gives the cocktail real structure. Sazerac Rye is a slightly softer alternative, and a higher-proof pick like WhistlePig 10 Year works well for a special-occasion version." },
+      { question: "What is the best value rye whiskey?", answer: "Rittenhouse Bottled-in-Bond Rye is widely regarded as the best value in the category — full-proof, well-made, and priced well below its quality level, which is why it's a default choice among professional bartenders." },
+    ],
+  },
+  {
+    slug: 'tequila-vs-mezcal',
+    title: "Tequila vs Mezcal: What's Actually the Difference?",
+    excerpt: "Every tequila is technically a type of mezcal, but not every mezcal is tequila — here's the exact relationship between the two categories.",
+    content: `
+Tequila and mezcal are frequently treated as two separate spirits, but the real relationship is closer to a subset: every tequila is technically a type of mezcal, made under a stricter, narrower set of rules. Here's exactly how they differ.
+
+## The Core Relationship
+
+Mezcal is the broad legal category covering agave spirits made across a wide designated region of Mexico, from over 30 different agave varieties. Tequila is a specific, more tightly regulated type of mezcal, restricted to one agave variety (blue Weber agave) grown in a smaller designated region centred on Jalisco.
+
+## Agave Variety
+
+**Tequila** must be made from 100% blue Weber agave (Agave tequilana).
+
+**Mezcal** can be made from over 30 recognised agave varieties, each contributing different flavour characteristics — espadín is the most common, but varieties like tobalá and tepeztate produce noticeably different, often more herbal or mineral profiles.
+
+## Cooking Method
+
+**Tequila** producers typically steam or oven-cook the harvested agave hearts (piñas) to convert starches to fermentable sugars.
+
+**Mezcal** is traditionally cooked in earthen pits lined with hot volcanic stones, and the agave is often covered with earth and left to roast for several days. This pit-roasting is the primary source of mezcal's signature smoky character — a step tequila production doesn't traditionally include.
+
+## Region
+
+**Tequila** can only be produced in Jalisco and small designated zones in four neighbouring states.
+
+**Mezcal** can be produced across a considerably larger designated region spanning several Mexican states, most famously Oaxaca, which produces the large majority of mezcal on the market.
+
+## Flavour Profile
+
+**Tequila** tends toward bright, vegetal, peppery notes (unaged) or vanilla and caramel (aged in oak).
+
+**Mezcal** is generally smokier and more earthy, though the intensity varies considerably by agave variety and individual producer — not every mezcal is aggressively smoky.
+
+## Which Should You Choose?
+
+If you want a familiar profile for margaritas and classic tequila cocktails, tequila is the more versatile, widely applicable choice. If you're curious about a smokier, more artisanal, terroir-driven spirit — closer in spirit to a single malt Scotch than to a mixed drink base — mezcal rewards slower, more exploratory tasting. Many enthusiasts end up appreciating both for different occasions rather than choosing one over the other permanently.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Mezcal', 'Agave Spirits'],
+    faqs: [
+      { question: "Is all tequila technically mezcal?", answer: "Yes — tequila is a specific, more tightly regulated type of mezcal, restricted to blue Weber agave grown in a smaller designated region. Mezcal is the broader category, made from over 30 agave varieties across a wider area of Mexico." },
+      { question: "Why does mezcal taste smokier than tequila?", answer: "Mezcal is traditionally made by roasting agave in earthen pits lined with hot volcanic stones, which imparts a distinctive smoky character. Tequila producers typically steam or oven-cook the agave instead, which doesn't produce the same smoke." },
+    ],
+  },
+  {
+    slug: 'what-is-tequila',
+    title: "What Is Tequila? The Legal Rules and What Makes It Distinct",
+    excerpt: "Tequila is a protected designation of origin tied to a specific plant and region — here's exactly what has to be true for a spirit to legally be called tequila.",
+    content: `
+Tequila is one of the most tightly regulated spirits in the world — a protected designation of origin (similar in legal concept to Champagne or Scotch) tied to a specific plant, a specific region, and a specific production process.
+
+## The Legal Definition
+
+To be called tequila, a spirit must be:
+
+1. Distilled from the blue Weber agave plant (Agave tequilana), harvested at maturity (typically 6–8 years).
+2. Produced in Jalisco or small designated zones within four neighbouring Mexican states.
+3. Distilled at least twice.
+4. Either "100% agave" (all fermentable sugar from blue Weber agave) or "mixto" (a minimum of 51% agave sugars, with other sugars permitted).
+
+## From Plant to Bottle
+
+A blue Weber agave plant takes 6–8 years to reach harvest maturity. Once harvested, the leaves are stripped away to reveal the piña — the dense, pineapple-shaped heart of the plant — which is then cooked (traditionally steamed, though ovens and autoclaves are also used industrially) to convert its stored starches into fermentable sugars. The cooked agave is crushed to extract its juice, fermented, and distilled at least twice.
+
+## 100% Agave vs Mixto
+
+This distinction matters more than almost any other label detail. "100% agave" (sometimes written "100% de agave") guarantees every fermentable sugar came from blue Weber agave. Without that specific labelling, a tequila is legally permitted to be a "mixto," blending a minimum of just 51% agave sugars with other, cheaper fermentable sugars — typically producing a harsher, less complex, and less representative spirit. Premium and enthusiast-focused tequila is virtually always 100% agave.
+
+## The Ageing Categories
+
+Tequila's flavour range comes largely from how long (if at all) it rests in oak after distillation:
+
+- **Blanco** — unaged, or rested less than two months.
+- **Reposado** — rested 2 months to 1 year.
+- **Añejo** — aged 1 to 3 years.
+- **Extra Añejo** — aged a minimum of 3 years.
+
+## Why the Designated Region Matters
+
+Tequila's protected status means it can only legally be produced within specific Mexican states — primarily Jalisco. This is a legal protection similar to Champagne (which can only come from the Champagne region of France) or Scotch (Scotland only) — a spirit made identically anywhere else in the world cannot legally be called tequila, no matter how closely it follows the same production process.
+
+## The Bottom Line
+
+Tequila's legal framework guarantees three things: the specific plant it came from, the specific region it was made in, and (if labelled 100% agave) the purity of its sugar source. Understanding those three guarantees is the fastest way to separate a genuinely well-made bottle from a cheaper, less representative mixto.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Agave Spirits', 'Whiskey Education'],
+    faqs: [
+      { question: "What is the difference between 100% agave and mixto tequila?", answer: "100% agave tequila is made entirely from blue Weber agave sugars. Mixto tequila is legally permitted to blend a minimum of just 51% agave sugars with other, cheaper fermentable sugars, typically resulting in a harsher, less complex spirit." },
+      { question: "Can tequila be made outside Mexico?", answer: "No — tequila is a protected designation of origin that can only be produced in Jalisco and small designated zones in four neighbouring Mexican states. A spirit made the same way anywhere else cannot legally be called tequila." },
+    ],
+  },
 ];
