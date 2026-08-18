@@ -47,7 +47,8 @@ export const Header: React.FC = () => {
   };
 
   const isHome = pathname === '/';
-  const isShop = pathname.startsWith('/shop');
+  const isShop = pathname.startsWith('/shop') && !pathname.startsWith('/shop/brands');
+  const isBrands = pathname.startsWith('/shop/brands');
   const isAbout = pathname === '/about/';
   const isBlog = pathname.startsWith('/blog');
   const isFaq = pathname === '/faq/';
@@ -129,9 +130,13 @@ export const Header: React.FC = () => {
                   >
                     All Spirits Collection ({CATEGORIES.length} Categories)
                   </Link>
-                  <span className="text-[11px] text-[#D4AF37] font-sans">
-                    Napa Cellar Direct
-                  </span>
+                  <Link
+                    href="/shop/brands/"
+                    onClick={closeMenus}
+                    className="text-[11px] text-[#D4AF37] font-sans font-semibold hover:underline"
+                  >
+                    Shop by Brand →
+                  </Link>
                 </div>
 
                 <div className="grid grid-cols-2 gap-x-6 gap-y-4">
@@ -162,6 +167,13 @@ export const Header: React.FC = () => {
               </div>
             )}
           </div>
+
+          <Link
+            href="/shop/brands/"
+            className={`hover:text-[#D4AF37] transition-colors ${isBrands ? 'text-[#D4AF37] font-semibold' : 'text-amber-200/90'}`}
+          >
+            Brands
+          </Link>
 
           <Link
             href={getRouteUrl.about()}
@@ -278,6 +290,14 @@ export const Header: React.FC = () => {
                 </Link>
               ))}
             </div>
+
+            <Link
+              href="/shop/brands/"
+              onClick={closeMenus}
+              className="text-left font-serif font-bold text-[#D4AF37] text-lg block"
+            >
+              Shop by Brand
+            </Link>
 
             <Link
               href={getRouteUrl.about()}
