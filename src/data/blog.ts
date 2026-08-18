@@ -1699,4 +1699,603 @@ Tequila's legal framework guarantees three things: the specific plant it came fr
       { question: "Can tequila be made outside Mexico?", answer: "No — tequila is a protected designation of origin that can only be produced in Jalisco and small designated zones in four neighbouring Mexican states. A spirit made the same way anywhere else cannot legally be called tequila." },
     ],
   },
+  {
+    slug: 'what-is-mezcal',
+    title: "What Is Mezcal? Agave, Pit-Roasting & Mexico's Smokiest Spirit",
+    excerpt: "Mezcal is the broad agave spirit category tequila belongs to — here's what actually defines it, from agave variety to traditional pit-roasting.",
+    content: `
+Mezcal is Mexico's broadest agave spirit category — the family that tequila itself belongs to — but it's also a genuinely distinct drinking experience, shaped by a production process largely unchanged for centuries.
+
+## The Legal Definition
+
+Mezcal is a protected designation of origin covering agave spirits produced in designated regions across several Mexican states — most prominently Oaxaca, which produces the large majority of mezcal on the market, along with Guerrero, Durango, San Luis Potosí, Zacatecas, and several others.
+
+## The Agave: Over 30 Varieties
+
+Unlike tequila's single-plant restriction to blue Weber agave, mezcal can legally be made from more than 30 recognised agave species. **Espadín** is the most widely cultivated and commonly used, but varieties like **tobalá** (small, wild-harvested, prized for complexity), **tepeztate** (which can take up to 25 years to mature), and **madrecuixe** each produce distinctly different flavour profiles — part of why mezcal tasting can feel closer to exploring single-vineyard wine than comparing standard tequila brands.
+
+## Traditional Production: Pit-Roasting
+
+The defining step that separates mezcal from tequila is how the agave is cooked. Traditional mezcal production roasts harvested agave hearts (piñas) in earthen pits lined with hot volcanic stones, often covering the pit with agave fibre and earth and leaving it to roast for several days. This slow, smoke-infused roasting is the primary source of mezcal's signature smoky, earthy character — a step tequila production has largely moved away from in favour of steaming or industrial ovens.
+
+## Traditional Milling and Fermentation
+
+After roasting, the cooked agave is traditionally crushed using a tahona — a large stone wheel, often pulled by a horse or mule — rather than mechanical shredders. Fermentation frequently happens in open-air wooden vats or even underground pits, using wild airborne yeast rather than a cultivated strain, adding further variation from batch to batch and producer to producer.
+
+## Mezcal Categories
+
+- **Joven (young)** — unaged, the most common style, showcasing the raw agave and smoke character most directly.
+- **Reposado** — rested in wood for a period, softening the intensity.
+- **Añejo** — aged longer in oak, developing more complexity and less overt smoke.
+
+## Does Mezcal Always Have a Worm in the Bottle?
+
+No. The "worm" (actually a moth larva that lives on agave plants) is a marketing gimmick associated with a specific commercial brand, not a mezcal tradition or requirement. Serious mezcal producers and enthusiasts generally regard it as a novelty unrelated to genuine quality.
+
+## Why Mezcal Rewards Slower Exploration
+
+Because of the wide range of agave varieties, regional production styles, and small-batch, often family-run operations behind most genuine mezcal, the category offers an unusually direct sense of terroir and individual producer character — closer to comparing different vineyards' wine than comparing mainstream tequila brands. If you enjoy exploring the differences between individual Scotch distilleries or small-batch bourbon barrels, mezcal offers a similarly rewarding rabbit hole.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Mezcal', 'Agave Spirits', 'Tequila Education'],
+    faqs: [
+      { question: "Does mezcal always have a worm in the bottle?", answer: "No — the \"worm in the bottle\" is a marketing gimmick from a specific commercial brand, not a mezcal tradition or requirement. Quality mezcal is judged on agave variety, roasting method, and distillation, not novelty additions." },
+      { question: "How many agave varieties can be used to make mezcal?", answer: "Mezcal can legally be made from over 30 recognised agave varieties. Espadín is the most common, while rarer varieties like tobalá and tepeztate produce distinctly different, often more complex flavour profiles." },
+    ],
+  },
+  {
+    slug: 'how-is-tequila-made',
+    title: "How Is Tequila Made? From Agave Field to Bottle",
+    excerpt: "From a 6-to-8-year agave harvest to double distillation — here's exactly how tequila goes from plant to bottle, step by step.",
+    content: `
+Tequila's production process starts long before distillation — with a plant that can take the better part of a decade to reach harvest. Here's every step from field to bottle.
+
+## Step 1: Growing and Harvesting the Agave
+
+Blue Weber agave takes 6–8 years to reach harvest maturity. When ready, a jimador (a skilled agave harvester) uses a coa — a sharp, flat blade on a long pole — to cut away the plant's spiky leaves, revealing the piña: the dense, starchy heart of the plant, which can weigh anywhere from 80 to well over 200 pounds.
+
+## Step 2: Cooking the Agave
+
+The harvested piñas are cooked to convert their stored starches (inulin) into fermentable sugars. Traditional producers use brick or masonry ovens (hornos), steaming the agave slowly over one to three days for a more delicate flavour. Larger-scale, more industrial producers often use autoclaves — pressurised steel cookers — which cook the agave far faster, though many enthusiasts consider the traditional slow-oven method to produce a more complex result.
+
+## Step 3: Extraction
+
+Once cooked, the softened agave is crushed to extract its sugary juice — traditionally using a tahona (a large stone wheel), though modern mechanical roller mills are now standard for most large-scale production. The extracted juice, called aguamiel or mosto, is what gets fermented.
+
+## Step 4: Fermentation
+
+Yeast is added to the agave juice, converting its sugars into alcohol over roughly 2–7 days. Producers may use a cultivated yeast strain for consistency, or rely on wild airborne yeast for a more variable, terroir-driven result — a choice that meaningfully shapes the final spirit's character.
+
+## Step 5: Distillation
+
+Tequila must be distilled at least twice, typically in copper pot stills. The first distillation produces a lower-proof, cloudy spirit; the second refines it into the clear, higher-proof spirit that becomes Blanco tequila straight off the still.
+
+## Step 6: Ageing (or Not)
+
+From here, the clear spirit either gets bottled immediately as Blanco, or transferred into oak barrels for Reposado (2 months–1 year), Añejo (1–3 years), or Extra Añejo (3+ years) ageing, developing colour and wood-driven complexity the longer it rests.
+
+## Why the Process Matters for What You Taste
+
+Nearly every step above is a genuine lever a producer can pull: oven versus autoclave cooking, tahona versus mechanical crushing, cultivated versus wild yeast, and oak ageing length all shape the final character in the glass. A $25 mixto tequila and a $150 hand-crafted 100% agave Añejo aren't just different in price — they typically differ at almost every one of these production steps.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Agave Spirits', 'How Tequila Is Made'],
+    faqs: [
+      { question: "How long does it take to grow agave for tequila?", answer: "Blue Weber agave takes 6–8 years to reach harvest maturity — considerably longer than the annual growing cycle of most crops used in spirits production, which is part of why supply can lag behind sudden demand spikes." },
+      { question: "How many times is tequila distilled?", answer: "Tequila must be distilled at least twice by law, typically in copper pot stills. The first distillation produces a lower-proof, cloudy spirit; the second refines it into the clear spirit that becomes Blanco tequila." },
+    ],
+  },
+  {
+    slug: 'best-tequila-for-margarita',
+    title: "Best Tequila for a Margarita: What to Actually Look For",
+    excerpt: "The right tequila for a Margarita isn't about price — it's about style and purity. Here's exactly what to look for on the label.",
+    content: `
+A Margarita is only as good as its weakest ingredient, and tequila choice is where most home-made versions go wrong — not because people buy bad tequila, but because they buy the wrong style of tequila for the drink.
+
+## Blanco Is the Traditional, Correct Choice
+
+Blanco (unaged) tequila is the classic base for a Margarita, and for good reason: its bright, peppery, vegetal agave character cuts cleanly through fresh lime juice and orange liqueur in a way that oak-driven Reposado or Añejo tends to muddy. Save your aged tequila for sipping or a Tequila Old Fashioned — Blanco is what a proper Margarita calls for.
+
+## Always Choose 100% Agave
+
+This matters more than brand name or price point. "100% agave" (or "100% de agave") on the label guarantees every fermentable sugar came from blue Weber agave. Without that designation, a tequila is legally permitted to be a "mixto," blending in cheaper non-agave sugars — producing a harsher spirit that a Margarita's other ingredients can't fully mask, no matter how good your technique.
+
+## You Don't Need an Expensive Bottle
+
+A well-made 100% agave Blanco in the $30–$50 range is genuinely all a Margarita needs — the citrus and orange liqueur are meant to be real partners to the tequila, not camouflage for a lesser spirit, but they're also not built to showcase an ultra-premium Añejo's subtlety either. Save the expensive, extensively aged bottles for sipping neat.
+
+## The Recipe Itself Matters As Much As the Bottle
+
+Even excellent Blanco tequila will make a mediocre Margarita with the wrong recipe. The most common mistake is using bottled "margarita mix" instead of fresh lime juice and real orange liqueur — no tequila, however good, can fix that. For the classic ratio: 2 oz Blanco tequila, 1 oz fresh lime juice, 1 oz orange liqueur (triple sec or Cointreau), shaken hard with ice and strained over fresh ice.
+
+## What About Tommy's Margarita?
+
+If you want an even more tequila-forward drink, Tommy's Margarita drops the orange liqueur entirely in favour of agave syrup — 2 oz Blanco tequila, 1 oz fresh lime juice, 1/2 oz agave syrup. Because there's nothing to hide behind, this variation is also a genuinely useful test of whether a given Blanco tastes good enough to enjoy sipped on its own.
+
+## The Bottom Line
+
+For a Margarita specifically: choose 100% agave Blanco, use fresh lime juice and real orange liqueur, and don't overspend on an aged tequila the citrus will mostly mask anyway. A well-made $35 bottle will make a better Margarita than a $150 Añejo used the wrong way.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/hero/hero-3.webp',
+    tags: ['Margarita', 'Tequila', 'Cocktail Guide'],
+    faqs: [
+      { question: "Should I use Blanco or aged tequila for a Margarita?", answer: "Blanco is the traditional and generally preferred choice — its bright, unaged agave character cuts cleanly through the citrus. Reposado or Añejo can work but tend to muddy the classic profile; save aged tequila for sipping or a Tequila Old Fashioned." },
+      { question: "Does the tequila brand matter more than the recipe for a Margarita?", answer: "The recipe matters just as much, if not more. Using bottled margarita mix instead of fresh lime juice and real orange liqueur will produce a poor Margarita regardless of how good the tequila is." },
+    ],
+  },
+  {
+    slug: 'best-sipping-tequila',
+    title: "Best Sipping Tequila: How to Choose a Bottle for Drinking Neat",
+    excerpt: "Not every tequila is built for sipping — here's how to choose the right style and expression for enjoying tequila neat, no mixer required.",
+    content: `
+Tequila's reputation as a strictly party or cocktail spirit undersells what the category can actually offer — a well-chosen aged, 100% agave tequila sipped neat is a genuinely different, more contemplative experience than the same spirit shaken into a Margarita.
+
+## Start With 100% Agave, Always
+
+For sipping, 100% agave is non-negotiable. Mixto tequila (permitted to contain up to 49% non-agave sugars) lacks the depth and complexity to reward slow, neat drinking — reserve it for mixed drinks where other ingredients can compensate.
+
+## Choose Your Ageing Style Based on What You Want
+
+**Reposado** (2 months–1 year in oak) is the most versatile sipping style — enough barrel influence to soften the spirit and add complexity, while the agave character stays clearly present. A great entry point for sipping tequila for the first time.
+
+**Añejo** (1–3 years in oak) leans further into caramel, dried fruit, and baking spice, with the agave character receding further behind the wood — closer in spirit to sipping a young whiskey.
+
+**Extra Añejo** (3+ years in oak) is tequila's ultra-premium sipping tier, often compared to fine cognac for its depth and density. This is where the category's most serious, contemplative sipping expressions live.
+
+**Blanco**, while less traditional for sipping, has grown a genuine following among purists who want to taste agave completely unmasked by oak — a well-made premium Blanco rewards slow tasting in its own right, just with a very different, brighter profile than an aged expression.
+
+## How to Actually Taste Sipping Tequila
+
+1. Use a proper tasting glass (a tulip-shaped copita or a small wine glass) rather than a shot glass — it concentrates the aromatics.
+2. Take a small sip first to acclimatise your palate.
+3. Let it sit on your tongue briefly before swallowing, noting how the flavour evolves.
+4. Resist the urge to add lime and salt — that ritual exists for shooting lower-quality tequila quickly, not for appreciating a well-made sipping bottle.
+
+## A Quick Recommendation by Preference
+
+- **New to sipping tequila:** a quality Reposado.
+- **Want whiskey-like depth and complexity:** Añejo.
+- **Want the ultra-premium, cognac-adjacent experience:** Extra Añejo.
+- **Want the purest, most unmasked agave character:** a premium 100% agave Blanco.
+
+The single biggest shift in mindset, if you're used to tequila only as a shot or cocktail base: treat a good sipping tequila the way you'd treat a fine whiskey or aged rum — slowly, in a proper glass, without the salt and lime ritual that's built for an entirely different drinking occasion.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Sipping Tequila', 'Añejo'],
+    faqs: [
+      { question: "What tequila style is best for sipping neat?", answer: "Reposado is the most versatile entry point for sipping — enough oak influence to add complexity while the agave character stays present. Añejo and Extra Añejo offer progressively deeper, more whiskey-like complexity for more serious sipping." },
+      { question: "Should I add lime and salt to sipping tequila?", answer: "No — the lime-and-salt ritual is built for quickly shooting lower-quality tequila, not for appreciating a well-made sipping bottle. A quality 100% agave tequila is best tasted neat in a proper glass." },
+    ],
+  },
+  {
+    slug: 'celebrity-tequila-brands',
+    title: "Celebrity Tequila Brands: Who Actually Owns What",
+    excerpt: "From George Clooney's Casamigos to Michael Jordan's Cincoro — a guide to the celebrity-founded and celebrity-backed tequila brands actually worth knowing.",
+    content: `
+Tequila has become one of the most popular categories for celebrity investment and co-founding over the past decade — some of these brands are genuinely well-regarded by tequila enthusiasts independent of the famous name attached, while the association is simply a bonus fact worth knowing for others.
+
+## Casamigos — George Clooney and Rande Gerber
+
+Perhaps the most famous celebrity tequila story: George Clooney and Rande Gerber co-founded Casamigos as a slow-roasted, additive-free tequila built specifically for smooth sipping, reportedly developed for their own friend-group enjoyment before turning it into a commercial brand. Diageo acquired the brand in a deal reported at up to $1 billion, one of the largest celebrity spirits deals on record.
+
+## 818 Tequila — Kendall Jenner
+
+Named for the area code of Kendall Jenner's native Los Angeles suburb, 818 is a 100% additive-free tequila produced in the highlands of Jalisco, spanning Blanco through Añejo expressions.
+
+## Cincoro — Michael Jordan and Partners
+
+Cincoro was co-founded by NBA legend Michael Jordan alongside four fellow team owners, produced in Jalisco with a focus on small-batch, additive-free production and a distinctive angular bottle design.
+
+## Lobos 1707 — LeBron James and Maverick Carter
+
+Lobos 1707 is co-founded by LeBron James and longtime business partner Maverick Carter, drawing on a family agave-growing history the brand traces back to 1707 — notably, the range spans both tequila and mezcal rather than tequila alone.
+
+## Teremana — Dwayne "The Rock" Johnson
+
+Teremana, founded by Dwayne Johnson, is produced from small-batch, additive-free agave in the highlands of Jalisco and has grown into one of the best-selling celebrity-founded tequila brands by volume since its 2020 launch.
+
+## Does Celebrity Involvement Mean Better (or Worse) Tequila?
+
+Neither, automatically. Celebrity backing ranges from genuine hands-on involvement in production decisions to primarily a marketing and equity arrangement — the actual quality still comes down to the same fundamentals as any other tequila: agave sourcing, cooking method, distillation, and (for aged expressions) barrel quality. Several celebrity brands, Casamigos in particular, are genuinely well-regarded by independent reviewers on their own merits, not simply on the strength of the name attached.
+
+## How to Evaluate Any Celebrity Tequila Brand
+
+Look past the name and check the same details you would for any tequila: is it 100% agave (not mixto)? What ageing category is it? Independent reviews and blind tastings are a far more reliable guide than a famous co-founder — some celebrity brands hold up extremely well against that scrutiny, and some don't.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Tequila Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/tequila-mezcal.webp',
+    tags: ['Tequila', 'Celebrity Brands', 'Casamigos'],
+    faqs: [
+      { question: "Who owns Casamigos tequila?", answer: "Casamigos was co-founded by George Clooney and Rande Gerber. Diageo later acquired the brand in a deal reported at up to $1 billion, one of the largest celebrity spirits acquisitions on record." },
+      { question: "Is celebrity-backed tequila lower quality than other brands?", answer: "Not inherently — quality still comes down to standard fundamentals like agave sourcing, distillation, and ageing. Several celebrity brands, Casamigos in particular, are genuinely well-regarded by independent reviewers on their own merits." },
+    ],
+  },
+  {
+    slug: 'macallan-12-vs-18-vs-25',
+    title: "Macallan 12 vs 18 vs 25: How the Age Statements Actually Compare",
+    excerpt: "The Macallan's core range spans a huge price gap between the 12, 18, and 25 Year — here's what you're actually paying for at each step.",
+    content: `
+The Macallan's core age-stated range — 12, 18, and 25 Year — climbs steeply in price at each step, and it's a fair question whether the jump in quality tracks the jump in cost. Here's an honest breakdown of what each expression actually offers.
+
+## The Macallan 12 Year Sherry Oak
+
+The entry point into The Macallan's range, matured in a combination of European and American oak sherry-seasoned casks. Expect rich dried fruit, ginger, and wood spice notes with real depth for an entry-level expression — this is widely considered the most representative, best-value bottle in the range, and the one most reviewers recommend as a genuine starting point for understanding the brand's house style.
+
+## The Macallan 18 Year Sherry Oak
+
+Matured exclusively in sherry-seasoned oak casks for a minimum of 18 years, this expression shows noticeably deeper dried fruit, chocolate, and clove complexity than the 12 Year, with a longer, richer finish. It sits at a considerable price premium over the 12 — driven by the extended ageing, more selective cask sourcing, and lower yield of whisky that survives to 18 years without becoming over-oaked.
+
+## The Macallan 25 Year Sherry Oak
+
+At 25 years, the whisky moves into genuinely rare, collector-oriented territory — extremely limited production, extended sherry-cask maturation, and a price point that reflects both the decades of tied-up inventory and intense collector demand rather than a proportional jump in "drinking enjoyment" over the 18 Year.
+
+## Is the Price Jump Worth It?
+
+For most drinkers, the honest answer is that the 12 to 18 Year jump delivers a genuinely noticeable increase in depth and complexity that many find worth the premium for special occasions. The 18 to 25 Year jump, by contrast, is driven considerably more by scarcity and collector value than by proportional improvement in flavour — plenty of experienced tasters prefer the 18 Year's balance to the 25's added intensity, and the 25's price reflects rarity more than universal preference.
+
+## A Simple Recommendation
+
+- **Want to understand what The Macallan is about, without overspending:** start with the 12 Year.
+- **Special occasion, want noticeably more depth:** the 18 Year is the most defensible upgrade.
+- **Collecting or chasing genuine rarity:** the 25 Year (and beyond, into the brand's ultra-rare tier) — go in understanding you're paying substantially for scarcity, not simply for more of the same flavour intensified.
+
+None of the three is "wrong" to buy — they're built for different budgets and different occasions, not as a strict quality ladder where more money guarantees proportionally more enjoyment.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Macallan', 'Scotch Whisky', 'Whisky Guide'],
+    faqs: [
+      { question: "Is Macallan 18 worth the price over the 12 Year?", answer: "Many drinkers find the jump genuinely worthwhile for special occasions — the 18 Year shows noticeably deeper dried fruit and spice complexity. It's generally considered the most defensible upgrade in the range." },
+      { question: "What is the best value Macallan expression?", answer: "The Macallan 12 Year Sherry Oak is widely considered the best value and most representative starting point in the range — the price jumps at 18 and 25 Year reflect extended ageing and scarcity more than a proportional increase in drinking enjoyment." },
+    ],
+  },
+  {
+    slug: 'johnnie-walker-labels-ranked',
+    title: "Johnnie Walker Labels Ranked: Red, Black, Green, Gold & Blue Explained",
+    excerpt: "Johnnie Walker's colour-coded labels signal age, blend complexity, and price — here's exactly what separates Red from Black from Blue.",
+    content: `
+Johnnie Walker's coloured-label system is one of the most recognisable in all of spirits — and also one of the most frequently misunderstood, since the colours signal a mix of age, blend composition, and positioning rather than a single consistent rule.
+
+## Red Label
+
+The entry point into the range: a blend built for mixability, with a bolder, spicier profile designed to hold up in cocktails and highballs. No age statement — the youngest, most affordable core expression.
+
+## Black Label
+
+Arguably the brand's signature bottling, a blend of whiskies aged a minimum of 12 years from across Scotland's regions, including a meaningful proportion of smoky Islay malt in the blend. Noticeably smoother and more balanced than Red, and the label most associated with "classic Johnnie Walker" flavour.
+
+## Double Black
+
+A no-age-statement variant built for a bolder, smokier profile than standard Black Label, using more heavily peated and matured whiskies — positioned for drinkers who want more intensity without moving up to a higher age statement.
+
+## Green Label
+
+Distinct from the rest of the range in one important way: it's a blended malt rather than a standard blended Scotch, meaning it contains only single malt whiskies (no grain whisky), aged a minimum of 15 years. This gives Green Label noticeably more depth and character than Red or standard Black.
+
+## Gold Label Reserve
+
+A richer, smoother, more celebratory-positioned blend built around a higher proportion of malt whiskies matured in ex-bourbon and sherry casks, aimed at a more indulgent, special-occasion profile than the everyday labels below it.
+
+## Platinum Label
+
+Aged a minimum of 18 years, Platinum Label sits between Gold and Blue in the hierarchy — noticeably more refined and complex than Gold, without reaching Blue's ultra-premium positioning or price.
+
+## Blue Label
+
+The flagship of the range, blended from exceptionally rare whiskies (including, reportedly, some from closed or "ghost" distilleries no longer in operation) with no fixed age statement, since the blend prioritises rarity and character over a specific minimum age. Individually numbered bottles and premium packaging reflect its positioning as the range's ultra-premium expression.
+
+## King George V and Beyond
+
+Above Blue Label sit the brand's most exclusive releases — King George V and other ultra-limited expressions — built for collectors and special commemorative occasions rather than everyday drinking.
+
+## A Simple Way to Think About the Hierarchy
+
+Red and Black cover everyday drinking and mixing. Green Label is worth trying specifically because its blended-malt composition tastes meaningfully different from the rest of the range. Gold and Platinum step up in richness and refinement. Blue Label and above are built around rarity and ceremony as much as flavour. Working your way up the range in order is one of the more genuinely educational ways to understand how blending choices — age, malt proportion, cask type — actually shape a whisky's final character.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Johnnie Walker', 'Blended Scotch', 'Whisky Guide'],
+    faqs: [
+      { question: "What is the difference between Johnnie Walker Black and Green Label?", answer: "Black Label is a standard blended Scotch (malt and grain whiskies combined), aged a minimum of 12 years. Green Label is a blended malt — only single malt whiskies, no grain whisky — aged a minimum of 15 years, giving it noticeably more depth." },
+      { question: "Why doesn't Johnnie Walker Blue Label have an age statement?", answer: "Blue Label is blended for rarity and character rather than a specific minimum age, reportedly including whisky from closed or \"ghost\" distilleries no longer in operation. Its positioning prioritises exceptional blend quality over a stated age." },
+    ],
+  },
+  {
+    slug: 'glendronach-review',
+    title: "GlenDronach Review: 12, 15 Revival, 18 Allardice & 21 Parliament",
+    excerpt: "GlenDronach's deeply sherried house style has made it one of the most collected Highland single malts — here's how the core range compares.",
+    content: `
+GlenDronach has built one of the most devoted followings in Highland Scotch around a single, deliberate stylistic choice: leaning almost entirely into rich, traditional sherry cask maturation, at a time when many distilleries have diversified into lighter ex-bourbon and varied cask finishes.
+
+## The House Style
+
+GlenDronach matures its whisky primarily in Oloroso and Pedro Ximénez sherry casks sourced from Spain, and distils using traditional direct-fired stills — an increasingly rare production choice most modern distilleries have moved away from in favour of more efficient steam heating. The result is a consistently dark, rich, deeply sherried house style across the entire range.
+
+## GlenDronach 12 Year Original
+
+The entry point into the range, matured in a mix of Oloroso sherry and Pedro Ximénez casks. Expect dried fruit, toffee, and a warming spice character — rich for an entry-level single malt, and a clear signal of what the rest of the range builds on.
+
+## GlenDronach 15 Year Revival
+
+Reintroduced after a period off the market, the 15 Year Revival deepens the sherry influence further, with more pronounced dark chocolate and dried fig notes layered over the core 12 Year's profile. Frequently cited by reviewers as one of the best value steps up in the entire range.
+
+## GlenDronach 18 Year Allardice
+
+Matured exclusively in Oloroso sherry casks, the 18 Year Allardice is often considered the range's most complete, well-rounded expression — deep, rich, and complex without tipping into the more intense, collector-oriented territory of the older age statements.
+
+## GlenDronach 21 Year Parliament
+
+The range's flagship age statement, blending Oloroso and Pedro Ximénez sherry cask maturation for exceptional depth — rich dark fruit, leather, and coffee notes with a long, warming finish. Named for the parliament of rooks that nests near the distillery.
+
+## Which Should You Try First?
+
+If you're new to heavily sherried Scotch, the 12 Year Original is the right starting point — it's clearly recognisable as the same house style as the rest of the range, at a fraction of the cost. If you already know you love sherried whisky and want to understand what the range is capable of at its best, the 18 Year Allardice is generally considered the strongest overall balance of richness and refinement, with the 21 Year Parliament reserved for when you want to go further still.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['GlenDronach', 'Scotch Whisky', 'Sherry Cask'],
+    faqs: [
+      { question: "What makes GlenDronach different from other Highland single malts?", answer: "GlenDronach leans almost entirely into traditional Oloroso and Pedro Ximénez sherry cask maturation across its whole range, and still uses old-fashioned direct-fired stills — production choices most modern distilleries have moved away from." },
+      { question: "Which GlenDronach expression is the best value?", answer: "The 15 Year Revival is frequently cited by reviewers as one of the strongest value steps up from the entry-level 12 Year, deepening the sherry character noticeably without reaching the price of the 18 or 21 Year expressions." },
+    ],
+  },
+  {
+    slug: 'aberlour-abunadh-review',
+    title: "Aberlour A'bunadh Review: Why This Cask-Strength Sherry Bomb Has a Cult Following",
+    excerpt: "Cask strength, no chill-filtration, no added colour, entirely sherry cask matured — here's what makes Aberlour A'bunadh a benchmark for the style.",
+    content: `
+Aberlour A'bunadh has become something close to a benchmark reference point for cask-strength, sherry-driven Scotch — a whisky enthusiasts frequently reach for specifically to demonstrate what unfiltered, undiluted, entirely sherry-cask-matured single malt can taste like.
+
+## What "A'bunadh" Means
+
+A'bunadh is Gaelic for "the origin" — a nod to Aberlour's production style before chill-filtration and standardised bottling proof became the industry norm across most of Scotch.
+
+## What Makes A'bunadh Different
+
+Three deliberate choices set A'bunadh apart from most single malt Scotch on the market:
+
+1. **Cask strength.** Bottled directly from the barrel with no dilution, typically landing somewhere between 59% and 61% ABV depending on the batch — considerably higher than the 40–46% standard for most Scotch.
+2. **No chill-filtration.** Most whisky is chill-filtered before bottling to prevent slight cloudiness at cold temperatures or when water is added. A'bunadh skips this step, preserving natural oils and compounds that chill-filtration would otherwise strip out.
+3. **No added colouring.** The whisky's deep mahogany colour comes entirely from its sherry casks, not added caramel colouring (a legal, common practice elsewhere in Scotch).
+
+## Sherry Cask Maturation, Exclusively
+
+A'bunadh is matured entirely in first-fill Oloroso sherry butts — no ex-bourbon casks in the blend at all. This produces an intensely rich profile dominated by dried fruit, dark chocolate, cinnamon, and Christmas cake spice, with the elevated proof adding real weight and warmth.
+
+## The Batch System
+
+Unlike most Scotch, A'bunadh is released in sequentially numbered batches rather than a single fixed recipe, with proof and precise flavour balance shifting slightly batch to batch based on the specific sherry casks used. This has turned batch-chasing into its own small subculture among Aberlour enthusiasts, similar to Four Roses' recipe-code tracking in bourbon.
+
+## How to Taste It
+
+Given the elevated proof, A'bunadh rewards a few drops of water more than most standard-strength Scotch — this often unlocks additional dried fruit and spice aromatics that can otherwise be muted by the alcohol strength. Try it neat first, then experiment with water in small increments.
+
+## Why It Has a Cult Following
+
+A'bunadh delivers a genuinely intense, traditional, cask-strength sherry-bomb experience at a price point considerably below many comparably rich, allocated Scotch releases — making it one of the more accessible ways to understand what serious sherry-cask Scotch enthusiasts are actually chasing.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Aberlour', 'Scotch Whisky', 'Cask Strength', 'Sherry Cask'],
+    faqs: [
+      { question: "What does A'bunadh mean?", answer: "A'bunadh is Gaelic for \"the origin,\" referencing Aberlour's production style before chill-filtration and standardised bottling proof became the industry norm across most of Scotch." },
+      { question: "What proof is Aberlour A'bunadh bottled at?", answer: "A'bunadh is bottled at cask strength with no dilution, typically landing between 59% and 61% ABV depending on the batch — considerably higher than the 40–46% standard for most Scotch whisky." },
+    ],
+  },
+  {
+    slug: 'johnnie-walker-blue-label-review',
+    title: "Johnnie Walker Blue Label Review: Is It Worth the Price?",
+    excerpt: "Johnnie Walker's flagship blend is built around rarity as much as flavour — here's what's actually in the bottle, and whether it's worth the premium.",
+    content: `
+Johnnie Walker Blue Label occupies an unusual position in the whisky world — it's simultaneously one of the most recognised luxury whisky names on the planet and one of the most debated in terms of whether its price genuinely reflects what's in the glass.
+
+## What's Actually in Blue Label
+
+Blue Label carries no fixed age statement, because the blend is built around exceptional rarity and character rather than a specific minimum age requirement. It reportedly draws on whiskies from a very small number of distilleries out of the roughly one in ten thousand casks the Johnnie Walker master blenders consider exceptional enough for inclusion — including, according to the brand, whisky from some closed or "ghost" distilleries no longer producing.
+
+## Tasting Profile
+
+Blue Label is built for smoothness and balance above raw intensity — expect honeyed sweetness, dried fruit, a gentle wisp of smoke, and a notably long, refined finish. It reads as considerably more polished and integrated than Black or even Gold Label, without leaning into the boldness of a heavily peated single malt.
+
+## The Case For It Being Worth the Price
+
+Blue Label is a genuinely well-constructed, exceptionally smooth blend, and the individually numbered bottles and premium presentation reflect real production rarity, not purely marketing. For a special occasion or a meaningful gift, it delivers a consistently polished, crowd-pleasing experience that's difficult to find fault with.
+
+## The Case Against
+
+At its price point, many single malt Scotch enthusiasts point out that you can find whiskies with considerably more individual character, complexity, or genuine age for less money — Blue Label's premium reflects branding, rarity, and blend consistency more than raw flavour intensity, and some tasters find it comparatively subtle for the cost relative to a well-chosen single malt in a similar price bracket.
+
+## Who Blue Label Is Actually Right For
+
+Blue Label makes the most sense as a gift, a celebratory bottle, or an introduction to what "prestige blended Scotch" can deliver — smooth, refined, universally approachable. If your priority is maximum individual character and complexity for your money, a well-chosen single malt (a sherried Highland or Speyside expression, for instance) will generally deliver more distinctiveness per dollar. Neither approach is wrong — they're simply optimising for different things.
+
+## The Bottom Line
+
+Blue Label is a genuinely excellent, meticulously blended Scotch — the question of whether it's "worth it" depends entirely on whether you're paying for the smoothness and prestige it delivers extremely well, or looking for maximum individual character per dollar, which is a different (and generally cheaper) pursuit within Scotch more broadly.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Scotch Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '5 min read',
+    image: '/images/categories/scotch-whisky.webp',
+    tags: ['Johnnie Walker', 'Blue Label', 'Blended Scotch'],
+    faqs: [
+      { question: "Why does Johnnie Walker Blue Label not have an age statement?", answer: "Blue Label is blended for rarity and character rather than a specific minimum age, reportedly drawing on a very small proportion of exceptional casks, including whisky from some closed or \"ghost\" distilleries no longer in operation." },
+      { question: "Is Johnnie Walker Blue Label worth the price?", answer: "It depends on your priority. Blue Label delivers exceptional smoothness, balance, and prestige presentation, but many Scotch enthusiasts find comparable or greater individual character and complexity in a well-chosen single malt at a similar or lower price." },
+    ],
+  },
+  {
+    slug: 'best-aged-rum',
+    title: "Best Aged Rum: A Style-by-Style Buying Guide",
+    excerpt: "From Guyana's Demerara style to Venezuelan solera-blended rum — a guide to choosing aged, sipping-grade rum across every major regional style.",
+    content: `
+Aged rum has quietly become one of the most rewarding categories for whiskey drinkers to explore — the production techniques (barrel ageing, cask finishing, single-estate character) will feel immediately familiar, applied to a genuinely different base spirit.
+
+## Demerara Rum (Guyana)
+
+Distilled in Guyana using a mix of rare wooden pot stills — some over a century old — alongside column stills, Demerara rum is known for a dark, rich, almost molasses-forward intensity. El Dorado's aged range (12, 15, and 21 Year) is the benchmark for the style.
+
+## Jamaican Rum
+
+Jamaican rum is typically distilled with a longer, more intense fermentation than most other rum-producing regions, producing a distinctively funky, ester-forward character — bold and immediately recognisable. Appleton Estate, distilling in Jamaica's Nassau Valley since 1749, is the standard-bearer.
+
+## Venezuelan and Guatemalan Solera Rum
+
+Ron Zacapa (Guatemala) and Diplomático (Venezuela) both use a solera blending system — fractional blending across barrels of different ages, similar to how sherry or some cognac is produced — for a smooth, layered, often notably sweet profile. Zacapa in particular is matured "above the clouds" at high altitude, where cooler temperatures slow ageing considerably.
+
+## Barbadian Rum
+
+Mount Gay, with a documented distilling history in Barbados dating to 1703, represents one of the oldest continuous rum traditions in the Caribbean — its aged expressions (Black Barrel, XO) balance dried fruit and toasted oak with a lighter touch than the heavier Demerara or Jamaican styles.
+
+## Nicaraguan Rum
+
+Flor de Caña, distilled at the base of the San Cristóbal volcano, produces a smoother, more approachable style than Jamaican or Demerara rum — the 12 and 18 Year Centenario expressions are the most widely available aged options.
+
+## Multi-Island Blended Rum
+
+Plantation sources rum from distilleries across the Caribbean and Latin America, then finishes each release with additional ageing in French cognac casks — the multi-island XO is a genuinely distinctive, gift-tier expression built around that extra finishing step.
+
+## How to Choose
+
+- **Want bold, funky, intense character:** Jamaican (Appleton Estate).
+- **Want dark, rich, molasses-forward depth:** Demerara (El Dorado).
+- **Want smooth and layered, whiskey-drinker-friendly:** solera-blended (Zacapa, Diplomático).
+- **Want history and balance:** Barbadian (Mount Gay).
+- **Want approachable and easy-sipping:** Nicaraguan (Flor de Caña).
+- **Want a distinctive cognac-cask finish:** Plantation XO.
+
+If you already enjoy sipping bourbon or Scotch neat, aged rum — particularly Demerara or solera-blended styles — is one of the most natural next categories to explore, since the barrel-driven complexity you're already used to evaluating translates directly.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Rum Education',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/categories/rum.webp',
+    tags: ['Aged Rum', 'Demerara Rum', 'Rum Guide'],
+    faqs: [
+      { question: "What is Demerara rum?", answer: "Demerara rum is distilled in Guyana, often using rare wooden pot stills alongside column stills, producing a dark, rich, molasses-forward style. El Dorado's aged range is the benchmark example." },
+      { question: "What is solera-blended rum?", answer: "Solera blending is a fractional blending system across barrels of different ages, similar to sherry production, used by rums like Ron Zacapa and Diplomático to produce a smooth, layered, often notably sweet profile." },
+    ],
+  },
+  {
+    slug: 'best-rum-cocktails',
+    title: "Best Rum Cocktails: The Classic Recipes Every Drinker Should Know",
+    excerpt: "From the Daiquiri to the Mai Tai and Dark 'n' Stormy — the essential rum cocktails, which rum style suits each one, and how to make them properly.",
+    content: `
+Rum's cocktail range is genuinely enormous — from bright, citrus-forward classics to rich, dark, spirit-forward drinks. Here's how to make the essentials properly, and which rum style each one calls for.
+
+## Daiquiri
+
+Not the frozen, blended version most people picture — the original Daiquiri is a simple, elegant, shaken classic.
+
+**Recipe:**
+1. Combine 2 oz white rum, 1 oz fresh lime juice, and 3/4 oz simple syrup in a shaker with ice.
+2. Shake hard for 10–15 seconds.
+3. Strain into a chilled coupe glass — no ice.
+
+A well-made Daiquiri is one of the purest tests of whether a white rum is actually good — there's nowhere for a lesser spirit to hide.
+
+## Mai Tai
+
+Often poorly made with bottled mixers, the real Mai Tai is a layered, rum-forward classic built around aged rum.
+
+**Recipe:**
+1. Combine 1.5 oz aged Jamaican rum, 0.5 oz aged Demerara rum, 1 oz fresh lime juice, 0.5 oz orange curaçao, 0.5 oz orgeat (almond syrup), and 0.25 oz simple syrup in a shaker with ice.
+2. Shake hard and strain over crushed ice.
+3. Garnish with a mint sprig and lime shell.
+
+The blend of two different rum styles (funky Jamaican, rich Demerara) is essential to the classic profile — a single rum can't replicate the same depth.
+
+## Dark 'n' Stormy
+
+A simple, two-ingredient highball built around dark rum's bold character.
+
+**Recipe:**
+1. Fill a highball glass with ice.
+2. Add 2 oz dark rum (traditionally Demerara-style).
+3. Top with spicy ginger beer and stir gently.
+4. Garnish with a lime wedge.
+
+## Rum Old Fashioned
+
+A modern application of the Old Fashioned format to aged, sipping-grade rum.
+
+**Recipe:**
+1. Add a sugar cube (or 1/4 oz simple syrup) and 2 dashes of Angostura bitters to a rocks glass.
+2. Add a splash of water and muddle until dissolved.
+3. Add 2 oz aged rum and one large ice cube.
+4. Stir until well chilled and express an orange peel over the top.
+
+## Piña Colada
+
+A genuine classic, not just a poolside cliché — made properly, it's a legitimately well-balanced cocktail.
+
+**Recipe:**
+1. Combine 2 oz white or gold rum, 1 oz coconut cream, and 1 oz fresh pineapple juice in a blender with ice.
+2. Blend until smooth.
+3. Pour into a hurricane glass and garnish with a pineapple wedge.
+
+## Choosing the Right Rum for Each Cocktail
+
+- **Daiquiri, Piña Colada:** white or gold rum — clean and mixable.
+- **Mai Tai:** a blend of Jamaican and Demerara aged rum for classic depth.
+- **Dark 'n' Stormy:** dark, Demerara-style rum for boldness against the ginger beer.
+- **Rum Old Fashioned:** an aged, sipping-grade rum with real barrel character.
+
+As with whiskey and tequila, save your most complex, extensively aged, sipping-grade rum for drinking neat — a well-made $25–$40 white or gold rum is exactly what most classic rum cocktails are built around.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 18, 2026',
+    isoDate: '2026-08-18',
+    readTime: '6 min read',
+    image: '/images/hero/hero-3.webp',
+    tags: ['Rum Cocktails', 'Daiquiri', 'Mai Tai', 'Cocktail Guide'],
+    faqs: [
+      { question: "What rum should I use in a Daiquiri?", answer: "A clean, well-made white rum works best — the Daiquiri's simple ingredient list (rum, lime, sugar) leaves nowhere for a lesser spirit to hide, so it's actually a good test of a white rum's quality." },
+      { question: "Why does a Mai Tai use two different rums?", answer: "The classic Mai Tai blends funky, ester-forward Jamaican rum with richer Demerara rum to achieve a layered depth that a single rum style can't replicate on its own." },
+    ],
+  },
 ];
