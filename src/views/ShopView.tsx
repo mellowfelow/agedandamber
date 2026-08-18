@@ -7,6 +7,7 @@ import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { CATEGORIES } from '../data/products';
 import { SUBCATEGORY_HUBS } from '../data/subcategoryHubs';
+import { BRAND_HUBS } from '../data/brandHubs';
 import { getRouteUrl } from '../utils/routes';
 import {
   Search,
@@ -145,52 +146,57 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   }, [products]);
 
   // Main Product Filtering Logic
-  const filteredProducts = products.filter((p) => {
-    // Category match
-    const matchesCategory = selectedCategory === 'all' || p.category === selectedCategory;
+  const filteredProducts = useMemo(() => {
+    const query = searchQuery.toLowerCase();
+    return products.filter((p) => {
+      // Category match
+      const matchesCategory = selectedCategory === 'all' || p.category === selectedCategory;
 
-    // Subcategory match
-    const matchesSubcategory = selectedSubcategory === 'all' || p.subcategory === selectedSubcategory;
+      // Subcategory match
+      const matchesSubcategory = selectedSubcategory === 'all' || p.subcategory === selectedSubcategory;
 
-    // Price match
-    const matchesPrice = p.price >= minPrice && p.price <= maxPrice;
+      // Price match
+      const matchesPrice = p.price >= minPrice && p.price <= maxPrice;
 
-    // Proof filter match
-    let matchesProof = true;
-    if (proofFilter === 'zero') matchesProof = p.proof === 0;
-    else if (proofFilter === 'standard') matchesProof = p.proof > 0 && p.proof <= 95;
-    else if (proofFilter === 'cask-strength') matchesProof = p.proof > 95;
+      // Proof filter match
+      let matchesProof = true;
+      if (proofFilter === 'zero') matchesProof = p.proof === 0;
+      else if (proofFilter === 'standard') matchesProof = p.proof > 0 && p.proof <= 95;
+      else if (proofFilter === 'cask-strength') matchesProof = p.proof > 95;
 
-    // Stock match
-    const matchesStock = !inStockOnly || p.stock > 0;
+      // Stock match
+      const matchesStock = !inStockOnly || p.stock > 0;
 
-    // Search query match
-    const matchesSearch =
-      !searchQuery ||
-      p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.shortDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      p.caskType.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      (p.subcategory && p.subcategory.toLowerCase().includes(searchQuery.toLowerCase())) ||
-      p.distilleryLocation.toLowerCase().includes(searchQuery.toLowerCase());
+      // Search query match
+      const matchesSearch =
+        !query ||
+        p.name.toLowerCase().includes(query) ||
+        p.shortDescription.toLowerCase().includes(query) ||
+        p.caskType.toLowerCase().includes(query) ||
+        (p.subcategory && p.subcategory.toLowerCase().includes(query)) ||
+        p.distilleryLocation.toLowerCase().includes(query);
 
-    return (
-      matchesCategory &&
-      matchesSubcategory &&
-      matchesPrice &&
-      matchesProof &&
-      matchesStock &&
-      matchesSearch
-    );
-  });
+      return (
+        matchesCategory &&
+        matchesSubcategory &&
+        matchesPrice &&
+        matchesProof &&
+        matchesStock &&
+        matchesSearch
+      );
+    });
+  }, [products, selectedCategory, selectedSubcategory, minPrice, maxPrice, proofFilter, inStockOnly, searchQuery]);
 
   // Sort products
-  const sortedProducts = [...filteredProducts].sort((a, b) => {
-    if (sortBy === 'price-asc') return a.price - b.price;
-    if (sortBy === 'price-desc') return b.price - a.price;
-    if (sortBy === 'proof-desc') return b.proof - a.proof;
-    if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
-    return 0; // featured
-  });
+  const sortedProducts = useMemo(() => {
+    return [...filteredProducts].sort((a, b) => {
+      if (sortBy === 'price-asc') return a.price - b.price;
+      if (sortBy === 'price-desc') return b.price - a.price;
+      if (sortBy === 'proof-desc') return b.proof - a.proof;
+      if (sortBy === 'name-asc') return a.name.localeCompare(b.name);
+      return 0; // featured
+    });
+  }, [filteredProducts, sortBy]);
 
   // Reset to page 1 whenever the filtered/sorted set changes
   useEffect(() => {
@@ -546,6 +552,24 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
                   key={h.hubSlug}
                   href={getRouteUrl.product(h.categorySlug, h.hubSlug)}
                   className="text-xs font-semibold text-[#D4AF37] hover:underline"
+                >
+                  {h.name}
+                </Link>
+              ))}
+            </div>
+          );
+        })()}
+        {activeCategoryObj && selectedSubcategory === 'all' && (() => {
+          const brands = BRAND_HUBS.filter((h) => h.categorySlug === activeCategoryObj.slug);
+          if (brands.length === 0) return null;
+          return (
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              <span className="text-[11px] text-amber-400/60 font-semibold uppercase tracking-wider">Shop by brand:</span>
+              {brands.map((h) => (
+                <Link
+                  key={h.hubSlug}
+                  href={getRouteUrl.product(h.categorySlug, h.hubSlug)}
+                  className="py-1 px-2.5 rounded-lg bg-stone-900/80 border border-stone-800 text-[11px] font-semibold text-amber-200 hover:border-[#D4AF37]/60 hover:text-[#D4AF37] transition-colors"
                 >
                   {h.name}
                 </Link>

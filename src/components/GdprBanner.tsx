@@ -1,18 +1,22 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { Cookie, X } from 'lucide-react';
 import { useAppState } from '../../app/providers';
 
 export const GdprBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { setCookieBannerVisible } = useAppState();
+  const pathname = usePathname();
 
   useEffect(() => {
+    if (pathname !== '/') return;
     const consent = localStorage.getItem('aged-and-amber-cookie-consent');
     if (!consent) {
       setIsVisible(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -21,6 +25,11 @@ export const GdprBanner: React.FC = () => {
 
   const handleAccept = () => {
     localStorage.setItem('aged-and-amber-cookie-consent', 'accepted');
+    setIsVisible(false);
+  };
+
+  const handleDismiss = () => {
+    localStorage.setItem('aged-and-amber-cookie-consent', 'dismissed');
     setIsVisible(false);
   };
 
@@ -45,7 +54,7 @@ export const GdprBanner: React.FC = () => {
               Accept All
             </button>
             <button
-              onClick={() => setIsVisible(false)}
+              onClick={handleDismiss}
               className="py-2 px-3 text-xs text-amber-300 hover:text-amber-100"
             >
               Preferences
@@ -53,7 +62,7 @@ export const GdprBanner: React.FC = () => {
           </div>
         </div>
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={handleDismiss}
           className="text-amber-400/60 hover:text-amber-200 p-1"
         >
           <X className="w-4 h-4" />

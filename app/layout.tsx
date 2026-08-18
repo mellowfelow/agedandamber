@@ -9,7 +9,6 @@ import { GdprBanner } from '@/src/components/GdprBanner';
 import { CartDrawer } from '@/src/components/CartDrawer';
 import { CheckoutModal } from '@/src/components/CheckoutModal';
 import { ProductQuickView } from '@/src/components/ProductQuickView';
-import { ChatHub } from '@/src/components/ChatHub';
 import { TawkWidget } from '@/src/components/TawkWidget';
 import { SITE, BRAND } from '@/src/config/site';
 
@@ -61,7 +60,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <CartDrawer />
           <CheckoutModal />
           <ProductQuickView />
-          <ChatHub />
           <TawkWidget />
         </AppStateProvider>
       </body>

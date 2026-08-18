@@ -421,7 +421,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {BLOG_POSTS.map((post) => (
+          {BLOG_POSTS.slice(0, 3).map((post) => (
             <Link
               key={post.slug}
               href={getRouteUrl.blog(post.slug)}
