@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PRODUCTS, CATEGORIES } from '@/src/data/products';
 import { SUBCATEGORY_HUBS } from '@/src/data/subcategoryHubs';
+import { BRAND_HUBS } from '@/src/data/brandHubs';
 import { ProductDetailView } from '@/src/views/ProductDetailView';
-import { SubcategoryHubView } from '@/src/views/SubcategoryHubView';
+import { HubPageView } from '@/src/views/HubPageView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
 
@@ -15,13 +16,16 @@ export async function generateStaticParams() {
   return [
     ...PRODUCTS.map((p) => ({ category: p.category, slug: p.slug })),
     ...SUBCATEGORY_HUBS.map((h) => ({ category: h.categorySlug, slug: h.hubSlug })),
+    ...BRAND_HUBS.map((h) => ({ category: h.categorySlug, slug: h.hubSlug })),
   ];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params;
 
-  const hub = SUBCATEGORY_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
+  const subHub = SUBCATEGORY_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
+  const brandHub = BRAND_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
+  const hub = subHub || brandHub;
   if (hub) {
     return {
       title: hub.seo.titleTag,
@@ -43,16 +47,39 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const { category, slug } = await params;
 
-  const hub = SUBCATEGORY_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
-  if (hub) {
-    const cat = CATEGORIES.find((c) => c.slug === hub.categorySlug);
+  const subHub = SUBCATEGORY_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
+  if (subHub) {
+    const cat = CATEGORIES.find((c) => c.slug === subHub.categorySlug);
     if (!cat) notFound();
-    const hubProducts = PRODUCTS.filter((p) => p.category === hub.categorySlug && p.subcategory === hub.subcategoryName);
+    const hubProducts = PRODUCTS.filter((p) => p.category === subHub.categorySlug && p.subcategory === subHub.subcategoryName);
     return (
       <>
-        <JsonLd type="itemlist" data={{ name: hub.name, products: hubProducts }} />
-        <JsonLd type="faq" data={hub.seo.faqs} />
-        <SubcategoryHubView hub={hub} category={cat} products={PRODUCTS} />
+        <JsonLd type="itemlist" data={{ name: subHub.name, products: hubProducts }} />
+        {subHub.seo.faqs.length > 0 && <JsonLd type="faq" data={subHub.seo.faqs} />}
+        <HubPageView name={subHub.name} seo={subHub.seo} category={cat} products={hubProducts} />
+      </>
+    );
+  }
+
+  const brandHub = BRAND_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
+  if (brandHub) {
+    const cat = CATEGORIES.find((c) => c.slug === brandHub.categorySlug);
+    if (!cat) notFound();
+    const lowerKeywords = brandHub.brandKeywords.map((k) => k.toLowerCase());
+    const hubProducts = PRODUCTS.filter(
+      (p) => p.category === brandHub.categorySlug && lowerKeywords.some((kw) => p.name.toLowerCase().includes(kw))
+    );
+    return (
+      <>
+        {hubProducts.length > 0 && <JsonLd type="itemlist" data={{ name: brandHub.name, products: hubProducts }} />}
+        {brandHub.seo.faqs.length > 0 && <JsonLd type="faq" data={brandHub.seo.faqs} />}
+        <HubPageView
+          name={brandHub.name}
+          seo={brandHub.seo}
+          category={cat}
+          products={hubProducts}
+          comingSoon={hubProducts.length === 0}
+        />
       </>
     );
   }

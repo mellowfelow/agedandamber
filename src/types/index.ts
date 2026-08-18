@@ -49,6 +49,14 @@ export interface SubcategoryHub {
   seo: CategorySeo;
 }
 
+export interface BrandHub {
+  categorySlug: string;
+  hubSlug: string;
+  brandKeywords: string[];
+  name: string;
+  seo: CategorySeo;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
