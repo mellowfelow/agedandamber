@@ -39,6 +39,14 @@ export default async function ShopCategoryPage({ params }: Props) {
           <JsonLd type="faq" data={cat.seo.faqs} />
         </>
       )}
+      <JsonLd
+        type="breadcrumb"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Shop', url: '/shop/' },
+          { name: cat.name, url: `/shop/${cat.slug}/` },
+        ]}
+      />
       <ShopView products={PRODUCTS} selectedCategory={category} />
     </>
   );

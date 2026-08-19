@@ -5,9 +5,9 @@
   "schema": "https://ucp.dev/schema/v1.json",
   "site": "https://www.agedandamber.com",
   "name": "Aged And Amber",
-  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
+  "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "services": [
-    { "id": "product-catalog", "type": "catalog", "url": "https://www.agedandamber.com/shop/", "description": "Full spirits catalog" },
+    { "id": "product-catalog", "type": "catalog", "url": "https://www.agedandamber.com/shop/", "description": "Full catalog of spirits, wine, Champagne, beer, and cider" },
     { "id": "mcp-server", "type": "mcp", "url": "https://www.agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
     { "id": "order", "type": "commerce", "url": "https://www.agedandamber.com/shop/", "description": "Place orders via 21+ verified checkout" },
     { "id": "wholesale", "type": "b2b", "url": "https://www.agedandamber.com/wholesale/", "description": "Wholesale case pricing and single barrel allocations" }
@@ -27,7 +27,7 @@
   "payment_methods": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
   "legal": {
     "age_restriction": "21+",
-    "product_type": "Bourbon, Whiskey & Rare Spirits",
+    "product_type": "Spirits, Wine, Champagne, Beer, Cider & Non-Alcoholic Beverages",
     "compliance": "Mandatory adult 21+ signature required upon delivery."
   }
 }

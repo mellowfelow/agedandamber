@@ -56,6 +56,15 @@ export default async function ProductPage({ params }: Props) {
       <>
         <JsonLd type="itemlist" data={{ name: subHub.name, products: hubProducts }} />
         {subHub.seo.faqs.length > 0 && <JsonLd type="faq" data={subHub.seo.faqs} />}
+        <JsonLd
+          type="breadcrumb"
+          data={[
+            { name: 'Home', url: '/' },
+            { name: 'Shop', url: '/shop/' },
+            { name: cat.name, url: `/shop/${cat.slug}/` },
+            { name: subHub.name, url: `/shop/${subHub.categorySlug}/${subHub.hubSlug}/` },
+          ]}
+        />
         <HubPageView name={subHub.name} seo={subHub.seo} category={cat} products={hubProducts} />
       </>
     );
@@ -73,6 +82,15 @@ export default async function ProductPage({ params }: Props) {
       <>
         {hubProducts.length > 0 && <JsonLd type="itemlist" data={{ name: brandHub.name, products: hubProducts }} />}
         {brandHub.seo.faqs.length > 0 && <JsonLd type="faq" data={brandHub.seo.faqs} />}
+        <JsonLd
+          type="breadcrumb"
+          data={[
+            { name: 'Home', url: '/' },
+            { name: 'Shop', url: '/shop/' },
+            { name: cat.name, url: `/shop/${cat.slug}/` },
+            { name: brandHub.name, url: `/shop/${brandHub.categorySlug}/${brandHub.hubSlug}/` },
+          ]}
+        />
         <HubPageView
           name={brandHub.name}
           seo={brandHub.seo}
@@ -87,9 +105,20 @@ export default async function ProductPage({ params }: Props) {
   const product = PRODUCTS.find((p) => p.slug === slug && p.category === category);
   if (!product) notFound();
 
+  const productCat = CATEGORIES.find((c) => c.slug === product.category);
+
   return (
     <>
       <JsonLd type="product" data={product} />
+      <JsonLd
+        type="breadcrumb"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Shop', url: '/shop/' },
+          ...(productCat ? [{ name: productCat.name, url: `/shop/${productCat.slug}/` }] : []),
+          { name: product.name, url: `/shop/${product.category}/${product.slug}/` },
+        ]}
+      />
       <ProductDetailView product={product} allProducts={PRODUCTS} />
     </>
   );

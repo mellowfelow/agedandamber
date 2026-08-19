@@ -11,7 +11,7 @@ export const SITE = {
   darkCanvas: '#140D08',
   lightCanvas: '#FAFAF8',
   gscVerification: 'GSC-AGED-AND-AMBER-VERIFIED',
-  indexNowKey: 'agedandamberindexnowkey2026',
+  indexNowKey: '002a541a7ee2c7c51188fb5517599103',
   cartKey: 'aged-and-amber-cart-v1',
 };
 
@@ -68,11 +68,11 @@ export const CHAT = {
 export const BRAND = {
   foundingYear: '2018',
   foundingLocation: 'Napa Valley, California, USA',
-  description: 'Aged And Amber is an independent Napa Valley spirits house that curates and sells authentic, allocated bottles of rare single barrel bourbons, single malt scotch, and artisan wood-finished spirits sourced directly from trusted distilleries and licensed distributors.',
+  description: 'Aged And Amber is an independent Napa Valley cellar that curates and sells authentic, allocated bottles across rare single barrel bourbons, single malt scotch, tequila, rum, gin, vodka, and cognac, alongside fine wine, Champagne, craft beer, cider, and non-alcoholic alternatives, sourced directly from trusted distilleries, wineries, and licensed distributors.',
   milestones: [
     { year: '2018', event: 'Founded in Napa Valley as a direct-to-consumer curator of allocated and rare-release spirits.' },
     { year: '2020', event: 'Built out direct sourcing relationships with distilleries across Kentucky, Scotland, and beyond.' },
-    { year: '2022', event: 'Expanded compliant direct-to-consumer spirits shipping across 45 US states.' },
+    { year: '2022', event: 'Expanded compliant direct-to-consumer spirits shipping to states with laws permitting DTC alcohol delivery.' },
     { year: '2024', event: 'Launched the Rare Vault Reserve program for private collectors and allocated releases.' },
   ],
   differentiation: [

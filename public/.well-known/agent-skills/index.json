@@ -2,7 +2,7 @@
   "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
   "name": "Aged And Amber",
   "url": "https://www.agedandamber.com",
-  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
+  "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "skills": [
     {
       "name": "search-products",

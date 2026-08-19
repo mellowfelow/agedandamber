@@ -33,6 +33,14 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <JsonLd type="article" data={post} />
       {post.faqs && post.faqs.length > 0 && <JsonLd type="faq" data={post.faqs} />}
+      <JsonLd
+        type="breadcrumb"
+        data={[
+          { name: 'Home', url: '/' },
+          { name: 'Spirits Journal', url: '/blog/' },
+          { name: post.title, url: `/blog/${post.slug}/` },
+        ]}
+      />
       <BlogPostView post={post} />
     </>
   );

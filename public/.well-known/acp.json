@@ -1,7 +1,7 @@
 {
   "protocol": { "name": "acp", "version": "0.1.0" },
   "name": "Aged And Amber",
-  "description": "Boutique Curator of Authentic Bourbon, Rare Cask Spirits & Allocated Whiskey",
+  "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "api_base_url": "https://www.agedandamber.com",
   "homepage": "https://www.agedandamber.com",
   "transports": ["https"],
@@ -21,7 +21,7 @@
     "age_restriction": "21+",
     "region": "US (states with compliant DTC alcohol shipping laws only)",
     "ships_to": "US mainland compliant states",
-    "product_type": "Bourbon, Whiskey & Rare Spirits",
+    "product_type": "Spirits, Wine, Champagne, Beer, Cider & Non-Alcoholic Beverages",
     "compliance": "Adult 21+ signature required upon delivery."
   }
 }

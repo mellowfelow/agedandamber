@@ -100,20 +100,28 @@ export async function POST(req: NextRequest) {
           (p) => p.name.toLowerCase().includes(q) || p.shortDescription.toLowerCase().includes(q)
         );
       }
+      const mapped = filtered.map((p) => ({
+        ...p,
+        currency: SITE.currency,
+        url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+      }));
 
       return NextResponse.json(
-        { jsonrpc: '2.0', id: id || 1, result: { content: [{ type: 'text', text: JSON.stringify(filtered) }] } },
+        { jsonrpc: '2.0', id: id || 1, result: { content: [{ type: 'text', text: JSON.stringify(mapped) }] } },
         { headers: CORS_HEADERS }
       );
     }
 
     if (name === 'get_product') {
       const p = PRODUCTS.find((prod) => prod.slug === args?.slug);
+      const mapped = p
+        ? { ...p, currency: SITE.currency, url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/` }
+        : { error: 'Not found' };
       return NextResponse.json(
         {
           jsonrpc: '2.0',
           id: id || 1,
-          result: { content: [{ type: 'text', text: JSON.stringify(p || { error: 'Not found' }) }] },
+          result: { content: [{ type: 'text', text: JSON.stringify(mapped) }] },
         },
         { headers: CORS_HEADERS }
       );

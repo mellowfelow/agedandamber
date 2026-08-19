@@ -254,6 +254,16 @@ export const CATEGORIES: Category[] = [
       'Orange Liqueur',
       'Cordial Liqueurs',
     ],
+    seo: {
+      titleTag: 'RTD Cocktails & Liqueurs — Buy Online',
+      h1: 'RTD Cocktails & Liqueurs — Buy Craft Liqueurs & Canned Cocktails Online',
+      metaDescription: 'Buy RTD cocktails and liqueurs online — cream liqueurs, amari, aperitifs, and ready-to-drink canned cocktails. Direct allocations. Free shipping on $300+.',
+      transactionalCTA: 'Buy RTD cocktails and liqueurs online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Ready-to-drink cocktails and liqueurs cover everything from canned pre-batched cocktails to cream liqueurs, bitter amari, and aromatized aperitifs — built for convenience or as the backbone ingredient in a home bar, without requiring a full cocktail-making setup.',
+      faqs: [
+        { question: 'Are RTD canned cocktails as strong as a bar-made drink?', answer: 'Most ready-to-drink canned cocktails are formulated between 5-15% ABV, generally lighter than a full-proof bar pour but stronger than beer — check the can for exact ABV since it varies significantly by brand and style.' },
+      ],
+    },
   },
   {
     slug: 'fine-wine',
@@ -279,6 +289,16 @@ export const CATEGORIES: Category[] = [
       'Sherry',
       'Icewine & Dessert Wine',
     ],
+    seo: {
+      titleTag: 'Fine Wine — Napa Valley & International Wine Online',
+      h1: 'Fine Wine — Buy Napa Valley, Bordeaux & Burgundy Wine Online',
+      metaDescription: 'Buy fine wine online — Napa Valley Cabernet, Burgundy Pinot Noir, and Provence Rosé from prestige estates. Direct allocations. Free shipping on $300+.',
+      transactionalCTA: 'Buy fine wine online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Fine wine spans everything from everyday-drinking Cabernet Sauvignon and Chardonnay to cellar-reserve Bordeaux, Burgundy, and single-vineyard Napa Valley bottlings — vinified from grapes grown in a defined region and aged to develop varietal character, tannin structure, and complexity over time.',
+      faqs: [
+        { question: 'What is the difference between Old World and New World wine?', answer: 'Old World wine (France, Italy, Spain) is generally labeled by region and tends toward earthier, higher-acid styles shaped by centuries of terroir-driven tradition. New World wine (Napa Valley, Australia, Chile) is usually labeled by grape variety and leans riper and more fruit-forward, reflecting warmer growing climates.' },
+      ],
+    },
   },
   {
     slug: 'champagne-sparkling',
@@ -292,6 +312,16 @@ export const CATEGORIES: Category[] = [
       'Sparkling Wine',
       'Sparkling Rosé',
     ],
+    seo: {
+      titleTag: 'Champagne & Sparkling Wine — Buy Online',
+      h1: 'Champagne & Sparkling Wine — Buy Grower Champagne to Prestige Cuvée Online',
+      metaDescription: 'Buy Champagne and sparkling wine online — grower Champagne, Prosecco, Cava, and prestige cuvée. Direct allocations at Aged & Amber. Free on $300+.',
+      transactionalCTA: 'Buy Champagne and sparkling wine online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'True Champagne is sparkling wine produced exclusively in the Champagne region of France using the traditional method of secondary fermentation in the bottle; Prosecco, Cava, and other sparkling wine use grapes and methods specific to their own regions, each producing a distinct style of bubble, body, and sweetness.',
+      faqs: [
+        { question: 'Is all sparkling wine Champagne?', answer: 'No — only sparkling wine produced in the Champagne region of France using the traditional method may legally be called Champagne. Prosecco (Italy), Cava (Spain), and other sparkling wines are made under their own regional rules and are not Champagne, regardless of how similar they taste.' },
+      ],
+    },
   },
   {
     slug: 'na-wine',
@@ -303,6 +333,16 @@ export const CATEGORIES: Category[] = [
       'Non-Alcoholic White Wine',
       'Non-Alcoholic Rosé Wine',
     ],
+    seo: {
+      titleTag: 'Non-Alcoholic Wine — Buy Zero-Proof Online',
+      h1: 'Non-Alcoholic Wine — Buy De-Alcoholized Red, White & Rosé Online',
+      metaDescription: 'Buy non-alcoholic wine online — de-alcoholized red, white, and rosé crafted from premium vineyard grapes. No age or shipping restrictions apply.',
+      transactionalCTA: 'Buy non-alcoholic wine online — zero-proof wine shipped nationwide, no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic wine starts as real fermented wine, then has the alcohol gently removed — usually via vacuum distillation or reverse osmosis — while preserving the tannin structure, acidity, and aromatics of the original grape, rather than being a grape juice blend built to imitate wine.',
+      faqs: [
+        { question: 'Does non-alcoholic wine taste like real wine?', answer: 'Non-alcoholic wine starts as fully fermented wine before the alcohol is removed, so it retains genuine tannin, acidity, and varietal character — closer to real wine than a grape juice blend, though the body is typically lighter without the alcohol.' },
+      ],
+    },
   },
   {
     slug: 'na-champagne-sparkling',
@@ -314,6 +354,16 @@ export const CATEGORIES: Category[] = [
       'Non-Alcoholic Sparkling Rosé',
       'Sparkling Grape Juice',
     ],
+    seo: {
+      titleTag: 'Non-Alcoholic Champagne & Sparkling — Buy Online',
+      h1: 'Non-Alcoholic Champagne & Sparkling — Buy Zero-Proof Bubbles Online',
+      metaDescription: 'Buy non-alcoholic Champagne and sparkling wine online — zero-proof cuvées, sparkling rosé, and grape juice bottled with real effervescence. No age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic Champagne and sparkling online — zero-proof bubbles shipped nationwide, no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic Champagne and sparkling wine are de-alcoholized using the same methods as still non-alcoholic wine, then re-carbonated to recreate genuine bottle effervescence — built for celebration and toasting occasions without the alcohol.',
+      faqs: [
+        { question: 'Can non-alcoholic sparkling wine be used for a toast?', answer: 'Yes — it is specifically designed for celebration and toasting occasions, matching the presentation, pour, and effervescence of traditional Champagne without the alcohol, and it ships without any age verification requirement.' },
+      ],
+    },
   },
   {
     slug: 'na-spirits',
@@ -347,6 +397,16 @@ export const CATEGORIES: Category[] = [
       'Non-Alcoholic Spritz',
       'Non-Alcoholic Canned Cocktails',
     ],
+    seo: {
+      titleTag: 'Non-Alcoholic RTD Cocktails — Buy Online',
+      h1: 'Non-Alcoholic RTD Cocktails — Buy Zero-Proof Canned Cocktails Online',
+      metaDescription: 'Buy non-alcoholic ready-to-drink cocktails online — alcohol-free canned spritzes, mocktails, and artisanal elixirs. No age or shipping restrictions apply.',
+      transactionalCTA: 'Buy non-alcoholic RTD cocktails online — zero-proof canned cocktails shipped nationwide, no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic ready-to-drink cocktails are pre-mixed, canned or bottled mocktails built with real bitters, botanicals, and craft mixers to replicate the complexity of a bartender-made drink, without alcohol or the need to stock a full home bar.',
+      faqs: [
+        { question: 'Are non-alcoholic RTD cocktails just soda?', answer: 'No — most are built with real bitters, botanical extracts, and craft mixers layered for complexity, closer to a bartender-made mocktail than a simple flavored soda, though sweetness and carbonation levels vary by brand.' },
+      ],
+    },
   },
   {
     slug: 'na-beer-cider',
@@ -379,6 +439,16 @@ export const CATEGORIES: Category[] = [
       'Ale & Wheat',
       'Stout & Porter',
     ],
+    seo: {
+      titleTag: 'Craft & Import Beer — Buy Online',
+      h1: 'Craft & Import Beer — Buy IPA, Lager, Stout & Ale Online',
+      metaDescription: 'Buy craft and import beer online — hop-forward IPAs, crisp lagers, rich stouts, and Belgian-style ales. Direct allocations. Free shipping on $300+.',
+      transactionalCTA: 'Buy craft and import beer online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Beer style is defined primarily by fermentation method and grain bill — ales ferment warm and fast for fruity, complex character, while lagers ferment cold and slow for a cleaner, crisper profile — with hop variety, malt roast, and regional brewing tradition shaping everything from a hazy IPA to a dry Irish stout.',
+      faqs: [
+        { question: 'What is the difference between an ale and a lager?', answer: 'Ales ferment at warmer temperatures with top-fermenting yeast, producing fruitier, more complex flavors relatively quickly. Lagers ferment cold with bottom-fermenting yeast over a longer period, producing a cleaner, crisper, more restrained profile — the difference behind styles like IPA (ale) versus pilsner (lager).' },
+      ],
+    },
   },
   {
     slug: 'cider',
@@ -388,6 +458,16 @@ export const CATEGORIES: Category[] = [
     subcategories: [
       'Hard Cider',
     ],
+    seo: {
+      titleTag: 'Hard Cider — Buy Craft Apple Cider Online',
+      h1: 'Hard Cider — Buy Craft Apple Cider Online',
+      metaDescription: 'Buy hard cider online — crisp, fruit-forward craft cider pressed from real apples and orchard fruit. Direct allocations. Free shipping on $300+.',
+      transactionalCTA: 'Buy hard cider online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Hard cider is fermented apple juice, ranging from bone-dry traditional English and French styles to sweeter, more heavily flavored modern American cans — a naturally gluten-free alternative to beer built from orchard fruit rather than grain.',
+      faqs: [
+        { question: 'Is hard cider gluten-free?', answer: 'Yes — hard cider is fermented from apple juice rather than grain, making it naturally gluten-free, unlike most beer which is brewed from barley or wheat.' },
+      ],
+    },
   },
   {
     slug: 'bar-essentials',

@@ -12,9 +12,16 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const prices = PRODUCTS.map((p) => p.price).filter((p) => p > 0);
+  const homepageStats = {
+    numberOfItems: PRODUCTS.length,
+    lowPrice: Math.min(...prices),
+    highPrice: Math.max(...prices),
+  };
+
   return (
     <>
-      <JsonLd type="homepage" />
+      <JsonLd type="homepage" data={homepageStats} />
       <JsonLd type="faq" data={FAQ_ITEMS.slice(0, 5)} />
       <HomeView products={PRODUCTS} />
     </>

@@ -2,7 +2,7 @@ import React from 'react';
 import { SITE, CONTACT, BRAND, SHOP } from '../config/site';
 
 interface JsonLdProps {
-  type: 'homepage' | 'product' | 'article' | 'faq' | 'itemlist';
+  type: 'homepage' | 'product' | 'article' | 'faq' | 'itemlist' | 'breadcrumb';
   data?: any;
 }
 
@@ -10,6 +10,9 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
   let schemaData: any = null;
 
   if (type === 'homepage') {
+    const numberOfItems = data?.numberOfItems ?? 0;
+    const lowPrice = data?.lowPrice ?? 0;
+    const highPrice = data?.highPrice ?? 0;
     schemaData = {
       '@context': 'https://schema.org',
       '@graph': [
@@ -39,7 +42,30 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           currenciesAccepted: 'USD, BTC, USDT',
           paymentAccepted: 'Credit Card, Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',
           areaServed: 'United States',
-          knowsAbout: ['Bourbon Whiskey', 'Single Malt Scotch', 'Cask Strength Rye', 'Extra Añejo Tequila'],
+          numberOfItems,
+          knowsAbout: [
+            'Bourbon Whiskey',
+            'Single Malt Scotch',
+            'Irish Whiskey',
+            'Japanese Whisky',
+            'Tequila & Mezcal',
+            'Aged Rum',
+            'Artisanal Gin',
+            'Craft Vodka',
+            'Cognac & Brandy',
+            'Fine Wine',
+            'Champagne & Sparkling Wine',
+            'Craft Beer',
+            'Hard Cider',
+            'Non-Alcoholic Spirits & Beverages',
+          ],
+          makesOffer: {
+            '@type': 'AggregateOffer',
+            priceCurrency: SITE.currency,
+            lowPrice,
+            highPrice,
+            offerCount: numberOfItems,
+          },
         },
         {
           '@type': 'WebSite',
@@ -111,6 +137,17 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
         position: idx + 1,
         url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
         name: p.name,
+      })),
+    };
+  } else if (type === 'breadcrumb' && data) {
+    schemaData = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: data.map((crumb: { name: string; url: string }, idx: number) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: crumb.name,
+        item: `https://${SITE.domain}${crumb.url}`,
       })),
     };
   } else if (type === 'faq' && data) {
