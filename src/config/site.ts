@@ -10,7 +10,6 @@ export const SITE = {
   secondaryColor: '#D4AF37',
   darkCanvas: '#140D08',
   lightCanvas: '#FAFAF8',
-  gscVerification: 'GSC-AGED-AND-AMBER-VERIFIED',
   indexNowKey: '002a541a7ee2c7c51188fb5517599103',
   cartKey: 'aged-and-amber-cart-v1',
 };
