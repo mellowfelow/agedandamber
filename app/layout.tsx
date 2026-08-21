@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cinzel, Plus_Jakarta_Sans } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { AppStateProvider } from './providers';
 import { Header } from '@/src/components/Header';
@@ -47,6 +48,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cinzel.variable} ${plusJakartaSans.variable}`}>
+      <head>
+        <Script src="/js/webmcp.js" strategy="beforeInteractive" />
+      </head>
       <body className="min-h-screen bg-[#140D08] text-amber-50 font-sans selection:bg-[#D4AF37] selection:text-[#140D08] flex flex-col justify-between overflow-x-hidden">
         <AppStateProvider>
           <AgeGateModal />

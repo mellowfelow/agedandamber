@@ -1,0 +1,76 @@
+{
+  "specVersion": "0.1.0",
+  "host": {
+    "name": "Aged And Amber",
+    "url": "https://www.agedandamber.com",
+    "description": "Napa Valley's allocated spirits, fine wine, Champagne, beer, and cider cellar."
+  },
+  "entries": [
+    {
+      "id": "urn:air:agedandamber.com:catalog:products",
+      "displayName": "Product Catalog",
+      "type": "text/html",
+      "url": "https://www.agedandamber.com/shop/",
+      "representativeQueries": [
+        "buy allocated bourbon online",
+        "shop single malt scotch",
+        "buy Napa Valley wine online",
+        "rare tequila and mezcal for sale",
+        "non-alcoholic spirits online"
+      ]
+    },
+    {
+      "id": "urn:air:agedandamber.com:api:products",
+      "displayName": "Products API",
+      "type": "application/json",
+      "url": "https://www.agedandamber.com/api/products",
+      "representativeQueries": [
+        "list all products",
+        "search products by category",
+        "get product prices"
+      ]
+    },
+    {
+      "id": "urn:air:agedandamber.com:api:search",
+      "displayName": "Search API",
+      "type": "application/json",
+      "url": "https://www.agedandamber.com/api/search",
+      "representativeQueries": [
+        "search products and blog posts",
+        "find a bottle by name"
+      ]
+    },
+    {
+      "id": "urn:air:agedandamber.com:mcp:server",
+      "displayName": "MCP Streamable Server",
+      "type": "application/json",
+      "url": "https://www.agedandamber.com/api/mcp",
+      "representativeQueries": [
+        "search products via MCP",
+        "get shipping and payment policies",
+        "create an order draft"
+      ]
+    },
+    {
+      "id": "urn:air:agedandamber.com:content:blog",
+      "displayName": "Spirits Journal",
+      "type": "text/html",
+      "url": "https://www.agedandamber.com/blog/",
+      "representativeQueries": [
+        "how are bourbon and scotch different",
+        "what is a cask finish",
+        "single barrel vs small batch whiskey"
+      ]
+    },
+    {
+      "id": "urn:air:agedandamber.com:commerce:wholesale",
+      "displayName": "Wholesale & Allocations",
+      "type": "text/html",
+      "url": "https://www.agedandamber.com/wholesale/",
+      "representativeQueries": [
+        "wholesale spirits pricing",
+        "bulk bourbon for restaurants and bars"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { CATEGORIES } from '../data/products';
@@ -123,11 +124,15 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
               activeSlide === idx ? 'opacity-100 z-0' : 'opacity-0 -z-10'
             }`}
           >
-            <img
+            <Image
               src={slide.image}
               alt={slide.imageAlt}
-              className="w-full h-full object-cover filter brightness-[0.38] contrast-125 scale-105"
+              fill
+              sizes="100vw"
+              priority={idx === 0}
               loading={idx === 0 ? 'eager' : 'lazy'}
+              fetchPriority={idx === 0 ? 'high' : 'auto'}
+              className="object-cover filter brightness-[0.38] contrast-125 scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#140D08] via-[#140D08]/60 to-transparent" />
           </div>

@@ -28,7 +28,7 @@ export const AgeGateModal: React.FC = () => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 animate-fade-in">
       <div className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-24 -left-24 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
