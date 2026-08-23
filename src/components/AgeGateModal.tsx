@@ -1,38 +1,43 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ShieldCheck, AlertCircle } from 'lucide-react';
 import { SITE, COMPLIANCE } from '../config/site';
 import { BrandLogo } from './BrandLogo';
 
 export const AgeGateModal: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  // Starts false on both server and client render — matches exactly, so there's
+  // no hydration mismatch. Renders the full modal every time on mount; for an
+  // already-verified visitor the beforeInteractive script in layout.tsx hides it
+  // via CSS (html.age-verified) before first paint, so it's never actually seen.
+  const [dismissed, setDismissed] = useState(false);
   const [denied, setDenied] = useState(false);
 
-  useEffect(() => {
-    const verified = localStorage.getItem('aged-and-amber-age-verified');
-    if (!verified) {
-      setIsOpen(true);
-    }
-  }, []);
-
   const handleVerify = () => {
-    localStorage.setItem('aged-and-amber-age-verified', 'true');
-    setIsOpen(false);
+    try {
+      localStorage.setItem('aged-and-amber-age-verified', 'true');
+    } catch {
+      // localStorage unavailable — the session will just re-show the gate next visit
+    }
+    document.documentElement.classList.add('age-verified');
+    setDismissed(true);
   };
 
   const handleDeny = () => {
     setDenied(true);
   };
 
-  if (!isOpen) return null;
+  if (dismissed) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 animate-fade-in">
+    <div
+      id="age-gate-modal"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 animate-fade-in"
+    >
       <div className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-24 -left-24 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
-        
+
         <div className="flex justify-center mb-6">
           <BrandLogo size="xl" showText={false} />
         </div>
@@ -79,7 +84,7 @@ export const AgeGateModal: React.FC = () => {
               </button>
             </div>
 
-            <p className="text-[11px] text-amber-400/50 pt-4 border-t border-amber-900/40">
+            <p className="text-[11px] text-amber-300/70 pt-4 border-t border-amber-900/40">
               {COMPLIANCE.disclaimer}
             </p>
           </div>

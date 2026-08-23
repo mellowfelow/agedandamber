@@ -50,6 +50,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${cinzel.variable} ${plusJakartaSans.variable}`}>
       <body className="min-h-screen bg-[#140D08] text-amber-50 font-sans selection:bg-[#D4AF37] selection:text-[#140D08] flex flex-col justify-between overflow-x-hidden">
         <Script src="/js/webmcp.js" strategy="beforeInteractive" />
+        <Script id="age-gate-check" strategy="beforeInteractive">
+          {`try{if(localStorage.getItem('aged-and-amber-age-verified')){document.documentElement.classList.add('age-verified')}}catch(e){}`}
+        </Script>
         <AppStateProvider>
           <AgeGateModal />
           <GdprBanner />
