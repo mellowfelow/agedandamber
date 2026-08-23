@@ -226,6 +226,7 @@ export const Header: React.FC = () => {
           <button
             onClick={() => setCartDrawerOpen(true)}
             className="p-2.5 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold hover:bg-[#E5C158] transition-all shadow-md flex items-center gap-2"
+            aria-label={`Open cart, ${cartCount} item${cartCount === 1 ? '' : 's'}`}
           >
             <ShoppingBag className="w-5 h-5" />
             <span className="hidden sm:inline text-xs font-bold">Vault Cart</span>

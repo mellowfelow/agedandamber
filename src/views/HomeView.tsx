@@ -168,7 +168,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
                 </p>
 
                 {/* SEO Image Caption Tag */}
-                <div className="pt-1 text-[11px] text-amber-400/60 font-mono tracking-wide">
+                <div className="pt-1 text-[11px] text-amber-300/80 font-mono tracking-wide">
                   <span className="text-[#D4AF37]">Location Focus:</span> {slide.imageAlt} • <code className="text-amber-300/80">{slide.slug}</code>
                 </div>
 
@@ -233,16 +233,20 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
         </button>
 
         {/* Dots */}
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center">
           {heroSlides.map((_, idx) => (
             <button
               key={idx}
               onClick={() => setActiveSlide(idx)}
-              className={`h-2 rounded-full transition-all ${
-                activeSlide === idx ? 'w-8 bg-[#D4AF37]' : 'w-2 bg-amber-900/60 hover:bg-amber-600'
-              }`}
+              className="flex items-center justify-center w-11 h-11 -mx-1"
               aria-label={`Go to slide ${idx + 1}`}
-            />
+            >
+              <span
+                className={`block h-2 rounded-full transition-all ${
+                  activeSlide === idx ? 'w-8 bg-[#D4AF37]' : 'w-2 bg-amber-900/60 hover:bg-amber-600'
+                }`}
+              />
+            </button>
           ))}
         </div>
       </section>
@@ -275,10 +279,16 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
               href={getRouteUrl.shop(category.slug)}
               className="group relative rounded-3xl overflow-hidden border border-[#D4AF37]/20 hover:border-[#D4AF37]/60 transition-all duration-300 cursor-pointer h-80 flex flex-col justify-end p-6 shadow-xl block"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url(${category.image})` }}
-              />
+              <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-105">
+                <Image
+                  src={category.image}
+                  alt={category.name}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  loading="lazy"
+                  className="object-cover"
+                />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
 
               <div className="relative z-10 space-y-2">
@@ -445,7 +455,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
                 </div>
 
                 <div className="p-5 space-y-2">
-                  <div className="text-[11px] text-amber-400/60 flex items-center justify-between">
+                  <div className="text-[11px] text-amber-300/80 flex items-center justify-between">
                     <span>{post.author}</span>
                     <span>{post.readTime}</span>
                   </div>

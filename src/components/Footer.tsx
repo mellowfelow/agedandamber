@@ -164,16 +164,16 @@ export const Footer: React.FC = () => {
               </span>
             </div>
 
-            <div className="pt-2 text-[11px] text-amber-400/60 leading-normal">
+            <div className="pt-2 text-[11px] text-amber-300/80 leading-normal">
               Minimum Order ${SHOP.minOrder}. Free Shipping on orders ${SHOP.freeShippingThreshold}+.
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-amber-900/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-amber-400/60">
+        <div className="pt-8 border-t border-amber-900/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-amber-300/80">
           <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
-          <p className="max-w-xl text-center md:text-right text-[10px] text-amber-400/50">
+          <p className="max-w-xl text-center md:text-right text-[10px] text-amber-300/70">
             {COMPLIANCE.disclaimer}
           </p>
         </div>
