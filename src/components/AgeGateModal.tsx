@@ -34,7 +34,7 @@ export const AgeGateModal: React.FC = () => {
       id="age-gate-modal"
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 animate-fade-in"
     >
-      <div className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
+      <div id="age-gate-card" className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-24 -left-24 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -42,15 +42,15 @@ export const AgeGateModal: React.FC = () => {
           <BrandLogo size="xl" showText={false} />
         </div>
 
-        <span className="text-xs font-semibold tracking-widest text-[#D4AF37] uppercase mb-2 block">
+        <span id="age-gate-eyebrow" className="text-xs font-semibold tracking-widest text-[#D4AF37] uppercase mb-2 block">
           Age Verification Required
         </span>
 
-        <h2 className="text-3xl font-serif font-bold text-amber-100 mb-3 tracking-tight">
+        <h2 id="age-gate-heading" className="text-3xl font-serif font-bold text-amber-100 mb-3 tracking-tight">
           Welcome to {SITE.name}
         </h2>
 
-        <p className="text-amber-200/80 text-sm mb-6 leading-relaxed">
+        <p id="age-gate-desc" className="text-amber-200/80 text-sm mb-6 leading-relaxed">
           Our craft whiskeys, rare single malts, and artisan cask spirits are intended solely for individuals of legal drinking age.
         </p>
 
