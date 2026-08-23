@@ -7,7 +7,7 @@
   },
   "entries": [
     {
-      "id": "urn:air:agedandamber.com:catalog:products",
+      "identifier": "urn:air:agedandamber.com:catalog:products",
       "displayName": "Product Catalog",
       "type": "text/html",
       "url": "https://www.agedandamber.com/shop/",
@@ -20,7 +20,7 @@
       ]
     },
     {
-      "id": "urn:air:agedandamber.com:api:products",
+      "identifier": "urn:air:agedandamber.com:api:products",
       "displayName": "Products API",
       "type": "application/json",
       "url": "https://www.agedandamber.com/api/products",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "id": "urn:air:agedandamber.com:api:search",
+      "identifier": "urn:air:agedandamber.com:api:search",
       "displayName": "Search API",
       "type": "application/json",
       "url": "https://www.agedandamber.com/api/search",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "id": "urn:air:agedandamber.com:mcp:server",
+      "identifier": "urn:air:agedandamber.com:mcp:server",
       "displayName": "MCP Streamable Server",
       "type": "application/json",
       "url": "https://www.agedandamber.com/api/mcp",
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "id": "urn:air:agedandamber.com:content:blog",
+      "identifier": "urn:air:agedandamber.com:content:blog",
       "displayName": "Spirits Journal",
       "type": "text/html",
       "url": "https://www.agedandamber.com/blog/",
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "id": "urn:air:agedandamber.com:commerce:wholesale",
+      "identifier": "urn:air:agedandamber.com:commerce:wholesale",
       "displayName": "Wholesale & Allocations",
       "type": "text/html",
       "url": "https://www.agedandamber.com/wholesale/",
