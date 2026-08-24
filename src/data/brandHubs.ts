@@ -1270,6 +1270,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Martell Cognac — VS, VSOP, XO & Cordon Bleu Extra Allocations',
       metaDescription: 'Buy Martell online — VS Single Distillery, VSOP, XO, and Cordon Bleu Extra. The oldest major cognac house, founded 1715. Direct allocations, free $300+.',
       hook: 'Martell, founded in 1715, is the oldest of the major cognac houses — known for leaning more heavily on Borderies cru eaux-de-vie than its rivals, giving its range a distinctive violet and nutty character. Cordon Bleu Extra sits above the standard Cordon Bleu tier as a deeper, longer-aged expression.',
+      faqs: [{ question: 'Is Martell the oldest cognac house?', answer: 'Yes — Martell was founded in 1715, making it the oldest of the "big four" cognac houses (Martell, Hennessy, Rémy Martin, and Courvoisier).' }],
     }),
   },
   {
@@ -1291,6 +1292,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Camus Cognac — VSOP & XO Elegance Allocations',
       metaDescription: 'Buy Camus online — VSOP and XO Elegance, built around rare Borderies-cru eaux-de-vie. Family-run since 1863. Direct allocations, free $300+.',
       hook: 'Camus has been family-run since 1863 and is best known for its rare Borderies-region eaux-de-vie, prized for their violet and nutty softness — the VSOP Elegance blends these with Grande and Petite Champagne stocks, while the XO Elegance leans further into the house\'s signature Borderies character.',
+      faqs: [{ question: 'Is Camus a family-owned cognac house?', answer: 'Yes — Camus is the last major cognac house still owned and run by its founding family, now in its fifth generation since 1863.' }],
     }),
   },
   {
@@ -1301,6 +1303,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Hine Cognac — Rare VSOP, H by Hine & Antique XO Allocations',
       metaDescription: 'Buy Hine online — Rare VSOP, H by Hine, and Antique XO. A historic cognac house favored by British royal warrant. Direct allocations, free $300+.',
       hook: 'Hine is a historic cognac house founded by an English family in 1763, long favored for its elegant, Grande Champagne-forward style — Rare VSOP, the accessible H by Hine, and the richer Antique XO span the range.',
+      faqs: [{ question: 'Does Hine cognac hold a royal warrant?', answer: 'Yes — Hine has held a Royal Warrant as cognac supplier to the British royal court since the 18th century, a distinction tied to its English founding family.' }],
     }),
   },
   {
@@ -1311,6 +1314,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Pierre Ferrand Cognac — 10 Générations, 1840 Original Formula & XO Allocations',
       metaDescription: 'Buy Pierre Ferrand online — 10 Générations, 1840 Original Formula, and XO. Direct allocations at Aged & Amber. Free shipping on $300+.',
       hook: 'Pierre Ferrand is produced at the historic Château de Bonbonnet estate, known among bartenders for its 1840 Original Formula — a higher-proof, less-sweetened recipe modeled on 19th-century cognac styles before modern sugar dosing became common.',
+      faqs: [{ question: 'What is Pierre Ferrand 1840 Original Formula?', answer: 'It\'s a higher-proof, less-sweetened cognac modeled on 19th-century production methods, before modern sugar dosing became standard — a favorite among bartenders for classic cocktails that call for pre-Prohibition-style cognac.' }],
     }),
   },
 
