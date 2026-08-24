@@ -9301,6 +9301,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Pot & Column Still, Ex-Bourbon Oak",
     distilleryLocation: "Nassau Valley, Jamaica",
+    seo: {
+      primaryKeyword: 'appleton estate rare casks 12 year rum',
+      secondaryKeywords: ['appleton 12', 'appleton estate 12 year rum', 'appleton estate 12', 'appleton 12 year rum', 'appleton estate 12 year', 'appleton estate rum'],
+    },
   },
   {
     id: 'prod-rum-02',
@@ -9325,6 +9329,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Pot & Column Still, Ex-Bourbon Oak",
     distilleryLocation: "Nassau Valley, Jamaica",
+    seo: {
+      primaryKeyword: 'appleton estate rum 21 year',
+      secondaryKeywords: ['appleton estate 21', 'appleton estate 21 year rum', 'appleton estate rum', 'appleton rum'],
+    },
   },
   {
     id: 'prod-rum-03',
@@ -9349,6 +9357,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Pot & Column Still, Ex-Bourbon Oak",
     distilleryLocation: "Nassau Valley, Jamaica",
+    seo: {
+      primaryKeyword: 'appleton estate 8 year rum',
+      secondaryKeywords: ['appleton estate 8 year', 'appleton estate rum', 'appleton rum'],
+    },
   },
   {
     id: 'prod-rum-04',
@@ -9373,6 +9385,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Pot & Column Still, Ex-Bourbon Oak",
     distilleryLocation: "Nassau Valley, Jamaica",
+    seo: {
+      primaryKeyword: 'appleton estate signature',
+      secondaryKeywords: ['appleton signature rum', 'appleton estate signature blend rum', 'appleton signature', 'appleton estate rum', 'jamaican rum brands'],
+    },
   },
   {
     id: 'prod-rum-05',
@@ -9397,6 +9413,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Column Still",
     distilleryLocation: "Puerto Rico",
+    seo: {
+      primaryKeyword: 'bacardi spiced rum',
+      secondaryKeywords: ['bacardi rum', 'bacardi flavors', 'bacardi rum flavors', 'spiced rum'],
+    },
   },
   {
     id: 'prod-rum-06',
@@ -9421,6 +9441,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Column Still",
     distilleryLocation: "Puerto Rico",
+    seo: {
+      primaryKeyword: 'bacardi superior white rum',
+      secondaryKeywords: ['bacardi white rum', 'bacardí superior white rum', 'bacardi superior rum', 'bacardi rum', 'white rum'],
+      faqs: [{ question: 'Is Bacardí Superior gluten-free?', answer: 'Yes — Bacardí Superior is distilled from sugarcane molasses, not grain, so it contains no gluten by nature of its raw material.' }],
+    },
   },
   {
     id: 'prod-rum-07',
@@ -9445,6 +9470,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Pot & Column Still",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'bumbu original rum',
+      secondaryKeywords: ['bumbu rum the original', 'bumbu rum', 'bumbu', 'bumbu liquor'],
+    },
   },
   {
     id: 'prod-rum-08',
@@ -9469,6 +9498,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Pot & Column Still, Sherry Cask Finish",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'bumbu xo rum',
+      secondaryKeywords: ['bumbu xo', 'bumbu rum xo', 'bumbu rum', 'bumbu rum cream'],
+    },
   },
   {
     id: 'prod-rum-09',
@@ -9493,6 +9526,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Column Still",
     distilleryLocation: "Caribbean/Puerto Rico",
+    seo: {
+      primaryKeyword: 'captain morgan original spiced rum',
+      secondaryKeywords: ['captain morgan spiced rum', 'captain morgan rum', 'captain morgan white rum', 'spiced rum'],
+    },
   },
   {
     id: 'prod-rum-10',
@@ -9517,6 +9554,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Pot & Column Still",
     distilleryLocation: "Venezuela",
+    seo: {
+      primaryKeyword: 'diplomatico reserva exclusiva',
+      secondaryKeywords: ['diplomatico reserva exclusiva rum', 'diplomático reserva exclusiva', 'diplomatico rum', 'ron diplomatico', 'venezuelan rum'],
+    },
   },
   {
     id: 'prod-rum-11',
@@ -9541,6 +9582,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Column Still",
     distilleryLocation: "Puerto Rico",
+    seo: {
+      primaryKeyword: 'don q cristal rum',
+      secondaryKeywords: ['don q rum', 'don q rums', 'don q puerto rican rum', 'don q rum near me', 'white rum'],
+    },
   },
   {
     id: 'prod-rum-12',
@@ -9565,6 +9610,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Wooden & Column Still",
     distilleryLocation: "Guyana",
+    seo: {
+      primaryKeyword: 'el dorado 12 year rum',
+      secondaryKeywords: ['el dorado 12', 'el dorado rum 12 year', 'el dorado 12 rum', 'demerara rum', 'el dorado rum'],
+      faqs: [{ question: 'What is Demerara rum?', answer: 'Demerara rum is produced in Guyana using a mix of historic wooden pot stills and column stills, taking its name from the Demerara River region — El Dorado is the best-known producer of the style, prized for its rich, dark, molasses-forward character.' }],
+    },
   },
   {
     id: 'prod-rum-13',
@@ -9589,6 +9639,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Wooden & Column Still",
     distilleryLocation: "Guyana",
+    seo: {
+      primaryKeyword: 'el dorado 15 year rum',
+      secondaryKeywords: ['el dorado 15', 'el dorado rum 15', 'el dorado rum', 'demerara rum'],
+    },
   },
   {
     id: 'prod-rum-14',
@@ -9613,6 +9667,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Column Still",
     distilleryLocation: "Nicaragua",
+    seo: {
+      primaryKeyword: 'flor de caña 12 años',
+      secondaryKeywords: ['flor de cana 12', 'flor de caña 12', 'flor de cana 12 year', 'flor de cana', 'nicaraguan rum'],
+    },
   },
   {
     id: 'prod-rum-15',
@@ -9637,6 +9695,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Column Still",
     distilleryLocation: "Nicaragua",
+    seo: {
+      primaryKeyword: 'flor de caña 4 años',
+      secondaryKeywords: ['flor de cana 4 year', 'flor de cana', 'nicaraguan rum', 'white rum'],
+    },
   },
   {
     id: 'prod-rum-16',
@@ -9661,6 +9723,12 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Pot & Column Still",
     distilleryLocation: "Barbados",
+    seo: {
+      // Note: no SEMrush volume data found for this vintage-specific SKU — these are real
+      // long-tail phrases confirmed via web research (WebSearch), not volume-backed.
+      primaryKeyword: 'foursquare exceptional cask selection 2010',
+      secondaryKeywords: ['foursquare 2010 mark xxi', 'foursquare rum', 'foursquare barbados rum', 'foursquare exceptional cask selection'],
+    },
   },
   {
     id: 'prod-rum-17',
@@ -9685,6 +9753,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Pot & Column Still",
     distilleryLocation: "Bermuda",
+    seo: {
+      primaryKeyword: "gosling's black seal rum",
+      secondaryKeywords: ['goslings black seal rum', 'gosling black seal dark rum', 'goslings rum', "dark 'n' stormy rum"],
+    },
   },
   {
     id: 'prod-rum-18',
@@ -9709,6 +9781,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Column Still",
     distilleryLocation: "Trinidad/Caribbean",
+    seo: {
+      primaryKeyword: 'kraken black spiced rum',
+      secondaryKeywords: ['the kraken black spiced rum', 'kraken black rum', 'kraken spiced rum', 'kraken rum', 'the kraken rum'],
+    },
   },
   {
     id: 'prod-rum-19',
@@ -9733,6 +9809,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Column Still",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'malibu coconut rum',
+      secondaryKeywords: ['malibu rum', 'coconut rum', 'malibu rum drinks', 'malibu rum recipes', 'malibu rum alcohol'],
+      faqs: [{ question: 'Is Malibu rum gluten-free?', answer: 'Yes — Malibu is distilled from Caribbean rum and flavored with coconut, containing no gluten-based ingredients.' }],
+    },
   },
   {
     id: 'prod-rum-20',
@@ -9757,6 +9838,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Pot & Column Still, Charred Bourbon Barrel Finish",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'mount gay black barrel rum',
+      secondaryKeywords: ['mount gay black barrel', 'black barrel rum', 'mount gay rum', 'barbados rum'],
+    },
   },
   {
     id: 'prod-rum-21',
@@ -9781,6 +9866,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Pot & Column Still, Multi-Cask",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'mount gay xo rum',
+      secondaryKeywords: ['mount gay xo', 'mount gay rum', 'xo rum'],
+    },
   },
   {
     id: 'prod-rum-22',
@@ -9805,6 +9894,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Pot Still",
     distilleryLocation: "Jamaica",
+    seo: {
+      primaryKeyword: 'myers dark rum',
+      secondaryKeywords: ['myers rum', 'jamaican rum', 'dark rum'],
+    },
   },
   {
     id: 'prod-rum-23',
@@ -9829,6 +9922,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Pot & Column Still, Charcoal Filtered",
     distilleryLocation: "Barbados/Jamaica/Trinidad blend",
+    seo: {
+      primaryKeyword: 'plantation 3 star rum',
+      secondaryKeywords: ['planteray 3 stars', 'plantation white rum 3 stars', 'plantation three stars white rum', 'plantation 3 stars white rum', 'planteray rum', 'white rum'],
+    },
   },
   {
     id: 'prod-rum-24',
@@ -9853,30 +9950,39 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Pot & Column Still, Double Aged",
     distilleryLocation: "Jamaica/Barbados blend",
+    seo: {
+      primaryKeyword: 'plantation original dark rum',
+      secondaryKeywords: ['planteray original dark rum', 'plantation dark rum', 'planteray rum', 'dark rum'],
+      faqs: [{ question: 'Why did Plantation Rum change its name to Planteray?', answer: 'Maison Ferrand rebranded Plantation Rum to Planteray in 2023 in response to the word "plantation"\'s association with slavery — the recipes, sourcing, and production are unchanged, only the name and label design shifted.' }],
+    },
   },
   {
     id: 'prod-rum-25',
     slug: 'planteray-xo-20th-anniversary-rum',
     name: "Planteray XO 20th Anniversary Rum",
-    price: 58,
+    price: 64.99,
     category: 'aged-dark-rum',
     subcategory: "Aged Rum",
     proof: 80,
-    age: "No Age Statement (Double-Aged)",
+    age: "8-15 Year, cognac cask finish",
     volume: '750ml',
-    shortDescription: "A refined double-matured Barbadian rum released to mark Maison Ferrand's 20th anniversary of Planteray.",
-    fullDescription: "Planteray XO layers dried fruit, vanilla, and light citrus from its double-maturation process.",
+    shortDescription: "A double-aged Barbados rum finished in French oak ex-cognac casks by Maison Ferrand.",
+    fullDescription: "Planteray XO 20th Anniversary is tropically aged 8 to 15 years in Barbados bourbon casks, then finished for up to a decade in French oak ex-cognac casks at Maison Ferrand's cellars in Cognac, France.",
     tastingNotes: {
-      nose: "Dried fruit and vanilla.",
-      palate: "Light citrus.",
-      finish: "Refined, smooth close.",
+      nose: "Dried fruit, vanilla, cognac oak.",
+      palate: "Rich caramel, dark fruit, spice.",
+      finish: "Long, warm, cognac-driven close.",
     },
     badge: "Anniversary Reserve",
     featured: false,
     images: ["/images/products/rum/planteray-xo-20th-anniversary-rum.webp"],
-    stock: 28,
-    caskType: "Pot & Column Still, Double Matured",
+    stock: 36,
+    caskType: "Bourbon casks, French oak ex-cognac cask finish",
     distilleryLocation: "Barbados",
+    seo: {
+      primaryKeyword: 'planteray xo 20th anniversary rum',
+      secondaryKeywords: ['plantation xo 20th anniversary rum', 'planteray xo rum', 'plantation xo rum', 'xo rum'],
+    },
   },
   {
     id: 'prod-rum-26',
@@ -9901,6 +10007,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Solera System",
     distilleryLocation: "Guatemala",
+    seo: {
+      primaryKeyword: 'ron zacapa 23',
+      secondaryKeywords: ['zacapa 23', 'ron zacapa solera gran reserva', 'zacapa rum 23', 'ron zacapa', 'guatemalan rum'],
+      faqs: [{ question: "What does 'Solera' mean on Ron Zacapa's label?", answer: 'Solera is a fractional blending system, borrowed from sherry and brandy production, where rum from different age barrels is progressively blended together — Zacapa ages its solera at high altitude in the Guatemalan highlands, where cooler temperatures slow evaporation and maturation.' }],
+    },
   },
   {
     id: 'prod-rum-27',
@@ -9925,6 +10036,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Solera System, Cognac Cask Finish",
     distilleryLocation: "Guatemala",
+    seo: {
+      primaryKeyword: 'ron zacapa xo',
+      secondaryKeywords: ['zacapa xo', 'zacapa xo rum', 'ron zacapa xo rum', 'ron zacapa'],
+    },
   },
   {
     id: 'prod-rum-28',
@@ -9949,6 +10064,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Column Still",
     distilleryLocation: "Caribbean blend (William Grant & Sons)",
+    seo: {
+      primaryKeyword: 'sailor jerry spiced rum',
+      secondaryKeywords: ['sailor jerry rum', 'spiced rum'],
+    },
   },
   {
     id: 'prod-rum-29',
@@ -9973,6 +10092,12 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Pot Still, Navy Strength",
     distilleryLocation: "Jamaica (Hampden Estate)",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'smith and cross rum',
+      secondaryKeywords: ['smith and cross navy strength', 'smith and cross traditional jamaica rum', 'hampden estate rum', 'navy strength rum', 'jamaican rum'],
+      faqs: [{ question: 'What does "navy strength" mean?', answer: 'Navy strength refers to rum bottled at 57% ABV (114 proof) or higher — historically the threshold at which spilled rum would not prevent gunpowder from igniting aboard British Royal Navy ships, a safety check sailors reportedly used to verify a rum hadn\'t been watered down.' }],
+    },
   },
   {
     id: 'prod-rum-30',
@@ -9997,6 +10122,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Pot & Column Still, Overproof",
     distilleryLocation: "Jamaica",
+    seo: {
+      primaryKeyword: 'wray and nephew overproof rum',
+      secondaryKeywords: ['wray and nephew rum', 'wray & nephew overproof rum', 'overproof rum', 'jamaican rum'],
+    },
   },
 
   // COGNAC
@@ -24874,24 +25003,11 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "American white oak, ex-bourbon, ex-Pedro Ximénez sherry casks",
     distilleryLocation: "Venezuela",
-  },
-  {
-    id: 'prod-rum-new-02',
-    slug: 'plantation-xo-20th-anniversary-rum',
-    name: "Plantation XO 20th Anniversary Rum",
-    price: 64.99,
-    category: 'aged-dark-rum',
-    subcategory: 'Aged Rum',
-    proof: 80,
-    age: "8-15 Year, cognac cask finish",
-    volume: '750ml',
-    shortDescription: "A double-aged Barbados rum finished in French oak ex-cognac casks by Maison Ferrand.",
-    fullDescription: "Plantation XO 20th Anniversary is tropically aged 8 to 15 years in Barbados bourbon casks, then finished for up to a decade in French oak ex-cognac casks at Maison Ferrand's cellars in Cognac, France.",
-    tastingNotes: { nose: "Dried fruit, vanilla, cognac oak", palate: "Rich caramel, dark fruit, spice", finish: "Long, warm, cognac-driven" },
-    images: ["/images/products/rum/plantation-xo-20th-anniversary-rum.webp"],
-    stock: 8,
-    caskType: "Bourbon casks, French oak ex-cognac cask finish",
-    distilleryLocation: "Barbados",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'diplomatico seleccion de familia',
+      secondaryKeywords: ['diplomatico seleccion de familia rum', 'ron diplomatico seleccion de familia', 'diplomatico rum', 'venezuelan rum'],
+    },
   },
   {
     id: 'prod-vodka-new-01',

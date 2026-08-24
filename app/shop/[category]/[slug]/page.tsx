@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = PRODUCTS.find((p) => p.slug === slug);
   if (!product) return {};
   return {
-    title: `${product.name} — Buy Online`,
-    description: product.shortDescription,
+    title: product.seo?.titleTag || `${product.name} — Buy Online`,
+    description: product.seo?.metaDescription || product.shortDescription,
     alternates: { canonical: `https://${SITE.domain}/shop/${product.category}/${product.slug}/` },
     openGraph: { images: product.images },
   };
@@ -110,6 +110,7 @@ export default async function ProductPage({ params }: Props) {
   return (
     <>
       <JsonLd type="product" data={product} />
+      {product.seo?.faqs && product.seo.faqs.length > 0 && <JsonLd type="faq" data={product.seo.faqs} />}
       <JsonLd
         type="breadcrumb"
         data={[

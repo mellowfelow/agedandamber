@@ -21,6 +21,20 @@ export interface Product {
   stock: number;
   caskType: string;
   distilleryLocation: string;
+  seo?: ProductSeo;
+}
+
+export interface ProductSeo {
+  /** Single keyword this product page owns. */
+  primaryKeyword: string;
+  /** 6+ supporting keywords woven into copy, meta, and alt text where possible. */
+  secondaryKeywords: string[];
+  /** Overrides the auto-generated "<name> — Buy Online" title tag. */
+  titleTag?: string;
+  /** Overrides shortDescription as the meta description. */
+  metaDescription?: string;
+  /** Product-specific FAQ entries (FAQPage schema). */
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface CategorySeo {
