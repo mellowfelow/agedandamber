@@ -279,4 +279,21 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // GIN
+  {
+    categorySlug: 'artisanal-gin',
+    hubSlug: 'london-dry-gin',
+    subcategoryName: 'London Dry Gin',
+    name: 'London Dry Gin',
+    seo: {
+      titleTag: 'London Dry Gin — Allocated',
+      h1: 'London Dry Gin — Buy Allocated Classic-Style Gin Online',
+      metaDescription: 'Buy London Dry gin online — the classic style with all botanicals distilled in and no post-distillation additives. Direct allocations, free $300+.',
+      transactionalCTA: 'Buy London Dry gin online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'London Dry is a production method, not a geographic requirement — the gin can be made anywhere, but every botanical must be present during distillation, with no colouring or flavouring added afterward beyond a touch of sugar. It\'s the driest, most juniper-forward gin style and the classic base for a Martini or Gin & Tonic.',
+      faqs: [
+        { question: 'Does London Dry gin have to be made in London?', answer: 'No — "London Dry" is a legally defined production method, not a location. It can be distilled anywhere in the world, as long as every botanical is added during distillation and nothing is added afterward except a small amount of water and, rarely, a touch of sugar.' },
+      ],
+    },
+  },
 ];

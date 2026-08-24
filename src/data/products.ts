@@ -190,6 +190,8 @@ export const CATEGORIES: Category[] = [
       definitionHook: 'Gin is a juniper-forward neutral spirit, redistilled or infused with a botanical blend that can include citrus peel, coriander, angelica root, and dozens of other aromatics. London Dry gin is distilled with all botanicals present during distillation and no post-distillation additives; barrel-aged gin picks up oak character similar to a young whiskey.',
       faqs: [
         { question: 'What makes London Dry gin different from other gin styles?', answer: 'London Dry is a production method, not a location — all botanicals must be added during distillation with no artificial flavouring or colouring added afterward, and it must be bottled at a minimum 37.5% ABV. This gives it a crisp, juniper-forward character.' },
+        { question: 'Is gin gluten-free?', answer: 'Most gin is distilled from a grain-based neutral spirit, but the distillation process removes gluten proteins, making the finished gin safe for most people with gluten sensitivity — though it is rarely independently certified gluten-free.' },
+        { question: 'What is the difference between gin and vodka?', answer: 'Both start from a similar neutral spirit base, but gin is redistilled or infused with juniper and other botanicals afterward, giving it a distinct aromatic character — vodka is filtered to stay as neutral and flavourless as possible.' },
       ],
     },
   },
