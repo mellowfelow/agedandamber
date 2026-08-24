@@ -2953,6 +2953,51 @@ A London Dry will always taste crisp and juniper-forward by design. A compound g
     ],
   },
   {
+    slug: 'what-is-sloe-gin',
+    title: 'What Is Sloe Gin? (And Why It\'s Not Technically Gin)',
+    excerpt: 'Sloe gin is a bright red, sweet-tart liqueur made by steeping gin with sloe berries — legally a liqueur, not a gin, despite the name.',
+    content: `
+# What Is Sloe Gin? (And Why It's Not Technically Gin)
+
+Sloe gin causes more label confusion than almost any other spirit — it's bright red, unmistakably fruity, and by most countries' legal definitions, not actually gin at all.
+
+## What a Sloe Actually Is
+
+Sloes are the small, intensely tart fruit of the blackthorn bush, related to plums but far too astringent to eat raw. They're foraged in hedgerows across the UK and parts of Europe, traditionally after the first frost softens their harshness slightly.
+
+## How Sloe Gin Is Made
+
+The classic method is genuinely simple: whole sloes (often pricked or lightly bruised to help release their juice) are steeped in gin along with sugar for weeks or months. The gin extracts color, tannin, and almond-like flavor from the crushed stones inside the fruit, while the sugar balances the sloe's natural tartness. The result is strained off, leaving a deep ruby-red liqueur.
+
+## Why It's Not Legally "Gin"
+
+Gin, by definition, must have juniper as its predominant flavor. Once sloes and sugar are steeped in, the finished product doesn't taste predominantly of juniper anymore — and the ABV typically drops from a standard 40%+ gin down to around 25-30%. Because of this, sloe gin is legally classified as a liqueur in most markets, even though "gin" stays in the name for tradition's sake and because gin is genuinely the base spirit used to make it.
+
+## Flavor Profile
+
+Sloe gin tastes tart, fruity, and almond-like, with a natural sweetness that's more restrained than a typical fruit liqueur — good sloe gin should still taste recognizably spirit-forward rather than like fruit syrup, since a well-balanced juniper backbone from the base gin often still comes through underneath the fruit.
+
+## How to Drink It
+
+Sloe gin is traditionally sipped neat or on ice as a winter warmer, but it also has real cocktail utility — a Sloe Gin Fizz (sloe gin, lemon juice, sugar, soda water) is the classic mixed application, and it works well as a modifier in gin-based cocktails where you want fruit and color without full liqueur sweetness.
+
+## Why the Name Persists
+
+Despite the legal liqueur classification, "sloe gin" has stuck as the name for centuries — it accurately describes both the base spirit (gin) and the defining ingredient (sloe berries), and changing it would abandon a genuinely useful, historically rooted description for a technicality most drinkers don't care about.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Gin Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '4 min read',
+    image: '/images/categories/gin.webp',
+    tags: ['Gin', 'Gin Education', 'Sloe Gin', 'Liqueur'],
+    faqs: [
+      { question: 'Is sloe gin the same as gin?', answer: 'No — sloe gin is legally a liqueur, not a gin. It starts as gin, but steeping in sloe berries and sugar drops the ABV and shifts the dominant flavor away from juniper, which disqualifies it from the legal definition of gin despite keeping "gin" in its name.' },
+      { question: 'What does sloe gin taste like?', answer: 'Tart, fruity, and slightly almond-like from the crushed sloe stones, balanced by added sugar — good sloe gin still has a spirit-forward backbone rather than tasting like a simple fruit syrup.' },
+    ],
+  },
+  {
     slug: 'how-to-make-rum-punch',
     title: 'How to Make Rum Punch: The Classic Caribbean Formula',
     excerpt: 'Rum punch follows a simple ratio rhyme that\'s over 300 years old — here\'s the classic formula, plus how to pick the right rum for it.',

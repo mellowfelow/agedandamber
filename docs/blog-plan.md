@@ -27,6 +27,12 @@ Master blog content plan, built up across keyword batches. Companion to `keyword
 - Internal links: El Dorado brand page (`/shop/aged-dark-rum/el-dorado/`), both El Dorado product pages
 - Source: Rum batch v2 blog expansion
 
+### What Is Sloe Gin? (And Why It's Not Technically Gin) — `/blog/what-is-sloe-gin/`
+- Primary: what is sloe gin (1,600, KD 26, T1)
+- Genuine standalone topic (legally a liqueur, not gin) — no overlap with the two "made from" posts
+- Schema: Article + FAQPage
+- Source: Gin batch v2 blog expansion
+
 ### What Is Gin Made From? — `/blog/what-is-gin-made-from/`
 - Primary: what is gin made from (12,100, KD 22, T1)
 - Secondary worked into copy: what is gin (6,600, KD 27) · how is gin made (3,600, KD 15) · what is sloe gin (1,600, KD 26) · london dry gin (14,800, KD 17 — the "homeless keyword" from the Gin batch, given a real home here)
