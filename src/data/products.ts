@@ -10284,6 +10284,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Oak Casks",
     distilleryLocation: "Rüdesheim am Rhein, Germany",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'german brandy',
+      secondaryKeywords: ['asbach brandy', 'weinbrand', 'brandy brands', 'best brandy'],
+    },
   },
   {
     id: 'prod-cognac-02',
@@ -10308,6 +10313,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Oak Casks",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'christian brothers brandy',
+      secondaryKeywords: ['california brandy', 'american brandy', 'cheap brandy', 'brandy brands'],
+    },
   },
   {
     id: 'prod-cognac-03',
@@ -10332,6 +10342,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'courvoisier vs cognac',
+      secondaryKeywords: ['courvoisier vs', 'courvoisier cognac', 'courvoisier', 'is courvoisier a good cognac'],
+    },
   },
   {
     id: 'prod-cognac-04',
@@ -10356,6 +10370,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'courvoisier vsop cognac',
+      secondaryKeywords: ['courvoisier vsop', 'courvoisier cognac vsop', 'courvoisier cognac'],
+    },
   },
   {
     id: 'prod-cognac-05',
@@ -10380,6 +10398,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'courvoisier xo',
+      secondaryKeywords: ['courvoisier xo cognac', 'courvoisier cognac xo', 'xo courvoisier cognac'],
+    },
   },
   {
     id: 'prod-cognac-06',
@@ -10404,6 +10426,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: "d'usse cognac",
+      secondaryKeywords: ['dusse cognac', "d'usse vsop cognac", "d usse cognac", 'jay z cognac'],
+    },
   },
   {
     id: 'prod-cognac-07',
@@ -10428,6 +10454,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Oak Casks",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'e&j brandy',
+      secondaryKeywords: ['e&j vs brandy', 'california brandy', 'best selling brandy', 'cheap brandy'],
+    },
   },
   {
     id: 'prod-cognac-08',
@@ -10452,6 +10483,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Oak Casks",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'e&j vsop brandy',
+      secondaryKeywords: ['e&j brandy', 'california brandy', 'brandy brands'],
+    },
   },
   {
     id: 'prod-cognac-09',
@@ -10476,6 +10512,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Oak Casks",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'e&j xo brandy',
+      secondaryKeywords: ['e&j brandy', 'california brandy', 'best brandy'],
+    },
   },
   {
     id: 'prod-cognac-10',
@@ -10500,6 +10541,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Grande Champagne, Cognac, France",
+    seo: {
+      // No export data for this brand — using general cognac-category terms.
+      primaryKeyword: 'frapin cognac',
+      secondaryKeywords: ['grande champagne cognac', 'estate cognac', 'fine champagne cognac'],
+    },
   },
   {
     id: 'prod-cognac-11',
@@ -10524,6 +10570,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Rare Reserve Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'hennessy paradis',
+      secondaryKeywords: ['hennessy paradis cognac', 'hennessy cognac', 'ultra premium cognac'],
+    },
   },
   {
     id: 'prod-cognac-12',
@@ -10548,6 +10598,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'hennessy vs cognac',
+      secondaryKeywords: ['hennessy vs', 'hennessy cognac', 'hennessy vsop cognac'],
+    },
   },
   {
     id: 'prod-cognac-13',
@@ -10572,6 +10626,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'hennessy vsop cognac',
+      secondaryKeywords: ['hennessy vsop', 'vsop hennessy', 'hennessy cognac', 'hennesy vsop'],
+    },
   },
   {
     id: 'prod-cognac-14',
@@ -10596,6 +10654,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'hennessy xo cognac',
+      secondaryKeywords: ['hennessy xo', 'hennesy xo', 'hennessy xo price', 'hennessy cognac'],
+    },
   },
   {
     id: 'prod-cognac-15',
@@ -10620,6 +10682,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Jarnac, Cognac, France",
+    seo: {
+      primaryKeyword: 'hine cognac',
+      secondaryKeywords: ['hine rare vsop', 'hine vsop cognac', 'fine champagne cognac'],
+    },
   },
   {
     id: 'prod-cognac-16',
@@ -10644,6 +10710,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Oak Casks",
     distilleryLocation: "Virginia/New Jersey, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: "laird's apple brandy",
+      secondaryKeywords: ['apple brandy', 'bottled in bond brandy', 'american brandy'],
+    },
   },
   {
     id: 'prod-cognac-17',
@@ -10668,6 +10739,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'martell cognac',
+      secondaryKeywords: ['martell vs single distillery', 'martell vsop cognac', 'cognac martell cognac'],
+    },
   },
   {
     id: 'prod-cognac-18',
@@ -10692,6 +10767,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'martell vsop cognac',
+      secondaryKeywords: ['martell vsop', 'martell cognac vsop', 'martell cognac'],
+    },
   },
   {
     id: 'prod-cognac-19',
@@ -10716,6 +10795,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'martell xo',
+      secondaryKeywords: ['martell xo cognac', 'martell cognac', 'martell xxo'],
+    },
   },
   {
     id: 'prod-cognac-20',
@@ -10740,6 +10823,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Oak Casks",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'paul masson brandy',
+      secondaryKeywords: ['california brandy', 'cheap brandy', 'brandy brands'],
+    },
   },
   {
     id: 'prod-cognac-21',
@@ -10764,6 +10852,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Grande Champagne, Cognac, France",
+    seo: {
+      primaryKeyword: 'pierre ferrand cognac',
+      secondaryKeywords: ['pierre ferrand 10 generations', 'grande champagne cognac', 'maison ferrand cognac'],
+    },
   },
   {
     id: 'prod-cognac-22',
@@ -10788,6 +10880,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Grande Champagne, Cognac, France",
+    seo: {
+      primaryKeyword: 'pierre ferrand 1840',
+      secondaryKeywords: ['pierre ferrand cognac', 'pierre ferrand original formula', 'high proof cognac'],
+    },
   },
   {
     id: 'prod-cognac-23',
@@ -10812,6 +10908,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'remy martin 1738 accord royal cognac',
+      secondaryKeywords: ['remy 1738', 'rémy martin 1738 accord royal', '1738 cognac', 'remy martin cognac'],
+    },
   },
   {
     id: 'prod-cognac-24',
@@ -10836,6 +10936,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'remy martin vsop',
+      secondaryKeywords: ['remy martin vsop cognac', 'rémy martin vsop cognac', 'remy martin cognac'],
+    },
   },
   {
     id: 'prod-cognac-25',
@@ -10860,6 +10964,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Ex-Cognac Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'remy martin xo cognac',
+      secondaryKeywords: ['remy martin xo', 'rémy martin xo cognac', 'remy xo price'],
+    },
   },
   {
     id: 'prod-cognac-26',
@@ -10884,6 +10992,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Oak Casks",
     distilleryLocation: "France (non-Cognac)",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'st-remy french brandy',
+      secondaryKeywords: ['french brandy', 'affordable brandy', 'brandy brands'],
+    },
   },
   {
     id: 'prod-cognac-27',
@@ -10908,6 +11021,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Solera Oak",
     distilleryLocation: "Penedès, Catalonia, Spain",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'torres brandy',
+      secondaryKeywords: ['spanish brandy', 'solera brandy', 'torres 10 gran reserva'],
+    },
   },
   {
     id: 'prod-cognac-b2-01',
@@ -10932,6 +11050,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "German Oak Casks",
     distilleryLocation: "Rüdesheim, Germany",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'asbach 12 year',
+      secondaryKeywords: ['german brandy', 'weinbrand', 'asbach brandy', 'best german brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-02',
@@ -10956,6 +11079,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Limousin Oak, Borderies",
     distilleryLocation: "Cognac, France",
+    seo: {
+      // No SEMrush export for Camus — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'camus vsop',
+      secondaryKeywords: ['camus cognac', 'camus vsop elegance', 'borderies cognac'],
+    },
   },
   {
     id: 'prod-cognac-b2-03',
@@ -10980,6 +11108,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Limousin Oak, Borderies",
     distilleryLocation: "Cognac, France",
+    seo: {
+      // No SEMrush export for Camus — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'camus xo cognac',
+      secondaryKeywords: ['camus xo elegance', 'camus cognac', 'borderies xo'],
+    },
   },
   {
     id: 'prod-cognac-b2-04',
@@ -11004,6 +11137,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Oloroso Sherry Butts",
     distilleryLocation: "Jerez de la Frontera, Spain",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'cardinal mendoza brandy',
+      secondaryKeywords: ['brandy de jerez', 'spanish brandy', 'sherry cask brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-05',
@@ -11028,6 +11166,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Grande Champagne & Borderies",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: "l'essence de courvoisier",
+      secondaryKeywords: ['courvoisier lessence', 'courvoisier rarest cognac', 'baccarat decanter cognac', 'most expensive courvoisier'],
+    },
   },
   {
     id: 'prod-cognac-b2-06',
@@ -11052,6 +11194,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Sherry-Seasoned American Oak",
     distilleryLocation: "Jerez de la Frontera, Spain",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'fundador brandy',
+      secondaryKeywords: ['brandy de jerez', 'spanish brandy', 'fundador solera'],
+    },
   },
   {
     id: 'prod-cognac-b2-07',
@@ -11076,6 +11223,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Fine Champagne Oak",
     distilleryLocation: "Jarnac, Cognac, France",
+    seo: {
+      // No SEMrush export for Hine — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'h by hine',
+      secondaryKeywords: ['hine vsop cognac', 'hine cognac', 'cocktail cognac'],
+    },
   },
   {
     id: 'prod-cognac-b2-08',
@@ -11100,6 +11252,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Limousin Oak",
     distilleryLocation: "Cognac, France",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'organic cognac',
+      secondaryKeywords: ['hardy cognac', 'hardy vsop', 'certified organic cognac'],
+    },
   },
   {
     id: 'prod-cognac-b2-09',
@@ -11124,6 +11281,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "American Oak",
     distilleryLocation: "California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'hartley brandy',
+      secondaryKeywords: ['cheap brandy', 'value brandy', 'brandy for cocktails'],
+    },
   },
   {
     id: 'prod-cognac-b2-10',
@@ -11148,6 +11310,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Grande Champagne",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'richard hennessy cognac',
+      secondaryKeywords: ['richard hennessy price', 'hennessy richard cognac', 'most expensive hennessy', 'rarest hennessy cognac'],
+    },
   },
   {
     id: 'prod-cognac-b2-11',
@@ -11172,6 +11338,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Grande Champagne, Limousin Oak",
     distilleryLocation: "Jarnac, Cognac, France",
+    seo: {
+      // No SEMrush export for Hine — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: 'hine antique xo',
+      secondaryKeywords: ['hine cognac', 'hine xo cognac', 'grande champagne xo'],
+    },
   },
   {
     id: 'prod-cognac-b2-12',
@@ -11196,6 +11367,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Charred American Oak",
     distilleryLocation: "Guerneville, California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'korbel brandy',
+      secondaryKeywords: ['california brandy', 'american brandy', 'korbel california brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-13',
@@ -11220,6 +11396,11 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Charred Oak",
     distilleryLocation: "Scobeyville, New Jersey, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: "laird's apple brandy",
+      secondaryKeywords: ['apple brandy', 'applejack', "laird's 7 year", 'american apple brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-14',
@@ -11244,6 +11425,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Grande & Petite Champagne, Borderies",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'martell cordon bleu extra',
+      secondaryKeywords: ['martell cordon bleu', 'martell extra cognac', 'cordon bleu cognac price'],
+    },
   },
   {
     id: 'prod-cognac-b2-15',
@@ -11268,6 +11453,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "American Oak",
     distilleryLocation: "Madera, California, USA",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'paul masson brandy',
+      secondaryKeywords: ['grande amber brandy', 'california brandy', 'cheap brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-16',
@@ -11292,6 +11482,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Grande Champagne & Borderies",
     distilleryLocation: "Ambleville, Cognac, France",
+    seo: {
+      primaryKeyword: 'pierre ferrand xo',
+      secondaryKeywords: ['pierre ferrand cognac', 'pierre ferrand xo cognac', 'best xo cognac for cocktails'],
+    },
   },
   {
     id: 'prod-cognac-b2-17',
@@ -11316,6 +11510,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Solera American Oak",
     distilleryLocation: "Mexico",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'presidente brandy',
+      secondaryKeywords: ['mexican brandy', 'presidente solera', 'brandy solera'],
+    },
   },
   {
     id: 'prod-cognac-b2-18',
@@ -11340,6 +11539,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Grande Champagne, Century-Old Tierçons",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: 'louis xiii cognac',
+      secondaryKeywords: ['louis xiii price', 'remy martin louis xiii', 'louis xiii cognac price', 'most expensive cognac', 'louis xiii bottle'],
+    },
   },
   {
     id: 'prod-cognac-b2-19',
@@ -11364,6 +11567,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "French Oak",
     distilleryLocation: "Charente, France",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'st-remy vsop',
+      secondaryKeywords: ['french brandy', 'st remy brandy', 'affordable vsop brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-20',
@@ -11388,6 +11596,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "American & French Oak Solera",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'torres 5 brandy',
+      secondaryKeywords: ['spanish brandy', 'torres solera reserva', 'catalan brandy'],
+    },
   },
   {
     id: 'prod-cognac-b2-21',
@@ -11412,6 +11625,11 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "American Oak Solera",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No export data for this brand — using general brandy-category terms.
+      primaryKeyword: 'torres jaime i',
+      secondaryKeywords: ['reserva de la familia brandy', 'torres brandy', 'premium spanish brandy'],
+    },
   },
 
   // RTD & LIQUEURS
