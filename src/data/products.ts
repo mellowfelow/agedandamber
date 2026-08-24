@@ -8651,6 +8651,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Copper Pot Still",
     distilleryLocation: "Portland, Oregon, USA",
+    seo: {
+      primaryKeyword: 'aviation american gin',
+      secondaryKeywords: ['aviation gin', 'american gin', 'aviation gin price', 'ryan reynolds gin'],
+    },
   },
   {
     id: 'prod-gin-02',
@@ -8675,6 +8679,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Copper Pot Still",
     distilleryLocation: "Montpelier, Vermont, USA",
+    seo: {
+      primaryKeyword: 'barr hill gin',
+      secondaryKeywords: ['bar hill gin', 'barr hill gin vermont', 'caledonia spirits', 'vermont gin'],
+    },
   },
   {
     id: 'prod-gin-03',
@@ -8699,6 +8707,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Copper Pot Still",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: 'beefeater gin',
+      secondaryKeywords: ['beefeater london dry gin', 'beefeater dry gin', 'beefeater london', 'london dry gin'],
+      faqs: [{ question: 'Is Beefeater actually distilled in London?', answer: 'Yes — Beefeater is one of the few remaining gins genuinely distilled within London city limits, unlike most "London Dry" gins which can legally be made anywhere in the world under that production method.' }],
+    },
   },
   {
     id: 'prod-gin-04',
@@ -8723,6 +8736,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Copper Pot Still",
     distilleryLocation: "Philadelphia, Pennsylvania, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'bluecoat american dry gin',
+      secondaryKeywords: ['bluecoat gin', 'philadelphia distilling gin', 'american dry gin', 'organic gin'],
+    },
   },
   {
     id: 'prod-gin-05',
@@ -8747,6 +8765,14 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Vapor Infusion Still",
     distilleryLocation: "Hampshire, England",
+    seo: {
+      primaryKeyword: 'bombay sapphire gin',
+      secondaryKeywords: ['bombay gin', 'bombay dry gin', 'bombay sapphire london dry gin', 'bombay sapphire'],
+      faqs: [
+        { question: 'Is Bombay Sapphire gluten-free?', answer: 'Yes — Bombay Sapphire is distilled from a grain-neutral spirit, and the distillation process removes gluten proteins, making it safe for most people with gluten sensitivity.' },
+        { question: 'Where is Bombay Sapphire made?', answer: 'Bombay Sapphire is distilled at Laverstoke Mill in Hampshire, England, using a vapor-infusion process that passes spirit vapor through a basket of ten botanicals rather than boiling them directly in the still.' },
+      ],
+    },
   },
   {
     id: 'prod-gin-06',
@@ -8771,6 +8797,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Copper Pot Still",
     distilleryLocation: "Birmingham, England",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: "broker's london dry gin",
+      secondaryKeywords: ["broker's gin", 'langley distillery gin', 'ten botanical gin', 'london dry gin'],
+    },
   },
   {
     id: 'prod-gin-07',
@@ -8795,6 +8826,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Copper Pot Still",
     distilleryLocation: "County Leitrim, Ireland",
+    seo: {
+      primaryKeyword: 'gunpowder gin',
+      secondaryKeywords: ['drumshanbo gunpowder irish gin', 'drumshanbo gin', 'irish gin', 'drumshanbo', 'gunpowder irish gin'],
+    },
   },
   {
     id: 'prod-gin-08',
@@ -8819,6 +8854,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Copper Pot Still",
     distilleryLocation: "Victoria, British Columbia, Canada",
+    seo: {
+      // No SEMrush volume specific to this expression — using brand-level terms.
+      primaryKeyword: 'empress 1908 gin',
+      secondaryKeywords: ['empress 1908 cucumber lemon gin', 'empress gin', 'victoria distillers gin'],
+    },
   },
   {
     id: 'prod-gin-09',
@@ -8843,6 +8883,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Copper Pot Still",
     distilleryLocation: "Victoria, British Columbia, Canada",
+    seo: {
+      primaryKeyword: 'empress 1908 indigo gin',
+      secondaryKeywords: ['purple gin', 'indigo gin', 'empress indigo gin', 'empress 1908 gin'],
+      faqs: [{ question: 'What makes Empress 1908 gin purple?', answer: 'Empress 1908 Indigo gets its natural indigo-blue color from butterfly pea flower, a plant-based colorant rather than artificial dye — the color shifts toward pink or purple when mixed with acidic ingredients like citrus, tonic, or sparkling wine.' }],
+    },
   },
   {
     id: 'prod-gin-10',
@@ -8867,6 +8912,12 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Column Still",
     distilleryLocation: "Scotland (founded London, 1769)",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: "gordon's london dry gin",
+      secondaryKeywords: ["gordon's gin", 'best selling london dry gin', 'london dry gin'],
+      faqs: [{ question: "Is Gordon's the world's best-selling gin?", answer: "Gordon's is widely cited as the world's best-selling London Dry gin, with a recipe unchanged since Alexander Gordon founded the brand in London in 1769." }],
+    },
   },
   {
     id: 'prod-gin-11',
@@ -8891,6 +8942,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Copper Pot Still",
     distilleryLocation: "Sonoma County, California, USA",
+    seo: {
+      primaryKeyword: 'gray whale gin',
+      secondaryKeywords: ['grey whale gin', 'whale gin', 'california coastal gin'],
+    },
   },
   {
     id: 'prod-gin-12',
@@ -8915,6 +8970,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Copper Pot Still",
     distilleryLocation: "Girvan, Scotland",
+    seo: {
+      primaryKeyword: 'hendricks flora adora gin',
+      secondaryKeywords: ['hendricks gin', "hendrick's gin", 'hendricks gin flavors'],
+    },
   },
   {
     id: 'prod-gin-13',
@@ -8939,6 +8998,14 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Copper Pot Still",
     distilleryLocation: "Girvan, Scotland",
+    seo: {
+      primaryKeyword: 'hendricks original gin',
+      secondaryKeywords: ['hendricks gin', "hendrick's gin", 'scottish gin', 'hendricks gin flavors'],
+      faqs: [
+        { question: "Is Hendrick's gin gluten-free?", answer: "Yes — Hendrick's is distilled from a neutral grain spirit and the distillation process removes gluten proteins, making it safe for most people with gluten sensitivity." },
+        { question: "Is Hendrick's a London Dry gin?", answer: "No — Hendrick's is a distilled gin, not a London Dry. It infuses rose and cucumber essence after distillation, which London Dry rules do not permit, giving it a softer, more floral character than a classic London Dry." },
+      ],
+    },
   },
   {
     id: 'prod-gin-14',
@@ -8963,6 +9030,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Copper Pot Still (Rice Spirit Base)",
     distilleryLocation: "Kyoto, Japan",
+    seo: {
+      primaryKeyword: 'ki no bi kyoto dry gin',
+      secondaryKeywords: ['ki no bi gin', 'kinobi gin', 'kyoto gin', 'japanese gin'],
+    },
   },
   {
     id: 'prod-gin-15',
@@ -8987,6 +9058,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Copper Pot Still",
     distilleryLocation: "Moncalieri, Italy",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'malfy con arancia gin',
+      secondaryKeywords: ['malfy gin', 'italian gin', 'sicilian blood orange gin'],
+    },
   },
   {
     id: 'prod-gin-16',
@@ -9011,6 +9087,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Copper Pot Still",
     distilleryLocation: "Moncalieri, Italy",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'malfy con limone gin',
+      secondaryKeywords: ['malfy gin', 'italian gin', 'amalfi lemon gin'],
+    },
   },
   {
     id: 'prod-gin-17',
@@ -9035,6 +9116,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Copper Pot Still",
     distilleryLocation: "Black Forest, Germany",
+    seo: {
+      primaryKeyword: 'monkey 47 gin',
+      secondaryKeywords: ['monkey 47', 'monkey gin', 'german gin', 'monkey 47 schwarzwald dry gin', 'monkey 47 gin price'],
+    },
   },
   {
     id: 'prod-gin-18',
@@ -9059,6 +9144,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Copper Pot Still",
     distilleryLocation: "Netherlands (for Berry Bros. & Rudd, London)",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'no. 3 london dry gin',
+      secondaryKeywords: ['berry bros rudd gin', 'no 3 gin', 'six botanical gin', 'london dry gin'],
+    },
   },
   {
     id: 'prod-gin-19',
@@ -9083,6 +9173,12 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Copper Pot Still",
     distilleryLocation: "Schiedam, Netherlands",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: "nolet's reserve gin",
+      secondaryKeywords: ["nolet's gin", 'most expensive gin', 'saffron gin'],
+      faqs: [{ question: "Is Nolet's related to Ketel One?", answer: "Yes — both are produced by the Nolet family, who have distilled spirits in Schiedam, Netherlands since 1691. Nolet's Gin and Ketel One Vodka share the same distilling heritage but are distinct, separately crafted products." }],
+    },
   },
   {
     id: 'prod-gin-20',
@@ -9107,6 +9203,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Copper Pot Still",
     distilleryLocation: "Schiedam, Netherlands",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: "nolet's silver gin",
+      secondaryKeywords: ["nolet's gin", 'turkish rose gin', 'floral gin'],
+    },
   },
   {
     id: 'prod-gin-21',
@@ -9131,6 +9232,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Copper Pot Still",
     distilleryLocation: "Osaka, Japan",
+    seo: {
+      primaryKeyword: 'roku gin',
+      secondaryKeywords: ['japanese gin', 'suntory roku gin', 'roku japanese gin', 'roku gin price'],
+    },
   },
   {
     id: 'prod-gin-22',
@@ -9155,6 +9260,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Copper Pot Still",
     distilleryLocation: "London, England",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'sipsmith london dry gin',
+      secondaryKeywords: ['sipsmith gin', 'copper pot still gin', 'london dry gin'],
+    },
   },
   {
     id: 'prod-gin-23',
@@ -9179,6 +9289,11 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Copper Pot Still",
     distilleryLocation: "Alameda, California, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'st george terroir gin',
+      secondaryKeywords: ['douglas fir gin', 'st george spirits gin', 'craft gin'],
+    },
   },
   {
     id: 'prod-gin-24',
@@ -9203,6 +9318,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Copper Pot Still",
     distilleryLocation: "Scotland (founded London, 1830)",
+    seo: {
+      primaryKeyword: 'tanqueray london dry gin',
+      secondaryKeywords: ['tanqueray gin', 'london dry gin', 'tanqueray', 'gin london dry tanqueray'],
+    },
   },
   {
     id: 'prod-gin-25',
@@ -9227,6 +9346,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Copper Pot Still (\"Tiny Ten\")",
     distilleryLocation: "Scotland (\"Tiny Ten\" still)",
+    seo: {
+      primaryKeyword: 'tanqueray no ten gin',
+      secondaryKeywords: ['tanqueray 10', 'tanqueray no. ten gin', 'tanqueray no ten', 'tanqueray gin'],
+    },
   },
   {
     id: 'prod-gin-26',
@@ -9251,6 +9374,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Copper Pot Still",
     distilleryLocation: "Scotland",
+    seo: {
+      primaryKeyword: 'tanqueray sevilla orange',
+      secondaryKeywords: ['tanqueray sevilla', 'tanqueray sevilla orange gin', 'tanqueray gin'],
+    },
   },
   {
     id: 'prod-gin-27',
@@ -9262,19 +9389,24 @@ export const PRODUCTS: Product[] = [
     proof: 86,
     age: "No Age Statement",
     volume: '750ml',
-    shortDescription: "A fruit-forward gin blending raspberry with the brand's signature African botanicals.",
-    fullDescription: "Whitley Neill layers ripe raspberry over juniper and South African botanicals like baobab for a fruity, distinctive gin.",
+    shortDescription: "A fruit-forward gin blending Scottish raspberries with the brand's classic nine-botanical base.",
+    fullDescription: "Whitley Neill layers ripe Scottish raspberries over a juniper, licorice, and citrus base for a fruity, distinctive gin — part of a range that includes baobab in its original flagship expression.",
     tastingNotes: {
       nose: "Ripe raspberry.",
       palate: "Balanced juniper.",
       finish: "Fruity, sweet close.",
     },
-    badge: "Raspberry & African Botanicals",
+    badge: "Scottish Raspberry",
     featured: false,
     images: ["/images/products/gin/whitley-neill-raspberry-gin.webp"],
     stock: 17,
     caskType: "Copper Pot Still",
     distilleryLocation: "England",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real phrasing, not volume-backed.
+      primaryKeyword: 'whitley neill raspberry gin',
+      secondaryKeywords: ['whitley neill gin', 'raspberry gin', 'flavored gin'],
+    },
   },
 
   // RUM
@@ -25193,5 +25325,9 @@ export const PRODUCTS: Product[] = [
     stock: 0,
     caskType: "22 hand-foraged Islay botanicals, Lomond still distillation",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: 'botanist gin',
+      secondaryKeywords: ['the botanist gin', 'the botanist islay dry gin', 'islay dry gin', 'islay gin', 'botanist tonic'],
+    },
   },
 ];
