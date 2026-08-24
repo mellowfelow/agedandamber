@@ -2952,4 +2952,110 @@ A London Dry will always taste crisp and juniper-forward by design. A compound g
       { question: 'What is the difference between distilled gin and compound gin?', answer: 'Distilled gin redistills the neutral spirit together with its botanicals, integrating the flavors into the spirit itself. Compound gin simply mixes botanicals or botanical extracts into a neutral spirit without redistilling, generally producing a flatter, less integrated flavor.' },
     ],
   },
+  {
+    slug: 'how-to-make-rum-punch',
+    title: 'How to Make Rum Punch: The Classic Caribbean Formula',
+    excerpt: 'Rum punch follows a simple ratio rhyme that\'s over 300 years old — here\'s the classic formula, plus how to pick the right rum for it.',
+    content: `
+# How to Make Rum Punch: The Classic Caribbean Formula
+
+Rum punch predates the cocktail itself — sailors and traders were mixing rum with sugar, citrus, and spice in the Caribbean centuries before "cocktail" was a word. The good news is that the classic formula is genuinely simple, and it's built around a rhyme that's survived for over 300 years.
+
+## The Classic Ratio Rhyme
+
+*"One of sour, two of sweet, three of strong, four of weak."*
+
+That's the whole recipe, expressed as parts:
+
+- **1 part sour** — fresh lime juice
+- **2 parts sweet** — simple syrup, or a fruit syrup like grenadine or passionfruit
+- **3 parts strong** — rum
+- **4 parts weak** — water, ice, or a mixer like pineapple or orange juice
+
+Scale it however you like — for a single serving, that might mean ½ oz lime juice, 1 oz simple syrup, 1½ oz rum, and 2 oz water or juice. For a pitcher, multiply straight through.
+
+## Choosing the Rum
+
+This is where rum punch actually rewards a little thought. A single dark, funky Jamaican rum can dominate the whole pitcher; a purely light white rum can disappear into the sweetness. Many Caribbean bars and home bartenders blend two:
+
+- **A light or gold rum** as the base — something clean that won't fight the fruit
+- **A splash of dark or overproof rum** floated on top — both for flavor and for the visual "float" effect punch is known for
+
+If you want a single-rum version that still has depth, an aged blend with real character — something like a Demerara-style rum — works well as a one-bottle solution.
+
+## Building It
+
+1. Combine lime juice and syrup in a pitcher, stir to dissolve
+2. Add rum, stir again
+3. Add your "weak" component — water, juice, or a combination — and ice
+4. Taste and adjust: more syrup if it's too sharp, more lime if it's too sweet, more rum if it's too weak
+5. If using a second, darker rum for the float, pour it gently over the back of a spoon on top of each glass just before serving
+
+## Common Mistakes
+
+**Using bottled lime juice.** Fresh is genuinely non-negotiable here — the sour component is doing real acidic work against the sweetness, and bottled juice reads flat by comparison.
+
+**Skipping the spice.** Many traditional recipes add a few dashes of Angostura bitters or a pinch of grated nutmeg — neither is in the core rhyme, but both are extremely traditional and worth trying.
+
+**Making it too sweet.** The "2 sweet" in the rhyme assumes a genuinely tart lime, not a sweetened lime cocktail mix. If you're using bottled sour mix instead of fresh lime, cut the syrup back.
+
+## Why the Ratio Still Works
+
+The 1-2-3-4 rhyme has lasted this long because it's genuinely well-balanced — sour and sweet in a 1:2 ratio that mimics how a lot of successful cocktails are built, with the "strong" and "weak" components giving you room to scale the whole thing up or down for a crowd without losing the balance.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '4 min read',
+    image: '/images/categories/rum.webp',
+    tags: ['Rum', 'Cocktail Guide', 'Rum Punch', 'Recipe'],
+    faqs: [
+      { question: 'What rum is best for rum punch?', answer: 'A blend works best — a clean light or gold rum as the base, with a splash of dark or overproof rum floated on top for depth and visual effect. A single well-rounded aged rum, like a Demerara-style blend, also works as a one-bottle option.' },
+      { question: 'What is the classic rum punch ratio?', answer: 'The traditional formula is "one of sour, two of sweet, three of strong, four of weak" — one part lime juice, two parts syrup, three parts rum, four parts water or juice, scaled to whatever quantity you need.' },
+    ],
+  },
+  {
+    slug: 'what-is-demerara-rum',
+    title: 'What Is Demerara Rum? Guyana\'s Distinctive Dark Rum Style',
+    excerpt: 'Demerara rum takes its name from a Guyanese river and a handful of century-old wooden stills still in use today — here\'s what makes the style distinct.',
+    content: `
+# What Is Demerara Rum? Guyana's Distinctive Dark Rum Style
+
+Demerara rum isn't a legal category the way Scotch or Cognac is — it's a regional style, named for the Demerara River in Guyana, and defined largely by production equipment that exists almost nowhere else in the rum world.
+
+## The Wooden Pot Stills
+
+The single most distinctive thing about Demerara rum production is that some of it still runs through wooden pot stills — genuinely rare in modern spirits production, where copper is close to universal. Guyana's Demerara Distillers operates stills more than a century old, some made of greenheart wood native to the region, alongside more conventional column stills.
+
+Wooden stills impart a different character than copper — copper actively reacts with and softens certain sulfur compounds during distillation, while wood interacts with the spirit differently, contributing to the heavier, more mineral, more idiosyncratic character Demerara rum is known for.
+
+## Column and Pot, Blended
+
+Most Demerara rum you'll actually drink is a blend of spirit from several different stills — wooden pot, metal pot, and column — each contributing a different texture and intensity. This blending tradition is part of why Demerara rums from different "marks" (named for the specific historic still they're associated with) can taste meaningfully different from each other even from the same distillery.
+
+## Flavor Profile
+
+Classic Demerara rum leans dark, rich, and full-bodied — think burnt sugar, dark caramel, coffee, and dried fruit, often with a mineral or slightly savory edge that separates it from the lighter, brighter profile of a Spanish-style Caribbean rum. Aging in tropical heat accelerates maturation and intensifies these notes faster than aging in a cooler climate would.
+
+## A Note on Color
+
+As with most dark rum, some of Demerara rum's deep color comes from barrel aging — but caramel coloring is also commonly used across the category to standardize appearance batch to batch. Color intensity alone isn't a reliable guide to how long a Demerara rum was actually aged.
+
+## Why It's Worth Seeking Out
+
+Demerara rum occupies a genuinely distinct lane — heavier and more mineral than Bajan rum, less overtly funky than Jamaican pot-still rum, and built on equipment that essentially doesn't exist anywhere else. If you've mostly had lighter Caribbean rum, it's one of the more dramatic style shifts available in the category.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Rum Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '4 min read',
+    image: '/images/categories/rum.webp',
+    tags: ['Rum', 'Rum Education', 'Demerara', 'Guyana'],
+    faqs: [
+      { question: 'What makes Demerara rum different from other dark rum?', answer: 'Demerara rum is distilled in Guyana, often using rare wooden pot stills alongside column stills — equipment that\'s almost unique to the region. This produces a heavier, more mineral, more idiosyncratic character than most other Caribbean rum styles.' },
+      { question: 'Is El Dorado a Demerara rum?', answer: 'Yes — El Dorado, produced by Demerara Distillers in Guyana, is the best-known and most widely available Demerara rum brand, using a blend of historic wooden pot stills and column stills.' },
+    ],
+  },
 ];

@@ -795,6 +795,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Appleton Estate Rum — Signature Blend, 8 Year Reserve, 12 Year Rare Casks & 21 Year Allocations',
       metaDescription: 'Buy Appleton Estate online — Signature Blend, 8 Year Reserve, 12 Year Rare Casks, and the rare 21 Year Nassau Valley. Direct allocations, free $300+.',
       hook: 'Appleton Estate has been distilling in Jamaica’s Nassau Valley since 1749, one of the longest continuously operating rum estates in the world — the Signature Blend, 8 Year Reserve, 12 Year Rare Casks, and rare 21 Year showcase Jamaican pot still character.',
+      faqs: [{ question: 'What does "Nassau Valley" mean on Appleton Estate\'s label?', answer: 'Nassau Valley is the specific Jamaican estate where Appleton has distilled since 1749 — a limestone-filtered water source and pot-and-column still blend unique to the property shape the brand\'s house style across every age statement.' }],
     }),
   },
   {
@@ -816,6 +817,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Mount Gay Rum — Black Barrel & XO Barbados Allocations',
       metaDescription: 'Buy Mount Gay online — Black Barrel and premium XO from Barbados’ oldest rum brand, distilling since 1703. Direct allocations, free $300+.',
       hook: 'Mount Gay holds a documented distilling history in Barbados dating to 1703, making it one of the oldest rum brands in continuous production — the Black Barrel and premium XO are the range’s standout allocated releases.',
+      faqs: [{ question: 'Is Mount Gay the oldest rum brand in the world?', answer: 'Mount Gay holds documented distilling records dating to 1703, making it one of the oldest continuously operating rum brands with verifiable history — though several other Caribbean distilleries claim earlier informal production dates.' }],
     }),
   },
   {
@@ -826,6 +828,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Flor de Caña Rum — 12 Year & Extra Dry 4 Year White Allocations',
       metaDescription: 'Buy Flor de Caña online — 12 Year and Extra Dry 4 Year White, carbon-neutral Nicaraguan rum. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Flor de Caña is a Nicaraguan rum distilled and aged at the base of the San Cristóbal volcano, and is certified carbon neutral across its production — the age-stated 12 Year and unaged Extra Dry 4 Year White anchor the range.',
+      faqs: [{ question: 'Is Flor de Caña gluten-free?', answer: 'Yes — Flor de Caña is distilled from sugarcane, not grain, making it naturally gluten-free like most rum.' }],
     }),
   },
   {
@@ -847,6 +850,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Bacardí Rum — Spiced & Superior White Allocations',
       metaDescription: 'Buy Bacardí online — Spiced Rum and Superior White, from the world’s largest privately held spirits company. Direct allocations, free $300+.',
       hook: 'Bacardí, founded in Cuba in 1862, is the world’s largest privately held spirits company and one of the best-known rum names globally — Superior White is the clean, mixable original, while Spiced Rum layers in vanilla and warm spice.',
+      faqs: [{ question: 'Is Bacardí rum or vodka?', answer: 'Bacardí is best known as a rum brand — Superior White and Spiced Rum are both distilled from sugarcane molasses. Bacardí\'s parent company also produces vodka and other spirits under separate labels, which is a common source of the confusion.' }],
     }),
   },
   {
@@ -858,6 +862,7 @@ export const BRAND_HUBS: BrandHub[] = [
       metaDescription: 'Buy Bumbu online — Original and sherry-cask-finished XO, Barbados rum bottled for a sweeter, dessert-leaning style. Direct allocations, free $300+.',
       hook: 'Bumbu is produced in Barbados and bottled at reduced proof for a sweeter, dessert-leaning rum style — the XO expression adds sherry-cask finishing for toffee, dried orange, and light spice atop the brand’s signature profile.',
       transactionalCTA: "Can't find Bumbu near you? Aged & Amber ships allocated Bumbu Original and XO to every state with compliant direct-to-consumer alcohol shipping laws.",
+      faqs: [{ question: 'Is Bumbu rum sweet?', answer: 'Yes — Bumbu is bottled at a reduced proof and formulated for a noticeably sweet, dessert-leaning character, closer to a spiced rum liqueur than a traditional dry sipping rum.' }],
     }),
   },
   {
@@ -868,6 +873,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Captain Morgan Original Spiced Rum — Direct Allocations',
       metaDescription: 'Buy Captain Morgan online — Original Spiced Rum blending Caribbean rum with vanilla and clove. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Captain Morgan Original Spiced blends Caribbean rum with vanilla and light clove spice for one of the best-selling spiced rums in the US — named for the 17th-century Welsh privateer Sir Henry Morgan.',
+      faqs: [{ question: 'What is Captain Morgan rum made from?', answer: 'Captain Morgan Original Spiced is distilled from Caribbean sugarcane on a light column still, then blended with natural flavorings including vanilla and clove to create its signature spiced profile.' }],
     }),
   },
   {
@@ -879,6 +885,7 @@ export const BRAND_HUBS: BrandHub[] = [
       metaDescription: 'Buy Don Q online — Cristal White Rum from Destilería Serrallés, Puerto Rico\'s top-selling rum. Can\'t find it near you? Ships to 45 US states.',
       hook: 'Don Q is Puerto Rico’s best-selling rum, distilled and filtered at Destilería Serrallés since 1865 — Cristal is its clean, neutral-profile white rum, built for daiquiris and mojitos.',
       transactionalCTA: 'Can\'t find Don Q near you? Aged & Amber ships allocated Don Q Cristal to every state with compliant direct-to-consumer alcohol shipping laws.',
+      faqs: [{ question: 'Is Don Q the same company as Bacardí?', answer: 'No — Don Q is produced by Destilería Serrallés, an independent, family-owned Puerto Rican company distilling since 1865. Bacardí is a separate, much larger multinational company, though both are Puerto Rico\'s two best-known rum names.' }],
     }),
   },
   {
@@ -889,6 +896,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Foursquare 2010 Exceptional Cask Selection — Additive-Free Barbados Rum',
       metaDescription: 'Buy Foursquare online — the 2010 Exceptional Cask Selection, additive-free vintage-dated Barbados rum. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Foursquare Distillery, run by master blender Richard Seale, is one of the most acclaimed names in modern rum — bottling every Exceptional Cask Selection release without additives at high proof, prized by enthusiasts for genuine intensity and transparency.',
+      faqs: [{ question: 'Why does Foursquare rum contain no additives?', answer: 'Master blender Richard Seale is an outspoken advocate for additive-free rum labeling — Foursquare\'s Exceptional Cask Selection releases contain no added sugar, coloring, or flavoring, letting the pot-and-column-still blend and cask influence speak for themselves.' }],
     }),
   },
   {
@@ -899,6 +907,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: "Gosling's Black Seal Rum — The Dark 'n' Stormy Original, Direct Allocations",
       metaDescription: "Buy Gosling's online — Black Seal rum, the trademarked base of the Dark 'n' Stormy. Bermuda rum since the 1800s. Direct allocations, free $300+.",
       hook: "Gosling's has blended Black Seal rum in Bermuda since the 1800s — it's the legally trademarked base spirit of the Dark 'n' Stormy cocktail, prized for its caramel and light char character.",
+      faqs: [{ question: "Do I need Gosling's ginger beer to make a real Dark 'n' Stormy?", answer: "Gosling's holds the trademark on the name \"Dark 'n' Stormy,\" which technically requires their Black Seal rum specifically — pairing it with their matching Gosling's Ginger Beer keeps the combination authentic to the original Bermuda recipe." }],
     }),
   },
   {
@@ -909,6 +918,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Kraken Black Spiced Rum — 94 Proof Allocations',
       metaDescription: 'Buy Kraken online — Black Spiced Rum at 94 proof, cinnamon, clove, and molasses in a signature black bottle. Direct allocations, free $300+.',
       hook: 'Kraken Black Spiced Rum is bottled at 94 proof with pronounced cinnamon, clove, and molasses sweetness, packaged in a distinctive black bottle named for the legendary sea monster.',
+      faqs: [{ question: "What proof is Kraken rum?", answer: "Kraken Black Spiced Rum is bottled at 94 proof (47% ABV) — higher than most mainstream spiced rums, which typically sit around 70-80 proof, giving it a bolder, warmer character." }],
     }),
   },
   {
@@ -930,6 +940,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: "Myers's Original Dark Rum — Jamaican Blend, Direct Allocations",
       metaDescription: "Buy Myers's online — Original Dark Rum, the classic Jamaican blend for rum punch and tiki cocktails. Direct allocations at Aged & Amber. Free $300+.",
       hook: "Myers's Original Dark Rum is a blended Jamaican rum long favored as the classic base for rum punch and tiki cocktails, known for its rich molasses character.",
+      faqs: [{ question: "Is Myers's rum aged?", answer: "Yes — Myers's Original Dark Rum is a blend of pot still Jamaican rums aged up to four years, though it carries no formal age statement on the label since it's a blend across multiple ages." }],
     }),
   },
   {
@@ -940,6 +951,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Sailor Jerry Spiced Rum — 92 Proof Allocations',
       metaDescription: 'Buy Sailor Jerry online — Spiced Rum at 92 proof, vanilla and cinnamon named for the legendary tattoo artist. Direct allocations, free $300+.',
       hook: 'Sailor Jerry blends Caribbean rum with vanilla and cinnamon flavoring at 92 proof for a bolder spiced profile than most competitors — named for Norman "Sailor Jerry" Collins, the father of American traditional tattooing.',
+      faqs: [{ question: 'Is Sailor Jerry rum aged?', answer: 'Sailor Jerry Spiced Rum carries no age statement — it\'s a Caribbean rum blend flavored with vanilla and cinnamon at 92 proof, positioned as a bold mixing rum rather than an aged sipping spirit.' }],
     }),
   },
   {
@@ -950,6 +962,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Smith & Cross Traditional Jamaica Rum — Hampden Estate Allocations',
       metaDescription: 'Buy Smith & Cross online — traditional Jamaica rum from Hampden Estate, prized for its funky, tropical-fruit character. Direct allocations, free $300+.',
       hook: 'Produced at Hampden Estate for Smith & Cross, this navy-strength Jamaican rum is prized by bartenders for its pronounced funky tropical-fruit and grassy character, built for classic tiki cocktails.',
+      faqs: [{ question: 'What is "hogo" in Jamaican rum?', answer: 'Hogo (from the French "haut goût," meaning "high taste") describes the pronounced funky, tropical-fruit, sometimes barnyard-like aroma found in high-ester Jamaican rums like Smith & Cross — produced through long, wild dunder-pit fermentation at estates like Hampden.' }],
     }),
   },
   {
@@ -960,6 +973,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Wray & Nephew Overproof White Rum — Jamaican Staple, Direct Allocations',
       metaDescription: 'Buy Wray & Nephew online — Overproof White Rum, a staple of Jamaican rum culture at 126 proof. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'J. Wray & Nephew\'s overproof bottling is a staple of Jamaican rum culture, valued for its intense funk and sugarcane pungency — a foundational ingredient in Jamaican rum punch and countless tiki cocktails.',
+      faqs: [{ question: 'Can you drink Wray and Nephew Overproof neat?', answer: 'At 126 proof (63% ABV), Wray & Nephew Overproof is rarely sipped neat — in Jamaica it\'s traditionally used in small quantities to season punches, cocktails, and even cooking, or occasionally taken as a small "chaser" shot rather than a full pour.' }],
     }),
   },
 

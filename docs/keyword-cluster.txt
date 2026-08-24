@@ -5,6 +5,8 @@
 
 [USED]	what is rum made from	/blog/what-is-rum-made-from/	Informational	T1	Vol 8,100 KD 19	Rum batch
 [USED]	what is gin made from	/blog/what-is-gin-made-from/	Informational	T1	Vol 12,100 KD 22	Gin batch
+[USED]	how to make rum punch	/blog/how-to-make-rum-punch/	Informational	T1	Vol 1,000 KD 24	Rum batch v2
+[USED]	what is demerara rum	/blog/what-is-demerara-rum/	Informational	T1	Vol 2,400 KD 8	Rum batch v2
 
 # === HELD, NOT BUILT (KD above T2 ceiling, revisit in 6 months per skill rule) ===
 [HELD]	aviation cocktail	—	Informational	T3	Vol 22,200 KD 54	Gin batch — combined with "aviation cocktail recipe" (Vol 6,600 KD 46), links to Aviation gin brand page if built later
