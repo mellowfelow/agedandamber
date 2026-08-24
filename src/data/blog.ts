@@ -3103,4 +3103,151 @@ Demerara rum occupies a genuinely distinct lane — heavier and more mineral tha
       { question: 'Is El Dorado a Demerara rum?', answer: 'Yes — El Dorado, produced by Demerara Distillers in Guyana, is the best-known and most widely available Demerara rum brand, using a blend of historic wooden pot stills and column stills.' },
     ],
   },
+  {
+    slug: 'what-is-cognac-made-of',
+    title: 'What Is Cognac Made Of? Grapes, Double Distillation & the Aging Rules',
+    excerpt: 'Cognac starts as a thin, sour white wine before it\'s twice-distilled in copper pot stills and aged in French oak — here\'s how the legal rules shape every bottle.',
+    content: `
+# What Is Cognac Made Of? Grapes, Double Distillation & the Aging Rules
+
+Cognac isn't just brandy with a fancier name — it's a legally protected spirit made a specific way, from a specific place, and every bottle has to follow the same core rulebook regardless of the house that makes it.
+
+## The Base: A Thin, Sour Wine
+
+Cognac starts as wine, not grapes distilled directly. The dominant grape is Ugni Blanc, prized for cognac production precisely because it makes a low-alcohol, high-acid, fairly forgettable wine on its own — those are exactly the qualities that make it distill well, since a neutral, acidic base wine lets the fruit and oak character develop later in the process rather than fighting with grape flavor from the start.
+
+## Double Distillation in Copper Pot Stills
+
+The wine is distilled twice in traditional Charentais copper pot stills, a method called *double chauffe* (double heating). The first pass produces a rough, cloudy spirit called the *brouillis*; the second pass, the *bonne chauffe*, is where the distiller carefully separates the "heart" of the run — the clean, usable spirit — from the "heads" and "tails" that get discarded or redistilled. Only the heart becomes cognac.
+
+## Aging in French Oak
+
+Fresh off the still, cognac is a clear, sharp spirit. All of its color, and most of its character, comes from years spent in French oak barrels — typically Limousin or Tronçais oak, both prized for imparting tannin and vanilla-spice notes without overwhelming the fruit underneath. Every cognac must age at least two years in oak by law, but the age-designation tiers most bottles are sold under go well beyond that minimum:
+
+- **VS (Very Special)** — minimum 2 years in oak
+- **VSOP (Very Superior Old Pale)** — minimum 4 years
+- **XO (Extra Old)** — minimum 10 years
+- **Extra / Hors d'Âge** — no legal maximum; these are the oldest, rarest tier, often blending eaux-de-vie decades or even a century old, as with Rémy Martin's Louis XIII or Hennessy's Richard
+
+## Where It Can Legally Be Made
+
+"Cognac" isn't a style you can make anywhere — it's an Appellation d'Origine Contrôlée (AOC), meaning it can only legally be produced in the Cognac region of southwestern France, around the towns of Cognac and Jarnac in the Charente and Charente-Maritime départements. The growing area is further divided into six crus, ranked by soil quality and prestige: Grande Champagne and Petite Champagne (the two most prized, together making up "Fine Champagne" cognac), followed by Borderies, Fins Bois, Bons Bois, and Bois Ordinaires.
+
+## Blending: The Cellar Master's Real Job
+
+Almost no cognac is a single-barrel product. A house's cellar master blends eaux-de-vie from many barrels, vintages, and sometimes crus to hit a consistent house style year after year — this is genuinely the core craft of cognac production, similar to how a Champagne house blends across vintages rather than releasing single-harvest wine. Martell leans heavily on Borderies fruit for its violet-and-nut character; Hennessy blends across all six crus for its signature richness; Rémy Martin uses only Grande and Petite Champagne fruit, earning the "Fine Champagne" designation on every bottle.
+
+## Why This All Matters for What You're Drinking
+
+Because of these rules, every bottle labeled cognac guarantees the same three things: French grape wine as the base, double pot-still distillation, and aging in French oak within the Cognac region. What varies is the blend, the cru sourcing, and the age — which is exactly why a Hennessy VS and a Rémy Martin XO can taste so different despite following an identical rulebook.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cognac Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '5 min read',
+    image: '/images/categories/cognac-brandy.webp',
+    tags: ['Cognac', 'Cognac Education', 'Distillation', 'France'],
+    faqs: [
+      { question: 'What grape is cognac made from?', answer: 'Cognac is made primarily from Ugni Blanc grapes, a high-acid, low-alcohol variety that\'s prized for distilling well rather than for drinking as a table wine on its own.' },
+      { question: 'Why is cognac distilled twice?', answer: 'Double distillation, called double chauffe, lets the distiller separate a cleaner, more refined "heart" spirit from the rougher heads and tails. The second pass (the bonne chauffe) is where this careful cut actually happens.' },
+    ],
+  },
+  {
+    slug: 'how-is-brandy-made',
+    title: 'How Is Brandy Made? The Broader Family Cognac Belongs To',
+    excerpt: 'Brandy is any spirit distilled from fermented fruit — cognac, armagnac, apple brandy, and Spanish solera brandy are all members of the same broader family, made in very different ways.',
+    content: `
+# How Is Brandy Made? The Broader Family Cognac Belongs To
+
+If cognac has one of the most tightly regulated production processes in spirits, brandy as a whole sits at the opposite end — it's a broad category covering almost any spirit distilled from fermented fruit, made all over the world in wildly different styles.
+
+## The Basic Definition
+
+At its simplest, brandy is a distilled spirit made from fermented fruit — most commonly grapes, but also apples, pears, and other fruits. That's genuinely the entire baseline definition. Everything else — grape variety, region, still type, aging method — is a stylistic choice made by the producer or dictated by a specific regional designation.
+
+## Grape Brandy: The Largest Category
+
+Most brandy, like most wine, starts with grapes. The base wine is fermented, then distilled — either in a pot still (producing a richer, more characterful spirit, as with cognac and armagnac) or a column still (producing a lighter, more neutral spirit, common in high-volume American and generic brandies like Paul Masson or Presidente). Distillation strips most of the sugar and residual grape character, leaving a clear spirit that gets its final flavor almost entirely from barrel aging.
+
+## Protected Regional Styles
+
+Some grape brandies carry legal, geography-locked designations, similar to how Champagne can only come from Champagne:
+
+- **Cognac** — France's Charente region, double pot-still distilled, minimum 2 years in French oak
+- **Armagnac** — France's Gascony region, traditionally single column-still distilled, generally considered rustic and more grape-forward than cognac
+- **Brandy de Jerez** — Spain's Jerez region, aged using the solera system (a fractional blending method that layers younger spirit into partially emptied barrels of older spirit), giving Spanish brandies like Cardinal Mendoza and Fundador their signature sherry-cask richness
+
+## Fruit Brandy Beyond Grapes
+
+Brandy doesn't have to start with grapes at all. Apple brandy — like Laird's, which has been distilled in New Jersey since 1698 — is fermented cider run through a still, then aged in charred oak, producing a spirit with genuine orchard fruit character that grape brandy can't replicate. Similar traditions exist for pear (poire), cherry (kirsch), and plum (slivovitz) brandies, though most of these are labeled by their fruit rather than as generic "brandy."
+
+## Aging: Vintage vs. Solera
+
+Two very different aging philosophies show up across the brandy world. **Vintage-style aging** — the cognac and armagnac approach — ages a specific batch in barrels for a set number of years before bottling, similar to how whiskey is aged. **Solera aging** — the Spanish approach used for sherry, brandy de Jerez, and some other brandies — continuously blends younger spirit into a fractional system of stacked barrels, meaning the final product is a blend of many vintages rather than a single aged batch, and the "age statement" (like Torres 5 or Torres Jaime I's 30-year average) reflects an average rather than a minimum.
+
+## Why the Category Is So Wide
+
+Because "brandy" only requires fermented fruit plus distillation, the category legitimately spans everything from a $4,300 Louis XIII cognac to a $12 bottle of Paul Masson — both are, technically, brandy. The regional and legal designations (cognac, armagnac, Brandy de Jerez) are what separate the tightly controlled, prestige end of the category from the broader, more loosely regulated everyday brandies that make up most of what's actually sold worldwide.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cognac Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '5 min read',
+    image: '/images/categories/cognac-brandy.webp',
+    tags: ['Brandy', 'Cognac Education', 'Distillation', 'Solera'],
+    faqs: [
+      { question: 'Is all brandy made from grapes?', answer: 'No — while most brandy is grape-based, brandy can legally be distilled from any fermented fruit. Apple brandy (like Laird\'s), pear brandy, and cherry brandy are all genuine brandy styles made without grapes.' },
+      { question: 'What is solera aging?', answer: 'Solera aging is a fractional blending method, used for Spanish brandy and sherry, where younger spirit is added to a system of stacked barrels holding progressively older spirit. The result is a continuous blend of many vintages rather than a single aged batch, so age statements reflect an average age rather than a strict minimum.' },
+    ],
+  },
+  {
+    slug: 'brandy-vs-cognac',
+    title: 'Brandy vs. Cognac: What\'s the Actual Difference?',
+    excerpt: 'Every cognac is a brandy, but almost no brandy is cognac — the difference comes down to geography, grape, distillation method, and legal minimum aging.',
+    content: `
+# Brandy vs. Cognac: What's the Actual Difference?
+
+This is one of the most common points of confusion in spirits, and the short answer is simple: **cognac is a type of brandy, but brandy is not cognac.** Every bottle of cognac legally qualifies as brandy, but the vast majority of brandy on the market doesn't — and can't — call itself cognac.
+
+## The Core Distinction
+
+| | Brandy (general) | Cognac |
+|---|---|---|
+| **Base fruit** | Any fermented fruit (grape, apple, pear, etc.) | Grapes only, primarily Ugni Blanc |
+| **Region** | Anywhere in the world | Charente & Charente-Maritime, France, only |
+| **Distillation** | Pot still or column still, no rule | Copper pot still, double-distilled, required |
+| **Minimum aging** | No universal minimum | 2 years in French oak, minimum |
+| **Legal status** | Generic category | Protected AOC designation |
+| **Examples we stock** | Laird's Apple Brandy, Torres, Cardinal Mendoza, Paul Masson | Hennessy, Rémy Martin, Martell, Courvoisier |
+
+## Why Cognac Costs More (Usually)
+
+Cognac's rules aren't just bureaucratic — they add real cost at every stage. Grapes have to come from a specific, limited region; double pot-still distillation is slower and less efficient than column distillation; and the minimum aging period ties up inventory in barrels for years before it can be sold. Generic brandies, by contrast, can source fruit from anywhere, use faster column distillation, and age for shorter periods (or use solera blending to stretch older stock across younger spirit), which is a big part of why a bottle of Presidente or Paul Masson can retail for under $20 while entry-level cognac routinely starts north of $35–$45.
+
+## It's Not About Quality — It's About Rules
+
+A common misconception is that "cognac" automatically means better than "brandy." That's not quite right — cognac means a specific, legally enforced production standard, not a quality guarantee on its own. There are excellent brandies outside the cognac designation: Cardinal Mendoza's 25-year solera Brandy de Jerez and Laird's apple brandy are both genuinely well-regarded, complex spirits that simply aren't made in the Cognac region using the cognac method, so they can't use the name regardless of how good they are.
+
+## Armagnac: The Other French Brandy
+
+Worth knowing: armagnac is cognac's lesser-known French sibling, made in the neighboring Gascony region using (traditionally) a single column still rather than cognac's double pot-still method. Armagnac tends to be more rustic and grape-forward, and — unlike cognac's blended house-style approach — is more often sold as a single-vintage product, similar to wine.
+
+## Which One Should You Buy?
+
+If you want the classic, internationally recognized "cognac" style — layered dried fruit, oak spice, a smooth blended house character — reach for cognac, and the age tier (VS, VSOP, XO) will tell you roughly what to expect in depth and price. If you're after something more specific — apple brandy's orchard character, or a Spanish solera brandy's sherry-cask richness — the broader brandy category is where you'll find styles cognac simply doesn't make.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cognac Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '5 min read',
+    image: '/images/categories/cognac-brandy.webp',
+    tags: ['Brandy', 'Cognac', 'Cognac Education', 'Comparison'],
+    faqs: [
+      { question: 'Is cognac a type of brandy?', answer: 'Yes — cognac is a specific, legally protected type of brandy made only in the Cognac region of France, from grapes, double-distilled in copper pot stills and aged at least 2 years in French oak. All cognac is brandy, but most brandy is not cognac.' },
+      { question: 'Is cognac always better quality than brandy?', answer: 'Not necessarily — "cognac" is a legal production standard, not a quality guarantee. Brandies outside the cognac designation, like aged Spanish Brandy de Jerez or premium apple brandy, can be just as complex and well-regarded; they simply aren\'t made in the Cognac region using the cognac method.' },
+    ],
+  },
 ];

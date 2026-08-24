@@ -41,6 +41,28 @@ Master blog content plan, built up across keyword batches. Companion to `keyword
 - Internal links: `/shop/artisanal-gin/` category page and the new London Dry Gin subcategory page
 - Source: Gin batch, flagged as a blog gap in the category-page review
 
+### What Is Cognac Made Of? — `/blog/what-is-cognac-made-of/`
+- Primary: what is cognac made of (1,900, KD 16, T1)
+- Covers base wine (Ugni Blanc), double pot-still distillation, French oak aging, VS/VSOP/XO/Extra tiers, the six crus, AOC geography rules
+- Word count: ~750w
+- Schema: Article + FAQPage
+- Internal links: mentions Rémy Martin Louis XIII, Hennessy Richard, Martell, Hennessy, Rémy Martin brand pages
+- Source: Cognac batch, category-level definition post mirroring the Rum/Gin "made from" pattern
+
+### How Is Brandy Made? — `/blog/how-is-brandy-made/`
+- Primary: how is brandy made (1,600, KD 23, T1)
+- Covers the broader brandy family: grape brandy, protected regional styles (cognac, armagnac, Brandy de Jerez), fruit brandy beyond grapes (Laird's apple brandy), vintage vs. solera aging
+- Schema: Article + FAQPage
+- Internal links: mentions Cardinal Mendoza, Fundador, Laird's, Torres 5, Torres Jaime I
+- Source: Cognac batch 2
+
+### Brandy vs. Cognac — `/blog/brandy-vs-cognac/`
+- Primary: difference between brandy and cognac (1,000–5,400 vol depending on phrasing, KD 11–17)
+- Commercial-intent comparison post with a definition hook + comparison table; covers why cognac costs more, the quality-vs-rules misconception, and armagnac as cognac's lesser-known sibling
+- Schema: Article + FAQPage
+- Internal links: mentions Laird's, Torres, Cardinal Mendoza, Paul Masson, Hennessy, Rémy Martin, Martell, Courvoisier
+- Source: appeared independently in both Cognac batches — strongest cross-batch signal of the three
+
 ---
 
 ## Held (do not build — above T2 ceiling per keyword-engine skill rule)
@@ -49,9 +71,7 @@ Master blog content plan, built up across keyword batches. Companion to `keyword
 
 ## Queued (flagged, not yet built)
 
-- **What Is Cognac Made Of?** (1,900, KD 16, T1) — same pattern as the two built posts, natural next in the series
-- **How Is Brandy Made?** (1,600, KD 23, T1)
-- **Brandy vs. Cognac** (Commercial intent, 1,000–5,400 vol depending on phrasing, KD 11–17 — appeared independently in both Cognac batches) — comparison-style post, good candidate for a "vs" format with a definition hook + comparison table
+None currently queued — the Cognac batch's 3 flagged blog gaps are now built. Next queue entries will come from whichever category batch is processed next (Bourbon, Scotch, Irish, Japanese, Rye, Tequila, Vodka, Fine Wine, Champagne, Beer, Cider, RTD/Liqueurs, or Bar Essentials).
 
 ---
 

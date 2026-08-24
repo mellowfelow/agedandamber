@@ -8,12 +8,13 @@
 [USED]	how to make rum punch	/blog/how-to-make-rum-punch/	Informational	T1	Vol 1,000 KD 24	Rum batch v2
 [USED]	what is demerara rum	/blog/what-is-demerara-rum/	Informational	T1	Vol 2,400 KD 8	Rum batch v2
 [USED]	what is sloe gin	/blog/what-is-sloe-gin/	Informational	T1	Vol 1,600 KD 26	Gin batch
+[USED]	what is cognac made of	/blog/what-is-cognac-made-of/	Informational	T1	Vol 1,900 KD 16	Cognac batch — category-level definition post, mirrors Rum/Gin pattern
+[USED]	how is brandy made	/blog/how-is-brandy-made/	Informational	T1	Vol 1,600 KD 23	Cognac batch 2
+[USED]	difference between brandy and cognac	/blog/brandy-vs-cognac/	Commercial	T1	Vol 1,000-5,400 KD 11-17	Cognac + Cognac batch 2 — strong across both batches, comparison post w/ table
 
 # === HELD, NOT BUILT (KD above T2 ceiling, revisit in 6 months per skill rule) ===
 [HELD]	aviation cocktail	—	Informational	T3	Vol 22,200 KD 54	Gin batch — combined with "aviation cocktail recipe" (Vol 6,600 KD 46), links to Aviation gin brand page if built later
 [HELD]	how to pronounce courvoisier	—	Informational	T1	Vol ~600 combined, KD 18-29	Cognac batch 2 — folded into Courvoisier FAQ instead of a standalone post, too thin for full post
 
 # === FUTURE CANDIDATES (flagged in review docs, not yet actioned) ===
-[UNUSED]	what is cognac made of	/blog/what-is-cognac-made-of/	Informational	T1	Vol 1,900 KD 16	Cognac batch — category-level definition post, mirrors Rum/Gin pattern
-[UNUSED]	how is brandy made	/blog/how-is-brandy-made/	Informational	T1	Vol 1,600 KD 23	Cognac batch 2
-[UNUSED]	difference between brandy and cognac	/blog/brandy-vs-cognac/	Commercial	T1	Vol 1,000-5,400 KD 11-17	Cognac + Cognac batch 2 — strong across both batches, good comparison post candidate
+(none currently queued — Cognac batch fully closed out)
