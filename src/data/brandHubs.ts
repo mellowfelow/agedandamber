@@ -1000,6 +1000,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Tanqueray Gin — London Dry, No. Ten & Sevilla Orange Allocations',
       metaDescription: 'Buy Tanqueray online — the classic London Dry recipe since 1830, No. Ten, and Sevilla Orange. Direct allocations at Aged & Amber. Free on $300+.',
       hook: 'Tanqueray has distilled London Dry gin from the same four-botanical recipe since 1830, using a distinctive pot-and-column still combination still in use at its Cameronbridge distillery today. No. Ten adds fresh citrus and chamomile from a small-batch copper pot, while Sevilla Orange layers in bittersweet Seville orange peel.',
+      faqs: [{ question: 'How many botanicals does Tanqueray use?', answer: 'Tanqueray\'s core London Dry recipe uses just four botanicals — juniper, coriander, angelica root, and licorice — noticeably fewer than most gins, which contributes to its assertively dry, juniper-forward character.' }],
     }),
   },
   {
@@ -1010,6 +1011,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Aviation Gin — American-Style Lavender & Cardamom Allocations',
       metaDescription: "Buy Aviation gin online — Ryan Reynolds' American-style gin with lavender and cardamom notes. Direct allocations. Free shipping on $300+.",
       hook: 'Aviation is an American gin co-owned by actor Ryan Reynolds, built around a lighter juniper presence and more prominent lavender and cardamom notes than a traditional London Dry style.',
+      faqs: [{ question: 'Is Aviation gin named after the cocktail?', answer: 'Yes — Aviation gin takes its name from the classic Aviation cocktail (gin, maraschino liqueur, crème de violette, and lemon), and its lighter juniper, floral profile was specifically designed to work well in that drink.' }],
     }),
   },
   {
@@ -1020,6 +1022,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Monkey 47 Gin — 47-Botanical Black Forest Allocations',
       metaDescription: 'Buy Monkey 47 online — 47 botanicals distilled in Germany’s Black Forest. Direct allocations at Aged & Amber. Free shipping on $300+.',
       hook: 'Monkey 47 is distilled in Germany’s Black Forest from 47 botanicals, including regional ingredients like lingonberry and spruce sprouts — a much higher botanical count than most gins, giving it a dense, layered profile.',
+      faqs: [{ question: 'Why is it called Monkey 47?', answer: 'The name references both the gin\'s 47 botanicals and Max the monkey, a rescued primate connected to the Berlin Zoo and Black Forest region history that inspired the brand\'s identity.' }],
     }),
   },
   {
@@ -1030,6 +1033,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'The Botanist Gin — 22 Hand-Foraged Islay Botanical Allocations',
       metaDescription: 'Buy The Botanist online — 22 hand-foraged Islay botanicals, distilled by Bruichladdich. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'The Botanist is distilled by Bruichladdich on Islay using 22 hand-foraged local botanicals alongside 9 classic gin aromatics, distilled in a converted Lomond still nicknamed "Ugly Betty."',
+      faqs: [{ question: 'Is The Botanist made by Bruichladdich?', answer: 'Yes — The Botanist is distilled at the Bruichladdich distillery on Islay, Scotland, better known for its single malt Scotch, using a converted Lomond pot still nicknamed "Ugly Betty" for its slow, gentle distillation.' }],
     }),
   },
   {
@@ -1040,6 +1044,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Roku Gin — Sakura, Sencha Tea & Yuzu Japanese Allocations',
       metaDescription: 'Buy Roku online — Suntory’s Japanese gin with sakura flower, sencha tea, and yuzu peel. Direct allocations. Free shipping on $300+.',
       hook: 'Roku, from Suntory, blends eight traditional gin botanicals with distinctly Japanese ingredients — sakura flower, sencha tea, and yuzu peel among them — each distilled separately to preserve individual character.',
+      faqs: [{ question: 'Is Roku a whisky or a gin?', answer: 'Roku is a gin, not a whisky — it\'s produced by Suntory, the Japanese company also known for Yamazaki and Hibiki whisky, which sometimes leads to the mix-up.' }],
     }),
   },
   {
@@ -1061,6 +1066,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Drumshanbo Gunpowder Irish Gin — Direct Allocations',
       metaDescription: 'Buy Drumshanbo Gunpowder online — Irish gin infused with gunpowder tea, citrus, and juniper. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Drumshanbo Gunpowder is an Irish gin infused with gunpowder tea alongside citrus and juniper, distilled in a copper pot still nicknamed "Christina" at the small-batch Shed Distillery in County Leitrim.',
+      faqs: [{ question: 'What does "Drumshanbo" mean?', answer: 'Drumshanbo is the name of the small town in County Leitrim, Ireland, where The Shed Distillery is based — the gin is named directly for its hometown.' }],
     }),
   },
   {
@@ -1071,6 +1077,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Barr Hill Gin — Raw Honey-Finished Vermont Allocations',
       metaDescription: 'Buy Barr Hill online — Caledonia Spirits\' Vermont gin finished with raw honey instead of a standard botanical bittering agent. Free on $300+.',
       hook: 'Barr Hill, distilled by Caledonia Spirits in Vermont, finishes its gin with raw honey rather than a typical bittering botanical — a distinctive approach that gives the spirit a soft, floral sweetness alongside its juniper base.',
+      faqs: [{ question: 'Does Barr Hill gin taste sweet?', answer: 'It has a noticeable but subtle honey sweetness rather than an overtly sugary taste — the raw honey rounds out and softens the juniper base rather than dominating it, so it still reads as a genuine gin rather than a liqueur.' }],
     }),
   },
   {
@@ -1081,6 +1088,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Beefeater London Dry Gin — Direct Allocations',
       metaDescription: 'Buy Beefeater gin online — the classic nine-botanical London Dry recipe, distilled in London since 1863. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Beefeater has used the same nine-botanical recipe since 1863, built on juniper, citrus peel, and coriander seed — and unlike most "London Dry" gins, it is still genuinely distilled within London city limits.',
+      faqs: [{ question: 'Is Beefeater actually distilled in London?', answer: 'Yes — Beefeater is one of the few remaining gins genuinely distilled within London city limits, unlike most "London Dry" gins which can legally be made anywhere in the world under that production method.' }],
     }),
   },
   {
@@ -1091,6 +1099,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Bluecoat American Dry Gin — Direct Allocations',
       metaDescription: 'Buy Bluecoat online — Philadelphia Distilling’s organic-citrus American Dry gin, zestier than a classic London Dry. Direct allocations, free $300+.',
       hook: 'Philadelphia Distilling produces Bluecoat with organic citrus peels for a zestier, brighter profile than traditional London Dry gin, using all-organic botanicals.',
+      faqs: [{ question: 'Is Bluecoat gin organic?', answer: 'Yes — Bluecoat is distilled from 100% certified organic botanicals, including its signature American citrus peels, distilled in small batches in hand-hammered copper pot stills in Philadelphia.' }],
     }),
   },
   {
@@ -1115,6 +1124,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: "Broker's London Dry Gin — Direct Allocations",
       metaDescription: "Buy Broker's online — a classic ten-botanical English London Dry recipe. Direct allocations at Aged & Amber. Free shipping on $300+.",
       hook: "Broker's follows a classic English ten-botanical recipe, keeping juniper firmly at the center alongside coriander and orris root — instantly recognisable for its miniature bowler-hat bottle topper.",
+      faqs: [{ question: "What's with the bowler hat on Broker's gin bottles?", answer: "The miniature bowler hat sitting on the bottle's neck is a nod to the classic City of London stockbroker's uniform, tying back to the brand's name and English heritage." }],
     }),
   },
   {
@@ -1125,6 +1135,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: "Gordon's London Dry Gin — Direct Allocations",
       metaDescription: "Buy Gordon's online — the world's best-selling London Dry gin, distilled to the same recipe since 1769. Direct allocations, free on $300+.",
       hook: "Gordon's has used the same juniper-heavy recipe since 1769, and is the world's best-selling London Dry gin — a no-frills, sharply botanical everyday pour built for classic cocktails.",
+      faqs: [{ question: "Is Gordon's the world's best-selling gin?", answer: "Gordon's is widely cited as the world's best-selling London Dry gin, with a recipe unchanged since Alexander Gordon founded the brand in London in 1769." }],
     }),
   },
   {
@@ -1135,6 +1146,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Gray Whale Gin — California Coastal Botanical Allocations',
       metaDescription: 'Buy Gray Whale gin online — California craft gin built around coastal botanicals. Direct allocations at Aged & Amber. Free shipping on $300+.',
       hook: 'Gray Whale Gin is distilled in California around a botanical bill that draws on the state\'s Pacific coastline, giving it a distinctive regional character among American craft gins.',
+      faqs: [{ question: 'What makes Gray Whale gin "coastal"?', answer: 'Golden State Distillery forages coastal botanicals like kelp and sage alongside traditional juniper, giving Gray Whale a savory, maritime character distinct from citrus-forward gin styles.' }],
     }),
   },
   {
@@ -1145,6 +1157,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Ki No Bi Kyoto Dry Gin — Direct Allocations',
       metaDescription: 'Buy Ki No Bi gin online — Kyoto Distillery\'s Japanese gin, built from six botanical categories including yuzu and gyokuro tea. Direct allocations.',
       hook: 'Ki No Bi is distilled by Kyoto Distillery from six categories of Japanese botanicals — including yuzu, gyokuro green tea, and sansho pepper — assembled through a multi-still blending process unique to the brand.',
+      faqs: [{ question: 'What does "Ki No Bi" mean?', answer: '"Ki No Bi" translates roughly to "the essence of beauty" in Japanese — reflecting the brand\'s focus on Kyoto-sourced water and traditional Japanese botanicals distilled separately across six categories before blending.' }],
     }),
   },
   {
@@ -1155,6 +1168,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Malfy Gin — Con Arancia & Con Limone Allocations',
       metaDescription: 'Buy Malfy online — Con Arancia (Sicilian blood orange) and Con Limone (Amalfi Coast lemon) Italian gin. Direct allocations, free on $300+.',
       hook: 'Malfy is distilled in Moncalieri, Italy, and built around real Italian citrus — Con Arancia layers in Sicilian blood orange, while Con Limone uses lemons from the Amalfi Coast, both atop a juniper-forward base.',
+      faqs: [{ question: 'Is Malfy gin sweet?', answer: 'Malfy leans juicy and citrus-forward rather than sugary-sweet — Con Arancia carries real blood orange character with a bittersweet edge, while Con Limone is bright and tart rather than sweet.' }],
     }),
   },
   {
@@ -1165,6 +1179,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'No. 3 London Dry Gin — Direct Allocations',
       metaDescription: 'Buy No. 3 online — Berry Bros. & Rudd\'s six-botanical London Dry, precision-built around juniper, citrus, and cardamom. Direct allocations.',
       hook: 'No. 3, produced for the historic wine and spirits merchant Berry Bros. & Rudd, pares its recipe down to just six botanicals, keeping juniper, citrus, and cardamom in sharp, uncluttered focus.',
+      faqs: [{ question: 'Why is it called "No. 3"?', answer: 'No. 3 St James\'s Street is the historic London address of Berry Bros. & Rudd, the wine and spirits merchant founded in 1698 that commissioned the gin — the name is a direct nod to the shop\'s address.' }],
     }),
   },
   {
@@ -1186,6 +1201,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Sipsmith London Dry Gin — Direct Allocations',
       metaDescription: 'Buy Sipsmith online — London\'s first new copper-pot gin distillery in nearly 200 years, classic juniper-citrus profile. Direct allocations.',
       hook: 'Sipsmith was the first new copper-pot gin distillery to open in London in nearly 200 years, producing a rounded, classic juniper-and-citrus London Dry.',
+      faqs: [{ question: 'What does "Sipsmith" mean?', answer: 'The name combines "sip" (how the founders wanted their gin enjoyed) with "smith" (a nod to traditional craftsmanship) — their copper pot still is nicknamed "Prudence."' }],
     }),
   },
   {
@@ -1196,6 +1212,7 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'St. George Terroir Gin — Douglas Fir Forest Allocations',
       metaDescription: 'Buy St. George online — Terroir gin built on Douglas fir, bay laurel, and sage instead of typical citrus-forward botanicals. Direct allocations.',
       hook: 'St. George Spirits\' Terroir gin evokes a Northern California forest walk with Douglas fir, bay laurel, and sage in place of the citrus-forward botanicals most gins lean on.',
+      faqs: [{ question: 'Where does the Douglas fir in Terroir gin come from?', answer: 'St. George Spirits wildcrafts Douglas fir and California bay laurel from a Mendocino County forest, harvested seasonally as part of local fire-abatement work, alongside ten additional botanicals.' }],
     }),
   },
   {
@@ -1204,8 +1221,9 @@ export const BRAND_HUBS: BrandHub[] = [
       brand: 'Whitley Neill', categoryLabel: 'Botanical Gin',
       titleTag: 'Whitley Neill — Raspberry Gin',
       h1: 'Whitley Neill Raspberry Gin — Direct Allocations',
-      metaDescription: 'Buy Whitley Neill online — ripe raspberry layered over juniper and South African botanicals like baobab. Direct allocations, free on $300+.',
-      hook: 'Whitley Neill layers ripe raspberry over a juniper base alongside South African botanicals like baobab, giving it a fruity, distinctive character among British-distilled gins.',
+      metaDescription: 'Buy Whitley Neill online — Scottish raspberries layered over a classic nine-botanical juniper base. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Whitley Neill layers ripe Scottish raspberries over a juniper, licorice, and citrus base, giving it a fruity, distinctive character — part of a wider range that includes baobab in its original flagship expression.',
+      faqs: [{ question: 'Does Whitley Neill Raspberry gin contain baobab?', answer: 'No — baobab is a signature botanical in Whitley Neill\'s Original London Dry expression, but the Raspberry variant\'s actual botanical bill is juniper, coriander, cassia, orris root, angelica root, licorice, sweet orange, lemon, and raspberry.' }],
     }),
   },
 
