@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = PRODUCTS.find((p) => p.slug === slug);
   if (!product) return {};
   return {
-    title: `${product.name} — ${SITE.currencySymbol}${product.price}`,
+    title: `${product.name} — Buy Online`,
     description: product.shortDescription,
     alternates: { canonical: `https://${SITE.domain}/shop/${product.category}/${product.slug}/` },
     openGraph: { images: product.images },

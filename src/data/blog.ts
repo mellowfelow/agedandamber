@@ -2850,4 +2850,106 @@ Yes, more than casual drinkers often assume — while vodka is defined by neutra
       { question: "What is the best vodka for a Martini?", answer: "A clean, reliably neutral vodka like Tito's or Grey Goose works best for a Vodka Martini — the goal is smoothness that won't clash with the vermouth, rather than a highly distinctive individual character." },
     ],
   },
+  {
+    slug: 'what-is-rum-made-from',
+    title: 'What Is Rum Made From? A Guide to Molasses, Cane Juice & Distillation',
+    excerpt: 'Rum starts with sugarcane, not grain — here\'s how molasses and fresh cane juice become everything from crisp white rum to rich, barrel-aged dark rum.',
+    content: `
+# What Is Rum Made From? A Guide to Molasses, Cane Juice & Distillation
+
+Unlike whiskey (grain) or tequila (agave), rum starts with sugarcane — but exactly which part of the plant, and how it's fermented and distilled, is what separates a light Puerto Rican white rum from a rich, funky Jamaican pot-still rum.
+
+## The Two Real Starting Materials
+
+**Molasses** is the base for the vast majority of the world's rum. It's the thick, dark syrup left over after sugarcane juice has been boiled down and crystallized sugar extracted — essentially a byproduct of the sugar industry. Molasses-based rum is what you'll find behind most Caribbean, Latin American, and mass-market brands.
+
+**Fresh cane juice** (sometimes called *rhum agricole*, especially in French-speaking islands like Martinique) skips the sugar-refining step entirely and ferments the cane's juice directly. This produces a grassier, more vegetal, more overtly "sugarcane-tasting" spirit — a noticeably different starting point from molasses rum, even before distillation shapes the final flavor.
+
+## Fermentation: Where Style Starts to Diverge
+
+Both molasses and cane juice are diluted with water and fermented with yeast, typically for 24 hours to two weeks. Faster fermentations tend to produce lighter, cleaner rum; longer, wilder fermentations — particularly common in Jamaica — develop intense fruity, funky esters that define that country's famously pungent rum style.
+
+## Distillation: Column Still vs. Pot Still
+
+This is the second major fork in rum production, alongside molasses vs. cane juice:
+
+- **Column stills** run continuously and produce a lighter, cleaner, higher-proof spirit — the backbone of most white rum and many blended dark rums.
+- **Pot stills** run in batches and retain more of the fermented wash's character — heavier, more textured, more aromatically complex. Jamaican and Guyanese Demerara rums lean heavily on pot distillation, or a blend of both.
+
+Many rum houses blend column-still and pot-still spirit together, using the column still for a clean base and the pot still for character and depth.
+
+## Aging: Where Color and Complexity Come From
+
+Freshly distilled rum is clear. Color and much of the flavor complexity most people associate with "dark rum" comes entirely from barrel aging — typically in used bourbon barrels, though some producers use ex-cognac or ex-sherry casks. There's no legal minimum aging requirement for rum in most producing countries (unlike Scotch's three-year rule), so age statements vary widely in what they actually guarantee.
+
+**A note on color:** some producers add caramel coloring to standardize the look of a blend across batches — it's legal and common, but means color alone isn't a reliable guide to how long a rum was actually aged.
+
+## Why This Matters When You're Choosing a Bottle
+
+Knowing whether a rum is molasses-based or cane-juice-based, column- or pot-distilled, tells you more about what's actually in the glass than the color or the word "dark" on the label. A cane-juice rhum agricole and a heavily pot-distilled Jamaican rum can both be "unaged" and clear, yet taste worlds apart.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Rum Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '5 min read',
+    image: '/images/categories/rum.webp',
+    tags: ['Rum', 'Rum Education', 'Distillation', 'Molasses'],
+    faqs: [
+      { question: 'Is rum made from sugar or molasses?', answer: 'Most rum is made from molasses, the syrupy byproduct left after sugarcane juice is boiled down and crystallized sugar is extracted. A smaller category, rhum agricole, is made from fresh sugarcane juice instead, giving a grassier, more vegetal character.' },
+      { question: 'What gives dark rum its color?', answer: 'Barrel aging is the main source of color and complexity in dark rum, typically in used bourbon barrels. Some producers also add caramel coloring to keep a blend\'s appearance consistent across batches, so color alone isn\'t a reliable guide to how long a rum was aged.' },
+    ],
+  },
+  {
+    slug: 'what-is-gin-made-from',
+    title: 'What Is Gin Made From? Botanicals, Neutral Spirit & the London Dry Method',
+    excerpt: 'Gin starts as a neutral spirit redistilled or infused with juniper and other botanicals — here\'s how London Dry, distilled, and compound gin actually differ.',
+    content: `
+# What Is Gin Made From? Botanicals, Neutral Spirit & the London Dry Method
+
+Gin's defining ingredient isn't grain or grape — it's juniper. Every legally recognized gin starts as a neutral spirit and is then flavored with juniper as the dominant botanical, alongside a supporting cast that can run from a handful of ingredients to dozens.
+
+## The Base Spirit
+
+Gin begins life as a neutral spirit distilled from grain, grapes, or occasionally other sugars — at this stage it's essentially unflavored, similar to vodka. What happens next is what actually makes it gin.
+
+## Juniper, and Everything Else
+
+By legal definition (in both the US and EU), juniper berries must be the predominant flavor in gin. Beyond that baseline, distillers build out a botanical recipe that typically includes:
+
+- **Coriander seed** — citrusy, slightly spicy, the most common secondary botanical after juniper
+- **Angelica root** — earthy, and thought to help bind the other flavors together
+- **Citrus peel** — orange, lemon, or grapefruit for brightness
+- **Orris root** — floral, and another common binding agent
+
+From there, individual brands add anything from cucumber and rose (Hendrick's) to 47 different botanicals sourced regionally (Monkey 47) to build a distinctive house style.
+
+## Three Real Production Methods
+
+**Distilled gin** (which includes London Dry as its driest, most regulated subcategory) redistills the neutral spirit together with all its botanicals present during distillation. Nothing is added afterward except water, and — for London Dry specifically — a small, tightly limited amount of sugar. This is the classic, juniper-forward style behind a Martini or Gin & Tonic.
+
+**Compound gin** skips redistillation entirely — botanicals (or their extracted oils) are simply added to a neutral spirit and mixed, similar to how a liqueur is made. It's a faster, cheaper method, generally producing a less integrated, more one-dimensional flavor than distilled gin.
+
+**Infused or "distilled and infused" gin** — Hendrick's rose and cucumber, for example — redistills the base botanicals as normal, then infuses additional flavorings afterward. This isn't permitted under the stricter London Dry rules, since London Dry allows nothing added post-distillation beyond water and a touch of sugar.
+
+## What "London Dry" Actually Means
+
+It's worth clearing up a common misconception: **London Dry is a production method, not a place.** A London Dry gin can legally be distilled anywhere in the world — Beefeater is a rare exception that's actually still made in London — as long as it follows the method: all botanicals present during distillation, nothing added afterward, and a minimum 37.5% ABV.
+
+## Why This Matters When You're Choosing a Bottle
+
+A London Dry will always taste crisp and juniper-forward by design. A compound gin can taste flatter or more artificial, since the botanicals were never redistilled into the spirit. And an infused gin like Hendrick's sits in its own lane — botanically distilled, but deliberately outside London Dry's stricter rules, which is exactly what gives it room for its rose-and-cucumber signature.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Gin Education',
+    date: 'August 24, 2026',
+    isoDate: '2026-08-24',
+    readTime: '5 min read',
+    image: '/images/categories/gin.webp',
+    tags: ['Gin', 'Gin Education', 'London Dry', 'Botanicals'],
+    faqs: [
+      { question: 'Does London Dry gin have to be made in London?', answer: 'No — "London Dry" is a legally defined production method, not a location. It can be distilled anywhere in the world, as long as every botanical is added during distillation and nothing is added afterward except a small amount of water and, rarely, a touch of sugar.' },
+      { question: 'What is the difference between distilled gin and compound gin?', answer: 'Distilled gin redistills the neutral spirit together with its botanicals, integrating the flavors into the spirit itself. Compound gin simply mixes botanicals or botanical extracts into a neutral spirit without redistilling, generally producing a flatter, less integrated flavor.' },
+    ],
+  },
 ];
