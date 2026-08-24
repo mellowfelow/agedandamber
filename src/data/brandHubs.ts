@@ -1049,6 +1049,147 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Drumshanbo Gunpowder is an Irish gin infused with gunpowder tea alongside citrus and juniper, distilled in a copper pot still nicknamed "Christina" at the small-batch Shed Distillery in County Leitrim.',
     }),
   },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'barr-hill', brandKeywords: ['Barr Hill'], name: 'Barr Hill',
+    seo: brandSeo({
+      brand: 'Barr Hill', categoryLabel: 'Craft Gin',
+      titleTag: 'Barr Hill — Raw Honey Gin',
+      h1: 'Barr Hill Gin — Raw Honey-Finished Vermont Allocations',
+      metaDescription: 'Buy Barr Hill online — Vermont craft gin finished with raw honey instead of a standard botanical bittering agent. Direct allocations, free $300+.',
+      hook: 'Barr Hill, distilled by Caledonia Spirits in Vermont, finishes its gin with raw honey rather than a typical bittering botanical — a distinctive approach that gives the spirit a soft, floral sweetness alongside its juniper base.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'beefeater', brandKeywords: ['Beefeater'], name: 'Beefeater',
+    seo: brandSeo({
+      brand: 'Beefeater', categoryLabel: 'London Dry Gin',
+      titleTag: 'Beefeater — London Dry Gin',
+      h1: 'Beefeater London Dry Gin — Direct Allocations',
+      metaDescription: 'Buy Beefeater online — the classic nine-botanical London Dry recipe, distilled in London since 1863. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Beefeater has used the same nine-botanical recipe since 1863, built on juniper, citrus peel, and coriander seed — and unlike most "London Dry" gins, it is still genuinely distilled within London city limits.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'bluecoat', brandKeywords: ['Bluecoat'], name: 'Bluecoat',
+    seo: brandSeo({
+      brand: 'Bluecoat', categoryLabel: 'American Dry Gin',
+      titleTag: 'Bluecoat — American Dry Gin',
+      h1: 'Bluecoat American Dry Gin — Direct Allocations',
+      metaDescription: 'Buy Bluecoat online — Philadelphia Distilling’s organic-citrus American Dry gin, zestier than a classic London Dry. Direct allocations, free $300+.',
+      hook: 'Philadelphia Distilling produces Bluecoat with organic citrus peels for a zestier, brighter profile than traditional London Dry gin, using all-organic botanicals.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'bombay-sapphire', brandKeywords: ['Bombay Sapphire'], name: 'Bombay Sapphire',
+    seo: brandSeo({
+      brand: 'Bombay Sapphire', categoryLabel: 'London Dry Gin',
+      titleTag: 'Bombay Sapphire — London Dry Gin',
+      h1: 'Bombay Sapphire London Dry Gin — Direct Allocations',
+      metaDescription: 'Buy Bombay Sapphire online — ten botanicals vapor-infused for a light, balanced London Dry. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Bombay Sapphire passes vapor through a basket of ten botanicals rather than boiling them directly, distilled at Laverstoke Mill in England — a lighter, more delicately blended profile than most London Dry gins.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'brokers', brandKeywords: ["Broker's", 'Brokers'], name: "Broker's",
+    seo: brandSeo({
+      brand: "Broker's", categoryLabel: 'London Dry Gin',
+      titleTag: "Broker's — London Dry Gin",
+      h1: "Broker's London Dry Gin — Direct Allocations",
+      metaDescription: "Buy Broker's online — a classic ten-botanical English London Dry recipe. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: "Broker's follows a classic English ten-botanical recipe, keeping juniper firmly at the center alongside coriander and orris root — instantly recognisable for its miniature bowler-hat bottle topper.",
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'gordons', brandKeywords: ["Gordon's", 'Gordons'], name: "Gordon's",
+    seo: brandSeo({
+      brand: "Gordon's", categoryLabel: 'London Dry Gin',
+      titleTag: "Gordon's — London Dry Gin",
+      h1: "Gordon's London Dry Gin — Direct Allocations",
+      metaDescription: "Buy Gordon's online — the world's best-selling London Dry gin, distilled to the same recipe since 1769. Direct allocations, free on $300+.",
+      hook: "Gordon's has used the same juniper-heavy recipe since 1769, and is the world's best-selling London Dry gin — a no-frills, sharply botanical everyday pour built for classic cocktails.",
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'gray-whale', brandKeywords: ['Gray Whale'], name: 'Gray Whale',
+    seo: brandSeo({
+      brand: 'Gray Whale', categoryLabel: 'Craft Gin',
+      titleTag: 'Gray Whale — California Coastal Gin',
+      h1: 'Gray Whale Gin — California Coastal Botanical Allocations',
+      metaDescription: 'Buy Gray Whale online — California craft gin built around coastal botanicals. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Gray Whale Gin is distilled in California around a botanical bill that draws on the state\'s Pacific coastline, giving it a distinctive regional character among American craft gins.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'ki-no-bi', brandKeywords: ['Ki No Bi', 'KiNoBi'], name: 'Ki No Bi',
+    seo: brandSeo({
+      brand: 'Ki No Bi', categoryLabel: 'Japanese Botanical Gin',
+      titleTag: 'Ki No Bi — Kyoto Dry Gin',
+      h1: 'Ki No Bi Kyoto Dry Gin — Direct Allocations',
+      metaDescription: 'Buy Ki No Bi online — Kyoto Distillery\'s Japanese gin, built from six botanical categories including yuzu and gyokuro tea. Direct allocations.',
+      hook: 'Ki No Bi is distilled by Kyoto Distillery from six categories of Japanese botanicals — including yuzu, gyokuro green tea, and sansho pepper — assembled through a multi-still blending process unique to the brand.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'malfy', brandKeywords: ['Malfy'], name: 'Malfy',
+    seo: brandSeo({
+      brand: 'Malfy', categoryLabel: 'Italian Gin',
+      titleTag: 'Malfy — Con Arancia & Con Limone Gin',
+      h1: 'Malfy Gin — Con Arancia & Con Limone Allocations',
+      metaDescription: 'Buy Malfy online — Con Arancia (Sicilian blood orange) and Con Limone (Amalfi Coast lemon) Italian gin. Direct allocations, free on $300+.',
+      hook: 'Malfy is distilled in Moncalieri, Italy, and built around real Italian citrus — Con Arancia layers in Sicilian blood orange, while Con Limone uses lemons from the Amalfi Coast, both atop a juniper-forward base.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'no-3', brandKeywords: ['No. 3', 'No 3'], name: 'No. 3',
+    seo: brandSeo({
+      brand: 'No. 3', categoryLabel: 'London Dry Gin',
+      titleTag: 'No. 3 — Six-Botanical London Dry Gin',
+      h1: 'No. 3 London Dry Gin — Direct Allocations',
+      metaDescription: 'Buy No. 3 online — Berry Bros. & Rudd\'s six-botanical London Dry, precision-built around juniper, citrus, and cardamom. Direct allocations.',
+      hook: 'No. 3, produced for the historic wine and spirits merchant Berry Bros. & Rudd, pares its recipe down to just six botanicals, keeping juniper, citrus, and cardamom in sharp, uncluttered focus.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'nolets', brandKeywords: ["Nolet's", 'Nolets'], name: "Nolet's",
+    seo: brandSeo({
+      brand: "Nolet's", categoryLabel: 'Botanical Gin',
+      titleTag: "Nolet's — Silver & Reserve Gin",
+      h1: "Nolet's Gin — Silver & Ultra-Rare Reserve Allocations",
+      metaDescription: "Buy Nolet's online — Silver, layered with Turkish rose and white peach, and the ultra-rare annual Reserve release. Direct allocations, free $300+.",
+      hook: "Nolet's is distilled by the same Dutch family behind Ketel One vodka — Silver layers Turkish rose, white peach, and raspberry over a juniper base, while the limited annual Reserve release sits at the very top of the ultra-premium gin category.",
+      faqs: [{ question: 'Is Nolet\'s related to Ketel One?', answer: 'Yes — both are produced by the Nolet family, who have distilled spirits in Schiedam, Netherlands since 1691. Nolet\'s Gin and Ketel One Vodka share the same distilling heritage but are distinct, separately crafted products.' }],
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'sipsmith', brandKeywords: ['Sipsmith'], name: 'Sipsmith',
+    seo: brandSeo({
+      brand: 'Sipsmith', categoryLabel: 'London Dry Gin',
+      titleTag: 'Sipsmith — London Dry Gin',
+      h1: 'Sipsmith London Dry Gin — Direct Allocations',
+      metaDescription: 'Buy Sipsmith online — London\'s first new copper-pot gin distillery in nearly 200 years, classic juniper-citrus profile. Direct allocations.',
+      hook: 'Sipsmith was the first new copper-pot gin distillery to open in London in nearly 200 years, producing a rounded, classic juniper-and-citrus London Dry.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'st-george', brandKeywords: ['St. George', 'St George'], name: 'St. George',
+    seo: brandSeo({
+      brand: 'St. George', categoryLabel: 'Craft Gin',
+      titleTag: 'St. George — Terroir Gin',
+      h1: 'St. George Terroir Gin — Douglas Fir Forest Allocations',
+      metaDescription: 'Buy St. George online — Terroir gin built on Douglas fir, bay laurel, and sage instead of typical citrus-forward botanicals. Direct allocations.',
+      hook: 'St. George Spirits\' Terroir gin evokes a Northern California forest walk with Douglas fir, bay laurel, and sage in place of the citrus-forward botanicals most gins lean on.',
+    }),
+  },
+  {
+    categorySlug: 'artisanal-gin', hubSlug: 'whitley-neill', brandKeywords: ['Whitley Neill'], name: 'Whitley Neill',
+    seo: brandSeo({
+      brand: 'Whitley Neill', categoryLabel: 'Botanical Gin',
+      titleTag: 'Whitley Neill — Raspberry Gin',
+      h1: 'Whitley Neill Raspberry Gin — Direct Allocations',
+      metaDescription: 'Buy Whitley Neill online — ripe raspberry layered over juniper and South African botanicals like baobab. Direct allocations, free on $300+.',
+      hook: 'Whitley Neill layers ripe raspberry over a juniper base alongside South African botanicals like baobab, giving it a fruity, distinctive character among British-distilled gins.',
+    }),
+  },
 
   // ─── COGNAC & BRANDY ───────────────────────────────────────────
   {
