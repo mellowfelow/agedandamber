@@ -3087,6 +3087,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Cream & Irish Whiskey Blend",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "baileys irish cream",
+      secondaryKeywords: ["baileys original irish cream", "buy baileys irish cream", "baileys irish cream liqueur"],
+    },
   },
   {
     id: 'prod-irish-02',
@@ -3111,6 +3116,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Bushmills, Co. Antrim, Ireland",
+    seo: {
+      primaryKeyword: "bushmills 10 year",
+      secondaryKeywords: ["bushmills whiskey", "buy bushmills online", "bushmills vs jameson"],
+    },
   },
   {
     id: 'prod-irish-03',
@@ -3135,6 +3144,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Sherry Oak",
     distilleryLocation: "Bushmills, Co. Antrim, Ireland",
+    seo: {
+      primaryKeyword: "bushmills black bush",
+      secondaryKeywords: ["bushmills whiskey", "bushmills original", "who makes bushmills"],
+    },
   },
   {
     id: 'prod-irish-04',
@@ -3159,6 +3172,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Bushmills, Co. Antrim, Ireland",
+    seo: {
+      primaryKeyword: "bushmills original",
+      secondaryKeywords: ["bushmills whiskey", "bushmills distillery northern ireland"],
+    },
   },
   {
     id: 'prod-irish-05',
@@ -3183,6 +3200,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Cream & Whiskey Blend",
     distilleryLocation: "Co. Tipperary, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "carolans irish cream",
+      secondaryKeywords: ["carolans irish cream liqueur", "buy carolans irish cream", "carolans vs baileys"],
+    },
   },
   {
     id: 'prod-irish-06',
@@ -3207,6 +3229,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Riverstown, Co. Louth, Ireland",
+    seo: {
+      primaryKeyword: "connemara peated whisky",
+      secondaryKeywords: ["connemara single malt", "buy connemara whisky", "peated irish whiskey", "cooley distillery connemara"],
+    },
   },
   {
     id: 'prod-irish-07',
@@ -3231,6 +3257,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Cream & Whiskey Blend",
     distilleryLocation: "Co. Cork, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "five farms irish cream",
+      secondaryKeywords: ["five farms irish cream liqueur", "buy five farms irish cream", "five farms cream liqueur"],
+    },
   },
   {
     id: 'prod-irish-08',
@@ -3255,6 +3286,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "green spot whiskey",
+      secondaryKeywords: ["green spot chateau leoville barton", "green spot chateau montelena", "buy green spot whiskey"],
+    },
   },
   {
     id: 'prod-irish-09',
@@ -3279,6 +3314,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Double-Charred Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "jameson black barrel",
+      secondaryKeywords: ["jameson black barrel price", "jameson whiskey"],
+    },
   },
   {
     id: 'prod-irish-10',
@@ -3303,6 +3342,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "jameson whiskey",
+      secondaryKeywords: ["jameson original", "jameson triple distilled", "buy jameson whiskey online"],
+    },
   },
   {
     id: 'prod-irish-11',
@@ -3327,6 +3370,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      // Supporting/T3 tier term (3,600/41), surfaced only in the source's Batch 4 supporting pool — no dedicated brand page in the source dataset. Real term, worth a deeper future SEMrush pull.
+      primaryKeyword: "midleton very rare",
+      secondaryKeywords: ["midleton distillery", "single pot still whiskey", "irish whiskey"],
+    },
   },
   {
     id: 'prod-irish-12',
@@ -3351,6 +3399,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Co. Cork, Ireland",
+    seo: {
+      // Only a bare LSI mention in the source (no dedicated Vol/KD) — primary is the category head term, matching the source's own treatment of this product.
+      primaryKeyword: "irish whiskey",
+      secondaryKeywords: ["paddy irish whiskey", "best irish whiskey brands", "cheap irish whiskey"],
+    },
   },
   {
     id: 'prod-irish-13',
@@ -3375,6 +3428,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Virgin & Ex-Bourbon Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "powers john lane",
+      secondaryKeywords: ["powers whiskey", "irish pot still powers", "buy powers whiskey"],
+    },
   },
   {
     id: 'prod-irish-14',
@@ -3399,6 +3456,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "West Cork, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "proper no twelve whiskey",
+      secondaryKeywords: ["proper twelve irish whiskey", "buy proper no 12", "proper no twelve price"],
+    },
   },
   {
     id: 'prod-irish-15',
@@ -3423,6 +3485,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "redbreast 12",
+      secondaryKeywords: ["redbreast 12 cask strength", "buy redbreast 12 online", "redbreast pot still character"],
+    },
   },
   {
     id: 'prod-irish-16',
@@ -3447,6 +3513,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "redbreast 15",
+      secondaryKeywords: ["redbreast 15 cask strength", "who makes redbreast"],
+    },
   },
   {
     id: 'prod-irish-17',
@@ -3471,6 +3541,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Lustau Oloroso Sherry Butts",
     distilleryLocation: "Midleton, Co. Cork, Ireland",
+    seo: {
+      primaryKeyword: "redbreast lustau",
+      secondaryKeywords: ["redbreast dream cask", "redbreast single cask", "midleton distillery redbreast"],
+    },
   },
   {
     id: 'prod-irish-18',
@@ -3495,6 +3569,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Virgin, Seasoned & Ex-Bourbon Oak",
     distilleryLocation: "Slane, Co. Meath, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "slane irish whiskey",
+      secondaryKeywords: ["slane whiskey", "slane triple casked", "buy slane whiskey"],
+    },
   },
   {
     id: 'prod-irish-19',
@@ -3519,6 +3598,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Varied Wine Casks",
     distilleryLocation: "Newmarket, Dublin, Ireland",
+    seo: {
+      primaryKeyword: "teeling single malt",
+      secondaryKeywords: ["teeling whiskey", "teeling trinity", "buy teeling whiskey online"],
+    },
   },
   {
     id: 'prod-irish-20',
@@ -3543,6 +3626,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Rum Casks",
     distilleryLocation: "Newmarket, Dublin, Ireland",
+    seo: {
+      primaryKeyword: "teeling small batch",
+      secondaryKeywords: ["teeling whiskey", "who makes teeling"],
+    },
   },
   {
     id: 'prod-irish-21',
@@ -3567,6 +3654,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Sherry Oak",
     distilleryLocation: "Bushmills, Co. Antrim, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "the sexton irish whiskey",
+      secondaryKeywords: ["sexton single malt", "buy the sexton whiskey", "the sexton whiskey price"],
+    },
   },
   {
     id: 'prod-irish-22',
@@ -3591,6 +3683,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Tullamore, Co. Offaly, Ireland",
+    seo: {
+      primaryKeyword: "tullamore dew",
+      secondaryKeywords: ["triple blend irish whiskey", "tullamore dew price", "tullamore dew vs jameson"],
+    },
   },
   {
     id: 'prod-irish-23',
@@ -3615,6 +3711,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Caribbean Rum Casks",
     distilleryLocation: "Tullamore, Co. Offaly, Ireland",
+    seo: {
+      primaryKeyword: "tullamore dew rum cask",
+      secondaryKeywords: ["tullamore dew xo", "tullamore dew irish whiskey"],
+    },
   },
   {
     id: 'prod-irish-b2-01',
@@ -3639,6 +3739,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Blended, Ex-Bourbon Casks",
     distilleryLocation: "County Louth, Ireland",
+    seo: {
+      // Source explicitly flags: use "2 gingers whiskey" not "2 gingers" — the bare head term pulls Indian restaurant noise.
+      primaryKeyword: "2 gingers whiskey",
+      secondaryKeywords: ["2 gingers irish whiskey", "two gingers whiskey", "2 gingers review", "big ginger", "2 gingers whiskey price"],
+    },
   },
   {
     id: 'prod-irish-b2-02',
@@ -3663,6 +3768,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Cream Liqueur, Irish Whiskey Base",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "baileys chocolate cream",
+      secondaryKeywords: ["baileys chocolate irish cream", "buy baileys chocolate liqueur", "baileys chocolat luxe"],
+    },
   },
   {
     id: 'prod-irish-b2-03',
@@ -3687,6 +3797,11 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Triple Distilled, Bourbon, Sherry and Madeira Casks",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      // "blue spot whiskey" carries the highest CPC ($1.62) in the entire Irish category — hub primary term, also used as this SKU's page primary.
+      primaryKeyword: "blue spot whiskey",
+      secondaryKeywords: ["blue spot", "blue spot irish whiskey", "blue spot whiskey price", "blue spot whisky"],
+    },
   },
   {
     id: 'prod-irish-b2-04',
@@ -3711,6 +3826,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Oloroso Sherry, Bourbon and Port Cask Finish",
     distilleryLocation: "County Antrim, Northern Ireland",
+    seo: {
+      primaryKeyword: "bushmills 16 year",
+      secondaryKeywords: ["bushmills causeway collection", "bushmills price"],
+    },
   },
   {
     id: 'prod-irish-b2-05',
@@ -3735,6 +3854,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Oloroso Sherry, Bourbon and Madeira Cask Finish",
     distilleryLocation: "County Antrim, Northern Ireland",
+    seo: {
+      primaryKeyword: "bushmills 21 year",
+      secondaryKeywords: ["bushmills causeway collection rum cask", "bushmills 30 year"],
+    },
   },
   {
     id: 'prod-irish-b2-06',
@@ -3759,6 +3882,10 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Single Malt Whiskey and Belgian White Chocolate",
     distilleryLocation: "County Meath, Ireland",
+    seo: {
+      primaryKeyword: "coole swan irish cream liqueur",
+      secondaryKeywords: ["coole swan irish cream", "coole swan", "buy coole swan", "coole swan vs baileys"],
+    },
   },
   {
     id: 'prod-irish-b2-07',
@@ -3783,6 +3910,10 @@ export const PRODUCTS: Product[] = [
     stock: 9,
     caskType: "Cask Strength, Ex-Bourbon and Sherry Casks",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      primaryKeyword: "jameson bow street 18 year",
+      secondaryKeywords: ["jameson 18 year", "jameson 18 price", "jameson distiller's safe"],
+    },
   },
   {
     id: 'prod-irish-b2-08',
@@ -3807,6 +3938,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Triple Distilled, Bourbon, Sherry and Málaga Casks",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      // No matching keyword for this exact SKU anywhere in the source dataset — falling back to the literal product name (not SEMrush-backed) paired with real Jameson-brand secondary terms.
+      primaryKeyword: "jameson triple triple",
+      secondaryKeywords: ["jameson triple distilled", "jameson whiskey", "jameson original"],
+    },
   },
   {
     id: 'prod-irish-b2-09',
@@ -3831,6 +3967,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Triple Distilled, Ex-Bourbon Casks",
     distilleryLocation: "County Antrim, Northern Ireland",
+    seo: {
+      primaryKeyword: "knappogue castle 12 year single malt irish whiskey",
+      secondaryKeywords: ["knappogue castle 12", "knappogue castle 12 year irish whiskey"],
+    },
   },
   {
     id: 'prod-irish-b2-10',
@@ -3855,6 +3995,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Single Pot Still, Bourbon and Oloroso Sherry Casks",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      primaryKeyword: "redbreast 21",
+      secondaryKeywords: ["redbreast 27", "redbreast dream cask port"],
+    },
   },
   {
     id: 'prod-irish-b2-11',
@@ -3879,6 +4023,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Ex-Bourbon, Calvados Cask Finish",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      // No exact keyword match for this SKU in the source dataset. The closest real term ("teeling 24 year") names the wrong age statement, so it isn't used here to avoid publishing an inaccurate age claim — falling back to the literal product name (not SEMrush-backed) paired with real Teeling-brand secondary terms.
+      primaryKeyword: "teeling 18 year",
+      secondaryKeywords: ["teeling brabazon", "jack teeling", "teeling distillery dublin"],
+    },
   },
   {
     id: 'prod-irish-b2-12',
@@ -3903,6 +4052,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Triple Distilled, Bourbon and Sherry Casks",
     distilleryLocation: "County Offaly, Ireland",
+    seo: {
+      primaryKeyword: "tullamore dew 12 year",
+      secondaryKeywords: ["tullamore dew 12 year irish whiskey", "tullamore dew irish whiskey 12 year"],
+    },
   },
   {
     id: 'prod-irish-b2-13',
@@ -3927,6 +4080,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Bourbon, Sherry and Malaga Wine Casks",
     distilleryLocation: "County Cork, Ireland",
+    seo: {
+      primaryKeyword: "yellow spot 12",
+      secondaryKeywords: ["yellow spot", "spot whiskey range", "mitchell and son whiskey"],
+    },
   },
 
   // JAPANESE
@@ -25552,6 +25709,10 @@ export const PRODUCTS: Product[] = [
     stock: 3,
     caskType: "Ex-bourbon casks, non-chill filtered",
     distilleryLocation: "Ireland",
+    seo: {
+      primaryKeyword: "knappogue castle 21",
+      secondaryKeywords: ["knappogue castle whiskey", "castle irish whiskey"],
+    },
   },
   {
     id: 'prod-japan-new-01',
