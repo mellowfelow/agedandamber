@@ -236,6 +236,32 @@ No wine blog posts exist yet. All 28 candidates below are sourced from real SEMr
 
 ---
 
+## CHAMPAGNE & SPARKLING WINE — 0 of ~19 core topics live
+
+No Champagne blog posts exist yet. All candidates below are sourced from real SEMrush data across three keyword-map docs (`keyword-map-champagne-a-l.md`, `-m-z.md`, `keyword-map-sparkling-wine.md`).
+
+- 🎯 **Does Champagne Go Bad? How Long It Lasts, Opened and Unopened** — ~10,700/mo combined, very low KD across the board, strong pillar-page candidate
+- 🎯 **How to Open Champagne Safely** — ~5,100/mo combined, genuinely useful safety angle (champagne corks cause real eye injuries)
+- 🎯 **Prosecco vs. Champagne: What's Actually Different?** — ~18,700/mo combined, single largest volume opportunity across the whole Champagne & Sparkling batch
+- 🎯 **Is Sparkling Wine the Same as Champagne?** — ~4,500/mo combined, very low KD
+- 🎯 **How Many Glasses Are in a Bottle of Champagne?** — ~3,500/mo combined, near-zero competition, natural party-planning hook
+- 🏷️ How to Pronounce Champagne Brand Names (Moët, Veuve Clicquot, Taittinger, Ruinart, Perrier-Jouët...) — ~5,000+/mo combined scattered across 5 brand exports, currently unserved by any product page
+- 🏷️ Champagne Vintage vs. Non-Vintage, Explained — supports Veuve Clicquot Vintage, Moët Grand Vintage, Krug Vintage
+- 🏷️ What Is Brut Champagne? A Guide to Champagne Sweetness Levels — ties to the Pommery brut-invention story and nearly every "Brut" product name in the batch
+- 🏷️ Blanc de Blancs vs. Blanc de Noirs, Explained — 5 stocked products use "Blanc de Blancs" in the name
+- 🏷️ What Does "Grand Cru" Mean in Champagne? — connects Billecart-Salmon, Henri Giraud, and G.H. Mumm RSRV product copy
+- 🏷️ What Is Dom Pérignon's Plénitude (P1/P2/P3)? — supports the P2 product page directly
+- 🏷️ How to Sabrage a Champagne Bottle (the Sword Trick) — 2,400/20, fun social/video-style content
+- 🎯 **What Is Cava? Spain's Answer to Champagne, Explained** — best available lever for the whole thin Cava subcategory
+- 🏷️ What Is Crémant? Champagne's French Cousin, Region by Region — genuine content gap, supports 4 stocked SKUs (Albert Bichot, Louis Bouillot, both Lucien Albrecht)
+- 🎯 **Why Is Korbel Called "Champagne" If It's From California?** — 12,100+2,900 combined, real regulatory story (2006 US–EU grandfather clause) doubling as wine-labeling education
+- 🎯 **Is Prosecco Sweet? A Guide to Brut, Extra Dry & Dry Styles** — very low KD relative to volume, supports 4+ Prosecco product pages
+- 🏷️ Prosecco Superiore DOCG vs. Prosecco DOC: Does the Label Matter? — differentiates Nino Franco/Santa Margherita from the 5 DOC-level Prosecco SKUs
+- 🎯 **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa, Explained** — ~40,000+/mo combined, largest single raw-volume opportunity in the whole Champagne & Sparkling batch
+- 🏷️ Sparkling Rosé Buying Guide: Dry vs. Sweet, and Where Each Style Comes From — supports all 5 non-Champagne Sparkling Rosé SKUs across 4 countries/styles
+
+---
+
 ## Summary counts
 
 | Category | Live | New gaps identified |
@@ -254,7 +280,8 @@ No wine blog posts exist yet. All 28 candidates below are sourced from real SEMr
 | NA Spirits | 1 | 2 |
 | Bar Essentials | 2 | 4 |
 | Fine Wine | 0 | 28 |
-| **Total** | **65 live** | **~100 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| Champagne & Sparkling Wine | 0 | 19 |
+| **Total** | **65 live** | **~119 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -271,5 +298,8 @@ No wine blog posts exist yet. All 28 candidates below are sourced from real SEMr
 11. **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** (~14,700 combined) — largest comparison cluster in the whole wine batch, zero content in a brand-new category
 12. **How to Choose a Cocktail Shaker** tier win for wine: **Is Dessert Wine the Same as Sweet Wine?** (~54,300 combined across 3 exact phrasings) — huge volume relative to KD
 13. **Is Chardonnay Sweet or Dry?** (~9,300 combined) — best single opportunity in Fine Wine, low KD throughout
+14. **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa** (~40,000+ combined) — largest single raw-volume opportunity in the entire Champagne & Sparkling batch
+15. **Prosecco vs. Champagne: What's Actually Different?** (~18,700 combined) — largest Champagne-category comparison cluster
+16. **Does Champagne Go Bad?** (~10,700 combined) — very low KD across the board, strong pillar-page candidate
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.
