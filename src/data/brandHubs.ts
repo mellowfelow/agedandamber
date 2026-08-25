@@ -33,10 +33,16 @@ export const BRAND_HUBS: BrandHub[] = [
     categorySlug: 'bourbon-whiskey', hubSlug: 'makers-mark', brandKeywords: ["Maker's Mark"], name: "Maker's Mark",
     seo: brandSeo({
       brand: "Maker's Mark", categoryLabel: 'Bourbon',
-      titleTag: "Maker's Mark — 46, Private Select & Cask Strength",
-      h1: "Maker's Mark Bourbon — 46, Private Select & Cask Strength Allocations",
-      metaDescription: "Buy Maker's Mark online — the wheated bourbon icon, plus 46, Private Select, and Cask Strength. Direct allocations at Aged & Amber. Free on $300+.",
+      titleTag: "Maker's Mark — 46, Kentucky Straight & Private Selection",
+      h1: "Maker's Mark Bourbon — 46, Kentucky Straight & Private Selection Allocations",
+      metaDescription: "Buy Maker's Mark online — the wheated bourbon icon, plus 46 and Private Selection. Direct allocations at Aged & Amber. Free on $300+.",
       hook: "Maker's Mark is a wheated Kentucky straight bourbon produced at Star Hill Farm in Loretto, Kentucky — one of the most recognised bourbon labels in the world. Using winter wheat instead of rye as the secondary grain, it's known for a soft, sweet, accessible character and its hand-dipped red wax seal.",
+      faqs: [
+        { question: 'Is Maker\'s Mark a wheated bourbon?', answer: 'Yes — Maker\'s Mark replaces rye with soft red winter wheat as the secondary grain in its mash bill. This gives it a sweeter, softer, and more approachable character compared to high-rye bourbons, and helped popularise the wheated style among everyday bourbon drinkers.' },
+        { question: 'What is Maker\'s 46?', answer: 'Maker\'s 46 is a premium expression of Maker\'s Mark finished with seared French oak staves inserted into the barrel for additional maturation. This adds more vanilla, caramel, and spice while keeping the smooth, wheated base character. It is bottled at 94 proof, four points higher than the standard Maker\'s Mark.' },
+        { question: 'What makes Maker\'s Mark different from other bourbons?', answer: 'Three things: the wheated mash bill (wheat replaces rye for a softer profile), the hand-dipped red wax seal (each bottle is individually dipped by hand at the distillery), and a rotated barrel programme that moves barrels within the warehouse during maturation for consistent flavour development.' },
+        { question: 'Who owns Maker\'s Mark?', answer: 'Maker\'s Mark is owned by Beam Suntory — the spirits division of Japan\'s Suntory Holdings. The Star Hill Farm Distillery in Loretto, Kentucky (a National Historic Landmark) has produced Maker\'s Mark since 1954.' },
+      ],
     }),
   },
   {
@@ -44,10 +50,16 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: 'Weller', categoryLabel: 'Bourbon',
       titleTag: 'Weller Bourbon — Antique 107, 12 Year & Full Proof',
-      h1: 'Weller Bourbon — Antique 107, 12 Year, Full Proof & Daniel Weller Allocations',
-      metaDescription: 'Buy Weller bourbon online — Antique 107, 12 Year, Full Proof, and the ultra-rare Daniel Weller Spelt Wheat. Direct allocations at Aged & Amber.',
+      h1: 'Weller Bourbon — Special Reserve, Antique 107, 12 Year, Full Proof & Daniel Weller Allocations',
+      metaDescription: 'Buy Weller bourbon online — Special Reserve, Antique 107, 12 Year, Full Proof, and the ultra-rare Daniel Weller Spelt Wheat. Direct allocations at Aged & Amber.',
       hook: 'Weller is Buffalo Trace’s allocated wheated bourbon line — the recipe that also underpins Pappy Van Winkle — prized for its soft, honeyed, easy-drinking wheated profile across expressions from Special Reserve up to Full Proof and single barrel picks.',
       transactionalCTA: 'Buy Weller bourbon online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      faqs: [
+        { question: 'What is Weller bourbon?', answer: 'Weller is a family of wheated bourbons from the Buffalo Trace Distillery in Frankfort, Kentucky — using the same wheat-forward mash bill as the legendary Pappy Van Winkle. The range includes Special Reserve, 12 Year, Full Proof, Antique 107, and the annual Buffalo Trace Antique Collection release, William Larue Weller.' },
+        { question: 'Is Weller the same mash bill as Pappy Van Winkle?', answer: 'Yes — Weller and Pappy Van Winkle share the same wheated mash bill from Buffalo Trace. The key differences are age and barrel selection: Pappy is aged significantly longer and drawn from the finest barrels, which is why Weller is often called the "poor man\'s Pappy."' },
+        { question: 'What is the difference between Weller 12 and Weller Full Proof?', answer: 'Weller 12 Year is aged 12 years and bottled at 90 proof for a smooth, mellow wheated character. Weller Full Proof is bottled at 114 proof — the proof it entered the barrel at — for a bolder, richer expression with more oak and spice.' },
+        { question: 'Why is Weller so hard to find?', answer: 'Weller\'s scarcity comes from three factors: it shares the Pappy Van Winkle mash bill, making it a sought-after proxy for buyers who can\'t find Pappy; Buffalo Trace allocates it in limited quantities; and demand for wheated bourbons has surged in recent years.' },
+      ],
     }),
   },
   {
@@ -58,7 +70,12 @@ export const BRAND_HUBS: BrandHub[] = [
       metaDescription: "Buy Blanton's bourbon online — Original, Gold, and the rare Straight From the Barrel. Can't find Blanton's near you? Ships to 45 states.",
       hook: "Blanton's Original Single Barrel, drawn from Buffalo Trace's high-rye Mash Bill #2, was the world's first modern single barrel bourbon when it launched in 1984 — recognisable by its iconic horse-and-jockey stopper.",
       transactionalCTA: "Can't find Blanton's near you? Aged & Amber ships allocated Blanton's Original, Gold, and Straight From the Barrel to 45 US states.",
-      faqs: [{ question: "Why is Blanton's so hard to find?", answer: "Blanton's is a heavily allocated release from Buffalo Trace — demand far outpaces the limited number of barrels selected for bottling each year, making it one of the most sought-after bourbons on the secondary and retail market alike." }],
+      faqs: [
+        { question: "What is Blanton's Bourbon?", answer: "Blanton's is the world's first commercially released single barrel bourbon, introduced in 1984 by the Buffalo Trace Distillery. Each bottle is drawn from a single cask and sealed with a metal stopper featuring a horse-and-jockey pose — collect all eight to spell 'BLANTON'S.'" },
+        { question: "Why is Blanton's so hard to find?", answer: "Blanton's is a heavily allocated release from Buffalo Trace — demand far outpaces the limited number of barrels selected for bottling each year, making it one of the most sought-after bourbons on the secondary and retail market alike." },
+        { question: "What are the Blanton's letters on the stopper?", answer: "Each Blanton's bottle features a metal stopper with one of eight different horse-and-jockey poses. On the bottom of each stopper is one letter spelling out 'BLANTON'S' — collecting all eight is a popular tradition among enthusiasts." },
+        { question: "What is the difference between Blanton's Original and Gold?", answer: "Original Single Barrel is bottled at 93 proof (46.5% ABV). Gold Edition is bottled at a higher 103 proof (51.5% ABV) for a richer, more intense profile. Straight From the Barrel is cask strength, typically around 130 proof and varying by barrel." },
+      ],
     }),
   },
   {
@@ -66,9 +83,14 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: "Angel's Envy", categoryLabel: 'Bourbon',
       titleTag: "Angel's Envy — Port Barrel Finish & Cask Strength",
-      h1: "Angel's Envy Bourbon — Port Barrel Finish, Cask Strength & Rye Allocations",
-      metaDescription: "Buy Angel's Envy online — port barrel finished bourbon, Cask Strength, and rye. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      h1: "Angel's Envy Bourbon — Port Barrel Finish & Cask Strength Allocations",
+      metaDescription: "Buy Angel's Envy online — port barrel finished bourbon and Cask Strength. Direct allocations at Aged & Amber. Free shipping on $300+.",
       hook: "Angel's Envy is a Louisville, Kentucky bourbon finished in ruby port wine barrels — a process pioneered by master distiller Lincoln Henderson. The port finishing adds distinctive dried fruit and sweetness to a classic wheated bourbon base.",
+      faqs: [
+        { question: "What makes Angel's Envy different from other bourbons?", answer: "Angel's Envy finishes its bourbon in port wine barrels after standard ageing — a non-traditional step not required by law. This adds layers of dried fruit, vanilla, and subtle sweetness, and it was one of the first mainstream bourbons to popularise the 'finished' bourbon category." },
+        { question: "Is Angel's Envy a good bourbon?", answer: "Angel's Envy is widely regarded as one of the most approachable and distinctive bourbons in its price range. The port barrel finish makes it uniquely smooth and fruit-forward, appealing to both bourbon veterans and newcomers." },
+        { question: "Who makes Angel's Envy?", answer: "Angel's Envy was founded in 2010 by master distiller Lincoln Henderson. The brand was acquired by Bacardi in 2015, and the Louisville distillery opened in 2016, producing the whiskey entirely on-site." },
+      ],
     }),
   },
   {
@@ -76,49 +98,66 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: 'Elijah Craig', categoryLabel: 'Bourbon',
       titleTag: 'Elijah Craig — Small Batch & Barrel Proof',
-      h1: 'Elijah Craig Bourbon — Small Batch, Barrel Proof & Toasted Barrel Allocations',
-      metaDescription: 'Buy Elijah Craig online — Small Batch, cask-strength Barrel Proof, Toasted Barrel, and the rare 18 Year. Direct allocations, free on $300+.',
+      h1: 'Elijah Craig Bourbon — Small Batch & Cask-Strength Barrel Proof Allocations',
+      metaDescription: 'Buy Elijah Craig online — Small Batch and cask-strength Barrel Proof bourbon. Direct allocations at Aged & Amber. Free on $300+.',
       hook: 'Elijah Craig is a Heaven Hill bourbon named for the Baptist minister often credited (informally) as the "father of bourbon." The Small Batch and cask-strength Barrel Proof releases are core allocated favourites among enthusiasts.',
+      faqs: [{ question: "What's the difference between Elijah Craig Small Batch and Barrel Proof?", answer: "Small Batch is bottled at a standard 94 proof for an approachable, everyday pour, while Barrel Proof is bottled straight from the barrel with nothing added or removed — typically well above 120 proof — for a more concentrated, cask-strength expression released in a handful of numbered batches each year." }],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'michters', brandKeywords: ["Michter's"], name: "Michter's",
     seo: brandSeo({
       brand: "Michter's", categoryLabel: 'Bourbon',
-      titleTag: "Michter's — US*1, 10 Year & Celebration",
-      h1: "Michter's Bourbon — US*1, 10 Year, Celebration Sour Mash & Toasted Barrel Allocations",
-      metaDescription: "Buy Michter's online — US*1, 10 Year, Celebration Sour Mash, and Toasted Barrel bourbon. Direct allocations at Aged & Amber. Free on $300+.",
-      hook: "Michter's is a Kentucky bourbon and rye producer known for its meticulous single barrel selection process and heat-cycled warehouses — the US*1 range and limited 10 Year and Celebration releases are consistently allocated.",
+      titleTag: "Michter's — US*1 Small Batch Bourbon",
+      h1: "Michter's US*1 Small Batch Bourbon — Direct Allocations",
+      metaDescription: "Buy Michter's online — the flagship US*1 Small Batch bourbon, hand-selected and heat-cycled for a smooth, rich profile. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Michter's is a Kentucky bourbon and rye producer known for its meticulous single barrel selection process and heat-cycled warehouses — the flagship US*1 Small Batch bourbon is non-chill filtered and never released before it's ready, regardless of age statement.",
+      faqs: [
+        { question: "What is Michter's US*1?", answer: "US*1 is Michter's core range — single barrel minimum releases of bourbon, rye, American whiskey, and sour mash. The 'US*1' designation reflects the brand's single barrel bottling commitment." },
+        { question: "Who makes Michter's?", answer: "Michter's is produced at the Michter's Fort Nelson Distillery in Louisville, with roots tracing to one of America's oldest whiskey-making traditions in Pennsylvania." },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'old-forester', brandKeywords: ['Old Forester'], name: 'Old Forester',
     seo: brandSeo({
       brand: 'Old Forester', categoryLabel: 'Bourbon',
-      titleTag: 'Old Forester — Birthday Bourbon & Whiskey Row',
-      h1: 'Old Forester Bourbon — Birthday Bourbon, 1920, 1910, 1897 & Statesman Allocations',
-      metaDescription: 'Buy Old Forester online — Birthday Bourbon and the Whiskey Row Series (1920, 1910, 1897), plus Statesman. Direct allocations, free on $300+.',
-      hook: 'Old Forester, distilled in Louisville by Brown-Forman, is the oldest continuously sold bourbon brand in the US, having remained in production through Prohibition under a medicinal whiskey license. The Birthday Bourbon and Whiskey Row Series are among its most collected annual releases.',
+      titleTag: 'Old Forester 86 Proof — Kentucky Straight Bourbon',
+      h1: 'Old Forester 86 Proof Bourbon — Direct Allocations',
+      metaDescription: "Buy Old Forester 86 Proof online — the flagship bottling from America's oldest continuously sold bourbon brand. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Old Forester, distilled in Louisville by Brown-Forman, is the oldest continuously sold bourbon brand in the US, having remained in production through Prohibition under a medicinal whiskey license. The 86 Proof expression is the brand's original flagship recipe, unchanged since 1870.",
+      faqs: [
+        { question: 'Does Aged & Amber carry Old Forester Birthday Bourbon?', answer: "Not currently — we stock the Old Forester 86 Proof flagship. Birthday Bourbon is a heavily allocated annual release; contact us to ask about future availability." },
+        { question: 'Who makes Old Forester?', answer: "Old Forester is produced by Brown-Forman Corporation in Louisville, Kentucky — the only bourbon brand documented to have been sold before, during, and after Prohibition, thanks to a medicinal whiskey license." },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'russells-reserve', brandKeywords: ["Russell's Reserve"], name: "Russell's Reserve",
     seo: brandSeo({
       brand: "Russell's Reserve", categoryLabel: 'Bourbon',
-      titleTag: "Russell's Reserve — Single Barrel & 10 Year",
-      h1: "Russell's Reserve Bourbon — Single Barrel, 10 Year & Wild Turkey Allocations",
-      metaDescription: "Buy Russell's Reserve online — Wild Turkey's premium Single Barrel and 10 Year bourbon. Direct allocations at Aged & Amber. Free on $300+.",
-      hook: "Russell's Reserve is Wild Turkey's premium line, named for master distiller Jimmy Russell and his son Eddie — the Single Barrel and 10 Year expressions showcase a fuller-proof, higher-rye take on the Wild Turkey house style.",
+      titleTag: "Russell's Reserve — Single Barrel Bourbon",
+      h1: "Russell's Reserve Single Barrel Bourbon — Direct Allocations",
+      metaDescription: "Buy Russell's Reserve Single Barrel online — Wild Turkey's premium single barrel bourbon. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Russell's Reserve is Wild Turkey's premium line, named for master distiller Jimmy Russell and his son Eddie — the Single Barrel expression showcases a fuller-proof, higher-rye take on the Wild Turkey house style, hand-selected barrel by barrel.",
+      faqs: [
+        { question: "Who makes Russell's Reserve?", answer: "Russell's Reserve is Wild Turkey's premium small batch line, curated by master distiller Jimmy Russell (50+ years at the distillery) and his son, co-distiller Eddie Russell." },
+        { question: "What is Russell's Reserve Single Barrel?", answer: "A hand-selected, single-cask bourbon bottled at 110 proof — a fuller-proof, higher-rye expression of the Wild Turkey house style, with each bottle drawn from one individual barrel." },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'colonel-eh-taylor', brandKeywords: ['E.H. Taylor', 'Eh Taylor'], name: 'Colonel E.H. Taylor',
     seo: brandSeo({
       brand: 'Colonel E.H. Taylor', categoryLabel: 'Bourbon',
-      titleTag: 'Colonel E.H. Taylor — Small Batch & Barrel Proof',
-      h1: 'Colonel E.H. Taylor Bourbon — Small Batch, Barrel Proof, Single Barrel & Sour Mash Allocations',
-      metaDescription: 'Buy Colonel E.H. Taylor online — Small Batch, Barrel Proof, Single Barrel, and the annual Old Fashioned Sour Mash. Buffalo Trace allocations.',
-      hook: 'Colonel E.H. Taylor is Buffalo Trace’s tribute line to Colonel Edmund Haynes Taylor Jr., a pioneering 19th-century distiller — the range spans Small Batch, Barrel Proof, Single Barrel, and the annual limited Old Fashioned Sour Mash release.',
+      titleTag: 'Colonel E.H. Taylor — Small Batch & Single Barrel',
+      h1: 'Colonel E.H. Taylor Bourbon — Small Batch & Single Barrel Allocations',
+      metaDescription: 'Buy Colonel E.H. Taylor online — Small Batch and Single Barrel bourbon from Buffalo Trace. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Colonel E.H. Taylor is Buffalo Trace's tribute line to Colonel Edmund Haynes Taylor Jr., a pioneering 19th-century distiller — the Small Batch and Single Barrel expressions are both bottled in bond at 100 proof.",
+      faqs: [
+        { question: 'What is Colonel E.H. Taylor bourbon?', answer: 'A heritage bottled-in-bond bourbon range from Buffalo Trace named for Edmund Haynes Taylor Jr. — one of the most important figures in bourbon history, credited with helping pass the 1897 Bottled-in-Bond Act.' },
+        { question: 'What does bottled-in-bond mean for E.H. Taylor?', answer: 'Every E.H. Taylor expression meets the 1897 Bottled-in-Bond Act requirements: produced at one distillery, in one distilling season, aged at least 4 years, and bottled at exactly 100 proof.' },
+      ],
     }),
   },
   {
@@ -129,6 +168,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Larceny Bourbon — Small Batch, Cask-Strength Barrel Proof & Wheated Allocations',
       metaDescription: 'Buy Larceny online — Heaven Hill’s wheated Small Batch and cask-strength Barrel Proof (batches A–B) bourbon. Direct allocations, free $300+.',
       hook: 'Larceny is Heaven Hill’s wheated bourbon line, named for the legend of a whiskey-loving bank guard skimming barrels for himself — the Small Batch and cask-strength Barrel Proof (batches A–B numbered) editions lead the range.',
+      faqs: [
+        { question: 'Is Larceny a wheated bourbon?', answer: 'Yes — Larceny uses wheat as the secondary grain instead of rye, following the same wheated mash bill tradition as the historic Old Fitzgerald recipe, for a softer, sweeter profile.' },
+        { question: 'What is Larceny Barrel Proof?', answer: 'Larceny Barrel Proof is bottled straight from the cask with nothing added or removed, no chill filtration — typically 118–126 proof — and is released three times a year in lettered batches (A, B, C).' },
+      ],
     }),
   },
   {
@@ -139,6 +182,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: "Booker's Bourbon — Cask Strength, Uncut & Unfiltered Batch Allocations",
       metaDescription: "Buy Booker's online — Jim Beam's uncut, unfiltered, cask-strength bourbon. Each year's named batches direct allocated. Free on $300+.",
       hook: "Booker's is Jim Beam's uncut, unfiltered, cask-strength bourbon, named for master distiller Booker Noe. Each year's batches carry a unique name and proof point straight from the barrel.",
+      faqs: [
+        { question: "What is Booker's bourbon?", answer: "A cask strength, uncut, unfiltered small batch bourbon from the Jim Beam family, created by master distiller Booker Noe — Jim Beam's grandson." },
+        { question: "What is a Booker's batch?", answer: "Each bi-annual Booker's release is a named 'batch' with its own story and natural proof — typically 121–130 proof, varying batch to batch since nothing is added or removed after barreling." },
+      ],
     }),
   },
   {
@@ -148,67 +195,259 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Four Roses Bourbon — Single Barrel & Small Batch Allocations',
       metaDescription: 'Buy Four Roses online — Single Barrel OESO/OBSV picks and Limited Edition Small Batch. Ten proprietary recipes. Direct allocations, free $300+.',
       hook: 'Four Roses distils ten distinct bourbon recipes — a combination of two mash bills and five proprietary yeast strains — then blends or single-barrels them into a wide, well-documented range including the collector-favourite Limited Edition Small Batch and Single Barrel OESO/OBSV picks.',
-      faqs: [{ question: 'What do the Four Roses recipe codes mean?', answer: 'Four Roses labels each recipe with a four-letter code — the first two letters are always "OE" or "OB" (mash bill), and the last two identify the yeast strain, each contributing a distinct flavour note from fruity to spicy to floral.' }],
+      faqs: [
+        { question: 'What do the Four Roses recipe codes mean?', answer: 'Four Roses labels each recipe with a four-letter code — the first two letters are always "OE" or "OB" (mash bill), and the last two identify the yeast strain, each contributing a distinct flavour note from fruity to spicy to floral.' },
+        { question: 'How many recipes does Four Roses use?', answer: 'Ten — a combination of 2 mash bills (high-rye and low-rye) crossed with 5 proprietary yeast strains, each producing a distinct flavour profile that master blenders combine or bottle single-barrel.' },
+        { question: 'Who owns Four Roses?', answer: 'Kirin Brewery Company of Japan, which acquired Four Roses in 2002.' },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'knob-creek', brandKeywords: ['Knob Creek'], name: 'Knob Creek',
     seo: brandSeo({
       brand: 'Knob Creek', categoryLabel: 'Bourbon',
-      titleTag: 'Knob Creek — 9 Year, Single Barrel & Rye',
-      h1: 'Knob Creek Bourbon — 9 Year, Single Barrel, Cask Strength & Rye Allocations',
-      metaDescription: 'Buy Knob Creek online — 9 Year, Single Barrel, cask strength, Smoked Maple, and rye. Direct allocations at Aged & Amber. Free on $300+.',
-      hook: 'Knob Creek is Jim Beam’s small batch, full-proof bourbon line, launched in 1992 as part of the original small batch bourbon movement — the 9 Year, Single Barrel, and cask-strength expressions anchor the range alongside a dedicated rye.',
+      titleTag: 'Knob Creek — 9 Year & Single Barrel Reserve',
+      h1: 'Knob Creek Bourbon — 9 Year & Single Barrel Reserve Allocations',
+      metaDescription: 'Buy Knob Creek online — 9 Year Small Batch and Single Barrel Reserve bourbon. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Knob Creek is Jim Beam’s small batch, full-proof bourbon line, launched in 1992 as part of the original small batch bourbon movement — the 9 Year and hand-selected Single Barrel Reserve anchor the range.',
+      faqs: [
+        { question: 'Who makes Knob Creek?', answer: "Jim Beam's Clermont, Kentucky distillery — named after the creek near Abraham Lincoln's boyhood home." },
+        { question: 'What proof is Knob Creek?', answer: 'The 9 Year is bottled at 100 proof; Single Barrel Reserve is bottled at a fuller 120 proof for a bolder, more concentrated pour.' },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: '1792', brandKeywords: ['1792'], name: '1792',
     seo: brandSeo({
       brand: '1792', categoryLabel: 'Bourbon',
-      titleTag: '1792 — Full Proof, Single Barrel & Sweet Wheat',
-      h1: '1792 Bourbon — Full Proof, Single Barrel, Aged 12 & Sweet Wheat Allocations',
-      metaDescription: 'Buy 1792 online — Full Proof, Single Barrel, Aged 12, Port Finish, and Sweet Wheat bourbon. Direct allocations at Aged & Amber. Free on $300+.',
-      hook: 'Named for the year Kentucky achieved statehood, 1792 is a high-rye bourbon line from Barton 1792 Distillery in Bardstown — the Small Batch, Full Proof, Single Barrel, and Sweet Wheat editions each showcase a different side of the house mash bill.',
+      titleTag: '1792 — Small Batch Bourbon',
+      h1: '1792 Small Batch Bourbon — Direct Allocations',
+      metaDescription: "Buy 1792 Small Batch online — Barton 1792 Distillery's high-rye Kentucky straight bourbon. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: '1792 is named for the year Kentucky achieved statehood, a high-rye bourbon line from Barton 1792 Distillery in Bardstown — the Small Batch expression is bottled at 93.7 proof for a drier, spicier take on Kentucky bourbon.',
+      faqs: [
+        { question: 'Who makes 1792 Bourbon?', answer: '1792 is produced by the Barton 1792 Distillery in Bardstown, Kentucky — one of the state\'s oldest continuously operating bourbon facilities, dating to 1879, now owned by Sazerac Company.' },
+        { question: 'Is 1792 a wheated bourbon?', answer: 'No — 1792 uses a high-rye mash bill, giving it a spicier, more complex flavor with pepper, dried fruit, and caramel notes, distinct from softer wheated bourbons like Maker\'s Mark or Weller.' },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'bulleit', brandKeywords: ['Bulleit'], name: 'Bulleit',
     seo: brandSeo({
       brand: 'Bulleit', categoryLabel: 'Bourbon',
-      titleTag: 'Bulleit — Frontier Whiskey, Rye & Barrel Strength',
-      h1: 'Bulleit Bourbon — Frontier Whiskey, 10 Year, Rye & Barrel Strength Allocations',
-      metaDescription: 'Buy Bulleit online — Frontier Whiskey bourbon, 10 Year, Barrel Strength, and dedicated rye. Direct allocations. Free shipping on $300+.',
-      hook: 'Bulleit Frontier Whiskey is a high-rye Kentucky bourbon revived by Tom Bulleit based on his great-great-grandfather’s original recipe — bottled at 90 proof with a distinctive spicy, dry finish, alongside a well-regarded dedicated rye and Barrel Strength release.',
+      titleTag: 'Bulleit — Frontier Whiskey Bourbon',
+      h1: 'Bulleit Bourbon — Frontier Whiskey Allocations',
+      metaDescription: 'Buy Bulleit Bourbon online — the high-rye Frontier Whiskey recipe revived by Tom Bulleit. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Bulleit Frontier Whiskey is a high-rye Kentucky bourbon revived by Tom Bulleit based on his great-great-grandfather’s original recipe — bottled at 90 proof with a distinctive spicy, dry finish.',
+      faqs: [{ question: 'Is Bulleit Bourbon a high-rye or wheated bourbon?', answer: "Bulleit Bourbon is a high-rye bourbon, built on a mash bill with a higher-than-typical percentage of rye grain, which gives it a spicier, drier profile than wheated bourbons like Maker's Mark or Weller." }],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'basil-hayden', brandKeywords: ['Basil Hayden'], name: 'Basil Hayden',
     seo: brandSeo({
       brand: 'Basil Hayden', categoryLabel: 'Bourbon',
-      titleTag: 'Basil Hayden — Dark Rye, Toast & 10 Year',
-      h1: 'Basil Hayden Bourbon — Dark Rye, Toast, Malted Rye & 10 Year Allocations',
-      metaDescription: 'Buy Basil Hayden online — the light-bodied Jim Beam Small Batch bourbon, plus Dark Rye, Toast, and Malted Rye. Direct allocations, free $300+.',
-      hook: 'Basil Hayden is a lighter-bodied, high-rye bourbon from the Jim Beam family, bottled at an approachable 80 proof — one of the original Jim Beam Small Batch Collection releases alongside Knob Creek, Booker’s, and Baker’s.',
+      titleTag: 'Basil Hayden — Kentucky Straight Bourbon',
+      h1: 'Basil Hayden Kentucky Straight Bourbon — Direct Allocations',
+      metaDescription: 'Buy Basil Hayden online — the light-bodied, high-rye Jim Beam Small Batch bourbon bottled at 80 proof. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Basil Hayden is a lighter-bodied, high-rye bourbon from the Jim Beam family, bottled at an approachable 80 proof — one of the original Jim Beam Small Batch Collection releases alongside Knob Creek and Booker’s.',
+      faqs: [
+        { question: 'Who makes Basil Hayden?', answer: "Part of the Jim Beam Small Batch Collection, produced at the Beam distillery in Clermont, Kentucky." },
+        { question: 'What proof is Basil Hayden?', answer: '80 proof — one of the lowest-proof flagship bourbons on the market, designed for approachability.' },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'jim-beam', brandKeywords: ['Jim Beam'], name: 'Jim Beam',
     seo: brandSeo({
       brand: 'Jim Beam', categoryLabel: 'Bourbon',
-      titleTag: "Jim Beam — Black, Double Oak & Devil's Cut",
-      h1: "Jim Beam Bourbon — Black, Double Oak, Devil's Cut & Signature Craft Allocations",
-      metaDescription: "Buy Jim Beam online — Black Label, Double Oak, Devil's Cut, and Signature Craft bourbon. Direct allocations at Aged & Amber. Free on $300+.",
-      hook: 'Jim Beam is the world’s best-selling bourbon, distilled in Clermont, Kentucky by the same family for seven generations — the core White Label sits alongside Black, Double Oak, Devil’s Cut, and Signature Craft expressions.',
+      titleTag: 'Jim Beam — Kentucky Straight Bourbon (White Label)',
+      h1: 'Jim Beam Kentucky Straight Bourbon — White Label Allocations',
+      metaDescription: 'Buy Jim Beam online — the original White Label Kentucky Straight Bourbon, distilled by the same family for seven generations. Direct allocations, free on $300+.',
+      hook: 'Jim Beam is the world’s best-selling bourbon, distilled in Clermont, Kentucky by the same family for seven generations — the core White Label Kentucky Straight is the bottling that put the Beam name on bars and shelves worldwide.',
+      faqs: [
+        { question: 'Is Jim Beam a bourbon?', answer: 'Yes — Jim Beam Kentucky Straight Bourbon is made from a mash of roughly 77% corn, 13% rye, and 10% malted barley, aged a minimum of 4 years.' },
+        { question: 'Who owns Jim Beam?', answer: 'Beam Suntory, a joint venture of Jim Beam Brands and Suntory Holdings of Japan.' },
+      ],
     }),
   },
   {
     categorySlug: 'bourbon-whiskey', hubSlug: 'evan-williams', brandKeywords: ['Evan Williams'], name: 'Evan Williams',
     seo: brandSeo({
       brand: 'Evan Williams', categoryLabel: 'Bourbon',
-      titleTag: 'Evan Williams — Single Barrel & Bottled-in-Bond',
-      h1: 'Evan Williams Bourbon — Single Barrel Vintage, Bottled-in-Bond & Black Label Allocations',
-      metaDescription: 'Buy Evan Williams online — Single Barrel Vintage, Bottled-in-Bond, and Black Label bourbon. Direct allocations at Aged & Amber. Free on $300+.',
-      hook: 'Evan Williams is a Heaven Hill bourbon named for Kentucky’s first commercial distiller — the Black Label is the everyday staple, while the Bottled-in-Bond and Single Barrel Vintage releases are prized by collectors for exceptional value.',
+      titleTag: 'Evan Williams — Black Label & Single Barrel',
+      h1: 'Evan Williams Bourbon — Black Label & Single Barrel Vintage Allocations',
+      metaDescription: 'Buy Evan Williams online — Black Label and Single Barrel Vintage bourbon. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Evan Williams is a Heaven Hill bourbon named for Kentucky’s first commercial distiller — the Black Label is the everyday staple, while the Single Barrel Vintage release is prized by collectors for exceptional value at its price point.',
+      faqs: [
+        { question: 'Who makes Evan Williams bourbon?', answer: 'Heaven Hill Distillery in Bardstown, Kentucky — America\'s largest independent family-owned spirits producer.' },
+        { question: 'What is Evan Williams Single Barrel Vintage?', answer: 'An annual vintage-dated release drawn from a single barrel, with the distillation year printed on the label — widely regarded as one of the best-value single barrel bourbons available.' },
+      ],
+    }),
+  },
+
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'wild-turkey', brandKeywords: ['Wild Turkey'], name: 'Wild Turkey',
+    // No SEMrush volume data found for this brand (no dedicated page; only surfaces inside the Russell's Reserve page in the source) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Wild Turkey', categoryLabel: 'Bourbon',
+      titleTag: 'Wild Turkey — 101 & Rare Breed',
+      h1: 'Wild Turkey Bourbon — 101 & Rare Breed Allocations',
+      metaDescription: 'Buy Wild Turkey online — the 101 proof flagship and cask-strength Rare Breed. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Wild Turkey is a high-rye Kentucky straight bourbon distilled in Lawrenceburg under Jimmy Russell, the longest-tenured active master distiller in the industry — the 101 proof flagship anchors the range, while Rare Breed blends barrels of different ages and bottles at genuine barrel proof.",
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'eagle-rare', brandKeywords: ['Eagle Rare'], name: 'Eagle Rare',
+    // No dedicated brand-page data for Eagle Rare (only a competitor-list name-drop and an allocation-scarcity FAQ mention in the source) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Eagle Rare', categoryLabel: 'Bourbon',
+      titleTag: 'Eagle Rare — 10 Year & 17 Year Bourbon',
+      h1: 'Eagle Rare Bourbon — 10 Year & 17 Year Allocations',
+      metaDescription: 'Buy Eagle Rare online — the allocated 10 Year single barrel and ultra-rare 17 Year from the Buffalo Trace Antique Collection. Free on $300+.',
+      hook: 'Eagle Rare is a single barrel bourbon from Buffalo Trace, hand-selected for a balance of sweetness and dry oak — the 10 Year is one of the most sought-after everyday-priced allocated bourbons in America, while the 17 Year is released once a year as part of the fall Buffalo Trace Antique Collection.',
+      faqs: [{ question: 'Why is Eagle Rare so hard to find?', answer: "Eagle Rare, like Blanton's and Colonel E.H. Taylor, is a heavily allocated Buffalo Trace release — demand for its single-barrel 10 Year and the ultra-limited 17 Year far outpaces the barrels selected for bottling each year." }],
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'buffalo-trace', brandKeywords: ['Buffalo Trace'], name: 'Buffalo Trace',
+    // Head term "buffalo trace bourbon" (49,500/60) exists but was explicitly dropped by the source as too competitive ("revisit in 6 months") — no dedicated brand page. Using generic/inferred terms instead, not SEMrush-backed at this level.
+    seo: brandSeo({
+      brand: 'Buffalo Trace', categoryLabel: 'Bourbon',
+      titleTag: 'Buffalo Trace — Kentucky Straight Bourbon',
+      h1: 'Buffalo Trace Kentucky Straight Bourbon — Direct Allocations',
+      metaDescription: 'Buy Buffalo Trace online — the flagship low-rye bourbon from the historic Frankfort, Kentucky distillery. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Buffalo Trace is the flagship low-rye bourbon from the Buffalo Trace Distillery in Frankfort, Kentucky — a National Historic Landmark that operated continuously through Prohibition under a medicinal whiskey license. Distilled from Mash Bill #1, the same recipe behind Eagle Rare and George T. Stagg, it is typically aged eight to nine years.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'old-grand-dad', brandKeywords: ['Old Grand-Dad', 'Old Grand Dad'], name: 'Old Grand-Dad',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Old Grand-Dad', categoryLabel: 'Bourbon',
+      titleTag: 'Old Grand-Dad 114 — Kentucky Straight Bourbon',
+      h1: 'Old Grand-Dad 114 Bourbon — Direct Allocations',
+      metaDescription: 'Buy Old Grand-Dad 114 online — a high-rye, barrel-proof-style Kentucky straight bourbon. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Old Grand-Dad is a Jim Beam family high-rye bourbon dating back to the 19th century, named for founder Basil Hayden Sr. — the 114 expression is bottled at a robust 114 proof, making it one of the best-value cask-strength-style bourbons on the market.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'old-fitzgerald', brandKeywords: ['Old Fitzgerald'], name: 'Old Fitzgerald',
+    // Only an incidental mention in the source (as Larceny's mash-bill lineage) — no product-level numeric data. Generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Old Fitzgerald', categoryLabel: 'Bourbon',
+      titleTag: 'Old Fitzgerald — Bottled-in-Bond Bourbon',
+      h1: 'Old Fitzgerald Bottled-in-Bond Bourbon — Direct Allocations',
+      metaDescription: 'Buy Old Fitzgerald Bottled-in-Bond online — a wheated bourbon in the Van Winkle lineage, released each spring and fall. Direct allocations, free on $300+.',
+      hook: 'Old Fitzgerald traces its lineage to the wheated bourbon tradition later popularized by the Van Winkle family, using wheat instead of rye as its secondary grain. Each seasonal Bottled-in-Bond release carries its own age statement and sells out quickly.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'elmer-t-lee', brandKeywords: ['Elmer T. Lee', 'Elmer T Lee'], name: 'Elmer T. Lee',
+    // Only an incidental mention in the source (as Blanton's historical creator) — no product-level numeric data. Generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Elmer T. Lee', categoryLabel: 'Bourbon',
+      titleTag: 'Elmer T. Lee — Single Barrel Bourbon',
+      h1: 'Elmer T. Lee Single Barrel Bourbon — Direct Allocations',
+      metaDescription: 'Buy Elmer T. Lee online — the single barrel bourbon named for the Buffalo Trace distiller who pioneered the category. Direct allocations, free on $300+.',
+      hook: "Elmer T. Lee is named for the legendary Buffalo Trace distiller who pioneered the single-barrel bourbon category and created the original Blanton's recipe — this expression carries forward his exacting palate for smoothness and balance, and is fiercely allocated.",
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'rock-hill-farms', brandKeywords: ['Rock Hill Farms'], name: 'Rock Hill Farms',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Rock Hill Farms', categoryLabel: 'Bourbon',
+      titleTag: 'Rock Hill Farms — Single Barrel Bourbon',
+      h1: 'Rock Hill Farms Single Barrel Bourbon — Direct Allocations',
+      metaDescription: 'Buy Rock Hill Farms online — a Buffalo Trace single barrel bourbon bottled at a bold 100 proof. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Rock Hill Farms is bottled at a bold 100 proof from single barrels in Buffalo Trace's high-rye mash bill lineup — it flies under the radar compared to stablemates Blanton's and Eagle Rare despite comparable pedigree and genuinely elegant, well-aged character.",
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'george-t-stagg', brandKeywords: ['George T. Stagg', 'George T Stagg'], name: 'George T. Stagg',
+    // Real SEMrush volume (5,400–6,600/18–24) but no dedicated brand page in the source (routed to a blog opportunity instead) — used here as the hub's primary target since it is genuinely sourced.
+    seo: brandSeo({
+      brand: 'George T. Stagg', categoryLabel: 'Bourbon',
+      titleTag: 'George T. Stagg — Barrel Proof Bourbon',
+      h1: 'George T. Stagg Bourbon — Buffalo Trace Antique Collection Allocations',
+      metaDescription: 'Buy George T. Stagg online — the uncut, unfiltered barrel-proof release from the Buffalo Trace Antique Collection. Direct allocations, free on $300+.',
+      hook: 'George T. Stagg is named for the founder of the O.F.C. Distillery, the historic root of today\'s Buffalo Trace — released once a year uncut and unfiltered at whatever proof the barrels yield, often crossing into hazmat-shipping territory, it is one of the most intense and sought-after releases in the Buffalo Trace Antique Collection.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'pappy-van-winkle', brandKeywords: ['Pappy Van Winkle', 'Van Winkle'], name: 'Pappy Van Winkle',
+    // Real SEMrush volume (18,100/33) but no dedicated brand page in the source (routed to a blog opportunity instead) — used here as the hub's primary target since it is genuinely sourced.
+    seo: brandSeo({
+      brand: 'Pappy Van Winkle', categoryLabel: 'Bourbon',
+      titleTag: 'Pappy Van Winkle — Family Reserve 15 Year',
+      h1: 'Pappy Van Winkle Family Reserve 15 Year Bourbon — Direct Allocations',
+      metaDescription: 'Buy Pappy Van Winkle 15 Year online — the wheated bourbon phenomenon distilled at Buffalo Trace. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Pappy Van Winkle is named for Julian \"Pappy\" Van Winkle Sr., the original owner of the old Stitzel-Weller Distillery — crafted from the Van Winkle family's wheated recipe and distilled today at Buffalo Trace, the 15 Year Family Reserve spends fifteen years mellowing into the silky, dessert-like character that made Pappy a cultural phenomenon. Allocation is brutally limited.",
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'new-riff', brandKeywords: ['New Riff'], name: 'New Riff',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'New Riff', categoryLabel: 'Bourbon',
+      titleTag: 'New Riff — Single Barrel Bourbon',
+      h1: 'New Riff Single Barrel Bourbon — Direct Allocations',
+      metaDescription: 'Buy New Riff online — an independent Kentucky craft distillery\'s genuine barrel-proof single barrel bourbon. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'New Riff is an independent craft distillery in Newport, Kentucky, founded in 2014 just across the river from Cincinnati — it distills a high-rye mash bill without chill filtration or additives, and its single-barrel program has quickly become a favorite among enthusiasts chasing bold, unmasked flavor.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'kentucky-owl', brandKeywords: ['Kentucky Owl'], name: 'Kentucky Owl',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Kentucky Owl', categoryLabel: 'Bourbon',
+      titleTag: 'Kentucky Owl — The Wiseman Bourbon',
+      h1: 'Kentucky Owl The Wiseman Bourbon — Direct Allocations',
+      metaDescription: 'Buy Kentucky Owl The Wiseman online — a blended bourbon built on the Kentucky Owl brand\'s painstaking blending philosophy. Direct allocations, free on $300+.',
+      hook: 'Kentucky Owl was founded by Dixon Dedman, drawing on his family\'s pre-Prohibition distilling records — the brand built its reputation on painstakingly blended, high-proof rarities, and The Wiseman brings that same blending philosophy to a more accessible, lower-proof expression.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'barrell-bourbon', brandKeywords: ['Barrell Bourbon', 'Barrell Craft Spirits'], name: 'Barrell Bourbon',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Barrell Bourbon', categoryLabel: 'Bourbon',
+      titleTag: 'Barrell Bourbon — Batch Series',
+      h1: 'Barrell Bourbon Batch Series 31 — Direct Allocations',
+      metaDescription: 'Buy Barrell Bourbon online — Barrell Craft Spirits\' cask-strength, sourced-and-blended Batch Series bourbon. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Barrell Craft Spirits, founded by Joe Beatrice, sources mature barrels from distilleries across the country and blends them into small, ever-changing batches bottled at full cask strength without chill filtration or coloring — each release is numbered rather than age-stated, and Batch 31 leans on barrels aged six to sixteen years.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'yellowstone', brandKeywords: ['Yellowstone'], name: 'Yellowstone',
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Yellowstone', categoryLabel: 'Bourbon',
+      titleTag: 'Yellowstone — Select Kentucky Straight Bourbon',
+      h1: 'Yellowstone Select Kentucky Straight Bourbon — Direct Allocations',
+      metaDescription: 'Buy Yellowstone Select online — one of the oldest bourbon trademarks in America, revived by the Beam family\'s Limestone Branch Distillery. Direct allocations, free on $300+.',
+      hook: 'Yellowstone revives one of the oldest bourbon trademarks in America, produced today by descendants of the Beam family at Limestone Branch Distillery in Bardstown — the Select expression blends four- and seven-year-old barrels into a layered, well-rounded whiskey that honors its 19th-century roots.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'woodford-reserve', brandKeywords: ['Woodford Reserve'], name: 'Woodford Reserve',
+    // No dedicated brand-page data exists for Woodford Reserve in the source — the only real number ("woodford reserve bourbon", 22,200/42) was flagged as "competitor comparison content only," not a page target. Generic/inferred keywords used, not SEMrush-backed.
+    seo: brandSeo({
+      brand: 'Woodford Reserve', categoryLabel: 'Bourbon',
+      titleTag: 'Woodford Reserve — Kentucky Straight, Double Oaked & Batch Proof',
+      h1: 'Woodford Reserve Bourbon — Kentucky Straight, Double Oaked & Batch Proof Allocations',
+      metaDescription: 'Buy Woodford Reserve online — Kentucky Straight, Double Oaked, and the annual cask-strength Batch Proof. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Woodford Reserve is Brown-Forman\'s super-premium bourbon, triple-distilled in copper pot stills at the historic Woodford County, Kentucky distillery — a National Historic Landmark. Double Oaked rests a second time in a freshly charred barrel, while the annual Batch Proof release bottles the house recipe at true batch strength with no water added.',
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'frank-august', brandKeywords: ['Frank August'], name: 'Frank August',
+    // Real SEMrush volume for this brand (frank august small batch bourbon, 4,400/4 — one of the best Vol/KD ratios in the dataset) but no dedicated brand page exists in the source. Copy reflects the sourced primary keyword directly.
+    seo: brandSeo({
+      brand: 'Frank August', categoryLabel: 'Bourbon',
+      titleTag: 'Frank August — Small Batch Kentucky Straight Bourbon',
+      h1: 'Frank August Small Batch Bourbon — Direct Allocations',
+      metaDescription: 'Buy Frank August Small Batch online — a high-proof small batch Kentucky straight bourbon from an undisclosed Kentucky distillery. Direct allocations, free on $300+.',
+      hook: 'Frank August Small Batch is bottled at a robust 100 proof from a small, hand-selected batch of Kentucky straight bourbon barrels — a craft-positioned release with limited distribution that delivers more intensity and structure than standard-proof small batch bourbons.',
     }),
   },
 

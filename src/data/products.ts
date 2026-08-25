@@ -526,6 +526,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Bardstown, KY',
+    seo: {
+      primaryKeyword: "1792 small batch",
+      secondaryKeywords: ["1792 small batch bourbon", "1792 bourbon", "1792 ridgemont small batch", "who makes 1792 bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-02',
@@ -550,6 +554,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: 'Ex-Bourbon Oak, Port Wine Cask Finish',
     distilleryLocation: 'Louisville, KY',
+    seo: {
+      primaryKeyword: "angel's envy bourbon",
+      secondaryKeywords: ["angel's envy port finish", "angel's envy kentucky straight bourbon whiskey", "angel's envy mash bill"],
+    },
   },
   {
     id: 'prod-bourbon-03',
@@ -574,6 +582,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Clermont, KY',
+    seo: {
+      primaryKeyword: "basil hayden bourbon",
+      secondaryKeywords: ["basil hayden's bourbon whiskey", "basil hayden's kentucky straight bourbon", "basil hayden whiskey"],
+    },
   },
   {
     id: 'prod-bourbon-04',
@@ -598,6 +610,10 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: 'New Charred American Oak, Single Barrel',
     distilleryLocation: 'Frankfort, KY',
+    seo: {
+      primaryKeyword: "blanton's original single barrel bourbon",
+      secondaryKeywords: ["blanton's single barrel", "blanton's letters", "blanton's horses", "bourbon with horse on top", "blanton's bourbon near me"],
+    },
   },
   {
     id: 'prod-bourbon-05',
@@ -622,6 +638,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Clermont, KY',
+    seo: {
+      // Brand-level demand (~55K combined signal per keyword-map-bourbon-v2.md) is real, but the source's per-product table treats Booker's as unstocked and doesn't break out this SKU — product-level split here is inferred, not SEMrush-backed.
+      primaryKeyword: "booker's bourbon",
+      secondaryKeywords: ["booker's small batch bourbon", "booker's bourbon proof", "jim beam booker's bourbon", "little book bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-06',
@@ -646,6 +667,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Frankfort, KY',
+    seo: {
+      // Head term "buffalo trace bourbon" (49,500/60) exists but was explicitly dropped by the source as too competitive ("revisit in 6 months") — no dedicated brand page. Using generic/inferred long-tail terms instead, not SEMrush-backed at this level.
+      primaryKeyword: "buffalo trace kentucky straight bourbon",
+      secondaryKeywords: ["buffalo trace bourbon", "buffalo trace whiskey", "buffalo trace distillery", "buy buffalo trace bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-07',
@@ -670,6 +696,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Shelbyville / Lebanon, KY',
+    seo: {
+      primaryKeyword: "bulleit bourbon",
+      secondaryKeywords: ["bulleit bourbon whiskey", "bulleit whiskey", "bulleit frontier whiskey", "bulleit bourbon price"],
+    },
   },
   {
     id: 'prod-bourbon-08',
@@ -694,6 +724,10 @@ export const PRODUCTS: Product[] = [
     stock: 9,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Frankfort, KY',
+    seo: {
+      primaryKeyword: "colonel eh taylor small batch",
+      secondaryKeywords: ["colonel eh taylor small batch bottled in bond", "colonel taylor bourbon small batch", "buy colonel eh taylor small batch"],
+    },
   },
   {
     id: 'prod-bourbon-09',
@@ -718,6 +752,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Bardstown / Louisville, KY',
+    seo: {
+      primaryKeyword: "elijah craig barrel proof",
+      secondaryKeywords: ["elijah craig barrel strength bourbon", "elijah craig b525", "elijah craig c923"],
+    },
   },
   {
     id: 'prod-bourbon-10',
@@ -742,6 +780,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Bardstown / Louisville, KY',
+    seo: {
+      primaryKeyword: "elijah craig small batch",
+      secondaryKeywords: ["elijah craig small batch bourbon whiskey", "elijah craig small batch price", "elijah craig mash bill"],
+    },
   },
   {
     id: 'prod-bourbon-11',
@@ -766,6 +808,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Bardstown / Louisville, KY',
+    seo: {
+      primaryKeyword: "evan williams black label bourbon",
+      secondaryKeywords: ["evan williams black label", "evan williams bourbon whiskey", "evan williams kentucky straight bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-12',
@@ -790,6 +836,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      // Head term is a supporting-pool mention only (22,200/46) per keyword-map-bourbon-v2.md — brand primary "four roses single barrel" (KD 23) is reserved for the Single Barrel SKU since the head term itself is KD 46.
+      primaryKeyword: "four roses bourbon",
+      secondaryKeywords: ["four roses yellow label", "four roses whiskey", "four roses mash bill", "four roses distillery"],
+    },
   },
   {
     id: 'prod-bourbon-13',
@@ -814,6 +865,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      primaryKeyword: "four roses small batch",
+      secondaryKeywords: ["four roses small batch bourbon", "four roses recipe codes", "four roses limited edition"],
+    },
   },
   {
     id: 'prod-bourbon-14',
@@ -838,6 +893,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      // Recipe-code association (OBSF/OESO) is the source doc's inference from industry convention, not source-confirmed to this exact SKU.
+      primaryKeyword: "four roses small batch select",
+      secondaryKeywords: ["four roses obsf", "four roses oeso", "four roses limited edition"],
+    },
   },
   {
     id: 'prod-bourbon-15',
@@ -862,6 +922,10 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Clermont, KY',
+    seo: {
+      primaryKeyword: "jim beam kentucky straight bourbon",
+      secondaryKeywords: ["jim beam white label", "jim beam bourbon whiskey", "is jim beam bourbon or whiskey"],
+    },
   },
   {
     id: 'prod-bourbon-16',
@@ -886,6 +950,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Clermont, KY',
+    seo: {
+      primaryKeyword: "knob creek 9 year",
+      secondaryKeywords: ["knob creek bourbon", "knob creek whiskey", "knob creek bourbon proof", "buy knob creek"],
+    },
   },
   {
     id: 'prod-bourbon-17',
@@ -910,6 +978,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: 'New Charred American Oak, Single Barrel',
     distilleryLocation: 'Clermont, KY',
+    seo: {
+      primaryKeyword: "knob creek single barrel",
+      secondaryKeywords: ["knob creek single barrel select", "knob creek 9 year single barrel", "knob creek cask strength"],
+    },
   },
   {
     id: 'prod-bourbon-18',
@@ -934,6 +1006,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Bardstown / Louisville, KY',
+    seo: {
+      primaryKeyword: "larceny small batch",
+      secondaryKeywords: ["larceny small batch 92", "larceny small batch wheated bourbon", "larceny wheated bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-19',
@@ -958,6 +1034,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: 'New Charred American Oak, Seared French Oak Staves',
     distilleryLocation: 'Loretto, KY',
+    seo: {
+      primaryKeyword: "maker's mark 46",
+      secondaryKeywords: ["maker's 46 bourbon", "makers 46", "maker's mark cask strength"],
+    },
   },
   {
     id: 'prod-bourbon-20',
@@ -982,6 +1062,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Loretto, KY',
+    seo: {
+      primaryKeyword: "makers mark bourbon",
+      secondaryKeywords: ["maker's mark wheated bourbon", "maker's mark whiskey", "maker's mark bourbon price"],
+    },
   },
   {
     id: 'prod-bourbon-21',
@@ -1006,6 +1090,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Louisville (Shively), KY',
+    seo: {
+      primaryKeyword: "michter's bourbon",
+      secondaryKeywords: ["michter's small batch", "michter's us1 kentucky straight bourbon", "michter's american whiskey", "michter's distillery"],
+    },
   },
   {
     id: 'prod-bourbon-22',
@@ -1030,6 +1118,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Louisville, KY',
+    seo: {
+      // The brand's real #1 target keyword is "old forester birthday bourbon" (8,100/17) — a product not currently stocked. This SKU (86 Proof) uses the next-best sourced terms per keyword-map-bourbon-v2.md.
+      primaryKeyword: "old forester 86 proof",
+      secondaryKeywords: ["old forester 100 proof bourbon", "old forester bourbon", "old forester distillery"],
+    },
   },
   {
     id: 'prod-bourbon-23',
@@ -1054,6 +1147,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: 'New Charred American Oak, Single Barrel',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      primaryKeyword: "russell's reserve single barrel bourbon",
+      secondaryKeywords: ["russell's reserve single barrel", "russell's reserve private barrel selection", "who makes russell's reserve"],
+    },
   },
   {
     id: 'prod-bourbon-24',
@@ -1078,6 +1175,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Frankfort, KY',
+    seo: {
+      primaryKeyword: "weller special reserve bourbon",
+      secondaryKeywords: ["weller special reserve", "weller special reserve price", "weller bourbon", "weller wheated bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-25',
@@ -1102,6 +1203,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      // No SEMrush volume data found for this brand (no dedicated page; only surfaces inside the Russell's Reserve page) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "wild turkey 101 bourbon",
+      secondaryKeywords: ["wild turkey 101", "wild turkey bourbon", "wild turkey whiskey", "buy wild turkey 101"],
+    },
   },
   {
     id: 'prod-bourbon-26',
@@ -1126,6 +1232,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Lawrenceburg, KY',
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "wild turkey rare breed",
+      secondaryKeywords: ["wild turkey rare breed bourbon", "wild turkey barrel proof", "wild turkey rare breed price"],
+    },
   },
   {
     id: 'prod-bourbon-27',
@@ -1150,6 +1261,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: 'New Charred American Oak, Second Charred Barrel',
     distilleryLocation: 'Versailles, KY',
+    seo: {
+      // No SEMrush brand-page data exists for Woodford Reserve — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "woodford reserve double oaked bourbon",
+      secondaryKeywords: ["woodford reserve double oaked", "woodford reserve bourbon", "double oaked bourbon", "woodford reserve price"],
+    },
   },
   {
     id: 'prod-bourbon-28',
@@ -1174,6 +1290,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: 'New Charred American Oak',
     distilleryLocation: 'Versailles, KY',
+    seo: {
+      // The only real number for this brand ("woodford reserve bourbon", 22,200/42) was flagged by the source as "competitor comparison content only," not a page target — used here as the best available term; not volume-backed at the product level.
+      primaryKeyword: "woodford reserve bourbon",
+      secondaryKeywords: ["woodford reserve kentucky straight bourbon", "woodford reserve whiskey", "woodford reserve distillery", "buy woodford reserve"],
+    },
   },
   {
     id: 'prod-bourbon-b2-01',
@@ -1198,6 +1319,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Port Wine Barrel Finish",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      primaryKeyword: "angel's envy cask strength",
+      secondaryKeywords: ["angel's envy 10 year cask strength", "angel's envy private selection single barrel", "angel's envy price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-02',
@@ -1222,6 +1347,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Multi-State Blend, Cask Strength",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "barrell bourbon",
+      secondaryKeywords: ["barrell bourbon batch series", "barrell craft spirits bourbon", "cask strength bourbon blend", "barrell bourbon proof"],
+    },
   },
   {
     id: 'prod-bourbon-b2-03',
@@ -1246,6 +1376,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Mash Bill #2, Single Barrel",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "blanton's gold",
+      secondaryKeywords: ["blanton's gold edition", "blanton's gold msrp", "blanton's single barrel"],
+    },
   },
   {
     id: 'prod-bourbon-b2-04',
@@ -1270,6 +1404,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Mash Bill #2, Barrel Proof",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "blanton's straight from the barrel",
+      secondaryKeywords: ["blanton's bourbon alternatives", "blanton's price", "blanton's msrp"],
+    },
   },
   {
     id: 'prod-bourbon-b2-05',
@@ -1294,6 +1432,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Mash Bill #1, Bottled-in-Bond",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "colonel eh taylor single barrel",
+      secondaryKeywords: ["eh taylor single barrel", "e.h. taylor single barrel bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-b2-06',
@@ -1318,6 +1460,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Mash Bill #1, Single Barrel",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // No dedicated brand-page data for Eagle Rare (only a competitor-list name-drop and an allocation-scarcity FAQ mention) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "eagle rare 10 year bourbon",
+      secondaryKeywords: ["eagle rare bourbon", "eagle rare 10 year", "buffalo trace eagle rare", "eagle rare price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-07',
@@ -1342,6 +1489,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Mash Bill #1, Extra-Aged Single Barrel",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // No dedicated brand-page data for Eagle Rare (only a competitor-list name-drop and an allocation-scarcity FAQ mention) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "eagle rare 17 year bourbon",
+      secondaryKeywords: ["eagle rare 17", "eagle rare 17 year price", "eagle rare allocated bourbon", "rare eagle rare bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-b2-08',
@@ -1366,6 +1518,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Mash Bill #1, Single Barrel",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // Only incidental mention in the source (as Blanton's historical creator) — no product-level numeric data. Generic/inferred keywords, not volume-backed.
+      primaryKeyword: "elmer t lee single barrel bourbon",
+      secondaryKeywords: ["elmer t lee bourbon", "elmer t lee single barrel", "buffalo trace elmer t lee", "elmer t lee price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-09',
@@ -1390,6 +1547,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "78% Corn Mash Bill, Single Barrel",
     distilleryLocation: "Bardstown, Kentucky",
+    seo: {
+      primaryKeyword: "evan williams single barrel bourbon",
+      secondaryKeywords: ["evan williams single barrel", "who makes evan williams bourbon", "evan williams bourbon price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-10',
@@ -1414,6 +1575,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "OBSV High-Rye Recipe",
     distilleryLocation: "Lawrenceburg, Kentucky",
+    seo: {
+      primaryKeyword: "four roses single barrel",
+      secondaryKeywords: ["four roses single barrel bourbon", "four roses single barrel barrel strength", "four roses obsv"],
+    },
   },
   {
     id: 'prod-bourbon-b2-11',
@@ -1438,6 +1603,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Mash Bill #1, Uncut & Unfiltered",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // Real SEMrush volume (5,400–6,600/18–24) but no dedicated brand page in the source (routed to a blog opportunity instead) — used here as product-level primary since it is genuinely sourced.
+      primaryKeyword: "george t stagg bourbon",
+      secondaryKeywords: ["george t stagg", "buffalo trace antique collection", "george t stagg price", "stagg jr bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-b2-12',
@@ -1462,6 +1632,11 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Blended Straight Bourbon",
     distilleryLocation: "Bardstown, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "kentucky owl the wiseman bourbon",
+      secondaryKeywords: ["kentucky owl bourbon", "kentucky owl whiskey", "the wiseman bourbon", "kentucky owl price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-13',
@@ -1486,6 +1661,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Wheated Mash Bill, Barrel Proof",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      primaryKeyword: "larceny barrel proof",
+      secondaryKeywords: ["larceny barrel proof bourbon", "larceny barrel proof a120", "old fitzgerald larceny"],
+    },
   },
   {
     id: 'prod-bourbon-b2-14',
@@ -1510,6 +1689,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Wheated Mash Bill, Stave-Finished",
     distilleryLocation: "Loretto, Kentucky",
+    seo: {
+      primaryKeyword: "maker's mark private selection",
+      secondaryKeywords: ["makers mark private selection", "makers mark cellar aged", "maker's mark barrel proof"],
+    },
   },
   {
     id: 'prod-bourbon-b2-15',
@@ -1534,6 +1717,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "High-Rye Mash Bill, Single Barrel",
     distilleryLocation: "Newport, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "new riff single barrel bourbon",
+      secondaryKeywords: ["new riff bourbon", "new riff bottled in bond", "new riff distillery", "new riff whiskey"],
+    },
   },
   {
     id: 'prod-bourbon-b2-16',
@@ -1558,6 +1746,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Wheated Mash Bill, Bottled-in-Bond",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      // Only incidental mention in the source (as Larceny's mash-bill lineage) — no product-level numeric data. Generic/inferred keywords, not volume-backed.
+      primaryKeyword: "old fitzgerald bottled in bond bourbon",
+      secondaryKeywords: ["old fitzgerald bourbon", "old fitzgerald wheated bourbon", "pappy van winkle lineage bourbon", "old fitzgerald price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-17',
@@ -1582,6 +1775,11 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "High-Rye Mash Bill",
     distilleryLocation: "Clermont, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "old grand dad 114 bourbon",
+      secondaryKeywords: ["old grand dad bourbon", "old grand dad 114 proof", "old grand dad kentucky straight bourbon", "old grand dad price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-18',
@@ -1606,6 +1804,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Wheated Mash Bill",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // Real SEMrush volume (18,100/33) but no dedicated brand page in the source (routed to a blog opportunity instead) — used here as product-level primary since it is genuinely sourced.
+      primaryKeyword: "pappy van winkle bourbon",
+      secondaryKeywords: ["pappy van winkle 15 year", "pappy van winkle wheated bourbon", "pappy van winkle family reserve", "buy pappy van winkle"],
+    },
   },
   {
     id: 'prod-bourbon-b2-19',
@@ -1630,6 +1833,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Mash Bill #2, Single Barrel",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "rock hill farms single barrel bourbon",
+      secondaryKeywords: ["rock hill farms bourbon", "rock hill farms whiskey", "buffalo trace rock hill farms", "rock hill farms price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-20',
@@ -1654,6 +1862,10 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Wheated Mash Bill",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "weller 12 year",
+      secondaryKeywords: ["weller 12", "weller 12 year bourbon", "weller 12 price", "weller 12 msrp"],
+    },
   },
   {
     id: 'prod-bourbon-b2-21',
@@ -1678,6 +1890,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Wheated Mash Bill",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "weller antique 107 bourbon",
+      secondaryKeywords: ["weller antique 107", "weller antique bourbon", "buy weller bourbon", "weller bourbon price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-22',
@@ -1702,6 +1918,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Wheated Mash Bill, Full Proof",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "weller full proof bourbon",
+      secondaryKeywords: ["weller full proof", "weller full proof price", "weller wheated bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-b2-23',
@@ -1726,6 +1946,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "72% Corn Mash Bill, Batch Proof",
     distilleryLocation: "Versailles, Kentucky",
+    seo: {
+      // No SEMrush brand-page data exists for Woodford Reserve — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "woodford reserve batch proof bourbon",
+      secondaryKeywords: ["woodford reserve batch proof", "woodford reserve cask strength", "woodford reserve barrel proof", "woodford reserve price"],
+    },
   },
   {
     id: 'prod-bourbon-b2-24',
@@ -1750,6 +1975,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Blended 4 & 7 Year Barrels",
     distilleryLocation: "Bardstown, Kentucky",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "yellowstone select bourbon",
+      secondaryKeywords: ["yellowstone select kentucky straight bourbon", "yellowstone bourbon", "limestone branch yellowstone", "yellowstone bourbon price"],
+    },
   },
 
   // SCOTCH
@@ -24997,6 +25227,10 @@ export const PRODUCTS: Product[] = [
     stock: 3,
     caskType: "New charred American oak",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: "daniel weller spelt wheat bourbon",
+      secondaryKeywords: ["daniel weller bourbon", "new buffalo trace weller bourbons", "wheated bourbon", "weller bourbon"],
+    },
   },
   {
     id: 'prod-bourbon-new-02',
@@ -25015,6 +25249,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "New charred American oak",
     distilleryLocation: "Kentucky, USA",
+    seo: {
+      primaryKeyword: "frank august small batch bourbon",
+      secondaryKeywords: ["frank august small batch kentucky straight bourbon", "frank august bourbon"],
+    },
   },
   {
     id: 'prod-scotch-new-01',
