@@ -196,6 +196,46 @@ Together these 4 would round out a complete bar-essentials content cluster along
 
 ---
 
+## FINE WINE — 0 of ~28 core topics live (newest category, first batch just SEO'd)
+
+No wine blog posts exist yet. All 28 candidates below are sourced from real SEMrush data across the three wine keyword-map docs (`keyword-map-wine-red.md`, `keyword-map-wine-white.md`, `keyword-map-wine-fortified.md`).
+
+**Reds:**
+- 🎯 **How to Pronounce Wine Names** (Cabernet/Malbec/Merlot/Pinot Noir) — ~7,000+/mo combined
+- 🎯 **Is Pinot Noir Sweet or Dry?** — ~7,000+/mo, largest single red informational cluster found
+- 🎯 **Is Merlot Sweet? Merlot 101** — ~5,000+/mo
+- 🎯 **Is Cabernet Sauvignon Sweet or Dry?** — ~6,500+/mo
+- 🏷️ Cabernet Sauvignon vs. Merlot — ~1,900+/mo
+- 🎯 **Malbec 101: What Is It?** — ~2,500+/mo
+- 🎯 **Malbec vs. Cabernet vs. Merlot vs. Pinot Noir Comparison** — ~6,000+/mo, strongest comparison cluster in reds
+- 🎯 **What Is Old Vine Zinfandel?** — 2,900/mo, directly supports 3 stocked SKUs (7 Deadly Zins, Bogle, Cline)
+- 🏷️ Primitivo vs. Zinfandel — ~6,400/mo, under-covered educational angle
+- 🏷️ Red Zinfandel vs. White Zinfandel — real disambiguation need, site stocks red Zin only
+- 🎯 **Budget Red Wine Guide (Under $20)** — ~9,500+/mo, maps to 14 Hands/Apothic/Josh/19 Crimes entry tiers
+- 🏷️ Full-Bodied Red Wines Guide — 2,900/17
+
+**Whites:**
+- 🎯 **Is Chardonnay Sweet or Dry?** — ~9,300/mo combined, best single blog opportunity in the whole white batch
+- 🎯 **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** — ~14,700/mo combined, largest comparison cluster in the whole wine batch
+- 🎯 **What Is Moscato Wine? Sweetness, Styles & Serving** — ~6,800/mo combined
+- 🎯 **Buttery vs. Unoaked Chardonnay** — ~6,900/mo, extremely low KD, quick win; cross-links stocked Rombauer (buttery) vs. Sonoma-Cutrer (unoaked)
+- 🏷️ Riesling Sweetness Explained (Kabinett, Spätlese, dry German styles) — ~2,900/mo, supports both Dr. Loosen SKUs + Chateau Ste. Michelle
+- 🏷️ How to Pronounce Sauvignon Blanc, Pinot Grigio & Riesling — ~5,700/mo, near-zero competition, good AI-Overview/voice-search target
+- 🎯 **Is Pinot Grigio Sweet? What It Actually Tastes Like** — ~9,200/mo, strong enough to stand alone
+
+**Fortified / dessert / organic / rosé:**
+- 🎯 **What Is the Difference Between Port and Sherry?** — direct-match, near-zero competition, ties both hubs together
+- 🎯 **Is Dessert Wine the Same as Sweet Wine?** — 18,100+18,100+18,100 combined vol relative to KD, strong pillar-page candidate
+- 🎯 **What Is Natural Wine? Natural vs. Organic vs. Biodynamic** — 2,900/18, supports every Organic & Natural brand hub
+- 🎯 **Is Rosé Wine Sweet or Dry?** — very strong, low-KD cluster across multiple exact phrasings
+- 🏷️ Ruby vs. Tawny vs. Vintage Port, Explained — supports Graham's and Taylor Fladgate hubs directly
+- 🏷️ What Is Icewine and How Is It Made? — supports Inniskillin/Jackson-Triggs/Peller Estates hub content
+- 🎯 **Best Rosé Wines for Summer** — seasonal, commercial-intent, good May/June refresh cadence
+- 🏷️ Sherry 101: Fino, Amontillado, Oloroso, Cream & PX Explained — underpins every sherry product/brand page
+- 🏷️ What Is Pedro Ximénez Sherry? — supports Alvear, Lustau San Emilio, González Byass Néctar directly
+
+---
+
 ## Summary counts
 
 | Category | Live | New gaps identified |
@@ -213,7 +253,8 @@ Together these 4 would round out a complete bar-essentials content cluster along
 | Vodka | 1 | 6 |
 | NA Spirits | 1 | 2 |
 | Bar Essentials | 2 | 4 |
-| **Total** | **65 live** | **~72 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| Fine Wine | 0 | 28 |
+| **Total** | **65 live** | **~100 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -227,5 +268,8 @@ Together these 4 would round out a complete bar-essentials content cluster along
 8. **Why Is Japanese Whisky Hard to Find?** — strong pillar given your allocated Japanese inventory
 9. **What Does Bottled-in-Bond Mean?** (3,600/23) — high inventory relevance
 10. **Best Vodka for Martini/Mule/Bloody Mary** (~7,700 combined)
+11. **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** (~14,700 combined) — largest comparison cluster in the whole wine batch, zero content in a brand-new category
+12. **How to Choose a Cocktail Shaker** tier win for wine: **Is Dessert Wine the Same as Sweet Wine?** (~54,300 combined across 3 exact phrasings) — huge volume relative to KD
+13. **Is Chardonnay Sweet or Dry?** (~9,300 combined) — best single opportunity in Fine Wine, low KD throughout
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.

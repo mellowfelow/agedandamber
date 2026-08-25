@@ -1,4 +1,4 @@
-# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal)
+# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine)
 
 Consolidated from every "not currently in your catalog" and "missing expression within a brand you already carry" finding across every keyword batch processed so far. This is the running answer to "which products with real search demand should I add to inventory" — every item below carries genuine demand signal (SEMrush-sourced where available, web-research-confirmed and clearly flagged where not). KD = keyword difficulty (lower is easier to rank for). Volume floor applied: 50+; most items here are well above that.
 
@@ -351,7 +351,59 @@ Sourced from `MASTER_SEO_IMPLEMENTATION.md` Section 8 + `product-gaps-batch5.md`
 
 ---
 
-## Updated recommended stocking priority, across all 10 categories
+## Fine Wine
+
+Sourced from real SEMrush data across three docs (`keyword-map-wine-red.md`, `keyword-map-wine-white.md`, `keyword-map-wine-fortified.md`) — the first wine batch, covering all 128 stocked Fine Wine SKUs across 17 subcategories.
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **Stella Rosa** | **Stella Rosa Black** | stella rosa black (22,200, KD 25) | stella rosa black wine (3,600, KD 9) · stella rosa (27,100, halo) · stella rosa wine (40,500, halo) | **Single strongest combined volume in the entire Fine Wine gap analysis** — semi-sweet red flavor not stocked; you currently carry only the Moscato d'Asti and 2 rosé flavors of this brand |
+| Stella Rosa | Peach / Pink / Red flavors | stella rosa red (2,400, KD 12) | stella rosa peach wine (1,300, KD 15) · stella rosa pink (1,000, KD 7) · stella rosa wine flavors (1,300, KD 7) | Real flavor-line extensions beyond Black |
+| Bonterra | **Rosé** and **Pinot Noir** | organic rose wine (480, KD 7) · organic pinot noir (390, KD 19) | both independently CSV-backed real demand, not inferred | Both are genuine, already-validated keywords — easiest, lowest-risk stocking case in this whole gap table, on a brand you already carry 4 SKUs of |
+| Taylor Fladgate | **Chip Dry White Port** | white port (1,600, KD 28) | white port wine (1,300, KD 12) · taylor fladgate port wine (1,900, halo) | World's first dry white port (1934) — real historical first, real CSV-backed category volume, not stocked |
+| William Hill / Far Niente / Meiomi (Chardonnay gap) | see Part B — same brands, Chardonnay tier | — | — | Cross-reference: several Part B brands also have real missing-tier signal within categories you stock elsewhere |
+| Kendall-Jackson (Vintner's Reserve Chardonnay) | Vintner's Reserve **Sauvignon Blanc** | kendall jackson sauvignon blanc (880, KD 10) | kendall jackson chardonnay (8,100, halo) · sauvignon blanc wine (8,100, KD 12) | Real, same-brand line extension |
+| Josh Cellars (5 SKUs) | **Pinot Grigio** | josh cellars pinot grigio (720, KD 11) | josh pinot grigio (2,400, KD 12) · josh cellars pinot grigio 750ml (720, KD 9) | Rounds out the whole varietal range for a brand you already carry deeply |
+| Duckhorn (owns Decoy) | Duckhorn **Cabernet Sauvignon** | duckhorn cabernet sauvignon (4,400, KD 13) | napa valley cabernet sauvignon (14,800, halo) | Flagship-tier SKU of a brand you stock the second-label (Decoy) of |
+| William Hill / Robert Mondavi / etc. | — | — | — | See Part B — these are unstocked brands, not expressions of stocked ones |
+| Bogle (Old Vine Zin) | Cabernet Sauvignon, Pinot Noir, Merlot | bogle cabernet sauvignon (2,400, KD 10) | bogle pinot noir (880, KD 9) · bogle merlot wine (170, KD 5) | Real, low-KD, same-brand range expansion |
+| 19 Crimes (Red Blend) | Cabernet Sauvignon, Pinot Noir ("The Punishment") | 19 crimes cabernet sauvignon (1,300, KD 16) | 19 crimes pinot noir (320, KD 16) | Snoop Dogg brand halo already drives huge demand (19 crimes wine, 12,100) |
+| Barefoot (Moscato) | Pinot Grigio, Riesling | barefoot pinot grigio (4,400, KD 12) | barefoot riesling (1,600, KD 14) · barefoot wine (27,100, halo) | Real flavor/varietal-line gaps |
+| Bartenura (Rosé) | **Bartenura Moscato** | bartenura moscato (14,800, KD 14) | bartenura moscato d'asti (2,900, KD 21) · bartenura moscato wine (2,900, KD 5) | Strongest unstocked Moscato-brand signal — the well-known kosher-market anchor brand; you already carry Bartenura Rosé |
+| Lustau (2 sherries) | Manzanilla Papirusa, Puerto Fino, Amontillado Los Arcos, Palo Cortado Península, Oloroso Don Nuño | — | real, directly from Lustau's own published Solera Reserva range | No CSV volume (Sherry export was unusually thin) but genuinely real, confirmed SKUs |
+| Graham's (4 ports) | 30 & 40 Year Tawny, declared Vintage Port, Quinta dos Malvedos single quinta | tawny port (4,400, KD 20 — category pool) | — | No brand-specific CSV volume (cutoff artifact — dedicated Graham's export would sharpen this) |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Category | Primary key (vol, KD) | Support keys | Note |
+|---|---|---|---|---|
+| **William Hill** | Chardonnay & Cabernet Sauvignon | william hill cabernet sauvignon (18,100, KD 14) | william hill chardonnay (12,100, KD 26) · napa valley cabernet sauvignon (14,800, halo) | **Strongest unstocked-brand signal across the entire Fine Wine batch** — real demand in both a red and white tier |
+| Robert Mondavi | Cabernet Sauvignon | robert mondavi cabernet sauvignon (2,900, KD 18) | robert mondavi private selection (1,600, KD —) | One of the most recognizable Napa names, currently absent entirely |
+| Austin Hope | Cabernet Sauvignon | austin hope cabernet sauvignon (6,600, KD 11) | paso robles cabernet sauvignon (4,400, halo) | Excellent KD |
+| Stags' Leap | Cabernet Sauvignon | stags leap cabernet sauvignon (3,600, KD 15) | napa valley cabernet sauvignon (14,800, halo) | |
+| Far Niente | Chardonnay | far niente chardonnay (3,600, KD 17) | far niente chardonnay napa (480, KD 21) | |
+| Turley | Zinfandel | turley zinfandel (1,000, KD 8) | old vine zinfandel (1,600, halo) | Cult Zin producer, excellent KD |
+| Rombauer | Zinfandel (you stock their Chardonnay) | rombauer zinfandel (1,900, KD 18) | zinfandel red wine (2,400, halo) | Same-brand-different-varietal gap |
+| Whitehaven / Matua | Sauvignon Blanc | whitehaven sauvignon blanc (5,400, KD 19) | matua sauvignon blanc (5,400, KD 8) | Two real, well-known NZ Sauvignon Blanc brands, neither stocked |
+| Kung Fu Girl (Charles Smith) | Riesling | kung fu girl riesling (1,300, KD 16) | dry riesling (1,300, halo) | |
+| Cupcake | Moscato & Rosé | cupcake moscato (5,400, KD 12) | cupcake rose wine (720, KD 11) | Large grocery-channel brand, real demand across two subcategories |
+| Sandeman | Sherry & Port | sandeman port wine (1,300, KD 20) | — | Also makes sherry under the same house |
+| Kopke | Port | kopke port wine (590, KD 16) | — | Oldest port house, founded 1638 |
+| Mirabeau | Rosé | mirabeau rose wine (1,300, KD 9) | — | English-owned Provence estate |
+| Belaire | Sparkling Rosé | belaire rose sparkling wine (480, KD 9) | — | Strong hip-hop/culture crossover recognition |
+| Josh Cellars | Rosé (brand you already carry 5 SKUs of) | josh rose wine (590, KD 8) | — | Same-brand new-varietal case |
+| Badger Mountain | Organic Wine | badger mountain organic wine (140, KD 3) | — | Washington's first organic winery, no-sulfite-added specialist |
+| Cooper's Hawk / Warner | Icewine | cooper's hawk lux ice wine (140, KD 14) | warner ice wine (170, KD 9) | US-made icewine-style alternatives to the Canadian brands you stock |
+
+**Checked and excluded/deferred:** Dow's, Warre's, Cockburn's, Niepoort (real major Douro port houses, no CSV volume found). Barbadillo, Valdespino, standalone Tío Pepe, Romate (real Jerez sherry houses, Sherry export too thin to show brand volume for anyone). Château d'Esclans' own flagship cuvée, Les Clans, and Garrus (real, confirmed SKUs of a brand you already carry 3 tiers of — Whispering Angel, Rock Angel, The Palm). Miraval's Muse and Studio tiers (real, confirmed, same brand).
+
+**Priority:** Stella Rosa Black (22,200 combined) is the standout single finding in this entire category — a huge-demand flavor inside a brand you already stock. William Hill is the strongest new-brand case, with real signal in two different subcategories. Bonterra Rosé/Pinot Noir is the lowest-risk pick — both keywords are independently CSV-confirmed, not inferred.
+
+---
+
+## Updated recommended stocking priority, across all 11 categories
 
 1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
 2. **Pinnacle Whipped Cream** (Vodka) — real demand exceeds the base brand's own keyword pool, only plain base stocked
@@ -368,8 +420,11 @@ Sourced from `MASTER_SEO_IMPLEMENTATION.md` Section 8 + `product-gaps-batch5.md`
 13. **José Cuervo Tradicional** (Tequila) — fills the entire missing middle tier of the brand already anchoring the category
 14. **Woodford Reserve Rye / Angel's Envy Rye** (Rye & Other Whiskey) — rye expressions from brands whose bourbon is already stocked, page infrastructure exists
 15. **Volcán de Mi Tierra** (Tequila) — Clooney/Gerber LVMH-backed venture, direct cross-sell with stocked Casamigos
-16. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+16. **Stella Rosa Black** (Fine Wine) — 22,200 combined vol, single strongest finding in the entire wine gap analysis, inside a brand already stocked
+17. **William Hill** (Fine Wine) — strongest new-brand case in wine, real demand in both Cabernet Sauvignon and Chardonnay
+18. **Bonterra Rosé / Pinot Noir** (Fine Wine) — both independently CSV-confirmed, lowest-risk pick in the wine batch, brand already stocked at 4 SKUs
+19. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
 
 ---
 
-*This document will grow as remaining categories (Fine Wine, Champagne, Beer, Cider, RTD/Liqueurs, NA Wine/Champagne, NA RTD Cocktails) are batch-processed.*
+*This document will grow as remaining categories (Champagne, Beer, Cider, RTD/Liqueurs, NA Wine/Champagne, NA RTD Cocktails) are batch-processed.*
