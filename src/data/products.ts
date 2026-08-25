@@ -21078,6 +21078,14 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier blend",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      primaryKeyword: "armand de brignac gold brut champagne",
+      secondaryKeywords: ["armand de brignac champagne", "ace of spades champagne", "armand de brignac", "armand de brignac brut gold champagne", "ace of spades brut", "armand de brignac ace of spades brut gold champagne"],
+      faqs: [
+        { question: 'How much is a bottle of Ace of Spades?', answer: 'Armand de Brignac Gold Brut ("Ace of Spades") typically retails in the low-to-mid hundreds of dollars per bottle, reflecting its hand-riddled, hand-disgorged, hand-labeled production and luminous gold-bottle presentation.' },
+        { question: 'Who owns Ace of Spades champagne?', answer: "Jay-Z (Shawn Carter) took full ownership of Armand de Brignac in 2014 after buying out original partner Sovereign Brands, then sold a 50% stake to LVMH's Moët Hennessy in February 2021. Cattier, the Champagne family that has produced it since the 2006 launch, continues to make the wine." },
+      ],
+    },
   },
   {
     id: 'prod-champ-02',
@@ -21102,6 +21110,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Pinot Noir and Pinot Meunier led blend with Chardonnay",
     distilleryLocation: "Mareuil-sur-Aÿ, Champagne, France",
+    seo: {
+      primaryKeyword: "billecart salmon brut rose",
+      secondaryKeywords: ["billecart salmon rose", "billecart rose", "salmon billecart brut rose", "billecart-salmon brut rosé", "billecart salmon champagne brut rose", "billecart rose champagne"],
+    },
   },
   {
     id: 'prod-champ-03',
@@ -21126,6 +21138,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier blend",
     distilleryLocation: "Mareuil-sur-Aÿ, Champagne, France",
+    seo: {
+      primaryKeyword: "billecart salmon brut reserve",
+      secondaryKeywords: ["champagne billecart salmon brut reserve", "billecart brut reserve", "billecart-salmon brut reserve", "billecart salmon brut", "billecart brut", "champagne brut reserve billecart salmon"],
+    },
   },
   {
     id: 'prod-champ-04',
@@ -21150,6 +21166,11 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "65% Pinot Noir, 35% Chardonnay",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "bollinger la grande année champagne",
+      secondaryKeywords: ["bollinger champagne", "bollinger champagne bollinger", "vintage champagne", "best champagne", "expensive champagne"],
+    },
   },
   {
     id: 'prod-champ-05',
@@ -21174,6 +21195,14 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Majority Pinot Noir blend, partly oak-fermented",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "bollinger special cuvee",
+      secondaryKeywords: ["bollinger champagne", "bollinger champagne bollinger", "brut champagne", "french champagne", "champagne brands"],
+      faqs: [
+        { question: 'What is Bollinger Special Cuvée?', answer: "Bollinger's non-vintage flagship, built from a high proportion of Pinot Noir and barrel-fermented reserve wines for richness and consistency across vintages — the house's core, everyday-luxury expression." },
+      ],
+    },
   },
   {
     id: 'prod-champ-06',
@@ -21198,6 +21227,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "100% Chardonnay",
     distilleryLocation: "Le Mesnil-sur-Oger, Côte des Blancs, France",
+    seo: {
+      primaryKeyword: "delamotte blanc de blancs",
+      secondaryKeywords: ["delamotte champagne", "champagne delamotte", "delamotte brut champagne", "delamotte blanc de blancs champagne", "delamotte brut", "delamotte"],
+    },
   },
   {
     id: 'prod-champ-07',
@@ -21222,6 +21255,11 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Pinot Noir dominant blend with Chardonnay",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "dom perignon rose champagne",
+      secondaryKeywords: ["dom perignon champagne", "champagne cuvee dom perignon", "dom pérignon champagne", "champagne perignon", "rosé champagne", "pink champagne"],
+    },
   },
   {
     id: 'prod-champ-08',
@@ -21246,6 +21284,15 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Pinot Noir and Chardonnay blend",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "dom perignon champagne",
+      secondaryKeywords: ["champagne cuvee dom perignon", "dom pérignon champagne", "champagne dom p", "vintage champagne", "don periñon", "champagne perignon"],
+      faqs: [
+        { question: 'Who was Dom Pérignon?', answer: 'A real Benedictine monk and cellarer at the Abbey of Hautvillers (1638–1715). The popular claim that he "invented" sparkling Champagne is a later marketing legend, not literal history, though he made real, documented contributions to cross-plot blending technique.' },
+        { question: 'Was Dom Pérignon a monk?', answer: 'Yes, a real Benedictine cellarer at Hautvillers Abbey; the specific claim that he invented champagne\'s bubbles is a later marketing legend, not historical fact.' },
+        { question: 'Why is Dom Pérignon so expensive?', answer: 'Dom Pérignon releases no standard non-vintage wine at all — every bottle is a declared vintage from a single exceptional year, aged for years on its lees under exacting Grand Cru sourcing, which drives both its scarcity and its price.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-09',
@@ -21270,6 +21317,13 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier, oak-fermented",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "krug grande cuvee",
+      secondaryKeywords: ["krug grande cuvée", "krug champagne", "krug grande cuvee champagne brut", "champagne krug grande cuvee", "krug grand cuvee", "krug champagne price"],
+      faqs: [
+        { question: "What is a Krug Grande Cuvée 'Edition'?", answer: 'Grande Cuvée is a blend of well over 100 wines from more than 10 vintages, released as a numbered Édition rather than a fixed recurring recipe — the exact blend genuinely changes release to release.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-10',
@@ -21294,6 +21348,13 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "100% Pinot Noir",
     distilleryLocation: "Tours-sur-Marne, Champagne, France",
+    seo: {
+      primaryKeyword: "laurent perrier champagne",
+      secondaryKeywords: ["rosé champagne", "rose champagne", "champagne rose champagne", "pink champagne", "best champagne"],
+      faqs: [
+        { question: 'What makes Laurent-Perrier Cuvée Rosé special?', answer: 'Laurent-Perrier reintroduced non-vintage rosé champagne in 1968 using a proprietary 48–72 hour skin-maceration technique, and Cuvée Rosé is widely regarded as the benchmark rosé champagne worldwide.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-11',
@@ -21318,6 +21379,10 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier blend",
     distilleryLocation: "Tours-sur-Marne, Champagne, France",
+    seo: {
+      primaryKeyword: "laurent perrier champagne",
+      secondaryKeywords: ["brut champagne", "best champagne", "champagne brands", "french champagne", "champagne houses"],
+    },
   },
   {
     id: 'prod-champ-12',
@@ -21342,6 +21407,13 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "60% Pinot Noir, 40% Chardonnay",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "crystal champagne",
+      secondaryKeywords: ["louis roederer cristal", "louis roederer champagne", "cristal champagne price", "louis roederer champagne cristal", "louis roederer cristal champagne"],
+      faqs: [
+        { question: 'How much is a bottle of Cristal?', answer: 'Cristal is a prestige cuvée that typically commands a premium price reflecting its history and production. Cristal was created in 1876 for Tsar Alexander II of Russia; its clear, flat-bottomed bottle was reportedly designed at the Tsar\'s request, partly for security reasons, and it remained exclusive to the Russian Imperial Court until it was first commercially released in 1945.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-13',
@@ -21366,6 +21438,14 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier blend",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      // "moet champagne" confirmed real via WebSearch for the specific "Grand Vintage" line, not volume-backed as its own distinct term — leans on the shared brand pool.
+      primaryKeyword: "moet champagne",
+      secondaryKeywords: ["moet champagne wine", "moet and chandon", "vintage champagne", "moet chandon", "vintage non vintage champagne"],
+      faqs: [
+        { question: 'What\'s the difference between vintage and non-vintage champagne?', answer: 'Vintage champagne is made entirely from grapes harvested in a single, exceptional year and is only released when the cellar master deems the harvest worthy. Non-vintage champagne is blended from multiple years to achieve a consistent house style year after year.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-14',
@@ -21390,6 +21470,13 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Pinot Noir, Pinot Meunier, Chardonnay blend",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "moet imperial champagne brut",
+      secondaryKeywords: ["imperial brut moet", "moet imperial", "moet brut imperial", "champagne moet brut", "moet & chandon imperial brut"],
+      faqs: [
+        { question: 'Is Moët a good champagne?', answer: 'Yes; as the largest and most widely distributed champagne house in the world, Moët & Chandon delivers reliable, well-made non-vintage champagne at scale, alongside genuinely prestige-tier Grand Vintage releases in strong years.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-15',
@@ -21414,6 +21501,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Pinot Noir dominant blend with red wine addition",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "moet rose imperial",
+      secondaryKeywords: ["moet chandon rose imperial", "moet rose champagne", "moet rose", "moet chandon rose", "moet and chandon rose imperial"],
+    },
   },
   {
     id: 'prod-champ-16',
@@ -21438,6 +21529,13 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier blend",
     distilleryLocation: "Chouilly, Champagne, France",
+    seo: {
+      primaryKeyword: "nicolas feuillatte reserve exclusive brut",
+      secondaryKeywords: ["nicolas feuillatte champagne", "nicolas feuillatte", "nicolas feuillatte reserve exclusive brut champagne", "nicolas feuillatte champagne brut", "nicolas feuillatte brut reserve"],
+      faqs: [
+        { question: 'Is Nicolas Feuillatte champagne good?', answer: 'Yes; as the largest grower cooperative in Champagne, sourcing from over 4,000 acres farmed by more than 5,000 grower families, Nicolas Feuillatte consistently delivers well-regarded quality at a more accessible price point than the grande marque houses.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-17',
@@ -21462,6 +21560,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "100% Chardonnay",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "perrier jouet blanc de blanc",
+      secondaryKeywords: ["perrier jouet champagne", "perrier jouet", "perrier jouet blanc de blancs", "perrier-jouët", "perrier jouet grand brut"],
+    },
   },
   {
     id: 'prod-champ-18',
@@ -21486,6 +21588,14 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "100% Grand Cru Chardonnay",
     distilleryLocation: "Le Mesnil-sur-Oger, Côte des Blancs, France",
+    seo: {
+      // "pierre peters cuvee de reserve blanc de blancs" confirmed real via WebSearch, not volume-backed — no dedicated Pierre Péters export exists and grower-champagne houses show essentially zero volume in this dataset.
+      primaryKeyword: "pierre peters cuvee de reserve blanc de blancs",
+      secondaryKeywords: ["french champagne", "champagne houses", "champagne", "grand cru champagne", "grower champagne"],
+      faqs: [
+        { question: 'What makes Pierre Péters Cuvée de Réserve distinctive?', answer: 'The Péters family has grown grapes in Champagne since 1840. Rodolphe Péters (6th generation, took over 2008) built Cuvée de Réserve as roughly 45% current-vintage Chardonnay blended with a perpetual reserve solera dating back to 1988, sourced exclusively from the grand cru villages of Le Mesnil-sur-Oger, Oger, Avize, and Cramant.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-19',
@@ -21510,6 +21620,13 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier blend",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "piper heidsieck cuvee brut",
+      secondaryKeywords: ["piper heidsieck champagne", "piper heidsieck", "piper heidsieck champagne brut", "piper heidsieck brut champagne", "piper-heidsieck cuvée brut champagne"],
+      faqs: [
+        { question: 'What is Piper-Heidsieck known for?', answer: 'Piper-Heidsieck was founded in 1785 by Florens-Louis Heidsieck. Marilyn Monroe was a famous devotee of the house in the 1950s–60s ("To Piper, my favorite"), and it even had custom silver ice buckets engraved with her name.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-20',
@@ -21534,6 +21651,13 @@ export const PRODUCTS: Product[] = [
     stock: 52,
     caskType: "100% Chardonnay",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "ruinart blanc de blancs",
+      secondaryKeywords: ["ruinart champagne", "ruinart", "ruinart blanc de blancs champagne", "ruinart champagne blanc de blancs", "blanc de blanc ruinart"],
+      faqs: [
+        { question: 'Is Ruinart the oldest champagne house?', answer: 'Yes, confirmed: Ruinart was founded September 1, 1729 by Nicolas Ruinart, making it the oldest established Champagne house still producing today.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-21',
@@ -21558,6 +21682,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "40% Chardonnay, 35% Pinot Noir, 25% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "taittinger brut la francaise",
+      secondaryKeywords: ["taittinger champagne", "taittinger champagne brut", "taittinger brut la francaise champagne", "taittinger brut", "taittinger brut champagne"],
+    },
   },
   {
     id: 'prod-champ-22',
@@ -21582,6 +21710,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Pinot Noir dominant blend with still red wine",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "taittinger prestige rose",
+      secondaryKeywords: ["taittinger rose", "taittinger rose champagne", "champagne rose taittinger", "taittinger champagne rosé", "taittinger champagne rose"],
+    },
   },
   {
     id: 'prod-champ-23',
@@ -21606,6 +21738,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Pinot Noir dominant blend with red wine addition",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "veuve clicquot rose",
+      secondaryKeywords: ["veuve clicquot ponsardin rose champagne", "veuve clicquot rose champagne", "veuve clicquot brut rose", "veuve clicquot rose brut", "veuve clicquot champagne rose"],
+    },
   },
   {
     id: 'prod-champ-24',
@@ -21630,6 +21766,13 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Pinot Noir and Chardonnay blend",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "vintage champagne",
+      secondaryKeywords: ["veuve clicquot champagne", "vintage non vintage champagne", "veuve clicquot ponsardin", "veuve clicquot la grande dame", "veuve clicquot"],
+      faqs: [
+        { question: 'What\'s the difference between vintage and non-vintage champagne?', answer: 'Vintage champagne is made entirely from grapes harvested in a single, exceptional year and is only released when the cellar master deems the harvest worthy. Non-vintage champagne is blended from multiple years to achieve a consistent house style — the key difference between this Vintage cuvée and the Yellow Label.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-25',
@@ -21654,6 +21797,13 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "50-55% Pinot Noir, Chardonnay, Pinot Meunier blend",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "veuve clicquot yellow label brut champagne",
+      secondaryKeywords: ["veuve clicquot brut yellow label", "veuve clicquot yellow label", "veuve clicquot ponsardin brut yellow label", "veuve clicquot brut champagne", "yellow label champagne"],
+      faqs: [
+        { question: 'Who owns Veuve Clicquot?', answer: 'Veuve Clicquot is owned by LVMH (Moët Hennessy Louis Vuitton).' },
+      ],
+    },
   },
   {
     id: 'prod-champ-26',
@@ -21678,6 +21828,14 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Chardonnay & Pinot Noir, Traditional Method",
     distilleryLocation: "Burgundy, France",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "albert bichot cremant de bourgogne",
+      secondaryKeywords: ["sparkling wine", "french sparkling wine", "brut wine", "what is the difference between champagne and sparkling wine", "best sparkling wine"],
+      faqs: [
+        { question: "What's the difference between champagne and sparkling wine?", answer: "Champagne must be made in the Champagne region of France under strict rules. Sparkling wine is the broader category that includes Champagne along with styles like Crémant, Prosecco, and Cava — bottle- or tank-fermented bubbly made outside Champagne, often at a fraction of the price." },
+      ],
+    },
   },
   {
     id: 'prod-champ-27',
@@ -21702,6 +21860,13 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Treviso, Veneto, Italy",
+    seo: {
+      primaryKeyword: "bottega gold prosecco",
+      secondaryKeywords: ["prosecco", "what is prosecco", "best prosecco", "italian prosecco", "prosecco brands"],
+      faqs: [
+        { question: "Is prosecco sweet?", answer: "Most prosecco falls between Brut (driest) and Extra Dry (slightly sweet despite the name), with Dry as the sweetest common style. Bottega Gold leans fruit-forward and gently off-dry rather than bone-dry Brut." },
+      ],
+    },
   },
   {
     id: 'prod-champ-28',
@@ -21726,6 +21891,13 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Chardonnay, Pinot Noir & Pinot Meunier, Traditional Method",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      primaryKeyword: "chandon sparkling wine",
+      secondaryKeywords: ["chandon brut sparkling wine", "sparkling wine", "california sparkling wine", "brut sparkling wine", "best sparkling wine"],
+      faqs: [
+        { question: "What's the difference between champagne and sparkling wine?", answer: "Champagne must be produced in the Champagne region of France; sparkling wine is the broader category that includes Champagne plus styles made everywhere else, such as Chandon's California Brut Classic, using the same traditional bottle-fermentation method." },
+      ],
+    },
   },
   {
     id: 'prod-champ-29',
@@ -21750,6 +21922,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Pinot Noir-led Blend, Traditional Method",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      primaryKeyword: "chandon sparkling rose",
+      secondaryKeywords: ["chandon rose sparkling wine", "sparkling rose", "sparkling rose wine", "rose sparkling wine", "pink sparkling wine"],
+    },
   },
   {
     id: 'prod-champ-30',
@@ -21774,6 +21950,14 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Macabeo, Xarel·lo & Parellada, Traditional Method",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "codorniu clasico brut cava",
+      secondaryKeywords: ["cava wine", "cava brut", "spanish cava", "what is cava wine", "brut cava"],
+      faqs: [
+        { question: "What is cava wine?", answer: "Cava is a Spanish sparkling wine made using the same traditional, bottle-fermentation method as Champagne, primarily from the native Macabeo, Xarel·lo, and Parellada grapes of Catalonia's Penedès region. Codorníu made the first-ever bottle of Cava there in 1872." },
+      ],
+    },
   },
   {
     id: 'prod-champ-31',
@@ -21798,6 +21982,13 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Macabeo, Xarel·lo & Parellada, Traditional Method",
     distilleryLocation: "Sant Sadurní d'Anoia, Spain",
+    seo: {
+      primaryKeyword: "cava wine freixenet",
+      secondaryKeywords: ["cava wine", "spanish cava", "cava brut", "brut cava", "best cava"],
+      faqs: [
+        { question: "What is cava wine?", answer: "Cava is a Spanish sparkling wine made using the same traditional, bottle-fermentation method as Champagne, primarily from the Macabeo, Xarel·lo, and Parellada grapes of Catalonia's Penedès region. Cordón Negro's iconic frosted-black bottle launched in 1974 and made Freixenet the world's top-selling Cava producer by 1985." },
+      ],
+    },
   },
   {
     id: 'prod-champ-32',
@@ -21822,6 +22013,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Glera & Pinot Noir, Charmat Method",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "freixenet italian rose",
+      secondaryKeywords: ["sparkling rose", "italian sparkling rose", "pink sparkling wine", "rose fizzy wine", "sparkling rose wine"],
+    },
   },
   {
     id: 'prod-champ-33',
@@ -21846,6 +22042,14 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Xarel·lo, Macabeo, Parellada & Chardonnay, Traditional Method",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "gramona imperial gran reserva cava",
+      secondaryKeywords: ["cava wine", "best cava wine", "cava brut", "spanish cava wine", "what is cava wine"],
+      faqs: [
+        { question: "What is cava wine?", answer: "Cava is a Spanish sparkling wine made using the same traditional, bottle-fermentation method as Champagne, primarily from the Macabeo, Xarel·lo, and Parellada grapes of Catalonia's Penedès region. Gramona has made wine in the Penedès since 1816, and its Imperial Gran Reserva ages roughly 60 months on the lees — well beyond Cava's legal minimum." },
+      ],
+    },
   },
   {
     id: 'prod-champ-34',
@@ -21870,6 +22074,14 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Macabeo, Xarel·lo & Parellada, Traditional Method",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "juve camps reserva de la familia",
+      secondaryKeywords: ["cava wine", "best cava", "cava brut", "spanish cava", "sparkling cava"],
+      faqs: [
+        { question: "What is cava wine?", answer: "Cava is a Spanish sparkling wine made using the same traditional, bottle-fermentation method as Champagne, primarily from the Macabeo, Xarel·lo, and Parellada grapes of Catalonia's Penedès region. Reserva de la Familia, first released in 1978, is today both the world's best-selling Cava Gran Reserva Brut Nature and the Cava regularly served at official Spanish royal-family banquets." },
+      ],
+    },
   },
   {
     id: 'prod-champ-35',
@@ -21894,6 +22106,14 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Chardonnay, Pinot Noir & Pinot Blanc, Traditional Method",
     distilleryLocation: "Russian River Valley, California",
+    seo: {
+      primaryKeyword: "korbel brut california champagne",
+      secondaryKeywords: ["korbel champagne", "korbel sparkling champagne", "california champagne korbel", "korbel brut champagne", "sparkling wine"],
+      faqs: [
+        { question: "Why is Korbel labeled 'Champagne' if it's from California?", answer: "In 2006 the US and EU signed a wine-trade agreement banning new use of 'Champagne' on non-French wine, but it included a grandfather clause protecting US producers already using the term. Korbel has labeled its wine 'California Champagne' since the late 1800s, making it one of the grandfathered brands — federal rules also require the true place of origin, California, to appear alongside the label." },
+        { question: "What's the difference between champagne and sparkling wine?", answer: "Champagne must be made in the Champagne region of France; sparkling wine is the broader category covering Champagne plus every other bottle-fermented or tank-method bubbly made elsewhere in the world, including Korbel's California-grown, traditional-method sparkling wine." },
+      ],
+    },
   },
   {
     id: 'prod-champ-36',
@@ -21918,6 +22138,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Conegliano Valdobbiadene, Italy",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "la marca luminore prosecco",
+      secondaryKeywords: ["la marca prosecco", "lamarca prosecco", "la marca prosecco wine", "what is prosecco", "valdobbiadene prosecco superiore"],
+    },
   },
   {
     id: 'prod-champ-37',
@@ -21942,6 +22167,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Glera & Pinot Noir, Charmat Method",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      primaryKeyword: "la marca prosecco rose",
+      secondaryKeywords: ["lamarca prosecco rose", "sparkling rose", "sparkling rose wine", "rose fizzy wine", "rose sparkling wine"],
+    },
   },
   {
     id: 'prod-champ-38',
@@ -21966,6 +22195,13 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      primaryKeyword: "la marca prosecco",
+      secondaryKeywords: ["lamarca prosecco", "lamarca prosecco wine", "la marca prosecco wine", "lamarca prosecco price", "la marca prosecco price"],
+      faqs: [
+        { question: "What is prosecco?", answer: "Prosecco is Italy's sparkling wine, made primarily from the Glera grape in the Veneto and Friuli-Venezia Giulia regions, typically using the Charmat (tank) method for a fresh, fruit-forward style. La Marca, founded in 1968 as a cooperative of local growers, is the single largest exporter of Prosecco into the United States." },
+      ],
+    },
   },
   {
     id: 'prod-champ-39',
@@ -21990,6 +22226,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Pinot Noir & Chardonnay, Traditional Method",
     distilleryLocation: "Nuits-Saint-Georges, Burgundy, France",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "louis bouillot perle de vigne",
+      secondaryKeywords: ["sparkling wine", "french sparkling wine", "brut wine", "what is the difference between champagne and sparkling wine", "sparkling wine from france"],
+    },
   },
   {
     id: 'prod-champ-40',
@@ -22014,6 +22255,11 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Pinot Noir, Traditional Method",
     distilleryLocation: "Alsace, France",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lucien albrecht cremant d'alsace rose",
+      secondaryKeywords: ["sparkling rose", "french sparkling rose", "french sparkling rose wine", "sparkling rose wine", "rose sparkling wine"],
+    },
   },
   {
     id: 'prod-champ-41',
@@ -22038,6 +22284,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Pinot Blanc, Pinot Auxerrois & Pinot Gris, Traditional Method",
     distilleryLocation: "Alsace, France",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lucien albrecht cremant d'alsace",
+      secondaryKeywords: ["sparkling wine", "french sparkling wine", "brut wine", "what is the difference between champagne and sparkling wine", "sparkling white wine"],
+    },
   },
   {
     id: 'prod-champ-42',
@@ -22062,6 +22313,13 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Treviso, Veneto, Italy",
+    seo: {
+      primaryKeyword: "mionetto prosecco brut",
+      secondaryKeywords: ["mionetto prosecco", "mionetto prosecco doc", "mionetto brut prosecco", "prosecco doc brut mionetto", "mionetto prosecco price"],
+      faqs: [
+        { question: "Is prosecco sweet?", answer: "Most prosecco ranges from Brut (driest) to Extra Dry to Dry (sweetest, despite the name). Mionetto's Brut is the driest style in the range, made using the Charmat method for a crisp, clean finish rather than a sweeter profile." },
+      ],
+    },
   },
   {
     id: 'prod-champ-43',
@@ -22086,6 +22344,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Glera & Pinot Nero, Charmat Method",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "mionetto prosecco rose",
+      secondaryKeywords: ["mionetto prosecco", "sparkling rose", "sparkling rose wine", "rose sparkling wine", "italian sparkling rose"],
+    },
   },
   {
     id: 'prod-champ-44',
@@ -22110,6 +22373,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Pinot Noir, Chardonnay & Pinot Meunier, Traditional Method",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "mumm napa brut prestige",
+      secondaryKeywords: ["sparkling wine napa", "california sparkling wine", "sparkling wine", "mumm winery napa california", "sparkling wine california"],
+    },
   },
   {
     id: 'prod-champ-45',
@@ -22134,6 +22402,13 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Glera, Extended Charmat Method",
     distilleryLocation: "Valdobbiadene, Italy",
+    seo: {
+      primaryKeyword: "valdobbiadene prosecco superiore",
+      secondaryKeywords: ["prosecco superiore di valdobbiadene", "what is prosecco wine", "italian prosecco", "best prosecco", "prosecco doc"],
+      faqs: [
+        { question: "What's the difference between Prosecco DOC and Prosecco Superiore DOCG?", answer: "Prosecco DOC comes from a broad zone spanning the plains of Veneto and Friuli-Venezia Giulia. Prosecco Superiore DOCG is a stricter designation reserved for the hillside Conegliano-Valdobbiadene zone, with lower yields and higher quality standards. Nino Franco's Rustico is a DOCG wine from this more restrictive zone." },
+      ],
+    },
   },
   {
     id: 'prod-champ-46',
@@ -22158,6 +22433,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Pinot Noir & Chardonnay, Traditional Method",
     distilleryLocation: "Anderson Valley, California",
+    seo: {
+      primaryKeyword: "roederer estate",
+      secondaryKeywords: ["roederer estate winery", "sparkling rose wine", "rose sparkling wine", "california sparkling wine", "roederer california"],
+      faqs: [
+        { question: 'Is Roederer Estate the same as Louis Roederer champagne?', answer: 'Related but distinct: Roederer Estate is Louis Roederer\'s own California sparkling-wine label, made in Anderson Valley from estate-grown fruit — a different, non-Champagne-AOC product from the same family-owned parent company, comparable to how Mumm Napa relates to G.H. Mumm.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-47',
@@ -22182,6 +22464,13 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Chardonnay & Pinot Noir, Traditional Method",
     distilleryLocation: "Anderson Valley, California",
+    seo: {
+      primaryKeyword: "roederer estate",
+      secondaryKeywords: ["roederer estate winery", "roederer california", "roderer estate", "california sparkling wine", "sparkling wine"],
+      faqs: [
+        { question: 'Is Roederer Estate the same as Louis Roederer champagne?', answer: 'Roederer Estate is Louis Roederer\'s California sparkling-wine venture, founded 1982 in the cool, fog-shrouded Anderson Valley of Mendocino County — a genuinely separate consumer-facing brand and product (US sparkling wine, not French Champagne AOC), the same relationship as Mumm Napa to G.H. Mumm.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-48',
@@ -22206,6 +22495,10 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Valdobbiadene, Veneto, Italy",
+    seo: {
+      primaryKeyword: "ruffino prosecco",
+      secondaryKeywords: ["prosecco ruffino", "best prosecco", "prosecco brands", "what is prosecco wine", "italian prosecco"],
+    },
   },
   {
     id: 'prod-champ-49',
@@ -22230,6 +22523,13 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Glera, Charmat Method",
     distilleryLocation: "Valdobbiadene, Italy",
+    seo: {
+      primaryKeyword: "santa margherita prosecco",
+      secondaryKeywords: ["valdobbiadene prosecco superiore", "prosecco superiore di valdobbiadene", "best prosecco", "italian prosecco", "prosecco doc"],
+      faqs: [
+        { question: "What's the difference between Prosecco DOC and DOCG?", answer: "Prosecco DOC comes from a broad growing zone across Veneto and Friuli-Venezia Giulia. Prosecco Superiore DOCG is reserved for the stricter, hillside Conegliano-Valdobbiadene zone. Santa Margherita began producing there in 1952 and celebrated 70 years of Prosecco Superiore DOCG production in 2022." },
+      ],
+    },
   },
   {
     id: 'prod-champ-50',
@@ -22254,6 +22554,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Chardonnay, Traditional Method",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "schramsberg blanc de blancs",
+      secondaryKeywords: ["sparkling wine", "california sparkling wine", "american sparkling wine", "best sparkling wine", "sparkling wine california"],
+    },
   },
   {
     id: 'prod-champ-51',
@@ -22278,6 +22583,14 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Macabeo, Xarel·lo & Parellada, Traditional Method",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "segura viudas brut reserva cava",
+      secondaryKeywords: ["cava wine", "cava brut", "spanish cava", "best cava", "brut cava"],
+      faqs: [
+        { question: "What is cava wine?", answer: "Cava is a Spanish sparkling wine made using the same traditional, bottle-fermentation method as Champagne, primarily from the Macabeo, Xarel·lo, and Parellada grapes of Catalonia's Penedès region. Segura Viudas' Heredad estate dates back to an 11th-century military watchtower, with the modern winery established in 1959." },
+      ],
+    },
   },
   {
     id: 'prod-champ-52',
@@ -22302,6 +22615,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Macabeo & Parellada, Traditional Method",
     distilleryLocation: "Penedès, Spain",
+    seo: {
+      // Shares the same WebSearch-confirmed brand anchor as Segura Viudas Brut Reserva above, not volume-backed — differentiated here via the "Heredad" tier name.
+      primaryKeyword: "segura viudas heredad reserva cava",
+      secondaryKeywords: ["cava wine", "best cava wine", "cava brands", "spanish cava wine", "sparkling cava"],
+    },
   },
   {
     id: 'prod-champ-53',
@@ -22326,6 +22644,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Pinot Noir, Chardonnay & Pinot Meunier, Traditional Method",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "mumm napa brut rose",
+      secondaryKeywords: ["sparkling rose wine", "rose sparkling wine", "sparkling wine napa", "california sparkling wine", "belaire rose sparkling wine"],
+    },
   },
   {
     id: 'prod-champ-b2-01',
@@ -22350,6 +22673,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "100% Chardonnay",
     distilleryLocation: "Côte des Blancs, Champagne, France",
+    seo: {
+      primaryKeyword: "billecart salmon blanc de blanc",
+      secondaryKeywords: ["billecart blanc de blanc", "billecart salmon champagne", "billecart champagne", "billecart-salmon", "champagne billecart salmon", "billecart salmon"],
+    },
   },
   {
     id: 'prod-champ-b2-02',
@@ -22374,6 +22701,14 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "70% Pinot Noir, 30% Chardonnay",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "bollinger rd champagne",
+      secondaryKeywords: ["bollinger champagne", "vintage champagne", "expensive champagne", "most expensive champagne", "champagne houses"],
+      faqs: [
+        { question: 'What does R.D. mean on a Bollinger bottle?', answer: 'R.D. stands for "Récemment Dégorgé" (recently disgorged) — a real, trademarked Bollinger designation pioneered in 1967 under Madame Lily Bollinger. The wine ages far longer than usual on its lees, then is disgorged and released close to that date, giving it added tension and complexity versus a standard vintage release.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-03',
@@ -22398,6 +22733,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "62% Pinot Noir, 24% Chardonnay, 14% Pinot Meunier",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "bollinger rose champagne",
+      secondaryKeywords: ["rosé champagne", "rose champagne", "bollinger champagne", "pink champagne", "champagne with rose"],
+    },
   },
   {
     id: 'prod-champ-b2-04',
@@ -22422,6 +22762,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "100% Chardonnay",
     distilleryLocation: "Côte des Blancs, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "charles heidsieck blanc de blancs",
+      secondaryKeywords: ["french champagne", "champagne houses", "champagne brands", "best champagne", "vintage champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-05',
@@ -22446,6 +22791,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "40% Pinot Noir, 40% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "charles heidsieck brut reserve",
+      secondaryKeywords: ["champagne brands", "best champagne", "french champagne", "champagne houses", "good champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-06',
@@ -22470,6 +22820,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "45% Pinot Noir, 35% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "charles heidsieck rose",
+      secondaryKeywords: ["rosé champagne", "rose champagne", "pink champagne", "champagne brands", "champagne with rose"],
+    },
   },
   {
     id: 'prod-champ-b2-07',
@@ -22494,6 +22849,14 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "50% Chardonnay, 50% Pinot Noir",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "dom perignon p2",
+      secondaryKeywords: ["dom perignon champagne", "champagne cuvee dom perignon", "vintage champagne", "most expensive champagne", "expensive champagne"],
+      faqs: [
+        { question: 'What does Plénitude mean for Dom Pérignon?', answer: "Plénitude is a real, house-published concept created under longtime chef de cave Richard Geoffroy: the same vintage is released at staged \"fullness\" points — P1 around 8–10 years, P2 at 15+ years (this bottling), and P3 at 25+ years — each showing a different stage of the wine's development on lees." },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-08',
@@ -22518,6 +22881,13 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "100% Chardonnay",
     distilleryLocation: "Côte des Blancs, Champagne, France",
+    seo: {
+      primaryKeyword: "dom ruinart",
+      secondaryKeywords: ["dom ruinart blanc de blancs", "dom ruinart champagne", "dom ruinart 2010", "dom ruinart 2013", "ruinart blanc de blancs"],
+      faqs: [
+        { question: 'What is Dom Ruinart?', answer: 'Dom Ruinart is the house\'s prestige tête de cuvée, exclusively Blanc de Blancs, named for founder Nicolas Ruinart\'s uncle Dom Thierry Ruinart (1657–1709), a Benedictine monk whose early writings foretold the future of sparkling "wine with bubbles" from Champagne.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-09',
@@ -22542,6 +22912,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "100% Chardonnay",
     distilleryLocation: "Cramant, Champagne, France",
+    seo: {
+      primaryKeyword: "gh mumm champagne",
+      secondaryKeywords: ["mumm champagne", "g.h.mumm champagne", "mumm grand cordon", "g.h. mumm", "champagne brands", "mumm cordon rouge"],
+    },
   },
   {
     id: 'prod-champ-b2-10',
@@ -22566,6 +22940,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "100% Chardonnay",
     distilleryLocation: "Aÿ, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "henri giraud blanc de craie",
+      secondaryKeywords: ["french champagne", "champagne houses", "champagne brands", "vintage champagne", "grand cru champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-11',
@@ -22590,6 +22969,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "100% Chardonnay",
     distilleryLocation: "Le Mesnil-sur-Oger, Champagne, France",
+    seo: {
+      primaryKeyword: "clos du mesnil krug",
+      secondaryKeywords: ["clos du mesnil", "krug champagne", "krug wine", "krug champagne cost", "krug winery"],
+    },
   },
   {
     id: 'prod-champ-b2-12',
@@ -22614,6 +22997,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "50% Pinot Noir, 30% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "krug rose",
+      secondaryKeywords: ["krug rose champagne", "champagne krug rose", "krug champagne", "rosé champagne", "pink champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-13',
@@ -22638,6 +23025,10 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "45% Pinot Noir, 40% Chardonnay, 15% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "krug vintage",
+      secondaryKeywords: ["krug champagne vintage", "vintage krug", "vintage champagne", "krug champagne", "krug champagne price"],
+    },
   },
   {
     id: 'prod-champ-b2-14',
@@ -22662,6 +23053,11 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "50% Pinot Noir, 35% Chardonnay, 15% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lanson le black label",
+      secondaryKeywords: ["brut champagne", "champagne brands", "french champagne", "champagne houses", "best champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-15',
@@ -22686,6 +23082,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "100% Chardonnay",
     distilleryLocation: "Côte des Blancs, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lanson le blanc de blancs",
+      secondaryKeywords: ["champagne brands", "french champagne", "champagne houses", "vintage champagne", "best champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-16',
@@ -22710,6 +23111,14 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "55% Pinot Noir, 30% Chardonnay, 15% Pinot Meunier",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "leclerc briant brut rose",
+      secondaryKeywords: ["rosé champagne", "rose champagne", "pink champagne", "champagne with rose", "biodynamic wine"],
+      faqs: [
+        { question: 'Is Leclerc Briant biodynamic?', answer: "Yes — Leclerc Briant was one of the earliest pioneers of biodynamic viticulture in Champagne. Bertrand Leclerc began experimenting in the late 1950s, decades before it was fashionable, and the estate is Demeter-certified today." },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-17',
@@ -22734,6 +23143,13 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "40% Pinot Noir, 40% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "louis roederer collection 245",
+      secondaryKeywords: ["louis roederer brut premier", "louis roederer champagne", "louis roederer brut premier champagne", "louis roederer collection 244", "roederer champagne"],
+      faqs: [
+        { question: 'What is Louis Roederer Collection?', answer: 'In 2021 Louis Roederer replaced its long-running Brut Premier NV with "Collection," a series built from a larger reserve-wine library and identified by a rotating base number (242, 243, 244, 245...) rather than a fixed name.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-18',
@@ -22758,6 +23174,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "55% Pinot Noir, 45% Chardonnay",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "cristal rose champagne",
+      secondaryKeywords: ["champagne louis roederer cristal rose", "louis roederer cristal", "crystal champagne", "louis roederer champagne", "louis roederer cristal champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-19',
@@ -22782,6 +23202,14 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "60% Pinot Noir, 40% Chardonnay",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      // "louis roederer cristal vinothèque" confirmed real via WebSearch for the Vinothèque designation specifically, not volume-backed as its own term.
+      primaryKeyword: "louis roederer cristal vinothèque",
+      secondaryKeywords: ["louis roederer cristal", "crystal champagne", "louis roederer champagne", "cristal champagne price", "drinking cristal champagne"],
+      faqs: [
+        { question: 'What\'s the difference between Cristal and Cristal Vinothèque?', answer: 'Standard Cristal is the flagship prestige cuvée; Vinothèque is a late-disgorged library release, aged substantially longer on its lees before disgorgement, giving it a more developed, toastier character.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-20',
@@ -22806,6 +23234,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "55% Pinot Noir, 25% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "nicolas feuillatte rose",
+      secondaryKeywords: ["nicolas feuillatte champagne", "nicolas feuillatte", "nicolas feuillatte reserve exclusive rose", "nicolas feuillatte réserve exclusive rosé", "rose nicolas feuillatte"],
+    },
   },
   {
     id: 'prod-champ-b2-21',
@@ -22830,6 +23262,13 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "50% Chardonnay, 45% Pinot Noir, 5% Pinot Meunier",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "perrier jouet belle epoque",
+      secondaryKeywords: ["belle epoque champagne", "belle epoque perrier jouet", "champagne belle epoque", "perrier jouet belle epoque champagne", "champagne with flowers on bottle"],
+      faqs: [
+        { question: 'What makes the Belle Epoque bottle distinctive?', answer: 'Art Nouveau master Émile Gallé decorated the bottle with Japanese white anemones in 1902 for brothers Henri and Octave Gallice, and the design became the house\'s emblem when the first vintage in that bottle was released as Belle Epoque in 1964.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-22',
@@ -22854,6 +23293,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "100% Chardonnay",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "pol roger champagne",
+      secondaryKeywords: ["pol roger", "champagne pol roger", "2015 pol roger blanc de blancs", "2012 pol roger blanc de blancs", "2008 pol roger blanc de blancs"],
+    },
   },
   {
     id: 'prod-champ-b2-23',
@@ -22878,6 +23321,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "33% Chardonnay, 33% Pinot Noir, 34% Pinot Meunier",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "pol roger brut réserve champagne",
+      secondaryKeywords: ["pol roger reserve brut", "pol roger brut champagne", "pol roger champagne price", "champagne pol roger reserve brut", "pol roger brut"],
+    },
   },
   {
     id: 'prod-champ-b2-24',
@@ -22902,6 +23349,13 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "60% Pinot Noir, 40% Chardonnay",
     distilleryLocation: "Épernay, Champagne, France",
+    seo: {
+      primaryKeyword: "pol roger winston churchill",
+      secondaryKeywords: ["winston churchill champagne", "pol roger champagne winston churchill", "churchill champagne", "pol roger sir winston churchill", "pol roger cuvee sir winston churchill"],
+      faqs: [
+        { question: 'What was Winston Churchill\'s favorite champagne?', answer: 'Pol Roger; Churchill met Odette Pol Roger in 1944, his personal favorite vintage was the 1928, and the Cuvée Sir Winston Churchill prestige cuvée launched in 1984 built from the 1975 vintage, with a black-bordered label added after his death in his honor.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-25',
@@ -22926,6 +23380,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "50% Pinot Noir, 30% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "pommery champagne",
+      secondaryKeywords: ["rosé champagne", "rose champagne", "pink champagne", "champagne rose champagne", "best champagne"],
+    },
   },
   {
     id: 'prod-champ-b2-26',
@@ -22950,6 +23408,13 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "33% Chardonnay, 33% Pinot Noir, 34% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "pommery champagne",
+      secondaryKeywords: ["brut champagne", "champagne brands", "what is brut champagne", "is brut champagne", "best champagne"],
+      faqs: [
+        { question: 'What is brut champagne?', answer: 'Champagne made with minimal added sugar (dosage), resulting in a dry, crisp style. Pommery — under Madame Pommery, who took over in 1860 — was the first house to commercialize a dry "brut" champagne, in 1874, breaking from the sweeter style fashionable at the time.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-27',
@@ -22974,6 +23439,13 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "45% Chardonnay, 40% Pinot Noir, 15% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "ruinart champagne",
+      secondaryKeywords: ["ruinart", "ruinart champagne price", "maison ruinart", "ruinart champagne brut", "ruinart brut"],
+      faqs: [
+        { question: 'Is Ruinart the oldest champagne house?', answer: 'Yes, confirmed: founded in 1729, making it the oldest established Champagne house still producing today.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-28',
@@ -22998,6 +23470,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "55% Chardonnay, 45% Pinot Noir",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "ruinart rose champagne",
+      secondaryKeywords: ["ruinart champagne rose", "ruinart rose", "rose ruinart champagne", "ruinart champagne rosé", "ruinart brut rose"],
+    },
   },
   {
     id: 'prod-champ-b2-29',
@@ -23022,6 +23498,14 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "100% Chardonnay",
     distilleryLocation: "Le Mesnil-sur-Oger, Champagne, France",
+    seo: {
+      // "salon blanc de blancs champagne" confirmed real via WebSearch, not volume-backed — no dedicated Salon export exists and no usable brand-specific rows surfaced in any export.
+      primaryKeyword: "salon blanc de blancs champagne",
+      secondaryKeywords: ["french champagne", "champagne houses", "grand cru champagne", "le mesnil sur oger champagne", "prestige champagne"],
+      faqs: [
+        { question: 'What makes Salon unique among Champagne houses?', answer: 'Eugène-Aimé Salon founded the house in 1911, and Salon has only ever made one wine — a single-village (Le Mesnil-sur-Oger), single-vintage, 100% Chardonnay Blanc de Blancs, released only in exceptional years and only when the house declares a vintage; it has never produced a non-vintage blend or a rosé.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-30',
@@ -23046,6 +23530,13 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "100% Chardonnay",
     distilleryLocation: "Côte des Blancs, Champagne, France",
+    seo: {
+      primaryKeyword: "taittinger comtes de champagne",
+      secondaryKeywords: ["comtes de champagne", "taittinger comtes de champagne blanc de blancs", "taittinger champagne", "taittinger", "taittinger brut reserve"],
+      faqs: [
+        { question: 'What is Taittinger Comtes de Champagne?', answer: 'Comtes de Champagne, 100% Chardonnay from grand cru vineyards, was created in 1952 by François Taittinger and rests in the house\'s underground cellars for nearly ten years before release.' },
+      ],
+    },
   },
   {
     id: 'prod-champ-b2-31',
@@ -23070,6 +23561,13 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "61% Pinot Noir, 39% Chardonnay",
     distilleryLocation: "Reims, Champagne, France",
+    seo: {
+      primaryKeyword: "veuve clicquot la grande dame",
+      secondaryKeywords: ["madame clicquot ponsardin", "veuve clicquot ponsardin rose champagne", "veuve clicquot rose", "veuve clicquot champagne rose", "veuve clicquot"],
+      faqs: [
+        { question: 'Who was Madame Clicquot?', answer: 'Barbe-Nicole Clicquot Ponsardin took over the house at 27 after her husband François died in 1805, and in 1816 invented the riddling table (table de remuage) that clarified champagne of sediment — the cuvée is named in her honor.' },
+      ],
+    },
   },
 
   // BEER

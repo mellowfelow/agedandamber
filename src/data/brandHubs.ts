@@ -3015,4 +3015,363 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+
+  // ─── CHAMPAGNE & SPARKLING WINE ───────────────────────────────────────────
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'billecart-salmon', brandKeywords: ['Billecart-Salmon'], name: 'Billecart-Salmon',
+    seo: brandSeo({
+      brand: 'Billecart-Salmon', categoryLabel: 'Champagne',
+      titleTag: 'Billecart-Salmon — Brut Rosé, Réserve & Blanc de Blancs',
+      h1: 'Billecart-Salmon Champagne — Brut Rosé, Réserve & Blanc de Blancs Grand Cru',
+      metaDescription: 'Buy Billecart-Salmon Champagne online — Brut Rosé, Brut Réserve, and Blanc de Blancs Grand Cru. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Founded in 1818 by the marriage of Nicolas François Billecart and Elisabeth Salmon in Mareuil-sur-Aÿ, Billecart-Salmon remains one of the relatively few grande-marque Champagne houses still under family ownership. Its defining innovation is a double cold-settling (débourbage) process introduced in the 1950s to preserve delicacy and freshness. The house's Brut Rosé, developed in the 1970s to be pale and precise rather than deeply colored, became one of the most acclaimed rosé Champagnes in the category and remains its flagship style today.",
+      faqs: [
+        { question: 'What is Billecart-Salmon known for?', answer: 'Its Brut Rosé, prized for its pale color and precision rather than deep fruit and color; it’s the wine most responsible for the house’s modern reputation.' },
+        { question: 'Is Billecart-Salmon family-owned?', answer: 'Yes — founded in 1818 by the Billecart-Salmon marriage, it remains one of the relatively few grande-marque houses still under family control.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'bollinger', brandKeywords: ['Bollinger'], name: 'Bollinger',
+    seo: brandSeo({
+      brand: 'Bollinger', categoryLabel: 'Champagne',
+      titleTag: 'Bollinger — La Grande Année, Special Cuvée, R.D. & Rosé',
+      h1: 'Bollinger Champagne — La Grande Année, Special Cuvée, R.D. & Rosé',
+      metaDescription: 'Buy Bollinger Champagne online — La Grande Année, Special Cuvée Brut, R.D., and Rosé. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Founded in 1829 in Aÿ, Bollinger became one of Champagne's most storied houses under Madame Lily Bollinger, who took control in 1941 and ran it for decades. In 1967 she introduced R.D. (Récemment Dégorgé) — a trademarked late-disgorgement style that ages wines far longer than usual on their lees before release. Bollinger has also been the official Champagne of the James Bond film franchise for more than 45 years, first appearing on screen in Moonraker (1979).",
+      faqs: [
+        { question: 'What does R.D. mean on a Bollinger bottle?', answer: 'Récemment Dégorgé, "recently disgorged": the wine ages far longer than usual on its lees, then is disgorged and released close to that date, giving it added tension and complexity versus a standard vintage release. Bollinger pioneered the style in 1967 and the term is trademarked to the house.' },
+        { question: 'Why is Bollinger associated with James Bond?', answer: 'It’s been the official Champagne of the 007 franchise for over 45 years, first appearing on screen in Moonraker (1979) and referenced even earlier in Ian Fleming’s novels.' },
+        { question: 'What is Bollinger Special Cuvée?', answer: 'The house’s non-vintage flagship, built from a high proportion of Pinot Noir and barrel-fermented reserve wines for richness and consistency across vintages.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'charles-heidsieck', brandKeywords: ['Charles Heidsieck'], name: 'Charles Heidsieck',
+    seo: brandSeo({
+      brand: 'Charles Heidsieck', categoryLabel: 'Champagne',
+      titleTag: 'Charles Heidsieck — Blanc de Blancs, Brut & Rosé Réserve',
+      h1: 'Charles Heidsieck Champagne — Blanc de Blancs, Brut Réserve & Rosé Réserve',
+      metaDescription: 'Buy Charles Heidsieck Champagne online — Blanc de Blancs, Brut Réserve, and Rosé Réserve. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1851 by Charles-Camille Heidsieck, who became internationally famous as "Champagne Charlie" after his flamboyant 1852 tour of the United States — widely credited with popularizing Champagne in America. Today Charles Heidsieck is one of the smallest of the historic Grandes Marques houses, distinguished by an unusually high proportion of aged reserve wines — roughly 40%, averaging around a decade old — in its non-vintage blends.',
+      faqs: [
+        { question: 'Who was "Champagne Charlie"?', answer: 'Charles-Camille Heidsieck, the house’s founder; his flamboyant 1850s tours of England and the US made him a celebrity and gave the category an early American foothold.' },
+        { question: 'What makes Charles Heidsieck’s Brut Réserve different?', answer: 'An unusually large share of reserve wines (roughly 40%, averaging around 10 years old) goes into the blend, giving it more depth than a typical non-vintage Champagne.' },
+        { question: 'Is Charles Heidsieck the same as Piper-Heidsieck?', answer: 'No. Despite sharing the Heidsieck family name and Reims origins, they have been separate, independently owned houses for well over a century.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'dom-perignon', brandKeywords: ['Dom Pérignon', 'Dom Perignon'], name: 'Dom Pérignon',
+    seo: brandSeo({
+      brand: 'Dom Pérignon', categoryLabel: 'Champagne',
+      titleTag: 'Dom Pérignon — Vintage, Rosé & P2 Plénitude',
+      h1: 'Dom Pérignon Champagne — Vintage, Rosé & P2 Plénitude Allocations',
+      metaDescription: 'Buy Dom Pérignon Champagne online — Vintage, Rosé, and P2 Plénitude. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Named for Dom Pierre Pérignon, a real Benedictine monk and cellarer at the Abbey of Hautvillers (1638–1715) — the popular story crediting him with "inventing" sparkling Champagne is a later marketing legend rather than literal history, though he made real, documented contributions to blending across plots that shaped the region’s technique. The modern Dom Pérignon label (owned by LVMH) is released only as a declared vintage from a single exceptional year, and its Plénitude program re-releases the same vintage at later stages of maturity (P2, P3) under the concept established by longtime chef de cave Richard Geoffroy.',
+      faqs: [
+        { question: 'Was Dom Pérignon a real monk?', answer: 'Yes, a real Benedictine cellarer at Hautvillers Abbey; the specific claim that he "invented" champagne’s bubbles is a later marketing legend, not historical fact.' },
+        { question: 'Why is Dom Pérignon always a vintage?', answer: 'Unlike most Champagne houses, it releases no standard non-vintage wine — every bottle is a declared vintage from a single, exceptional year.' },
+        { question: 'What is Plénitude (P2/P3)?', answer: 'A staged re-release concept: the same vintage is disgorged and released at different points in its life — the original release (P1), a second release after 15+ years on lees (P2, stocked here), and a third after 25+ years (P3, not currently stocked) — each showing the wine at a different stage of development.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'krug', brandKeywords: ['Krug'], name: 'Krug',
+    seo: brandSeo({
+      brand: 'Krug', categoryLabel: 'Champagne',
+      titleTag: 'Krug — Grande Cuvée, Clos du Mesnil, Rosé & Vintage',
+      h1: 'Krug Champagne — Grande Cuvée, Clos du Mesnil, Rosé & Vintage Allocations',
+      metaDescription: 'Buy Krug Champagne online — Grande Cuvée, Clos du Mesnil Blanc de Blancs, Rosé, and Vintage. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1843 by Joseph Krug, who broke with convention by treating every Champagne — not just a prestige flagship — with the same meticulous, small-barrel-fermented, multi-vintage blending process. That philosophy still defines Krug’s core wine, Grande Cuvée, released as a numbered "Édition" rather than a fixed recurring recipe. The house also makes two of Champagne’s rarest single-vineyard wines: Clos du Mesnil (a Blanc de Blancs from a walled 1.84-hectare Chardonnay plot bought in 1971) and Clos d’Ambonnay (a Blanc de Noirs from a 0.68-hectare Pinot Noir plot). Krug is owned by LVMH.',
+      faqs: [
+        { question: 'What is a Krug Grande Cuvée "Edition"?', answer: 'Grande Cuvée blends well over 100 wines from more than 10 vintages, released as a numbered Édition rather than one recurring recipe, so the exact blend genuinely changes release to release.' },
+        { question: 'What’s the difference between Krug Clos du Mesnil and Clos d’Ambonnay?', answer: 'Clos du Mesnil is a single-vineyard Blanc de Blancs (100% Chardonnay) from Le Mesnil-sur-Oger; Clos d’Ambonnay is a single-vineyard Blanc de Noirs (100% Pinot Noir) from a much smaller plot. Only Clos du Mesnil is currently stocked.' },
+        { question: 'Is Krug expensive?', answer: 'Yes — even the entry-level Grande Cuvée reflects the house’s every-wine-gets-the-prestige-treatment philosophy, and the single-vineyard Clos wines are among the rarest, most expensive Champagnes made anywhere.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'lanson', brandKeywords: ['Lanson'], name: 'Lanson',
+    seo: brandSeo({
+      brand: 'Lanson', categoryLabel: 'Champagne',
+      titleTag: 'Lanson — Le Black Label & Le Blanc de Blancs',
+      h1: 'Lanson Champagne — Le Black Label Brut & Le Blanc de Blancs',
+      metaDescription: 'Buy Lanson Champagne online — Le Black Label Brut and Le Blanc de Blancs. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1760, Lanson is one of the oldest Champagne houses still trading under its founding name. Its defining house signature is blocking malolactic fermentation across almost its entire range — a rare choice that preserves freshness and extends aging potential. Le Black Label, named by Victor Lanson in 1937 as a tribute to Lanson’s status as an official supplier to the British Royal Court since 1900, is the one wine in the range that undergoes any malolactic conversion at all, and even then only partially.',
+      faqs: [
+        { question: 'Why does Lanson avoid malolactic fermentation?', answer: 'It’s a deliberate house signature: skipping the softening malolactic conversion used by most Champagne houses keeps Lanson’s wines crisper and gives them a longer aging window than typical non-vintage Champagne.' },
+        { question: 'What does "Le Black Label" mean?', answer: 'Not a tasting note — it’s the name Victor Lanson gave the house’s flagship Brut in 1937, honoring Lanson’s status as an official supplier to the British Royal Court since 1900.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'gh-mumm', brandKeywords: ['G.H. Mumm', 'GH Mumm'], name: 'G.H. Mumm',
+    seo: brandSeo({
+      brand: 'G.H. Mumm', categoryLabel: 'Champagne',
+      titleTag: 'G.H. Mumm — RSRV Blanc de Blancs Champagne',
+      h1: 'G.H. Mumm Champagne — RSRV Blanc de Blancs Allocations',
+      metaDescription: 'Buy G.H. Mumm Champagne online — RSRV Blanc de Blancs from Cramant Grand Cru. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1827 in Reims by German-born brothers Jacobus, Gottlieb, and Philipp Mumm, G.H. Mumm’s globally recognized red-sash "Cordon Rouge" label dates to 1875, created as a tribute to France’s Légion d’Honneur. Its Blanc de Blancs cuvée — now sold as RSRV Blanc de Blancs — traces back to 1882 and is sourced entirely from Chardonnay grown in Cramant, a Grand Cru village in the Côte des Blancs. G.H. Mumm remains a French Champagne house owned by Pernod Ricard, and should never be conflated with Mumm Napa.',
+      faqs: [
+        { question: 'What is G.H. Mumm’s RSRV range?', answer: 'Mumm’s prestige tier, above the everyday Cordon Rouge; RSRV Blanc de Blancs is a single-varietal Chardonnay Champagne from the Grand Cru village of Cramant, a cuvée the house has made since 1882 under earlier names.' },
+        { question: 'Is G.H. Mumm the same as Mumm Napa?', answer: 'No. They share a historical origin (G.H. Mumm founded the Napa operation in 1979), but G.H. Mumm is the original French Champagne house based in Reims and still Pernod Ricard-owned, while Mumm Napa is a separate California sparkling wine producer under different ownership today.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'mumm-napa', brandKeywords: ['Mumm Napa'], name: 'Mumm Napa',
+    seo: brandSeo({
+      brand: 'Mumm Napa', categoryLabel: 'Sparkling Wine',
+      titleTag: 'Mumm Napa — Brut Prestige & Brut Rosé',
+      h1: 'Mumm Napa — Brut Prestige & Brut Rosé Sparkling Wine',
+      metaDescription: 'Buy Mumm Napa online — Brut Prestige and Brut Rosé, traditional-method California sparkling wine. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded as Domaine Mumm in 1979, when the French Champagne house G.H. Mumm sent winemaker Guy Devaux to Napa Valley — renamed Mumm Napa in 1990. It uses the traditional méthode traditionnelle (secondary fermentation in the bottle, the same core process used in Champagne), but because the fruit is grown in Napa Valley, none of it is ever legally labeled "Champagne."',
+      faqs: [
+        { question: 'Is Mumm Napa the same company as G.H. Mumm Champagne?', answer: 'They share a common origin — Mumm Napa was founded by the Champagne house in 1979 — but they are legally and geographically separate today. Never present them as one brand.' },
+        { question: 'How is Mumm Napa’s sparkling wine made?', answer: 'Using méthode traditionnelle, the same bottle-fermentation process used in Champagne, but from California-grown fruit — so it’s a sparkling wine, never legally labeled Champagne.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'laurent-perrier', brandKeywords: ['Laurent-Perrier'], name: 'Laurent-Perrier',
+    seo: brandSeo({
+      brand: 'Laurent-Perrier', categoryLabel: 'Champagne',
+      titleTag: 'Laurent-Perrier — Cuvée Rosé & La Cuvée Brut',
+      h1: 'Laurent-Perrier Champagne — Cuvée Rosé & La Cuvée Brut',
+      metaDescription: 'Buy Laurent-Perrier Champagne online — Cuvée Rosé and La Cuvée Brut. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in Tours-sur-Marne in 1812, Laurent-Perrier became "Veuve Laurent-Perrier" after Eugène Laurent’s widow, Mathilde-Emilie Perrier, took over the house in 1887 — one more real widow-led Champagne story alongside Veuve Clicquot’s. In 1968 the house reintroduced non-vintage rosé champagne using a proprietary 48–72 hour skin-maceration technique; Cuvée Rosé remains the benchmark rosé champagne worldwide.',
+      faqs: [
+        { question: 'Who makes Laurent-Perrier?', answer: 'An independent, family-owned Champagne house since 1812, one of the largest family-owned houses in Champagne today.' },
+        { question: 'Why is Laurent-Perrier Cuvée Rosé considered special?', answer: 'It uses a distinctive 48–72 hour maceration method (rather than blending red and white wine) to achieve its color and flavor, and has been in continuous production since 1968.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'nicolas-feuillatte', brandKeywords: ['Nicolas Feuillatte'], name: 'Nicolas Feuillatte',
+    seo: brandSeo({
+      brand: 'Nicolas Feuillatte', categoryLabel: 'Champagne',
+      titleTag: 'Nicolas Feuillatte — Réserve Exclusive Brut & Rosé',
+      h1: 'Nicolas Feuillatte Champagne — Réserve Exclusive Brut & Rosé',
+      metaDescription: 'Buy Nicolas Feuillatte Champagne online — Réserve Exclusive Brut and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1976 as the youngest of the major Champagne houses, Nicolas Feuillatte is built on a cooperative model of roughly 4,500 member-growers and is today both the #1 selling champagne brand in France and the third-largest Champagne house overall, after Moët & Chandon and Veuve Clicquot.',
+      faqs: [
+        { question: 'Is Nicolas Feuillatte champagne good?', answer: 'Yes; as the largest grower cooperative in Champagne, it consistently delivers well-regarded quality at a more accessible price point than the grande marque houses.' },
+        { question: 'What makes Nicolas Feuillatte different from other champagne houses?', answer: 'It’s a cooperative brand representing thousands of individual grower-members rather than a single family estate, founded in 1976 — genuinely the youngest of the major houses.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'perrier-jouet', brandKeywords: ['Perrier-Jouët', 'Perrier Jouet'], name: 'Perrier-Jouët',
+    seo: brandSeo({
+      brand: 'Perrier-Jouët', categoryLabel: 'Champagne',
+      titleTag: 'Perrier-Jouët — Blanc de Blancs & Belle Epoque',
+      h1: 'Perrier-Jouët Champagne — Blanc de Blancs & Belle Epoque',
+      metaDescription: 'Buy Perrier-Jouët Champagne online — Blanc de Blancs and Belle Epoque. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Perrier-Jouët’s Belle Epoque bottle — decorated with a spray of Japanese white anemones — was designed in 1902 by Art Nouveau master Émile Gallé for the house’s founding-family collectors. The bottles sat forgotten in the house’s cellars until four examples were rediscovered in 1964, prompting the house to fill them with an especially fine vintage and launch Belle Epoque as its own cuvée.',
+      faqs: [
+        { question: 'What is Perrier-Jouët Belle Epoque?', answer: 'The house’s prestige cuvée, instantly recognizable by its hand-painted anemone-flower bottle, first released as a standalone cuvée in 1964 using the original 1902 Gallé bottle design.' },
+        { question: 'What’s the difference between Perrier-Jouët Grand Brut and Belle Epoque?', answer: 'Grand Brut is the house’s non-vintage entry point; Belle Epoque is the vintage-dated prestige tier in the iconic flowered bottle.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'pol-roger', brandKeywords: ['Pol Roger'], name: 'Pol Roger',
+    seo: brandSeo({
+      brand: 'Pol Roger', categoryLabel: 'Champagne',
+      titleTag: 'Pol Roger — Blanc de Blancs, Brut Réserve & Cuvée Sir Winston Churchill',
+      h1: 'Pol Roger Champagne — Blanc de Blancs, Brut Réserve & Cuvée Sir Winston Churchill',
+      metaDescription: 'Buy Pol Roger Champagne online — Blanc de Blancs, Brut Réserve, and Cuvée Sir Winston Churchill. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1849 and granted a royal warrant by Queen Victoria in 1877, Pol Roger became forever linked to Winston Churchill after he met family member Odette Pol Roger at a British Embassy party in Paris in 1944. Churchill reportedly drank roughly 42,000 bottles of Pol Roger in his lifetime, and the house released its prestige Cuvée Sir Winston Churchill — built from the 1975 vintage — in 1984, four years after his death.',
+      faqs: [
+        { question: 'What was Winston Churchill’s favorite champagne?', answer: 'Pol Roger; his personal favorite vintage was the 1928, and after he died in 1965, the house had certain bottles shipped to the UK marked with a black mourning border on the label in his honor.' },
+        { question: 'What’s the difference between Pol Roger Brut Réserve and Cuvée Sir Winston Churchill?', answer: 'Brut Réserve is the house’s flagship non-vintage blend; Cuvée Sir Winston Churchill is the vintage-dated prestige cuvée, made to a blend that remains a closely guarded family secret.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'pommery', brandKeywords: ['Pommery'], name: 'Pommery',
+    seo: brandSeo({
+      brand: 'Pommery', categoryLabel: 'Champagne',
+      titleTag: 'Pommery — Brut Rosé & Brut Royal',
+      h1: 'Pommery Champagne — Brut Rosé & Brut Royal',
+      metaDescription: 'Buy Pommery Champagne online — Brut Rosé and Brut Royal. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Pommery & Greno was founded in 1858, but it was Alexandre Pommery’s widow, Louise "Madame" Pommery, who took over in 1860 and transformed it into a serious Champagne house — commissioning 120 Gallo-Roman limestone crayères beneath Reims as temperature-controlled cellars, and in 1874 becoming the first house to commercialize a dry "brut" champagne, breaking decisively from the sweeter style then in fashion.',
+      faqs: [
+        { question: 'What is brut champagne?', answer: 'Champagne made with minimal added sugar (dosage), resulting in a dry, crisp style; Pommery is historically credited as the house that invented the commercial version of this style, in 1874.' },
+        { question: 'Who founded Pommery?', answer: 'Alexandre Pommery and Narcisse Greno in 1858; it was his widow, Madame (Louise) Pommery, who redirected the house toward premium champagne after his death in 1860.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'ruinart', brandKeywords: ['Ruinart', 'Dom Ruinart'], name: 'Ruinart',
+    seo: brandSeo({
+      brand: 'Ruinart', categoryLabel: 'Champagne',
+      titleTag: 'Ruinart — Blanc de Blancs, Brut, Rosé & Dom Ruinart',
+      h1: 'Ruinart Champagne — Blanc de Blancs, Brut, Rosé & Dom Ruinart',
+      metaDescription: 'Buy Ruinart Champagne online — Blanc de Blancs, Brut, Rosé, and Dom Ruinart Blanc de Blancs. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded September 1, 1729 by Nicolas Ruinart, Ruinart is the oldest established Champagne house — founded in the immediate wake of the 1728 royal edict that first permitted wine to be shipped in bottles rather than only barrels, which made a real champagne trade possible at all. The house’s name honors Nicolas’s uncle, Dom Thierry Ruinart, a Benedictine monk who had recognized the promise of this new "wine with bubbles" decades earlier.',
+      faqs: [
+        { question: 'Is Ruinart the oldest champagne house?', answer: 'Yes, confirmed: founded in 1729, making it the oldest established Champagne house still producing today.' },
+        { question: 'What is Dom Ruinart?', answer: 'Ruinart’s prestige tête de cuvée, exclusively Blanc de Blancs, named for the house’s Benedictine-monk namesake; a step above the standard Ruinart Blanc de Blancs in aging and vineyard selection.' },
+        { question: 'Why is Ruinart known for Blanc de Blancs?', answer: 'The house has leaned into 100% Chardonnay styles since its earliest days, and Blanc de Blancs remains its signature strength across both the standard and Dom Ruinart tiers.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'taittinger', brandKeywords: ['Taittinger'], name: 'Taittinger',
+    seo: brandSeo({
+      brand: 'Taittinger', categoryLabel: 'Champagne',
+      titleTag: 'Taittinger — Brut La Française, Prestige Rosé & Comtes de Champagne',
+      h1: 'Taittinger Champagne — Brut La Française, Prestige Rosé & Comtes de Champagne',
+      metaDescription: 'Buy Taittinger Champagne online — Brut La Française, Prestige Rosé, and Comtes de Champagne Blanc de Blancs. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Pierre Taittinger made a personal promise to return to Champagne after serving as a cavalry officer stationed at Château de la Marquetterie during WWI; in 1932 he and brother-in-law Paul Evêque acquired the historic firm of Forest-Fourneaux (founded 1734). His son François created the Comtes de Champagne Blanc de Blancs prestige cuvée in 1952.',
+      faqs: [
+        { question: 'What is Taittinger Comtes de Champagne?', answer: 'The house’s 100% Chardonnay prestige cuvée, created in 1952 by François Taittinger, aged nearly ten years in the cellars before release.' },
+        { question: 'What’s the difference between Brut La Française and Comtes de Champagne?', answer: 'Brut La Française is Taittinger’s flagship non-vintage blend of Chardonnay, Pinot Noir, and Pinot Meunier; Comtes de Champagne is the vintage-dated, all-Chardonnay prestige tier.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'veuve-clicquot', brandKeywords: ['Veuve Clicquot'], name: 'Veuve Clicquot',
+    seo: brandSeo({
+      brand: 'Veuve Clicquot', categoryLabel: 'Champagne',
+      titleTag: 'Veuve Clicquot — Yellow Label, Rosé, Vintage & La Grande Dame',
+      h1: 'Veuve Clicquot Champagne — Yellow Label, Rosé, Vintage & La Grande Dame',
+      metaDescription: 'Buy Veuve Clicquot Champagne online — Yellow Label Brut, Rosé, Vintage, and La Grande Dame Rosé. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: '"Veuve" means widow — Barbe-Nicole Clicquot Ponsardin took over the house at just 27 after her husband François died of typhoid in 1805. In 1816 she invented the riddling table (table de remuage), the technique still used across the industry to clarify champagne of sediment, and her innovations made her one of the first women to run a major commercial enterprise in modern history. The house’s La Grande Dame prestige cuvée is named in her honor.',
+      faqs: [
+        { question: 'Who was Madame Clicquot?', answer: 'Barbe-Nicole Clicquot Ponsardin, the young widow who took over the house in 1805 and became one of the great innovators in champagne history, inventing the riddling process still used today.' },
+        { question: 'Who owns Veuve Clicquot?', answer: 'LVMH (Moët Hennessy Louis Vuitton).' },
+        { question: 'What’s the difference between Yellow Label and La Grande Dame?', answer: 'Yellow Label Brut is the house’s iconic non-vintage flagship; La Grande Dame is the vintage-dated prestige cuvée, named for Madame Clicquot herself.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'louis-roederer', brandKeywords: ['Louis Roederer'], name: 'Louis Roederer',
+    seo: brandSeo({
+      brand: 'Louis Roederer', categoryLabel: 'Champagne',
+      titleTag: 'Louis Roederer — Cristal, Collection Brut & Cristal Rosé',
+      h1: 'Louis Roederer Champagne — Cristal, Collection Brut & Cristal Rosé',
+      metaDescription: 'Buy Louis Roederer Champagne online — Cristal, Cristal Rosé, Cristal Vinothèque, and Collection Brut. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Louis Roederer’s Cristal was created in 1876 for Tsar Alexander II of Russia — the clear, flat-bottomed bottle was reportedly designed at the Tsar’s request, in part so nothing could be hidden beneath a colored bottle, and remained exclusive to the Russian Imperial Court for decades before its first commercial release in 1945. Louis Roederer remains one of the few major Champagne houses still fully family-owned and independent, and should not be conflated with its separate California venture, Roederer Estate.',
+      faqs: [
+        { question: 'Why does Cristal come in a clear bottle?', answer: 'Created in 1876 for Tsar Alexander II, the flat-bottomed, clear-glass bottle is said to have been designed partly out of security concerns for the Tsar, and it remains Cristal’s signature to this day.' },
+        { question: 'What is Louis Roederer Collection?', answer: 'In 2021 the house replaced its long-running Brut Premier NV with "Collection," identified by a rotating base number built from an expanded reserve-wine library.' },
+        { question: 'What’s the difference between Cristal and Cristal Vinothèque?', answer: 'Standard Cristal is the flagship prestige cuvée; Vinothèque is a late-disgorged library release, aged substantially longer on its lees before disgorgement, giving it a more developed, toastier character.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'moet-chandon', brandKeywords: ['Moët & Chandon', 'Moet & Chandon', 'Moet Chandon'], name: 'Moët & Chandon',
+    seo: brandSeo({
+      brand: 'Moët & Chandon', categoryLabel: 'Champagne',
+      titleTag: 'Moët & Chandon — Grand Vintage, Impérial Brut & Impérial Rosé',
+      h1: 'Moët & Chandon Champagne — Grand Vintage, Impérial Brut & Impérial Rosé',
+      metaDescription: 'Buy Moët & Chandon Champagne online — Grand Vintage, Impérial Brut, and Impérial Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded by Épernay wine trader Claude Moët in 1743, the house’s growth accelerated under his grandson Jean-Rémy Moët thanks to a real personal friendship with Napoleon Bonaparte; the "Impérial" name, used since 1869, honors that connection. In 1833 the house became Moët et Chandon after Pierre-Gabriel Chandon de Briailles joined as a partner, and today Moët & Chandon is the best-selling champagne brand in the world.',
+      faqs: [
+        { question: 'Is Moët a good champagne?', answer: 'Yes; as the largest and most widely distributed champagne house in the world, Moët & Chandon delivers reliable, well-made non-vintage champagne at scale, alongside genuinely prestige-tier Grand Vintage releases in strong years.' },
+        { question: 'Why is it called Moët Impérial?', answer: 'The name honors Napoleon Bonaparte, a real personal friend of the Moët family in the early 1800s; the house has used "Impérial" for its flagship non-vintage cuvée since 1869.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'roederer-estate', brandKeywords: ['Roederer Estate'], name: 'Roederer Estate',
+    seo: brandSeo({
+      brand: 'Roederer Estate', categoryLabel: 'Sparkling Wine',
+      titleTag: 'Roederer Estate — Anderson Valley Brut & Brut Rosé',
+      h1: 'Roederer Estate — Anderson Valley Brut & Brut Rosé Sparkling Wine',
+      metaDescription: 'Buy Roederer Estate online — Anderson Valley Brut and Brut Rosé, from Champagne Louis Roederer’s California venture. Direct allocations. Free on $300+.',
+      hook: 'Roederer Estate is Champagne Louis Roederer’s California venture — founded in 1982 when then-president Jean-Claude Rouzaud went looking for American terroir capable of producing world-class sparkling wine, and chose Mendocino County’s cool, fog-shrouded Anderson Valley over the more obvious choices of Napa or Sonoma. The vineyards were planted in 1984, the winery built in 1986, and the first Anderson Valley Brut released in 1988.',
+      faqs: [
+        { question: 'Is Roederer Estate the same as Louis Roederer champagne?', answer: 'Related but distinct: Roederer Estate is Louis Roederer’s own California sparkling-wine label, made in Anderson Valley from estate-grown fruit — a different, non-Champagne-AOC product from the same family-owned parent company.' },
+        { question: 'Why did Louis Roederer choose Anderson Valley?', answer: 'Its cool, fog-influenced climate closely mirrors Champagne’s growing conditions, which is unusual among California AVAs and was the deciding factor for Jean-Claude Rouzaud in 1982.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'la-marca', brandKeywords: ['La Marca'], name: 'La Marca',
+    seo: brandSeo({
+      brand: 'La Marca', categoryLabel: 'Prosecco',
+      titleTag: 'La Marca — Prosecco, Luminore & Prosecco Rosé',
+      h1: 'La Marca — Prosecco, Luminore & Prosecco Rosé',
+      metaDescription: 'Buy La Marca online — Prosecco, Luminore Conegliano Valdobbiadene DOCG, and Prosecco Rosé. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1968 as a cooperative of Veneto and Friuli-Venezia Giulia growers, La Marca takes its name from "La Marca Trevigiana," the historic zone at the heart of Italy’s Prosecco country. Today the cooperative spans nine wineries and roughly 9,000 hectares of vineyard, and is the single largest exporter of Prosecco into the United States.',
+      faqs: [
+        { question: 'What’s the difference between La Marca’s Prosecco and Luminore?', answer: 'The base Prosecco is DOC-level, made under the broader Prosecco appellation; Luminore is La Marca’s premium tier from the more restrictive, hillside Conegliano Valdobbiadene DOCG zone.' },
+        { question: 'Is La Marca Prosecco Rosé the same wine as the Brut?', answer: 'No; the Rosé blends in a small amount of red grape (typically Pinot Noir) for color and red-fruit character, a distinct SKU from the white Prosecco and Luminore.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'segura-viudas', brandKeywords: ['Segura Viudas'], name: 'Segura Viudas',
+    seo: brandSeo({
+      brand: 'Segura Viudas', categoryLabel: 'Cava',
+      titleTag: 'Segura Viudas — Brut Reserva & Heredad Reserva Cava',
+      h1: 'Segura Viudas Cava — Brut Reserva & Heredad Reserva',
+      metaDescription: 'Buy Segura Viudas Cava online — Brut Reserva and Heredad Reserva. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'The Segura Viudas estate — its Heredad buildings dating back to an 11th-century military watchtower later converted into a Catalan farmhouse — became a modern winery in 1959 in Torrelavit, in the heart of the Penedès. The house today produces a full range of traditional-method Cava, from everyday Brut Reserva to the estate-selected top tier, Reserva Heredad.',
+      faqs: [
+        { question: 'What’s the difference between Segura Viudas Brut Reserva and Heredad Reserva?', answer: 'Heredad Reserva selects only the best wines from each vintage and ages a minimum of 24 months on the lees — longer and more selective than the standard Brut Reserva, positioning it as the house’s flagship.' },
+        { question: 'What is cava wine?', answer: 'A Spanish sparkling wine made via the same traditional (bottle-fermented) method as Champagne, primarily from the Macabeo, Xarel·lo, and Parellada grapes of Catalonia’s Penedès region.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'lucien-albrecht', brandKeywords: ['Lucien Albrecht'], name: 'Lucien Albrecht',
+    seo: brandSeo({
+      brand: 'Lucien Albrecht', categoryLabel: 'Sparkling Wine',
+      titleTag: 'Lucien Albrecht — Crémant d’Alsace Brut & Brut Rosé',
+      h1: 'Lucien Albrecht — Crémant d’Alsace Brut & Brut Rosé',
+      metaDescription: 'Buy Lucien Albrecht online — Crémant d’Alsace Brut and Brut Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'The Albrecht family’s Alsace winegrowing roots trace to 1425; Maison Lucien Albrecht itself was founded in 1698 when Balthazar Albrecht settled in Orschwihr, south of Colmar. The house was one of the pioneering producers pushing for a formal Crémant d’Alsace appellation, achieved in 1976 — and remains family-owned and managed today.',
+      faqs: [
+        { question: 'What is Crémant d’Alsace?', answer: 'Alsace’s answer to Champagne: a traditional-method (bottle-fermented) sparkling wine made from Alsatian grapes — chiefly Pinot Blanc, Pinot Auxerrois, Pinot Gris, and Riesling for the white styles — under its own AOC since 1976.' },
+        { question: 'What’s the difference between crémant and champagne?', answer: 'Both use the identical traditional (bottle-fermentation) method; the difference is purely geographic and grape-based — Champagne must come from the Champagne region using its permitted grapes, while Crémant d’Alsace comes from Alsace’s own varieties, typically at a friendlier price point.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'mionetto', brandKeywords: ['Mionetto'], name: 'Mionetto',
+    seo: brandSeo({
+      brand: 'Mionetto', categoryLabel: 'Prosecco',
+      titleTag: 'Mionetto — Prosecco Brut & Prosecco Rosé',
+      h1: 'Mionetto — Prosecco Brut & Prosecco Rosé',
+      metaDescription: 'Buy Mionetto online — Prosecco Brut and Prosecco Rosé from Valdobbiadene. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1887 by master winemaker Francesco Mionetto in Valdobbiadene — the historic, now UNESCO World Heritage heart of Prosecco country — Mionetto is distinctive for bottling to order rather than stockpiling ahead of demand, a freshness-first practice the house has maintained since its earliest days.',
+      faqs: [
+        { question: 'Is prosecco sweet?', answer: 'Mionetto’s Brut is the driest style in the range; Extra Dry (not currently stocked) carries noticeably more residual sugar despite the counterintuitive name.' },
+        { question: 'What’s the difference between Mionetto’s Prosecco Brut and Prosecco Rosé?', answer: 'The Rosé blends in a portion of red grape for color and red-fruit character; both are DOC-level, made using the Charmat (tank) method.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'chandon', brandKeywords: ['Chandon', 'Chandon California'], name: 'Chandon',
+    seo: brandSeo({
+      brand: 'Chandon', categoryLabel: 'Sparkling Wine',
+      titleTag: 'Chandon — California Brut Classic & Brut Rosé',
+      h1: 'Chandon California — Brut Classic & Brut Rosé Sparkling Wine',
+      metaDescription: 'Buy Chandon California online — Brut Classic and Brut Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1973 in Yountville by former Moët et Chandon market-development specialist John Wright, in partnership with the French Champagne house, Domaine Chandon California was the first French-owned sparkling wine producer in Napa Valley — deliberately named to signal both its French pedigree and its distinct, single-vineyard-driven California style.',
+      faqs: [
+        { question: 'Is Chandon California the same as Moët & Chandon Champagne?', answer: 'Related but distinct: Chandon California is a sister house under the same Moët Hennessy ownership, making sparkling wine from Napa Valley fruit rather than true French Champagne.' },
+        { question: 'What’s the difference between champagne and sparkling wine?', answer: 'Chandon’s Brut Classic and Brut Rosé are made using the same traditional method as Champagne, just outside the legally protected Champagne region.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'champagne-sparkling', hubSlug: 'freixenet', brandKeywords: ['Freixenet'], name: 'Freixenet',
+    seo: brandSeo({
+      brand: 'Freixenet', categoryLabel: 'Cava',
+      titleTag: 'Freixenet — Cordón Negro Cava & Italian Rosé',
+      h1: 'Freixenet — Cordón Negro Brut Cava & Italian Rosé Sparkling Wine',
+      metaDescription: 'Buy Freixenet online — Cordón Negro Brut Cava and Italian Rosé sparkling wine. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded and bottling under its own name from 1914 by Pedro Ferrer Bosch and Dolors Sala Vivé, Freixenet became a household name in 1974 with the launch of Cordón Negro — José Ferrer’s frosted-black-matte-bottle Cava that was the first Cava fermented at a controlled temperature. It became the top-selling imported sparkling wine in the US by 1983 and propelled Freixenet to the world’s #1 Cava producer by 1985.',
+      faqs: [
+        { question: 'What makes Cordón Negro’s bottle black?', answer: 'A deliberate 1974 design choice by José Ferrer; the frosted black-matte glass was a stylistic break from traditional Cava packaging and remains the brand’s most recognizable signature 50 years later.' },
+        { question: 'What is cava wine?', answer: 'A traditional-method Spanish sparkling wine from Catalonia’s Penedès region, primarily Macabeo, Xarel·lo, and Parellada grapes.' },
+      ],
+    }),
+  },
 ];
