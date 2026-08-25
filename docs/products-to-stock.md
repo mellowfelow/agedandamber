@@ -1,4 +1,4 @@
-# Products to Stock — Master List (Rum, Gin, Cognac batches)
+# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese batches)
 
 Consolidated from every "not currently in your catalog" and "missing expression within a brand you already carry" finding across the Rum, Gin, and Cognac keyword batches. This is the running answer to "which products with real search demand should I add to inventory" — every item below carries genuine SEMrush volume, not a guess. KD = keyword difficulty (lower is easier to rank for). Volume floor applied: 50+ (per keyword-engine skill default); most items here are well above that.
 
@@ -89,4 +89,133 @@ Every one of these is a line extension of a brand you already carry, not a new b
 
 ---
 
-*This document will grow as remaining categories (Bourbon, Scotch, Irish, Japanese, Rye, Tequila, Vodka, Fine Wine, Champagne, Beer, Cider, RTD/Liqueurs, Bar Essentials) are batch-processed.*
+## Bourbon
+
+Sourced from real SEMrush data (`keyword-map-bourbon-v2.md`), not web-research estimates.
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Note |
+|---|---|---|
+| Old Forester | **1897, 1910, 1920 (Whiskey Row Series)** | Confirmed real, standing SKUs, $60–70 — low-friction, not rare hunt-bottles. **1920 Birthday Bourbon is the brand's actual #1 real keyword target** (8,100 vol, KD 17) — bigger than the one SKU you stock (86 Proof) |
+| Old Forester | Birthday Bourbon | Confirmed real, allocated annual Sept release, $700–1,000 — higher-effort opportunity |
+| 1792 | Full Proof, Single Barrel, Sweet Wheat | All 3 confirmed real & priced (~$45–75), genuinely searched, not stocked |
+| E.H. Taylor | Four Grain | Confirmed real, highly allocated $550–2,000+ |
+| Elijah Craig | 18 Year | Confirmed real, not stocked |
+| Jim Beam | Black Label | Confirmed real, minor gap |
+| Bulleit | 10 Year | Confirmed real, minor gap |
+| Kentucky Owl | Confiscated | Confirmed real, minor gap |
+| Basil Hayden | Toast | Confirmed real bourbon (Dark Rye is real too but isn't a bourbon — a blend) |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Note |
+|---|---|
+| **Booker's** | Confirmed real, full SEMrush brand page exists (~55K combined demand signal, 12,100 vol/KD 22 primary). Beam family — natural fit alongside your existing Jim Beam/Basil Hayden/Knob Creek. Strongest new-brand case in Bourbon. |
+| **Henry McKenna 10 Year Bottled-in-Bond** | Confirmed real (web research), won "Best in Show Whiskey" 2019 SF World Spirits Competition, $50–100. Heaven Hill family, same maker as your Elijah Craig/Larceny/Old Fitzgerald. |
+| **Very Old Barton Bottled-in-Bond** | Confirmed real, cheap ($12–19), Whisky Advocate's "Best Buy Whiskey of the Year." Good entry-price anchor. |
+| **Old Rip Van Winkle 10 Year** | Confirmed real, ~$900–1,200 secondary, extremely allocated. Natural adjacent SKU to your existing Pappy 15 Year. |
+| Willett Pot Still Reserve | Confirmed real, massive social/collector buzz, moderate competition. |
+| Little Book | Confirmed real (2,400 vol, KD 7), Booker Noe sub-brand — natural bundle if you stock Booker's. |
+
+**Priority:** Old Forester's Whiskey Row trio (1897/1910/1920) is the most actionable — real, standing SKUs, easy to source, and 1920 alone outranks your current Old Forester SKU. Booker's is the strongest new-brand case.
+
+---
+
+## Scotch
+
+Sourced from real SEMrush data (`keyword-map-scotch-v2.md`).
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Note |
+|---|---|---|
+| Highland Park | **Viking Honour (the real 12 Year flagship)** | Confirmed real, currently named on your own hub page, ~$55-65 — the single strongest expression gap in this whole whiskey pass |
+| Lagavulin | 8 Year, Distillers Edition | Both confirmed real, current, standing SKUs (~$69, ~$144) |
+| Ardbeg | Corryvreckan, Wee Beastie, An Oa | Confirmed current core range, differentiated price points |
+| Balvenie | Caribbean Cask 14 | Confirmed real standing SKU ~$85 |
+| Glenlivet | Founder's Reserve, Nadurra | Both confirmed real, current |
+| Laphroaig | Quarter Cask | Confirmed real, popular |
+| Aberlour | A'bunadh | You already have a dedicated blog post reviewing it but don't stock it — quick, cheap fix either way |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Note |
+|---|---|
+| **Talisker** | Confirmed strong candidate (web research; not yet in a SEMrush batch) — Diageo's most-visited distillery, same "Classic Malts" tier as your already-stocked Oban. |
+| Glenmorangie siblings | You stock only "The Original." Real, current: Lasanta, Quinta Ruban, Nectar D'Or, Glenmorangie 18. Low-effort expansion, hub already exists. |
+| Auchentoshan | Confirmed real Lowland distillery — you stock zero Lowland malts currently. |
+| Cragganmore, Aberfeldy | Confirmed real (Diageo "Classic Malts" / Dewar's family), moderate demand, low competition. |
+
+**Priority:** Highland Park Viking Honour is the standout — real demand, moderate price, and it's already the headline name on your own live page.
+
+---
+
+## Irish
+
+Sourced from real SEMrush data (`keyword-map-irish-v2.md`).
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Note |
+|---|---|---|
+| Spot range | **Red Spot** | Confirmed real, sold, ~$235 — was actively named on your hub's planned copy before this build corrected it to only Green/Yellow/Blue. **Highest-priority item in the whole Irish category.** |
+| Powers | Gold Label | Confirmed real, likely Powers' actual highest-volume search term (entry blended expression), not stocked |
+| Jameson | Caskmates | Confirmed real, currently sold, popular ($30-40) |
+| Teeling | Single Grain | Confirmed real, accessible everyday bottle ~$40-50 |
+| Connemara | Cask Strength | Confirmed real, steady demand |
+| Tullamore D.E.W. | 18 Year | Confirmed real, low-KD (320 vol, KD 6), not stocked |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Note |
+|---|---|
+| Writers' Tears | Confirmed real (appears in the real keyword data as category-page LSI) |
+| Kilbeggan | Confirmed real, thin data — budget-accessible ~$24-31 |
+| Method and Madness | Confirmed real, appears in real single-pot-still subcategory keyword data |
+| Dingle, Roe & Co | Real per web research, not found in the SEMrush data — lower confidence |
+| Waterford | Real cult following, but mid-acquisition (receivership → new owner, April 2026) — watch, don't stock yet |
+
+**Priority:** Red Spot is the clearest "just go get it" case in this whole project — real demand, real price point, was already the headline name on your own page copy.
+
+---
+
+## Japanese
+
+Sourced from real SEMrush data (`keyword-map-japanese-v2.md`).
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Note |
+|---|---|---|
+| Mars/Hombo (Iwai hub) | Mars Komagatake, Maltage Cosmo | Confirmed real, **currently in production, not a rarity** — "a permanent part of the core range, readily available in several international markets." Resolves the two-hub Mars problem if stocked. |
+| Nikka | Pure Malt Red | Confirmed real, currently attainable, distinct flavor profile (Yoichi + Miyagikyo blend) |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Note |
+|---|---|
+| **Fuji (Kirin)** | Confirmed real, M-H demand and rising — Kirin's Mount Fuji/Gotemba distillery, actively pushed as an export brand. A major-conglomerate brand with zero shelf presence currently. |
+| Mars Tsunuki | Confirmed real, second Mars/Hombo distillery, current 2025/2026 releases |
+| Chichibu / Ichiro's Malt | Confirmed real but effectively unstockable at real volume (cult status, ~60,000L/year production, 4-figure secondary prices) — better as a blog/content topic than a stocking target |
+
+**Priority:** Mars Komagatake/Maltage Cosmo is the cleanest win — resolves an existing site architecture problem (two Mars hubs) and is confirmed genuinely available, not rare.
+
+---
+
+## Updated recommended stocking priority, across all 7 categories
+
+1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
+2. **Highland Park Viking Honour** (Scotch) — real flagship 12yo, already named on your own live page
+3. **Red Spot** (Irish) — real, ~$235, was already the headline name on your Spot Whiskey page copy
+4. **Privateer** (Rum) — ~18,000 combined vol, T2, fits premium positioning
+5. **Old Forester Whiskey Row trio** (Bourbon) — 1897/1910/1920, real standing SKUs, easy to source, outranks your current Old Forester SKU
+6. **Booker's** (Bourbon) — real full SEMrush brand page exists, ~55K demand signal
+7. **Pusser's** (Rum) — ~7,300 combined vol, T1
+8. **Martell XXO** (Cognac) — 8,100 vol, T1, bundles with Blue Swift decision
+9. **Talisker** (Scotch) — strongest new-brand case, same tier as your existing Oban
+10. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+
+---
+
+*This document will grow as remaining categories (Rye, Tequila, Vodka, Fine Wine, Champagne, Beer, Cider, RTD/Liqueurs, Bar Essentials) are batch-processed.*
