@@ -1047,8 +1047,8 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: 'WhistlePig', categoryLabel: 'Rye Whiskey',
       titleTag: 'WhistlePig — 10, 12, 15 Year & Boss Hog',
-      h1: 'WhistlePig Rye — 10, 12, 15 Year, Boss Hog & Farm Stock Allocations',
-      metaDescription: 'Buy WhistlePig online — 10, 12, 15 Year rye, the collector Boss Hog, and Farm Stock. Direct allocations at Aged & Amber. Free on $300+.',
+      h1: 'WhistlePig Rye — 10, 12, 15 Year, Boss Hog & PiggyBack Allocations',
+      metaDescription: 'Buy WhistlePig online — 10, 12, 15 Year rye, the collector Boss Hog, and the young, feisty PiggyBack. Direct allocations at Aged & Amber. Free on $300+.',
       hook: 'WhistlePig, based on a former dairy farm in Vermont, helped drive the modern American rye whiskey revival — the 10 Year, 12 Year Old World, 15 Year, and the collector-favourite Boss Hog annual release anchor the range.',
     }),
   },
@@ -1057,8 +1057,8 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: 'Rittenhouse', categoryLabel: 'Rye Whiskey',
       titleTag: 'Rittenhouse Rye — Bottled-in-Bond',
-      h1: 'Rittenhouse Rye — Bottled-in-Bond, 100 Proof & Rare 21 Year Allocations',
-      metaDescription: 'Buy Rittenhouse rye online — Bottled-in-Bond 100 proof and the rare 21 Year. A bartender favorite for classic rye cocktails. Free on $300+.',
+      h1: 'Rittenhouse Rye — Bottled-in-Bond, 100 Proof Allocations',
+      metaDescription: 'Buy Rittenhouse rye online — Bottled-in-Bond, 100 proof, a bartender favorite for classic rye cocktails. Free on $300+.',
       hook: 'Rittenhouse Bottled-in-Bond Rye, produced by Heaven Hill, is a bartender favourite for its exceptional value — full-proof, straight rye character that anchors classic rye cocktails like the Sazerac and Manhattan.',
     }),
   },
@@ -1083,33 +1083,39 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
+    // Informational/brand-education only: New Riff's rye lineup (Bottled-in-Bond Rye, Single Barrel Rye, Spring
+    // Rye) is NOT currently stocked — only the distillery's Single Barrel Bourbon is in our allocation, filed
+    // under Bourbon. No transactional CTA or "buy" framing here so this page never implies unstocked rye is
+    // purchasable.
     categorySlug: 'other-whiskey', hubSlug: 'new-riff', brandKeywords: ['New Riff'], name: 'New Riff',
     seo: brandSeo({
       brand: 'New Riff', categoryLabel: 'Rye Whiskey',
-      titleTag: 'New Riff — Bottled-in-Bond & Single Barrel Rye',
-      h1: 'New Riff Rye — Bottled-in-Bond, Single Barrel & Spring Rye Allocations',
-      metaDescription: 'Buy New Riff online — Bottled-in-Bond rye, Single Barrel selections, and Spring Rye. Chill-filtration-free Kentucky rye. Free on $300+.',
-      hook: 'New Riff is a Kentucky distillery just across the river from Cincinnati, bottling every release without chill-filtration at bonded-strength or higher — its Bottled-in-Bond rye and Single Barrel selections have quickly built a following among enthusiasts.',
+      titleTag: 'New Riff Distillery — Kentucky Rye & Bourbon Guide',
+      h1: 'New Riff — Non-Chill-Filtered Kentucky Rye & Bourbon',
+      metaDescription: 'Learn about New Riff, the Newport, Kentucky distillery known for bonded-strength, chill-filtration-free whiskey. We carry the New Riff Single Barrel Bourbon direct.',
+      transactionalCTA: 'New Riff\'s Bottled-in-Bond and Single Barrel rye are not currently part of our allocation. We do carry the distillery\'s Single Barrel Bourbon direct — browse it under Bourbon.',
+      hook: 'New Riff is a Kentucky distillery just across the river from Cincinnati, bottling every release without chill-filtration at bonded-strength or higher — best known among enthusiasts for its Bottled-in-Bond rye and Single Barrel rye, alongside a well-regarded high-rye bourbon line.',
+      faqs: [{ question: 'Does Aged & Amber carry New Riff rye?', answer: 'Not currently — New Riff\'s Bottled-in-Bond and Single Barrel rye are not part of our present allocation. We do carry the distillery\'s New Riff Single Barrel Bourbon, available under our Bourbon selection.' }],
     }),
   },
   {
     categorySlug: 'other-whiskey', hubSlug: 'high-west', brandKeywords: ['High West'], name: 'High West',
     seo: brandSeo({
       brand: 'High West', categoryLabel: 'Rye Whiskey',
-      titleTag: 'High West — Double Rye, Rendezvous & Campfire',
-      h1: 'High West Rye — Double Rye, Rendezvous Rye & Campfire Blend Allocations',
-      metaDescription: 'Buy High West online — Double Rye, Rendezvous Rye, and the rye/bourbon/Scotch Campfire blend. Utah’s first legal distillery. Free on $300+.',
-      hook: 'High West, based in Park City, Utah, was the first legal distillery in the state since Prohibition — the Double Rye, Rendezvous Rye, and Campfire (a rye/bourbon/Scotch blend) are known for creative sourcing and blending.',
+      titleTag: 'High West — Double Rye & Rendezvous Rye',
+      h1: 'High West Rye — Double Rye & Rendezvous Rye Allocations',
+      metaDescription: 'Buy High West online — Double Rye and Rendezvous Rye, blended rye whiskeys from Utah’s first legal distillery. Free on $300+.',
+      hook: 'High West, based in Park City, Utah, was the first legal distillery in the state since Prohibition — the Double Rye and Rendezvous Rye blend multiple aged rye whiskey stocks for layered, spice-driven complexity, known for High West’s creative sourcing and blending approach.',
     }),
   },
   {
     categorySlug: 'other-whiskey', hubSlug: 'sagamore-spirit', brandKeywords: ['Sagamore'], name: 'Sagamore Spirit',
     seo: brandSeo({
       brand: 'Sagamore Spirit', categoryLabel: 'Maryland Rye Whiskey',
-      titleTag: 'Sagamore Spirit — Cask Strength & Double Oak Rye',
-      h1: 'Sagamore Spirit Rye — Cask Strength, Double Oak & Cognac Finish Allocations',
-      metaDescription: 'Buy Sagamore Spirit online — Maryland-style rye, Cask Strength, Double Oak, and Cognac Finish. Direct allocations. Free shipping on $300+.',
-      hook: 'Sagamore Spirit revives the once-dominant Maryland rye whiskey style, blending two proprietary rye mash bills distilled on the Baltimore waterfront — the core release, Cask Strength, and Double Oak lead a range built entirely around rye.',
+      titleTag: 'Sagamore Spirit — Signature Maryland-Style Rye',
+      h1: 'Sagamore Spirit — Signature Rye Whiskey Allocations',
+      metaDescription: 'Buy Sagamore Spirit online — the Signature Rye reviving Maryland’s historic rye whiskey style. Direct allocations. Free shipping on $300+.',
+      hook: 'Sagamore Spirit revives the once-dominant Maryland rye whiskey style, blending two proprietary rye mash bills distilled on Baltimore’s waterfront into its Signature Rye — spicier and drier than a typical Kentucky-style rye.',
     }),
   },
 

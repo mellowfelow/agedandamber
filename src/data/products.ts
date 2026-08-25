@@ -4875,6 +4875,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "New Charred Oak",
     distilleryLocation: "Waco, Texas, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'balcones texas single malt',
+      secondaryKeywords: ['balcones single malt whiskey', 'texas single malt whiskey', 'balcones whisky review', 'buy balcones online'],
+    },
   },
   {
     id: 'prod-otherwhiskey-02',
@@ -4899,6 +4904,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "New Charred Oak",
     distilleryLocation: "Shelbyville, Kentucky, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'bulleit rye whiskey',
+      secondaryKeywords: ['bulleit 95 rye', 'bulleit rye review', 'bulleit rye mash bill', 'buy bulleit rye online'],
+    },
   },
   {
     id: 'prod-otherwhiskey-03',
@@ -4923,6 +4933,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Windsor, Ontario, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'canadian club whisky',
+      secondaryKeywords: ['canadian club 1858', 'canadian club whiskey review', 'hiram walker canadian club', 'buy canadian club online'],
+    },
   },
   {
     id: 'prod-otherwhiskey-04',
@@ -4947,6 +4962,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Toasted Oak",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal black',
+      secondaryKeywords: ['crown royal black review', 'crown royal black vs regular', 'crown royal 90 proof', 'buy crown royal black'],
+    },
   },
   {
     id: 'prod-otherwhiskey-05',
@@ -4971,6 +4991,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal deluxe',
+      secondaryKeywords: ['crown royal original', 'crown royal purple bag', 'crown royal whisky review', 'buy crown royal online'],
+    },
   },
   {
     id: 'prod-otherwhiskey-06',
@@ -4995,6 +5020,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal peach',
+      secondaryKeywords: ['crown royal peach review', 'crown royal flavors', 'crown royal peach whisky', 'buy crown royal peach'],
+    },
   },
   {
     id: 'prod-otherwhiskey-07',
@@ -5019,6 +5049,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Toasted Oak",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal reserve',
+      secondaryKeywords: ['crown royal reserve review', 'crown royal reserve vs black', 'crown royal special reserve', 'buy crown royal reserve'],
+    },
   },
   {
     id: 'prod-otherwhiskey-08',
@@ -5043,6 +5078,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Cognac Cask Finish",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal xo',
+      secondaryKeywords: ['crown royal xo review', 'crown royal cognac cask finish', 'crown royal xo tasting notes', 'buy crown royal xo'],
+    },
   },
   {
     id: 'prod-otherwhiskey-09',
@@ -5067,6 +5107,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "N/A",
     distilleryLocation: "Canada (produced by Sazerac)",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'fireball whiskey',
+      secondaryKeywords: ['fireball cinnamon whisky', 'buy fireball online', 'fireball whiskey proof', 'fireball shots'],
+    },
   },
   {
     id: 'prod-otherwhiskey-10',
@@ -5091,6 +5136,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Grimsby, Ontario, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'forty creek whisky',
+      secondaryKeywords: ['forty creek barrel select', 'forty creek canadian whisky review', 'buy forty creek online', 'forty creek john hall'],
+    },
   },
   {
     id: 'prod-otherwhiskey-11',
@@ -5115,6 +5165,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "New Charred Oak",
     distilleryLocation: "Tullahoma, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'george dickel no 12',
+      secondaryKeywords: ['george dickel tennessee whisky', 'dickel no 12 review', 'buy george dickel online', 'george dickel vs jack daniels'],
+    },
   },
   {
     id: 'prod-otherwhiskey-12',
@@ -5139,6 +5194,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "New Charred Oak",
     distilleryLocation: "Tullahoma, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'george dickel no 8',
+      secondaryKeywords: ['george dickel whisky', 'dickel no 8 review', 'buy george dickel no 8', 'george dickel charcoal mellowed'],
+    },
   },
   {
     id: 'prod-otherwhiskey-13',
@@ -5163,6 +5223,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "New Charred Oak",
     distilleryLocation: "Park City, Utah, USA",
+    seo: {
+      primaryKeyword: 'high west double rye',
+      secondaryKeywords: ['high west rye whiskey', 'high west double rye review', 'buy high west rye online', 'high west rendezvous rye'],
+    },
   },
   {
     id: 'prod-otherwhiskey-14',
@@ -5187,6 +5251,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "New Charred Oak",
     distilleryLocation: "Park City, Utah, USA",
+    seo: {
+      primaryKeyword: 'high west rendezvous rye',
+      secondaryKeywords: ['high west rye whiskey', 'high west rendezvous review', 'buy high west rendezvous rye', 'high west double rye'],
+    },
   },
   {
     id: 'prod-otherwhiskey-15',
@@ -5211,6 +5279,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "New Charred Oak",
     distilleryLocation: "Lynchburg, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'gentleman jack whiskey',
+      secondaryKeywords: ['gentleman jack review', 'gentleman jack vs jack daniels', 'buy gentleman jack online', 'gentleman jack proof'],
+    },
   },
   {
     id: 'prod-otherwhiskey-16',
@@ -5235,6 +5308,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "New Charred Oak",
     distilleryLocation: "Lynchburg, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels whiskey',
+      secondaryKeywords: ['jack daniels old no 7', 'jack daniels tennessee whiskey', 'buy jack daniels online', 'jack daniels price'],
+    },
   },
   {
     id: 'prod-otherwhiskey-17',
@@ -5259,6 +5337,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "New Charred Oak",
     distilleryLocation: "Lynchburg, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels single barrel',
+      secondaryKeywords: ['jack daniels single barrel select', 'jack daniels single barrel review', 'buy jack daniels single barrel', 'jack daniels single barrel proof'],
+    },
   },
   {
     id: 'prod-otherwhiskey-18',
@@ -5283,6 +5366,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "New Charred Oak",
     distilleryLocation: "Lynchburg, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels apple',
+      secondaryKeywords: ['jack daniels tennessee apple', 'jack apple whiskey', 'buy jack daniels apple', 'jack daniels apple review'],
+    },
   },
   {
     id: 'prod-otherwhiskey-19',
@@ -5307,6 +5395,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "New Charred Oak",
     distilleryLocation: "Lynchburg, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels honey',
+      secondaryKeywords: ['jack daniels tennessee honey', 'jack honey whiskey', 'buy jack daniels honey', 'jack honey recipes'],
+    },
   },
   {
     id: 'prod-otherwhiskey-20',
@@ -5331,6 +5424,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "New Charred Oak",
     distilleryLocation: "Clermont, Kentucky, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'knob creek rye',
+      secondaryKeywords: ['knob creek 7 year rye', 'knob creek rye review', 'buy knob creek rye online', 'knob creek rye whiskey proof'],
+    },
   },
   {
     id: 'prod-otherwhiskey-21',
@@ -5355,6 +5453,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "New Charred Oak",
     distilleryLocation: "Shively/Louisville, Kentucky, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'michters rye',
+      secondaryKeywords: ['michters us1 rye', 'michters single barrel rye review', 'buy michters rye online', 'michters rye whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-22',
@@ -5379,6 +5482,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "New Charred Oak",
     distilleryLocation: "Louisville, Kentucky, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'old forester rye',
+      secondaryKeywords: ['old forester 100 proof rye', 'old forester rye review', 'buy old forester rye online', 'old forester rye mash bill'],
+    },
   },
   {
     id: 'prod-otherwhiskey-23',
@@ -5403,6 +5511,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "New Charred Oak",
     distilleryLocation: "Bardstown/Louisville, Kentucky, USA",
+    seo: {
+      primaryKeyword: 'pikesville rye',
+      secondaryKeywords: ['pikesville rye whiskey', 'pikesville 110 proof', 'buy pikesville rye online', 'heaven hill pikesville'],
+    },
   },
   {
     id: 'prod-otherwhiskey-24',
@@ -5427,6 +5539,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "New Charred Oak",
     distilleryLocation: "Bardstown/Louisville, Kentucky, USA",
+    seo: {
+      primaryKeyword: 'rittenhouse rye',
+      secondaryKeywords: ['rittenhouse bottled in bond', 'rittenhouse 100 proof', 'buy rittenhouse rye online', 'rittenhouse manhattan'],
+    },
   },
   {
     id: 'prod-otherwhiskey-25',
@@ -5451,6 +5567,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "New Charred Oak",
     distilleryLocation: "Frankfort, Kentucky, USA",
+    seo: {
+      primaryKeyword: 'sazerac rye',
+      secondaryKeywords: ['sazerac rye whiskey', 'sazerac 6 year rye', 'buy sazerac rye online', 'buffalo trace sazerac rye'],
+    },
   },
   {
     id: 'prod-otherwhiskey-26',
@@ -5475,6 +5595,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "N/A",
     distilleryLocation: "San Diego, California, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'skrewball whiskey',
+      secondaryKeywords: ['peanut butter whiskey', 'skrewball review', 'buy skrewball online', 'skrewball whiskey proof'],
+    },
   },
   {
     id: 'prod-otherwhiskey-27',
@@ -5499,6 +5624,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "New Charred Oak",
     distilleryLocation: "Denver, Colorado, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'stranahans whiskey',
+      secondaryKeywords: ['stranahans original', 'stranahans colorado whiskey', 'buy stranahans online', 'stranahans single malt review'],
+    },
   },
   {
     id: 'prod-otherwhiskey-28',
@@ -5523,6 +5653,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "New Charred Oak",
     distilleryLocation: "Shelbyville, Tennessee, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'uncle nearest whiskey',
+      secondaryKeywords: ['uncle nearest 1856', 'uncle nearest review', 'buy uncle nearest online', 'nathan nearest green whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-29',
@@ -5547,6 +5682,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Sherry & Bourbon Oak",
     distilleryLocation: "Lovingston, Virginia, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'courage and conviction whiskey',
+      secondaryKeywords: ['virginia distillery single malt', 'courage and conviction review', 'buy virginia distillery whiskey', 'american single malt virginia'],
+    },
   },
   {
     id: 'prod-otherwhiskey-30',
@@ -5571,6 +5711,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "New Charred Oak",
     distilleryLocation: "Portland, Oregon, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'westward whiskey',
+      secondaryKeywords: ['westward american single malt', 'westward whiskey review', 'buy westward whiskey online', 'westward oregon whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-01',
@@ -5595,6 +5740,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Kentucky whiskey infused with natural blackberry flavor",
     distilleryLocation: "Bardstown, Kentucky",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'bird dog blackberry whiskey',
+      secondaryKeywords: ['bird dog whiskey', 'blackberry whiskey', 'buy bird dog whiskey online', 'bird dog flavored whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-02',
@@ -5619,6 +5769,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "100% malted barley, charred American oak",
     distilleryLocation: "Boulder, Colorado",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'boulder spirits whiskey',
+      secondaryKeywords: ['boulder spirits single malt', 'boulder spirits review', 'buy boulder spirits online', 'colorado single malt whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-03',
@@ -5643,6 +5798,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Blend of Canadian whiskies with natural apple flavor",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal apple',
+      secondaryKeywords: ['crown royal regal apple', 'crown royal apple review', 'buy crown royal apple', 'crown royal flavors'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-04',
@@ -5667,6 +5827,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "90% rye mash bill blended Canadian whisky",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal northern harvest rye',
+      secondaryKeywords: ['crown royal rye whisky', 'northern harvest rye review', 'buy crown royal northern harvest', 'world whisky of the year crown royal'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-05',
@@ -5691,6 +5856,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Blend of Canadian whiskies with natural vanilla flavor",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'crown royal vanilla',
+      secondaryKeywords: ['crown royal vanilla review', 'crown royal flavors', 'buy crown royal vanilla', 'crown royal vanilla whisky'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-06',
@@ -5715,6 +5885,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "100% malted barley smoked over mesquite wood",
     distilleryLocation: "Tucson, Arizona",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'del bac whiskey',
+      secondaryKeywords: ['whiskey del bac dorado', 'mesquite smoked whiskey', 'buy del bac online', 'hamilton distillers whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-07',
@@ -5739,6 +5914,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Corn, rye, and malted barley mash, charcoal mellowed",
     distilleryLocation: "Tullahoma, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'george dickel bottled in bond',
+      secondaryKeywords: ['george dickel 13 year', 'dickel bottled in bond review', 'buy george dickel bottled in bond', 'george dickel whisky'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-08',
@@ -5763,6 +5943,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Blend of aged corn and rye whiskies",
     distilleryLocation: "Windsor, Ontario, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jp wisers 15 year',
+      secondaryKeywords: ['jp wisers canadian whisky', 'jp wisers review', 'buy jp wisers online', 'jp wisers 15 year old'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-09',
@@ -5787,6 +5972,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Blend of rare aged corn and rye whiskies",
     distilleryLocation: "Windsor, Ontario, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jp wisers 24 year',
+      secondaryKeywords: ['jp wisers canadian whisky', 'jp wisers rare aged whisky', 'buy jp wisers 24 year', 'oldest canadian whisky brand'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-10',
@@ -5811,6 +6001,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Blend of 5-9 year corn and rye whiskies",
     distilleryLocation: "Windsor, Ontario, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jp wisers deluxe',
+      secondaryKeywords: ['jp wisers canadian whisky', 'jp wisers deluxe review', 'buy jp wisers deluxe', 'jp wisers whisky'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-11',
@@ -5835,6 +6030,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "70% rye, 18% corn, 12% malted barley, single barrel",
     distilleryLocation: "Lynchburg, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels barrel proof rye',
+      secondaryKeywords: ['jack daniels single barrel rye', 'jack daniels rye whiskey', 'buy jack daniels rye online', 'jack daniels rye proof'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-12',
@@ -5859,6 +6059,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Tennessee whiskey blended with cinnamon liqueur",
     distilleryLocation: "Lynchburg, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'jack daniels fire',
+      secondaryKeywords: ['jack daniels tennessee fire', 'jack fire whiskey', 'buy jack daniels fire', 'jack fire cinnamon whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-13',
@@ -5883,6 +6088,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Peated malted barley, Oregon oak and ex-bourbon casks",
     distilleryLocation: "Portland, Oregon",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'mccarthys single malt',
+      secondaryKeywords: ['mccarthys oregon whiskey', 'clear creek distillery whiskey', 'buy mccarthys whiskey online', 'peated american single malt'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-14',
@@ -5907,6 +6117,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Wheated mash bill, sugar-maple charcoal mellowed",
     distilleryLocation: "Nashville, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'nelsons green brier whiskey',
+      secondaryKeywords: ['nelsons green brier tennessee whiskey', 'charles nelson whiskey', 'buy nelsons green brier online', 'wheated tennessee whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-15',
@@ -5931,6 +6146,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Tennessee whiskey with caramel and sea salt flavoring",
     distilleryLocation: "Gatlinburg, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'ole smoky whiskey',
+      secondaryKeywords: ['ole smoky salty caramel', 'ole smoky moonshine', 'buy ole smoky online', 'ole smoky flavors'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-16',
@@ -5955,6 +6175,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Blended Irish whiskey with natural apple flavor",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'proper twelve apple whiskey',
+      secondaryKeywords: ['proper no twelve whiskey', 'proper 12 irish whiskey', 'buy proper twelve online', 'conor mcgregor whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-17',
@@ -5979,6 +6204,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Blend of Canadian whiskies aged minimum 6 years",
     distilleryLocation: "Gimli, Manitoba, Canada",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'seagrams vo',
+      secondaryKeywords: ['seagrams vo canadian whisky', 'seagrams vo review', 'buy seagrams vo online', 'seagrams whisky history'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-18',
@@ -6003,6 +6233,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "100% malted barley finished in PX sherry casks",
     distilleryLocation: "Denver, Colorado",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'stranahans sherry cask',
+      secondaryKeywords: ['stranahans sherry cask review', 'stranahans colorado whiskey', 'buy stranahans sherry cask', 'stranahans 7 year'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-19',
@@ -6027,6 +6262,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "High-rye mash bill, uncut and unfiltered barrel proof",
     distilleryLocation: "Frankfort, Kentucky",
+    seo: {
+      primaryKeyword: 'thomas handy sazerac',
+      secondaryKeywords: ['thomas h handy rye', 'buffalo trace antique collection thomas handy', 'sazerac 18 year', 'buy thomas handy sazerac'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-20',
@@ -6051,6 +6290,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Minimum 51% corn mash, charcoal mellowed",
     distilleryLocation: "Shelbyville, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'uncle nearest 1884',
+      secondaryKeywords: ['uncle nearest small batch', 'uncle nearest 1884 review', 'buy uncle nearest 1884', 'victoria eady butler whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-21',
@@ -6075,6 +6319,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Minimum 11-year barrels, uncut cask strength",
     distilleryLocation: "Shelbyville, Tennessee",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'uncle nearest master blend edition',
+      secondaryKeywords: ['uncle nearest cask strength', 'uncle nearest master blend review', 'buy uncle nearest master blend', 'uncle nearest premium whiskey'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-22',
@@ -6099,6 +6348,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "100% malted barley, new charred American oak",
     distilleryLocation: "Portland, Oregon",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: 'westward cask strength',
+      secondaryKeywords: ['westward cask strength single malt', 'westward whiskey review', 'buy westward cask strength', 'westward barrel strength'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-23',
@@ -6123,6 +6377,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "100% rye whiskey",
     distilleryLocation: "Shoreham, Vermont",
+    seo: {
+      primaryKeyword: 'whistlepig 10 year',
+      secondaryKeywords: ['whistlepig rye', 'whistlepig 10', 'buy whistlepig online', 'whistlepig rye review'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-24',
@@ -6147,6 +6405,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "100% rye whiskey, extended barrel aging",
     distilleryLocation: "Shoreham, Vermont",
+    seo: {
+      primaryKeyword: 'whistlepig 15 year',
+      secondaryKeywords: ['whistlepig rye', 'whistlepig 15', 'buy whistlepig 15 year online', 'whistlepig rye review'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-25',
@@ -6171,6 +6433,10 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Single barrel, barrel strength, specialty cask finish",
     distilleryLocation: "Shoreham, Vermont",
+    seo: {
+      primaryKeyword: 'whistlepig boss hog',
+      secondaryKeywords: ['whistlepig rye', 'whistlepig boss hog review', 'buy whistlepig boss hog online', 'whistlepig annual release'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-26',
@@ -6195,6 +6461,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "12-year rye finished in Madeira, Sauternes, and Port casks",
     distilleryLocation: "Shoreham, Vermont",
+    seo: {
+      // WhistlePig rye is SEMrush-backed brand-wide ("whistlepig rye", Vol 8,100, KD 14) but no individual keyword data exists for this specific expression — generic/inferred secondary terms for this SKU, not independently volume-backed.
+      primaryKeyword: 'whistlepig 12 year old world',
+      secondaryKeywords: ['whistlepig rye', 'whistlepig old world rye', 'whistlepig 12 review', 'buy whistlepig 12 year'],
+    },
   },
   {
     id: 'prod-otherwhiskey-b2-27',
@@ -6219,6 +6490,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "100% rye whiskey",
     distilleryLocation: "Shoreham, Vermont",
+    seo: {
+      // WhistlePig rye is SEMrush-backed brand-wide ("whistlepig rye", Vol 8,100, KD 14) but no individual keyword data exists for this specific expression — generic/inferred secondary terms for this SKU, not independently volume-backed.
+      primaryKeyword: 'whistlepig piggyback',
+      secondaryKeywords: ['whistlepig rye', 'whistlepig piggyback review', 'buy whistlepig piggyback online', 'whistlepig 6 year rye'],
+    },
   },
 
   // TEQUILA & MEZCAL
@@ -26387,6 +26663,10 @@ export const PRODUCTS: Product[] = [
     stock: 0,
     caskType: "New charred American oak",
     distilleryLocation: "Baltimore, Maryland",
+    seo: {
+      primaryKeyword: 'sagamore spirit rye',
+      secondaryKeywords: ['sagamore rye', 'buy sagamore spirit rye', 'maryland rye whiskey', 'sagamore spirit signature rye'],
+    },
   },
   {
     id: 'prod-gin-new-02',
