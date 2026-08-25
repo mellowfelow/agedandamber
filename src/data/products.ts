@@ -2006,6 +2006,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "ardbeg 10",
+      secondaryKeywords: ["ardbeg", "buy ardbeg online", "what does ardbeg taste like"],
+    },
   },
   {
     id: 'prod-scotch-02',
@@ -2030,6 +2034,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "ardbeg uigeadail",
+      secondaryKeywords: ["ardbeg", "ardbeg committee"],
+    },
   },
   {
     id: 'prod-scotch-03',
@@ -2054,6 +2062,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      // Thin-data brand: Bowmore appears only as a phenol-ppm FAQ example in the source dataset, no dedicated keyword cluster — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "bowmore 12",
+      secondaryKeywords: ["bowmore 12 year", "bowmore single malt scotch", "bowmore scotch price"],
+    },
   },
   {
     id: 'prod-scotch-04',
@@ -2078,6 +2091,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Scotland (blended)",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "buchanan's deluxe 12 year",
+      secondaryKeywords: ["buchanans scotch whisky", "buchanans deluxe blended scotch", "buchanan's whisky price"],
+    },
   },
   {
     id: 'prod-scotch-05',
@@ -2102,6 +2120,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Speyside-led blend, Scotland",
+    seo: {
+      // Thin-data brand: Chivas Regal appears only as an LSI mention ("chivas regal blended") inside the Blended Scotch category page, no dedicated brand page or individual Vol/KD — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "chivas regal 12",
+      secondaryKeywords: ["chivas regal blended", "chivas regal 12 year price", "chivas regal scotch"],
+    },
   },
   {
     id: 'prod-scotch-06',
@@ -2126,6 +2149,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Bourbon Oak, Unfiltered",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "deanston 12 year",
+      secondaryKeywords: ["deanston single malt scotch", "deanston 12 year old", "deanston whisky price"],
+    },
   },
   {
     id: 'prod-scotch-07',
@@ -2150,6 +2178,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Ex-Bourbon Oak, Double-Aged",
     distilleryLocation: "Highland-led blend, Scotland",
+    seo: {
+      // Thin-data brand: Dewar's appears only as "dewars blended" inside the Blended Scotch category page's LSI list — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "dewars white label",
+      secondaryKeywords: ["dewars blended", "dewars scotch whisky", "dewars white label price"],
+    },
   },
   {
     id: 'prod-scotch-08',
@@ -2174,6 +2207,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "glenfarclas 12 year",
+      secondaryKeywords: ["glenfarclas single malt", "glenfarclas 12 year old", "glenfarclas scotch price"],
+    },
   },
   {
     id: 'prod-scotch-09',
@@ -2198,6 +2236,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Ex-Bourbon & Amontillado Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "glenfiddich 12 sherry cask",
+      secondaryKeywords: ["glenfiddich 12", "glenfiddich single malt", "glenfiddich 12 price"],
+    },
   },
   {
     id: 'prod-scotch-10',
@@ -2222,6 +2264,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "glenfiddich 12",
+      secondaryKeywords: ["glenfiddich 12 year", "buy glenfiddich online", "how to pronounce glenfiddich"],
+    },
   },
   {
     id: 'prod-scotch-11',
@@ -2246,6 +2292,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Solera Vat, Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "glenfiddich 15 solera",
+      secondaryKeywords: ["glenfiddich 15 solera reserve", "glenfiddich 15 year"],
+    },
   },
   {
     id: 'prod-scotch-12',
@@ -2270,6 +2320,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      // Glenmorangie The Original does not appear anywhere in the source keyword dataset — generic/inferred keywords based on real brand/product naming, not volume-backed.
+      primaryKeyword: "glenmorangie original 10 year",
+      secondaryKeywords: ["glenmorangie 10", "glenmorangie single malt scotch", "glenmorangie original price"],
+    },
   },
   {
     id: 'prod-scotch-13',
@@ -2294,6 +2349,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Scotland (blended)",
+    seo: {
+      primaryKeyword: "johnnie walker black label",
+      secondaryKeywords: ["johnnie walker black label price", "johnnie walker black label cost"],
+    },
   },
   {
     id: 'prod-scotch-14',
@@ -2318,6 +2377,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Scotland (blended)",
+    seo: {
+      primaryKeyword: "johnnie walker blue label",
+      secondaryKeywords: ["johnnie walker blue label price", "blue label whiskey", "johnnie walker blue label 750ml price"],
+    },
   },
   {
     id: 'prod-scotch-15',
@@ -2342,6 +2405,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Charred Oak",
     distilleryLocation: "Scotland (blended)",
+    seo: {
+      // Real term, never broken out with its own Vol/KD — folded into a 9,900/8 Johnnie Walker LSI group.
+      primaryKeyword: "johnnie walker double black",
+      secondaryKeywords: ["double black johnnie walker", "johnny walker double black"],
+    },
   },
   {
     id: 'prod-scotch-16',
@@ -2366,6 +2434,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside-led blend, Scotland",
+    seo: {
+      // Real term, never broken out with its own Vol/KD — folded into a 9,900/8 Johnnie Walker LSI group.
+      primaryKeyword: "johnnie walker gold label reserve",
+      secondaryKeywords: ["johnnie walker gold label reserve price", "johnnie walker gold label"],
+    },
   },
   {
     id: 'prod-scotch-17',
@@ -2390,6 +2463,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "lagavulin 16",
+      secondaryKeywords: ["lagavulin", "buy lagavulin 16", "lagavulin vs laphroaig", "lagavulin vs ardbeg"],
+    },
   },
   {
     id: 'prod-scotch-18',
@@ -2414,6 +2491,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "laphroaig 10",
+      secondaryKeywords: ["laphroaig 10 year", "how do you pronounce laphroaig", "laphroaig 10 price"],
+    },
   },
   {
     id: 'prod-scotch-19',
@@ -2438,6 +2519,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Speyside blend, Scotland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "monkey shoulder blended malt scotch",
+      secondaryKeywords: ["monkey shoulder whisky", "monkey shoulder price", "monkey shoulder scotch"],
+    },
   },
   {
     id: 'prod-scotch-20',
@@ -2462,6 +2548,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Ex-Bourbon & Port Pipe",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "balvenie 21 portwood",
+      secondaryKeywords: ["balvenie 21 price", "the balvenie", "balvenie tun 1509"],
+    },
   },
   {
     id: 'prod-scotch-21',
@@ -2486,6 +2576,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "balvenie 12 doublewood",
+      secondaryKeywords: ["balvenie 12", "balvenie 12 price", "balvenie vs glenfiddich"],
+    },
   },
   {
     id: 'prod-scotch-22',
@@ -2510,6 +2604,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      primaryKeyword: "dalmore 12",
+      secondaryKeywords: ["dalmore 12 price", "dalmore whisky", "is dalmore a good scotch"],
+    },
   },
   {
     id: 'prod-scotch-23',
@@ -2534,6 +2632,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "glenlivet 12 year",
+      secondaryKeywords: ["the glenlivet", "glenlivet 12 price", "buy glenlivet 12"],
+    },
   },
   {
     id: 'prod-scotch-24',
@@ -2558,6 +2660,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "American & European Sherry-Seasoned Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "macallan 12 double cask",
+      secondaryKeywords: ["macallan double cask 12", "macallan 12", "macallan double cask", "macallan 12 price"],
+    },
   },
   {
     id: 'prod-scotch-25',
@@ -2582,6 +2688,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "European Sherry-Seasoned Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "macallan 18 sherry oak",
+      secondaryKeywords: ["sherry oak macallan 18", "macallan 18", "macallan 18 price"],
+    },
   },
   {
     id: 'prod-scotch-26',
@@ -2606,6 +2716,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "the singleton 12 year",
+      secondaryKeywords: ["singleton single malt scotch", "singleton 12 year old", "the singleton whisky price"],
+    },
   },
   {
     id: 'prod-scotch-b2-02',
@@ -2630,6 +2745,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Ex-Bourbon and Sherry Casks",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // Thin-data brand: Chivas Regal appears only as an LSI mention ("chivas regal blended") inside the Blended Scotch category page, no dedicated brand page or individual Vol/KD — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "chivas regal 18",
+      secondaryKeywords: ["chivas regal blended", "chivas regal 18 year price", "chivas regal scotch"],
+    },
   },
   {
     id: 'prod-scotch-b2-04',
@@ -2654,6 +2774,10 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Pedro Ximenez and Oloroso Sherry Casks",
     distilleryLocation: "Highlands, Scotland",
+    seo: {
+      primaryKeyword: "glendronach 15 revival",
+      secondaryKeywords: ["glendronach 15", "glendronach 15 revival single malt whisky", "glendronach 12"],
+    },
   },
   {
     id: 'prod-scotch-b2-05',
@@ -2678,6 +2802,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Oloroso Sherry and Bourbon Oak",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // Vol 5,400 confirmed; KD reported as 23 in batch4 vs. 12 in batch6 (source conflict, doesn't change the keywords chosen here) — using KD 23.
+      primaryKeyword: "glenfiddich 18",
+      secondaryKeywords: ["glenfiddich 18 year", "glenfiddich 18 price", "glenfiddich 21"],
+    },
   },
   {
     id: 'prod-scotch-b2-06',
@@ -2702,6 +2831,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Sherry-Seasoned Oak Casks",
     distilleryLocation: "Orkney Islands, Scotland",
+    seo: {
+      // Independent real search signal — does not need to lean on the unstocked "Viking Honour" (12 Year) term.
+      primaryKeyword: "highland park 18",
+      secondaryKeywords: ["highland park 18 year", "highland park 18 price", "buy highland park online", "who makes highland park"],
+    },
   },
   {
     id: 'prod-scotch-b2-07',
@@ -2726,6 +2860,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Quarter Cask and Ex-Bourbon Barrels",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "laphroaig lore",
+      secondaryKeywords: ["laphroaig quarter cask", "friends of laphroaig", "laphroaig cairdeas"],
+    },
   },
   {
     id: 'prod-scotch-b2-08',
@@ -2750,6 +2888,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Ex-Bourbon and Sherry Casks",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      primaryKeyword: "oban 14",
+      secondaryKeywords: ["oban 14 year", "oban single malt 14", "oban distillers edition"],
+    },
   },
   {
     id: 'prod-scotch-b2-09',
@@ -2774,6 +2916,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Refill Ex-Bourbon and Sherry Casks",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      primaryKeyword: "oban 18",
+      secondaryKeywords: ["oban single malt 18", "oban little bay"],
+    },
   },
   {
     id: 'prod-scotch-b2-10',
@@ -2798,6 +2944,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Bourbon Casks",
     distilleryLocation: "Islay, Scotland",
+    seo: {
+      primaryKeyword: "port charlotte 10",
+      secondaryKeywords: ["bruichladdich", "port charlotte heavily peated", "buy bruichladdich online", "octomore"],
+    },
   },
   {
     id: 'prod-scotch-b2-11',
@@ -2822,6 +2972,10 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Triple Sherry Cask Finish",
     distilleryLocation: "Highland, Scotland",
+    seo: {
+      primaryKeyword: "dalmore 15",
+      secondaryKeywords: ["dalmore 15 price", "dalmore 18", "buy dalmore online"],
+    },
   },
   {
     id: 'prod-scotch-b2-12',
@@ -2846,6 +3000,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Cognac Cask Finished",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // GAP: no "cognac cask" or matching finish term exists anywhere in the source dataset for Glenlivet — falling back to the nearest real (not exact) analogues, not volume-backed for this SKU.
+      primaryKeyword: "glenlivet 14 year cognac cask",
+      secondaryKeywords: ["glenlivet captain's reserve", "glenlivet first fill", "the glenlivet"],
+    },
   },
   {
     id: 'prod-scotch-b2-13',
@@ -2870,6 +3029,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Sherry-Seasoned Oak Casks",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "macallan 12 sherry oak",
+      secondaryKeywords: ["macallan sherry oak", "macallan 12 year", "is macallan 12 good"],
+    },
   },
   {
     id: 'prod-scotch-b2-14',
@@ -2894,6 +3057,10 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Double Cask (American and European Sherry Oak)",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "macallan double cask 15",
+      secondaryKeywords: ["macallan 15", "macallan 15 price"],
+    },
   },
 
   // IRISH
@@ -25271,6 +25438,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Ex-bourbon American oak and Oloroso sherry casks",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      primaryKeyword: "aberlour 16",
+      secondaryKeywords: ["aberlour 16 double cask", "a'bunadh aberlour", "aberlour 16 year", "aberlour scotch"],
+    },
   },
   {
     id: 'prod-scotch-new-02',
@@ -25289,6 +25460,11 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Pedro Ximénez and Oloroso sherry casks",
     distilleryLocation: "Speyside, Scotland",
+    seo: {
+      // Not itemized separately in the source dataset (only Aberlour 16 has a dedicated cluster) — falling back to brand-level Aberlour terms, not volume-backed for this exact SKU.
+      primaryKeyword: "aberlour 18",
+      secondaryKeywords: ["aberlour scotch", "aberlour 18 year", "a'bunadh aberlour"],
+    },
   },
   {
     id: 'prod-scotch-new-03',
@@ -25307,6 +25483,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "First-fill bourbon casks, Pedro Ximénez sherry finish",
     distilleryLocation: "Campbeltown, Scotland",
+    seo: {
+      primaryKeyword: "glen scotia double cask",
+      secondaryKeywords: ["glen scotia 15", "glen scotia victoriana", "glen scotia 18", "campbeltown whisky"],
+    },
   },
   {
     id: 'prod-scotch-new-05',
@@ -25325,6 +25505,10 @@ export const PRODUCTS: Product[] = [
     stock: 5,
     caskType: "Oloroso sherry casks",
     distilleryLocation: "Highlands, Scotland",
+    seo: {
+      primaryKeyword: "glendronach 18 allardice",
+      secondaryKeywords: ["glendronach 18", "glendronach cask strength", "the glendronach"],
+    },
   },
   {
     id: 'prod-scotch-new-06',
@@ -25344,6 +25528,11 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "Bourbon and sherry casks, cask strength, non-chill filtered",
     distilleryLocation: "Campbeltown, Scotland",
+    seo: {
+      // No "springbank 8" age-specific term exists anywhere in the source dataset (only 10/12/15/18/21 ages appear); the master doc also lists "Springbank Local Barley" as a product not previously on the site. Worth confirming this SKU is genuinely the Local Barley expression — using brand-level Local Barley terms, not volume-backed for the "8 Year" age statement specifically.
+      primaryKeyword: "springbank local barley",
+      secondaryKeywords: ["springbank whisky", "buy springbank online", "springbank 100 proof"],
+    },
   },
   {
     id: 'prod-irish-new-01',
