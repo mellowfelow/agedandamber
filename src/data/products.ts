@@ -6521,6 +6521,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Tequila, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // '1800 anejo tequila' (1,300/23) and 'buy añejo tequila' (320/12) are real category-level SEMrush terms from the source dataset; '1800 tequila' and '1800 tequila price' have no dedicated brand-page data — generic/inferred, not volume-backed.
+      primaryKeyword: '1800 anejo tequila',
+      secondaryKeywords: ['1800 tequila', 'buy añejo tequila', '1800 tequila price'],
+    },
   },
   {
     id: 'prod-tequila-02',
@@ -6545,6 +6550,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Tequila, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No brand-specific SEMrush data for 1800 Reposado — primary keyword is generic/inferred. 'buy reposado tequila' (320/13) and 'reposado tequila brands' (720/17) are real category-level SEMrush terms from the source dataset.
+      primaryKeyword: '1800 reposado tequila',
+      secondaryKeywords: ['1800 tequila', 'buy reposado tequila', 'reposado tequila brands'],
+    },
   },
   {
     id: 'prod-tequila-03',
@@ -6569,6 +6579,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Unaged",
     distilleryLocation: "Tequila, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No brand-specific SEMrush data for 1800 Silver — primary keyword is generic/inferred. 'silver tequila' (4,400/28) and 'buy blanco tequila' (480/14) are real category-level SEMrush terms from the source dataset.
+      primaryKeyword: '1800 silver tequila',
+      secondaryKeywords: ['1800 blanco tequila', 'silver tequila', 'buy blanco tequila'],
+    },
   },
   {
     id: 'prod-tequila-04',
@@ -6593,6 +6608,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'casamigos anejo',
+      secondaryKeywords: ['casamigos anejo price', 'casamigos tequila price', 'who owns casamigos'],
+    },
   },
   {
     id: 'prod-tequila-05',
@@ -6617,6 +6636,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Unaged",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'casamigos blanco',
+      secondaryKeywords: ['buy casamigos blanco', 'casamigos blanco price', 'george clooney tequila'],
+    },
   },
   {
     id: 'prod-tequila-06',
@@ -6641,6 +6664,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'casamigos reposado',
+      secondaryKeywords: ['buy casamigos reposado', 'casamigos reposado price', 'casamigos vs don julio'],
+    },
   },
   {
     id: 'prod-tequila-07',
@@ -6665,6 +6692,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Unaged",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Cazadores — primary and brand-specific secondary keywords are WebSearch-informed (highlands agave, herbal/vegetal profile) and generic/inferred. 'white tequila' (2,400/22) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'cazadores blanco tequila',
+      secondaryKeywords: ['cazadores tequila', 'white tequila', 'highland blanco tequila'],
+    },
   },
   {
     id: 'prod-tequila-08',
@@ -6689,6 +6721,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "American Oak",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Cazadores — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'best reposado tequila' (2,900/19) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'cazadores reposado tequila',
+      secondaryKeywords: ['cazadores tequila', 'best reposado tequila', 'highland reposado tequila'],
+    },
   },
   {
     id: 'prod-tequila-09',
@@ -6713,6 +6750,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Ex-Whiskey Casks",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'clase azul reposado',
+      secondaryKeywords: ['buy clase azul reposado', 'clase azul reposado price', 'clase azul ceramic bottle'],
+    },
   },
   {
     id: 'prod-tequila-10',
@@ -6737,6 +6778,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'don julio 1942',
+      secondaryKeywords: ['buy don julio 1942', 'don julio 1942 price', 'don julio 1942 worth it'],
+    },
   },
   {
     id: 'prod-tequila-11',
@@ -6761,6 +6806,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Ex-Bourbon Oak, Charcoal Filtered",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'don julio 70 cristalino',
+      secondaryKeywords: ['don julio 70', 'don julio 70 price', 'cristalino tequila'],
+    },
   },
   {
     id: 'prod-tequila-12',
@@ -6785,6 +6834,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'don julio anejo',
+      secondaryKeywords: ['don julio anejo price', 'don julio vs patron', 'don julio tequila'],
+    },
   },
   {
     id: 'prod-tequila-13',
@@ -6809,6 +6862,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Unaged",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'don julio blanco',
+      secondaryKeywords: ['buy don julio online', 'don julio near me', 'don julio tequila'],
+    },
   },
   {
     id: 'prod-tequila-14',
@@ -6833,6 +6890,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'don julio reposado',
+      secondaryKeywords: ['don julio reposado price', 'don julio vs casamigos', 'is don julio good tequila'],
+    },
   },
   {
     id: 'prod-tequila-15',
@@ -6857,6 +6918,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Unaged",
     distilleryLocation: "Amatitán, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No SEMrush volume data found for El Jimador — primary and brand-specific secondary keywords are WebSearch-informed (Casa Herradura/Brown-Forman brand, named for the agave harvester) and generic/inferred. 'blanco tequila for margarita' (1,300/16) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el jimador blanco tequila',
+      secondaryKeywords: ['el jimador tequila', 'blanco tequila for margarita', 'el jimador price'],
+    },
   },
   {
     id: 'prod-tequila-16',
@@ -6881,6 +6947,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "American Oak",
     distilleryLocation: "Amatitán, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No SEMrush volume data found for El Jimador — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'reposado tequila for margarita' (480/16) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el jimador reposado tequila',
+      secondaryKeywords: ['el jimador tequila', 'reposado tequila for margarita', 'herradura el jimador'],
+    },
   },
   {
     id: 'prod-tequila-17',
@@ -6905,6 +6976,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Oak",
     distilleryLocation: "Los Altos, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Espolòn — primary and brand-specific secondary keywords are WebSearch-informed (Jose Guadalupe Posada calavera artwork on labels) and generic/inferred. 'anejo tequila for sipping' (590/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'espolon anejo tequila',
+      secondaryKeywords: ['espolon tequila', 'anejo tequila for sipping', 'day of the dead tequila'],
+    },
   },
   {
     id: 'prod-tequila-18',
@@ -6929,6 +7005,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Unaged",
     distilleryLocation: "Los Altos, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Espolòn — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'blanco tequila for margarita' (1,300/16) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'espolon blanco tequila',
+      secondaryKeywords: ['espolon tequila', 'blanco tequila for margarita', 'espolon tequila skull bottle'],
+    },
   },
   {
     id: 'prod-tequila-19',
@@ -6953,6 +7034,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Oak",
     distilleryLocation: "Los Altos, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Espolòn — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'reposado tequila for margarita' (480/16) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'espolon reposado tequila',
+      secondaryKeywords: ['espolon tequila', 'reposado tequila for margarita', 'espolon tequila price'],
+    },
   },
   {
     id: 'prod-tequila-20',
@@ -6977,6 +7063,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Oak",
     distilleryLocation: "Amatitán, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No SEMrush volume data found for Herradura — primary and brand-specific secondary keywords are WebSearch-informed (Herradura pioneered the reposado category in 1974 and extra añejo in 1995) and generic/inferred. 'best añejo tequila' (3,600/20) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'herradura anejo tequila',
+      secondaryKeywords: ['herradura tequila', 'best añejo tequila', 'herradura tequila price'],
+    },
   },
   {
     id: 'prod-tequila-21',
@@ -7001,6 +7092,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Oak",
     distilleryLocation: "Tequila, Jalisco, Mexico (Lowlands)",
+    seo: {
+      // No SEMrush volume data found for this Jose Cuervo expression — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'extra anejo tequila' (5,400/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'jose cuervo reserva de la familia',
+      secondaryKeywords: ['jose cuervo extra anejo', 'extra anejo tequila', 'jose cuervo tequila'],
+    },
   },
   {
     id: 'prod-tequila-22',
@@ -7025,6 +7121,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for LALO — primary and brand-specific secondary keywords are WebSearch-informed (founded by Eduardo 'Lalo' González, grandson of Don Julio González, additive-free blanco) and generic/inferred. 'unaged tequila' (590/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'lalo tequila',
+      secondaryKeywords: ['lalo blanco tequila', 'additive-free tequila', 'unaged tequila'],
+    },
   },
   {
     id: 'prod-tequila-23',
@@ -7049,6 +7150,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Oak",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'patron reposado',
+      secondaryKeywords: ['patron tequila price', 'patron near me', 'who owns patron'],
+    },
   },
   {
     id: 'prod-tequila-24',
@@ -7073,6 +7178,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Unaged",
     distilleryLocation: "Atotonilco el Alto, Jalisco, Mexico (Highlands)",
+    seo: {
+      primaryKeyword: 'patron silver tequila',
+      secondaryKeywords: ['buy patron silver', 'patron silver price', 'patron silver for margarita'],
+    },
   },
   {
     id: 'prod-tequila-25',
@@ -7097,6 +7206,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Scotch, Brandy & Sherry Casks",
     distilleryLocation: "Tequila, Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for Tears of Llorona — primary and brand-specific secondary keywords are WebSearch-informed (crafted by German Gonzalez, creator of Chinaco, aged 5+ years across Scotch, sherry, and Cognac casks) and generic/inferred. 'ultra premium tequila' (880/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'tears of llorona tequila',
+      secondaryKeywords: ['tears of llorona extra anejo', 'ultra premium tequila', 'tears of llorona no 3'],
+    },
   },
   {
     id: 'prod-tequila-26',
@@ -7121,6 +7235,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Unaged",
     distilleryLocation: "Arandas, Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Tequila Ocho — primary and brand-specific secondary keywords are WebSearch-informed (first single-estate, vintage-dated tequila, crafted by Carlos Camarena) and generic/inferred. '100% agave blanco' (320/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'tequila ocho plata',
+      secondaryKeywords: ['tequila ocho tequila', 'single estate tequila', '100% agave blanco'],
+    },
   },
   {
     id: 'prod-tequila-27',
@@ -7145,6 +7264,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Teremana — primary and brand-specific secondary keywords are WebSearch-informed (Dwayne 'The Rock' Johnson's tequila brand) and generic/inferred, not volume-backed.
+      primaryKeyword: 'teremana blanco tequila',
+      secondaryKeywords: ['teremana tequila', 'dwayne johnson tequila', 'the rock tequila'],
+    },
   },
   {
     id: 'prod-tequila-28',
@@ -7169,6 +7293,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "American Whiskey Barrels",
     distilleryLocation: "Jalisco, Mexico (Highlands)",
+    seo: {
+      // No SEMrush volume data found for Teremana — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred, not volume-backed.
+      primaryKeyword: 'teremana reposado tequila',
+      secondaryKeywords: ['teremana tequila', 'dwayne johnson tequila', 'teremana reposado price'],
+    },
   },
   {
     id: 'prod-mezcal-01',
@@ -7193,6 +7322,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for 400 Conejos — primary and brand-specific secondary keywords are WebSearch-informed (produced by maestro mezcalero Don Tacho in Santiago Matatlán) and generic/inferred. 'joven mezcal' (480/15) and 'espadín mezcal' (1,300/15) are real category-level SEMrush terms from the source dataset.
+      primaryKeyword: '400 conejos mezcal',
+      secondaryKeywords: ['joven mezcal', 'espadín mezcal', '400 conejos joven espadin'],
+    },
   },
   {
     id: 'prod-mezcal-02',
@@ -7217,6 +7351,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Ejutla/Miahuatlán, Oaxaca, Mexico",
+    seo: {
+      // 'banhez mezcal' (880/12) and 'espadín mezcal' (1,300/15) are real SEMrush terms from the source dataset's mezcal-subcategory LSI list; 'banhez espadin barril mezcal' and 'oaxaca mezcal cooperative' are WebSearch-informed (36+ family cooperative in San Miguel Ejutla, Oaxaca) and generic/inferred.
+      primaryKeyword: 'banhez mezcal',
+      secondaryKeywords: ['banhez espadin barril mezcal', 'espadín mezcal', 'oaxaca mezcal cooperative'],
+    },
   },
   {
     id: 'prod-mezcal-03',
@@ -7241,6 +7380,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Traditional Copper Still",
     distilleryLocation: " Miahuatlán & Etla, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Bozal — primary and brand-specific secondary keywords are WebSearch-informed (blend of cultivated Espadín with wild-harvested Barril and Mexicano agave) and generic/inferred. 'artisanal mezcal' (1,600/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'bozal ensamble mezcal',
+      secondaryKeywords: ['bozal mezcal', 'artisanal mezcal', 'wild agave mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-04',
@@ -7265,6 +7409,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Traditional Copper Still",
     distilleryLocation: "San Juan Bautista Jayacatlán, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Bozal — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'tobalá mezcal' (720/14) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'bozal tobala mezcal',
+      secondaryKeywords: ['bozal mezcal', 'tobalá mezcal', 'wild tobala agave'],
+    },
   },
   {
     id: 'prod-mezcal-05',
@@ -7289,6 +7438,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Double Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Bruxo — primary and brand-specific secondary keywords are WebSearch-informed (founded 2010, 11 mezcalero masters across the collection) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'bruxo mezcal',
+      secondaryKeywords: ['bruxo espadin mezcal', 'espadín mezcal', 'oaxaca artisanal mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-06',
@@ -7313,6 +7467,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Traditional Copper Still",
     distilleryLocation: "San Baltazar Chichicapa, Oaxaca, Mexico",
+    seo: {
+      // 'del maguey mezcal' (1,600/15) is a real SEMrush term from the source dataset's mezcal-subcategory LSI list; the Chichicapa-specific primary and remaining secondary keywords are WebSearch-informed (Ron Cooper's pioneering single-village mezcal brand, founded 1995) and generic/inferred.
+      primaryKeyword: 'del maguey chichicapa',
+      secondaryKeywords: ['del maguey mezcal', 'single village mezcal', 'chichicapa mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-07',
@@ -7337,6 +7496,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Santa Catarina Minas, Oaxaca, Mexico",
+    seo: {
+      // 'del maguey mezcal' (1,600/15) is a real SEMrush term from the source dataset's mezcal-subcategory LSI list; the Pechuga-specific primary and remaining secondary keywords are WebSearch-informed (prepared with mezcalero Luis Carlos Vásquez in Santa Catarina Minas) and generic/inferred.
+      primaryKeyword: 'del maguey pechuga',
+      secondaryKeywords: ['del maguey mezcal', 'pechuga mezcal', 'mezcal pechuga meaning'],
+    },
   },
   {
     id: 'prod-mezcal-08',
@@ -7361,6 +7525,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Traditional Copper Still",
     distilleryLocation: "San Luis del Río, Oaxaca, Mexico",
+    seo: {
+      // 'del maguey mezcal' (1,600/15) is a real SEMrush term from the source dataset's mezcal-subcategory LSI list; the Vida-specific primary and remaining secondary keywords are WebSearch-informed and generic/inferred.
+      primaryKeyword: 'del maguey vida mezcal',
+      secondaryKeywords: ['del maguey mezcal', 'vida mezcal cocktails', 'single village mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-09',
@@ -7385,6 +7554,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Derrumbes — primary and brand-specific secondary keywords are WebSearch-informed (multi-regional mezcal project by Esteban Morales and Sergio Mendoza) and generic/inferred. 'oaxaca mezcal' (1,300/18) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'derrumbes oaxaca mezcal',
+      secondaryKeywords: ['derrumbes mezcal', 'oaxaca mezcal', 'espadín tobalá mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-10',
@@ -7409,6 +7583,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Tahona & Copper Still",
     distilleryLocation: "Santiago Matatlán, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Dos Hombres — primary and brand-specific secondary keywords are WebSearch-informed (Bryan Cranston and Aaron Paul's brand, launched 2019) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'dos hombres mezcal',
+      secondaryKeywords: ['dos hombres espadin mezcal', 'breaking bad mezcal', 'espadín mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-11',
@@ -7433,6 +7612,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for El Jolgorio — primary and brand-specific secondary keywords are WebSearch-informed (collective of 16 families across 10 Oaxaca regions, wild-harvested Tobalá) and generic/inferred. 'tobalá mezcal' (720/14) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el jolgorio tobala mezcal',
+      secondaryKeywords: ['el jolgorio mezcal', 'tobalá mezcal', 'wild tobala agave'],
+    },
   },
   {
     id: 'prod-mezcal-12',
@@ -7457,6 +7641,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for El Silencio — primary and brand-specific secondary keywords are WebSearch-informed (founded 2013, produced in San Baltazar Guelavila, Oaxaca) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el silencio mezcal',
+      secondaryKeywords: ['el silencio espadin mezcal', 'espadín mezcal', 'el silencio mezcal price'],
+    },
   },
   {
     id: 'prod-mezcal-13',
@@ -7481,6 +7670,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Traditional Copper Still, American Oak Rested",
     distilleryLocation: "Santiago Matatlán, Oaxaca, Mexico",
+    seo: {
+      // 'ilegal mezcal' (1,600/14) is a real SEMrush term from the source dataset's mezcal-subcategory LSI list; the Reposado-specific primary and remaining secondary keywords are WebSearch-informed (founded by John Rexer, originally smuggled from Oaxaca) and generic/inferred.
+      primaryKeyword: 'ilegal mezcal reposado',
+      secondaryKeywords: ['ilegal mezcal', 'ilegal mezcal price', 'reposado mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-14',
@@ -7505,6 +7699,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Santiago Matatlán, Oaxaca, Mexico",
+    seo: {
+      // 'ilegal mezcal' (1,600/14) and 'joven mezcal' (480/15) are real SEMrush terms from the source dataset's mezcal-subcategory LSI list; the Joven-specific primary and 'ilegal mezcal review' are WebSearch-informed and generic/inferred.
+      primaryKeyword: 'ilegal mezcal joven',
+      secondaryKeywords: ['ilegal mezcal', 'joven mezcal', 'ilegal mezcal review'],
+    },
   },
   {
     id: 'prod-mezcal-15',
@@ -7529,6 +7728,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Miahuatlán/Matatlán/San Dionisio, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Madre — primary and brand-specific secondary keywords are WebSearch-informed (fastest-growing US mezcal brand in 2021, sourced from Carlos Blas and family in Oaxaca) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'madre mezcal',
+      secondaryKeywords: ['madre espadin mezcal', 'espadín mezcal', 'madre mezcal cocktails'],
+    },
   },
   {
     id: 'prod-mezcal-16',
@@ -7553,6 +7757,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Santiago Matatlán, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Mal Bien — primary and brand-specific secondary keywords are WebSearch-informed (small-batch mezcal sourced from independent family producers across Oaxaca since 2016) and generic/inferred. 'espadín mezcal' (1,300/15) and 'artisanal mezcal' (1,600/17) are real category-level SEMrush terms from the source dataset.
+      primaryKeyword: 'mal bien mezcal',
+      secondaryKeywords: ['mal bien espadin mezcal', 'espadín mezcal', 'artisanal mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-17',
@@ -7577,6 +7786,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Montelobos — primary and brand-specific secondary keywords are WebSearch-informed (created by Ivan Saldaña with fifth-generation mezcalero Abel López Mateos, tied to William Grant & Sons) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'montelobos mezcal',
+      secondaryKeywords: ['montelobos espadin mezcal', 'espadín mezcal', 'montelobos mezcal price'],
+    },
   },
   {
     id: 'prod-mezcal-18',
@@ -7601,6 +7815,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Traditional Copper Still",
     distilleryLocation: "San Luis del Río, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for Nuestra Soledad — primary and brand-specific secondary keywords are WebSearch-informed (El Jolgorio's single-village line; San Luis del Río sits in the Tlacolula district over 7,000 feet up) and generic/inferred. 'oaxaca mezcal' (1,300/18) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'nuestra soledad mezcal',
+      secondaryKeywords: ['nuestra soledad san luis del rio', 'oaxaca mezcal', 'single village mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-19',
@@ -7625,6 +7844,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Santiago Matatlán, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for The Lost Explorer — primary and brand-specific secondary keywords are WebSearch-informed (co-founded by David de Rothschild with Maestro Mezcalero Fortino Ramos in Oaxaca) and generic/inferred. 'espadín mezcal' (1,300/15) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'the lost explorer mezcal',
+      secondaryKeywords: ['the lost explorer espadin mezcal', 'espadín mezcal', 'david de rothschild mezcal'],
+    },
   },
   {
     id: 'prod-mezcal-20',
@@ -7649,6 +7873,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Valles Centrales, Oaxaca, Mexico",
+    seo: {
+      // No SEMrush volume data found for The Lost Explorer — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'tobalá mezcal' (720/14) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'the lost explorer tobala mezcal',
+      secondaryKeywords: ['the lost explorer mezcal', 'tobalá mezcal', 'wild tobala agave'],
+    },
   },
   {
     id: 'prod-mezcal-21',
@@ -7673,6 +7902,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Traditional Copper Still",
     distilleryLocation: "Candelaria Yegolé, Oaxaca, Mexico",
+    seo: {
+      // 'vago mezcal' (720/14) is a real SEMrush term from the source dataset's mezcal-subcategory LSI list; the Elote-specific secondary keywords are WebSearch-informed (produced by Aquilino García López and sons, roasted corn added during distillation) and generic/inferred.
+      primaryKeyword: 'vago mezcal',
+      secondaryKeywords: ['vago elote mezcal', 'mezcal vago aquilino garcia', 'elote mezcal corn infused'],
+    },
   },
   {
     id: 'prod-tequila-b2-01',
@@ -7697,6 +7931,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "French & American Oak, Port Cask Finish",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // 'cristalino tequila' (8,100/22), '1800 anejo tequila' (1,300/23), and 'filtered anejo tequila' (320/15) are real SEMrush terms from the source dataset's Cristalino- and Añejo-subcategory tables; the 1800-Cristalino-specific primary keyword combination is not separately tracked and is generic/inferred.
+      primaryKeyword: '1800 cristalino tequila',
+      secondaryKeywords: ['cristalino tequila', '1800 anejo tequila', 'filtered anejo tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-02',
@@ -7721,6 +7960,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "New French & New American Oak",
     distilleryLocation: "Jalisco, Mexico (NOM 1489)",
+    seo: {
+      // No SEMrush volume data found for Casa Dragones — primary and secondary keywords are WebSearch-informed (founded 2009 by Bertha González Nieves, first woman certified as Maestra Tequilera; Oprah Winfrey named it her favorite tequila) and generic/inferred, not volume-backed.
+      primaryKeyword: 'casa dragones anejo barrel blend',
+      secondaryKeywords: ['casa dragones tequila', 'casa dragones sipping tequila', 'oprah favorite tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-03',
@@ -7745,6 +7989,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Jalisco, Mexico (NOM 1489)",
+    seo: {
+      // No SEMrush volume data found for Casa Dragones — primary and secondary keywords are WebSearch-informed and generic/inferred, not volume-backed.
+      primaryKeyword: 'casa dragones blanco tequila',
+      secondaryKeywords: ['casa dragones tequila', 'casa dragones sipping tequila', 'bertha gonzalez nieves tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-04',
@@ -7769,6 +8018,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "American Oak, Sherry & Cognac Casks",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      primaryKeyword: 'clase azul ultra',
+      secondaryKeywords: ['clase azul ultra price', 'clase azul tequila price', 'clase azul vs don julio'],
+    },
   },
   {
     id: 'prod-tequila-b2-05',
@@ -7793,6 +8046,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "French Oak, Ex-Cabernet Barrels",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for Código 1530 — primary and secondary keywords are WebSearch-informed (founded 2016 by Ron Snyder, Federico Vaughan, and George Strait; acquired by Pernod Ricard in 2022) and generic/inferred, not volume-backed.
+      primaryKeyword: 'codigo 1530 reposado',
+      secondaryKeywords: ['codigo 1530 tequila', 'george strait tequila', 'codigo 1530 price'],
+    },
   },
   {
     id: 'prod-tequila-b2-06',
@@ -7817,6 +8075,10 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Ex-American Whiskey & Crown Royal Casks",
     distilleryLocation: "Atotonilco el Alto, Jalisco",
+    seo: {
+      primaryKeyword: 'don julio real',
+      secondaryKeywords: ['don julio real price', 'who owns don julio', 'don julio tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-07',
@@ -7841,6 +8103,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "New Oak Barrels",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for El Jimador — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'best añejo tequila' (3,600/20) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el jimador anejo tequila',
+      secondaryKeywords: ['el jimador tequila', 'best añejo tequila', 'el jimador price'],
+    },
   },
   {
     id: 'prod-tequila-b2-08',
@@ -7865,6 +8132,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // No SEMrush volume data found for El Tesoro — primary and secondary keywords are WebSearch-informed (La Alteña Distillery, Camarena family since 1937, one of tequila's last true tahona producers) and generic/inferred, not volume-backed.
+      primaryKeyword: 'el tesoro blanco tequila',
+      secondaryKeywords: ['el tesoro tequila', 'tahona crushed tequila', 'el tesoro blanco price'],
+    },
   },
   {
     id: 'prod-tequila-b2-09',
@@ -7889,6 +8161,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "American Oak Ex-Bourbon Barrels",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // No SEMrush volume data found for El Tesoro — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'extra anejo tequila' (5,400/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el tesoro extra anejo',
+      secondaryKeywords: ['el tesoro tequila', 'extra anejo tequila', 'la altena distillery tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-10',
@@ -7913,6 +8190,11 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "American Oak Ex-Bourbon Barrels",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // No SEMrush volume data found for El Tesoro — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'best reposado tequila' (2,900/19) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'el tesoro reposado tequila',
+      secondaryKeywords: ['el tesoro tequila', 'best reposado tequila', 'tahona crushed tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-11',
@@ -7937,6 +8219,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "American Oak Barrels",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // 'fortaleza tequila' (4,400/18, pending-inventory brand table) and 'best añejo tequila' (3,600/20) are real SEMrush terms from the source dataset; the Añejo-specific primary keyword and 'tahona crushed tequila' are not separately tracked and are generic/inferred.
+      primaryKeyword: 'fortaleza anejo tequila',
+      secondaryKeywords: ['fortaleza tequila', 'best añejo tequila', 'tahona crushed tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-12',
@@ -7961,6 +8248,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // 'fortaleza blanco' (1,600/17) and 'fortaleza tequila' (4,400/18) are real SEMrush terms from the source dataset's Blanco-subcategory LSI list and pending-inventory brand table; 'tahona crushed tequila' and 'fortaleza tequila review' are WebSearch-informed and generic/inferred.
+      primaryKeyword: 'fortaleza blanco',
+      secondaryKeywords: ['fortaleza tequila', 'tahona crushed tequila', 'fortaleza tequila review'],
+    },
   },
   {
     id: 'prod-tequila-b2-13',
@@ -7985,6 +8277,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "American Oak Barrels",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // 'fortaleza reposado' (1,300/15) and 'fortaleza tequila' (4,400/18) are real SEMrush terms from the source dataset's Reposado-subcategory LSI list and pending-inventory brand table; 'best reposado tequila' (2,900/19) is also real; 'tahona crushed tequila' is WebSearch-informed and generic/inferred.
+      primaryKeyword: 'fortaleza reposado',
+      secondaryKeywords: ['fortaleza tequila', 'best reposado tequila', 'tahona crushed tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-14',
@@ -8009,6 +8306,11 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // 'g4 blanco' (720/12) and 'g4 tequila' (2,400/8) are real SEMrush terms from the source dataset's Blanco-subcategory LSI list and pending-inventory brand table; 'felipe camarena tequila' and 'g4 tequila tahona' are WebSearch-informed (Felipe Camarena's custom 'Felipestein' tahona at El Pandillo Distillery) and generic/inferred.
+      primaryKeyword: 'g4 blanco',
+      secondaryKeywords: ['g4 tequila', 'felipe camarena tequila', 'g4 tequila tahona'],
+    },
   },
   {
     id: 'prod-tequila-b2-15',
@@ -8033,6 +8335,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Tennessee Whiskey Barrels",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // 'g4 tequila' (2,400/8) and 'g4 blanco' (720/12) are real SEMrush terms from the source dataset; the Reposado-specific primary keyword and 'felipe camarena tequila' are not separately tracked and are generic/inferred.
+      primaryKeyword: 'g4 reposado tequila',
+      secondaryKeywords: ['g4 tequila', 'felipe camarena tequila', 'g4 blanco'],
+    },
   },
   {
     id: 'prod-tequila-b2-16',
@@ -8057,6 +8364,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "American & French Oak, Bordeaux Wine Cask Finish",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      primaryKeyword: 'gran patron burdeos',
+      secondaryKeywords: ['gran patron', 'gran patron platinum', 'gran patron piedra'],
+    },
   },
   {
     id: 'prod-tequila-b2-17',
@@ -8081,6 +8392,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "American Oak Barrels",
     distilleryLocation: "Amatitán, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Herradura — primary and brand-specific secondary keywords are WebSearch-informed (Herradura invented the reposado category in 1974) and generic/inferred. 'best reposado tequila' (2,900/19) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'herradura reposado tequila',
+      secondaryKeywords: ['herradura tequila', 'first reposado tequila', 'best reposado tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-18',
@@ -8105,6 +8421,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "American White Oak, 45-Day Rest",
     distilleryLocation: "Amatitán, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Herradura — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'silver tequila' (4,400/28) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'herradura silver tequila',
+      secondaryKeywords: ['herradura tequila', 'herradura blanco', 'silver tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-19',
@@ -8129,6 +8450,11 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "American Oak Barrels",
     distilleryLocation: "Amatitán, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Herradura — primary and brand-specific secondary keywords are WebSearch-informed (Herradura invented the extra añejo category in 1995) and generic/inferred. 'ultra premium tequila' (880/17) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'herradura suprema tequila',
+      secondaryKeywords: ['herradura extra anejo', 'first extra anejo tequila', 'ultra premium tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-20',
@@ -8153,6 +8479,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "American Oak Vats",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for Hornitos — primary and secondary keywords are generic/inferred, not volume-backed.
+      primaryKeyword: 'hornitos reposado tequila',
+      secondaryKeywords: ['hornitos tequila', 'hornitos reposado', 'hornitos tequila price'],
+    },
   },
   {
     id: 'prod-tequila-b2-21',
@@ -8177,6 +8508,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Blend of Unaged & Oak-Aged Tequila",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // No SEMrush volume data found for this Jose Cuervo expression — primary and secondary keywords are generic/inferred, not volume-backed.
+      primaryKeyword: 'jose cuervo especial gold',
+      secondaryKeywords: ['jose cuervo tequila', 'jose cuervo gold', 'cuervo gold price'],
+    },
   },
   {
     id: 'prod-tequila-b2-22',
@@ -8201,6 +8537,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // No SEMrush volume data found for this Jose Cuervo expression — primary and secondary keywords are generic/inferred, not volume-backed.
+      primaryKeyword: 'jose cuervo especial silver',
+      secondaryKeywords: ['jose cuervo tequila', 'jose cuervo silver', 'jose cuervo blanco'],
+    },
   },
   {
     id: 'prod-tequila-b2-23',
@@ -8225,6 +8566,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Tequila, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Lunazul — primary and secondary keywords are generic/inferred (Lunazul is Tequila Herradura's value-tier line), not volume-backed.
+      primaryKeyword: 'lunazul blanco tequila',
+      secondaryKeywords: ['lunazul tequila', 'lunazul blanco', 'herradura lunazul'],
+    },
   },
   {
     id: 'prod-tequila-b2-24',
@@ -8249,6 +8595,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Unaged, Stainless Steel",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for Mijenta — primary and secondary keywords are WebSearch-informed (co-founded 2020 by Mike Dolan, Juan Coronado, and Elise Som; the only tequila brand with B-Corp certification) and generic/inferred, not volume-backed.
+      primaryKeyword: 'mijenta blanco tequila',
+      secondaryKeywords: ['mijenta tequila', 'sustainable tequila brand', 'mijenta b corp tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-25',
@@ -8273,6 +8624,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Small American Oak Barrels",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      primaryKeyword: 'patron anejo',
+      secondaryKeywords: ['patron vs don julio', 'is patron worth it', 'hacienda patron'],
+    },
   },
   {
     id: 'prod-tequila-b2-26',
@@ -8297,6 +8652,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "American & French Oak Barrels",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // 'patron extra anejo' (2,400/19), 'luxury tequila' (1,600/18), and 'most expensive tequila' (1,600/16) are real SEMrush terms from the source dataset's Extra Añejo-subcategory table; the Lalique-crystal-decanter-specific primary keyword is not separately tracked and is generic/inferred.
+      primaryKeyword: 'patron en lalique tequila',
+      secondaryKeywords: ['patron extra anejo', 'luxury tequila', 'most expensive tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-27',
@@ -8321,6 +8681,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Ex-American Whiskey Barrels",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Tequila Ocho — primary and secondary keywords are WebSearch-informed (first single-estate, vintage-dated tequila brand, crafted by fourth-generation distiller Carlos Camarena) and generic/inferred, not volume-backed.
+      primaryKeyword: 'tequila ocho anejo',
+      secondaryKeywords: ['tequila ocho tequila', 'single estate tequila', 'carlos camarena tequila'],
+    },
   },
   {
     id: 'prod-tequila-b2-28',
@@ -8345,6 +8710,11 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Ex-American Whiskey Barrels",
     distilleryLocation: "Arandas, Jalisco",
+    seo: {
+      // No SEMrush volume data found for Tequila Ocho — primary and brand-specific secondary keywords are WebSearch-informed and generic/inferred. 'best reposado tequila' (2,900/19) is a real category-level SEMrush term from the source dataset.
+      primaryKeyword: 'tequila ocho reposado',
+      secondaryKeywords: ['tequila ocho tequila', 'single estate tequila', 'best reposado tequila'],
+    },
   },
 
   // VODKA
@@ -26372,6 +26742,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // '818 tequila' (5,400/12) is a real SEMrush term from the source dataset's pending-inventory brand table; 'kendall jenner tequila' and 'buy 818 tequila' are WebSearch-informed and generic/inferred.
+      primaryKeyword: '818 tequila',
+      secondaryKeywords: ['818 tequila blanco', 'kendall jenner tequila', 'buy 818 tequila'],
+    },
   },
   {
     id: 'prod-tequila-new-02',
@@ -26390,6 +26765,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Oak barrels, minimum 8 months",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // '818 tequila' (5,400/12) is a real SEMrush term from the source dataset's pending-inventory brand table; the Reposado-specific primary keyword and remaining secondary keywords are WebSearch-informed and generic/inferred.
+      primaryKeyword: '818 tequila reposado',
+      secondaryKeywords: ['818 tequila', 'kendall jenner tequila', '818 tequila price'],
+    },
   },
   {
     id: 'prod-tequila-new-03',
@@ -26408,6 +26788,11 @@ export const PRODUCTS: Product[] = [
     stock: 5,
     caskType: "Oak barrels, 24-28 months",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // 'cincoro tequila' (2,400/16) is a real SEMrush term from the source dataset's pending-inventory brand table; brand-specific secondary keywords are WebSearch-informed (founded by Michael Jordan and four other NBA team owners) and generic/inferred.
+      primaryKeyword: 'cincoro tequila',
+      secondaryKeywords: ['cincoro anejo tequila', 'michael jordan tequila', 'cincoro tequila price'],
+    },
   },
   {
     id: 'prod-tequila-new-04',
@@ -26427,6 +26812,11 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "Oak-aged, charcoal-filtered",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // 'komos tequila' (2,900/11) is a real SEMrush term from the source dataset's pending-inventory brand table; brand-specific secondary keywords are WebSearch-informed (aged in French oak wine barrels; awarded the first 100-point score by Tasting Panel Magazine) and generic/inferred.
+      primaryKeyword: 'komos tequila',
+      secondaryKeywords: ['komos anejo cristalino', '100 point tequila', 'komos tequila review'],
+    },
   },
   {
     id: 'prod-tequila-new-05',
@@ -26445,6 +26835,11 @@ export const PRODUCTS: Product[] = [
     stock: 5,
     caskType: "American white oak, Pedro Ximénez sherry solera finish",
     distilleryLocation: "Arandas, Jalisco, Mexico",
+    seo: {
+      // 'lobos 1707' (2,400/11) is a real SEMrush term from the source dataset's pending-inventory brand table; brand-specific secondary keywords are WebSearch-informed (backed by LeBron James, finished in Pedro Ximénez wine barrels) and generic/inferred.
+      primaryKeyword: 'lobos 1707',
+      secondaryKeywords: ['lobos 1707 extra anejo', 'lebron james tequila', 'lobos 1707 tequila'],
+    },
   },
   {
     id: 'prod-tequila-new-06',
@@ -26463,6 +26858,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Oak barrels, Pedro Ximénez sherry cask finish",
     distilleryLocation: "Arandas, Jalisco, Mexico",
+    seo: {
+      // 'lobos 1707' (2,400/11) is a real SEMrush term from the source dataset's pending-inventory brand table; the Reposado-specific primary keyword and remaining secondary keywords are WebSearch-informed and generic/inferred.
+      primaryKeyword: 'lobos 1707 reposado tequila',
+      secondaryKeywords: ['lobos 1707', 'lebron james tequila', 'lobos 1707 mezcal'],
+    },
   },
   {
     id: 'prod-rum-new-01',
