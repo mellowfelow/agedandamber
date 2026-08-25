@@ -1526,6 +1526,336 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Lobos 1707 is a tequila and mezcal brand co-founded by LeBron James and Maverick Carter, drawing on a family agave-growing history dating back to 1707.',
     }),
   },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: '1800-tequila', brandKeywords: ['1800 Tequila', '1800 Añejo', '1800 Reposado', '1800 Silver', '1800 Cristalino'], name: '1800 Tequila',
+    seo: brandSeo({
+      brand: '1800 Tequila', categoryLabel: 'Tequila',
+      titleTag: '1800 Tequila — Silver, Reposado, Añejo & Cristalino',
+      h1: '1800 Tequila — Silver, Reposado, Añejo & Cristalino Añejo Allocations',
+      metaDescription: 'Buy 1800 Tequila online — Silver, Reposado, Añejo, and the port-cask-finished Cristalino Añejo. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "1800 Tequila takes its name from 1800, the year tequila was first successfully aged in oak — a nod from its founders, the Beckmann family (also behind José Cuervo), to the origins of aged tequila. The range spans an unaged Silver through Reposado, Añejo, and a port-cask-finished Cristalino.",
+      faqs: [
+        { question: 'Who makes 1800 Tequila?', answer: "1800 Tequila is produced by the Beckmann family, the same family that owns José Cuervo — one of tequila's oldest and largest producers. The 1800 name commemorates the year tequila was first aged in oak casks." },
+        { question: 'What is 1800 Cristalino?', answer: "1800 Cristalino Añejo is an aged tequila that is charcoal-filtered after a finish in port wine casks to strip out its color while retaining the vanilla, caramel, and oak character developed during barrel aging." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'cazadores', brandKeywords: ['Cazadores'], name: 'Cazadores',
+    seo: brandSeo({
+      brand: 'Cazadores', categoryLabel: 'Tequila',
+      titleTag: 'Cazadores Tequila — Blanco & Reposado',
+      h1: 'Cazadores Tequila — Highland Blanco & Reposado Allocations',
+      metaDescription: 'Buy Cazadores online — herbal, highland-grown Blanco and Reposado tequila from Arandas, Jalisco. Owned by Bacardi. Direct allocations, free $300+.',
+      hook: 'Cazadores was created in 1922 by Don José María Bañuelos in Arandas, in the highlands (Los Altos) of Jalisco, and has been part of Bacardi Limited since 2002 — the double-distilled, double-fermented recipe is largely unchanged, prized for its herbal, peppery highland agave character.',
+      faqs: [{ question: 'Who owns Cazadores?', answer: 'Cazadores has been owned by Bacardi Limited since 2002. The brand was originally founded in 1922 by Don José María Bañuelos in Arandas, in the highlands of Jalisco, and still uses double distillation and double fermentation.' }],
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'el-jimador', brandKeywords: ['El Jimador'], name: 'El Jimador',
+    seo: brandSeo({
+      brand: 'El Jimador', categoryLabel: 'Tequila',
+      titleTag: 'El Jimador Tequila — Blanco, Reposado & Añejo',
+      h1: 'El Jimador Tequila — Blanco, Reposado & Añejo Allocations',
+      metaDescription: "Buy El Jimador online — Blanco, Reposado, and Añejo from Casa Herradura. Mexico's #1-selling tequila. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "El Jimador launched in 1994 from Casa Herradura's distillery in Amatitán, Jalisco, named for the jimador — the skilled field worker who harvests agave by hand. Owned by Brown-Forman since its 2007 acquisition of Casa Herradura, it's the best-selling tequila in Mexico.",
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'espolon', brandKeywords: ['Espolòn', 'Espolon'], name: 'Espolòn',
+    seo: brandSeo({
+      brand: 'Espolòn', categoryLabel: 'Tequila',
+      titleTag: 'Espolòn Tequila — Blanco, Reposado & Añejo',
+      h1: 'Espolòn Tequila — Blanco, Reposado & Añejo Skull-Label Allocations',
+      metaDescription: 'Buy Espolòn online — peppery highland Blanco, Reposado, and Añejo, famous for its calavera skull-label bottle. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Espolòn was founded by master distiller Cirilo Oropeza at the Casa San Nicolás distillery in Los Altos, Jalisco, and is instantly recognizable for label art paying tribute to Mexican printmaker José Guadalupe Posada's calavera skull illustrations. Campari Group acquired the brand in 2009.",
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'herradura', brandKeywords: ['Herradura'], name: 'Herradura',
+    seo: brandSeo({
+      brand: 'Herradura', categoryLabel: 'Tequila',
+      titleTag: 'Herradura Tequila — Silver, Reposado, Añejo & Suprema',
+      h1: 'Herradura Tequila — Silver, Reposado, Añejo & Suprema Extra Añejo Allocations',
+      metaDescription: "Buy Herradura online — Silver, Reposado, Añejo, and the ultra-aged Suprema Extra Añejo. Direct allocations from one of tequila's oldest distilleries. Free $300+.",
+      hook: "Herradura has distilled tequila at the Hacienda San José del Refugio in Amatitán, Jalisco since 1870, and pioneered both the reposado category (1974) and the extra añejo category (1995) — its Silver, Reposado, Añejo, and Suprema range are aged well beyond the legal minimums. Brown-Forman has owned the brand since 2007.",
+      faqs: [{ question: 'Did Herradura invent reposado tequila?', answer: "Yes — Herradura released the first commercially labeled reposado tequila in 1974, resting it in oak longer than the category's legal minimum. It went on to launch the first extra añejo tequila, Selección Suprema, in 1995." }],
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'jose-cuervo', brandKeywords: ['José Cuervo', 'Jose Cuervo'], name: 'José Cuervo',
+    seo: brandSeo({
+      brand: 'José Cuervo', categoryLabel: 'Tequila',
+      titleTag: 'José Cuervo — Especial Gold, Silver & Reserva de la Familia',
+      h1: 'José Cuervo Tequila — Especial Gold, Especial Silver & Reserva de la Familia Extra Añejo Allocations',
+      metaDescription: "Buy José Cuervo online — Especial Gold and Silver, plus the prestige Reserva de la Familia Extra Añejo. World's best-selling tequila. Direct allocations, free $300+.",
+      hook: "José Cuervo has distilled at La Rojeña — the oldest active distillery in Latin America, founded in 1758 — since the 18th century, and remains family-owned by the Beckmann descendants of Don José Antonio de Cuervo. The everyday Especial Gold and Silver sit alongside the annually released, prestige Reserva de la Familia Extra Añejo.",
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'lalo', brandKeywords: ['LALO'], name: 'LALO',
+    seo: brandSeo({
+      brand: 'LALO', categoryLabel: 'Tequila',
+      titleTag: 'LALO Tequila — Additive-Free Highland Blanco',
+      h1: 'LALO Blanco Tequila — Additive-Free Highland Allocations',
+      metaDescription: "Buy LALO Tequila online — a single, additive-free highland Blanco from Don Julio González's grandson. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "LALO was founded by Eduardo 'Lalo' González — grandson of Don Julio González, who created the premium tequila category — alongside David Carballido. The brand produces a single, additive-free Blanco made only from agave, yeast, and water, favored by bartenders for its purity.",
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'tears-of-llorona', brandKeywords: ['Tears of Llorona', 'Llorona'], name: 'Tears of Llorona',
+    seo: brandSeo({
+      brand: 'Tears of Llorona', categoryLabel: 'Tequila',
+      titleTag: 'Tears of Llorona — Extra Añejo Tequila',
+      h1: 'Tears of Llorona Extra Añejo Tequila — Multi-Cask Allocations',
+      metaDescription: 'Buy Tears of Llorona online — an ultra-premium extra añejo aged roughly five years across Scotch, sherry, and brandy casks. Direct allocations, free $300+.',
+      hook: 'Tears of Llorona is an ultra-premium extra añejo created by German González — the master distiller behind Chinaco — aged roughly five years and finished across a rotation of Scotch, sherry, and brandy/Cognac casks for exceptional complexity.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'tequila-ocho', brandKeywords: ['Tequila Ocho'], name: 'Tequila Ocho',
+    seo: brandSeo({
+      brand: 'Tequila Ocho', categoryLabel: 'Tequila',
+      titleTag: 'Tequila Ocho — Plata, Reposado & Añejo',
+      h1: 'Tequila Ocho — Single-Estate Plata, Reposado & Añejo Allocations',
+      metaDescription: "Buy Tequila Ocho online — Plata, Reposado, and Añejo, tequila's original single-estate, vintage-dated release. Direct allocations at Aged & Amber. Free $300+.",
+      hook: 'Tequila Ocho was created by fourth-generation distiller Carlos Camarena and importer Tomas Estes as the first single-estate, vintage-dated tequila — each release names the specific highland ranch and harvest year behind the bottle, prioritizing agave terroir over blending.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'teremana', brandKeywords: ['Teremana'], name: 'Teremana',
+    seo: brandSeo({
+      brand: 'Teremana', categoryLabel: 'Tequila',
+      titleTag: 'Teremana Tequila — Blanco & Reposado',
+      h1: 'Teremana Tequila — Blanco & Reposado Allocations',
+      metaDescription: 'Buy Teremana online — Dwayne Johnson\'s slow-roasted highland Blanco and whiskey-barrel-aged Reposado. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Teremana was founded by Dwayne 'The Rock' Johnson and partners, produced with the López family in Jalisco's highlands and launched in 2020 to one of the fastest-selling spirits debuts in US history — Mast-Jägermeister now handles its global distribution and holds an investor stake.",
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'casa-dragones', brandKeywords: ['Casa Dragones'], name: 'Casa Dragones',
+    seo: brandSeo({
+      brand: 'Casa Dragones', categoryLabel: 'Tequila',
+      titleTag: 'Casa Dragones — Blanco & Añejo Barrel Blend',
+      h1: 'Casa Dragones Tequila — Blanco & Añejo Barrel Blend Allocations',
+      metaDescription: 'Buy Casa Dragones online — small-batch sipping Blanco and the dual-oak Añejo Barrel Blend. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Casa Dragones was founded in 2009 by Bertha González Nieves, the first woman certified as a Maestra Tequilera, with a sipping-focused, small-batch philosophy — the brand famously became Oprah Winfrey\'s favorite tequila.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'codigo-1530', brandKeywords: ['Código 1530', 'Codigo 1530'], name: 'Código 1530',
+    seo: brandSeo({
+      brand: 'Código 1530', categoryLabel: 'Tequila',
+      titleTag: 'Código 1530 — Napa Cabernet Cask Reposado',
+      h1: 'Código 1530 Reposado Tequila — Napa Cabernet Cask Allocations',
+      metaDescription: 'Buy Código 1530 online — Reposado tequila rested in French oak barrels once used for Napa Valley cabernet. Co-founded by George Strait. Free $300+.',
+      hook: 'Código 1530 was founded in 2016 by Ron Snyder and Federico Vaughan, with country star George Strait joining as a co-owner, resting its Reposado in French oak barrels previously used to age Napa Valley cabernet. Pernod Ricard acquired the brand in 2022.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'el-tesoro', brandKeywords: ['El Tesoro'], name: 'El Tesoro',
+    seo: brandSeo({
+      brand: 'El Tesoro', categoryLabel: 'Tequila',
+      titleTag: 'El Tesoro — Blanco, Reposado & Extra Añejo',
+      h1: 'El Tesoro Tequila — Blanco, Reposado & Extra Añejo Allocations',
+      metaDescription: 'Buy El Tesoro online — Blanco, Reposado, and Extra Añejo from the historic La Alteña distillery. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'El Tesoro has been produced at the historic La Alteña distillery in Arandas by the Camarena family since 1937, using traditional tahona-crushing and small copper pot stills — now part of Suntory Global Spirits\' portfolio, it remains a benchmark for purists favoring rustic, full-flavored tequila.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'hornitos', brandKeywords: ['Hornitos'], name: 'Hornitos',
+    seo: brandSeo({
+      brand: 'Hornitos', categoryLabel: 'Tequila',
+      titleTag: 'Hornitos — Reposado Tequila',
+      h1: 'Hornitos Reposado Tequila — Direct Allocations',
+      metaDescription: 'Buy Hornitos online — an approachable, lightly oaked Reposado from Suntory Global Spirits. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Hornitos is a 100% blue agave tequila from Suntory Global Spirits, resting its Reposado in large American oak vats for limited wood contact — designed to preserve bright agave character for everyday sipping and elevated margaritas alike.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'lunazul', brandKeywords: ['Lunazul'], name: 'Lunazul',
+    seo: brandSeo({
+      brand: 'Lunazul', categoryLabel: 'Tequila',
+      titleTag: 'Lunazul — 100% Agave Blanco Tequila',
+      h1: 'Lunazul Blanco Tequila — Direct Allocations',
+      metaDescription: 'Buy Lunazul online — Tequila Herradura\'s 100% agave value-tier Blanco. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Lunazul is Tequila Herradura\'s value-tier line, distilled and bottled at the Tierra de Agaves distillery in Tequila, Jalisco entirely from Blue Weber agave — an alternative to budget mixto tequilas at a comparable price point.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'mijenta', brandKeywords: ['Mijenta'], name: 'Mijenta',
+    seo: brandSeo({
+      brand: 'Mijenta', categoryLabel: 'Tequila',
+      titleTag: 'Mijenta — Sustainable, B Corp-Certified Blanco',
+      h1: 'Mijenta Blanco Tequila — Sustainable, B Corp-Certified Allocations',
+      metaDescription: 'Buy Mijenta online — a sustainably produced highland Blanco guided by master blender Ana María Romero Mena. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Mijenta was co-founded in 2020 by Mike Dolan, Juan Coronado, and Elise Som with sustainability built into its production and supply chain — it\'s the only tequila brand to hold B Corp certification, guided by master blender Ana María Romero Mena.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: '400-conejos', brandKeywords: ['400 Conejos'], name: '400 Conejos',
+    seo: brandSeo({
+      brand: '400 Conejos', categoryLabel: 'Mezcal',
+      titleTag: '400 Conejos — Joven Mezcal',
+      h1: '400 Conejos Joven Mezcal — Direct Allocations',
+      metaDescription: 'Buy 400 Conejos online — an approachable Espadín Joven mezcal made by maestro mezcalero Don Tacho in Santiago Matatlán, Oaxaca. Free on $300+.',
+      hook: '400 Conejos is produced by maestro mezcalero Don Tacho and his son Joel Santiago in Santiago Matatlán, Oaxaca, using traditional stone-oven roasting, horse-drawn tahona crushing, and copper pot distillation — named for the 400 rabbit-gods believed to take over one\'s spirit when mezcal is drunk. The brand is owned by Casa Cuervo.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'banhez', brandKeywords: ['Banhez'], name: 'Banhez',
+    seo: brandSeo({
+      brand: 'Banhez', categoryLabel: 'Mezcal',
+      titleTag: 'Banhez — Espadín and Barril Cooperative Mezcal',
+      h1: 'Banhez Espadín and Barril Mezcal — Cooperative-Made Allocations',
+      metaDescription: 'Buy Banhez online — an Espadín and Barril ensamble made by a 35+ family cooperative in San Miguel Ejutla, Oaxaca. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Banhez is produced by a cooperative of more than 35 families in San Miguel Ejutla, Oaxaca, founded by Francisco Javier Pérez Cruz — who also served as president of Mexico\'s National Mezcal Council — and today led by his son Luis, blending cultivated Espadín with wild Barril agave.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'bozal', brandKeywords: ['Bozal'], name: 'Bozal',
+    seo: brandSeo({
+      brand: 'Bozal', categoryLabel: 'Mezcal',
+      titleTag: 'Bozal Mezcal — Ensamble & Tobalá',
+      h1: 'Bozal Mezcal — Ensamble & Wild Tobalá Allocations',
+      metaDescription: 'Buy Bozal online — a multi-agave Ensamble and rare wild Tobalá, crafted in Miahuatlán and Etla, Oaxaca. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Bozal is crafted in Miahuatlán and Etla, Oaxaca, blending cultivated Espadín with wild-harvested agaves like Barril, Mexicano, and Tobalá — now under Mexican ownership after brothers Alejandro and Christian Rossbach\'s Maguey Spirits acquired the brand from founder August Sebastiani in 2024.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'bruxo', brandKeywords: ['Bruxo'], name: 'Bruxo',
+    seo: brandSeo({
+      brand: 'Bruxo', categoryLabel: 'Mezcal',
+      titleTag: 'Bruxo No. 1 — Double-Distilled Espadín Mezcal',
+      h1: 'Bruxo No. 1 Espadín Mezcal — Direct Allocations',
+      metaDescription: 'Buy Bruxo No. 1 online — a double-distilled Espadín mezcal from Oaxaca, built for a smoother, more restrained smoke profile. Direct allocations, free $300+.',
+      hook: 'Bruxo was launched in 2010 by a group of beverage-industry friends connecting artisanal Oaxacan mezcaleros with a wider audience — its numbered range, including the double-distilled No. 1 Espadín, is produced by different maestros mezcaleros across Oaxaca.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'del-maguey', brandKeywords: ['Del Maguey'], name: 'Del Maguey',
+    seo: brandSeo({
+      brand: 'Del Maguey', categoryLabel: 'Mezcal',
+      titleTag: 'Del Maguey — Vida, Chichicapa & Pechuga',
+      h1: 'Del Maguey Mezcal — Vida Clásico, Chichicapa & Pechuga Single-Village Allocations',
+      metaDescription: 'Buy Del Maguey online — Vida Clásico, Chichicapa, and the rare Pechuga, from the brand that pioneered single-village mezcal. Direct allocations, free $300+.',
+      hook: 'Del Maguey was founded in 1995 by artist Ron Cooper, widely credited with introducing artisanal, single-village mezcal to the US market and building direct relationships with producers across Oaxaca — Pernod Ricard took a majority stake in the brand in 2017. Vida is the accessible entry point, Chichicapa the benchmark single-village release, and Pechuga the rare, triple-distilled style redistilled with local fruit and poultry for celebrations.',
+      faqs: [
+        { question: 'Did Del Maguey invent single-village mezcal?', answer: 'Del Maguey, founded by Ron Cooper in 1995, is widely credited as the brand that pioneered and popularized the single-village mezcal category in the US — naming the specific Oaxacan village and producer behind each bottling rather than blending mezcal from multiple sources.' },
+        { question: 'What is Del Maguey Pechuga?', answer: 'Pechuga is a traditional celebratory style of mezcal that is distilled a third time with local seasonal fruits and a raw chicken or turkey breast (pechuga) suspended in the still, adding subtle savory richness. Del Maguey\'s Pechuga is produced in Santa Catarina Minas, Oaxaca.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'derrumbes', brandKeywords: ['Derrumbes'], name: 'Derrumbes',
+    seo: brandSeo({
+      brand: 'Derrumbes', categoryLabel: 'Mezcal',
+      titleTag: 'Derrumbes Oaxaca — Regional Mezcal',
+      h1: 'Derrumbes Oaxaca Mezcal — Direct Allocations',
+      metaDescription: "Buy Derrumbes Oaxaca online — a joven mezcal pit-roasted over black oak, part of a project spotlighting Mexico's regional mezcal terroirs. Free $300+.",
+      hook: 'Derrumbes was built starting in 2012 by former chef Esteban Morales and tequila entrepreneur Sergio Mendoza around a single idea: pairing each bottle with a different Mexican state and local maestro mezcalero, showcasing regional agave and terroir beyond Oaxaca alone.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'dos-hombres', brandKeywords: ['Dos Hombres'], name: 'Dos Hombres',
+    seo: brandSeo({
+      brand: 'Dos Hombres', categoryLabel: 'Mezcal',
+      titleTag: 'Dos Hombres — Espadín Mezcal',
+      h1: 'Dos Hombres Espadín Mezcal — Direct Allocations',
+      metaDescription: 'Buy Dos Hombres online — Bryan Cranston and Aaron Paul\'s tahona-crushed Espadín mezcal from Santiago Matatlán, Oaxaca. Direct allocations. Free $300+.',
+      hook: 'Dos Hombres was co-founded in 2019 by actors Bryan Cranston and Aaron Paul, crafted in Santiago Matatlán — the traditional heart of mezcal production — by third-generation maestro mezcalero Gregorio Velasco using tahona-crushed agave.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'el-jolgorio', brandKeywords: ['El Jolgorio'], name: 'El Jolgorio',
+    seo: brandSeo({
+      brand: 'El Jolgorio', categoryLabel: 'Mezcal',
+      titleTag: 'El Jolgorio — Wild Tobalá Mezcal',
+      h1: 'El Jolgorio Tobalá Mezcal — Small-Batch Wild Agave Allocations',
+      metaDescription: 'Buy El Jolgorio online — a small-batch wild Tobalá mezcal from the Cortés family\'s collective of Oaxacan maestros mezcaleros. Direct allocations. Free $300+.',
+      hook: 'El Jolgorio was built starting in 2010 by the Cortés family into a collective spanning sixteen families across ten regions of Oaxaca — every bottle is traced to its specific agave species, village, harvest year, and maestro mezcalero, including this rare, wild-harvested Tobalá.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'el-silencio', brandKeywords: ['El Silencio'], name: 'El Silencio',
+    seo: brandSeo({
+      brand: 'El Silencio', categoryLabel: 'Mezcal',
+      titleTag: 'El Silencio — Espadín Mezcal',
+      h1: 'El Silencio Espadín Mezcal — Direct Allocations',
+      metaDescription: 'Buy El Silencio online — an accessible Espadín mezcal produced in San Baltazar Guelavila, Oaxaca. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'El Silencio was founded in 2013 by Fausto Zapata and Vicente Cisneros and is produced in San Baltazar Guelavila, Oaxaca by ninth-generation maestro mezcalero Pedro Hernández — built as a widely available, easy-drinking entry point into mezcal.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'ilegal', brandKeywords: ['Ilegal'], name: 'Ilegal',
+    seo: brandSeo({
+      brand: 'Ilegal', categoryLabel: 'Mezcal',
+      titleTag: 'Ilegal Mezcal — Joven & Reposado',
+      h1: 'Ilegal Mezcal — Joven & Oak-Rested Reposado Allocations',
+      metaDescription: 'Buy Ilegal online — Joven and barrel-rested Reposado mezcal from Santiago Matatlán, Oaxaca. Now fully owned by Bacardi. Direct allocations, free $300+.',
+      hook: 'Ilegal was founded in 2006 by John Rexer, who began smuggling mezcal from Oaxaca to his bar in Antigua, Guatemala before formalizing production at Destilería Tlacolula in Santiago Matatlán — Bacardi Limited became a minority partner in 2015 and completed a full acquisition of the brand in 2023.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'madre-mezcal', brandKeywords: ['Madre Mezcal'], name: 'Madre Mezcal',
+    seo: brandSeo({
+      brand: 'Madre Mezcal', categoryLabel: 'Mezcal',
+      titleTag: 'Madre Mezcal — Espadín',
+      h1: 'Madre Mezcal Espadín — Direct Allocations',
+      metaDescription: 'Buy Madre Mezcal online — a grassy, food-friendly Espadín sourced from the Blas family across Oaxaca. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Madre Mezcal was founded in 2016 by Chris Stephenson, Davide Berruto, Stefan Wigand, and Tony Farfalla, and has been named one of the fastest-growing mezcal brands in the US — its Espadín is produced by Carlos Blas and family, whose Santiago Matatlán operation dates back to 1930.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'mal-bien', brandKeywords: ['Mal Bien'], name: 'Mal Bien',
+    seo: brandSeo({
+      brand: 'Mal Bien', categoryLabel: 'Mezcal',
+      titleTag: 'Mal Bien — Espadín Mezcal',
+      h1: 'Mal Bien Espadín Mezcal — Direct Allocations',
+      metaDescription: 'Buy Mal Bien online — an everyday-sipping Espadín mezcal sourced directly from independent producers across Oaxaca. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Mal Bien was founded in 2016 by Ben Scott and Anthony Silas, who source small batches directly from independent mezcaleros across rural Oaxaca and Guerrero rather than operating a single palenque of their own — positioned as an easy-drinking, everyday mezcal.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'montelobos', brandKeywords: ['Montelobos'], name: 'Montelobos',
+    seo: brandSeo({
+      brand: 'Montelobos', categoryLabel: 'Mezcal',
+      titleTag: 'Montelobos — Organic Espadín Mezcal',
+      h1: 'Montelobos Espadín Mezcal — Certified Organic Allocations',
+      metaDescription: 'Buy Montelobos online — a widely distributed, certified organic Espadín mezcal from Oaxaca. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Montelobos was created by molecular plant biologist Iván Saldaña and launched by William Grant & Sons in 2012, using certified organic Espadín agave — Campari Group took a controlling stake in the brand in 2019.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'nuestra-soledad', brandKeywords: ['Nuestra Soledad'], name: 'Nuestra Soledad',
+    seo: brandSeo({
+      brand: 'Nuestra Soledad', categoryLabel: 'Mezcal',
+      titleTag: 'Nuestra Soledad — San Luis del Río Mezcal',
+      h1: 'Nuestra Soledad San Luis del Río Mezcal — Single-Village Allocations',
+      metaDescription: 'Buy Nuestra Soledad online — a single-village mezcal from San Luis del Río, Tlacolula, Oaxaca, by the Cortés family of El Jolgorio. Direct allocations, free $300+.',
+      hook: 'Nuestra Soledad is the single-village mezcal line from the Cortés family behind El Jolgorio, spotlighting individual Oaxacan producing communities — this San Luis del Río expression is distilled by brothers Iván and Francisco Méndez from high-elevation, sustainably grown Espadín.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'the-lost-explorer', brandKeywords: ['The Lost Explorer'], name: 'The Lost Explorer',
+    seo: brandSeo({
+      brand: 'The Lost Explorer', categoryLabel: 'Mezcal',
+      titleTag: 'The Lost Explorer — Espadín & Tobalá Mezcal',
+      h1: 'The Lost Explorer Mezcal — Espadín & Wild Tobalá Allocations',
+      metaDescription: 'Buy The Lost Explorer online — additive-free Espadín and Tobalá mezcal co-founded by David de Rothschild and Maestro Fortino Ramos. Direct allocations, free $300+.',
+      hook: 'The Lost Explorer was founded in 2020 by David de Rothschild and Thor Björgólfsson in partnership with maestro mezcalero Fortino Ramos, who holds an ownership stake in the brand — production is centered in San Pablo Huixtepec, Oaxaca, with a focus on additive-free, sustainably produced agave spirits.',
+    }),
+  },
+  {
+    categorySlug: 'tequila-mezcal', hubSlug: 'vago', brandKeywords: ['Vago'], name: 'Vago',
+    seo: brandSeo({
+      brand: 'Vago', categoryLabel: 'Mezcal',
+      titleTag: 'Vago — Elote Corn-Infused Mezcal',
+      h1: 'Vago Elote Mezcal — Toasted Corn Redistillation Allocations',
+      metaDescription: 'Buy Vago Elote online — Espadín mezcal redistilled with toasted corn by Aquilino García López in Candelaria Yegolé, Oaxaca. Direct allocations, free $300+.',
+      hook: 'Mezcal Vago began when co-founder Judah Kuper met and married the daughter of Aquilino García López, a mezcalero in the tiny mountain village of Candelaria Yegolé, Oaxaca — the Elote expression redistills Espadín mezcal with toasted corn for a distinctive nutty, high-proof character.',
+    }),
+  },
 
   // ─── RUM ───────────────────────────────────────────
   {
