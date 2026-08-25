@@ -4,6 +4,14 @@
 
 **Current live count: 65 blog posts.** Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
 
+## Maintenance — keep this current
+
+This is a **living document**. Every time a new blog post is built (from this pool or otherwise), update this file in the same commit:
+1. Move the post from its gap bullet (🎯/🏷️) to the category's ✅ live list.
+2. Bump the "Current live count" number at the top.
+3. Refresh the summary-counts table and the build-first shortlist if a shortlisted item just got built.
+4. If a new keyword export surfaces more blog-worthy gaps, add them to the relevant category section rather than starting a separate doc — this stays the single source of truth for "what's been built vs. what's still available."
+
 ---
 
 ## How to read this doc
