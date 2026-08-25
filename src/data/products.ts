@@ -17319,6 +17319,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "14 Hands Winery, Columbia Valley, WA",
+    seo: {
+      primaryKeyword: "14 hands cabernet sauvignon",
+      secondaryKeywords: ["14 hands cabernet", "14 hands wine", "cabernet 14 hands", "14 hands winery cabernet sauvignon", "14 hands winery"],
+    },
   },
   {
     id: 'prod-wine-red-02',
@@ -17343,6 +17347,13 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "19 Crimes, South Eastern Australia",
+    seo: {
+      primaryKeyword: "19 crimes red blend",
+      secondaryKeywords: ["19 crimes wine", "19 crimes", "19 crimes red wine", "snoop dogg wine", "19 crimes cali red"],
+      faqs: [
+        { question: 'Who owns 19 Crimes wine?', answer: '19 Crimes is owned and produced by Treasury Wine Estates, one of the world\'s largest wine companies.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-red-03',
@@ -17367,6 +17378,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Michael & David Winery, Lodi, CA",
+    seo: {
+      primaryKeyword: "7 deadly zins",
+      secondaryKeywords: ["seven deadly zins", "7 deadly zinfandel", "zinfandel the seven deadly zins", "7 deadly zins wine", "michael david wines"],
+    },
   },
   {
     id: 'prod-wine-red-04',
@@ -17391,6 +17406,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "French Oak Barrels",
     distilleryLocation: "A to Z Wineworks, Oregon",
+    seo: {
+      primaryKeyword: "a to z pinot noir",
+      secondaryKeywords: ["a to z wineworks pinot noir", "a to z oregon pinot noir", "a to z wineworks pinot noir oregon", "oregon pinot noir", "willamette valley pinot noir"],
+    },
   },
   {
     id: 'prod-wine-red-05',
@@ -17415,6 +17434,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Bodega Catena Zapata, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "alamos malbec",
+      secondaryKeywords: ["alamos malbec wine", "alamos wine", "alamos malbec 2023", "malbec alamos", "alamos argentina malbec"],
+    },
   },
   {
     id: 'prod-wine-red-06',
@@ -17439,6 +17462,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Apothic Wines (E&J Gallo), California",
+    seo: {
+      primaryKeyword: "apothic red wine",
+      secondaryKeywords: ["apothic red blend", "apothic wine", "apothic red", "apothic red blend wine", "apothic winemaker's red blend"],
+      faqs: [
+        { question: 'Is Apothic Red wine sweet?', answer: 'Apothic Red is a soft, slightly sweet-leaning red blend rather than a bone-dry Cabernet — it\'s made in a deliberately rich, approachable style with noticeable fruit sweetness.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-red-07',
@@ -17463,6 +17493,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "French Oak Barrels",
     distilleryLocation: "Belle Glos, Santa Maria Valley, CA",
+    seo: {
+      primaryKeyword: "belle glos pinot noir clark & telephone vineyard",
+      secondaryKeywords: ["belle glos pinot noir", "belle glos pinot noir 2022", "belle glos"],
+    },
   },
   {
     id: 'prod-wine-red-08',
@@ -17487,6 +17521,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Bogle Family Vineyards, California",
+    seo: {
+      primaryKeyword: "bogle old vine zinfandel",
+      secondaryKeywords: ["bogle vineyards old vine zinfandel", "bogle wine old vine zinfandel", "bogle wine", "bogle vineyards", "bogle wine zinfandel"],
+    },
   },
   {
     id: 'prod-wine-red-09',
@@ -17511,6 +17549,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Catena, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "catena malbec",
+      secondaryKeywords: ["catena malbec wine", "catena malbec 2022", "malbec wine catena", "catena wine", "malbec catena"],
+    },
   },
   {
     id: 'prod-wine-red-10',
@@ -17535,6 +17577,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "French Oak Barrels",
     distilleryLocation: "Bodega Catena Zapata, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "catena zapata malbec argentino",
+      secondaryKeywords: ["catena zapata malbec", "catena zapata", "bodega catena zapata malbec", "catena zapata winery", "catena zapata wine"],
+    },
   },
   {
     id: 'prod-wine-red-11',
@@ -17559,6 +17605,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Caymus Vineyards, Napa Valley, CA",
+    seo: {
+      primaryKeyword: "caymus cabernet sauvignon",
+      secondaryKeywords: ["caymus napa valley cabernet sauvignon", "caymus cabernet sauvignon 2022", "caymus cabernet sauvignon 2023", "caymus vineyards cabernet sauvignon", "caymus 2022 cabernet sauvignon"],
+    },
   },
   {
     id: 'prod-wine-red-12',
@@ -17583,6 +17633,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Chateau Ste. Michelle, Columbia Valley, WA",
+    seo: {
+      primaryKeyword: "chateau ste michelle cabernet sauvignon",
+      secondaryKeywords: ["merlot wine", "merlot red wine", "washington state merlot", "good merlot wine"],
+    },
   },
   {
     id: 'prod-wine-red-13',
@@ -17607,6 +17661,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Cline Cellars, Contra Costa County, CA",
+    seo: {
+      primaryKeyword: "cline zinfandel",
+      secondaryKeywords: ["old vine zinfandel", "zinfandel red wine", "red zinfandel"],
+    },
   },
   {
     id: 'prod-wine-red-14',
@@ -17631,6 +17689,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Daou Vineyards, Paso Robles, CA",
+    seo: {
+      primaryKeyword: "daou cabernet sauvignon",
+      secondaryKeywords: ["daou cabernet sauvignon 2022", "paso robles cabernet sauvignon", "daou"],
+    },
   },
   {
     id: 'prod-wine-red-15',
@@ -17655,6 +17717,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Decoy (Duckhorn), California",
+    seo: {
+      primaryKeyword: "decoy cabernet sauvignon",
+      secondaryKeywords: ["decoy cabernet sauvignon 2022", "california cabernet sauvignon", "decoy pinot noir"],
+    },
   },
   {
     id: 'prod-wine-red-16',
@@ -17679,6 +17745,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Decoy (Duckhorn), Sonoma County, CA",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "decoy merlot",
+      secondaryKeywords: ["merlot wine", "california merlot wine", "decoy cabernet sauvignon", "decoy pinot noir"],
+    },
   },
   {
     id: 'prod-wine-red-17',
@@ -17703,6 +17774,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "French Oak Barrels",
     distilleryLocation: "Duckhorn Vineyards, Napa Valley, CA",
+    seo: {
+      primaryKeyword: "duckhorn wine merlot",
+      secondaryKeywords: ["duckhorn cabernet sauvignon", "merlot wine", "napa valley red wine"],
+    },
   },
   {
     id: 'prod-wine-red-18',
@@ -17727,6 +17802,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "French Oak Barrels",
     distilleryLocation: "Flowers Vineyard & Winery, Sonoma Coast, CA",
+    seo: {
+      primaryKeyword: "flowers pinot noir",
+      secondaryKeywords: ["sonoma coast pinot noir", "russian river valley pinot noir"],
+    },
   },
   {
     id: 'prod-wine-red-19',
@@ -17751,6 +17830,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "J. Lohr Vineyards, Paso Robles, CA",
+    seo: {
+      primaryKeyword: "j lohr cabernet sauvignon",
+      secondaryKeywords: ["paso robles cabernet sauvignon", "california cabernet sauvignon"],
+    },
   },
   {
     id: 'prod-wine-red-20',
@@ -17775,6 +17858,13 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Josh Cellars, California",
+    seo: {
+      primaryKeyword: "josh cabernet sauvignon",
+      secondaryKeywords: ["josh cellars cabernet sauvignon", "josh cabernet", "josh cellars", "josh wine", "josh cellars cabernet"],
+      faqs: [
+        { question: 'Is Josh wine good?', answer: 'Josh Cellars is a well-regarded, award-winning value brand built around the idea of reserve-style character at a non-reserve price — it consistently earns strong reviews for offering more depth than most bottles in its price range.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-red-21',
@@ -17799,6 +17889,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Josh Cellars, California",
+    seo: {
+      primaryKeyword: "josh cellars legacy red blend",
+      secondaryKeywords: ["josh red blend", "josh cellars legacy red blend 750ml", "josh red wine", "josh red blend wine"],
+    },
   },
   {
     id: 'prod-wine-red-22',
@@ -17823,6 +17917,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "French Oak Barrels",
     distilleryLocation: "Josh Cellars, California",
+    seo: {
+      primaryKeyword: "josh pinot noir",
+      secondaryKeywords: ["josh cellars pinot noir", "josh pinot", "josh pinot noir 750ml", "pinot noir josh"],
+    },
   },
   {
     id: 'prod-wine-red-23',
@@ -17847,6 +17945,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Justin Vineyards & Winery, Paso Robles, CA",
+    seo: {
+      primaryKeyword: "justin cabernet sauvignon",
+      secondaryKeywords: ["paso robles cabernet sauvignon", "california cabernet sauvignon"],
+    },
   },
   {
     id: 'prod-wine-red-24',
@@ -17871,6 +17973,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "French Oak Barrels",
     distilleryLocation: "La Crema, Monterey County, CA",
+    seo: {
+      primaryKeyword: "la crema pinot noir",
+      secondaryKeywords: ["california pinot noir", "pinot noir red wine"],
+    },
   },
   {
     id: 'prod-wine-red-25',
@@ -17895,6 +18001,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Luigi Bosca, Luján de Cuyo, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "luigi bosca malbec",
+      secondaryKeywords: ["malbec wine", "argentine malbec wine", "mendoza malbec"],
+    },
   },
   {
     id: 'prod-wine-red-26',
@@ -17919,6 +18029,13 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "French Oak Barrels",
     distilleryLocation: "Meiomi, California",
+    seo: {
+      primaryKeyword: "meiomi pinot noir",
+      secondaryKeywords: ["meiomi pinot noir 2022", "california pinot noir", "is meiomi pinot noir sweet", "is meiomi pinot noir good", "meiomi cabernet sauvignon"],
+      faqs: [
+        { question: 'Is Meiomi Pinot Noir sweet?', answer: 'Meiomi Pinot Noir is technically a dry wine — it\'s made in a fruit-forward, lush style with riper fruit character that can read as sweeter than it actually is.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-red-27',
@@ -17943,6 +18060,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Orin Swift Cellars, California",
+    seo: {
+      primaryKeyword: "orin swift abstract",
+      secondaryKeywords: ["abstract wine", "orin swift wines", "abstract orin swift", "orin swift abstract red blend", "abstract red blend"],
+    },
   },
   {
     id: 'prod-wine-red-28',
@@ -17967,6 +18088,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Ridge Vineyards, Sonoma County, CA",
+    seo: {
+      primaryKeyword: "ridge zinfandel",
+      secondaryKeywords: ["old vine zinfandel", "zinfandel red wine", "red zinfandel"],
+    },
   },
   {
     id: 'prod-wine-red-29',
@@ -17991,6 +18116,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Seghesio Family Vineyards, Sonoma County, CA",
+    seo: {
+      primaryKeyword: "seghesio sonoma zinfandel",
+      secondaryKeywords: ["seghesio zinfandel", "sonoma seghesio zinfandel", "seghesio zinfandel 2023", "zinfandel seghesio"],
+    },
   },
   {
     id: 'prod-wine-red-30',
@@ -18015,6 +18144,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "American Oak Barrels",
     distilleryLocation: "Silver Oak Cellars, Alexander Valley, CA",
+    seo: {
+      primaryKeyword: "silver oak alexander valley cabernet sauvignon",
+      secondaryKeywords: ["silver oak cabernet sauvignon", "silver oak alexander valley", "silver oak alexander valley cabernet", "silver oak wine", "silver oak"],
+    },
   },
   {
     id: 'prod-wine-red-31',
@@ -18039,6 +18172,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "The Prisoner Wine Company, Napa Valley, CA",
+    seo: {
+      primaryKeyword: "the prisoner red blend",
+      secondaryKeywords: ["prisoner red blend", "prisoner wine", "the prisoner wine", "prisoner red wine", "the prisoner wine company"],
+      faqs: [
+        { question: 'Who makes The Prisoner wine?', answer: 'The Prisoner was founded by winemaker Dave Phinney and is now produced by The Prisoner Wine Company, part of Constellation Brands.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-red-32',
@@ -18063,6 +18203,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "French & American Oak Barrels",
     distilleryLocation: "Trivento, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "trivento malbec",
+      secondaryKeywords: ["malbec wine", "argentine malbec wine", "mendoza malbec"],
+    },
   },
   {
     id: 'prod-wine-white-01',
@@ -18087,6 +18231,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Stainless Steel & Neutral Oak",
     distilleryLocation: "California (Apothic/Gallo)",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "apothic white blend",
+      secondaryKeywords: ["sweet white wine", "sweet white wines", "white wine sangria", "what is a sweet white wine", "best white wine", "white wine types"],
+    },
   },
   {
     id: 'prod-wine-white-02',
@@ -18111,6 +18260,13 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Stainless Steel, Cold Fermented",
     distilleryLocation: "Barefoot, California",
+    seo: {
+      primaryKeyword: "barefoot moscato",
+      secondaryKeywords: ["barefoot pink moscato", "barefoot moscato wine", "is moscato sweet", "moscato wine", "barefoot moscato california wine"],
+      faqs: [
+        { question: 'Is Barefoot Moscato sweet?', answer: 'Yes — Barefoot Moscato is a sweet, low-alcohol white wine with noticeable residual sugar, built for an easy, fruity sipping style rather than a dry table wine.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-03',
@@ -18135,6 +18291,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "Napa Valley, CA",
+    seo: {
+      primaryKeyword: "cakebread chardonnay",
+      secondaryKeywords: ["cakebread cellars chardonnay", "cakebread chardonnay napa valley", "chardonnay cakebread napa valley", "napa valley chardonnay", "california chardonnay"],
+    },
   },
   {
     id: 'prod-wine-white-04',
@@ -18159,6 +18319,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Trentino, Italy",
+    seo: {
+      primaryKeyword: "cavit pinot grigio",
+      secondaryKeywords: ["pinot grigio wine", "italian pinot grigio", "is pinot grigio dry", "is pinot grigio sweet", "pinot grigio taste"],
+    },
   },
   {
     id: 'prod-wine-white-05',
@@ -18183,6 +18347,13 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Columbia Valley, WA",
+    seo: {
+      primaryKeyword: "chateau ste michelle riesling",
+      secondaryKeywords: ["chateau st michelle riesling", "riesling chateau ste. michelle", "riesling ste michelle", "ste michelle riesling", "chateau ste michelle sweet riesling"],
+      faqs: [
+        { question: 'Is Chateau Ste. Michelle Riesling sweet?', answer: "It's off-dry rather than fully sweet — this Columbia Valley Riesling has noticeable residual sugar balanced by bright acidity, making it approachable without being a dessert-style wine." },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-06',
@@ -18207,6 +18378,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Marlborough, New Zealand",
+    seo: {
+      primaryKeyword: "cloudy bay sauvignon blanc",
+      secondaryKeywords: ["marlborough sauvignon blanc", "new zealand sauvignon blanc", "sauvignon blanc marlborough new zealand wine", "nz sauvignon", "is sauvignon blanc dry"],
+    },
   },
   {
     id: 'prod-wine-white-07',
@@ -18231,6 +18406,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Stainless Steel & Neutral Oak",
     distilleryLocation: "California (Wagner Family/Caymus)",
+    seo: {
+      primaryKeyword: "conundrum white blend",
+      secondaryKeywords: ["conundrum wine", "conundrum white wine", "conundrum white", "caymus conundrum", "california white blend wine", "conundrum wine white"],
+    },
   },
   {
     id: 'prod-wine-white-08',
@@ -18255,6 +18434,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Sonoma/North Coast, CA (Duckhorn)",
+    seo: {
+      primaryKeyword: "decoy sauvignon blanc",
+      secondaryKeywords: ["white sauvignon wine", "is sauvignon blanc sweet", "what is sauvignon blanc", "sauvignon blanc wine", "decoy chardonnay"],
+    },
   },
   {
     id: 'prod-wine-white-09',
@@ -18279,6 +18462,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Mosel, Germany",
+    seo: {
+      primaryKeyword: "dr loosen blue slate riesling",
+      secondaryKeywords: ["dr loosen riesling kabinett", "dr loosen riesling blue slate", "kabinett riesling", "dr loosen riesling", "mosel riesling"],
+    },
   },
   {
     id: 'prod-wine-white-10',
@@ -18303,6 +18490,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Mosel, Germany",
+    seo: {
+      primaryKeyword: "dr. loosen dr. l riesling",
+      secondaryKeywords: ["dr loosen dr l riesling", "loosen dr. l riesling", "loosen dr l riesling", "dr l riesling", "dry riesling"],
+    },
   },
   {
     id: 'prod-wine-white-11',
@@ -18327,6 +18518,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Delle Venezie, Italy",
+    seo: {
+      primaryKeyword: "ecco domani pinot grigio",
+      secondaryKeywords: ["italian pinot grigio", "pinot grigio white wine", "is pinot grigio dry", "best pinot grigio", "pinot grigio pronunciation"],
+    },
   },
   {
     id: 'prod-wine-white-12',
@@ -18351,6 +18546,13 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Columbia Valley, WA",
+    seo: {
+      primaryKeyword: "eroica riesling",
+      secondaryKeywords: ["dry riesling", "german riesling", "sweet riesling", "chateau ste michelle riesling", "dr loosen riesling"],
+      faqs: [
+        { question: 'Who makes Eroica Riesling?', answer: "Eroica is a joint venture between Washington's Chateau Ste. Michelle and Germany's Dr. Loosen, combining Columbia Valley fruit with traditional Mosel Riesling winemaking." },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-13',
@@ -18375,6 +18577,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Friuli-Venezia Giulia, Italy",
+    seo: {
+      primaryKeyword: "jermann pinot grigio",
+      secondaryKeywords: ["italian pinot grigio wines", "pinot grigio grape", "pinot grigio pinot gris", "what does pinot grigio taste like", "is pinot grigio a dry white wine"],
+    },
   },
   {
     id: 'prod-wine-white-14',
@@ -18399,6 +18605,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "josh cellars chardonnay",
+      secondaryKeywords: ["josh chardonnay", "chardonnay josh", "josh wine", "josh cellars wine", "josh wine price"],
+    },
   },
   {
     id: 'prod-wine-white-15',
@@ -18423,6 +18633,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "North Coast, California",
+    seo: {
+      primaryKeyword: "josh cellars sauvignon blanc",
+      secondaryKeywords: ["josh sauvignon blanc", "josh cellars sauvignon blanc 750ml", "josh wine", "josh white wine", "josh cellars sauvignon"],
+    },
   },
   {
     id: 'prod-wine-white-16',
@@ -18447,6 +18661,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "kendall jackson chardonnay",
+      secondaryKeywords: ["kendall jackson vintner's reserve chardonnay", "kendall-jackson chardonnay", "kendall-jackson vintner's reserve chardonnay", "chardonnay vintner's reserve", "california chardonnay"],
+    },
   },
   {
     id: 'prod-wine-white-17',
@@ -18471,6 +18689,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Marlborough, New Zealand",
+    seo: {
+      primaryKeyword: "kim crawford sauvignon blanc",
+      secondaryKeywords: ["marlborough sauvignon blanc", "new zealand sauvignon blanc", "sauvignon blanc marlborough region new zealand", "nz sav blanc", "sauvignon blanc new zealand"],
+    },
   },
   {
     id: 'prod-wine-white-18',
@@ -18495,6 +18717,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Alto Adige/Veneto, Italy",
+    seo: {
+      primaryKeyword: "kris pinot grigio",
+      secondaryKeywords: ["italian pinot grigio", "pinot grigio brands", "good pinot grigio", "what is the best pinot grigio", "is pinot grigio sweet"],
+    },
   },
   {
     id: 'prod-wine-white-19',
@@ -18519,6 +18745,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "Sonoma Coast, CA",
+    seo: {
+      primaryKeyword: "la crema chardonnay",
+      secondaryKeywords: ["la crema sonoma coast chardonnay", "chardonnay la crema sonoma coast", "sonoma coast chardonnay", "russian river valley chardonnay", "sonoma chardonnay"],
+    },
   },
   {
     id: 'prod-wine-white-20',
@@ -18543,6 +18773,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Stainless Steel & Neutral Oak",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "ménage à trois wine",
+      secondaryKeywords: ["ménage à trois wines sauvignon blanc", "sweet white wine", "white wine sangria", "white wine types", "california white blend wine"],
+    },
   },
   {
     id: 'prod-wine-white-21',
@@ -18567,6 +18801,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Stainless Steel, Cold Fermented",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "michele chiarlo nivole moscato d'asti",
+      secondaryKeywords: ["moscato d'asti", "michele chiarlo moscato d'asti nivole", "moscato d'asti michele chiarlo nivole", "asti moscato d'asti", "is moscato d asti sweet"],
+    },
   },
   {
     id: 'prod-wine-white-22',
@@ -18591,6 +18829,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Marlborough, New Zealand",
+    seo: {
+      primaryKeyword: "oyster bay sauvignon blanc",
+      secondaryKeywords: ["oyster bay marlborough sauvignon blanc", "marlborough sauvignon blanc", "new zealand sauvignon blanc", "nz sauvignon", "is sauvignon blanc dry"],
+    },
   },
   {
     id: 'prod-wine-white-23',
@@ -18615,6 +18857,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Sancerre, Loire Valley, France",
+    seo: {
+      primaryKeyword: "sancerre sauvignon blanc",
+      secondaryKeywords: ["sancerre white wine", "is sancerre a sauvignon blanc", "is sancerre sauvignon blanc", "loire valley sauvignon blanc", "french sauvignon blanc"],
+    },
   },
   {
     id: 'prod-wine-white-24',
@@ -18639,6 +18885,13 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Mosel, Germany",
+    seo: {
+      primaryKeyword: "relax riesling",
+      secondaryKeywords: ["relax riesling wine", "sweet riesling", "german riesling wine", "riesling wine sweet", "riesling white wine"],
+      faqs: [
+        { question: 'Is Relax Riesling sweet?', answer: 'Relax Riesling is off-dry rather than fully sweet — it has noticeable fruit sweetness balanced by crisp acidity, built for easy, casual drinking.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-25',
@@ -18663,6 +18916,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Stainless Steel, Cold Fermented",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "risata moscato d'asti",
+      secondaryKeywords: ["risata moscato", "risata moscato d asti", "moscato d'asti", "risata pink moscato", "blue bottle moscato"],
+    },
   },
   {
     id: 'prod-wine-white-26',
@@ -18687,6 +18944,13 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "Carneros, Napa Valley, CA",
+    seo: {
+      primaryKeyword: "rombauer chardonnay",
+      secondaryKeywords: ["rombauer vineyards chardonnay", "rombauer carneros chardonnay", "buttery chardonnay", "oaked chardonnay"],
+      faqs: [
+        { question: 'What is a buttery Chardonnay?', answer: "A buttery Chardonnay gets its rich, creamy texture and butter-like flavor from malolactic fermentation and aging in oak barrels — a hallmark of Rombauer's full-bodied Carneros style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-27',
@@ -18711,6 +18975,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Stainless Steel Fermented",
     distilleryLocation: "Alto Adige, Italy",
+    seo: {
+      primaryKeyword: "santa margherita pinot grigio",
+      secondaryKeywords: ["st margherita pinot grigio", "pinot grigio santa margherita", "santa margarita pinot grigio", "italian pinot grigio", "best pinot grigio"],
+    },
   },
   {
     id: 'prod-wine-white-28',
@@ -18735,6 +19003,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Stainless Steel, Cold Fermented",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "saracco moscato d'asti",
+      secondaryKeywords: ["saracco d'asti moscato", "saracco moscato d asti", "saracco moscato", "moscato d'asti", "is moscato d asti sweet"],
+    },
   },
   {
     id: 'prod-wine-white-29',
@@ -18759,6 +19031,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "Russian River Valley, Sonoma, CA",
+    seo: {
+      primaryKeyword: "sonoma cutrer chardonnay",
+      secondaryKeywords: ["sonoma-cutrer chardonnay", "russian river valley chardonnay", "russian river chardonnay", "sonoma coast chardonnay", "unoaked chardonnay"],
+    },
   },
   {
     id: 'prod-wine-white-30',
@@ -18783,6 +19059,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Stainless Steel, Cold Fermented",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "stella rosa moscato d'asti",
+      secondaryKeywords: ["stella rosa d'asti moscato", "moscato d'asti stella rosa", "stella rosa moscato", "stella rosa stella moscato", "stella rosa moscato d asti"],
+    },
   },
   {
     id: 'prod-wine-white-31',
@@ -18807,6 +19087,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Stainless Steel & Neutral Oak",
     distilleryLocation: "Paso Robles, CA",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "tablas creek patelin de tablas blanc",
+      secondaryKeywords: ["french white wine", "crisp white wine", "full bodied white wine", "white wine grapes", "dry white wine", "best white wine"],
+    },
   },
   {
     id: 'prod-wine-white-32',
@@ -18831,6 +19116,13 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "French Oak Barrel Fermented",
     distilleryLocation: "Napa Valley, CA",
+    seo: {
+      primaryKeyword: "prisoner white wine",
+      secondaryKeywords: ["the prisoner wine", "the prisoner wine company", "prisoner wine company", "dave phinney", "orin swift the prisoner", "the prisoner red blend"],
+      faqs: [
+        { question: 'Who makes The Prisoner wine?', answer: 'The Prisoner Wine Company was founded by winemaker Dave Phinney, who also created Orin Swift Cellars before selling both brands; The Prisoner is now owned by Constellation Brands.' },
+      ],
+    },
   },
   {
     id: 'prod-wine-white-33',
@@ -18855,6 +19147,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Stainless Steel, Neutral Vessel",
     distilleryLocation: "Alsace, France",
+    seo: {
+      primaryKeyword: "trimbach riesling",
+      secondaryKeywords: ["alsace riesling", "alsace wine riesling", "dry riesling", "dry riesling wine", "riesling wine"],
+    },
   },
 
   {
@@ -18880,6 +19176,14 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Pedro Ximénez, Solera Aged",
     distilleryLocation: "Montilla-Moriles, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "alvear pedro ximenez sherry",
+      secondaryKeywords: ["what is sherry", "is sherry sweet", "what does sherry taste like", "what is sherry made of", "how is sherry made"],
+      faqs: [
+        { question: "Is sherry sweet?", answer: "It depends on the style: fino and manzanilla are bone-dry, while Pedro Ximénez, like this Alvear Solera 1927, is one of the sweetest wines in the world, pressed from sun-dried grapes concentrated into an intensely rich, syrupy sweetness." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-02',
@@ -18904,6 +19208,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Organic, Vegan Red Blend",
     distilleryLocation: "France",
+    seo: {
+      primaryKeyword: "avaline organic wine",
+      secondaryKeywords: ["organic red wine", "organic wines", "clean wine brands", "natural red wine", "organic wine brands"],
+    },
   },
   {
     id: 'prod-wine-champ-03',
@@ -18928,6 +19236,13 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Cinsault, Grenache, Cabernet Sauvignon Blend",
     distilleryLocation: "Provence, France",
+    seo: {
+      primaryKeyword: "avaline organic wine",
+      secondaryKeywords: ["organic rose wine", "clean wine brands", "organic wines", "rose wine", "is rose wine sweet"],
+      faqs: [
+        { question: "Is rosé wine sweet?", answer: "Most rosé, including Avaline's, is fermented dry — any sense of sweetness comes from ripe berry aromatics rather than residual sugar; Avaline Rosé is also made with no added sugar." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-04',
@@ -18952,6 +19267,10 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Organic, Vegan White Blend",
     distilleryLocation: "Spain",
+    seo: {
+      primaryKeyword: "avaline organic wine",
+      secondaryKeywords: ["organic white wine", "organic white wines", "clean wine brands", "organic wines", "organic wine brands"],
+    },
   },
   {
     id: 'prod-wine-champ-05',
@@ -18976,6 +19295,13 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "100% Brachetto",
     distilleryLocation: "Acqui Terme, Piedmont, Italy",
+    seo: {
+      primaryKeyword: "rosa regale wine",
+      secondaryKeywords: ["italian dessert wine", "sparkling sweet wine", "dessert wine", "sweet dessert wine", "sweet pudding wine"],
+      faqs: [
+        { question: "What is dessert wine?", answer: "Dessert wine is any wine made sweet enough to pair with or serve as dessert, whether through late harvest, fortification, or gentle fermentation that preserves natural sugar — like Banfi's softly sparkling Rosa Regale, made from 100% Brachetto." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-06',
@@ -19000,6 +19326,10 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Certified Organic Cabernet Sauvignon",
     distilleryLocation: "Sonoma County, California",
+    seo: {
+      primaryKeyword: "organic cabernet sauvignon",
+      secondaryKeywords: ["organic cabernet", "organic cabernet wine", "cabernet organic", "biodynamic wine", "organic red wine"],
+    },
   },
   {
     id: 'prod-wine-champ-07',
@@ -19024,6 +19354,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Certified Organic Cabernet Sauvignon",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "bonterra organic wine",
+      secondaryKeywords: ["organic cabernet sauvignon", "organic cabernet", "organic red wine", "organic wine brands", "america's #1 organic winery"],
+    },
   },
   {
     id: 'prod-wine-champ-08',
@@ -19048,6 +19382,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Certified Organic Chardonnay",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "bonterra organic wine",
+      secondaryKeywords: ["organic white wine", "organic white wines", "organic wine brands", "organic wines", "wine organic"],
+    },
   },
   {
     id: 'prod-wine-champ-09',
@@ -19072,6 +19410,10 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Certified Organic Merlot",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "bonterra organic wine",
+      secondaryKeywords: ["organic red wine", "organic red wines", "organic wine brands", "organic wines", "organic vineyard"],
+    },
   },
   {
     id: 'prod-wine-champ-10',
@@ -19096,6 +19438,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Certified Organic Sauvignon Blanc",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "bonterra organic wine",
+      secondaryKeywords: ["organic white wine", "organic white wines", "organic wine brands", "organic wineries", "eco friendly wine"],
+    },
   },
   {
     id: 'prod-wine-champ-11',
@@ -19120,6 +19466,14 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Carignan, Valdiguié, Syrah Blend",
     distilleryLocation: "California",
+    seo: {
+      // Category-level primary — no Broc Cellars-specific SEMrush volume; "natural red wine" is a real category term, not brand-backed.
+      primaryKeyword: "natural red wine",
+      secondaryKeywords: ["natural wine", "what is natural wine", "natural wine brands", "all natural wine", "natural winemaking"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites, fining, or filtration. Broc Cellars' Love Red is a quintessential example of the style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-12',
@@ -19144,6 +19498,14 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Valdiguié, Carignan Blend",
     distilleryLocation: "California",
+    seo: {
+      // Category-level primary — no Broc Cellars-specific SEMrush volume; "organic rose wine" is a shared category-level term also used for Avaline Rosé.
+      primaryKeyword: "organic rose wine",
+      secondaryKeywords: ["natural wine", "rose wine", "is rose wine sweet", "what is natural wine", "natural wines"],
+      faqs: [
+        { question: "Is rosé wine sweet?", answer: "Most rosé is fermented dry, and Broc Cellars' Love Rosé is no exception — its bright, fruity character comes from grape aromatics and minimal intervention, not residual sugar." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-13',
@@ -19168,6 +19530,14 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Palomino, Solera Aged",
     distilleryLocation: "Jerez, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "croft original pale cream sherry",
+      secondaryKeywords: ["what is cream sherry", "what is a cream sherry", "what is cream sherry wine", "what is sherry", "where to buy sherry"],
+      faqs: [
+        { question: "What is cream sherry?", answer: "Cream sherry is a blended style that pairs a dry base sherry, usually Fino, with a sweeter wine like Pedro Ximénez, producing a smoother, gently sweet pour. Croft Original helped pioneer the lighter \"pale cream\" variation of the style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-14',
@@ -19192,6 +19562,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Certified Organic Malbec",
     distilleryLocation: "Uco Valley, Mendoza, Argentina",
+    seo: {
+      primaryKeyword: "organic malbec wine",
+      secondaryKeywords: ["organic red wine", "organic wine brands", "organic wines", "organic wineries", "organic grape wine"],
+    },
   },
   {
     id: 'prod-wine-champ-15',
@@ -19216,6 +19590,13 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Riesling, Frozen-Harvest",
     distilleryLocation: "Mosel, Germany",
+    seo: {
+      primaryKeyword: "riesling ice wine",
+      secondaryKeywords: ["wine eiswein", "eiswein wine", "eiswein", "ice wine riesling", "german ice wine"],
+      faqs: [
+        { question: "What is eiswein?", answer: "Eiswein, German for \"ice wine,\" is made from grapes left on the vine until they freeze solid, then pressed while frozen so only concentrated, sugar-rich juice is extracted — the technique behind Dr. Loosen's honeyed, piercingly acidic Riesling." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-16',
@@ -19240,6 +19621,11 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Certified Organic Cabernet Sauvignon",
     distilleryLocation: "Central Valley, Chile",
+    seo: {
+      // Category-level primary — no Emiliana-specific SEMrush volume; "organic cabernet sauvignon" is a category-level term shared with Benziger.
+      primaryKeyword: "organic cabernet sauvignon",
+      secondaryKeywords: ["organic cabernet", "natura rose wine", "biodynamic wine", "vegan wine", "organic red wine"],
+    },
   },
   {
     id: 'prod-wine-champ-17',
@@ -19264,6 +19650,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Certified Organic Chardonnay",
     distilleryLocation: "Central Valley, Chile",
+    seo: {
+      // Category-level primary — no Emiliana-specific SEMrush volume; "organic white wine" is a category-level term.
+      primaryKeyword: "organic white wine",
+      secondaryKeywords: ["organic white wines", "natura rose wine", "biodynamic wine", "organic wines", "eco friendly wine"],
+    },
   },
   {
     id: 'prod-wine-champ-18',
@@ -19288,6 +19679,13 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Chenin Blanc, Pinot Gris Skin-Contact Blend",
     distilleryLocation: "Central Coast, California",
+    seo: {
+      primaryKeyword: "natural orange wine",
+      secondaryKeywords: ["organic orange wine", "what is natural wine", "natural wine", "natural wines", "natural winemaking"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites. Skins takes that further with extended skin contact on white grapes, producing its coppery, tannic orange-wine character." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-19',
@@ -19312,6 +19710,14 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Touriga Nacional blend, Ruby Style",
     distilleryLocation: "Douro Valley, Portugal",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "fonseca port",
+      secondaryKeywords: ["ruby port wine", "port wine", "port dessert wine", "best port wine", "what is ruby port"],
+      faqs: [
+        { question: "What is ruby port?", answer: "Ruby port is bottled young to preserve its bright, fresh dark-fruit character, unlike tawny port which is aged for years in wood. Fonseca Bin 27 is a classic example, blending ruby ports from top Douro vineyards for a bold, fruit-forward style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-20',
@@ -19336,6 +19742,14 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "Biodynamic Teroldego",
     distilleryLocation: "Trentino-Alto Adige, Italy",
+    seo: {
+      // Category-level primary — no Foradori-specific SEMrush volume; "natural wine" is the category head term.
+      primaryKeyword: "natural wine",
+      secondaryKeywords: ["what is natural wine", "biodynamic wine", "natural wines", "natural winemaking", "biodynamic wines"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites. Foradori has been Demeter-certified biodynamic since 2002, a benchmark producer of the style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-21',
@@ -19360,6 +19774,13 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Certified Organic, No Sulfites Added",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "frey wine",
+      secondaryKeywords: ["frey vineyards california", "frey vineyards organic", "frey organic wine", "organic red wine", "natural red wine"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites. Frey Vineyards markets itself as both America's first organic winery and additive-free/natural." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-22',
@@ -19384,6 +19805,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Certified Organic Pinot Noir",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      primaryKeyword: "frey vineyards",
+      secondaryKeywords: ["frey vineyards mendocino", "frey wines", "organic pinot noir", "frey wine organic", "frey winery"],
+    },
   },
   {
     id: 'prod-wine-champ-23',
@@ -19408,6 +19833,14 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Pedro Ximénez, Sun-Dried",
     distilleryLocation: "Jerez, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "gonzalez byass nectar pedro ximenez",
+      secondaryKeywords: ["is sherry sweet", "what is sherry", "what is sherry made of", "what does sherry taste like", "what is a sherry"],
+      faqs: [
+        { question: "Is sherry sweet?", answer: "Sherry ranges from bone-dry fino and manzanilla to intensely sweet Pedro Ximénez. Néctar, aged roughly 10 years, sits at the richest end of that spectrum, pressed from sun-dried PX grapes for deep, syrupy sweetness." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-24',
@@ -19432,6 +19865,14 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Touriga Franca blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed; leans on the strong tawny-port category pool.
+    seo: {
+      primaryKeyword: "graham's 10 year tawny port",
+      secondaryKeywords: ["tawny port", "tawny port wine", "port tawny", "what is tawny port", "port wine ruby vs tawny"],
+      faqs: [
+        { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to take on nutty, caramelized notes. Graham's 10 Year Old is a benchmark introduction to the style, balancing mature dried-fruit character with fresh, vibrant fruit." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-25',
@@ -19456,6 +19897,14 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Touriga Franca blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "graham's 20 year tawny port",
+      secondaryKeywords: ["tawny port", "tawny port wine", "port tawny", "tawny port vs ruby port wine", "what is a tawny port"],
+      faqs: [
+        { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to take on nutty, caramelized notes. Graham's 20 Year Old spends two decades in small oak casks, layering caramel, toasted nut, and dried fruit while retaining bright acidity." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-26',
@@ -19480,6 +19929,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Touriga Nacional blend, LBV Style",
     distilleryLocation: "Douro Valley, Portugal",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "graham's lbv port",
+      secondaryKeywords: ["vintage port", "vintage port wine", "types of port wine", "port wine", "best port wine"],
+    },
   },
   {
     id: 'prod-wine-champ-27',
@@ -19504,6 +19958,14 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Touriga Nacional blend, Ruby Reserve",
     distilleryLocation: "Douro Valley, Portugal",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "graham's six grapes port",
+      secondaryKeywords: ["ruby port wine", "port wine ruby vs tawny", "best port wine", "what is ruby port", "good port wine"],
+      faqs: [
+        { question: "What is ruby port?", answer: "Ruby port is bottled young to preserve bright, fresh dark-fruit character. Six Grapes, Graham's flagship everyday reserve, is sourced from five of the estate's finest Douro properties and aged two years in seasoned casks for a jammy, approachable style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-28',
@@ -19528,6 +19990,14 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Palomino & Pedro Ximénez, Solera Blend",
     distilleryLocation: "Jerez, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "harveys bristol cream sherry",
+      secondaryKeywords: ["what is cream sherry", "what is a cream sherry", "what is sherry", "how do you drink sherry", "where to buy sherry"],
+      faqs: [
+        { question: "What is cream sherry?", answer: "Cream sherry blends a dry base sherry with sweeter Pedro Ximénez or Moscatel wine for a smooth, mellow style. First blended in Bristol, England in 1882 from over fifty soleras, Harveys Bristol Cream is the world's best-known example." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-29',
@@ -19552,6 +20022,13 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Cabernet Franc, Frozen-Pressed",
     distilleryLocation: "Niagara Peninsula, Canada",
+    seo: {
+      primaryKeyword: "inniskillin cabernet franc icewine",
+      secondaryKeywords: ["cabernet franc ice wine", "inniskillin ice wine", "ice wine canada", "inniskillin cab franc ice wine", "inniskillin icewine cabernet franc"],
+      faqs: [
+        { question: "What is icewine?", answer: "Icewine is made from grapes left on the vine until they freeze naturally, then hand-harvested and pressed while frozen so only intensely concentrated juice is extracted. Inniskillin pioneered the style in Canada, and this rare red Cabernet Franc icewine is harvested at -10°C or below." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-30',
@@ -19576,6 +20053,13 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "Vidal Blanc, Frozen-Pressed",
     distilleryLocation: "Niagara Peninsula, Canada",
+    seo: {
+      primaryKeyword: "inniskillin vidal icewine",
+      secondaryKeywords: ["vidal ice wine", "inniskillin ice wine", "vidal blanc ice wine", "ice wine vidal", "inniskillin icewine vidal"],
+      faqs: [
+        { question: "Is ice wine sweet?", answer: "Yes — ice wine is intensely sweet, since freezing the grapes on the vine concentrates their natural sugars before pressing. Inniskillin's Vidal Icewine, the wine that put Canadian icewine on the world map, balances that sweetness with bright, lingering acidity." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-31',
@@ -19600,6 +20084,13 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Vidal Blanc, Frozen-Pressed",
     distilleryLocation: "Niagara Peninsula, Canada",
+    seo: {
+      primaryKeyword: "jackson triggs ice wine",
+      secondaryKeywords: ["vidal ice wine", "ice wine canada", "canadian ice wine", "vidal blanc ice wine", "icewine canada"],
+      faqs: [
+        { question: "What is icewine?", answer: "Icewine is made from grapes hand-harvested in the depths of winter, frozen solid so their sugars are naturally concentrated before pressing. Jackson-Triggs harvests its Vidal grapes in Niagara for a vividly tropical, honeyed style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-32',
@@ -19624,6 +20115,14 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Field Blend Co-Ferment, Unfined & Unfiltered",
     distilleryLocation: "California",
+    seo: {
+      // Category-level primary — no Las Jaras-specific SEMrush volume; "natural wine" is the category head term.
+      primaryKeyword: "natural wine",
+      secondaryKeywords: ["what is natural wine", "natural wines", "natural wine brands", "natural wine near me", "natural winemaking"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites, fining, or filtration. Las Jaras built its cult following on approachable, unpretentious wines made this way." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-33',
@@ -19648,6 +20147,14 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Oloroso & PX Blend, Double Solera",
     distilleryLocation: "Jerez, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "lustau east india solera sherry",
+      secondaryKeywords: ["what is sherry", "how is sherry made", "what is sherry made of", "how do you drink sherry", "where to buy sherry"],
+      faqs: [
+        { question: "How is sherry made?", answer: "Sherry is fortified after fermentation, then aged either under a protective layer of flor yeast (fino styles) or oxidatively without it (oloroso styles), typically blended through a solera system that fractionally ages wine across barrels of different vintages — the same method behind Lustau's East India Solera." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-34',
@@ -19672,6 +20179,14 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "100% Pedro Ximénez, Sun-Dried",
     distilleryLocation: "Jerez, Spain",
+    // No SEMrush volume for this SKU — confirmed via WebSearch as real search phrasing, not volume-backed.
+    seo: {
+      primaryKeyword: "lustau san emilio pedro ximenez",
+      secondaryKeywords: ["is sherry sweet", "what is sherry made of", "what is sherry", "what does sherry taste like", "how is sherry made"],
+      faqs: [
+        { question: "Is sherry sweet?", answer: "It depends on the style: fino and manzanilla are bone-dry, while Pedro Ximénez, like this Lustau San Emilio, is one of the sweetest wines in the world, pressed entirely from sun-dried grapes for an intensely rich, syrupy sweetness." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-35',
@@ -19696,6 +20211,14 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Zinfandel, Pinot Noir, Carignan Blend",
     distilleryLocation: "Mendocino/North Coast, California",
+    seo: {
+      // Category-level primary — no Martha Stoumen-specific SEMrush volume; "natural wine" is the category head term.
+      primaryKeyword: "natural wine",
+      secondaryKeywords: ["what is natural wine", "natural winemaking", "natural wine brands", "organic red wine", "natural wines"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites. Martha Stoumen sources from organic, dry-farmed old vineyards for exactly this style." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-36',
@@ -19720,6 +20243,14 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Certified Biodynamic, Zweigelt, St. Laurent Blend",
     distilleryLocation: "Burgenland, Austria",
+    seo: {
+      // Category-level primary — no Meinklang-specific SEMrush volume; "natural wine" is the category head term.
+      primaryKeyword: "natural wine",
+      secondaryKeywords: ["biodynamic wine", "what is natural wine", "biodynamic wines", "organic wine", "natural winemaking"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites. Meinklang is Demeter-certified biodynamic, farming vines alongside cattle on its Austrian family estate." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-37',
@@ -19744,6 +20275,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Vidal Blanc, Frozen-Pressed",
     distilleryLocation: "Niagara Peninsula, Canada",
+    seo: {
+      primaryKeyword: "peller estates ice wine",
+      secondaryKeywords: ["peller ice wine", "canadian ice wine peller estate", "peller estate ice wine", "vidal ice wine", "ice wine canada"],
+    },
   },
   {
     id: 'prod-wine-champ-38',
@@ -19768,6 +20303,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Certified Organic Pinot Grigio",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      // Category-level primary — no Pizzolato-specific SEMrush volume; "organic white wine" is a category-level term.
+      primaryKeyword: "organic white wine",
+      secondaryKeywords: ["organic white wines", "italian organic wine", "organic wine brands", "organic wines", "organic winery"],
+    },
   },
   {
     id: 'prod-wine-champ-39',
@@ -19792,6 +20332,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Furmint & Hárslevelű, Botrytis-Affected",
     distilleryLocation: "Tokaj, Hungary",
+    seo: {
+      primaryKeyword: "hungarian dessert wine",
+      secondaryKeywords: ["dessert wine", "sweet dessert wine", "sweet wines list", "what is dessert wine", "italian dessert wine"],
+    },
   },
   {
     id: 'prod-wine-champ-40',
@@ -19816,6 +20360,11 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Certified Organic, Shiraz/Merlot Blend",
     distilleryLocation: "Western Cape, South Africa",
+    seo: {
+      // Category-level primary — no Stellar Organics-specific SEMrush volume; "organic red wine" is a category-level term.
+      primaryKeyword: "organic red wine",
+      secondaryKeywords: ["organic red wines", "organic wines", "organic winery", "organic wine brands", "sustainable red wine"],
+    },
   },
   {
     id: 'prod-wine-champ-41',
@@ -19840,6 +20389,14 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Carbonic Maceration Zinfandel",
     distilleryLocation: "Mendocino County, California",
+    seo: {
+      // Category-level primary — no Subject to Change-specific SEMrush volume; "natural wine" is the category head term.
+      primaryKeyword: "natural wine",
+      secondaryKeywords: ["what is natural wine", "natural wines", "organic wine", "natural winemaking", "natural wine brands"],
+      faqs: [
+        { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites, fining, or filtration. Lune Juice is unfined, unfiltered, and made with no added sulfur from organically sourced fruit." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-42',
@@ -19864,6 +20421,13 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Touriga Nacional blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
+    seo: {
+      primaryKeyword: "taylor fladgate port wine",
+      secondaryKeywords: ["taylor's port wine", "taylor port wine", "tawny port", "what is tawny port", "taylor port wine alcohol percentage"],
+      faqs: [
+        { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to develop nutty, caramelized notes. Taylor Fladgate's real tawny range extends from 10 to 50 Year Old, and this 10 Year balances fresh fruit with mellow, nutty complexity." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-43',
@@ -19888,6 +20452,13 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Touriga Nacional blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
+    seo: {
+      primaryKeyword: "taylor port wine",
+      secondaryKeywords: ["taylor's port wine porto", "taylor fladgate port wine", "tawny port wine", "port tawny", "port wine ruby vs tawny"],
+      faqs: [
+        { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to develop nutty, caramelized notes. Taylor Fladgate's 20 Year Old averages two decades in small oak casks, layering dried fruit, spice, and toasted nuts." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-44',
@@ -19912,6 +20483,13 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Touriga Nacional blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
+    seo: {
+      primaryKeyword: "taylor fladgate port wine",
+      secondaryKeywords: ["taylor port wine", "tawny port", "tawny port wine", "port wine ruby vs tawny", "best port wine"],
+      faqs: [
+        { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to develop nutty, caramelized notes. This 40 Year Old is among the oldest regularly bottled tawnies in the world, concentrating extraordinary layers of dried fruit and spice." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-45',
@@ -19936,6 +20514,13 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Touriga Nacional blend, Ruby Style",
     distilleryLocation: "Douro Valley, Portugal",
+    seo: {
+      primaryKeyword: "taylor port red wine",
+      secondaryKeywords: ["ruby port wine", "taylor port wine near me", "is taylor port sweet", "how much is taylor port wine", "taylor port wine alcohol content"],
+      faqs: [
+        { question: "Is Taylor port sweet?", answer: "Yes — all Taylor Fladgate styles carry noticeable natural sweetness from fortification, though ruby styles like First Estate Reserve read fresher and fruitier than the nuttier, more concentrated tawny range." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-46',
@@ -19960,6 +20545,10 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Touriga Nacional blend, LBV Style",
     distilleryLocation: "Douro Valley, Portugal",
+    seo: {
+      primaryKeyword: "taylor fladgate port wine",
+      secondaryKeywords: ["taylor's port wine", "vintage port", "vintage port wine", "taylor port wine near me", "types of port wine"],
+    },
   },
   {
     id: 'prod-wine-champ-47',
@@ -19984,6 +20573,14 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Certified Organic Red Blend",
     distilleryLocation: "California",
+    seo: {
+      // Category-level primary — no brand-specific SEMrush volume for The Organic Wine Co./Our Daily; "organic red wine" is a category-level term.
+      primaryKeyword: "organic red wine",
+      secondaryKeywords: ["organic wine brands", "organic wines", "usda organic wine", "buy organic wine online", "does organic wine have sulfites"],
+      faqs: [
+        { question: "Does organic wine have sulfites?", answer: "USDA-certified organic wine cannot have any sulfites added, though trace natural sulfites can still occur from fermentation. Our Daily specifically markets its wines as carrying no detectable sulfites." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-48',
@@ -20008,6 +20605,11 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Petit Verdot, Cinsaut, Cabernet Blend",
     distilleryLocation: "Central Coast, California",
+    seo: {
+      // Category-level primary — no Vegan Vine-specific SEMrush volume; "organic red wine" is a category-level term.
+      primaryKeyword: "organic red wine",
+      secondaryKeywords: ["organic wine brands", "clean wine brands", "organic red wines", "organic wines", "vegan wine"],
+    },
   },
   {
     id: 'prod-wine-champ-49',
@@ -20032,6 +20634,14 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Grenache, Syrah, Cinsault Blend",
     distilleryLocation: "Provence, France",
+    seo: {
+      // Category-level primary — no AIX-specific volume in this export; shared Provence term also used for Domaines Ott and M de Minuty, differentiated via brand copy.
+      primaryKeyword: "provence rose wine",
+      secondaryKeywords: ["provence rose", "côtes de provence rosé wine", "best rose wine", "french rose wine", "dry rose wine"],
+      faqs: [
+        { question: "Is rosé wine sweet?", answer: "Not necessarily — pale color has nothing to do with sweetness. AIX is made in the classic dry Provence style, with crisp acidity and minimal residual sugar." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-50',
@@ -20056,6 +20666,13 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Muscat Blend",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "barefoot pink moscato wine",
+      secondaryKeywords: ["barefoot moscato", "barefoot wine pink moscato", "pink barefoot wine", "barefoot moscato wine", "pink moscato barefoot wine alcohol content"],
+      faqs: [
+        { question: "Is Barefoot Moscato sweet?", answer: "Yes — Barefoot Pink Moscato is crafted in a sweet, low-alcohol style with juicy raspberry and cherry character, making it one of the most approachable sweet wines in the Barefoot lineup." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-51',
@@ -20080,6 +20697,10 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Moscato-Based Rosé Blend",
     distilleryLocation: "Veneto/Piedmont, Italy",
+    seo: {
+      primaryKeyword: "bartenura rose",
+      secondaryKeywords: ["bartenura rose wine", "bartenura wine", "bartenura", "bartenura moscato rose", "sparkling moscato bartenura rose"],
+    },
   },
   {
     id: 'prod-wine-champ-52',
@@ -20104,6 +20725,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Grenache, Rolle, Cinsault Blend",
     distilleryLocation: "Provence, France",
+    seo: {
+      // Primary is château-level ('chateau d'esclans', CSV-backed) — "Rock Angel" itself pulled zero individual rows in this export; confirmed real via WebSearch as part of d'Esclans' branded range alongside Whispering Angel, The Palm, Les Clans, and Garrus.
+      primaryKeyword: "chateau d'esclans",
+      secondaryKeywords: ["chateau d esclans", "château d'esclans", "whispering angel", "ch d'esclans", "what is rose wine"],
+    },
   },
   {
     id: 'prod-wine-champ-53',
@@ -20128,6 +20754,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Grenache, Cinsault, Syrah, Cabernet Blend",
     distilleryLocation: "Côtes de Provence, France",
+    seo: {
+      // Category-level primary — no Domaines Ott-specific volume in this export; shared Provence term also used for AIX and M de Minuty, differentiated via brand copy.
+      primaryKeyword: "provence rose wine",
+      secondaryKeywords: ["provence rose", "french rose wine", "best rose wine", "rose wine brands", "dry rose wine"],
+    },
   },
   {
     id: 'prod-wine-champ-54',
@@ -20152,6 +20783,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Grenache, Cinsault, Mourvèdre Blend",
     distilleryLocation: "Languedoc, France",
+    seo: {
+      primaryKeyword: "hampton water rose wine",
+      secondaryKeywords: ["rose wine", "best rose wine", "dry rose wine", "sweet rose wine", "rose wine brands"],
+    },
   },
   {
     id: 'prod-wine-champ-55',
@@ -20176,6 +20811,13 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Grenache, Cinsault, Syrah Blend",
     distilleryLocation: "Rhône Valley, France",
+    seo: {
+      primaryKeyword: "la vieille ferme rose",
+      secondaryKeywords: ["la vieille ferme rosé", "la vieille ferme wine", "la vieille ferme", "la vielle ferme rose", "vieille ferme rose"],
+      faqs: [
+        { question: "Is La Vieille Ferme rosé sweet?", answer: "No — despite its cheerful rooster label, La Vieille Ferme Rosé is made in a dry, crisp Rhône Valley style with bright red fruit rather than residual sweetness." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-56',
@@ -20200,6 +20842,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Grenache, Cinsault, Tibouren Blend",
     distilleryLocation: "Côtes de Provence, France",
+    seo: {
+      // Category-level primary — no M de Minuty-specific volume in this export; shared Provence term also used for AIX and Domaines Ott, differentiated via brand copy.
+      primaryKeyword: "provence rose wine",
+      secondaryKeywords: ["provence rose", "côtes de provence rosé wine", "french rose wine", "best rose wine", "premium rose wine"],
+    },
   },
   {
     id: 'prod-wine-champ-57',
@@ -20224,6 +20871,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Grenache, Cinsault, Rolle Blend",
     distilleryLocation: "Côtes de Provence, France",
+    seo: {
+      primaryKeyword: "miraval rose wine",
+      secondaryKeywords: ["provence rose wine", "provence rose", "best rose wine", "french rose wine", "rose wine brands"],
+    },
   },
   {
     id: 'prod-wine-champ-58',
@@ -20248,6 +20899,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Moscato/Brachetto Blend",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "risata pink moscato",
+      secondaryKeywords: ["risata moscato", "risata red moscato", "risata moscato pink", "risata", "moscato risata"],
+    },
   },
   {
     id: 'prod-wine-champ-59',
@@ -20272,6 +20927,13 @@ export const PRODUCTS: Product[] = [
     stock: 54,
     caskType: "Semi-Sparkling Moscato Blend",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      primaryKeyword: "stella rosa pink",
+      secondaryKeywords: ["stella pink", "stella rosa stella pink", "pink stella rosa", "stella rosa stella pink wine", "rosa stella wine"],
+      faqs: [
+        { question: "Is Stella Rosa a good wine?", answer: "Stella Rosa is one of the best-selling semi-sweet wine brands in the US, prized for its low-alcohol, fruit-forward, semi-sparkling style that appeals to casual and new wine drinkers alike." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-60',
@@ -20296,6 +20958,14 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Semi-Sparkling Fruit-Infused Blend",
     distilleryLocation: "Piedmont, Italy",
+    seo: {
+      // Confirmed real via WebSearch as part of Stella Rosa's flavored moscato-rosé lineup, not volume-backed in this export — the CSV's top-100 flavor rows cover Black, Peach, Blueberry, Berry, Rosso, and Red, but no Strawberry row surfaced.
+      primaryKeyword: "stella rosa strawberry rosé",
+      secondaryKeywords: ["stella rosa wine", "stella rosa", "stella rosa flavors", "stella rosa berry wine", "is stella rosa a good wine"],
+      faqs: [
+        { question: "Is Stella Rosa a good wine?", answer: "Stella Rosa is one of the best-selling semi-sweet wine brands in the US, prized for its low-alcohol, fruit-forward, semi-sparkling style — the Strawberry expression layers natural fruit essence over that same easy-drinking base." },
+      ],
+    },
   },
   {
     id: 'prod-wine-champ-61',
@@ -20320,6 +20990,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "White Zinfandel",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "sutter home wine white zinfandel",
+      secondaryKeywords: ["white zin sutter home", "sutter home white zinfandel wine", "sutter home wine", "sutter home", "sutter home rose"],
+    },
   },
   {
     id: 'prod-wine-champ-62',
@@ -20344,6 +21018,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Grenache, Cinsault, Syrah Blend",
     distilleryLocation: "Côtes de Provence, France",
+    seo: {
+      primaryKeyword: "the palm by whispering angel",
+      secondaryKeywords: ["the palm rose by whispering angel", "the palm whispering angel", "the palm rosé by whispering angel", "the palm whispering angel rose", "whispering angel"],
+    },
   },
   {
     id: 'prod-wine-champ-63',
@@ -20368,6 +21046,13 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Grenache, Cinsault, Rolle Blend",
     distilleryLocation: "Côtes de Provence, France",
+    seo: {
+      primaryKeyword: "whispering angel rose",
+      secondaryKeywords: ["whispering angel", "whispering angel rose wine", "whispering angel wine", "whispering angel rosé", "chateau d'esclans rose whispering angel"],
+      faqs: [
+        { question: "What is Whispering Angel?", answer: "Whispering Angel is Château d'Esclans' flagship Côtes de Provence rosé, created by Sacha Lichine in 2006 and widely credited with launching the modern premium rosé category — a pale, dry blend of Grenache, Cinsault, and Rolle." },
+      ],
+    },
   },
   // CHAMPAGNE & SPARKLING
   {

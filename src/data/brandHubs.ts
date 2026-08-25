@@ -2768,4 +2768,251 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Ritual Zero Proof makes non-alcoholic alternatives across whiskey, tequila, gin, and rum styles, formulated to deliver the bite and mouthfeel of the real spirit without alcohol, calories, or added sugar.',
     }),
   },
+
+  // ─── FINE WINE ───────────────────────────────────────────
+  {
+    categorySlug: 'fine-wine', hubSlug: 'josh-cellars', brandKeywords: ['Josh Cellars', 'Josh'], name: 'Josh Cellars',
+    seo: brandSeo({
+      brand: 'Josh Cellars', categoryLabel: 'Wine',
+      titleTag: 'Josh Cellars — Cabernet, Chardonnay, Pinot Noir & More',
+      h1: 'Josh Cellars — California Cabernet, Chardonnay, Pinot Noir, Red Blend & Sauvignon Blanc',
+      metaDescription: 'Buy Josh Cellars online — Cabernet Sauvignon, Legacy Red Blend, Pinot Noir, Chardonnay, and Sauvignon Blanc. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Josh Cellars was founded in 2013 by third-generation winemaker Joseph Carr, named for his father, Josh. The brand built its reputation on accessible, consistently well-made California wine at a below-reserve price — the Cabernet Sauvignon remains its flagship, extended across a full range of reds and whites sourced from appellations up and down the state.',
+      faqs: [
+        { question: 'Is Josh Cellars a good everyday wine brand?', answer: "Josh Cellars is built specifically for reliable, reserve-style quality at an everyday price — it's one of the best-known value brands in US wine for exactly that reason, consistent vintage to vintage rather than aiming for critic-score prestige." },
+        { question: 'Who makes Josh Cellars wine?', answer: 'Josh Cellars is produced by Vintage Wine Estates, sourcing California fruit across multiple appellations depending on the varietal, under founder Joseph Carr.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'decoy', brandKeywords: ['Decoy'], name: 'Decoy',
+    seo: brandSeo({
+      brand: 'Decoy', categoryLabel: 'Wine',
+      titleTag: 'Decoy — Cabernet Sauvignon, Merlot & Sauvignon Blanc',
+      h1: 'Decoy Wine — Cabernet Sauvignon, Merlot & Sauvignon Blanc Allocations',
+      metaDescription: 'Buy Decoy wine online — Duckhorn Vineyards’ second label, Cabernet Sauvignon, Merlot, and Sauvignon Blanc. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Decoy is Duckhorn Vineyards' second label, launched in 1985 to make use of young-vine fruit and select lots not destined for flagship Duckhorn bottlings — built for earlier, more approachable drinking than the winery's top-tier releases while keeping the same Napa/Sonoma sourcing standards.",
+      faqs: [
+        { question: 'Who owns Decoy wine?', answer: 'Decoy is owned by Duckhorn Vineyards, one of Napa and Sonoma’s most established producers — Decoy was created as its accessible second label in 1985.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'catena', brandKeywords: ['Catena', 'Catena Zapata'], name: 'Catena / Catena Zapata',
+    seo: brandSeo({
+      brand: 'Catena', categoryLabel: 'Malbec',
+      titleTag: 'Catena & Catena Zapata — High-Altitude Mendoza Malbec',
+      h1: 'Catena & Catena Zapata Malbec — High-Altitude Mendoza Allocations',
+      metaDescription: 'Buy Catena and Catena Zapata Malbec online — high-altitude Mendoza, Argentina fruit from the family credited with proving Malbec as a serious fine wine. Free on $300+.',
+      hook: "The Catena family has grown grapes in Mendoza, Argentina since 1902. Nicolás Catena Zapata is widely credited with proving Malbec could be a serious high-altitude fine wine rather than a bulk blending grape, planting vineyards well above 3,000 feet to slow ripening and concentrate flavor. Catena Malbec and Catena Zapata Malbec Argentino are two distinct tiers of the same estate's fruit.",
+      faqs: [
+        { question: "Where are Catena's vineyards?", answer: 'High-altitude sites across Mendoza, including the Gualtallary and Adrianna Vineyard areas of the Uco Valley — elevation is central to the estate’s style, slowing ripening for more structure and aromatic lift than lower-altitude Malbec.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'the-prisoner', brandKeywords: ['The Prisoner', 'Prisoner Wine Company'], name: 'The Prisoner Wine Company',
+    seo: brandSeo({
+      brand: 'The Prisoner', categoryLabel: 'Wine',
+      titleTag: 'The Prisoner — Red Blend & White Blend',
+      h1: 'The Prisoner Wine Company — Red Blend & Blindfold White Blend Allocations',
+      metaDescription: 'Buy The Prisoner wine online — the Red Blend and Blindfold White Blend from The Prisoner Wine Company. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'The Prisoner was founded by winemaker Dave Phinney, who also founded Orin Swift before selling both brands. Its name and label — drawn from a Francisco Goya etching — set the tone for a deliberately unconventional, multi-varietal blending style. The Prisoner Wine Company is now part of Constellation Brands.',
+      faqs: [
+        { question: 'Who makes The Prisoner wine?', answer: 'The Prisoner Wine Company was founded by Dave Phinney, who also founded Orin Swift before selling both brands; The Prisoner is now owned by Constellation Brands.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'dr-loosen', brandKeywords: ['Dr. Loosen', 'Dr Loosen'], name: 'Dr. Loosen',
+    seo: brandSeo({
+      brand: 'Dr. Loosen', categoryLabel: 'Riesling',
+      titleTag: 'Dr. Loosen — Mosel Valley Riesling & Eiswein',
+      h1: 'Dr. Loosen Riesling & Eiswein — Mosel Valley Allocations',
+      metaDescription: 'Buy Dr. Loosen online — Dr. L Riesling, Blue Slate Riesling Kabinett, and Riesling Eiswein from the Mosel Valley. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Dr. Loosen is a historic Mosel Valley estate based in Bernkastel, Germany, run by Ernst “Erni” Loosen, with vineyard holdings on some of the Mosel's steepest blue-slate slopes. Dr. L Riesling is the estate's accessible, off-dry entry point; Blue Slate Kabinett reflects the estate's terroir with more structure; the Riesling Eiswein is a genuine frozen-grape harvest, made only when winter conditions allow.",
+      faqs: [
+        { question: 'Is Dr. Loosen Riesling sweet?', answer: 'It depends on the bottling — Dr. L is an approachable, slightly off-dry style; Blue Slate Kabinett carries a touch more residual sweetness balanced by Mosel acidity; the Eiswein is genuinely dessert-sweet, concentrated by freezing the grapes on the vine.' },
+        { question: 'How do you pronounce "Loosen"?', answer: 'Roughly "LOH-zen" — a common stumbling block for English speakers given the estate’s prominence.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'barefoot', brandKeywords: ['Barefoot'], name: 'Barefoot',
+    seo: brandSeo({
+      brand: 'Barefoot', categoryLabel: 'Wine',
+      titleTag: 'Barefoot — Moscato & Pink Moscato',
+      h1: 'Barefoot Wine — Moscato & Pink Moscato Allocations',
+      metaDescription: 'Buy Barefoot wine online — Moscato and Pink Moscato. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Barefoot Cellars was founded in 1965 in Sonoma County and has grown into the best-selling wine brand in the US, now owned by E. & J. Gallo. Its Moscato and Pink Moscato sit at the sweeter, easy-drinking end of the range, aimed squarely at approachable, everyday sipping rather than cellar-worthy structure.",
+      faqs: [
+        { question: 'Is Barefoot Moscato sweet?', answer: 'Yes — Moscato is one of the sweeter styles in the Barefoot range, light-bodied with fresh peach and orange-blossom character, and Pink Moscato adds a touch of red-grape fruitiness on top.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'risata', brandKeywords: ['Risata'], name: 'Risata',
+    seo: brandSeo({
+      brand: 'Risata', categoryLabel: 'Moscato',
+      titleTag: "Risata — Moscato d'Asti & Moscato Rosé",
+      h1: "Risata Moscato d'Asti & Rosé — Piedmont Allocations",
+      metaDescription: "Buy Risata wine online — Moscato d'Asti and Moscato Rosé in the brand's signature cobalt-blue bottle. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Risata sources its Moscato d'Asti from Italy's Piedmont region, imported and distributed through Trinchero Family Estates — the same family behind Sutter Home — and is instantly recognizable by its signature cobalt-blue bottle across both the classic Moscato d'Asti and the Moscato Rosé.",
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'grahams', brandKeywords: ["Graham's", 'Grahams'], name: "Graham's",
+    seo: brandSeo({
+      brand: "Graham's", categoryLabel: 'Port',
+      titleTag: "Graham's — Tawny & Late Bottled Vintage Port",
+      h1: "Graham's Port — 10 & 20 Year Tawny, LBV & Six Grapes Allocations",
+      metaDescription: "Buy Graham's Port online — 10 and 20 Year Old Tawny, Late Bottled Vintage, and Six Grapes Reserve. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Graham's was founded in 1820 when Scottish brothers William and John Graham accepted 27 barrels of port as debt repayment. The house became a serious Douro Valley producer after acquiring Quinta dos Malvedos in 1890 — still the backbone of its vintage and tawny blends — and has been owned by the Symington family, Portugal's most storied port dynasty, since 1970.",
+      faqs: [
+        { question: 'What is tawny port?', answer: "Tawny port is aged in wood casks rather than bottle, taking on nutty, caramelized notes as it slowly oxidizes over years. Graham's tawny range runs from 10 to 40 Year Old in the tiers stocked here, with real expressions up to 80 Year Old in the full lineup." },
+        { question: "What's the difference between Graham's tawny and ruby styles?", answer: 'Ruby styles like Six Grapes are bottled young to preserve bright fruit character; tawny is barrel-aged for years to develop nutty, dried-fruit complexity instead.' },
+        { question: 'What is LBV port?', answer: "Late Bottled Vintage is made from a single strong year's harvest and aged longer in barrel than standard vintage port, so it's ready to drink without decanting." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'taylor-fladgate', brandKeywords: ['Taylor Fladgate', "Taylor's"], name: 'Taylor Fladgate',
+    seo: brandSeo({
+      brand: 'Taylor Fladgate', categoryLabel: 'Port',
+      titleTag: 'Taylor Fladgate — Tawny, Ruby & Late Bottled Vintage Port',
+      h1: 'Taylor Fladgate Port — 10, 20 & 40 Year Tawny, Ruby & LBV Allocations',
+      metaDescription: 'Buy Taylor Fladgate Port online — 10, 20, and 40 Year Old Tawny, First Estate Reserve Ruby, and Late Bottled Vintage. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Tracing to English merchant Job Bearsley's arrival in Portugal in 1692 and formalized as Taylor, Fladgate and Yeatman in 1838, Taylor Fladgate holds two real firsts in the category: it created the world's first dry white port (Chip Dry, 1934) and pioneered commercial Late Bottled Vintage port in 1970. Quinta de Vargellas, purchased in 1893, remains the heart of its vintage blends.",
+      faqs: [
+        { question: 'Is Taylor port sweet?', answer: "Yes — all Taylor Fladgate styles carry noticeable natural sweetness from fortification, though the Ruby and LBV read fresher and fruitier, while the Tawny range (10, 20, and 40 Year Old here) develops deeper, nuttier, dried-fruit character with age." },
+        { question: "What's the difference between Ruby and Vintage port at Taylor Fladgate?", answer: "First Estate Reserve Ruby is an easy-drinking, non-vintage blend meant for everyday enjoyment; true Vintage Port is only declared in exceptional years from top vineyards like Quinta de Vargellas." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'lustau', brandKeywords: ['Lustau'], name: 'Lustau',
+    seo: brandSeo({
+      brand: 'Lustau', categoryLabel: 'Sherry',
+      titleTag: 'Lustau — Pedro Ximénez & Solera Sherry',
+      h1: 'Lustau Sherry — East India Solera & Pedro Ximénez Allocations',
+      metaDescription: 'Buy Lustau Sherry online — East India Solera and San Emilio Pedro Ximénez from Jerez de la Frontera. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Bodegas Lustau traces to 1896 and the almacenista (private sherry warehouseman) tradition in Jerez de la Frontera — small producers who aged and sold sherry to larger houses before Emilio Lustau Ortego began bottling under his own name in 1945. Lustau today produces over 40 distinct sherries across its Solera Familiar range, more breadth than almost any other house in Jerez.',
+      faqs: [
+        { question: 'Is sherry sweet?', answer: 'It depends entirely on style: fino and manzanilla are bone-dry, oloroso and amontillado range dry to off-dry, and Pedro Ximénez — like Lustau’s East India Solera and San Emilio — is intensely sweet.' },
+        { question: 'How is sherry made?', answer: 'Sherry is fortified after fermentation, then aged either under a biological layer of flor yeast (fino styles) or oxidatively without it (oloroso styles), often blended through a solera fractional-aging system that combines multiple vintages.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'gonzalez-byass', brandKeywords: ['González Byass', 'Gonzalez Byass'], name: 'González Byass',
+    seo: brandSeo({
+      brand: 'González Byass', categoryLabel: 'Sherry',
+      titleTag: 'González Byass — Néctar Pedro Ximénez Sherry',
+      h1: 'González Byass Néctar Pedro Ximénez Sherry Allocations',
+      metaDescription: 'Buy González Byass Néctar Pedro Ximénez Sherry online — from the Jerez house behind Tío Pepe. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1835 by Manuel María González, González Byass is the Jerez house behind Tío Pepe — Spain’s first registered trademark, 1888 — and remains the only Jerez producer to grow its own Pedro Ximénez grapes, which go directly into wines like the Néctar carried here. The house has also owned the Croft sherry brand since 2001.',
+      faqs: [
+        { question: 'Is Néctar Pedro Ximénez sweet?', answer: 'Yes — Néctar is one of the richest, sweetest styles in the category, averaging roughly 10 years of age and made from PX grapes grown on the estate’s own vineyards.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'inniskillin', brandKeywords: ['Inniskillin'], name: 'Inniskillin',
+    seo: brandSeo({
+      brand: 'Inniskillin', categoryLabel: 'Icewine',
+      titleTag: 'Inniskillin — Vidal & Cabernet Franc Icewine',
+      h1: 'Inniskillin Icewine — Vidal & Cabernet Franc Allocations',
+      metaDescription: 'Buy Inniskillin Icewine online — Vidal and Cabernet Franc Icewine from Niagara-on-the-Lake, Canada. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Founded in 1975 by Donald Ziraldo and Karl Kaiser as the first winery license issued in Canada since Prohibition, Inniskillin made history in 1984 when Kaiser netted the vines against birds and produced the winery’s first Vidal icewine. The 1991 Vinexpo Grand Prix d’Honneur for that wine put Canadian icewine on the world map for good.',
+      faqs: [
+        { question: 'How is icewine made?', answer: 'Grapes are left on the vine into winter and pressed while still frozen, typically at or below -8°C, concentrating sugar and acidity into a small, intensely flavored yield.' },
+        { question: 'What grape is Inniskillin Icewine made from?', answer: 'Vidal and Cabernet Franc are both real, established Inniskillin icewine varietals — Vidal is the classic, more widely produced style, while Cabernet Franc yields a rarer, red-fruited icewine.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'frey', brandKeywords: ['Frey', 'Frey Vineyards'], name: 'Frey Vineyards',
+    seo: brandSeo({
+      brand: 'Frey', categoryLabel: 'Organic Wine',
+      titleTag: 'Frey Vineyards — Organic & Natural Wine',
+      h1: 'Frey Vineyards — Organic Natural Red Blend & Pinot Noir Allocations',
+      metaDescription: "Buy Frey Vineyards wine online — America's first organic winery, Natural Red Blend and Pinot Noir. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Frey Vineyards, in Redwood Valley, Mendocino County, became America's first organic winery in 1980 when Katrina and Jonathan Frey made their first barrel and joined California Certified Organic Farmers the same year. Frey added Demeter Biodynamic certification in 1996 and helped make Mendocino the first US jurisdiction to ban GMO cultivation.",
+      faqs: [
+        { question: "Is Frey really America's first organic winery?", answer: 'Yes — Frey and a handful of other Mendocino family vineyards were the first in the US to make wine from certified-organic grapes, starting in 1980.' },
+        { question: 'Does Frey wine have added sulfites?', answer: "Frey's wines are produced without added sulfites, in keeping with its natural, no-manipulation winemaking philosophy." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'bonterra', brandKeywords: ['Bonterra'], name: 'Bonterra',
+    seo: brandSeo({
+      brand: 'Bonterra', categoryLabel: 'Organic Wine',
+      titleTag: 'Bonterra — Organic Cabernet, Chardonnay, Merlot & Sauvignon Blanc',
+      h1: "Bonterra Organic Wine — America's #1 Organic Winery Allocations",
+      metaDescription: 'Buy Bonterra organic wine online — Cabernet Sauvignon, Chardonnay, Merlot, and Sauvignon Blanc from America’s #1 organic winery. Direct allocations. Free on $300+.',
+      hook: "Founded by Barney Fetzer in Mendocino County in 1987, with its first certified-organic vintage in 1993, Bonterra is now America's #1 organic winery and, as of 2021, the largest Regenerative Organic Certified winery in the world. Its McNab Ranch estate — a former sheep farm — has been certified biodynamic since 1996.",
+      faqs: [
+        { question: "Is Bonterra really organic, or just 'made with organic grapes'?", answer: "Bonterra holds full USDA organic certification across its estate vineyards and markets itself as America's #1 organic winery." },
+        { question: 'What does Regenerative Organic Certified mean?', answer: 'A step beyond standard organic certification, covering soil health, animal welfare, and farmworker fairness — Bonterra is the largest ROC-certified winery in the world.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'emiliana', brandKeywords: ['Emiliana', 'Emiliana Natura'], name: 'Emiliana',
+    seo: brandSeo({
+      brand: 'Emiliana', categoryLabel: 'Organic Wine',
+      titleTag: 'Emiliana Natura — Organic & Biodynamic Vegan Wine',
+      h1: 'Emiliana Natura — Organic Cabernet Sauvignon & Chardonnay Allocations',
+      metaDescription: 'Buy Emiliana Natura wine online — organic, vegan Cabernet Sauvignon and Chardonnay from Chile’s largest certified organic and biodynamic winery. Free on $300+.',
+      hook: "Founded in 1986 by brothers Rafael and José Guilisasti as Bodegas y Viñedos Santa Emiliana, the company converted its best Casablanca, Maipo, and Colchagua Valley vineyards to organic farming that same year. Its 2003 “Gê” release was the first biodynamic wine made anywhere in Chile or Latin America, and Emiliana is now the largest certified organic and biodynamic winery on the planet.",
+      faqs: [
+        { question: 'Is Emiliana Natura vegan?', answer: 'Yes — the Natura line is produced without animal-derived fining agents.' },
+        { question: "What's the difference between organic and biodynamic at Emiliana?", answer: 'All Emiliana vineyards are certified organic; select lots, like the flagship Gê and Coyam labels, are additionally certified biodynamic under Demeter.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'avaline', brandKeywords: ['Avaline'], name: 'Avaline',
+    seo: brandSeo({
+      brand: 'Avaline', categoryLabel: 'Organic Wine',
+      titleTag: 'Avaline — Organic Vegan Wine, Red, White & Rosé',
+      h1: 'Avaline Organic Wine — Red, White & Rosé Allocations',
+      metaDescription: 'Buy Avaline organic wine online — Red, White, and Rosé, made from 100% organic grapes with no added sugar. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Launched in 2020 by actress Cameron Diaz and Katherine Power (founder of Who What Wear, Versed, and Merit), Avaline was built around a simple complaint: wine is one of the only widely consumed products sold with no ingredient list. All three colors are made from 100% organic grapes with no added sugar, produced in partnership with established vintners in California and Spain.",
+      faqs: [
+        { question: 'Is Avaline wine actually organic?', answer: "Yes — made from 100% organic grapes, and the brand publishes full ingredient transparency on its site, unusual for the wine category." },
+        { question: 'Who founded Avaline?', answer: 'Cameron Diaz and Katherine Power co-founded the brand in 2020; neither is a winemaker themselves, so Avaline is produced in partnership with established vineyards in California and Spain.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'stella-rosa', brandKeywords: ['Stella Rosa'], name: 'Stella Rosa',
+    seo: brandSeo({
+      brand: 'Stella Rosa', categoryLabel: 'Wine',
+      titleTag: "Stella Rosa — Moscato d'Asti & Rosé",
+      h1: "Stella Rosa — Moscato d'Asti, Pink & Strawberry Rosé Allocations",
+      metaDescription: "Buy Stella Rosa wine online — Moscato d'Asti, Pink Rosé, and Strawberry Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: "Produced by Los Angeles' San Antonio Winery — one of the oldest continuously operating wineries in California, having survived Prohibition under a sacramental-wine exemption — Stella Rosa built a large, flavor-driven semi-sweet lineup that has become one of the best-known “gateway” wine brands in the US.",
+      faqs: [
+        { question: 'Is Stella Rosa a good wine?', answer: "It's a semi-sweet, low-ABV, easy-drinking style aimed at newer wine drinkers rather than a dry, high-tannin bottle — “good” depends on what you're looking for, and it delivers well for its category." },
+        { question: 'How much alcohol is in Stella Rosa?', answer: 'Typically lower-ABV than standard table wine, in the 5–7% range depending on the flavor.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'fine-wine', hubSlug: 'whispering-angel', brandKeywords: ['Whispering Angel', "Château d'Esclans", 'Chateau d’Esclans', 'The Palm'], name: 'Whispering Angel / Château d’Esclans',
+    seo: brandSeo({
+      brand: 'Whispering Angel', categoryLabel: 'Rosé',
+      titleTag: 'Whispering Angel — Château d’Esclans Rosé',
+      h1: 'Whispering Angel, The Palm & Rock Angel — Château d’Esclans Rosé Allocations',
+      metaDescription: 'Buy Whispering Angel, The Palm, and Rock Angel online — Provence rosé from Château d’Esclans. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Sacha Lichine bought the historic Château d'Esclans — gifted in 1201 by the Comte de Provence — in 2005 with the explicit goal of making the world's greatest rosé, an effort credited with sparking the modern “Rosé Renaissance.” Production of Whispering Angel alone grew from roughly 100,000 bottles in its 2006 debut vintage to well over 5 million bottles a year today, under LVMH ownership since 2019.",
+      faqs: [
+        { question: 'What is Whispering Angel?', answer: 'The entry-level, dry Côtes de Provence rosé from Château d’Esclans — the wine most responsible for popularizing pale, dry Provençal rosé in the US market.' },
+        { question: "What's the difference between Whispering Angel and The Palm?", answer: 'The Palm by Whispering Angel is a lighter, fruitier, more casual sibling wine at a lower price point, made for easy warm-weather drinking rather than the more structured flagship. Rock Angel sits above Whispering Angel, with more concentration and barrel-fermented components.' },
+        { question: 'Is Whispering Angel rosé sweet?', answer: 'No — it’s a dry Provençal-style rosé, though its ripe fruit character reads as approachable to newer rosé drinkers.' },
+      ],
+    }),
+  },
 ];
