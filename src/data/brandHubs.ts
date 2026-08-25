@@ -1777,6 +1777,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Grey Goose Vodka — Picardie Wheat & Flavored Allocations',
       metaDescription: 'Buy Grey Goose online — French Picardie wheat vodka, filtered through Champagne limestone. Direct allocations at Aged & Amber. Free $300+.',
       hook: 'Grey Goose is distilled in France from single-origin Picardie winter wheat and filtered through Champagne limestone, positioned since its 1997 launch as a premium French alternative to Russian and Polish vodka.',
+      faqs: [
+        { question: 'What is Grey Goose VX?', answer: "Grey Goose VX is a limited, richer expression finished with a touch of Cognac eau de vie — it is not currently part of our allocation. We carry the original Grey Goose, plus the L'Orange and La Poire flavored expressions." },
+        { question: 'What is the best Grey Goose cocktail?', answer: "Grey Goose's clean, smooth profile makes it a popular base for a classic vodka martini, and its flavored expressions — L'Orange and La Poire — work well in citrus- or pear-forward cocktails and spritzes." },
+      ],
     }),
   },
   {
@@ -1797,6 +1801,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Cîroc Vodka — French Grape-Distilled Allocations',
       metaDescription: 'Buy Cîroc online — distilled from French grapes for a smoother, fruit-forward character. Direct allocations at Aged & Amber. Free on $300+.',
       hook: 'Cîroc is distilled from French grapes rather than the grain or potato base used by most vodkas, giving it a naturally smoother, subtly fruit-forward character.',
+      faqs: [
+        { question: 'Who owns Cîroc?', answer: "Cîroc is owned by Diageo, with music executive Sean 'Diddy' Combs holding a longtime marketing and equity partnership in the brand that has shaped much of its cultural profile." },
+        { question: 'What other Cîroc flavors exist?', answer: "Cîroc's wider range includes Apple, Coconut, Mango, and Watermelon, among others — we currently carry Peach, Pineapple, Red Berry, and the unflavored Ultra-Premium." },
+      ],
     }),
   },
   {
@@ -1807,6 +1815,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Belvedere Vodka — Polish Single Estate Rye Allocations',
       metaDescription: 'Buy Belvedere online — quadruple-distilled Polish rye vodka from a single estate. Direct allocations at Aged & Amber. Free shipping $300+.',
       hook: 'Belvedere is a Polish rye vodka distilled from a single estate rye grain, quadruple distilled for exceptional purity — one of the first vodkas marketed as ultra-premium when it launched internationally in the 1990s.',
+      faqs: [
+        { question: 'Is Belvedere vodka gluten free?', answer: 'Belvedere is distilled from 100% Dankowskie rye, a gluten-containing grain. Distillation removes proteins, and most people with gluten sensitivity tolerate distilled spirits fine, but Belvedere is not certified gluten-free the way corn- or potato-based vodkas often are.' },
+        { question: 'How does Belvedere compare to Grey Goose?', answer: 'Both are premium single-origin vodkas, but Belvedere is distilled from Polish rye while Grey Goose uses French winter wheat — Belvedere tends to read slightly spicier and fuller-bodied, while Grey Goose is prized for an especially soft, rounded finish.' },
+      ],
     }),
   },
   {
@@ -1817,6 +1829,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Ketel One Vodka — Dutch Copper Pot Still Allocations',
       metaDescription: 'Buy Ketel One online — Dutch vodka distilled by the Nolet family since 1691. Direct allocations at Aged & Amber. Free shipping on $300+.',
       hook: 'Ketel One is distilled by the Nolet family, who have made spirits in the Netherlands since 1691 — a blend of column-distilled and traditional copper pot still spirit gives it a distinctively smooth, wheat-forward character.',
+      faqs: [
+        { question: 'Does Ketel One make an Espresso Martini?', answer: "Ketel One's clean wheat vodka is a popular base for an Espresso Martini, and the brand markets a ready-to-drink Espresso Martini alongside its vodka range." },
+        { question: 'What Ketel One Botanicals flavors exist?', answer: "Ketel One Botanicals also makes a Peach and Orange Blossom expression — it is not currently part of our allocation. We carry Cucumber and Mint and Grapefruit and Rose, alongside the original Ketel One Vodka." },
+      ],
     }),
   },
   {
@@ -1827,16 +1843,255 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Crystal Head Vodka — Herkimer Diamond Filtered Allocations',
       metaDescription: 'Buy Crystal Head online — Dan Aykroyd’s skull-bottle vodka, filtered through Herkimer diamond crystal. Direct allocations. Free on $300+.',
       hook: 'Crystal Head, co-founded by actor Dan Aykroyd, is instantly recognisable for its skull-shaped bottle — the vodka itself is filtered through layers of Herkimer diamond crystal.',
+      faqs: [
+        { question: 'What is Crystal Head Aurora or Onyx?', answer: 'Aurora and Onyx are limited-edition colorway releases of the Crystal Head skull bottle — neither is currently part of our allocation. We carry the original Crystal Head Vodka and the John Alexander Art Edition.' },
+      ],
     }),
   },
   {
-    categorySlug: 'craft-vodka', hubSlug: 'stolichnaya', brandKeywords: ['Stolichnaya', 'Stoli'], name: 'Stolichnaya',
+    categorySlug: 'craft-vodka', hubSlug: 'stolichnaya', brandKeywords: ['Stolichnaya', 'Stoli', 'Elit'], name: 'Stolichnaya',
     seo: brandSeo({
       brand: 'Stolichnaya', categoryLabel: 'Vodka',
-      titleTag: 'Stolichnaya — Russian Wheat Vodka',
-      h1: 'Stolichnaya Vodka — Russian Winter Wheat Allocations',
-      metaDescription: 'Buy Stolichnaya online — Russian winter wheat vodka, filtered through quartz sand and charcoal. Direct allocations at Aged & Amber. Free $300+.',
-      hook: 'Stolichnaya, commonly called "Stoli," is one of the most internationally recognised vodka names, distilled from Russian winter wheat and traditionally filtered through quartz sand and charcoal.',
+      titleTag: 'Stolichnaya Elit — Freeze-Filtered Vodka',
+      h1: 'Stolichnaya Elit Vodka — Freeze-Filtered Allocations',
+      metaDescription: 'Buy Stolichnaya Elit online — Stoli\'s ultra-premium, freeze-filtered wheat and rye vodka. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Stolichnaya, commonly called "Stoli," is one of the most internationally recognised vodka names. We carry Elit, Stoli\'s ultra-premium tier — distilled from wheat and rye, then freeze-filtered at sub-zero temperatures for a noticeably silkier, more refined finish than the standard bottling.',
+      faqs: [
+        { question: 'What makes Stolichnaya Elit different from standard Stoli?', answer: 'Elit goes through an additional freeze-filtration step — chilled to sub-zero temperatures and passed through fine particles to strip impurities without dulling flavor — producing a richer, silkier vodka than Stolichnaya\'s standard bottling.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'absolut', brandKeywords: ['Absolut'], name: 'Absolut',
+    seo: brandSeo({
+      brand: 'Absolut', categoryLabel: 'Vodka',
+      titleTag: 'Absolut — Swedish Wheat Vodka & Flavors',
+      h1: 'Absolut Vodka — Citron, Mango, Raspberri, Vanilia & Original Allocations',
+      metaDescription: 'Buy Absolut online — Swedish wheat vodka in Citron, Mango, Raspberri, Vanilia, and the original. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Absolut has been distilled in the small Swedish town of Åhus since 1879, continuously distilled from local winter wheat with no added sugar — one of the world's best-selling vodkas and one of the brands that built the modern flavored-vodka category.",
+      faqs: [
+        { question: 'What is Absolut Elyx?', answer: "Absolut Elyx is the brand's premium, single-estate copper-still-distilled line — it is not currently part of our allocation. We carry the classic Absolut range, including Citron, Mango, Raspberri, and Vanilia." },
+        { question: 'Where is Absolut vodka made?', answer: 'All Absolut vodka sold worldwide is distilled in one place: Åhus, in southern Sweden, using locally grown winter wheat and the town\'s own well water.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'chopin', brandKeywords: ['Chopin'], name: 'Chopin',
+    seo: brandSeo({
+      brand: 'Chopin', categoryLabel: 'Vodka',
+      titleTag: 'Chopin — Polish Potato Vodka',
+      h1: 'Chopin Potato Vodka — Single-Estate Polish Allocations',
+      metaDescription: 'Buy Chopin Potato Vodka online — single-estate Polish potato vodka with a full-bodied, creamy character. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Chopin is distilled in the Podlasie region of Poland from Stobrawa potatoes grown on a single estate, giving it a fuller-bodied, silkier texture than grain-based vodkas — one of the few major brands built entirely around the potato style.",
+      faqs: [
+        { question: 'Does Chopin make a rye or wheat vodka?', answer: "Yes — Chopin also produces Rye and Wheat expressions alongside its flagship Potato vodka, each distilled from a single grain type. We currently carry the Potato vodka, the brand's signature bottling." },
+        { question: 'What makes potato vodka different from grain vodka?', answer: 'Potato vodka tends to have a fuller body and a slightly creamier, earthier texture than grain vodka, since potatoes carry more natural oils and starches through distillation. Chopin Potato is widely considered a benchmark example of the style.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'deep-eddy', brandKeywords: ['Deep Eddy'], name: 'Deep Eddy',
+    seo: brandSeo({
+      brand: 'Deep Eddy', categoryLabel: 'Vodka',
+      titleTag: 'Deep Eddy — Austin, Texas Flavored Vodka',
+      h1: 'Deep Eddy Vodka — Lemon, Ruby Red & Sweet Tea Allocations',
+      metaDescription: 'Buy Deep Eddy online — Austin, Texas vodka in Lemon, Ruby Red, and Sweet Tea. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Deep Eddy is distilled from corn in Austin, Texas and named for the city's historic swimming hole — its flavored line, led by Lemon, helped popularize flavored vodka as its own category among American craft brands.",
+      faqs: [
+        { question: 'Is Deep Eddy Vodka still in business?', answer: "Yes. Owner Heaven Hill Brands is closing Deep Eddy's Dripping Springs tasting room, which hasn't served as a working distillery since 2017 — all Deep Eddy production continues at the brand's Austin-area facility with no change to output or staffing." },
+        { question: 'What other Deep Eddy flavors exist?', answer: 'Beyond Lemon, Ruby Red, and Sweet Tea, Deep Eddy also makes Grapefruit, Pineapple, Lime, Orange, and Peach — we currently carry Lemon, Ruby Red, and Sweet Tea.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'haku', brandKeywords: ['Haku'], name: 'Haku',
+    seo: brandSeo({
+      brand: 'Haku', categoryLabel: 'Vodka',
+      titleTag: 'Haku — Suntory Japanese Rice Vodka',
+      h1: 'Haku Japanese Craft Vodka — Rice-Distilled Allocations',
+      metaDescription: 'Buy Haku online — Suntory\'s Japanese craft vodka, distilled from white rice and filtered through bamboo charcoal. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Haku is Suntory\'s Japanese craft vodka, distilled from 100% white rice and polished through bamboo charcoal filtration — a distinctly Japanese take on vodka that trades grain or potato for rice as its base.',
+      faqs: [
+        { question: 'What makes Haku different from other vodkas?', answer: "Haku is distilled entirely from white rice rather than grain or potato, then filtered through bamboo charcoal — techniques drawn from Suntory's whisky-making heritage — for a delicately sweet, silky character." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'new-amsterdam', brandKeywords: ['New Amsterdam'], name: 'New Amsterdam',
+    seo: brandSeo({
+      brand: 'New Amsterdam', categoryLabel: 'Vodka',
+      titleTag: 'New Amsterdam — American Vodka & Flavors',
+      h1: 'New Amsterdam Vodka — Peach, Pineapple, Watermelon & Original Allocations',
+      metaDescription: 'Buy New Amsterdam online — five-times-distilled American vodka in Peach, Pineapple, Watermelon, and the original. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'New Amsterdam is distilled five times and filtered three times from a corn-and-grain blend at its Modesto, California facility, built for clean, reliably mixable everyday drinking.',
+      faqs: [
+        { question: 'Does New Amsterdam make Pink Whitney?', answer: "Pink Whitney is a separate, hugely popular New Amsterdam collaboration with comedian Whitney Cummings — it is not currently part of our allocation. We carry the core New Amsterdam range: Peach, Pineapple, Watermelon, and the original." },
+        { question: 'What other New Amsterdam flavors exist?', answer: 'Beyond our range, New Amsterdam also produces Citron, Coconut, Mango, Raspberry, and Grapefruit — we currently carry Peach, Pineapple, Watermelon, and the unflavored original.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'pinnacle', brandKeywords: ['Pinnacle'], name: 'Pinnacle',
+    seo: brandSeo({
+      brand: 'Pinnacle', categoryLabel: 'Vodka',
+      titleTag: 'Pinnacle — French Wheat Vodka',
+      h1: 'Pinnacle Vodka — Five-Times-Distilled French Wheat Allocations',
+      metaDescription: 'Buy Pinnacle Vodka online — French wheat vodka distilled five times at the Distillerie de la Tour. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Pinnacle is distilled five times from French wheat at the Distillerie de la Tour in France's Charente region and charcoal filtered, delivering approachable smoothness at an everyday price.",
+      faqs: [
+        { question: 'Does Pinnacle make flavored vodkas like Whipped Cream or Cotton Candy?', answer: "Yes — Pinnacle's flavor lineup is one of the largest in the category, including Whipped Cream, Cotton Candy, and Birthday Cake. We currently carry the classic unflavored Pinnacle Vodka; those flavors are not part of our allocation." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'reyka', brandKeywords: ['Reyka'], name: 'Reyka',
+    seo: brandSeo({
+      brand: 'Reyka', categoryLabel: 'Vodka',
+      titleTag: 'Reyka — Lava-Filtered Icelandic Vodka',
+      h1: 'Reyka Icelandic Vodka — Lava Rock-Filtered Allocations',
+      metaDescription: 'Buy Reyka online — Icelandic vodka distilled with geothermal energy and filtered through local lava rock. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Reyka is distilled in Borgarnes, Iceland from wheat and barley, using geothermal energy to power the stills and Icelandic lava rock to filter the final spirit for a clean, mineral character.',
+      faqs: [
+        { question: 'What makes Reyka an Icelandic vodka?', answer: 'Reyka is distilled and filtered entirely in Iceland — the stills run on geothermal energy and the spirit is filtered through local lava rock, both distinctly Icelandic touches that shape its clean, cool profile.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'smirnoff', brandKeywords: ['Smirnoff'], name: 'Smirnoff',
+    seo: brandSeo({
+      brand: 'Smirnoff', categoryLabel: 'Vodka',
+      titleTag: 'Smirnoff — No. 21 & Flavored Vodka',
+      h1: 'Smirnoff Vodka — No. 21, Peach, Raspberry & Strawberry Allocations',
+      metaDescription: "Buy Smirnoff online — the world's best-selling vodka, No. 21 plus Peach, Raspberry, and Strawberry. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Smirnoff No. 21 follows a recipe dating to 1864, triple distilled and filtered through charcoal ten times for the dry, crisp neutrality that has made it the world's best-selling vodka.",
+      faqs: [
+        { question: 'What other Smirnoff flavors exist?', answer: 'Smirnoff produces a large flavored lineup beyond our range, including Green Apple, Whipped Cream, Vanilla, Kissed Caramel, and Watermelon — we currently carry No. 21, Peach, Raspberry, and Strawberry.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'sobieski', brandKeywords: ['Sobieski'], name: 'Sobieski',
+    seo: brandSeo({
+      brand: 'Sobieski', categoryLabel: 'Vodka',
+      titleTag: 'Sobieski — Polish Rye Vodka',
+      h1: 'Sobieski Vodka — 100% Polish Rye Allocations',
+      metaDescription: 'Buy Sobieski online — 95-point Polish rye vodka distilled from a single grain estate. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Sobieski is distilled at Destylarnia Sobieski in Starogard Gdański from 100% Dankowskie rye grown on the distillery's own farmland, quadruple distilled for a smooth, distinctly rye-forward character that has earned critical scores among the world's best vodkas at a value price.",
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'svedka', brandKeywords: ['Svedka'], name: 'Svedka',
+    seo: brandSeo({
+      brand: 'Svedka', categoryLabel: 'Vodka',
+      titleTag: 'Svedka — Swedish Wheat Vodka & Flavors',
+      h1: 'Svedka Vodka — Mango Pineapple, Strawberry Lemonade & Original Allocations',
+      metaDescription: 'Buy Svedka online — imported Swedish wheat vodka in Mango Pineapple, Strawberry Lemonade, and the original. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Svedka is continuously distilled from Swedish winter wheat and filtered for clarity, delivering a clean, neutral profile that has made it one of the top-selling imported vodkas in the U.S.',
+      faqs: [
+        { question: 'What other Svedka flavors exist?', answer: 'Svedka\'s wider range includes Blue Raspberry, Clementine, Cucumber Lime, and Cherry Limeade — we currently carry Mango Pineapple, Strawberry Lemonade, and the unflavored original.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'wheatley', brandKeywords: ['Wheatley'], name: 'Wheatley',
+    seo: brandSeo({
+      brand: 'Wheatley', categoryLabel: 'Vodka',
+      titleTag: 'Wheatley — Buffalo Trace Vodka',
+      h1: 'Wheatley Vodka — Buffalo Trace Distillery Allocations',
+      metaDescription: 'Buy Wheatley Vodka online — a premium wheat-and-corn vodka distilled at Buffalo Trace. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Wheatley Vodka is distilled at Buffalo Trace Distillery in Frankfort, Kentucky from a wheat-and-corn blend and bottled at a slightly higher 82 proof — named for master distiller Harlen Wheatley.",
+      faqs: [
+        { question: 'Who is Wheatley named after?', answer: "Wheatley Vodka is named for Harlen Wheatley, Buffalo Trace's longtime master distiller, who also oversees the distillery's bourbon and whiskey production." },
+        { question: 'Is there a Wheatley Vodka x Cody Rhodes release?', answer: 'Yes — Buffalo Trace released a limited Wheatley Vodka collaboration bottle with WWE star Cody Rhodes. Availability of that specific release varies; our core allocation is the standard Wheatley Vodka.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'luksusowa', brandKeywords: ['Luksusowa'], name: 'Luksusowa',
+    seo: brandSeo({
+      brand: 'Luksusowa', categoryLabel: 'Vodka',
+      titleTag: 'Luksusowa — Polish Potato Vodka Since 1928',
+      h1: 'Luksusowa Potato Vodka — Polish Allocations Since 1928',
+      metaDescription: 'Buy Luksusowa online — 100% Polish potato vodka distilled since 1928. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Luksusowa — Polish for "luxurious" — has been distilled from 100% Polish potatoes since 1928, using traditional methods that preserve the earthy richness potato vodkas are known for.',
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'broken-shed', brandKeywords: ['Broken Shed'], name: 'Broken Shed',
+    seo: brandSeo({
+      brand: 'Broken Shed', categoryLabel: 'Vodka',
+      titleTag: 'Broken Shed — New Zealand Whey-Distilled Vodka',
+      h1: 'Broken Shed Vodka — New Zealand Whey-Distilled Allocations',
+      metaDescription: 'Buy Broken Shed online — a creamy, whey-distilled vodka handcrafted in Wanaka, New Zealand. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Broken Shed is handcrafted in Wanaka, New Zealand and distilled from whey rather than grain or potato — a rare choice that lends a naturally soft, creamy mouthfeel — then cut with mineral-rich South Island water and filtered North Island spring water.',
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'prairie-organic', brandKeywords: ['Prairie Organic', 'Prairie'], name: 'Prairie Organic',
+    seo: brandSeo({
+      brand: 'Prairie Organic', categoryLabel: 'Vodka',
+      titleTag: 'Prairie Organic — Minnesota Organic Corn Vodka',
+      h1: 'Prairie Organic Vodka — Certified Organic Corn Allocations',
+      metaDescription: 'Buy Prairie Organic Vodka online — certified organic corn vodka distilled in Minnesota. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Prairie Organic is distilled in Princeton, Minnesota from certified organic corn, prized for a subtly sweet, approachable profile among the small field of organic-certified vodka brands.',
+      faqs: [
+        { question: 'Does Prairie Organic make a cucumber vodka?', answer: 'Yes — Prairie also produces an organic Cucumber vodka, a real line extension not currently part of our allocation. We carry the flagship unflavored Prairie Organic Vodka.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'hanson-of-sonoma', brandKeywords: ['Hanson of Sonoma', 'Hanson'], name: 'Hanson of Sonoma',
+    seo: brandSeo({
+      // No SEMrush volume data found for this brand — sourced via WebSearch, generic/inferred keywords, not volume-backed.
+      brand: 'Hanson of Sonoma', categoryLabel: 'Vodka',
+      titleTag: 'Hanson of Sonoma — Organic Grape Vodka',
+      h1: 'Hanson of Sonoma Organic Vodka — California Grape-Distilled Allocations',
+      metaDescription: 'Buy Hanson of Sonoma online — small-batch organic grape vodka distilled in the Carneros region of Sonoma, California. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Hanson of Sonoma is a family-owned distillery in Sonoma's Carneros region, distilling small-batch vodka from organic Sauvignon Blanc, Chardonnay, and French Colombard grapes — one of the first spirits producers in the U.S. to offer a certified non-GMO product.",
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'woody-creek-distillers', brandKeywords: ['Woody Creek', 'Woody Creek Distillers'], name: 'Woody Creek Distillers',
+    seo: brandSeo({
+      // No SEMrush volume data found for this brand — sourced via WebSearch, generic/inferred keywords, not volume-backed.
+      brand: 'Woody Creek Distillers', categoryLabel: 'Vodka',
+      titleTag: 'Woody Creek Distillers — Colorado Potato Vodka',
+      h1: 'Woody Creek Distillers Potato Vodka — Colorado-Grown Allocations',
+      metaDescription: 'Buy Woody Creek Distillers Potato Vodka online — distilled from potatoes grown on the distillery\'s own Colorado farms. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Woody Creek Distillers, based in Basalt, Colorado since 2012, grows its own potatoes on Colorado farmland — including a rare Polish Stobrawa variety it received special USDA approval to cultivate — and distills them once in a custom column still for a full-bodied, velvety vodka.",
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'blue-ice', brandKeywords: ['Blue Ice'], name: 'Blue Ice',
+    seo: brandSeo({
+      // No SEMrush volume data found for this brand — sourced via WebSearch, generic/inferred keywords, not volume-backed.
+      brand: 'Blue Ice', categoryLabel: 'Vodka',
+      titleTag: 'Blue Ice — Idaho Potato Vodka',
+      h1: 'Blue Ice Potato Vodka — Idaho-Distilled Allocations',
+      metaDescription: 'Buy Blue Ice Potato Vodka online — distilled from Idaho Russet potatoes and filtered five times. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Blue Ice is distilled by 21st Century Spirits in Rigby, Idaho from local Russet potatoes and cut with water drawn from the Snake River Aquifer, then filtered five times for a smooth, creamy character.',
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'boyd-blair', brandKeywords: ['Boyd & Blair', 'Boyd and Blair'], name: 'Boyd & Blair',
+    seo: brandSeo({
+      // No SEMrush volume data found for this brand — sourced via WebSearch, generic/inferred keywords, not volume-backed.
+      brand: 'Boyd & Blair', categoryLabel: 'Vodka',
+      titleTag: 'Boyd & Blair — Pennsylvania Potato Vodka',
+      h1: 'Boyd & Blair Potato Vodka — Pennsylvania Craft Allocations',
+      metaDescription: 'Buy Boyd & Blair Potato Vodka online — small-batch Pennsylvania potato vodka, hand-bottled and hearts-only distilled. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Boyd & Blair is distilled in Glenshaw, Pennsylvania from locally grown potatoes using a strict hearts-only bottling policy — discarding both the heads and tails of the distillate for purity over yield — and has been ranked among the world's top vodkas by the Spirit Journal.",
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'crop', brandKeywords: ['Crop'], name: 'Crop',
+    seo: brandSeo({
+      // No SEMrush volume data found for this brand — sourced via WebSearch, generic/inferred keywords, not volume-backed.
+      brand: 'Crop', categoryLabel: 'Vodka',
+      titleTag: 'Crop — Organic Artisanal Vodka',
+      h1: 'Crop Organic Vodka — USDA-Certified Minnesota Allocations',
+      metaDescription: 'Buy Crop Organic Vodka online — USDA-certified organic, gluten-free artisanal vodka distilled in Minnesota. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Crop Harvest Earth distills its Artisanal Vodka from certified organic grain in Princeton, Minnesota, using additive-free methods and grain grown without artificial fertilizers or pesticides — prized for a light, clean, precise character.',
     }),
   },
 

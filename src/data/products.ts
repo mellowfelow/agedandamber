@@ -8095,6 +8095,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Winter Wheat",
     distilleryLocation: "Åhus, Sweden",
+    seo: {
+      primaryKeyword: "absolut citron vodka",
+      secondaryKeywords: ["citron vodka absolut", "absolut vodka flavors", "absolut vodka price", "citron flavored vodka"],
+    },
   },
   {
     id: 'prod-vodka-02',
@@ -8119,6 +8123,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Winter Wheat",
     distilleryLocation: "Åhus, Sweden",
+    seo: {
+      primaryKeyword: "absolut mango vodka",
+      secondaryKeywords: ["absolut vodka flavors", "mango flavored vodka", "absolut vodka price"],
+    },
   },
   {
     id: 'prod-vodka-03',
@@ -8143,6 +8151,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Winter Wheat",
     distilleryLocation: "Åhus, Sweden",
+    seo: {
+      primaryKeyword: "absolut raspberri vodka",
+      secondaryKeywords: ["absolut vodka flavors", "raspberry flavored vodka", "absolut vodka price"],
+    },
   },
   {
     id: 'prod-vodka-04',
@@ -8167,6 +8179,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Winter Wheat",
     distilleryLocation: "Åhus, Sweden",
+    seo: {
+      primaryKeyword: "absolut vodka",
+      secondaryKeywords: ["absolut vodka price", "absolut vodka flavors", "swedish vodka brands", "absolut vodka review"],
+    },
   },
   {
     id: 'prod-vodka-05',
@@ -8191,6 +8207,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Organic Polish Rye",
     distilleryLocation: "Żyrardów, Poland",
+    seo: {
+      primaryKeyword: "belvedere organic vodka",
+      secondaryKeywords: ["belvedere vodka", "belvedere cost", "is belvedere vodka gluten free", "belvedere vodka vs grey goose"],
+    },
   },
   {
     id: 'prod-vodka-06',
@@ -8215,6 +8235,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Potato",
     distilleryLocation: "Krzesk, Poland",
+    seo: {
+      primaryKeyword: "chopin potato vodka",
+      secondaryKeywords: ["chopin vodka", "chopin polish vodka", "polish potato vodka", "chopin vodka price", "chopin vodka review"],
+    },
   },
   {
     id: 'prod-vodka-07',
@@ -8239,6 +8263,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Grapes",
     distilleryLocation: "Southern France",
+    seo: {
+      primaryKeyword: "peach ciroc",
+      secondaryKeywords: ["ciroc flavors", "ciroc vodka flavors", "ciroc vodka"],
+    },
   },
   {
     id: 'prod-vodka-08',
@@ -8263,6 +8291,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Grapes",
     distilleryLocation: "Southern France",
+    seo: {
+      primaryKeyword: "pineapple ciroc",
+      secondaryKeywords: ["ciroc flavors", "ciroc vodka flavors", "ciroc vodka"],
+    },
   },
   {
     id: 'prod-vodka-09',
@@ -8287,6 +8319,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Grapes",
     distilleryLocation: "Southern France",
+    seo: {
+      primaryKeyword: "ciroc red berry",
+      secondaryKeywords: ["ciroc flavors", "ciroc vodka flavors", "ciroc vodka"],
+    },
   },
   {
     id: 'prod-vodka-10',
@@ -8311,6 +8347,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Grapes",
     distilleryLocation: "Southern France",
+    seo: {
+      primaryKeyword: "ciroc vodka",
+      secondaryKeywords: ["who owns ciroc", "ciroc flavors", "french grape vodka", "ciroc vodka flavors"],
+    },
   },
   {
     id: 'prod-vodka-11',
@@ -8335,6 +8375,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Corn",
     distilleryLocation: "Austin, Texas, USA",
+    seo: {
+      primaryKeyword: "deep eddy lemon vodka",
+      secondaryKeywords: ["deep eddy vodka", "deep eddy vodka distillery", "deep eddy vodka facility closure"],
+    },
   },
   {
     id: 'prod-vodka-12',
@@ -8359,6 +8403,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Corn",
     distilleryLocation: "Austin, Texas, USA",
+    seo: {
+      primaryKeyword: "deep eddy ruby red vodka",
+      secondaryKeywords: ["deep eddy vodka", "deep eddy vodka distillery"],
+    },
   },
   {
     id: 'prod-vodka-13',
@@ -8383,6 +8431,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Corn",
     distilleryLocation: "Austin, Texas, USA",
+    seo: {
+      primaryKeyword: "deep eddy sweet tea vodka",
+      secondaryKeywords: ["deep eddy vodka", "deep eddy vodka distillery"],
+    },
   },
   {
     id: 'prod-vodka-14',
@@ -8407,6 +8459,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Winter Wheat",
     distilleryLocation: "Picardy & Cognac, France",
+    seo: {
+      primaryKeyword: "grey goose vodka",
+      secondaryKeywords: ["grey goose vodka price", "grey goose martini", "grey goose cocktails", "grey goose vodka review"],
+    },
   },
   {
     id: 'prod-vodka-15',
@@ -8431,6 +8487,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "White Rice",
     distilleryLocation: "Kagoshima/Osaka, Japan",
+    seo: {
+      primaryKeyword: "haku vodka",
+      secondaryKeywords: ["japanese vodka", "suntory haku vodka", "haku japanese vodka", "japanese craft vodka", "rice vodka"],
+    },
   },
   {
     id: 'prod-vodka-16',
@@ -8455,6 +8515,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Organic Grapes",
     distilleryLocation: "Sonoma County, California, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: "hanson of sonoma vodka",
+      secondaryKeywords: ["hanson of sonoma organic vodka", "hanson vodka review", "sonoma grape vodka", "organic grape vodka"],
+    },
   },
   {
     id: 'prod-vodka-17',
@@ -8479,6 +8544,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Wheat",
     distilleryLocation: "Schiedam, Netherlands",
+    seo: {
+      primaryKeyword: "ketel one vodka",
+      secondaryKeywords: ["ketel one espresso martini", "ketel one botanical vodka", "ketel one botanicals"],
+    },
   },
   {
     id: 'prod-vodka-18',
@@ -8503,6 +8572,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Organic Corn",
     distilleryLocation: "Princeton, Minnesota, USA",
+    seo: {
+      primaryKeyword: "prairie organic vodka",
+      secondaryKeywords: ["prairie vodka", "organic vodka", "organic vodka brands", "prairie liquor"],
+    },
   },
   {
     id: 'prod-vodka-19',
@@ -8527,6 +8600,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Wheat & Barley",
     distilleryLocation: "Borgarnes, Iceland",
+    seo: {
+      primaryKeyword: "reyka vodka",
+      secondaryKeywords: ["icelandic vodka", "vodka reyka", "reyka vodka review", "iceland vodka"],
+    },
   },
   {
     id: 'prod-vodka-20',
@@ -8551,6 +8628,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Corn",
     distilleryLocation: "Austin, Texas, USA",
+    seo: {
+      // Not independently re-covered in this SEMrush export pass — existing brand-hub treatment stands; generic/well-established real search terms, not freshly volume-backed.
+      primaryKeyword: "tito's handmade vodka",
+      secondaryKeywords: ["tito's vodka", "gluten free vodka", "austin texas vodka", "tito's vodka price"],
+    },
   },
   {
     id: 'prod-vodka-21',
@@ -8575,6 +8657,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Wheat & Corn Blend",
     distilleryLocation: "Frankfort, Kentucky, USA",
+    seo: {
+      primaryKeyword: "wheatley vodka",
+      secondaryKeywords: ["wheatley american vodka", "buffalo trace vodka", "harlen wheatley", "wheatley vodka cody rhodes"],
+    },
   },
   {
     id: 'prod-vodka-22',
@@ -8599,6 +8685,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Potato",
     distilleryLocation: "Basalt, Colorado, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: "woody creek vodka",
+      secondaryKeywords: ["woody creek potato vodka", "woody creek distillers review", "colorado potato vodka", "woody creek distillery"],
+    },
   },
   {
     id: 'prod-vodka-b2-01',
@@ -8623,6 +8714,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Winter Wheat, Continuously Distilled",
     distilleryLocation: "Åhus, Sweden",
+    seo: {
+      primaryKeyword: "absolut vanilia vodka",
+      secondaryKeywords: ["absolut vodka flavors", "vanilla flavored vodka", "absolut vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-02',
@@ -8647,6 +8742,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Organic Rye, Quadruple Distilled",
     distilleryLocation: "Żyrardów, Poland",
+    seo: {
+      primaryKeyword: "belvedere 10 vodka",
+      secondaryKeywords: ["belvedere vodka", "belvedere cost", "belvedere organic vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-03',
@@ -8671,6 +8770,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Potato-Based, Five-Times Filtered",
     distilleryLocation: "Rigby, Idaho, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: "blue ice vodka",
+      secondaryKeywords: ["blue ice potato vodka", "idaho potato vodka", "blue ice vodka review"],
+    },
   },
   {
     id: 'prod-vodka-b2-04',
@@ -8695,6 +8799,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Potato-Based, Pot Distilled, Unfiltered",
     distilleryLocation: "Glenshaw, Pennsylvania, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: "boyd and blair vodka",
+      secondaryKeywords: ["boyd and blair potato vodka", "boyd and blair vodka review", "pennsylvania potato vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-05',
@@ -8719,6 +8828,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Whey-Based, Triple Distilled",
     distilleryLocation: "Wanaka, New Zealand",
+    seo: {
+      primaryKeyword: "broken shed vodka",
+      secondaryKeywords: ["new zealand vodka", "broken shed vodka review", "whey distilled vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-06',
@@ -8743,6 +8856,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Organic Grain, Column Distilled",
     distilleryLocation: "Princeton, Minnesota, USA",
+    seo: {
+      // No SEMrush volume data found for this brand — confirmed via WebSearch as real search phrasing, not volume-backed.
+      primaryKeyword: "crop vodka",
+      secondaryKeywords: ["crop organic vodka", "crop harvest earth vodka", "organic artisanal vodka", "minnesota organic vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-07',
@@ -8767,6 +8885,11 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Corn-Based, Diamond Filtered",
     distilleryLocation: "St. John's, Newfoundland, Canada",
+    seo: {
+      // No individually volume-tested SEMrush term for this limited art-series SKU — inferred from the brand's naming pattern, not volume-backed.
+      primaryKeyword: "crystal head john alexander vodka",
+      secondaryKeywords: ["crystal head vodka", "crystal skull vodka", "crystal head vodka bottle", "limited edition vodka bottle"],
+    },
   },
   {
     id: 'prod-vodka-b2-08',
@@ -8791,6 +8914,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Corn-Based, Diamond Filtered",
     distilleryLocation: "St. John's, Newfoundland, Canada",
+    seo: {
+      primaryKeyword: "crystal head vodka",
+      secondaryKeywords: ["crystal skull vodka", "dan aykroyd vodka", "crystal head vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-09',
@@ -8815,6 +8942,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "French Wheat, Single Estate",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: "grey goose l'orange vodka",
+      secondaryKeywords: ["grey goose vodka", "grey goose cocktails", "grey goose vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-10',
@@ -8839,6 +8970,10 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "French Wheat, Single Estate",
     distilleryLocation: "Cognac, France",
+    seo: {
+      primaryKeyword: "grey goose la poire vodka",
+      secondaryKeywords: ["grey goose vodka", "grey goose cocktails", "grey goose vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-11',
@@ -8863,6 +8998,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Wheat-Based, Botanical Infused",
     distilleryLocation: "Schiedam, Netherlands",
+    seo: {
+      primaryKeyword: "ketel one cucumber mint",
+      secondaryKeywords: ["ketel one botanicals", "ketel one botanical vodka", "ketel one vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-12',
@@ -8887,6 +9026,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Wheat-Based, Botanical Infused",
     distilleryLocation: "Schiedam, Netherlands",
+    seo: {
+      primaryKeyword: "ketel one grapefruit and rose",
+      secondaryKeywords: ["ketel one botanicals", "ketel one botanical vodka", "ketel one vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-13',
@@ -8911,6 +9054,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Potato-Based",
     distilleryLocation: "Poland",
+    seo: {
+      primaryKeyword: "luksusowa potato vodka",
+      secondaryKeywords: ["luksusowa vodka", "polish potato vodka", "luksusowa vodka review"],
+    },
   },
   {
     id: 'prod-vodka-b2-14',
@@ -8935,6 +9082,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Corn & Grain, Five Times Distilled",
     distilleryLocation: "Modesto, California, USA",
+    seo: {
+      primaryKeyword: "new amsterdam peach vodka",
+      secondaryKeywords: ["new amsterdam flavors", "new amsterdam vodka flavors", "new amsterdam vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-15',
@@ -8959,6 +9110,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Corn & Grain, Five Times Distilled",
     distilleryLocation: "Modesto, California, USA",
+    seo: {
+      primaryKeyword: "new amsterdam pineapple vodka",
+      secondaryKeywords: ["new amsterdam flavors", "new amsterdam vodka flavors", "new amsterdam vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-16',
@@ -8983,6 +9138,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Corn & Grain, Five Times Distilled",
     distilleryLocation: "Modesto, California, USA",
+    seo: {
+      primaryKeyword: "new amsterdam vodka",
+      secondaryKeywords: ["new amsterdam flavors", "new amsterdam vodka flavors", "new amsterdam vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-17',
@@ -9007,6 +9166,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Corn & Grain, Five Times Distilled",
     distilleryLocation: "Modesto, California, USA",
+    seo: {
+      primaryKeyword: "new amsterdam watermelon vodka",
+      secondaryKeywords: ["new amsterdam flavors", "new amsterdam vodka flavors", "new amsterdam vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-18',
@@ -9031,6 +9194,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "French Wheat, Charcoal Filtered",
     distilleryLocation: "Charente, France",
+    seo: {
+      primaryKeyword: "pinnacle vodka",
+      secondaryKeywords: ["pinnacle liquor", "pinnacle vodka flavors", "pinnacle alcohol", "pinnacle vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-19',
@@ -9055,6 +9222,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Grain-Based, Charcoal Filtered",
     distilleryLocation: "Plainfield, Illinois, USA",
+    seo: {
+      primaryKeyword: "smirnoff vodka",
+      secondaryKeywords: ["vodka smirnoff no. 21", "smirnoff vodka flavors", "smirnoff vodka price"],
+    },
   },
   {
     id: 'prod-vodka-b2-20',
@@ -9079,6 +9250,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Grain-Based, Charcoal Filtered",
     distilleryLocation: "Plainfield, Illinois, USA",
+    seo: {
+      // Not individually volume-tested in this SEMrush export (raspberry was; peach/strawberry inferred from the same flavor line), not volume-backed.
+      primaryKeyword: "smirnoff peach vodka",
+      secondaryKeywords: ["smirnoff vodka flavors", "smirnoff vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-21',
@@ -9103,6 +9279,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Grain-Based, Charcoal Filtered",
     distilleryLocation: "Plainfield, Illinois, USA",
+    seo: {
+      primaryKeyword: "smirnoff raspberry vodka",
+      secondaryKeywords: ["smirnoff vodka flavors", "smirnoff vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-22',
@@ -9127,6 +9307,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Grain-Based, Charcoal Filtered",
     distilleryLocation: "Plainfield, Illinois, USA",
+    seo: {
+      // Not individually volume-tested in this SEMrush export (raspberry was; peach/strawberry inferred from the same flavor line), not volume-backed.
+      primaryKeyword: "smirnoff strawberry vodka",
+      secondaryKeywords: ["smirnoff vodka flavors", "smirnoff vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-23',
@@ -9151,6 +9336,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Rye-Based, Quadruple Distilled",
     distilleryLocation: "Starogard Gdański, Poland",
+    seo: {
+      primaryKeyword: "sobieski vodka",
+      secondaryKeywords: ["polish vodka brands", "sobieski vodka review", "polish rye vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-24',
@@ -9175,6 +9364,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Wheat & Rye, Freeze Filtered",
     distilleryLocation: "Riga, Latvia",
+    seo: {
+      primaryKeyword: "elit vodka",
+      secondaryKeywords: ["stolichnaya vodka", "stoli elit", "stolichnaya elit vodka"],
+    },
   },
   {
     id: 'prod-vodka-b2-25',
@@ -9199,6 +9392,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Winter Wheat, Naturally Flavored",
     distilleryLocation: "Sweden",
+    seo: {
+      primaryKeyword: "svedka mango pineapple",
+      secondaryKeywords: ["svedka vodka flavors", "svedka vodka", "svedka"],
+    },
   },
   {
     id: 'prod-vodka-b2-26',
@@ -9223,6 +9420,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Winter Wheat, Naturally Flavored",
     distilleryLocation: "Sweden",
+    seo: {
+      primaryKeyword: "svedka strawberry lemonade",
+      secondaryKeywords: ["svedka vodka flavors", "svedka vodka", "svedka"],
+    },
   },
   {
     id: 'prod-vodka-b2-27',
@@ -9247,6 +9448,10 @@ export const PRODUCTS: Product[] = [
     stock: 9,
     caskType: "Winter Wheat, Continuously Distilled",
     distilleryLocation: "Sweden",
+    seo: {
+      primaryKeyword: "svedka vodka",
+      secondaryKeywords: ["svedka", "svedka 100 proof vodka", "svedka vodka price", "svedka vodka flavors"],
+    },
   },
 
   // GIN
@@ -26023,6 +26228,10 @@ export const PRODUCTS: Product[] = [
     stock: 9,
     caskType: "Unfiltered, single-estate rye",
     distilleryLocation: "Żyrzyn, Poland",
+    seo: {
+      primaryKeyword: "belvedere vodka single estate rye",
+      secondaryKeywords: ["belvedere vodka", "belvedere single estate rye", "polish rye vodka"],
+    },
   },
   {
     id: 'prod-na-new-01',
