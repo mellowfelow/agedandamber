@@ -1070,6 +1070,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Sazerac Rye — 6 Year & Thomas H. Handy Antique Collection Allocations',
       metaDescription: 'Buy Sazerac rye online — the 6 Year and the ultra-allocated Thomas H. Handy Sazerac. Buffalo Trace Antique Collection. Free on $300+.',
       hook: 'Sazerac Rye, produced by Buffalo Trace, shares its name with the classic New Orleans cocktail it was built for — the 6 Year is the standard release, while the annual Thomas H. Handy Sazerac from the Buffalo Trace Antique Collection is one of the most allocated ryes in the US.',
+      faqs: [
+        { question: 'What is Thomas H. Handy Sazerac Rye?', answer: "Thomas H. Handy Sazerac is the barrel-proof rye in Buffalo Trace's annual Antique Collection, named for the 19th-century New Orleans bartender credited with adding rye whiskey to the original Sazerac cocktail. Aged around six years and bottled straight from the barrel with no chill filtration or dilution — typically well above 125 proof — it's one of the most sought-after and hard-to-find ryes released each year." },
+        { question: 'What is the difference between Sazerac 6 Year Rye and Thomas H. Handy?', answer: "Sazerac Rye (6 Year) is Buffalo Trace's widely available, standard-proof rye built for the Sazerac cocktail and everyday sipping. Thomas H. Handy is the barrel-proof sibling released once a year as part of the limited Buffalo Trace Antique Collection — intensely concentrated, uncut, and far more scarce." },
+      ],
     }),
   },
   {
@@ -1116,6 +1120,309 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Sagamore Spirit — Signature Rye Whiskey Allocations',
       metaDescription: 'Buy Sagamore Spirit online — the Signature Rye reviving Maryland’s historic rye whiskey style. Direct allocations. Free shipping on $300+.',
       hook: 'Sagamore Spirit revives the once-dominant Maryland rye whiskey style, blending two proprietary rye mash bills distilled on Baltimore’s waterfront into its Signature Rye — spicier and drier than a typical Kentucky-style rye.',
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'balcones', brandKeywords: ['Balcones'], name: 'Balcones',
+    seo: brandSeo({
+      brand: 'Balcones', categoryLabel: 'Texas Single Malt Whisky',
+      titleTag: 'Balcones — Texas Single Malt Whisky',
+      h1: 'Balcones Texas Single Malt Whisky — Direct Allocations',
+      metaDescription: "Buy Balcones online — the high-proof Texas single malt matured through dramatic Waco heat and temperature swings. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Balcones, founded in Waco, Texas in 2008, was the first distillery in the state to release a single malt whisky and helped pioneer the modern American craft whiskey movement. Its Hill Country climate drives extreme daily and seasonal temperature swings that accelerate barrel interaction, producing an intensely concentrated, fast-maturing single malt bottled at a robust 106 proof.",
+      faqs: [
+        { question: 'What makes Balcones different from Scotch single malt?', answer: "Balcones distills and matures its single malt in Waco, Texas, where dramatic temperature swings drive far more aggressive barrel interaction than Scotland's cooler, steadier climate. The whisky matures faster and hits bolder, more concentrated flavors at a younger age, and is bottled at a higher proof — 106 — than most Scotch single malts." },
+        { question: 'Was Balcones the first Texas single malt whisky?', answer: "Yes — Balcones, founded in Waco in 2008, was the first legal distillery in Waco since Prohibition and the first in Texas to release a single malt whisky, helping establish Texas as a serious American whiskey-producing state." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'bulleit-rye', brandKeywords: ['Bulleit'], name: 'Bulleit Rye',
+    seo: brandSeo({
+      brand: 'Bulleit Rye', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Bulleit Rye — 95% Rye Whiskey',
+      h1: 'Bulleit 95 Rye Whiskey — Direct Allocations',
+      metaDescription: "Buy Bulleit Rye online — the assertively spicy 95% rye mash bill whiskey built for classic cocktails. Not the bourbon — this is Bulleit's rye. Direct allocations, free on $300+.",
+      hook: "Bulleit Rye is a distinct release from Bulleit Bourbon — built on an unusually high 95% rye mash bill for an assertively spicy, peppery profile, historically sourced from the MGP of Indiana distillery in Lawrenceburg rather than Bulleit's own Shelbyville, Kentucky facility.",
+      faqs: [
+        { question: 'Is Bulleit Rye the same as Bulleit Bourbon?', answer: "No — they're separate expressions. Bulleit Bourbon is a high-rye Kentucky bourbon distilled at Bulleit's own Shelbyville, Kentucky distillery. Bulleit Rye (also called Bulleit 95 Rye) is a straight rye whiskey built on a 95% rye mash bill, historically sourced from MGP of Indiana. If you're after the rye, look for '95 Rye' or 'Rye Whiskey' on the label." },
+        { question: "What does Bulleit Rye's mash bill mean for flavor?", answer: "At 95% rye, Bulleit's mash bill sits near the top of what's legally distilled as rye whiskey, leaving little room for corn's sweetness. That translates to a dry, black-pepper-and-dill-forward profile that stands up well in a Manhattan or an old fashioned." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'canadian-club', brandKeywords: ['Canadian Club'], name: 'Canadian Club',
+    seo: brandSeo({
+      brand: 'Canadian Club', categoryLabel: 'Canadian Whisky',
+      titleTag: 'Canadian Club — 1858 Canadian Whisky',
+      h1: 'Canadian Club 1858 Canadian Whisky — Direct Allocations',
+      metaDescription: "Buy Canadian Club online — the historic 1858 blend from Hiram Walker, one of the whisky brands that defined the Canadian style. Direct allocations, free on $300+.",
+      hook: "Canadian Club traces to 1858, when Hiram Walker began distilling and blending grain whisky in Windsor, Ontario — its light, easy-mixing, rye-tinged style became so popular across the border that 'Club Whisky' had to add 'Canadian' to its label to distinguish it from American imitators, cementing the name still used today.",
+      faqs: [
+        { question: 'Why is it called Canadian Club?', answer: "Hiram Walker originally marketed his whisky simply as 'Club Whisky.' It became so popular in American gentlemen's clubs that domestic distillers lobbied for a law requiring imported whisky to state its country of origin on the label — Walker responded by renaming it Canadian Club, turning a regulatory jab into one of whisky's most recognizable brand names." },
+        { question: 'Is Canadian Club a rye whisky?', answer: "Canadian Club is a blended Canadian whisky — Canadian law allows the term 'rye whisky' to apply broadly to Canadian whisky blends even when rye is a minor component, rather than the majority-rye mash bill required for American rye. Canadian Club blends grain whiskies for a soft, easy-drinking profile with a touch of rye spice." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'crown-royal', brandKeywords: ['Crown Royal'], name: 'Crown Royal',
+    seo: brandSeo({
+      brand: 'Crown Royal', categoryLabel: 'Canadian Whisky',
+      titleTag: 'Crown Royal — Black, Reserve, XO, Northern Harvest Rye & More',
+      h1: 'Crown Royal Canadian Whisky — Fine De Luxe, Black, Reserve, XO, Northern Harvest Rye & Flavored Editions',
+      metaDescription: "Buy Crown Royal online — Fine De Luxe, Black, Reserve, XO, the award-winning Northern Harvest Rye, plus Apple, Peach & Vanilla. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Crown Royal has been blended at the Gimli, Manitoba distillery since 1939, when Seagram created it as a tribute to King George VI and Queen Elizabeth's royal visit to Canada — the purple velvet bag remains one of spirits' most recognizable packages. The range spans the original Fine De Luxe blend, the fuller-proof Black, the cognac-cask-finished XO, the rye-forward Northern Harvest (named 2016 World Whisky of the Year by critic Jim Murray), and a run of fruit and dessert-flavored expressions including Apple, Peach, and Vanilla.",
+      faqs: [
+        { question: 'What is the difference between Crown Royal Black and the original Fine De Luxe?', answer: "Black is bottled at a fuller 90 proof using toasted oak for bolder, spicier character, while Fine De Luxe is Crown Royal's original 80-proof blend of more than 50 whiskies, prized for its soft, honeyed smoothness in the classic purple bag." },
+        { question: 'Why did Crown Royal Northern Harvest Rye win World Whisky of the Year?', answer: "In the Whisky Bible 2016, critic Jim Murray named Northern Harvest Rye — built on a 90% rye mash bill — his top whisky worldwide, the first time a Canadian whisky topped that ranking. It put Canadian rye back on the map for enthusiasts who had written the category off." },
+        { question: 'Does Crown Royal make flavored whisky?', answer: "Yes — alongside its core Canadian whisky blends, Crown Royal produces flavored expressions including Apple, Peach, and Vanilla, all built on the brand's signature soft blended base rather than a rye-forward or bourbon-style profile." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'fireball', brandKeywords: ['Fireball'], name: 'Fireball',
+    seo: brandSeo({
+      brand: 'Fireball', categoryLabel: 'Cinnamon Whisky',
+      titleTag: 'Fireball — Cinnamon Whisky',
+      h1: 'Fireball Cinnamon Whisky — Direct Allocations',
+      metaDescription: "Buy Fireball online — the red-hot cinnamon whisky shot that became a billion-dollar brand. Produced by Sazerac. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Fireball started life in the mid-1980s as a Dr. McGillicuddy's cinnamon flavor before Sazerac, which acquired the brand in 1989, relaunched it under its own name in 2007 — the resulting cinnamon-candy shot became one of the fastest-growing spirits of the 2010s, built on a light Canadian whisky base bottled at 66 proof.",
+      faqs: [
+        { question: 'Is Fireball a whiskey?', answer: "Fireball is a whisky-based liqueur, not a straight whiskey — it starts from a light Canadian whisky base infused with cinnamon flavoring and sweeteners, then bottled at 66 proof (33% ABV), lower than the Canadian whisky it's built on." },
+        { question: 'Who makes Fireball?', answer: "Fireball is produced by The Sazerac Company, which acquired the Dr. McGillicuddy's brand — Fireball's original name — in 1989 and rebranded it as standalone Fireball Cinnamon Whisky in 2007." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'forty-creek', brandKeywords: ['Forty Creek'], name: 'Forty Creek',
+    seo: brandSeo({
+      brand: 'Forty Creek', categoryLabel: 'Canadian Whisky',
+      titleTag: 'Forty Creek — Barrel Select Canadian Whisky',
+      h1: 'Forty Creek Barrel Select Canadian Whisky — Direct Allocations',
+      metaDescription: "Buy Forty Creek online — Barrel Select, the small-batch Canadian whisky that separately ages corn, rye, and barley before blending. Direct allocations, free on $300+.",
+      hook: "Forty Creek was founded by veteran winemaker John Hall, who bought a shuttered Grimsby, Ontario distillery in 1992 and spent eight years perfecting his process before the first release in 2000 — rather than blending a single mash bill, Hall distills and ages corn, rye, and barley whiskies separately before marrying them, a technique borrowed from winemaking that gives Barrel Select its rounded, balanced character.",
+      faqs: [{ question: 'What makes Forty Creek different from other Canadian whisky?', answer: "Forty Creek distills and matures corn, rye, and barley whiskies separately in different barrel types before blending them, a technique founder John Hall — a career winemaker — adapted from wine production. Most Canadian whisky blends finished whiskies together; Forty Creek's separate-aging approach is meant to preserve each grain's distinct character before marrying." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'george-dickel', brandKeywords: ['George Dickel', 'Dickel'], name: 'George Dickel',
+    seo: brandSeo({
+      brand: 'George Dickel', categoryLabel: 'Tennessee Whisky',
+      titleTag: 'George Dickel — No. 8, No. 12 & Bottled in Bond',
+      h1: 'George Dickel Tennessee Whisky — No. 8, No. 12 & 13 Year Bottled in Bond Allocations',
+      metaDescription: "Buy George Dickel online — No. 8, No. 12, and the extended-aged 13 Year Bottled in Bond. Charcoal-mellowed Tennessee whisky. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "George Dickel, distilled in Tullahoma, Tennessee, is Jack Daniel's chief rival in the Lincoln County Process — sugar-maple charcoal mellowing before barreling — but chills its whisky before filtering, a practice founder George Dickel believed produced a smoother spirit. No. 8 and No. 12 anchor the everyday range, while the Bottled-in-Bond release brings a rare 13-year age statement at a robust 100 proof.",
+      faqs: [
+        { question: 'What is the difference between George Dickel No. 8 and No. 12?', answer: "No. 8 is bottled at a softer 80 proof for an easy, approachable sip, while No. 12 is bottled at 90 proof for a fuller-bodied, slightly bolder character. Both go through the same charcoal-mellowing process — the difference comes down to proof and barrel selection." },
+        { question: "How is George Dickel different from Jack Daniel's?", answer: "Both use the Lincoln County Process of filtering new-make spirit through sugar maple charcoal before barreling, but Dickel chills the whisky before filtering it — a step founder George Dickel believed slowed the process down enough to produce a smoother result. Dickel is also produced in Tullahoma rather than Lynchburg, and historically spells 'whisky' without the 'e,' a nod to founder George Dickel's Scottish heritage." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'jack-daniels', brandKeywords: ["Jack Daniel's", 'Jack Daniels'], name: "Jack Daniel's",
+    seo: brandSeo({
+      brand: "Jack Daniel's", categoryLabel: 'Tennessee Whiskey',
+      titleTag: "Jack Daniel's — Old No. 7, Gentleman Jack, Single Barrel & Flavors",
+      h1: "Jack Daniel's Tennessee Whiskey — Old No. 7, Gentleman Jack, Single Barrel Select, Barrel Proof Rye & Flavored Editions",
+      metaDescription: "Buy Jack Daniel's online — Old No. 7, Gentleman Jack, Single Barrel Select, Single Barrel Barrel Proof Rye, plus Honey, Fire & Apple. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Jack Daniel's, distilled in Lynchburg, Tennessee since 1866, is the world's best-selling American whiskey and the whiskey that defines the Tennessee whiskey category — every drop is filtered through ten feet of sugar-maple charcoal before barreling, the Lincoln County Process that Jack Daniel learned from Nathan 'Nearest' Green, a formerly enslaved master distiller. Our allocation spans the flagship Old No. 7, the twice-mellowed Gentleman Jack, hand-picked Single Barrel Select, the cask-strength Single Barrel Barrel Proof Rye, and the flavored Tennessee Honey, Tennessee Fire, and Tennessee Apple.",
+      faqs: [
+        { question: 'What is the Lincoln County Process?', answer: "The Lincoln County Process is the charcoal mellowing step that legally defines Tennessee whiskey: new-make spirit is filtered drop by drop through ten feet of packed sugar-maple charcoal before it ever touches a barrel. Jack Daniel's has used this process since the distillery's founding, and it's the technique historians now credit to Nathan 'Nearest' Green, the enslaved master distiller who taught a young Jack Daniel how to make whiskey." },
+        { question: "What's the difference between Jack Daniel's Old No. 7 and Gentleman Jack?", answer: "Old No. 7 is the flagship expression, charcoal mellowed once before barreling. Gentleman Jack repeats the Lincoln County Process a second time after barreling, filtering the finished whiskey again through charcoal for an extra-smooth, softer profile." },
+        { question: "Is Jack Daniel's Single Barrel Barrel Proof Rye different from the regular Jack Daniel's?", answer: "Yes — it's a rye whiskey, not the standard Tennessee whiskey mash bill. Drawn from Jack Daniel's 70% rye mash bill and bottled straight from a single barrel with nothing added or removed, it comes in well above 100 proof and varies barrel to barrel, unlike the standardized 80-proof Old No. 7." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'knob-creek-rye', brandKeywords: ['Knob Creek'], name: 'Knob Creek Rye',
+    seo: brandSeo({
+      brand: 'Knob Creek Rye', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Knob Creek Rye — 7 Year Rye Whiskey',
+      h1: 'Knob Creek 7 Year Rye Whiskey — Direct Allocations',
+      metaDescription: "Buy Knob Creek Rye online — not the bourbon, this is Knob Creek's full-proof, full-bodied 7 Year Rye. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Knob Creek Rye is a distinct release from Knob Creek Bourbon — a straight rye whiskey from Jim Beam's small-batch line, aged seven years and bottled at 100 proof, the Bottled-in-Bond strength, for the same uncut, full-bodied intensity that defines the Knob Creek name, in rye form.",
+      faqs: [{ question: 'Is Knob Creek Rye the same as Knob Creek Bourbon?', answer: "No — they're separate expressions from the same Jim Beam small-batch line. Knob Creek Bourbon is a Kentucky straight bourbon; Knob Creek Rye is a straight rye whiskey, aged 7 years and bottled at 100 proof. Look for 'Rye Whiskey' on the label to make sure you're getting the rye." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'michters-rye', brandKeywords: ["Michter's"], name: "Michter's Rye",
+    seo: brandSeo({
+      brand: "Michter's Rye", categoryLabel: 'Rye Whiskey',
+      titleTag: "Michter's Rye — US*1 Single Barrel Rye",
+      h1: "Michter's US*1 Single Barrel Rye Whiskey — Direct Allocations",
+      metaDescription: "Buy Michter's Rye online — the smooth, single barrel US*1 rye from one of American whiskey's oldest trademarks, dating to 1753. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Michter's traces its name to a Pennsylvania distillery founded in 1753 — one of the oldest whiskey trademarks in America, whose whiskey reportedly warmed George Washington's troops at Valley Forge. The modern Michter's, rebuilt in Kentucky in the early 1990s, applies the same single barrel, minimum-release philosophy to its US*1 Single Barrel Rye that it does to its bourbon: nothing is bottled until it's ready, regardless of age statement.",
+      faqs: [{ question: "Is Michter's Rye the same as Michter's Bourbon?", answer: "No — they're separate single barrel expressions under the Michter's US*1 line. Michter's US*1 Bourbon is a Kentucky straight bourbon, while Michter's US*1 Single Barrel Rye is a straight rye whiskey, both released only when individual barrels are deemed ready rather than on a fixed age schedule." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'old-forester-rye', brandKeywords: ['Old Forester'], name: 'Old Forester Rye',
+    seo: brandSeo({
+      brand: 'Old Forester Rye', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Old Forester Rye — 100 Proof Rye Whiskey',
+      h1: 'Old Forester 100 Proof Rye Whiskey — Direct Allocations',
+      metaDescription: "Buy Old Forester Rye online — not the bourbon, this is Brown-Forman's 100 proof rye with an unusually high malted barley content. Direct allocations, free on $300+.",
+      hook: "Old Forester, first bottled in 1870 by founder George Garvin Brown and America's first bottled bourbon brand, also produces a straight rye whiskey distinct from its famous bourbon — bottled at 100 proof with an unusually high malted barley content in the mash bill alongside rye grain, giving it a floral, nutty edge that sets it apart from typical Kentucky rye.",
+      faqs: [{ question: 'Is Old Forester Rye the same recipe as Old Forester Bourbon?', answer: "No — Old Forester Bourbon and Old Forester Rye use different mash bills. The rye leans on a higher proportion of malted barley alongside rye grain than most competing ryes, giving it a floral, nutty character layered over classic rye pepper, distinct from the corn-forward bourbon." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'skrewball', brandKeywords: ['Skrewball'], name: 'Skrewball',
+    seo: brandSeo({
+      brand: 'Skrewball', categoryLabel: 'Peanut Butter Whiskey',
+      titleTag: 'Skrewball — Peanut Butter Whiskey',
+      h1: 'Skrewball Peanut Butter Whiskey — Direct Allocations',
+      metaDescription: "Buy Skrewball online — the world's first peanut butter whiskey, born as a shot at a San Diego bar in 2018. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Skrewball started as a whimsical peanut butter-and-whiskey shot at founder Steven Yeng's Ocean Beach, San Diego restaurant before he and his wife Brittany launched it as the world's first peanut butter whiskey in 2018 — it has since become one of the fastest-growing flavored spirits in the US, built for shots, milkshakes, and dessert-style cocktails.",
+      faqs: [{ question: 'Is Skrewball the first peanut butter whiskey?', answer: "Yes — Skrewball, launched in San Diego in 2018 by Steven and Brittany Yeng, is credited as the original peanut butter whiskey, a category it created and now dominates. It grew out of a novelty shot served at the couple's Ocean Beach restaurant." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'stranahans', brandKeywords: ["Stranahan's"], name: "Stranahan's",
+    seo: brandSeo({
+      brand: "Stranahan's", categoryLabel: 'American Single Malt',
+      titleTag: "Stranahan's — Original & Sherry Cask Single Malt",
+      h1: "Stranahan's American Single Malt Whiskey — Original & Sherry Cask Allocations",
+      metaDescription: "Buy Stranahan's online — the Colorado Original and Pedro Ximénez Sherry Cask, from one of the pioneering American single malt distilleries. Direct allocations, free on $300+.",
+      hook: "Stranahan's, founded in Denver in 2004 by rancher George Stranahan and firefighter Jess Graber, was one of the earliest American single malt whiskey distilleries — every batch is aged a minimum of four years using Colorado's Rocky Mountain water, with the flagship Original built on virgin American oak and the Sherry Cask finished in Pedro Ximénez casks for added dried-fruit richness.",
+      faqs: [{ question: "What is the difference between Stranahan's Original and Sherry Cask?", answer: "Original is aged in virgin American oak for a minimum of four years, giving a malty, honeyed profile. Sherry Cask takes whiskey aged at least seven years and finishes it in Pedro Ximénez sherry casks, adding dried cherry, toasted nut, and richer sweetness on top of the base single malt character." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'uncle-nearest', brandKeywords: ['Uncle Nearest'], name: 'Uncle Nearest',
+    seo: brandSeo({
+      brand: 'Uncle Nearest', categoryLabel: 'Tennessee Whiskey',
+      titleTag: 'Uncle Nearest — 1856, 1884 & Master Blend Edition',
+      h1: 'Uncle Nearest Tennessee Whiskey — 1856 Premium Aged, 1884 Small Batch & Master Blend Edition Allocations',
+      metaDescription: "Buy Uncle Nearest online — 1856 Premium Aged, 1884 Small Batch, and the cask-strength Master Blend Edition. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Uncle Nearest, launched in 2017 by founder Fawn Weaver, honors Nathan 'Nearest' Green — the enslaved master distiller who taught a young Jack Daniel the Lincoln County charcoal-mellowing process and is now recognized as America's first known Black master distiller. In just a few years it became the most awarded American whiskey brand, with expressions spanning 1856 Premium Aged, the 7-year 1884 Small Batch, and the cask-strength Master Blend Edition selected by Master Blender Victoria Eady Butler, Nearest Green's own descendant.",
+      faqs: [
+        { question: 'Who was Nathan "Nearest" Green?', answer: "Nathan Green, known as 'Nearest,' was an enslaved and later free master distiller in Lincoln County, Tennessee who taught a young Jack Daniel how to make whiskey, including the sugar-maple charcoal mellowing process that still defines Tennessee whiskey today. His role was largely left out of Jack Daniel's official history for over a century until it resurfaced publicly in 2016." },
+        { question: 'What is the difference between Uncle Nearest 1856, 1884, and Master Blend Edition?', answer: "1856 Premium Aged is the entry expression, named for the year Nearest Green is believed to have begun distilling. 1884 Small Batch draws from barrels aged at least seven years. Master Blend Edition is the top tier — hand-selected by Master Blender Victoria Eady Butler, a descendant of Nearest Green, and bottled at full cask strength without chill filtration." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'virginia-distillery-co', brandKeywords: ['Virginia Distillery'], name: 'Virginia Distillery Co.',
+    seo: brandSeo({
+      brand: 'Virginia Distillery Co.', categoryLabel: 'American Single Malt',
+      titleTag: 'Virginia Distillery Co. — Courage & Conviction Single Malt',
+      h1: 'Virginia Distillery Co. Courage & Conviction American Single Malt — Direct Allocations',
+      metaDescription: "Buy Virginia Distillery Co. online — Courage & Conviction, a triple-cask-matured single malt from the largest dedicated American single malt distillery. Direct allocations, free $300+.",
+      hook: "Virginia Distillery Co., founded in the Blue Ridge Mountains by Irish immigrant Dr. George G. Moore and now run by his son Gareth, is the largest dedicated American single malt distillery in the country and a founding member of the American Single Malt Commission that helped secure the category's federal recognition. Courage & Conviction, its flagship, matures 100% malted barley across bourbon, sherry, and cider casks for a distinctly layered single malt.",
+      faqs: [{ question: 'What makes Courage & Conviction different from other American single malts?', answer: "Courage & Conviction matures across three cask types — ex-bourbon, sherry, and cider casks — before blending, a triple-cask approach that layers vanilla and oak from bourbon barrels with dried fruit richness from sherry and a subtle orchard note from cider casks. It's distilled entirely on-site at Virginia Distillery Co.'s Lovingston, Virginia facility using 100% North American malted barley." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'westward', brandKeywords: ['Westward'], name: 'Westward',
+    seo: brandSeo({
+      brand: 'Westward', categoryLabel: 'American Single Malt',
+      titleTag: 'Westward — American Single Malt & Cask Strength',
+      h1: 'Westward American Single Malt Whiskey — Original & Cask Strength Allocations',
+      metaDescription: "Buy Westward online — the beer-brewed American single malt and its bolder Cask Strength sibling, from Portland's House Spirits Distillery. Direct allocations, free on $300+.",
+      hook: "Westward, produced by House Spirits Distillery in Portland, Oregon since 2004, is built more like a craft beer than a traditional whisky — the mash is fermented with American ale yeast into what's essentially an artisanal pale ale before double pot distillation, giving Westward's single malt a distinctly beer-forward, malty character. Cask Strength bottles select barrels undiluted for a bolder, more intense take on the same house style.",
+      faqs: [{ question: 'Why does Westward taste different from other single malts?', answer: "Westward is fermented with American ale yeast, the same approach used to brew pale ale, rather than the distiller's yeast typical of Scotch production. Founders Christian Krogstad and Thomas Mooney built the whiskey around Pacific Northwest brewing culture as much as traditional distilling, giving Westward a noticeably malty, beer-forward character." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'bird-dog', brandKeywords: ['Bird Dog'], name: 'Bird Dog',
+    seo: brandSeo({
+      brand: 'Bird Dog', categoryLabel: 'Flavored Whiskey',
+      titleTag: 'Bird Dog — Blackberry Whiskey',
+      h1: 'Bird Dog Blackberry Whiskey — Direct Allocations',
+      metaDescription: "Buy Bird Dog Blackberry Whiskey online — Kentucky whiskey infused with ripe blackberry, built for shots and easy mixing. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Bird Dog, produced by Western Spirits Beverage Company out of Bardstown, Kentucky, was one of the brands that helped pioneer the modern flavored-whiskey category — Blackberry blends white-oak-aged Kentucky whiskey with natural blackberry flavoring for a sweet, mixable pour built for shots and casual sipping.",
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'boulder-spirits', brandKeywords: ['Boulder Spirits'], name: 'Boulder Spirits',
+    seo: brandSeo({
+      brand: 'Boulder Spirits', categoryLabel: 'American Single Malt',
+      titleTag: 'Boulder Spirits — High-Altitude American Single Malt',
+      h1: 'Boulder Spirits American Single Malt Whiskey — Direct Allocations',
+      metaDescription: "Buy Boulder Spirits online — a high-altitude Colorado single malt built on 100% malted barley and Scottish-style pot distillation. Direct allocations, free on $300+.",
+      hook: "Boulder Spirits, distilled at over 5,300 feet in Boulder, Colorado on a Scottish-built Forsyths copper pot still, applies traditional Scotch methods — 100% malted barley, twice pot distilled — to a distinctly high-altitude American single malt, where the thinner mountain air and freshly charred American oak drive deep, fast wood interaction.",
+      faqs: [{ question: 'Is Boulder Spirits made using Scotch methods?', answer: "Boulder Spirits uses a Scottish-built Forsyths copper pot still and a 100% malted barley mash bill much like traditional Scotch production, but matures its whiskey in freshly charred American oak rather than used casks, and distills at over 5,300 feet of elevation in Boulder, Colorado — a combination that gives it a distinctly American character despite the Scotch-inspired process." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'del-bac', brandKeywords: ['Del Bac'], name: 'Del Bac',
+    seo: brandSeo({
+      brand: 'Del Bac', categoryLabel: 'American Single Malt',
+      titleTag: 'Del Bac — Dorado Mesquite Smoked Single Malt',
+      h1: 'Del Bac Dorado Mesquite Smoked American Single Malt Whiskey — Direct Allocations',
+      metaDescription: "Buy Del Bac online — Dorado, a desert single malt smoked over Sonoran mesquite instead of peat. From Tucson's Hamilton Distillers. Direct allocations, free on $300+.",
+      hook: "Whiskey Del Bac, made by Hamilton Distillers in Tucson, Arizona, was born from a simple question: why smoke malt over peat instead of mesquite? Founder Stephen Paul, a furniture maker who spent decades burning mesquite scraps, taught himself to malt his own barley over the wood — Dorado is the resulting smoked expression, double-distilled and aged in Arizona's desert heat for a savory, smoky single malt unlike anything from Scotland.",
+      faqs: [{ question: 'What is mesquite-smoked whiskey?', answer: "Instead of drying malted barley over peat, the traditional Scotch method, Del Bac smokes its barley over Sonoran Desert mesquite wood — a technique founder Stephen Paul developed himself after no commercial maltster offered it. The result carries a savory, campfire-like smoke distinct from peat's earthier, medicinal character." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'jp-wisers', brandKeywords: ["J.P. Wiser's", 'JP Wiser'], name: "J.P. Wiser's",
+    seo: brandSeo({
+      brand: "J.P. Wiser's", categoryLabel: 'Canadian Whisky',
+      titleTag: "J.P. Wiser's — Deluxe, 15 Year & 24 Year",
+      h1: "J.P. Wiser's Canadian Whisky — Deluxe, 15 Year & 24 Year Allocations",
+      metaDescription: "Buy J.P. Wiser's online — the everyday Deluxe blend plus the award-winning 15 Year and ultra-aged 24 Year. Canadian whisky since 1857. Direct allocations, free $300+.",
+      hook: "J.P. Wiser's traces to 1857, when John Philip Wiser began distilling in Prescott, Ontario before the brand found its long-term home at the Hiram Walker distillery in Windsor — under Master Blender Dr. Don Livermore, the range now spans the easy-drinking Deluxe, the gold-medal 15 Year, and the rare, decades-deep 24 Year, all blends of aged corn and rye whiskies.",
+      faqs: [
+        { question: "How old is J.P. Wiser's whisky?", answer: "J.P. Wiser's dates to 1857, when founder John Philip Wiser began running a distillery in Prescott, Ontario, making it one of Canada's oldest whisky names. The brand later moved production to the Hiram Walker distillery in Windsor, Ontario, where it's made today." },
+        { question: "What is the difference between J.P. Wiser's Deluxe, 15 Year, and 24 Year?", answer: "Deluxe is the everyday blend, using corn and rye whiskies aged five to nine years for a light, mixable style. 15 Year is a gold-medal-winning step up, blended from whiskies aged a minimum of fifteen years. 24 Year is the flagship rarity, layering decades-old rye and corn stocks for the deepest, most complex expression in the range." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'mccarthys', brandKeywords: ["McCarthy's"], name: "McCarthy's",
+    seo: brandSeo({
+      brand: "McCarthy's", categoryLabel: 'American Single Malt',
+      titleTag: "McCarthy's — Oregon Single Malt Whiskey",
+      h1: "McCarthy's Oregon Single Malt Whiskey — Direct Allocations",
+      metaDescription: "Buy McCarthy's online — Clear Creek Distillery's pioneering peated single malt, made with malted barley imported from Scotland. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "McCarthy's Oregon Single Malt, produced by Clear Creek Distillery in Portland since the early 1990s, was one of the first American whiskeys to use genuinely peated malt — importing peat-smoked barley from Scotland and distilling it in small copper pots before three years of maturation in Oregon oak and used bourbon barrels, predating the current American single malt boom by decades.",
+      faqs: [{ question: "Is McCarthy's a peated whiskey?", answer: "Yes — McCarthy's is distilled from malted barley that's peat-smoked in Scotland before being shipped to Clear Creek Distillery in Portland, Oregon, giving it a genuine campfire-smoke character closer to Islay Scotch than most other American single malts, which typically skip peat altogether." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'nelsons-green-brier', brandKeywords: ["Nelson's Green Brier"], name: "Nelson's Green Brier",
+    seo: brandSeo({
+      brand: "Nelson's Green Brier", categoryLabel: 'Tennessee Whiskey',
+      titleTag: "Nelson's Green Brier — Tennessee Whiskey",
+      h1: "Nelson's Green Brier Tennessee Whiskey — Direct Allocations",
+      metaDescription: "Buy Nelson's Green Brier online — the revived pre-Prohibition wheated Tennessee whiskey, brought back by Charles Nelson's descendants in 2014. Direct allocations, free $300+.",
+      hook: "Charles Nelson built his Green Brier Distillery into Tennessee's largest sour mash whiskey producer in the 1880s before Prohibition shut it down in 1909 — it sat dormant for over a century until his great-great-great-grandsons Charlie and Andy Nelson revived it in Nashville in 2014, reviving the family's original wheated mash bill and Lincoln County charcoal-mellowing process.",
+      faqs: [{ question: 'Who was Charles Nelson?', answer: "Charles Nelson was a 19th-century Nashville businessman who built Green Brier Distillery into the largest sour mash whiskey producer in Robertson County, Tennessee by the 1880s, before statewide Prohibition forced its closure in 1909. His great-great-great-grandsons Charlie and Andy Nelson revived the family distillery in 2014 using his original wheated recipe." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'ole-smoky', brandKeywords: ['Ole Smoky'], name: 'Ole Smoky',
+    seo: brandSeo({
+      brand: 'Ole Smoky', categoryLabel: 'Flavored Whiskey',
+      titleTag: 'Ole Smoky — Salty Caramel Whiskey',
+      h1: 'Ole Smoky Salty Caramel Whiskey — Direct Allocations',
+      metaDescription: "Buy Ole Smoky online — Salty Caramel, a dessert-style flavored whiskey from Tennessee's first legal moonshine distillery. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Ole Smoky opened in Gatlinburg in 2010 as the first federally licensed distillery in East Tennessee history, after a 2009 change in state law finally legalized distilling there — best known for moonshine, the brand has since expanded into flavored whiskeys like Salty Caramel, blending buttery caramel and sea salt over its Tennessee whiskey base.",
+      faqs: [{ question: 'Is Ole Smoky a moonshine or a whiskey brand?', answer: "Both — Ole Smoky launched in 2010 as Tennessee's first legal moonshine distillery and remains best known for unaged corn moonshine, but has since built out a full flavored whiskey line, including Salty Caramel, made from Tennessee whiskey blended with buttery caramel and sea salt flavoring." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'proper-no-twelve', brandKeywords: ['Proper No. Twelve', 'Proper Twelve'], name: 'Proper No. Twelve',
+    seo: brandSeo({
+      brand: 'Proper No. Twelve', categoryLabel: 'Flavored Irish Whiskey',
+      titleTag: 'Proper No. Twelve — Irish Apple Whiskey',
+      h1: 'Proper No. Twelve Irish Apple Whiskey — Direct Allocations',
+      metaDescription: "Buy Proper No. Twelve Irish Apple online — a tart apple infusion over the Dublin blended Irish whiskey named for Crumlin, Dublin 12. Direct allocations, free on $300+.",
+      hook: "Proper No. Twelve takes its name from Dublin 12, the postal district that includes Crumlin, and launched in 2018 as a Dublin-blended Irish whiskey now majority-owned by Proximo Spirits — Irish Apple layers a crisp apple infusion over the core blend for a light, chillable sipper.",
+      faqs: [{ question: 'What does "No. Twelve" refer to?', answer: "The name refers to Dublin 12, the postal district covering Crumlin, the Dublin neighborhood the brand's founders grew up in. Proper No. Twelve launched in 2018 and is produced as a blended Irish whiskey." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'seagrams-vo', brandKeywords: ["Seagram's VO", 'Seagrams VO'], name: "Seagram's VO",
+    seo: brandSeo({
+      brand: "Seagram's VO", categoryLabel: 'Canadian Whisky',
+      titleTag: "Seagram's VO — Canadian Whisky",
+      h1: "Seagram's VO Canadian Whisky — Direct Allocations",
+      metaDescription: "Buy Seagram's VO online — the light-bodied Canadian blend introduced in 1913 as a special \"Very Own\" reserve. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: "Seagram's VO, first introduced in 1913 as a special 'Very Own' reserve blend, is one of Canadian whisky's most enduring names — blended from whiskies aged a minimum of six years at the historic Gimli, Manitoba distillery for a light, easy-drinking style that has anchored North American bars for over a century.",
+      faqs: [{ question: 'What does "VO" stand for in Seagram\'s VO?', answer: "VO stands for 'Very Own' — the whisky was originally created in 1913 as a special reserve blend, distinct from Seagram's standard offerings, and the name stuck as the brand grew into one of Canada's best-known whisky exports." }],
     }),
   },
 
