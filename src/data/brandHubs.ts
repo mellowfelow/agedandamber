@@ -943,10 +943,15 @@ export const BRAND_HUBS: BrandHub[] = [
     categorySlug: 'japanese-whisky', hubSlug: 'hakushu', brandKeywords: ['Hakushu'], name: 'Hakushu',
     seo: brandSeo({
       brand: 'Hakushu', categoryLabel: 'Japanese Whisky',
-      titleTag: 'Hakushu — 12, 18 Year & Heavily Peated',
-      h1: 'Hakushu — 12, 18 Year, Distiller’s Reserve & Heavily Peated Allocations',
-      metaDescription: 'Buy Hakushu online — 12, 18 Year, Distiller’s Reserve, and the rare Heavily Peated expression. Suntory’s mountain distillery.',
-      hook: 'Hakushu, Suntory’s mountain distillery in the Southern Japanese Alps, is known for a fresher, greener, more herbal single malt character than its sister distillery Yamazaki — the Heavily Peated expression is a distinctive outlier in the Japanese whisky category.',
+      titleTag: 'Hakushu — 12 Year, 18 Year & Distiller’s Reserve',
+      h1: 'Hakushu — 12 Year, 18 Year & Distiller’s Reserve Allocations',
+      metaDescription: 'Buy Hakushu online — 12 Year, 18 Year, and Distiller’s Reserve. Suntory’s forest distillery in the Southern Japanese Alps. Direct allocations, free $300+.',
+      hook: 'Hakushu, Suntory’s "Forest Distillery" set in the Southern Japanese Alps, draws its water from the surrounding woodland — producing a fresher, greener, more herbal single malt character than its sister distillery Yamazaki. Demand for the aged 12 and 18 Year expressions has pushed real-world prices well above original list pricing.',
+      faqs: [
+        { question: 'What does Hakushu whisky taste like?', answer: 'Hakushu is known for a crisp, green, herbal character — mint, pear, and light smoke are common notes, a result of the distillery\'s forest surroundings in the Southern Japanese Alps. It\'s typically lighter and fresher than its sister distillery Yamazaki.' },
+        { question: 'Hakushu vs Yamazaki — what\'s the difference?', answer: 'Both are Suntory single malt distilleries, but Hakushu\'s mountain-forest setting produces a fresher, greener, more herbal spirit, while Yamazaki\'s single malt is typically richer and more fruit-driven. Many collectors consider them complementary rather than competing styles.' },
+        { question: 'Why is Hakushu 18 so expensive?', answer: 'Hakushu 18 Year has become increasingly scarce as global demand for aged Japanese whisky has outpaced supply — the same dynamic that has driven up prices across Suntory\'s premium range. Allocated stock is limited, and real-world pricing now runs well above the original list price.' },
+      ],
     }),
   },
   {
@@ -957,6 +962,11 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Suntory Toki — Blended Japanese Whisky for the Highball, Direct Allocations',
       metaDescription: 'Buy Suntory Toki online — the blended Japanese whisky built for the highball, from Yamazaki, Hakushu, and Chita. Direct allocations.',
       hook: 'Suntory Toki is a blended Japanese whisky combining malt and grain whisky from Yamazaki, Hakushu, and Chita distilleries, purpose-built for the Japanese highball — light, crisp, and mixable.',
+      faqs: [
+        { question: 'What is the best way to drink Suntory Toki?', answer: 'Suntory Toki is specifically designed for the highball (mizuwari) — whisky poured over ice with cold sparkling water and stirred gently. Its light, crisp profile is built to stay balanced and refreshing when mixed, rather than heavily flavoured cocktails.' },
+        { question: 'Suntory Toki vs Hibiki — what\'s the difference?', answer: 'Both are Suntory blends drawing on Yamazaki, Hakushu, and Chita whiskies, but Toki is a lighter, entry-level expression built specifically for mixing into highballs, while Hibiki is the premium, more complex flagship blend intended for sipping neat or on the rocks.' },
+        { question: 'Is Suntory Toki a good beginner Japanese whisky?', answer: 'Yes — Toki\'s light body and clean, gently spiced profile make it one of the most approachable entry points into Japanese whisky, whether served neat, on the rocks, or as a highball.' },
+      ],
     }),
   },
   {
@@ -978,6 +988,10 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Togouchi — Premium & 15 Year Tunnel-Matured Blended Whisky Allocations',
       metaDescription: 'Buy Togouchi online — Premium and 15 Year blended Japanese whisky, matured in a Hiroshima railway tunnel. Direct allocations, free $300+.',
       hook: 'Togouchi is a blended Japanese whisky matured in a decommissioned railway tunnel in Hiroshima Prefecture, where naturally stable temperature and humidity are used for maturation — the Premium Blended and 15 Year are the expressions in our allocation.',
+      faqs: [
+        { question: 'What makes Togouchi whisky different?', answer: 'Togouchi ages its whisky inside a decommissioned railway tunnel in the mountains of Hiroshima Prefecture, produced by Chugoku Jozo. The tunnel\'s naturally stable, cool temperature and humidity are said to give the whisky a smoother, rounder maturation than a standard warehouse.' },
+        { question: 'What is the difference between Togouchi Premium and Togouchi 15 Year?', answer: 'Togouchi Premium Blended is the entry-level expression, built for everyday sipping and highballs. Togouchi 15 Year is the longer-matured expression, offering a more rounded, honeyed, and mellow character from its extended time in the tunnel.' },
+      ],
     }),
   },
   {
@@ -988,26 +1002,42 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Akashi — Single Malt, Blended & White Oak Distillery Allocations',
       metaDescription: 'Buy Akashi online — single malt and blended whisky from White Oak Distillery, one of Japan’s oldest producers. Direct allocations, free $300+.',
       hook: 'Akashi is produced by White Oak Distillery in Hyogo Prefecture, one of Japan’s smaller and older whisky producers, distilling since 1919 — its single malt and blended expressions offer an entry point into Japanese whisky distinct from the larger Suntory and Nikka houses.',
+      faqs: [
+        { question: 'Is Akashi a single malt or a blended whisky?', answer: 'White Oak Distillery produces both — a single malt Akashi and a more widely available blended Akashi, which combines malt and grain whisky matured in ex-bourbon, shochu, and virgin oak casks. The blended expression is the more accessible, everyday style.' },
+        { question: 'What is White Oak Distillery?', answer: 'White Oak Distillery, operated by Eigashima Shuzo in Akashi, Hyogo Prefecture, has been distilling since 1919 — making it one of Japan\'s older whisky producers, predating the larger Suntory and Nikka houses. It remains a small-scale, independent operation.' },
+      ],
     }),
   },
   {
     categorySlug: 'japanese-whisky', hubSlug: 'iwai', brandKeywords: ['Iwai'], name: 'Iwai',
     seo: brandSeo({
       brand: 'Iwai', categoryLabel: 'Japanese Whisky',
-      titleTag: 'Iwai — Mars Shinshu Tradition Whisky',
-      h1: 'Iwai Japanese Whisky — Tradition & Mizunara Cask Allocations',
-      metaDescription: 'Buy Iwai online — Mars Shinshu’s Tradition expression, matured in ex-bourbon and Mizunara oak. Direct allocations at Aged & Amber.',
-      hook: 'Iwai is produced by Mars Shinshu Distillery, named for founder Kiichiro Iwai, a distiller who worked alongside Masataka Taketsuru in Japanese whisky’s earliest days — the Tradition expression is matured partly in ex-bourbon and Mizunara casks.',
+      titleTag: 'Iwai Whisky — Iwai 45 & Iwai Tradition',
+      h1: 'Iwai Whisky — Iwai 45 & Iwai Tradition Allocations',
+      metaDescription: 'Buy Iwai whisky online — Iwai 45 and Iwai Tradition from Mars Shinshu Distillery, matured in ex-bourbon oak. Direct allocations at Aged & Amber.',
+      hook: 'Iwai is produced by Mars Shinshu Distillery, named for founder Kiichiro Iwai, a distiller who worked alongside Masataka Taketsuru in Japanese whisky’s earliest days. Iwai 45 is bottled at a fuller 90 proof for extra body, while Iwai Tradition is the lighter, more approachable standard blend — both matured in ex-bourbon oak.',
+      faqs: [
+        { question: 'What is the difference between Iwai 45 and Iwai Tradition?', answer: 'Iwai 45 is bottled at a higher 90 proof for a fuller, more bourbon-leaning body. Iwai Tradition is bottled at a lighter 80 proof, giving a softer, more easy-drinking style suited to mixing. Both are produced at Mars Shinshu Distillery and matured in ex-bourbon oak.' },
+        { question: 'Who is Iwai whisky named after?', answer: 'Iwai is named for Kiichiro Iwai, a chemist and distiller who worked alongside Masataka Taketsuru — the founder of Nikka and a foundational figure in Japanese whisky — in the industry\'s earliest days. Mars Shinshu Distillery honours him with the Iwai range.' },
+      ],
     }),
   },
   {
+    // Informational/brand-education only: Mars Shinshu's core Komagatake and Maltage Cosmo range is NOT stocked —
+    // only the sister Iwai range (separate hub above) is in our allocation. No transactional CTA or "buy"
+    // framing here so this page never implies unstocked products are purchasable.
     categorySlug: 'japanese-whisky', hubSlug: 'mars-shinshu', brandKeywords: ['Mars Shinshu', 'Mars Komagatake', 'Mars Maltage'], name: 'Mars Shinshu',
     seo: brandSeo({
       brand: 'Mars Shinshu', categoryLabel: 'Japanese Whisky',
-      titleTag: 'Mars Shinshu — Komagatake & Maltage Cosmo',
-      h1: 'Mars Shinshu — Komagatake & Maltage Cosmo High-Altitude Allocations',
-      metaDescription: 'Buy Mars Shinshu online — Komagatake and Maltage Cosmo from Japan’s highest-altitude distillery. Direct allocations. Free shipping $300+.',
-      hook: 'Mars Shinshu is Japan’s highest-altitude whisky distillery, set in the Japanese Alps at over 800 metres — the cool climate slows maturation for a lighter, more delicate spirit under the Komagatake and Maltage Cosmo labels.',
+      titleTag: 'Mars Shinshu Distillery — Japanese Whisky Guide',
+      h1: 'Mars Shinshu — Japan’s Highest-Altitude Whisky Distillery',
+      metaDescription: 'Learn about Mars Shinshu, Japan’s highest-altitude whisky distillery, home of the Komagatake and Maltage Cosmo lines — plus its Iwai range, available direct at Aged & Amber.',
+      transactionalCTA: 'Mars Shinshu\'s core Komagatake and Maltage Cosmo range is not currently part of our allocation. We do carry the distillery\'s sister Iwai range direct — browse Iwai 45 and Iwai Tradition.',
+      hook: 'Mars Shinshu is Japan’s highest-altitude whisky distillery, set in the Japanese Alps at over 800 metres — the cool climate slows maturation for a lighter, more delicate spirit. The distillery produces the Komagatake single malt and Maltage Cosmo blended lines, alongside the more widely available Iwai range.',
+      faqs: [
+        { question: 'Is Mars Shinshu the same as Mars Iwai?', answer: 'They\'re related but distinct lines from the same distillery. Mars Shinshu is the distillery itself, home to the Komagatake single malt and Maltage Cosmo blended ranges. Iwai is a separate, more widely distributed blended line from the same distillery, named for co-founder Kiichiro Iwai.' },
+        { question: 'Where can I buy Mars Komagatake or Maltage Cosmo?', answer: 'Komagatake and Maltage Cosmo are not currently part of our direct allocation. We do carry Mars Shinshu\'s Iwai range — Iwai 45 and Iwai Tradition — available now.' },
+      ],
     }),
   },
 

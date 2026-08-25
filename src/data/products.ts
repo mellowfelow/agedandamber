@@ -4110,6 +4110,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Mizunara Oak & Sherry Casks",
     distilleryLocation: "Suntory, Osaka, Japan",
+    seo: {
+      primaryKeyword: "hibiki 21",
+      secondaryKeywords: ["hibiki 21 price", "hibiki whisky", "hibiki vs yamazaki"],
+    },
   },
   {
     id: 'prod-japan-02',
@@ -4134,6 +4138,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Mizunara Oak & Sherry Casks",
     distilleryLocation: "Suntory, Osaka, Japan",
+    seo: {
+      primaryKeyword: "hibiki japanese harmony",
+      secondaryKeywords: ["hibiki harmony", "buy hibiki harmony", "what is hibiki"],
+    },
   },
   {
     id: 'prod-japan-03',
@@ -4158,6 +4166,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Mizunara Oak",
     distilleryLocation: "Kaiyo, Japan (ocean-matured)",
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+    seo: {
+      primaryKeyword: "kaiyo mizunara oak cask strength",
+      secondaryKeywords: ["kaiyo whisky", "kaiyo japanese whisky", "mizunara oak cask strength whisky"],
+    },
   },
   {
     id: 'prod-japan-04',
@@ -4182,6 +4195,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Mizunara Oak",
     distilleryLocation: "Kaiyo, Japan (ocean-matured)",
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+    seo: {
+      primaryKeyword: "kaiyo mizunara oak whisky",
+      secondaryKeywords: ["kaiyo whisky", "kaiyo japanese whisky", "buy kaiyo whisky"],
+    },
   },
   {
     id: 'prod-japan-05',
@@ -4206,6 +4224,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Mars Shinshu Distillery, Nagano, Japan",
+    seo: {
+      primaryKeyword: "iwai 45",
+      secondaryKeywords: ["mars iwai", "iwai whisky", "mars shinshu iwai"],
+    },
   },
   {
     id: 'prod-japan-06',
@@ -4230,6 +4252,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Mars Shinshu Distillery, Nagano, Japan",
+    seo: {
+      primaryKeyword: "iwai tradition",
+      secondaryKeywords: ["mars iwai", "iwai whisky", "buy iwai whisky"],
+    },
   },
   {
     id: 'prod-japan-07',
@@ -4254,6 +4280,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Nikka, Japan",
+    seo: {
+      primaryKeyword: "nikka days",
+      secondaryKeywords: ["nikka whisky", "buy nikka whisky online", "best nikka expression"],
+    },
   },
   {
     id: 'prod-japan-08',
@@ -4278,6 +4308,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka, Japan",
+    seo: {
+      primaryKeyword: "nikka from the barrel",
+      secondaryKeywords: ["nikka from the barrel price", "nikka whisky", "nikka review"],
+    },
   },
   {
     id: 'prod-japan-09',
@@ -4302,6 +4336,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka Miyagikyo Distillery, Sendai, Japan",
+    seo: {
+      primaryKeyword: "nikka miyagikyo",
+      secondaryKeywords: ["miyagikyo distillery", "nikka whisky", "nikka vs suntory"],
+    },
   },
   {
     id: 'prod-japan-10',
@@ -4326,6 +4364,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka (Yoichi & Miyagikyo), Japan",
+    seo: {
+      primaryKeyword: "nikka taketsuru",
+      secondaryKeywords: ["nikka pure malt", "nikka masataka taketsuru", "nikka whisky"],
+    },
   },
   {
     id: 'prod-japan-11',
@@ -4350,6 +4392,10 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka Yoichi Distillery, Hokkaido, Japan",
+    seo: {
+      primaryKeyword: "nikka yoichi",
+      secondaryKeywords: ["yoichi distillery", "nikka whisky", "nikka review"],
+    },
   },
   {
     id: 'prod-japan-12',
@@ -4374,6 +4420,10 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Ex-Bourbon & Mizunara Oak",
     distilleryLocation: "Suntory, Osaka, Japan",
+    seo: {
+      primaryKeyword: "suntory toki",
+      secondaryKeywords: ["buy suntory toki", "toki whisky", "toki highball", "suntory toki price"],
+    },
   },
   {
     id: 'prod-japan-13',
@@ -4398,6 +4448,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Varied Casks",
     distilleryLocation: "Suntory (multi-country blend)",
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+    seo: {
+      primaryKeyword: "suntory world whisky ao",
+      secondaryKeywords: ["suntory ao", "ao whisky", "buy suntory ao whisky"],
+    },
   },
   {
     id: 'prod-japan-14',
@@ -4422,6 +4477,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Matsui Shuzo, Tottori, Japan",
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+    seo: {
+      primaryKeyword: "tenjaku whisky",
+      secondaryKeywords: ["tenjaku japanese whisky", "buy tenjaku whisky", "tenjaku blended"],
+    },
   },
   {
     id: 'prod-japan-15',
@@ -4446,6 +4506,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Suntory Hakushu Distillery, Yamanashi, Japan",
+    seo: {
+      primaryKeyword: "hakushu 12",
+      secondaryKeywords: ["hakushu whisky", "hakushu price", "buy hakushu online"],
+    },
   },
   {
     id: 'prod-japan-16',
@@ -4470,6 +4534,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Mizunara & Ex-Bourbon Oak",
     distilleryLocation: "Suntory Yamazaki Distillery, Osaka, Japan",
+    seo: {
+      primaryKeyword: "yamazaki 12",
+      secondaryKeywords: ["yamazaki 12 price", "buy yamazaki 12", "yamazaki 12 vs 18", "where to buy yamazaki whiskey"],
+    },
   },
   {
     id: 'prod-japan-17',
@@ -4494,6 +4562,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Mizunara, Sherry & Ex-Bourbon Oak",
     distilleryLocation: "Suntory Yamazaki Distillery, Osaka, Japan",
+    seo: {
+      primaryKeyword: "yamazaki 18",
+      secondaryKeywords: ["yamazaki 18 price", "buy yamazaki 18", "yamazaki 12 vs 18"],
+    },
   },
   {
     id: 'prod-japan-18',
@@ -4518,6 +4590,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Repurposed Mountain Tunnel",
     distilleryLocation: "Chugoku Jozo, Hiroshima, Japan",
+    seo: {
+      primaryKeyword: "togouchi whisky",
+      secondaryKeywords: ["togouchi blended japanese whisky", "buy togouchi whisky", "togouchi review"],
+    },
   },
   {
     id: 'prod-japan-b2-01',
@@ -4542,6 +4618,10 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Blended, Sakura Cask Finish",
     distilleryLocation: "Osaka, Japan",
+    seo: {
+      primaryKeyword: "hibiki blossom harmony",
+      secondaryKeywords: ["hibiki whisky", "hibiki designer series", "hibiki review"],
+    },
   },
   {
     id: 'prod-japan-b2-02',
@@ -4566,6 +4646,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Coffey Still, Single Malt",
     distilleryLocation: "Miyagikyo Distillery, Sendai, Japan",
+    seo: {
+      primaryKeyword: "nikka coffey malt",
+      secondaryKeywords: ["nikka coffey grain", "nikka whisky", "nikka whiskey"],
+    },
   },
   {
     id: 'prod-japan-b2-03',
@@ -4590,6 +4674,11 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Single Malt, Aromatic Yeast Fermentation",
     distilleryLocation: "Miyagikyo Distillery, Sendai, Japan",
+    // No distinct SEMrush term exists for this specific variant — falling back to the brand-line term per the source's own convention.
+    seo: {
+      primaryKeyword: "nikka miyagikyo",
+      secondaryKeywords: ["miyagikyo distillery", "nikka whisky"],
+    },
   },
   {
     id: 'prod-japan-b2-04',
@@ -4614,6 +4703,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Pure Malt, Sherry and Bourbon Casks",
     distilleryLocation: "Yoichi and Miyagikyo Distilleries, Japan",
+    seo: {
+      primaryKeyword: "nikka 21",
+      secondaryKeywords: ["nikka taketsuru", "nikka masataka taketsuru", "nikka price"],
+    },
   },
   {
     id: 'prod-japan-b2-05',
@@ -4638,6 +4731,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Single Malt, Coal-Fired Pot Still",
     distilleryLocation: "Yoichi, Hokkaido, Japan",
+    // No age-specific SEMrush term exists ("nikka yoichi 10" untracked) — falling back to the brand-line term per the source's own convention.
+    seo: {
+      primaryKeyword: "nikka yoichi",
+      secondaryKeywords: ["yoichi distillery", "nikka price", "nikka whisky"],
+    },
   },
   {
     id: 'prod-japan-b2-06',
@@ -4662,6 +4760,10 @@ export const PRODUCTS: Product[] = [
     stock: 9,
     caskType: "Single Malt, American Oak",
     distilleryLocation: "Hakushu, Yamanashi, Japan",
+    seo: {
+      primaryKeyword: "hakushu 18",
+      secondaryKeywords: ["hakushu price", "hakushu vs yamazaki", "buy hakushu"],
+    },
   },
   {
     id: 'prod-japan-b2-07',
@@ -4686,6 +4788,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Single Malt, Lightly Peated",
     distilleryLocation: "Hakushu, Yamanashi, Japan",
+    seo: {
+      primaryKeyword: "hakushu distiller's reserve",
+      secondaryKeywords: ["hakushu forest", "what is hakushu"],
+    },
   },
   {
     id: 'prod-japan-b2-08',
@@ -4710,6 +4816,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Mizunara Oak, Sherry and Bordeaux Wine Casks",
     distilleryLocation: "Yamazaki, Osaka, Japan",
+    seo: {
+      primaryKeyword: "yamazaki distiller's reserve",
+      secondaryKeywords: ["is yamazaki a good whisky", "what is yamazaki", "where can i buy yamazaki"],
+    },
   },
   {
     id: 'prod-japan-b2-09',
@@ -4734,6 +4844,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Blended, Bourbon and Sherry Casks",
     distilleryLocation: "Koriyama, Fukushima, Japan",
+    // Confirmed zero SEMrush data anywhere in the source dataset (full-tree grep) — generic/inferred keywords, not volume-backed.
+    seo: {
+      primaryKeyword: "yamazakura whisky",
+      secondaryKeywords: ["yamazakura japanese whisky", "buy yamazakura whisky", "yamazakura blended"],
+    },
   },
 
   // RYE & OTHER WHISKEY
@@ -25731,6 +25846,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Ex-bourbon, shochu, and virgin oak casks",
     distilleryLocation: "Akashi, Hyogo Prefecture, Japan",
+    seo: {
+      primaryKeyword: "akashi whisky",
+      secondaryKeywords: ["akashi blended", "akashi single malt", "buy akashi whisky"],
+    },
   },
   {
     id: 'prod-japan-new-03',
@@ -25749,6 +25868,11 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Aged in a converted railway tunnel",
     distilleryLocation: "Hiroshima, Japan",
+    // No "togouchi 15" SEMrush term exists (only "togouchi 9" and "togouchi 18" are tracked, neither matching actual stock) — falling back to the brand-line term per the source's own convention.
+    seo: {
+      primaryKeyword: "togouchi whisky",
+      secondaryKeywords: ["togouchi review", "buy togouchi whisky"],
+    },
   },
   {
     id: 'prod-tequila-new-01',
