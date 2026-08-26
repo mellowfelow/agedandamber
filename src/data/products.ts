@@ -15461,6 +15461,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Chardonnay, Dealcoholized",
     distilleryLocation: "Andalucía, Spain",
+    seo: {
+      primaryKeyword: "noughty sparkling chardonnay",
+      secondaryKeywords: ["noughty non alcoholic champagne", "noughty non alcoholic wine", "noughty wine", "noughty non-alcoholic sparkling chardonnay", "noughty"],
+    },
   },
   {
     id: 'prod-na-champ-01',
@@ -15485,6 +15489,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Pinot Blanc & Silvaner, De-Alcoholized",
     distilleryLocation: "Rheingau, Germany",
+    seo: {
+      // No SEMrush volume data found for "chateau del ish" / "del ish" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "chateau del ish sparkling white",
+      secondaryKeywords: ["non alcoholic sparkling wine", "alcohol free champagne", "sparkling non alcoholic wine", "best non alcoholic champagne", "non-alcoholic champagne"],
+    },
   },
   {
     id: 'prod-na-champ-02',
@@ -15509,6 +15518,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Chardonnay & Chenin Blanc, De-Alcoholized",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "fre sparkling brut",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "fre non alcoholic champagne", "fre champagne", "sutter home fre brut non alcoholic champagne"],
+      faqs: [{ question: 'Does FRE wine have any alcohol?', answer: 'Like nearly all alcohol-removed wines, FRE retains a trace of alcohol, typically under 0.5% ABV.' }],
+    },
   },
   {
     id: 'prod-na-champ-03',
@@ -15533,6 +15547,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Sauvignon Blanc & Pinot Gris, De-Alcoholized",
     distilleryLocation: "Waipara Valley, New Zealand",
+    seo: {
+      // No SEMrush volume data found for "giesen" + "brut"/"sparkling" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "giesen sparkling brut",
+      secondaryKeywords: ["non alcoholic sparkling wine", "alcohol removed wine", "sparkling non alcoholic wine", "alcohol free sparkling wine", "organic sparkling wine"],
+    },
   },
   {
     id: 'prod-na-champ-04',
@@ -15557,6 +15576,11 @@ export const PRODUCTS: Product[] = [
     stock: 52,
     caskType: "100% Riesling, De-Alcoholized",
     distilleryLocation: "Rheingau, Germany",
+    seo: {
+      // No SEMrush volume data found for "leitz" or "eins zwei zero" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "leitz eins-zwei-zero sparkling riesling",
+      secondaryKeywords: ["non alcoholic sparkling wine", "alcohol removed wine", "sparkling brut", "organic sparkling wine", "non alcoholic chardonnay"],
+    },
   },
   {
     id: 'prod-na-champ-05',
@@ -15581,6 +15605,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Chardonnay & Silvaner, De-Alcoholized",
     distilleryLocation: "Veneto, Italy",
+    seo: {
+      // No SEMrush volume data found for "bolle" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bolle blanc de blancs",
+      secondaryKeywords: ["non alcoholic sparkling wine", "sparkling chardonnay", "organic sparkling wine", "best non alcoholic champagne", "champagne alternative"],
+    },
   },
   {
     id: 'prod-na-champ-06',
@@ -15605,6 +15634,11 @@ export const PRODUCTS: Product[] = [
     stock: 53,
     caskType: "Merlot & Pinot Noir, De-Alcoholized",
     distilleryLocation: "Rheinhessen, Germany",
+    seo: {
+      // No SEMrush volume data found for "chateau del ish" / "del ish" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "chateau del ish sparkling rose",
+      secondaryKeywords: ["non alcoholic sparkling rose", "rose fizzy wine", "non alcoholic rose", "non alcoholic rose wine", "sparkling rose non alcoholic"],
+    },
   },
   {
     id: 'prod-na-champ-07',
@@ -15629,6 +15663,10 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Pinot Noir & Chardonnay, De-Alcoholized",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "fre rose",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "fre champagne", "non alcoholic sparkling rose", "rose fizzy wine"],
+    },
   },
   {
     id: 'prod-na-champ-08',
@@ -15653,6 +15691,10 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Organic Chardonnay, De-Alcoholized",
     distilleryLocation: "France",
+    seo: {
+      primaryKeyword: "french bloom le blanc",
+      secondaryKeywords: ["french bloom", "french bloom non alcoholic", "french bloom non alcoholic wine", "french bloom non alcoholic champagne", "french bloom champagne"],
+    },
   },
   {
     id: 'prod-na-champ-09',
@@ -15677,6 +15719,10 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "Organic Chardonnay & Pinot Noir, De-Alcoholized",
     distilleryLocation: "France",
+    seo: {
+      primaryKeyword: "french bloom le rose",
+      secondaryKeywords: ["french bloom", "french bloom rose", "french bloom non alcoholic", "non alcoholic sparkling rose", "french bloom non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-champ-10',
@@ -15701,6 +15747,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "100% White Grape Juice",
     distilleryLocation: "New York, USA",
+    seo: {
+      primaryKeyword: "kedem sparkling grape juice",
+      secondaryKeywords: ["sparkling white grape juice", "sparkling grape juice", "sparkling juice", "non alcoholic sparkling grape juice", "kedem sparkling concord grape juice"],
+    },
   },
   {
     id: 'prod-na-champ-11',
@@ -15725,6 +15775,11 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "100% Pinot Noir, De-Alcoholized",
     distilleryLocation: "Rheingau, Germany",
+    seo: {
+      // No SEMrush volume data found for a Leitz rosé specifically — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "leitz eins-zwei-zero sparkling rose",
+      secondaryKeywords: ["non alcoholic sparkling rose", "rose fizzy wine", "alcohol free rose", "non alcoholic rose wine", "low alcohol rose wine"],
+    },
   },
   {
     id: 'prod-na-champ-12',
@@ -15749,6 +15804,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Organic Tempranillo, De-Alcoholized",
     distilleryLocation: "Southern Spain",
+    seo: {
+      primaryKeyword: "noughty sparkling rosé",
+      secondaryKeywords: ["noughty non alcoholic sparkling rosé", "noughty alcohol-free sparkling rosé", "noughty non alcoholic champagne", "noughty non alcoholic wine", "noughty"],
+    },
   },
   {
     id: 'prod-na-champ-13',
@@ -15773,6 +15832,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "100% Chardonnay, De-Alcoholized",
     distilleryLocation: "Languedoc, France",
+    seo: {
+      // No SEMrush volume data found for "oddbird" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "oddbird blanc de blancs",
+      secondaryKeywords: ["non alcoholic sparkling wine", "dealcoholized wine", "sparkling chardonnay", "organic sparkling wine", "champagne alternative"],
+    },
   },
   {
     id: 'prod-na-champ-14',
@@ -15797,6 +15861,11 @@ export const PRODUCTS: Product[] = [
     stock: 52,
     caskType: "Chardonnay & Pinot Noir, De-Alcoholized",
     distilleryLocation: "Italy",
+    seo: {
+      // No SEMrush volume data found for "oddbird" across any export — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "oddbird sparkling rose",
+      secondaryKeywords: ["non alcoholic sparkling rose", "rose fizzy wine", "non alcoholic rose", "sparkling rose non alcoholic", "dealcoholized wine"],
+    },
   },
   {
     id: 'prod-na-champ-15',
@@ -15821,6 +15890,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Italian Blend, De-Alcoholized",
     distilleryLocation: "Friuli & Abruzzo, Italy",
+    seo: {
+      primaryKeyword: "prima pave rose brut",
+      secondaryKeywords: ["prima pave", "non alcoholic sparkling rose", "rose fizzy wine", "sparkling rose non alcoholic"],
+    },
   },
   {
     id: 'prod-na-champ-16',
@@ -15845,6 +15918,10 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "100% White Grape Juice",
     distilleryLocation: "Michigan, USA",
+    seo: {
+      primaryKeyword: "st julian sparkling juice",
+      secondaryKeywords: ["sparkling white grape juice", "sparkling grape juice", "sparkling juice", "non alcoholic sparkling grape juice"],
+    },
   },
   {
     id: 'prod-na-champ-17',
@@ -15869,6 +15946,10 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "California",
+    seo: {
+      primaryKeyword: "surely non alcoholic wine",
+      secondaryKeywords: ["non alcoholic sparkling wine", "sparkling brut", "dealcoholized wine", "alcohol free sparkling wine", "sparkling non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-champ-18',
@@ -15893,6 +15974,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Concord Grape Juice Blend",
     distilleryLocation: "Concord Grape, USA",
+    seo: {
+      primaryKeyword: "welch's sparkling juice cocktail",
+      secondaryKeywords: ["welch's red grape juice", "welch's sparkling red grape juice", "sparkling red grape juice", "sparkling red grape", "welch's non alcoholic sparkling juice cocktail"],
+    },
   },
   {
     id: 'prod-na-champ-19',
@@ -15917,6 +16002,10 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "White Grape Juice Blend",
     distilleryLocation: "USA",
+    seo: {
+      primaryKeyword: "sparkling white grape juice",
+      secondaryKeywords: ["welch's sparkling white grape juice", "white grape juice sparkling", "welch's white grape sparkling juice", "sparkling white grape", "non alcoholic white grape juice"],
+    },
   },
   {
     id: 'prod-na-champ-20',
@@ -15941,6 +16030,11 @@ export const PRODUCTS: Product[] = [
     stock: 54,
     caskType: "Riesling, De-Alcoholized",
     distilleryLocation: "Mosel, Germany",
+    seo: {
+      // No SEMrush volume data found for "spring in a bottle" + "blanc de blancs" (the export only surfaced the sibling Rosé) — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "wolffer spring in a bottle blanc de blancs",
+      secondaryKeywords: ["non alcoholic sparkling wine", "dealcoholized wine", "organic sparkling wine", "sparkling chardonnay", "champagne alternative"],
+    },
   },
   {
     id: 'prod-na-champ-21',
@@ -15965,6 +16059,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Pinot Noir, Pinot Meunier, Saint Laurent & Dornfelder, De-Alcoholized",
     distilleryLocation: "Rheinhessen, Germany",
+    seo: {
+      primaryKeyword: "spring in a bottle non alcoholic rose",
+      secondaryKeywords: ["non alcoholic sparkling rose", "rose fizzy wine", "non alcoholic rose", "sparkling rose non alcoholic"],
+    },
   },
 
   // NON-ALCOHOLIC SPIRITS
@@ -15991,6 +16089,13 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Blue Weber agave, citrus, herbal botanicals",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      primaryKeyword: "almave non alcoholic tequila",
+      secondaryKeywords: ["lewis hamilton non alcoholic tequila", "non alcoholic agave spirit", "best non alcoholic tequila", "agave blanco", "non alcoholic tequila"],
+      faqs: [
+        { question: "Who makes Almave?", answer: "Almave was co-founded by seven-time Formula 1 champion Lewis Hamilton alongside agave expert Iván Saldaña, Co-Founder and Master Distiller of Casa Lumbre. Launched in 2023, it's billed as the first super-premium distilled non-alcoholic blue agave spirit — it has no connection to Casamigos or its founders." },
+      ],
+    },
   },
   {
     id: 'prod-na-spirits-02',
@@ -16015,6 +16120,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Agave, gentian root, citrus",
     distilleryLocation: "Houston, Texas",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "cut above agave blanco",
+      secondaryKeywords: ["agave blanco", "non alcoholic tequila alternative", "zero proof tequila", "best non alcoholic tequila"],
+    },
   },
   {
     id: 'prod-na-spirits-03',
@@ -16039,6 +16149,10 @@ export const PRODUCTS: Product[] = [
     stock: 50,
     caskType: "Agave, smoke essence, citrus",
     distilleryLocation: "Houston, Texas",
+    seo: {
+      primaryKeyword: "non alcoholic mezcal",
+      secondaryKeywords: ["zero proof tequila", "non alcoholic tequila alternative", "alcohol free tequila"],
+    },
   },
   {
     id: 'prod-na-spirits-04',
@@ -16063,6 +16177,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Toasted oak, vanilla, caramel, malted grain",
     distilleryLocation: "Mill Valley, California",
+    seo: {
+      primaryKeyword: "free spirits bourbon",
+      secondaryKeywords: ["free spirit bourbon", "free spirits bourbon review", "spirit of bourbon", "non alcoholic bourbon", "best non alcoholic bourbon"],
+    },
   },
   {
     id: 'prod-na-spirits-05',
@@ -16087,6 +16205,10 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Juniper, cardamom, gentian, citrus, thyme",
     distilleryLocation: "Mill Valley, California",
+    seo: {
+      primaryKeyword: "free spirits gin",
+      secondaryKeywords: ["free spirits spirit of gin", "free spirits gin review", "non alcoholic gin", "gin alternative"],
+    },
   },
   {
     id: 'prod-na-spirits-06',
@@ -16111,6 +16233,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Agave, pepper, oak, caramel",
     distilleryLocation: "Mill Valley, California",
+    seo: {
+      primaryKeyword: "free spirits the spirit of tequila",
+      secondaryKeywords: ["free spirits tequila", "free spirits non alcoholic tequila", "tequila alternative", "non alcoholic tequila", "free spirits non alcoholic"],
+    },
   },
   {
     id: 'prod-na-spirits-07',
@@ -16135,6 +16261,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Agave, oak, bay leaf, barley, chili seed",
     distilleryLocation: "Copenhagen, Denmark",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "ish mexican agave spirit",
+      secondaryKeywords: ["non alcoholic agave spirit", "zero proof tequila", "non alcoholic tequila"],
+    },
   },
   {
     id: 'prod-na-spirits-08',
@@ -16159,6 +16290,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Agave essence, chamomile, citrus, sea salt",
     distilleryLocation: "Melbourne, Australia",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lyre's agave blanco",
+      secondaryKeywords: ["lyres", "non alcoholic tequila alternative", "zero proof tequila"],
+    },
   },
   {
     id: 'prod-na-spirits-09',
@@ -16183,6 +16319,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Malt extract, vanilla, oak, caramel",
     distilleryLocation: "Melbourne, Australia",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "lyre's american malt",
+      secondaryKeywords: ["lyres", "non alcoholic whiskey", "non-alcoholic whiskey", "best non alcoholic whiskey"],
+    },
   },
   {
     id: 'prod-na-spirits-10',
@@ -16207,6 +16348,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Juniper, pepperberry, orange blossom, jasmine",
     distilleryLocation: "Melbourne, Australia",
+    seo: {
+      primaryKeyword: "lyre's non alcoholic gin",
+      secondaryKeywords: ["lyres", "non alcoholic gin", "best non alcoholic gin", "gin alternative"],
+    },
   },
   {
     id: 'prod-na-spirits-11',
@@ -16231,6 +16376,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Juniper, coriander, sage, grapefruit zest",
     distilleryLocation: "Southern California",
+    seo: {
+      primaryKeyword: "monday zero alcohol gin",
+      secondaryKeywords: ["monday gin", "monday non alcoholic gin", "non alcoholic gin", "best non alcoholic gin"],
+    },
   },
   {
     id: 'prod-na-spirits-12',
@@ -16255,6 +16404,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Brown sugar, molasses, roasted grain",
     distilleryLocation: "Southern California",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "monday zero alcohol whiskey",
+      secondaryKeywords: ["non alcoholic whiskey", "na whiskey", "best non alcoholic whiskey", "monday zero alcohol gin"],
+    },
   },
   {
     id: 'prod-na-spirits-13',
@@ -16279,6 +16433,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Rock samphire, coastal sage, sea salt, lemon",
     distilleryLocation: "Cornwall, England",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "pentire adrift",
+      secondaryKeywords: ["non alcoholic spirits", "best non alcoholic spirits", "non alcoholic botanicals", "seedlip"],
+    },
   },
   {
     id: 'prod-na-spirits-14',
@@ -16303,6 +16462,10 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Juniper, lemongrass, coriander, angelica, cucumber",
     distilleryLocation: "Chicago, Illinois",
+    seo: {
+      primaryKeyword: "ritual zero proof gin alternative",
+      secondaryKeywords: ["ritual gin", "ritual gin alternative", "ritual zero proof gin", "non alcoholic gin", "zero proof gin"],
+    },
   },
   {
     id: 'prod-na-spirits-15',
@@ -16327,6 +16490,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Agave-inspired botanicals, rock salt, green pepper",
     distilleryLocation: "Chicago, Illinois",
+    seo: {
+      primaryKeyword: "ritual tequila alternative",
+      secondaryKeywords: ["ritual zero proof tequila", "ritual tequila", "ritual zero proof tequila alternative", "ritual zero proof agave spirit", "ritual zero proof agave spirit alternative"],
+    },
   },
   {
     id: 'prod-na-spirits-16',
@@ -16351,6 +16518,10 @@ export const PRODUCTS: Product[] = [
     stock: 54,
     caskType: "Oak, vanilla, caramel, stone fruit",
     distilleryLocation: "Chicago, Illinois",
+    seo: {
+      primaryKeyword: "ritual whiskey alternative",
+      secondaryKeywords: ["ritual zero proof whiskey", "ritual zero proof whiskey alternative", "ritual whiskey", "ritual zero proof non alcoholic whiskey", "non alcoholic whiskey"],
+    },
   },
   {
     id: 'prod-na-spirits-17',
@@ -16375,6 +16546,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Peas, thyme, rosemary, spearmint, hops",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "seedlip garden",
+      secondaryKeywords: ["seedlip garden 108 non alcoholic gin", "seedlip non alcoholic spirits", "seedlip", "non alcoholic gin alternative"],
+    },
   },
   {
     id: 'prod-na-spirits-18',
@@ -16399,6 +16574,10 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Blood orange, lemongrass, ginger, sansho pepper",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "seedlip grove",
+      secondaryKeywords: ["seedlip", "seedlip non alcoholic spirits", "non alcoholic spirits"],
+    },
   },
   {
     id: 'prod-na-spirits-19',
@@ -16423,6 +16602,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Agave, oak, cinnamon, vanilla",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      primaryKeyword: "jalisco 55",
+      secondaryKeywords: ["non alcoholic tequila", "zero proof tequila", "best non alcoholic tequila", "na tequila"],
+    },
   },
   {
     id: 'prod-na-spirits-20',
@@ -16447,6 +16630,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Caramel, vanilla, oak, black pepper",
     distilleryLocation: "Louisville, Kentucky",
+    seo: {
+      primaryKeyword: "spiritless kentucky 74",
+      secondaryKeywords: ["kentucky 74", "spiritless kentucky 74 non alcoholic bourbon", "kentucky 74 bourbon", "non alcoholic bourbon", "best non alcoholic bourbon"],
+    },
   },
   {
     id: 'prod-na-spirits-21',
@@ -16471,6 +16658,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Valerian root, lemon balm, ashwagandha, Sichuan pepper, maple",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "three spirit drinks",
+      secondaryKeywords: ["three spirit", "three spirits", "non alcoholic spirits", "best non alcoholic spirits"],
+    },
   },
 
   // READY-TO-DRINK NON-ALCOHOLIC COCKTAILS
@@ -16497,6 +16688,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Pomegranate, Artichoke Leaf, Bitter Orange, Gentian Root",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // "curious elixirs no 1" confirmed real via WebSearch, not volume-backed — no dedicated Curious Elixirs export exists; founded by John Wiseman in 2015 as the original booze-free craft cocktail, a pomegranate-and-rhodiola take on a Negroni Sbagliato.
+      primaryKeyword: "curious elixirs no 1",
+      secondaryKeywords: ["non alcoholic negroni cocktail", "zero proof cocktails", "non alcoholic cocktail drinks", "virgin cocktails", "non alcoholic craft cocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-02',
@@ -16521,6 +16717,14 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Blackberry, Cocoa, Black Tea, Rose Extract, Ashwagandha",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      primaryKeyword: "de soi purple lune",
+      secondaryKeywords: ["de soi purple line", "de soi", "de soi drink", "de soi reviews", "de soi non alcoholic", "de soi katy perry"],
+      faqs: [
+        { question: "What do reviewers say about De Soi Purple Lune?", answer: "Purple Lune is praised for its rich, full-bodied profile of blackberry nectar, cocoa, black tea and rose extract — a wine-like, indulgent aperitif from De Soi, the adaptogenic non-alcoholic brand co-founded by Katy Perry and master distiller Morgan McLachlan." },
+        { question: "Is De Soi safe to drink while pregnant?", answer: "De Soi is alcohol-free, but it does contain functional adaptogenic ingredients like ashwagandha, so we recommend checking with your doctor before drinking it while pregnant." },
+      ],
+    },
   },
   {
     id: 'prod-na-rtd-03',
@@ -16545,6 +16749,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Raspberry, Rooibos, Hibiscus, Lion's Mane, Reishi",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      primaryKeyword: "de soi tres rose",
+      secondaryKeywords: ["de soi tres rose reviews", "de soi tres rose product info and reviews", "de soi rose", "de soi rose review", "de soi"],
+    },
   },
   {
     id: 'prod-na-rtd-04',
@@ -16569,6 +16777,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Bitter Orange, Gentian Root, Afterglow Botanicals",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      // "free af apero spritz" confirmed real via WebSearch, not volume-backed at SKU level — it's the brand's actual flagship, styled as a non-alcoholic Aperol Spritz.
+      primaryKeyword: "free af apero spritz",
+      secondaryKeywords: ["free af drinks", "non alcoholic aperitif", "non alcoholic apertif", "zero proof", "alcohol alternatives"],
+    },
   },
   {
     id: 'prod-na-rtd-05',
@@ -16593,6 +16806,11 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Cola Botanicals, Lime, Afterglow Botanicals",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      // "free af cuba libre" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "free af cuba libre",
+      secondaryKeywords: ["free af drinks", "canned mocktails", "zero proof", "alcohol alternatives"],
+    },
   },
   {
     id: 'prod-na-rtd-06',
@@ -16617,6 +16835,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Yuzu, Orange Peel, Rosemary Extract, Lemon Balm",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      // "ghia le spritz" confirmed real via WebSearch, not volume-backed — launched 2021 as a canned RTD extension of Ghia's 2020 hero product, The Aperitif.
+      primaryKeyword: "ghia le spritz",
+      secondaryKeywords: ["non alcoholic aperitif", "non alcoholic apertif", "zero proof", "alcohol alternatives", "best non alcoholic spirits"],
+    },
   },
   {
     id: 'prod-na-rtd-07',
@@ -16641,6 +16864,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Lime, Zero Proof Rum Spirit, Raw Sugar",
     distilleryLocation: "London, UK",
+    seo: {
+      // "ish lime daiquiri" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "ish lime daiquiri",
+      secondaryKeywords: ["canned mocktails", "non carbonated canned cocktails", "zero proof cocktails", "virgin cocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-08',
@@ -16665,6 +16893,10 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Moroccan Spearmint, Lime, Caribbean Spiced Spirit",
     distilleryLocation: "London, UK",
+    seo: {
+      primaryKeyword: "mojito cocktail non alcoholic",
+      secondaryKeywords: ["canned mocktails", "virgin cocktails", "zero proof cocktails", "ish lime daiquiri"],
+    },
   },
   {
     id: 'prod-na-rtd-09',
@@ -16689,6 +16921,11 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Pink Grapefruit, Lime, Alcohol-Free Agave Spirit",
     distilleryLocation: "London, UK",
+    seo: {
+      // "ish paloma" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "ish paloma",
+      secondaryKeywords: ["canned mocktails", "virgin cocktails", "zero proof cocktails", "non alcoholic tequila"],
+    },
   },
   {
     id: 'prod-na-rtd-10',
@@ -16713,6 +16950,11 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Gentian Root, Italian Mandarin, Orange, Quassia Bark",
     distilleryLocation: "London, UK",
+    seo: {
+      // "ish spritz" confirmed real via WebSearch, not volume-backed — SpritzISH is the brand's actual RTD spritz SKU name.
+      primaryKeyword: "ish spritz",
+      secondaryKeywords: ["non alcoholic aperitif", "non alcoholic apertif", "zero proof", "canned mocktails", "alcohol alternatives"],
+    },
   },
   {
     id: 'prod-na-rtd-11',
@@ -16737,6 +16979,14 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Bitter Orange, Wormwood, Botanical Bitters",
     distilleryLocation: "Turin, Italy",
+    seo: {
+      // "lapo's non alcoholic negroni" confirmed real via WebSearch, not volume-backed — won BevNET's Best New Product of 2024; the brand has grown 350% annually and is now in 2,000+ stores including Whole Foods, Target, and Total Wine.
+      primaryKeyword: "lapo's non alcoholic negroni",
+      secondaryKeywords: ["non alcoholic negroni cocktail", "zero proof cocktails", "non alcoholic craft cocktails", "virgin cocktails", "alcohol alternatives"],
+      faqs: [
+        { question: "Who makes Lapo's Non-Alcoholic Negroni?", answer: "Lapo's Non-Alcoholic Negroni is fronted by Italian entrepreneur Lapo Elkann, grandson of Fiat patriarch Gianni Agnelli and a Fiat/Stellantis heir in his own right. The brand won BevNET's Best New Product of 2024 and has grown 350% annually, now stocked in 2,000+ stores including Whole Foods, Target, and Total Wine." },
+      ],
+    },
   },
   {
     id: 'prod-na-rtd-12',
@@ -16761,6 +17011,11 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Bitter Orange, Non-Alcoholic Sparkling Wine, Botanicals",
     distilleryLocation: "Sydney, Australia",
+    seo: {
+      // "lyres amalfi spritz" confirmed real via WebSearch, not volume-backed — a gold-medal winner at both IWSC 2025 and The Low & No Masters 2025.
+      primaryKeyword: "lyres amalfi spritz",
+      secondaryKeywords: ["non alcoholic aperitif", "canned mocktails", "non alcoholic apertif", "zero proof", "alcohol alternatives"],
+    },
   },
   {
     id: 'prod-na-rtd-13',
@@ -16785,6 +17040,11 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Cranberry Juice, Lime, Cane Sugar",
     distilleryLocation: "Petaluma, CA",
+    seo: {
+      // "mingle cranberry cosmo" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "mingle cranberry cosmo",
+      secondaryKeywords: ["canned mocktails", "mocktails non alcoholic", "non alcoholic cocktail drinks", "mingle mocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-14',
@@ -16809,6 +17069,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Key Lime Juice, Agave, Sea Salt",
     distilleryLocation: "Petaluma, CA",
+    seo: {
+      // "mingle key lime margarita" confirmed real via WebSearch, not volume-backed — a genuinely recent Mingle flavor launch.
+      primaryKeyword: "mingle key lime margarita",
+      secondaryKeywords: ["canned mocktails", "non alcoholic cocktail drinks", "non alcoholic tequila", "mingle mocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-15',
@@ -16833,6 +17098,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Real Fruit Juice, Cane Sugar, Botanical Flavoring",
     distilleryLocation: "Petaluma, CA",
+    seo: {
+      // "mingle mocktails" confirmed real via WebSearch (the brand's own head term), not volume-backed in this pull.
+      primaryKeyword: "mingle mocktails",
+      secondaryKeywords: ["canned mocktails", "mocktails non alcoholic", "best mocktails", "good mocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-16',
@@ -16857,6 +17127,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Organic Blue Weber Agave, Tamarind, Sonoran Desert Salt",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      // "parch desert margarita" confirmed real via WebSearch, not volume-backed — triple citrus, tamarind, and chamomile, inspired by the Mission Garden in Tucson.
+      primaryKeyword: "parch desert margarita",
+      secondaryKeywords: ["canned mocktails", "non alcoholic tequila", "non alcoholic cocktail drinks", "zero proof cocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-17',
@@ -16881,6 +17156,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Bitter Orange Peel, Mandarin, Botanical Bitters",
     distilleryLocation: "Austin, TX",
+    seo: {
+      // "ritual zero proof spritz" confirmed real via WebSearch, not volume-backed at SKU level — Ritual's RTD line launched 2026 with three flavors (Margarita, G&T, and Spritz); only Spritz is stocked here.
+      primaryKeyword: "ritual zero proof spritz",
+      secondaryKeywords: ["ritual whiskey alternative", "ritual zero proof gin alternative", "non alcoholic aperitif", "zero proof", "zero proof cocktails"],
+    },
   },
   {
     id: 'prod-na-rtd-c-01',
@@ -16905,6 +17185,13 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Kava, Ashwagandha, L-Theanine, Real Fruit Juice",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      primaryKeyword: "non alcoholic social tonic",
+      secondaryKeywords: ["social tonic", "social tonics", "canned mocktails", "best non alcoholic drinks", "alcohol alternatives"],
+      faqs: [
+        { question: "What is a social tonic?", answer: "A social tonic is Hiyo's own term for its category of functional, adaptogen-based drinks designed to recreate the social lift of alcohol without the booze. Hiyo was founded in 2021 by Evan Quinn and George Youmans after a family member's alcohol-related hospitalization, and its tonics are formulated with kava, ashwagandha, L-theanine, lion's mane, lemon balm, passion flower, and ginger for a mood-lift effect the brand calls \"the float.\"" },
+      ],
+    },
   },
   {
     id: 'prod-na-rtd-c-02',
@@ -16929,6 +17216,14 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Bitter Orange, Gentian Root, Botanical Extracts",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // "st agrestis phony negroni" confirmed real via WebSearch, not volume-backed — named VinePair's 2025 Rising Drinks Brand of the Year.
+      primaryKeyword: "st agrestis phony negroni",
+      secondaryKeywords: ["non alcoholic negroni cocktail", "zero proof cocktails", "non alcoholic craft cocktails", "virgin cocktails", "alcohol alternatives"],
+      faqs: [
+        { question: "What makes Phony Negroni different from a regular Negroni?", answer: "Phony Negroni is made entirely alcohol-free at St. Agrestis's own Greenpoint, Brooklyn distillery from 30 real, raw, non-GMO botanicals sourced across five continents, recreating the bitter-orange, herbal complexity of a classic Negroni without any alcohol." },
+      ],
+    },
   },
 
   // NON-ALCOHOLIC BEER & CIDER
@@ -16955,6 +17250,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Citra Hops, Mosaic Hops, 2-Row Malt",
     distilleryLocation: "Milford, CT",
+    seo: {
+      primaryKeyword: "athletic brewing free wave hazy ipa",
+      secondaryKeywords: ["athletic free wave", "athletic brewing hazy ipa", "non alcoholic hazy ipa", "athletic brewing non alcoholic beer", "non alcoholic ipa", "athletic beer"],
+    },
   },
   {
     id: 'prod-na-beer-02',
@@ -16979,6 +17278,10 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Cascade Hops, Centennial Hops, Pale Malt",
     distilleryLocation: "Milford, CT",
+    seo: {
+      primaryKeyword: "athletic brewing run wild ipa",
+      secondaryKeywords: ["athletic brewing run wild ipa non alcoholic beer", "run wild ipa", "athletic run wild", "athletic brewing company run wild ipa", "athletic brewing non-alcoholic run wild ipa", "athletic brewing co run wild ipa"],
+    },
   },
   {
     id: 'prod-na-beer-03',
@@ -17003,6 +17306,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Pilsner Malt, Noble Hops",
     distilleryLocation: "Milford, CT",
+    seo: {
+      primaryKeyword: "athletic brewing upside dawn",
+      secondaryKeywords: ["athletic brewing upside dawn golden ale can", "athletic brewing non-alcoholic upside dawn golden ale", "non alcoholic ale", "athletic brewing non alcoholic beer", "athletic brewing"],
+    },
   },
   {
     id: 'prod-na-beer-04',
@@ -17027,6 +17334,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Lime Purée, Sea Salt, Pilsner Malt",
     distilleryLocation: "Sausalito, CA",
+    seo: {
+      primaryKeyword: "best day brewing electro lime",
+      secondaryKeywords: ["best day brewing", "best day na beer", "best day non alcoholic beer", "non alcoholic lager", "na beer brands", "bestday brewing"],
+    },
   },
   {
     id: 'prod-na-beer-05',
@@ -17051,6 +17362,13 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Barley Malt, Rice, American Hops",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      primaryKeyword: "bud zero",
+      secondaryKeywords: ["budweiser non alcoholic beer", "budweiser zero alcohol", "budweiser non alcoholic", "budweiser zero beer", "non alcoholic budweiser", "budweiser zero non alcoholic beer"],
+      faqs: [
+        { question: 'Is Bud Zero really 0% alcohol?', answer: 'Budweiser Zero is brewed then alcohol-removed and labeled 0.0% ABV in the US.' },
+      ],
+    },
   },
   {
     id: 'prod-na-beer-06',
@@ -17075,6 +17393,13 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Malted Barley, Corn, Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      primaryKeyword: "corona cero",
+      secondaryKeywords: ["corona non alcoholic beer", "corona na beer", "non alcoholic beer corona", "corona na", "does corona non alcoholic beer have alcohol"],
+      faqs: [
+        { question: 'Does Corona Cero have any alcohol?', answer: 'Corona Cero is brewed to 0.0% ABV, distinct from the flagship Corona Extra.' },
+      ],
+    },
   },
   {
     id: 'prod-na-beer-07',
@@ -17099,6 +17424,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Roasted Malt, Chocolate Malt, Cascade Hops",
     distilleryLocation: "Bend, OR",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "deschutes black butte non-alcoholic porter",
+      secondaryKeywords: ["deschutes non alcoholic beer", "non alcoholic stout", "non alcoholic stout beer", "deschutes beer", "deschutes brewery black butte porter"],
+    },
   },
   {
     id: 'prod-na-beer-08',
@@ -17123,6 +17453,13 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Roasted Barley, Nitrogen Widget, Hops",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      primaryKeyword: "guinness non alcoholic beer",
+      secondaryKeywords: ["guinness 0.0 non alcoholic beer", "non alcoholic stout", "non alcoholic stout beer", "is guinness a stout", "draught guinness stout"],
+      faqs: [
+        { question: 'Does Guinness 0 taste like real Guinness?', answer: 'Guinness 0 is brewed the same way as Guinness Draught and then dealcoholized, keeping the roasted-malt character and the nitro-poured creamy head.' },
+      ],
+    },
   },
   {
     id: 'prod-na-beer-09',
@@ -17147,6 +17484,10 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "A-Yeast, Barley Malt, Hallertau Hops",
     distilleryLocation: "Amsterdam, Netherlands",
+    seo: {
+      primaryKeyword: "heineken 0.0 non alcohol beer",
+      secondaryKeywords: ["heineken 0.0 beer", "heineken non alcoholic beer", "heineken 0.0 non alcoholic beer", "heineken beer non alcoholic", "heineken zero alcohol beer", "heineken zero beer"],
+    },
   },
   {
     id: 'prod-na-beer-10',
@@ -17171,6 +17512,13 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Barley Malt, Hops, Rice",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      primaryKeyword: "o'doul's beer",
+      secondaryKeywords: ["o douls non alcoholic beer", "o'douls non alcoholic beer", "odouls", "o douls", "beer o'doul's", "non alcoholic beer o'doul's"],
+      faqs: [
+        { question: "Does O'Doul's have any alcohol?", answer: "O'Doul's contains trace alcohol (about 0.4% ABV under federal labeling), unlike newer 0.0%-ABV brews such as Heineken 0.0 or Athletic Brewing — a genuinely material distinction for shoppers in recovery or otherwise avoiding all alcohol." },
+      ],
+    },
   },
   {
     id: 'prod-na-beer-11',
@@ -17195,6 +17543,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Cascade Hops, Citra Hops, Pale Malt",
     distilleryLocation: "Toronto, Canada",
+    seo: {
+      primaryKeyword: "partake non alcoholic beer",
+      secondaryKeywords: ["partake brewing", "partake na beer", "partake beer", "partake brewing non alcoholic beer", "partake brewing pale ale"],
+    },
   },
   {
     id: 'prod-na-beer-12',
@@ -17219,6 +17571,11 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Sabro Hops, Citra Hops, Mosaic Hops, Cascade Hops",
     distilleryLocation: "Boston, MA",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "sam adams just the haze non-alcoholic ipa",
+      secondaryKeywords: ["sam adams non alcoholic beer", "sam adams na beer", "non alcoholic hazy ipa", "non alcoholic ipa"],
+    },
   },
   {
     id: 'prod-na-beer-13',
@@ -17243,6 +17600,11 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Citra Hops, Centennial Hops, 2-Row Malt",
     distilleryLocation: "Chico, CA",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "sierra nevada trail pass ipa",
+      secondaryKeywords: ["sierra nevada non alcoholic beer", "sierra nevada na beers", "non alcoholic ipa", "sierra nevada ipa"],
+    },
   },
   {
     id: 'prod-na-beer-14',
@@ -17267,6 +17629,10 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Saaz Hops, Pilsner Malt",
     distilleryLocation: "Leuven, Belgium",
+    seo: {
+      primaryKeyword: "stella artois non alcoholic",
+      secondaryKeywords: ["stella non alcoholic beer", "stella artois 0.0", "non alcoholic lager", "stella artois"],
+    },
   },
   {
     id: 'prod-na-14',
@@ -17293,6 +17659,13 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: 'Cold Pressed Heirloom Apple',
     distilleryLocation: 'Sonoma & Napa Orchards, CA',
+    seo: {
+      primaryKeyword: "non alcoholic apple cider",
+      secondaryKeywords: ["non alcoholic cider", "non alcoholic sparkling cider", "non-alcoholic sparkling apple cider", "sparkling apple cider non alcoholic", "apple cider non alcoholic"],
+      faqs: [
+        { question: 'Is non-alcoholic apple cider the same as regular apple cider?', answer: 'No — this product is a sparkling, dealcoholized cider styled after alcoholic hard cider (0.0% ABV), distinct from both traditional non-alcoholic pressed apple juice and from alcoholic hard cider.' },
+      ],
+    },
   },
 
   // FINE WINE
@@ -23594,6 +23967,12 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Wheat & Pilsner Malt, American Hops",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "312 urban wheat ale",
+      secondaryKeywords: ["312 urban wheat ale price", "buy 312 urban wheat ale", "312 urban wheat ale review", "312 urban wheat ale near me", "312 urban wheat ale abv"],
+      faqs: [{ question: "What is 312 Urban Wheat Ale?", answer: "A crisp, hazy, unfiltered American wheat ale from Goose Island, 4.2% ABV, with light honey sweetness and a bright lemon-citrus note from Cascade hops." }],
+    },
   },
   {
     id: 'prod-beer-02',
@@ -23618,6 +23997,12 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Wheat & Oats, Coriander & Curaçao Orange Peel",
     distilleryLocation: "Portland, ME",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "allagash white belgian-style wheat beer",
+      secondaryKeywords: ["allagash white price", "buy allagash white", "allagash white review", "allagash white near me", "allagash white abv"],
+      faqs: [{ question: "What makes Allagash White a witbier?", answer: "Spiced with coriander and curaçao orange peel over a wheat and oat base, unfiltered for a hazy, pale-straw appearance — it's the beer Allagash founder Rob Tod built the entire brewery around in 1995." }],
+    },
   },
   {
     id: 'prod-beer-03',
@@ -23642,6 +24027,11 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Wheat & Oats, Coriander & Curaçao Orange Peel",
     distilleryLocation: "Portland, ME",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "allagash white belgian-style wheat beer",
+      secondaryKeywords: ["allagash white can price", "buy allagash white cans", "allagash white review", "allagash white near me", "allagash white abv"],
+    },
   },
   {
     id: 'prod-beer-04',
@@ -23666,6 +24056,12 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Rice & Malt, Bavarian Hops",
     distilleryLocation: "Tokyo, Japan",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "asahi super dry",
+      secondaryKeywords: ["asahi super dry price", "buy asahi beer", "asahi super dry review", "asahi near me", "asahi abv", "asahi dry beer"],
+      faqs: [{ question: "What makes Asahi Super Dry 'dry'?", answer: "Asahi pioneered the crisp \"karakuchi\" (dry) brewing style in 1987, using a more fermentable wort that ferments out further than most lagers for a cleaner, less sweet, faster finish." }],
+    },
   },
   {
     id: 'prod-beer-05',
@@ -23690,6 +24086,12 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Wheat & 2-Row Malt, House Ale Yeast",
     distilleryLocation: "Comstock, MI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "bell's oberon wheat ale",
+      secondaryKeywords: ["bell's oberon price", "buy bell's oberon", "bell's oberon review", "bell's oberon near me", "bell's oberon abv"],
+      faqs: [{ question: "Does Oberon have fruit or spices in it?", answer: "No — Oberon is brewed with just four ingredients (wheat malt, Saaz hops, water, and Bell's house ale yeast) and no added fruit or spices, unlike most \"summer wheat\" competitors that lean on citrus or coriander." }],
+    },
   },
   {
     id: 'prod-beer-06',
@@ -23714,6 +24116,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Wheat & 2-Row Malt, House Ale Yeast",
     distilleryLocation: "Comstock, MI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "bell's oberon wheat ale",
+      secondaryKeywords: ["bell's oberon can price", "buy bell's oberon cans", "bell's oberon review", "bell's oberon near me", "bell's oberon abv"],
+    },
   },
   {
     id: 'prod-beer-07',
@@ -23738,6 +24145,12 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Centennial Hops, 2-Row Malt",
     distilleryLocation: "Comstock, MI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bell's two hearted ale",
+      secondaryKeywords: ["bell's two hearted ale price", "buy bell's two hearted ale", "bell's two hearted ale review", "bell's two hearted ale near me", "bell's two hearted ale abv", "two hearted ale bottles"],
+      faqs: [{ question: "What makes Two Hearted Ale so acclaimed?", answer: "It's brewed with a single hop variety, Centennial, and has topped national \"Best Beer\" rankings more than almost any other American craft beer, carrying a 95/100 score across nearly 16,000 BeerAdvocate ratings." }],
+    },
   },
   {
     id: 'prod-beer-08',
@@ -23762,6 +24175,12 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Centennial Hops, 2-Row Malt",
     distilleryLocation: "Comstock, MI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bell's two hearted ale cans",
+      secondaryKeywords: ["bell's two hearted ale can price", "buy bell's two hearted ale cans", "two hearted ale 12 pack", "bell's two hearted near me", "bell's two hearted ale abv", "bell's brewery two hearted"],
+      faqs: [{ question: "What makes Two Hearted Ale so acclaimed?", answer: "It's brewed with a single hop variety, Centennial, and has topped national \"Best Beer\" rankings more than almost any other American craft beer, carrying a 95/100 score across nearly 16,000 BeerAdvocate ratings." }],
+    },
   },
   {
     id: 'prod-beer-09',
@@ -23786,6 +24205,12 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Valencia Orange Peel & Coriander, Oats & Wheat",
     distilleryLocation: "Denver, CO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "blue moon belgian white beer",
+      secondaryKeywords: ["blue moon belgian white price", "buy blue moon belgian white beer", "blue moon beer review", "blue moon belgian white near me", "blue moon beer abv"],
+      faqs: [{ question: "Who created Blue Moon?", answer: "Brewer Keith Villa created it in 1995 at the Sandlot Brewery inside Coors Field in Denver, originally under the name \"Bellyslide Belgian White.\"" }],
+    },
   },
   {
     id: 'prod-beer-10',
@@ -23810,6 +24235,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Valencia Orange Peel & Coriander, Oats & Wheat",
     distilleryLocation: "Denver, CO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "blue moon belgian white beer",
+      secondaryKeywords: ["blue moon belgian white can price", "buy blue moon belgian white cans", "blue moon beer review", "blue moon belgian white near me", "blue moon beer abv"],
+    },
   },
   {
     id: 'prod-beer-11',
@@ -23834,6 +24264,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Hallertau Mittelfrüh, Cascade & Vanguard Hops",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "brooklyn lager",
+      secondaryKeywords: ["brooklyn lager price", "buy brooklyn lager", "brooklyn lager review", "brooklyn brewery near me", "brooklyn lager abv", "brooklyn lager vs pilsner"],
+    },
   },
   {
     id: 'prod-beer-12',
@@ -23858,6 +24293,11 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Hallertau Mittelfrüh, Cascade & Vanguard Hops",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "brooklyn lager",
+      secondaryKeywords: ["brooklyn lager price", "buy brooklyn lager", "brooklyn lager review", "brooklyn brewery near me", "brooklyn lager abv", "brooklyn lager vs pilsner"],
+    },
   },
   {
     id: 'prod-beer-13',
@@ -23882,6 +24322,12 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Noble Hops, Pilsner Malt",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "brooklyn pilsner",
+      secondaryKeywords: ["brooklyn pilsner price", "buy brooklyn pilsner", "brooklyn pilsner review", "brooklyn brewery near me", "brooklyn pilsner abv", "brooklyn lager vs pilsner"],
+      faqs: [{ question: "What's the difference between Brooklyn Lager and Brooklyn Pilsner?", answer: "Brooklyn Lager is a fuller-bodied 5.2% ABV Amber Lager with a dry-hopped citrus and pine aroma; Brooklyn Pilsner is a lighter, crisper roughly 4.6-5% ABV pale/golden lager." }],
+    },
   },
   {
     id: 'prod-beer-14',
@@ -23906,6 +24352,14 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Rice & Barley Malt, American Hops",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      primaryKeyword: "bud light beer",
+      secondaryKeywords: ["bud light abv", "bud light can", "bud light cans", "bud light alcohol percentage", "what type of beer is bud light", "is bud light a lager"],
+      faqs: [
+        { question: "Is Bud Light a lager?", answer: "Yes — Bud Light is an American light lager." },
+        { question: "What is the alcohol content of Bud Light?", answer: "Bud Light is 4.2% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-15',
@@ -23930,6 +24384,14 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Rice & Barley Malt, American Hops",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      primaryKeyword: "budweiser beer",
+      secondaryKeywords: ["budweiser can", "budweiser bottle", "budweiser alcohol content", "budweiser abv", "budweiser cans", "is budweiser a lager"],
+      faqs: [
+        { question: "Is Budweiser a lager?", answer: "Yes — Budweiser is an American-style pale lager at roughly 5% ABV." },
+        { question: "Who owns Budweiser?", answer: "Budweiser is owned by Anheuser-Busch InBev." },
+      ],
+    },
   },
   {
     id: 'prod-beer-16',
@@ -23954,6 +24416,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Barley Malt & Rice, American Hops",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "busch light beer",
+      secondaryKeywords: ["bush light", "who makes busch light", "where is busch light made", "who owns busch light", "busch light abv", "busch light price"],
+    },
   },
   {
     id: 'prod-beer-17',
@@ -23978,6 +24445,12 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Trappist Yeast, Candi Sugar & Pilsner Malt",
     distilleryLocation: "Chimay, Belgium",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "chimay blue belgian strong ale",
+      secondaryKeywords: ["chimay blue price", "buy chimay blue", "chimay blue review", "chimay blue near me", "chimay blue abv"],
+      faqs: [{ question: "Is Chimay actually brewed by monks?", answer: "Yes — Chimay is one of only a small number of breweries worldwide authorized to carry the \"Authentic Trappist Product\" logo, meaning the beer is brewed within monastery walls under monk oversight, with profits directed to the monastery and charitable causes." }],
+    },
   },
   {
     id: 'prod-beer-18',
@@ -24002,6 +24475,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Rocky Mountain Water, Barley Malt & Corn",
     distilleryLocation: "Golden, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "coors banquet",
+      secondaryKeywords: ["coors banquet price", "buy coors banquet", "coors banquet review", "coors banquet near me", "coors banquet abv", "is coors banquet good"],
+    },
   },
   {
     id: 'prod-beer-19',
@@ -24026,6 +24504,11 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Barley Malt & Corn, American Hops",
     distilleryLocation: "Golden, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "coors light",
+      secondaryKeywords: ["coors light price", "buy coors light", "coors light review", "coors light near me", "coors light abv", "is coors light good"],
+    },
   },
   {
     id: 'prod-beer-20',
@@ -24050,6 +24533,14 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      primaryKeyword: "corona extra",
+      secondaryKeywords: ["corona extra beer", "corona extra abv", "corona extra alcohol content", "corona extra calories", "corona extra mexican beer", "is corona a lager"],
+      faqs: [
+        { question: "Is Corona a lager?", answer: "Yes — Corona Extra is a pale lager in the pilsner-adjacent style." },
+        { question: "What is Corona's alcohol content?", answer: "Corona Extra is 4.6% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-21',
@@ -24074,6 +24565,14 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      primaryKeyword: "corona extra",
+      secondaryKeywords: ["corona cans", "corona can", "corona beer can", "corona extra abv", "corona extra alcohol content"],
+      faqs: [
+        { question: "Is Corona a lager?", answer: "Yes — Corona Extra is a pale lager in the pilsner-adjacent style." },
+        { question: "What is Corona's alcohol content?", answer: "Corona Extra is 4.6% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-22',
@@ -24098,6 +24597,10 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      primaryKeyword: "corona light beer",
+      secondaryKeywords: ["percent alcohol in corona light", "corona light beer nutrition", "how many calories in a corona light beer", "how many carbs in a corona light beer", "is corona light gluten free beer"],
+    },
   },
   {
     id: 'prod-beer-23',
@@ -24122,6 +24625,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      primaryKeyword: "corona light beer",
+      secondaryKeywords: ["percent alcohol in corona light", "corona light beer nutrition", "how many calories in a corona light beer", "how many carbs in a corona light beer", "is corona light gluten free beer"],
+    },
   },
   {
     id: 'prod-beer-24',
@@ -24146,6 +24653,12 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Three Yeast Strains, Pilsner Malt & Candi Sugar",
     distilleryLocation: "Melle, Belgium",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "delirium tremens belgian strong ale",
+      secondaryKeywords: ["delirium tremens price", "buy delirium tremens", "delirium tremens review", "delirium tremens near me", "delirium tremens abv"],
+      faqs: [{ question: "Why does Delirium Tremens have a pink elephant on the label?", answer: "The beer is playfully named after the medical condition associated with severe alcohol withdrawal, whose hallmark hallucination is the \"pink elephant\" — the label runs with the joke via pink elephants, green crocodiles, and dragons." }],
+    },
   },
   {
     id: 'prod-beer-25',
@@ -24170,6 +24683,10 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Chocolate & Crystal Malt, Cascade & Tettnang Hops",
     distilleryLocation: "Bend, OR",
+    seo: {
+      primaryKeyword: "deschutes brewery black butte porter",
+      secondaryKeywords: ["deschutes porter", "deschutes black butte", "deschutes beer", "deschutes beers", "deschutes brewery beers", "deschutes brewery"],
+    },
   },
   {
     id: 'prod-beer-26',
@@ -24194,6 +24711,12 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Continually-Hopped Northwest Hops, 2-Row Malt",
     distilleryLocation: "Milton, DE",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "dogfish head 60 minute ipa",
+      secondaryKeywords: ["dogfish head 60 minute ipa price", "buy dogfish head 60 minute ipa", "dogfish head 60 minute ipa review", "dogfish head 60 minute ipa near me", "dogfish head 60 minute ipa abv", "continuously hopped ipa"],
+      faqs: [{ question: "What does 'continuously hopped' mean?", answer: "Instead of adding hops at just a few points in the boil, Dogfish Head adds them in a steady stream throughout — over 60 separate hop additions for this beer, a technique founder Sam Calagione originally rigged with a vibrating electric-football game." }],
+    },
   },
   {
     id: 'prod-beer-27',
@@ -24218,6 +24741,12 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Continually-Hopped Northwest Hops, 2-Row Malt",
     distilleryLocation: "Milton, DE",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "dogfish head 60 minute ipa cans",
+      secondaryKeywords: ["dogfish head 60 minute ipa can price", "buy dogfish head 60 minute ipa cans", "dogfish head 60 minute 12 pack", "dogfish head 60 minute near me", "dogfish head 60 minute ipa abv", "dogfish head ipa cans"],
+      faqs: [{ question: "What does 'continuously hopped' mean?", answer: "Instead of adding hops at just a few points in the boil, Dogfish Head adds them in a steady stream throughout — over 60 separate hop additions for this beer, a technique founder Sam Calagione originally rigged with a vibrating electric-football game." }],
+    },
   },
   {
     id: 'prod-beer-28',
@@ -24242,6 +24771,12 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Continually-Hopped Hops, English & American Malts",
     distilleryLocation: "Milton, DE",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "dogfish head 90 minute ipa",
+      secondaryKeywords: ["dogfish head 90 minute ipa price", "buy dogfish head 90 minute ipa", "dogfish head 90 minute ipa review", "dogfish head 90 minute ipa near me", "dogfish head 90 minute ipa abv", "dogfish head imperial ipa"],
+      faqs: [{ question: "What's the difference between 60 Minute and 90 Minute IPA?", answer: "Both use the same continuous-hopping technique, but 90 Minute is boiled and hopped longer, runs stronger at 9% ABV versus 6%, and carries more malt backbone to balance the extra bitterness." }],
+    },
   },
   {
     id: 'prod-beer-29',
@@ -24266,6 +24801,12 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Continually-Hopped Hops, English & American Malts",
     distilleryLocation: "Milton, DE",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "dogfish head 90 minute ipa cans",
+      secondaryKeywords: ["dogfish head 90 minute ipa can price", "buy dogfish head 90 minute ipa cans", "dogfish head 90 minute 4 pack", "dogfish head 90 minute near me", "dogfish head 90 minute ipa abv", "dogfish head imperial ipa cans"],
+      faqs: [{ question: "What's the difference between 60 Minute and 90 Minute IPA?", answer: "Both use the same continuous-hopping technique, but 90 Minute is boiled and hopped longer, runs stronger at 9% ABV versus 6%, and carries more malt backbone to balance the extra bitterness." }],
+    },
   },
   {
     id: 'prod-beer-30',
@@ -24290,6 +24831,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Vienna Malt, European Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "dos equis",
+      secondaryKeywords: ["dos equis price", "buy dos equis", "dos equis lager review", "dos equis near me", "dos equis abv", "dos equis most interesting man"],
+    },
   },
   {
     id: 'prod-beer-31',
@@ -24314,6 +24860,12 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Pilsner Malt, Saaz & Styrian Golding Hops",
     distilleryLocation: "Breendonk, Belgium",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "duvel belgian golden ale",
+      secondaryKeywords: ["duvel price", "buy duvel beer", "duvel review", "duvel near me", "duvel abv"],
+      faqs: [{ question: "What does \"Duvel\" mean?", answer: "Flemish/Antwerp dialect for \"devil\" — the beer's deceptively easy-drinking character at 8.5% ABV is the source of the name." }],
+    },
   },
   {
     id: 'prod-beer-32',
@@ -24338,6 +24890,12 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Chinook, Citra & Amarillo Hops",
     distilleryLocation: "Seattle, WA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "elysian space dust ipa",
+      secondaryKeywords: ["elysian space dust ipa price", "buy elysian space dust ipa", "elysian space dust ipa review", "elysian space dust near me", "elysian space dust ipa abv", "elysian space dust ipa cans"],
+      faqs: [{ question: "Is Space Dust a Double IPA?", answer: "Yes — at 8.2% ABV its strength and hop-forward profile place it in the Double/Imperial IPA range, even though Elysian doesn't always market it that way." }],
+    },
   },
   {
     id: 'prod-beer-33',
@@ -24362,6 +24920,12 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Chinook, Citra & Amarillo Hops",
     distilleryLocation: "Seattle, WA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "elysian space dust ipa cans",
+      secondaryKeywords: ["elysian space dust can price", "buy elysian space dust cans", "elysian space dust 6 pack", "elysian space dust near me", "elysian ipa abv", "elysian brewing space dust"],
+      faqs: [{ question: "Is Space Dust a Double IPA?", answer: "Yes — at 8.2% ABV its strength and hop-forward profile place it in the Double/Imperial IPA range, even though Elysian doesn't always market it that way." }],
+    },
   },
   {
     id: 'prod-beer-34',
@@ -24386,6 +24950,12 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Bourbon Barrel-Aged, Roasted Malt & Oats",
     distilleryLocation: "Paso Robles, CA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "firestone walker parabola imperial stout",
+      secondaryKeywords: ["firestone walker parabola price", "buy firestone walker parabola", "firestone walker parabola review", "firestone walker parabola near me", "firestone walker parabola abv"],
+      faqs: [{ question: "What barrels is Parabola aged in?", answer: "A rotating blend that has included Elijah Craig, Four Roses, Pappy Van Winkle, Woodford Reserve, and Buffalo Trace bourbon barrels — a genuinely prestigious lineup that helps explain the beer's cult reputation." }],
+    },
   },
   {
     id: 'prod-beer-35',
@@ -24410,6 +24980,12 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Centennial, Cascade & Citra Hops",
     distilleryLocation: "Paso Robles, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "firestone walker union jack ipa",
+      secondaryKeywords: ["firestone walker union jack ipa price", "buy firestone walker union jack", "union jack ipa review", "firestone walker union jack near me", "firestone walker union jack abv", "union jack ipa gabf gold"],
+      faqs: [{ question: "Has Union Jack IPA won awards?", answer: "Yes: back-to-back Great American Beer Festival gold medals in 2008 and 2009, plus gold at the World Beer Cup and Brussels Beer Challenge — one of the most decorated IPA award records in the category." }],
+    },
   },
   {
     id: 'prod-beer-36',
@@ -24434,6 +25010,12 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Centennial, Cascade & Citra Hops",
     distilleryLocation: "Paso Robles, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "firestone walker union jack ipa cans",
+      secondaryKeywords: ["union jack ipa can price", "buy union jack ipa cans", "firestone walker union jack 6 pack", "union jack ipa near me", "firestone walker ipa abv", "firestone walker union jack west coast ipa"],
+      faqs: [{ question: "Has Union Jack IPA won awards?", answer: "Yes: back-to-back Great American Beer Festival gold medals in 2008 and 2009, plus gold at the World Beer Cup and Brussels Beer Challenge — one of the most decorated IPA award records in the category." }],
+    },
   },
   {
     id: 'prod-beer-37',
@@ -24458,6 +25040,12 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Amarillo, Simcoe & Crystal Hops",
     distilleryLocation: "Grand Rapids, MI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "founders all day ipa",
+      secondaryKeywords: ["founders all day ipa price", "buy founders all day ipa", "founders all day ipa review", "founders all day ipa near me", "founders all day ipa abv", "founders all day ipa 15 pack"],
+      faqs: [{ question: "Is All Day IPA a session beer?", answer: "Yes, at 4.7% ABV it's one of the category-defining session IPAs, designed to be sessionable without sacrificing hop character." }],
+    },
   },
   {
     id: 'prod-beer-38',
@@ -24482,6 +25070,12 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Kona & Sumatra Coffee, Flaked Oats & Chocolate Malt",
     distilleryLocation: "Grand Rapids, MI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "founders breakfast stout",
+      secondaryKeywords: ["founders breakfast stout price", "buy founders breakfast stout", "founders breakfast stout review", "founders breakfast stout near me", "founders breakfast stout abv"],
+      faqs: [{ question: "What makes Founders Breakfast Stout a \"breakfast\" beer?", answer: "It's brewed with Sumatra and Kona coffee plus both bitter and sweetened chocolate on top of flaked oats, echoing a coffee-and-chocolate breakfast profile at 8.3% ABV." }],
+    },
   },
   {
     id: 'prod-beer-39',
@@ -24506,6 +25100,12 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Bourbon Barrel-Aged, Chocolate & Coffee",
     distilleryLocation: "Grand Rapids, MI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "founders kbs kentucky breakfast stout",
+      secondaryKeywords: ["founders kbs price", "buy founders kbs", "founders kbs review", "founders kbs near me", "founders kbs abv"],
+      faqs: [{ question: "What does KBS stand for?", answer: "Kentucky Breakfast Stout — it's legendarily hard to find on release each spring, aged a full year in bourbon barrels, at roughly 12% ABV." }],
+    },
   },
   {
     id: 'prod-beer-40',
@@ -24530,6 +25130,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Chocolate Malt & Roasted Barley, Cascade Hops",
     distilleryLocation: "Grand Rapids, MI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "founders porter",
+      secondaryKeywords: ["founders porter price", "buy founders porter", "founders porter review", "founders porter near me", "founders porter abv"],
+    },
   },
   {
     id: 'prod-beer-41',
@@ -24554,6 +25159,12 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Bourbon Barrel-Aged, Roasted Malt",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "goose island bourbon county brand stout",
+      secondaryKeywords: ["goose island bourbon county price", "buy goose island bourbon county stout", "goose island bourbon county review", "goose island bourbon county near me", "goose island bourbon county abv"],
+      faqs: [{ question: "Did Goose Island invent bourbon-barrel-aged beer?", answer: "Bourbon County Stout is widely credited as the first modern bourbon-barrel-aged beer, first brewed in 1992, and remains one of the most collected and traded specialty beers in the US." }],
+    },
   },
   {
     id: 'prod-beer-42',
@@ -24578,6 +25189,12 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Pilgrim, Celeia, Cascade & Centennial Hops",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "goose island ipa",
+      secondaryKeywords: ["goose island ipa price", "buy goose island ipa", "goose island ipa review", "goose island ipa near me", "goose island ipa abv", "goose island ipa 6 pack"],
+      faqs: [{ question: "Is Goose Island still a craft beer?", answer: "Goose Island has been owned by Anheuser-Busch InBev since 2011, so it's technically no longer independently owned, though it still brews in Chicago." }],
+    },
   },
   {
     id: 'prod-beer-43',
@@ -24602,6 +25219,12 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Chocolate Malt & Roasted Barley, Cascade Hops",
     distilleryLocation: "Cleveland, OH",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "great lakes edmund fitzgerald porter",
+      secondaryKeywords: ["edmund fitzgerald porter price", "buy edmund fitzgerald porter", "edmund fitzgerald porter review", "edmund fitzgerald porter near me", "edmund fitzgerald porter abv"],
+      faqs: [{ question: "Why is it called \"Edmund Fitzgerald\"?", answer: "Named as a tribute to the SS Edmund Fitzgerald, a real Great Lakes freighter that sank in a November 1975 storm on Lake Superior — not a marketing gimmick." }],
+    },
   },
   {
     id: 'prod-beer-44',
@@ -24626,6 +25249,14 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Roasted Barley, Nitrogen-Infused",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      primaryKeyword: "guinness draught",
+      secondaryKeywords: ["draught guinness stout", "guinness draught stout", "how to pour a guinness can", "guinness abv", "guinness near me", "guinness can"],
+      faqs: [
+        { question: "How do you pour a Guinness can properly?", answer: "Tilt the glass at 45 degrees, pour steadily, then let the nitrogen widget settle for the signature cascade before topping off." },
+        { question: "Why is there a ball in a Guinness can?", answer: "It's the nitrogen widget, which releases a burst of nitrogen gas on opening to recreate a creamy draught-style pour at home." },
+      ],
+    },
   },
   {
     id: 'prod-beer-45',
@@ -24650,6 +25281,14 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Roasted Barley, Nitrogen-Infused",
     distilleryLocation: "Dublin, Ireland",
+    seo: {
+      primaryKeyword: "guinness draught",
+      secondaryKeywords: ["guinness draught beer", "guinness stout", "guinness calories", "guinness abv", "where to buy guinness"],
+      faqs: [
+        { question: "Is Guinness a stout?", answer: "Yes — Guinness Draught is the global style-defining example of a dry Irish stout." },
+        { question: "How many calories are in a Guinness?", answer: "Roughly 125 calories per 12oz serving of Guinness Draught." },
+      ],
+    },
   },
   {
     id: 'prod-beer-46',
@@ -24674,6 +25313,14 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "A-Yeast, Saaz Hops & Pale Malt",
     distilleryLocation: "Amsterdam, Netherlands",
+    seo: {
+      primaryKeyword: "heineken beer",
+      secondaryKeywords: ["heineken lager", "heineken abv", "heineken original beer", "heineken lager bottles", "what type of beer is heineken"],
+      faqs: [
+        { question: "What type of beer is Heineken?", answer: "Heineken Original is a pale lager, brewed with the brewery's own proprietary A-yeast strain used across nearly all Heineken breweries worldwide to keep the flavor consistent." },
+        { question: "What is Heineken's alcohol content?", answer: "Heineken Original is 5% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-47',
@@ -24698,6 +25345,14 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "A-Yeast, Saaz Hops & Pale Malt",
     distilleryLocation: "Amsterdam, Netherlands",
+    seo: {
+      primaryKeyword: "heineken beer",
+      secondaryKeywords: ["heineken lager", "heineken abv", "heineken original beer", "heineken lager bottles", "what type of beer is heineken"],
+      faqs: [
+        { question: "What type of beer is Heineken?", answer: "Heineken Original is a pale lager, brewed with the brewery's own proprietary A-yeast strain used across nearly all Heineken breweries worldwide to keep the flavor consistent." },
+        { question: "What is Heineken's alcohol content?", answer: "Heineken Original is 5% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-48',
@@ -24722,6 +25377,12 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "First Press Wort, Premium Malt",
     distilleryLocation: "Yokohama, Japan",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "kirin ichiban",
+      secondaryKeywords: ["kirin ichiban price", "buy kirin ichiban", "kirin ichiban review", "kirin near me", "kirin ichiban abv", "what does ichiban mean"],
+      faqs: [{ question: "What does 'Ichiban Shibori' mean?", answer: "Ichiban Shibori means \"first pressing\" — Kirin's distinctive brewing method that uses only the initial, most concentrated wort runoff rather than blending in a second pressing, for a smoother, cleaner lager." }],
+    },
   },
   {
     id: 'prod-beer-49',
@@ -24746,6 +25407,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Galaxy & Citra Hops, Caramel Malt",
     distilleryLocation: "Kailua-Kona, HI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "kona big wave golden ale",
+      secondaryKeywords: ["kona big wave price", "buy kona big wave", "kona big wave review", "kona big wave near me", "kona big wave abv"],
+    },
   },
   {
     id: 'prod-beer-50',
@@ -24770,6 +25436,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Galaxy & Citra Hops, Caramel Malt",
     distilleryLocation: "Kailua-Kona, HI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "kona big wave golden ale",
+      secondaryKeywords: ["kona big wave can price", "buy kona big wave cans", "kona big wave review", "kona big wave near me", "kona big wave abv"],
+    },
   },
   {
     id: 'prod-beer-51',
@@ -24794,6 +25465,12 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Cascade, Centennial, Chinook & Simcoe Hops",
     distilleryLocation: "Petaluma, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "lagunitas ipa",
+      secondaryKeywords: ["lagunitas ipa price", "buy lagunitas ipa", "lagunitas ipa review", "lagunitas ipa near me", "lagunitas ipa abv", "lagunitas ipa 12 pack"],
+      faqs: [{ question: "Who owns Lagunitas?", answer: "Heineken acquired a 50% stake in 2015 and full ownership by 2017." }],
+    },
   },
   {
     id: 'prod-beer-52',
@@ -24818,6 +25495,12 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Cascade, Centennial, Chinook & Simcoe Hops",
     distilleryLocation: "Petaluma, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "lagunitas ipa cans",
+      secondaryKeywords: ["lagunitas ipa can price", "buy lagunitas ipa cans", "lagunitas ipa 6 pack cans", "lagunitas ipa near me", "lagunitas brewing ipa abv", "lagunitas west coast ipa"],
+      faqs: [{ question: "Who owns Lagunitas?", answer: "Heineken acquired a 50% stake in 2015 and full ownership by 2017." }],
+    },
   },
   {
     id: 'prod-beer-53',
@@ -24842,6 +25525,12 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Lactose & Flaked Oats, Nitrogen-Infused",
     distilleryLocation: "Longmont, CO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "left hand milk stout nitro",
+      secondaryKeywords: ["left hand milk stout nitro price", "buy left hand milk stout nitro", "left hand milk stout nitro review", "left hand milk stout nitro near me", "left hand milk stout nitro abv"],
+      faqs: [{ question: "What makes a \"milk stout\" different from a regular stout?", answer: "Lactose (milk sugar) is added during brewing, and because yeast can't ferment lactose, it remains in the finished beer, adding natural sweetness and a fuller body — Left Hand was also the first craft brewery to bottle a nitrogenated beer." }],
+    },
   },
   {
     id: 'prod-beer-54',
@@ -24866,6 +25555,12 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Wheat Malt, Lemonade Flavor",
     distilleryLocation: "Chippewa Falls, WI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "leinenkugel's summer shandy",
+      secondaryKeywords: ["leinenkugel's summer shandy price", "buy leinenkugel's summer shandy", "leinenkugel's summer shandy review", "leinenkugel's summer shandy near me", "leinenkugel's summer shandy abv"],
+      faqs: [{ question: "What is a shandy?", answer: "A beer blended with a lemon-lime soda or lemonade-style flavoring — Summer Shandy (2007) is widely credited with popularizing the modern American shandy category and remains Leinenkugel's best-known nationwide release." }],
+    },
   },
   {
     id: 'prod-beer-55',
@@ -24890,6 +25585,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Wheat Malt, Coriander & Orange Peel",
     distilleryLocation: "Chippewa Falls, WI",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "leinenkugel's sunset wheat",
+      secondaryKeywords: ["leinenkugel's sunset wheat price", "buy leinenkugel's sunset wheat", "leinenkugel's sunset wheat review", "leinenkugel's sunset wheat near me", "leinenkugel's sunset wheat abv"],
+    },
   },
   {
     id: 'prod-beer-56',
@@ -24914,6 +25614,12 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "2-Row Malt, Cascade Hops",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "michelob ultra",
+      secondaryKeywords: ["michelob ultra price", "buy michelob ultra", "michelob ultra review", "michelob ultra near me", "michelob ultra calories", "michelob ultra abv"],
+      faqs: [{ question: "How many calories are in Michelob Ultra?", answer: "Michelob Ultra has 95 calories per 12oz serving — fewer than Bud Light (110), Coors Light (102), and Miller Lite (96)." }],
+    },
   },
   {
     id: 'prod-beer-57',
@@ -24938,6 +25644,12 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "6-Row Barley Malt, Corn",
     distilleryLocation: "Milwaukee, WI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "miller high life",
+      secondaryKeywords: ["miller high life price", "buy miller high life", "miller high life review", "miller high life near me", "miller high life abv", "champagne of beers"],
+      faqs: [{ question: "Why is Miller High Life called the Champagne of Beers?", answer: "The nickname refers to Miller High Life's Champagne-shaped bottle with sloping shoulders, not the beer style itself — the slogan dates to the late 1960s." }],
+    },
   },
   {
     id: 'prod-beer-58',
@@ -24962,6 +25674,12 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "6-Row Barley Malt, Corn",
     distilleryLocation: "Milwaukee, WI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "miller high life",
+      secondaryKeywords: ["miller high life price", "buy miller high life", "miller high life review", "miller high life near me", "miller high life abv", "champagne of beers"],
+      faqs: [{ question: "Why is Miller High Life called the Champagne of Beers?", answer: "The nickname refers to Miller High Life's Champagne-shaped bottle with sloping shoulders, not the beer style itself — the slogan dates to the late 1960s." }],
+    },
   },
   {
     id: 'prod-beer-59',
@@ -24986,6 +25704,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Barley Malt, Hallertau Hops",
     distilleryLocation: "Milwaukee, WI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "miller lite",
+      secondaryKeywords: ["miller lite price", "buy miller lite", "miller lite review", "miller lite near me", "miller lite abv", "is miller lite good"],
+    },
   },
   {
     id: 'prod-beer-60',
@@ -25010,6 +25733,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Barley Malt, Hallertau Hops",
     distilleryLocation: "Milwaukee, WI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "miller lite",
+      secondaryKeywords: ["miller lite price", "buy miller lite", "miller lite review", "miller lite near me", "miller lite abv", "is miller lite good"],
+    },
   },
   {
     id: 'prod-beer-61',
@@ -25034,6 +25762,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Pale Malt, Noble Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "modelo especial",
+      secondaryKeywords: ["modelo especial price", "buy modelo especial", "modelo especial review", "modelo especial near me", "modelo especial abv", "is modelo especial good"],
+    },
   },
   {
     id: 'prod-beer-62',
@@ -25058,6 +25791,11 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Pale Malt, Noble Hops",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "modelo especial",
+      secondaryKeywords: ["modelo especial price", "buy modelo especial", "modelo especial review", "modelo especial near me", "modelo especial abv", "is modelo especial good"],
+    },
   },
   {
     id: 'prod-beer-63',
@@ -25082,6 +25820,12 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Munich & Caramel Malt",
     distilleryLocation: "Mexico City, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "negra modelo",
+      secondaryKeywords: ["negra modelo price", "buy negra modelo", "negra modelo review", "negra modelo near me", "negra modelo abv", "modelo negra vs especial"],
+      faqs: [{ question: "What's the difference between Modelo Especial and Negra Modelo?", answer: "Negra Modelo is a Munich Dunkel-style dark lager at 5.4% ABV, brewed nearly twice as long for a fuller, maltier body — Modelo Especial is a pale adjunct lager at 4.4-4.5% ABV." }],
+    },
   },
   {
     id: 'prod-beer-64',
@@ -25106,6 +25850,12 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Roasted Barley, Irish Ale Yeast",
     distilleryLocation: "Cork, Ireland",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "murphy's irish stout",
+      secondaryKeywords: ["murphy's irish stout price", "buy murphy's irish stout", "murphy's irish stout review", "murphy's irish stout near me", "murphy's irish stout abv"],
+      faqs: [{ question: "What's the difference between Murphy's and Guinness?", answer: "Both are dry Irish stouts at a matching 4% ABV, but Murphy's (Cork, Heineken-owned) is brewed to be smoother, less bitter, and slightly sweeter and creamier than Guinness (Dublin, Diageo-owned)." }],
+    },
   },
   {
     id: 'prod-beer-65',
@@ -25130,6 +25880,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Corn, 2-Row Barley Malt",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "natural light",
+      secondaryKeywords: ["natural light price", "buy natural light", "natural light review", "natural light near me", "natural light abv", "natty light"],
+    },
   },
   {
     id: 'prod-beer-66',
@@ -25154,6 +25909,12 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Caramel & Biscuit Malt, Willamette Hops",
     distilleryLocation: "Fort Collins, CO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "new belgium fat tire amber ale",
+      secondaryKeywords: ["fat tire beer price", "buy fat tire beer", "fat tire beer review", "fat tire beer near me", "fat tire beer abv"],
+      faqs: [{ question: "Why is it called \"Fat Tire\"?", answer: "Named for co-founder Jeff Lebesch's 1988 bicycle tour through Belgium, which directly inspired the beer's recipe." }],
+    },
   },
   {
     id: 'prod-beer-67',
@@ -25178,6 +25939,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Caramel & Biscuit Malt, Willamette Hops",
     distilleryLocation: "Fort Collins, CO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "new belgium fat tire amber ale",
+      secondaryKeywords: ["fat tire beer can price", "buy fat tire beer cans", "fat tire beer review", "fat tire beer near me", "fat tire beer abv"],
+    },
   },
   {
     id: 'prod-beer-68',
@@ -25202,6 +25968,12 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Mosaic, Citra & Simcoe Hops",
     distilleryLocation: "Fort Collins, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "voodoo ranger variety pack",
+      secondaryKeywords: ["voodoo ranger variety pack price", "buy voodoo ranger variety pack", "voodoo ranger hoppy pack review", "voodoo ranger variety pack near me", "voodoo ranger variety pack flavors", "new belgium voodoo ranger pack"],
+      faqs: [{ question: "What beers are in the Voodoo Ranger variety pack?", answer: "New Belgium's current Hoppy Pack includes Voodoo Ranger IPA, Juicy Haze IPA, Imperial IPA, and Sweet Ride Juicy IPA." }],
+    },
   },
   {
     id: 'prod-beer-69',
@@ -25226,6 +25998,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Citra Hops, Oats",
     distilleryLocation: "Brooklyn, NY",
+    // Confirmed real via WebSearch, not volume-backed.
+    seo: {
+      primaryKeyword: "other half all citra everything",
+      secondaryKeywords: ["other half all citra everything price", "buy other half all citra everything", "other half brewing hazy ipa", "other half all citra everything review", "other half brewing brooklyn"],
+    },
   },
   {
     id: 'prod-beer-70',
@@ -25250,6 +26027,12 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "6-Row Malt, Corn",
     distilleryLocation: "Milwaukee, WI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "pabst blue ribbon",
+      secondaryKeywords: ["pabst blue ribbon price", "buy pabst blue ribbon", "pbr review", "pabst blue ribbon near me", "pbr abv", "pabst blue ribbon history"],
+      faqs: [{ question: "Why is it called Pabst Blue Ribbon?", answer: "The name references literal blue ribbons that were tied around the bottleneck from 1882 to 1916, after the beer won \"America's Best\" honors." }],
+    },
   },
   {
     id: 'prod-beer-71',
@@ -25274,6 +26057,11 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Pilsner Malt, Saaz Hops",
     distilleryLocation: "Mazatlán, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "pacifico",
+      secondaryKeywords: ["pacifico price", "buy pacifico beer", "pacifico review", "pacifico near me", "pacifico abv", "pacifico clara mazatlan"],
+    },
   },
   {
     id: 'prod-beer-72',
@@ -25298,6 +26086,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Pilsner Malt, Saaz Hops",
     distilleryLocation: "Mazatlán, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "pacifico",
+      secondaryKeywords: ["pacifico price", "buy pacifico beer", "pacifico review", "pacifico near me", "pacifico abv", "pacifico clara mazatlan"],
+    },
   },
   {
     id: 'prod-beer-73',
@@ -25322,6 +26115,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Pilsner Malt, Maize",
     distilleryLocation: "Rome, Italy",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "peroni",
+      secondaryKeywords: ["peroni price", "buy peroni nastro azzurro", "peroni review", "peroni near me", "peroni abv", "is peroni italian"],
+    },
   },
   {
     id: 'prod-beer-74',
@@ -25346,6 +26144,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Pilsner Malt, Maize",
     distilleryLocation: "Rome, Italy",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "peroni",
+      secondaryKeywords: ["peroni price", "buy peroni nastro azzurro", "peroni review", "peroni near me", "peroni abv", "is peroni italian"],
+    },
   },
   {
     id: 'prod-beer-75',
@@ -25370,6 +26173,12 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Roasted Malt, Coffee & Cacao Nibs",
     distilleryLocation: "Tulsa, OK",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "prairie bomb imperial stout",
+      secondaryKeywords: ["prairie bomb price", "buy prairie bomb", "prairie bomb review", "prairie bomb near me", "prairie bomb abv"],
+      faqs: [{ question: "What's in Prairie Bomb!?", answer: "An imperial stout aged on coffee, cacao nibs, vanilla beans, and ancho chili peppers, delivering a chocolate-coffee flavor with a subtle chile warmth at roughly 13% ABV — one of the highest-rated stouts on BeerAdvocate." }],
+    },
   },
   {
     id: 'prod-beer-76',
@@ -25394,6 +26203,12 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Amarillo, Centennial & Simcoe Hops",
     distilleryLocation: "Santa Rosa, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "pliny the elder",
+      secondaryKeywords: ["pliny the elder price", "buy pliny the elder", "pliny the elder review", "pliny the elder near me", "pliny the elder abv", "russian river pliny the elder"],
+      faqs: [{ question: "Is Pliny the Elder the best Double IPA in America?", answer: "\"Best\" is subjective, but its influence and critical standing are genuinely exceptional: co-founder Vinnie Cilurzo is widely credited with inventing the Double IPA style itself in the mid-1990s, and Pliny the Elder (8% ABV, 100 IBU, named for the Roman naturalist who first documented hops) won GABF bronze in 2014 and is consistently ranked among the best beers in the world on BeerAdvocate, RateBeer, and Untappd." }],
+    },
   },
   {
     id: 'prod-beer-77',
@@ -25418,6 +26233,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Two-Row Malt, Noble Hops",
     distilleryLocation: "Boston, MA",
+    seo: {
+      primaryKeyword: "samuel adams boston lager",
+      secondaryKeywords: ["sam adams boston lager", "boston lager", "samuel adams lager", "sam adams lager beer", "samuel adams boston lager beer"],
+    },
   },
   {
     id: 'prod-beer-78',
@@ -25442,6 +26261,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Two-Row Malt, Noble Hops",
     distilleryLocation: "Boston, MA",
+    seo: {
+      primaryKeyword: "samuel adams boston lager",
+      secondaryKeywords: ["sam adams boston lager", "boston lager", "samuel adams lager", "sam adams lager beer", "samuel adams boston lager beer"],
+    },
   },
   {
     id: 'prod-beer-79',
@@ -25466,6 +26289,11 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Barrel-Aged Malt Blend",
     distilleryLocation: "Boston, MA",
+    seo: {
+      primaryKeyword: "utopias beer sam adams",
+      secondaryKeywords: ["sam adams utopias beer", "sam adams' utopias beer", "samuel adams", "sam adams beer", "boston beer company", "buy samuel adams utopias"],
+      faqs: [{ question: "How strong is Samuel Adams Utopias?", answer: "The 2025 release reached 30% ABV, the highest in the beer's history, and Utopias is illegal to sell in roughly 15 US states as a result. It's been released about every two years since 2001, barrel-finished across vintages up to 30 years old in a blend of Irish whiskey, Amarone, white port, ruby port, Carcavelos, cognac, and scotch casks." }],
+    },
   },
   {
     id: 'prod-beer-80',
@@ -25490,6 +26318,12 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Organic Roasted Malt, Chocolate Essence",
     distilleryLocation: "Tadcaster, England",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "samuel smith organic chocolate stout",
+      secondaryKeywords: ["samuel smith chocolate stout price", "buy samuel smith chocolate stout", "samuel smith chocolate stout review", "samuel smith chocolate stout near me", "samuel smith chocolate stout abv"],
+      faqs: [{ question: "Is Samuel Smith's Chocolate Stout vegan?", answer: "Yes — it's registered with The Vegan Society and is both USDA Organic and Soil Association certified, brewed with well water from an original 1758 well in Tadcaster, Yorkshire, at 5% ABV." }],
+    },
   },
   {
     id: 'prod-beer-81',
@@ -25514,6 +26348,12 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Rice, Pilsner Malt",
     distilleryLocation: "Sapporo, Japan",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "sapporo",
+      secondaryKeywords: ["sapporo price", "buy sapporo beer", "sapporo review", "sapporo near me", "sapporo abv", "sapporo premium history"],
+      faqs: [{ question: "Is Sapporo the oldest Japanese beer brand?", answer: "Yes — Sapporo was founded in 1876 in Hokkaido, making it Japan's oldest beer brand." }],
+    },
   },
   {
     id: 'prod-beer-82',
@@ -25538,6 +26378,12 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Rice, Pilsner Malt",
     distilleryLocation: "Sapporo, Japan",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "sapporo",
+      secondaryKeywords: ["sapporo price", "buy sapporo beer", "sapporo review", "sapporo near me", "sapporo abv", "sapporo premium history"],
+      faqs: [{ question: "Is Sapporo the oldest Japanese beer brand?", answer: "Yes — Sapporo was founded in 1876 in Hokkaido, making it Japan's oldest beer brand." }],
+    },
   },
   {
     id: 'prod-beer-83',
@@ -25562,6 +26408,12 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Munich & Caramel Malt",
     distilleryLocation: "Shiner, TX",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "shiner bock",
+      secondaryKeywords: ["shiner bock price", "buy shiner bock", "shiner bock review", "shiner bock near me", "shiner bock abv", "is shiner bock a bock"],
+      faqs: [{ question: "Is Shiner Bock actually a bock-style beer?", answer: "It's a genuinely honest gray area — Shiner Bock is 4.4% ABV, below the roughly 6.3%+ typical of true Bocks, and Spoetzl itself markets it as an American-style dark lager rather than a strict Bock." }],
+    },
   },
   {
     id: 'prod-beer-84',
@@ -25586,6 +26438,12 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Wheat Malt, Orange & Coriander",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "shock top belgian white",
+      secondaryKeywords: ["shock top belgian white price", "buy shock top belgian white", "shock top belgian white review", "shock top near me", "shock top abv"],
+      faqs: [{ question: "What's in Shock Top Belgian White?", answer: "An unfiltered witbier spiced with real orange, lemon, and lime peel plus coriander — first released in 2006 and now Anheuser-Busch's flagship Shock Top beer." }],
+    },
   },
   {
     id: 'prod-beer-85',
@@ -25610,6 +26468,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Cascade, Centennial & Chinook Hops",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada celebration ipa",
+      secondaryKeywords: ["sierra nevada ipa", "sierra nevada beer", "sierra nevada celebration ipa price", "buy sierra nevada celebration ipa", "sierra nevada celebration ipa near me", "sierra nevada fresh hop ipa"],
+      faqs: [{ question: "Is Celebration IPA a seasonal beer?", answer: "Yes, released annually each fall since 1981, making it one of the longest-running fresh-hop beers in American craft brewing." }],
+    },
   },
   {
     id: 'prod-beer-86',
@@ -25634,6 +26497,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Citra, Mosaic & Comet Hops",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada hazy little thing",
+      secondaryKeywords: ["sierra nevada ipa", "sierra nevada beer ipa", "sierra nevada hazy little thing price", "buy sierra nevada hazy little thing", "hazy little thing near me", "sierra nevada hazy ipa"],
+      faqs: [{ question: "Is Hazy Little Thing a New England IPA?", answer: "Yes, it's Sierra Nevada's flagship entry into the hazy/juicy IPA style pioneered in New England." }],
+    },
   },
   {
     id: 'prod-beer-87',
@@ -25658,6 +26526,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Cascade Hops, 2-Row Pale Malt",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada pale ales",
+      secondaryKeywords: ["alcohol content in sierra nevada pale ale", "sierra nevada pale ale alcohol content", "sierra nevada pale ale alcohol percent", "sierra nevada beer", "sierra nevada brewing co pale ale", "buy sierra nevada pale ale"],
+      faqs: [{ question: "What's the ABV of Sierra Nevada Pale Ale?", answer: "About 5.6% ABV. Sierra Nevada Pale Ale (1980) is widely credited as one of the beers that launched the modern American craft-pale-ale category." }],
+    },
   },
   {
     id: 'prod-beer-88',
@@ -25682,6 +26555,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Cascade Hops, 2-Row Pale Malt",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada pale ales",
+      secondaryKeywords: ["sierra nevada pale ale can price", "buy sierra nevada pale ale cans", "alcohol content in sierra nevada pale ale", "sierra nevada beer", "sierra nevada brewing co pale ale"],
+    },
   },
   {
     id: 'prod-beer-89',
@@ -25706,6 +26583,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Magnum, Crystal & Citra Hops",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada ipa",
+      secondaryKeywords: ["torpedo beer", "sierra nevada beer ipa", "sierra nevada brewing company ipa", "sierra nevada india pale ale", "sierra nevada torpedo extra ipa price", "buy sierra nevada torpedo ipa"],
+      faqs: [{ question: "What is Torpedo Extra IPA?", answer: "Sierra Nevada's Extra IPA, named for the brewery's \"Hop Torpedo\" dry-hopping device that infuses extra hop aroma without added bitterness." }],
+    },
   },
   {
     id: 'prod-beer-90',
@@ -25730,6 +26612,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Magnum, Crystal & Citra Hops",
     distilleryLocation: "Chico, CA",
+    seo: {
+      primaryKeyword: "sierra nevada ipa",
+      secondaryKeywords: ["torpedo beer", "sierra nevada beer ipa", "sierra nevada abv", "sierra nevada torpedo ipa cans", "buy sierra nevada torpedo cans", "sierra nevada torpedo near me"],
+      faqs: [{ question: "What is Torpedo Extra IPA?", answer: "Sierra Nevada's Extra IPA, named for the brewery's \"Hop Torpedo\" dry-hopping device that infuses extra hop aroma without added bitterness." }],
+    },
   },
   {
     id: 'prod-beer-91',
@@ -25754,6 +26641,14 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Saaz Noble Hops, Pilsner Malt",
     distilleryLocation: "Leuven, Belgium",
+    seo: {
+      primaryKeyword: "stella artois beer",
+      secondaryKeywords: ["stella artois lager", "stella artois abv", "stella lager", "stella artois lager bottles", "what type of beer is stella artois"],
+      faqs: [
+        { question: "What type of beer is Stella Artois?", answer: "Stella Artois is a European/Belgian pale lager at roughly 5% ABV, brewed in Leuven, Belgium since 1926." },
+        { question: "What is Stella Artois's alcohol content?", answer: "Stella Artois is 5% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-92',
@@ -25778,6 +26673,14 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Saaz Noble Hops, Pilsner Malt",
     distilleryLocation: "Leuven, Belgium",
+    seo: {
+      primaryKeyword: "stella artois beer",
+      secondaryKeywords: ["stella artois lager", "stella artois abv", "stella lager", "stella artois lager bottles", "what type of beer is stella artois"],
+      faqs: [
+        { question: "What type of beer is Stella Artois?", answer: "Stella Artois is a European/Belgian pale lager at roughly 5% ABV, brewed in Leuven, Belgium since 1926." },
+        { question: "What is Stella Artois's alcohol content?", answer: "Stella Artois is 5% ABV." },
+      ],
+    },
   },
   {
     id: 'prod-beer-93',
@@ -25802,6 +26705,12 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Chinook, Centennial & Cascade Hops",
     distilleryLocation: "Escondido, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "stone ipa",
+      secondaryKeywords: ["stone ipa price", "buy stone ipa", "stone ipa review", "stone ipa near me", "stone ipa abv", "stone ipa 6 pack"],
+      faqs: [{ question: "Is Stone IPA a West Coast IPA?", answer: "Yes, it's one of the style's founding examples, first brewed in 1997 to celebrate Stone Brewing's first anniversary." }],
+    },
   },
   {
     id: 'prod-beer-94',
@@ -25826,6 +26735,12 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Chinook, Centennial & Cascade Hops",
     distilleryLocation: "Escondido, CA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "stone ipa cans",
+      secondaryKeywords: ["stone ipa can price", "buy stone ipa cans", "stone ipa 12 pack", "stone ipa near me", "stone brewing ipa abv", "stone brewing west coast ipa"],
+      faqs: [{ question: "Is Stone IPA a West Coast IPA?", answer: "Yes, it's one of the style's founding examples, first brewed in 1997 to celebrate Stone Brewing's first anniversary." }],
+    },
   },
   {
     id: 'prod-beer-95',
@@ -25850,6 +26765,12 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Cascade & Centennial Hops",
     distilleryLocation: "Atlanta, GA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "sweetwater 420 extra pale ale",
+      secondaryKeywords: ["sweetwater 420 price", "buy sweetwater 420", "sweetwater 420 review", "sweetwater 420 near me", "sweetwater 420 abv"],
+      faqs: [{ question: "Why is it called \"420\"?", answer: "First brewed on April 20, 1997 (4/20) — a date that also ties into the cannabis-culture number fitting SweetWater's laid-back brand identity. It remains the best-selling pale ale in Georgia." }],
+    },
   },
   {
     id: 'prod-beer-96',
@@ -25874,6 +26795,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Cascade & Centennial Hops",
     distilleryLocation: "Atlanta, GA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "sweetwater 420 extra pale ale",
+      secondaryKeywords: ["sweetwater 420 can price", "buy sweetwater 420 cans", "sweetwater 420 review", "sweetwater 420 near me", "sweetwater 420 abv"],
+    },
   },
   {
     id: 'prod-beer-97',
@@ -25898,6 +26824,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Pale Malt, Corn",
     distilleryLocation: "Tecate, Mexico",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tecate",
+      secondaryKeywords: ["tecate price", "buy tecate beer", "tecate review", "tecate near me", "tecate abv", "tecate mexican beer"],
+    },
   },
   {
     id: 'prod-beer-98',
@@ -25922,6 +26853,12 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Bourbon Barrel-Aged Malt",
     distilleryLocation: "Placentia, CA",
+    seo: {
+      // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
+      primaryKeyword: "the bruery black tuesday imperial stout",
+      secondaryKeywords: ["black tuesday price", "buy black tuesday beer", "black tuesday review", "black tuesday near me", "black tuesday abv"],
+      faqs: [{ question: "How strong is Black Tuesday?", answer: "A bourbon-barrel-aged imperial stout historically ranging 18–20% ABV depending on vintage; released just once a year and considered one of the most cult-followed annual stout releases in American craft beer." }],
+    },
   },
   {
     id: 'prod-beer-99',
@@ -25946,6 +26883,12 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Citra, Mosaic & El Dorado Hops",
     distilleryLocation: "Charlton, MA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tree house julius ipa",
+      secondaryKeywords: ["tree house julius ipa price", "buy tree house julius", "tree house julius review", "tree house julius near me", "tree house julius ipa abv", "tree house hazy ipa"],
+      faqs: [{ question: "Why is Tree House Julius so hard to find?", answer: "Tree House sells almost exclusively at its own brewery locations rather than through standard beer distribution, which is exactly why stocking it is a genuine differentiator for this shop." }],
+    },
   },
   {
     id: 'prod-beer-100',
@@ -25970,6 +26913,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Galaxy Hops, Oats",
     distilleryLocation: "Boston, MA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "trillium congress street ipa",
+      secondaryKeywords: ["trillium congress street ipa price", "buy trillium congress street", "trillium congress street review", "trillium congress street near me", "trillium congress street ipa abv", "trillium ipa"],
+    },
   },
   {
     id: 'prod-beer-101',
@@ -25994,6 +26942,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Simcoe, Citra & Mosaic Hops",
     distilleryLocation: "Fort Collins, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "voodoo ranger imperial ipa",
+      secondaryKeywords: ["voodoo ranger imperial ipa price", "buy voodoo ranger imperial ipa", "voodoo ranger imperial ipa review", "voodoo ranger imperial ipa near me", "voodoo ranger imperial ipa abv", "voodoo ranger imperial ipa 6 pack"],
+    },
   },
   {
     id: 'prod-beer-102',
@@ -26018,6 +26971,12 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Citra, Azacca & El Dorado Hops",
     distilleryLocation: "Fort Collins, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "voodoo ranger juicy haze ipa",
+      secondaryKeywords: ["voodoo ranger juicy haze ipa price", "buy voodoo ranger juicy haze", "voodoo ranger juicy haze review", "voodoo ranger juicy haze near me", "voodoo ranger juicy haze abv", "voodoo ranger hazy ipa"],
+      faqs: [{ question: "What's the difference between Voodoo Ranger IPA and Juicy Haze?", answer: "The flagship IPA runs 7% ABV and is a clearer, more traditionally bitter West Coast-style IPA, while Juicy Haze leans into the cloudy, low-bitterness New England style." }],
+    },
   },
   {
     id: 'prod-beer-103',
@@ -26042,6 +27001,12 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Mosaic, Citra & El Dorado Hops",
     distilleryLocation: "Greeley, CO",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "weldwerks juicy bits ipa",
+      secondaryKeywords: ["weldwerks juicy bits price", "buy weldwerks juicy bits", "weldwerks juicy bits review", "weldwerks juicy bits near me", "weldwerks juicy bits abv", "weldwerks hazy ipa"],
+      faqs: [{ question: "Has Juicy Bits won any awards?", answer: "The Great American Beer Festival gold medal (2019) belongs to the stronger \"Extra Extra Juicy Bits\" variant, not the base Juicy Bits stocked here — worth stating precisely rather than implying the base beer itself medaled." }],
+    },
   },
   {
     id: 'prod-beer-104',
@@ -26066,6 +27031,12 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Caramel & Pale Malt",
     distilleryLocation: "Pottsville, PA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "yuengling",
+      secondaryKeywords: ["yuengling price", "buy yuengling", "yuengling review", "yuengling near me", "yuengling abv", "america's oldest brewery"],
+      faqs: [{ question: "Is Yuengling America's oldest brewery?", answer: "Yes — D.G. Yuengling & Son was founded in 1829 in Pottsville, Pennsylvania, and has operated continuously aside from a brief Prohibition-era pivot to near-beer and ice cream." }],
+    },
   },
   {
     id: 'prod-beer-105',
@@ -26090,6 +27061,12 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Caramel & Pale Malt",
     distilleryLocation: "Pottsville, PA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "yuengling",
+      secondaryKeywords: ["yuengling price", "buy yuengling", "yuengling review", "yuengling near me", "yuengling abv", "america's oldest brewery"],
+      faqs: [{ question: "Is Yuengling America's oldest brewery?", answer: "Yes — D.G. Yuengling & Son was founded in 1829 in Pottsville, Pennsylvania, and has operated continuously aside from a brief Prohibition-era pivot to near-beer and ice cream." }],
+    },
   },
 
   // CIDER
@@ -26116,6 +27093,10 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Heirloom Northwest apples, cold-fermented, unfiltered",
     distilleryLocation: "Corvallis, OR",
+    seo: {
+      primaryKeyword: "2 towns ciderhouse",
+      secondaryKeywords: ["two towns cider", "2 towns cider", "two towns ciderhouse", "2towns cider", "2 towns bright cider", "bright cider 2 towns"],
+    },
   },
   {
     id: 'prod-cider-02',
@@ -26140,6 +27121,10 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Fresh-pressed apples, small-batch fermentation",
     distilleryLocation: "Sonoma County, CA",
+    seo: {
+      primaryKeyword: "ace hard cider",
+      secondaryKeywords: ["ace cider", "ace ciders", "california ace cider", "ace apple cider", "ace apple hard cider", "ace cider near me"],
+    },
   },
   {
     id: 'prod-cider-03',
@@ -26164,6 +27149,10 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Fermented apple base blended with real mango juice",
     distilleryLocation: "Sonoma County, CA",
+    seo: {
+      primaryKeyword: "ace mango cider",
+      secondaryKeywords: ["ace mango", "ace cider", "ace ciders", "ace guava cider", "ace pineapple hard cider"],
+    },
   },
   {
     id: 'prod-cider-04',
@@ -26188,6 +27177,10 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Fermented apple cider blended with real pineapple juice",
     distilleryLocation: "Sonoma County, CA",
+    seo: {
+      primaryKeyword: "ace pineapple cider",
+      secondaryKeywords: ["ace cider pineapple hard cider", "ace pineapple hard cider", "ace pineapple", "ace pineapple cider near me", "pineapple hard cider", "ace pineapple beer"],
+    },
   },
   {
     id: 'prod-cider-05',
@@ -26212,6 +27205,14 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Blend of culinary and bittersweet cider apples",
     distilleryLocation: "Walden, NY",
+    seo: {
+      primaryKeyword: "angry orchard crisp apple hard cider",
+      secondaryKeywords: ["angry orchard crisp apple", "angry orchard crisp apple cider", "crisp apple hard cider", "angry orchard hard cider", "angry orchard cider", "hard apple cider"],
+      faqs: [
+        { question: 'Is Angry Orchard gluten free?', answer: "Yes — Angry Orchard is fermented from apples rather than grain, so it's naturally gluten-free." },
+        { question: 'How much alcohol is in Angry Orchard?', answer: 'Angry Orchard Crisp Apple is 5% ABV, in line with most hard ciders on the market.' },
+      ],
+    },
   },
   {
     id: 'prod-cider-06',
@@ -26236,6 +27237,14 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Blend of culinary and bittersweet apples, extra-tart profile",
     distilleryLocation: "Walden, NY",
+    seo: {
+      primaryKeyword: "angry orchard green apple hard cider",
+      secondaryKeywords: ["green apple angry orchard", "angry orchard hard cider", "angry orchard cider", "angry orchard flavors", "hard apple cider"],
+      faqs: [
+        { question: 'Is Angry Orchard a beer?', answer: "No — hard cider is fermented from apples rather than brewed from malted grain like beer, though it's often sold and served alongside beer." },
+        { question: 'Who owns Angry Orchard?', answer: 'Angry Orchard is owned by The Boston Beer Company, the brewer behind Samuel Adams.' },
+      ],
+    },
   },
   {
     id: 'prod-cider-07',
@@ -26260,6 +27269,10 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "English cider apples blended with blood orange",
     distilleryLocation: "Austin, TX",
+    seo: {
+      primaryKeyword: "austin eastcider blood orange hard cider",
+      secondaryKeywords: ["austin eastciders blood orange", "austin eastciders blood orange cider", "austin blood orange cider", "austin cider blood orange", "austin east blood orange cider"],
+    },
   },
   {
     id: 'prod-cider-08',
@@ -26284,6 +27297,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "English heirloom cider apple varieties, dry fermentation",
     distilleryLocation: "Austin, TX",
+    seo: {
+      primaryKeyword: "austin eastciders original dry cider",
+      secondaryKeywords: ["austin eastciders", "austin east cider", "austin eastciders dry cider", "austin cider", "east austin cider"],
+    },
   },
   {
     id: 'prod-cider-09',
@@ -26308,6 +27325,10 @@ export const PRODUCTS: Product[] = [
     stock: 42,
     caskType: "Dry-fermented apple cider blended with real pineapple juice",
     distilleryLocation: "Austin, TX",
+    seo: {
+      primaryKeyword: "austin eastciders pineapple",
+      secondaryKeywords: ["pineapple cider austin", "austin pineapple cider", "austin eastciders pineapple cider", "austin east cider pineapple", "austin cider pineapple"],
+    },
   },
   {
     id: 'prod-cider-10',
@@ -26332,6 +27353,10 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Fermented apples blended with strawberry, blackberry, raspberry",
     distilleryLocation: "Armada, MI",
+    seo: {
+      primaryKeyword: "blake's triple jam",
+      secondaryKeywords: ["blake's hard cider triple jam", "blake's triple jam cider", "blake's hard cider", "blakes hard cider", "blake hard cider"],
+    },
   },
   {
     id: 'prod-cider-11',
@@ -26356,6 +27381,10 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Fresh-pressed regional apples, small-batch blend",
     distilleryLocation: "Burlington, VT",
+    seo: {
+      primaryKeyword: "citizen cider unified press hard cider",
+      secondaryKeywords: ["citizen cider unified press", "citizen cider", "citizens cider vermont", "citizen cider burlington vt", "citizen cider menu"],
+    },
   },
   {
     id: 'prod-cider-12',
@@ -26380,6 +27409,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Fresh-pressed American apples, cold fermentation",
     distilleryLocation: "Minneapolis, MN",
+    seo: {
+      // No dedicated SEMrush export exists for Crispin (confirmed zero rows across every cider CSV) — primary keyword confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "crispin original hard cider",
+      secondaryKeywords: ["hard cider brands", "hard apple cider", "unfiltered hard cider", "craft hard cider", "hard cider"],
+    },
   },
   {
     id: 'prod-cider-13',
@@ -26404,6 +27438,10 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Whole-pressed apples, unfiltered, blended with pineapple juice",
     distilleryLocation: "Boston, MA",
+    seo: {
+      primaryKeyword: "downeast aloha friday",
+      secondaryKeywords: ["downeast cider", "downeast cider house", "downeast cider flavors", "downeast peach mango", "down east cider"],
+    },
   },
   {
     id: 'prod-cider-14',
@@ -26428,6 +27466,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Whole-pressed apples, unfiltered, blended with blackberry juice",
     distilleryLocation: "Boston, MA",
+    seo: {
+      primaryKeyword: "downeast blackberry cider",
+      secondaryKeywords: ["downeast cider blackberry", "downeast cider", "downeast cider house", "downeast cider flavors", "down east cider"],
+    },
   },
   {
     id: 'prod-cider-15',
@@ -26452,6 +27494,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "English and French bittersweet cider apples, still fermentation",
     distilleryLocation: "Lebanon, NH",
+    seo: {
+      // No dedicated SEMrush export exists for Farnum Hill (confirmed zero rows across every cider CSV) — primary keyword confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "farnum hill extra dry cider",
+      secondaryKeywords: ["hard cider", "craft cider", "unfiltered hard cider", "hard cider brands", "dry cider near me"],
+    },
   },
   {
     id: 'prod-cider-16',
@@ -26476,6 +27523,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "100% West Coast apples, champagne yeast fermentation",
     distilleryLocation: "Sebastopol, CA",
+    seo: {
+      primaryKeyword: "golden state cider mighty dry",
+      secondaryKeywords: ["golden state mighty dry cider", "golden state cider", "mighty dry cider", "golden state cider mighty dry hard cider", "golden state cider taproom"],
+    },
   },
   {
     id: 'prod-cider-17',
@@ -26500,6 +27551,13 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "100% freshly pressed New York apples, dry fermentation",
     distilleryLocation: "New York, NY",
+    seo: {
+      primaryKeyword: "original sin cider",
+      secondaryKeywords: ["original sin hard cider", "original dry cider", "gluten free hard cider", "original sin cider near me", "hard cider gluten free"],
+      faqs: [
+        { question: 'Is hard cider gluten free?', answer: "Yes — hard cider made purely from fermented apples is naturally gluten-free, though it's always worth confirming with the specific producer for shared-equipment risk." },
+      ],
+    },
   },
   {
     id: 'prod-cider-18',
@@ -26524,6 +27582,14 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "English apple varieties, traditional dry-style fermentation",
     distilleryLocation: "Hereford, England",
+    seo: {
+      primaryKeyword: "strongbow original dry cider",
+      secondaryKeywords: ["strongbow original dry hard cider", "strongbow cider", "strongbow hard cider", "strongbow original", "strong bow cider"],
+      faqs: [
+        { question: 'Is Strongbow cider gluten free?', answer: 'Yes — Strongbow is fermented from apples rather than grain, making it naturally gluten-free.' },
+        { question: 'What is the alcohol content of Strongbow cider?', answer: 'Strongbow Original Dry is 5% ABV, typical for mainstream hard ciders.' },
+      ],
+    },
   },
   {
     id: 'prod-cider-19',
@@ -26548,6 +27614,10 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Fresh apple juice fermentation, medium-sweet amber style",
     distilleryLocation: "Middlebury, VT",
+    seo: {
+      primaryKeyword: "woodchuck amber cider",
+      secondaryKeywords: ["woodchuck amber hard cider", "woodchuck amber", "woodchuck hard cider amber", "woodchuck hard cider", "woodchuck cider"],
+    },
   },
 
   // BAR ESSENTIALS
@@ -28109,6 +29179,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Non-alcoholic botanical distillation",
     distilleryLocation: "USA",
+    seo: {
+      // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+      primaryKeyword: "ritual zero proof rum alternative",
+      secondaryKeywords: ["ritual zero proof", "non alcoholic spirits", "ritual non alcoholic"],
+    },
   },
   {
     id: 'prod-baress-new-01',

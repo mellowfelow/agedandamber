@@ -2742,10 +2742,13 @@ export const BRAND_HUBS: BrandHub[] = [
   {
     categorySlug: 'na-spirits', hubSlug: 'seedlip', brandKeywords: ['Seedlip'], name: 'Seedlip',
     seo: brandSeo({
-      brand: 'Seedlip', categoryLabel: 'Non-Alcoholic Spirits', titleTag: 'Seedlip — Garden, Spice & Grove',
-      h1: 'Seedlip Non-Alcoholic Spirits — Garden, Spice & Grove Allocations',
-      metaDescription: 'Buy Seedlip online — Garden, Spice, and Grove, the world’s first distilled non-alcoholic spirit. Direct allocations at Aged & Amber. Free $300+.',
-      hook: 'Seedlip was the world’s first widely distributed non-alcoholic distilled spirit, launched in 2015 — each botanical range (Garden, Spice, Grove) is genuinely distilled rather than simply de-alcoholised, aiming to replicate the complexity of gin or whiskey without the ethanol.',
+      brand: 'Seedlip', categoryLabel: 'Non-Alcoholic Spirits', titleTag: 'Seedlip — Garden 108 & Grove 42',
+      h1: 'Seedlip Non-Alcoholic Spirits — Garden 108 & Grove 42 Allocations',
+      metaDescription: 'Buy Seedlip online — Garden 108 and Grove 42, the world’s first distilled non-alcoholic spirit. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Seedlip was the world’s first widely distributed non-alcoholic distilled spirit, launched in 2015 — each botanical blend is genuinely distilled rather than simply de-alcoholised, aiming to replicate the complexity of gin or whiskey without the ethanol. Garden 108 (peas and garden herbs) and Grove 42 (citrus-forward) are stocked here.',
+      faqs: [
+        { question: 'Is Seedlip really distilled?', answer: 'Yes — unlike many non-alcoholic spirits that simply blend flavorings, Seedlip’s botanicals are copper-pot distilled individually before blending, the same core technique used for gin.' },
+      ],
     }),
   },
   {
@@ -2753,9 +2756,9 @@ export const BRAND_HUBS: BrandHub[] = [
     seo: brandSeo({
       brand: "Lyre's", categoryLabel: 'Non-Alcoholic Spirits',
       titleTag: "Lyre's — Non-Alcoholic Spirit Alternatives",
-      h1: "Lyre's Non-Alcoholic Spirits — Whiskey, Gin, Rum & Aperitif Allocations",
-      metaDescription: "Buy Lyre's online — non-alcoholic alternatives modeled on whiskey, gin, rum, and aperitif styles. Direct allocations. Free shipping on $300+.",
-      hook: "Lyre's produces one of the widest non-alcoholic spirit ranges available, with alternatives modelled on whiskey, gin, rum, and aperitif styles, each built to work as a direct swap in classic cocktail recipes.",
+      h1: "Lyre's Non-Alcoholic Spirits — Whiskey, Gin, Agave & Aperitif Allocations",
+      metaDescription: "Buy Lyre's online — non-alcoholic alternatives modeled on whiskey, gin, agave, and aperitif styles. Direct allocations. Free shipping on $300+.",
+      hook: "Lyre's produces one of the widest non-alcoholic spirit ranges available, with alternatives modelled on whiskey, gin, agave, rum, and aperitif styles, each built to work as a direct swap in classic cocktail recipes.",
     }),
   },
   {
@@ -2765,7 +2768,44 @@ export const BRAND_HUBS: BrandHub[] = [
       titleTag: 'Ritual Zero Proof — Non-Alcoholic Spirits',
       h1: 'Ritual Zero Proof — Whiskey, Tequila, Gin & Rum Alternative Allocations',
       metaDescription: 'Buy Ritual Zero Proof online — non-alcoholic whiskey, tequila, gin, and rum alternatives. Direct allocations at Aged & Amber. Free on $300+.',
-      hook: 'Ritual Zero Proof makes non-alcoholic alternatives across whiskey, tequila, gin, and rum styles, formulated to deliver the bite and mouthfeel of the real spirit without alcohol, calories, or added sugar.',
+      hook: 'Ritual Zero Proof makes non-alcoholic alternatives across whiskey, tequila, gin, and rum styles, formulated to deliver the bite and mouthfeel of the real spirit without alcohol, calories, or added sugar. Diageo acquired Ritual in September 2024.',
+      faqs: [
+        { question: 'Is Ritual Zero Proof good?', answer: 'It’s built specifically to deliver the bite, aroma, and mouthfeel of real spirits rather than just flavoring water — reviewers commonly cite it as one of the more convincing zero-proof lines for classic cocktail builds.' },
+        { question: 'How is Ritual made without any alcohol?', answer: 'Through a formulation process using real botanicals and flavor compounds rather than distillation — no fermentation or alcohol is ever produced in the process.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-spirits', hubSlug: 'cut-above', brandKeywords: ['Cut Above'], name: 'Cut Above',
+    seo: brandSeo({
+      brand: 'Cut Above', categoryLabel: 'Non-Alcoholic Spirits',
+      titleTag: 'Cut Above — Zero Proof Agave Blanco & Mezcal',
+      h1: 'Cut Above — Zero Proof Agave Blanco & Mezcal',
+      metaDescription: 'Buy Cut Above online — Zero Proof Agave Blanco and Mezcal. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Cut Above is an independent (not Diageo-owned) non-alcoholic spirits brand out of Houston, Texas, offering four award-winning zero-proof spirits: Whiskey, Agave Blanco, Mezcal, and Gin. The two stocked here — Agave Blanco and Mezcal — are the brand’s tequila-style pair.',
+    }),
+  },
+  {
+    categorySlug: 'na-spirits', hubSlug: 'free-spirits', brandKeywords: ['Free Spirits', 'The Spirit of'], name: 'Free Spirits',
+    seo: brandSeo({
+      brand: 'Free Spirits', categoryLabel: 'Non-Alcoholic Spirits',
+      titleTag: 'Free Spirits — The Spirit of Bourbon, Gin & Tequila',
+      h1: 'Free Spirits — The Spirit of Bourbon, Gin & Tequila',
+      metaDescription: 'Buy Free Spirits online — The Spirit of Bourbon, Gin, and Tequila. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'The Free Spirits Company is based in Marin County, California, and uses a proprietary process called "Distillate Reconstruction" — distilling the natural essence of real ingredients (American White Oak, European juniper, Mexican blue agave) and reconstructing the nose, flavor, and mouthfeel without alcohol. All three stocked SKUs (Bourbon, Gin, Tequila) represent the brand’s complete core "Spirit of" trio.',
+    }),
+  },
+  {
+    categorySlug: 'na-spirits', hubSlug: 'monday', brandKeywords: ['Monday', 'Drink Monday'], name: 'Monday',
+    seo: brandSeo({
+      brand: 'Monday', categoryLabel: 'Non-Alcoholic Spirits',
+      titleTag: 'Monday — Zero Alcohol Gin & Whiskey',
+      h1: 'Monday — Zero Alcohol Gin & Whiskey',
+      metaDescription: 'Buy Monday online — Zero Alcohol Gin and Whiskey. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Drink Monday was founded in 2019 in Los Angeles by Ben Acott and Chris Boyd — the name comes from co-founder Chris Boyd switching to water mid-celebration at his own birthday because "tomorrow is Monday and I have sh!t to do." Spirits are handcrafted at LA’s oldest distillery with zero sugar, zero carbs, and zero calories per pour.',
+      faqs: [
+        { question: 'Why is it called Monday?', answer: 'Co-founder Chris Boyd was asked why he was switching to water mid-celebration and replied it was because Monday — and everything he had to do — was coming; the answer became the brand name.' },
+      ],
     }),
   },
 
@@ -3371,6 +3411,668 @@ export const BRAND_HUBS: BrandHub[] = [
       faqs: [
         { question: 'What makes Cordón Negro’s bottle black?', answer: 'A deliberate 1974 design choice by José Ferrer; the frosted black-matte glass was a stylistic break from traditional Cava packaging and remains the brand’s most recognizable signature 50 years later.' },
         { question: 'What is cava wine?', answer: 'A traditional-method Spanish sparkling wine from Catalonia’s Penedès region, primarily Macabeo, Xarel·lo, and Parellada grapes.' },
+      ],
+    }),
+  },
+
+  // ─── CIDER ───────────────────────────────────────────
+  {
+    categorySlug: 'cider', hubSlug: 'ace', brandKeywords: ['ACE'], name: 'ACE Cider',
+    seo: brandSeo({
+      brand: 'ACE', categoryLabel: 'Hard Cider',
+      titleTag: 'ACE Cider — Apple, Mango & Pineapple Hard Cider',
+      h1: 'ACE Hard Cider — Apple, Mango & Pineapple Allocations',
+      metaDescription: 'Buy ACE Hard Cider online — Apple, Mango, and Pineapple. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded by Jeffrey House in Sebastopol/Graton, California in July 1993, ACE was the first California hard cider producer and one of the first cideries formed in the US after Prohibition — House even opened the first modern cider-focused pub in the country in 1999. The brand built its reputation on fruit-forward, easy-drinking ciders, with Pineapple standing out as ACE’s biggest seller by real search demand.',
+      faqs: [
+        { question: 'Is ACE Cider gluten free?', answer: 'Yes — ACE’s fruit ciders are apple-based and naturally gluten-free, though it’s always worth confirming current labeling.' },
+        { question: 'Where is ACE Cider made?', answer: 'Sonoma County, California (Sebastopol), where the brand has operated since 1993.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'angry-orchard', brandKeywords: ['Angry Orchard'], name: 'Angry Orchard',
+    seo: brandSeo({
+      brand: 'Angry Orchard', categoryLabel: 'Hard Cider',
+      titleTag: 'Angry Orchard — Crisp Apple & Green Apple Hard Cider',
+      h1: 'Angry Orchard Hard Cider — Crisp Apple & Green Apple Allocations',
+      metaDescription: 'Buy Angry Orchard Hard Cider online — Crisp Apple and Green Apple. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Angry Orchard is owned by The Boston Beer Company — the same brewer behind Samuel Adams — and launched in 2012 to bring craft-style, apple-forward hard cider to a mainstream audience; it’s now one of the best-selling hard cider brands in the US. Crisp Apple, the flagship, and Green Apple, its tarter sibling, anchor the real search demand for the brand.',
+      faqs: [
+        { question: 'Is Angry Orchard gluten free?', answer: 'Yes — it’s made from fermented apples, not grain.' },
+        { question: 'Is Angry Orchard a beer?', answer: 'No — it’s a hard cider, fermented from apples rather than brewed from malted grain, though it’s often sold and served alongside beer.' },
+        { question: 'Who owns Angry Orchard?', answer: 'The Boston Beer Company (Samuel Adams).' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'austin-eastciders', brandKeywords: ['Austin Eastciders'], name: 'Austin Eastciders',
+    seo: brandSeo({
+      brand: 'Austin Eastciders', categoryLabel: 'Hard Cider',
+      titleTag: 'Austin Eastciders — Blood Orange, Original Dry & Pineapple',
+      h1: 'Austin Eastciders — Blood Orange, Original Dry & Pineapple Hard Cider',
+      metaDescription: 'Buy Austin Eastciders online — Blood Orange, Original Dry, and Pineapple Cider. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 2013 by Ed Gibson — who grew up in Bristol, England, "the cider capital of the world," and previously ran a specialist cider bar there — alongside beer-industry partner Mark King, Austin Eastciders set out to bring traditionally-inspired, less-sweet cider to the notoriously sweet-leaning US market, brewed in an unlikely home base: Austin, Texas. The three stocked flavors reflect that split identity — a genuinely dry, English-style base cider alongside bold, fruit-forward variants built for Texas heat.',
+      faqs: [
+        { question: 'Where is Austin Eastciders made?', answer: 'Austin, Texas, at the brand’s Springdale Road facility and taproom (opened 2017).' },
+        { question: 'Is Austin Eastciders Original Dry Cider sweet?', answer: 'No — it’s built in the drier, more traditional English style founder Ed Gibson grew up with in Bristol, distinct from many mainstream American ciders.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'downeast-cider', brandKeywords: ['Downeast Cider House', 'Downeast Cider'], name: 'Downeast Cider House',
+    seo: brandSeo({
+      brand: 'Downeast Cider House', categoryLabel: 'Hard Cider',
+      titleTag: 'Downeast Cider House — Aloha Friday & Blackberry',
+      h1: 'Downeast Cider House — Aloha Friday & Blackberry Hard Cider',
+      metaDescription: 'Buy Downeast Cider House online — Aloha Friday (pineapple) and Blackberry hard cider. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Downeast Cider House is a Boston-based cidery known for its distinctively unfiltered, cloudy-orange, half-gallon-jug-style cans — a deliberate departure from the clear, filtered look of most mainstream hard cider. Aloha Friday (pineapple) and Blackberry are two of the brand’s rotating fruited flavors, sitting alongside its much larger Original Blend and seasonal lines.',
+      faqs: [
+        { question: 'Is Downeast Cider gluten free?', answer: 'Yes — like all hard cider, it’s fermented from apples rather than grain.' },
+        { question: 'Where is Downeast Cider made?', answer: 'East Boston, Massachusetts.' },
+      ],
+    }),
+  },
+
+  // ─── NON-ALCOHOLIC BEER & CIDER ───────────────────────────────────────────
+  {
+    categorySlug: 'na-beer-cider', hubSlug: 'athletic-brewing', brandKeywords: ['Athletic Brewing'], name: 'Athletic Brewing',
+    seo: brandSeo({
+      brand: 'Athletic Brewing', categoryLabel: 'Non-Alcoholic Beer',
+      titleTag: 'Athletic Brewing — Free Wave, Run Wild & Upside Dawn',
+      h1: 'Athletic Brewing — Free Wave Hazy IPA, Run Wild IPA & Upside Dawn Golden Ale',
+      metaDescription: 'Buy Athletic Brewing online — Free Wave Hazy IPA, Run Wild IPA, and Upside Dawn Golden Ale, non-alcoholic craft beer. Direct allocations. Free on $300+.',
+      hook: 'Athletic Brewing Company was founded in 2017 by Bill Shufelt — a former Wall Street analyst who quit drinking and couldn’t find a genuinely good-tasting non-alcoholic beer — alongside brewmaster John Walker, based in Stratford, Connecticut, with a second brewery in San Diego. It’s widely credited with kicking off the modern "good-tasting" NA beer boom in the US by brewing beers from the ground up with proprietary fermentation techniques, rather than simply stripping the alcohol out of a regular beer afterward.',
+      faqs: [
+        { question: 'Who founded Athletic Brewing?', answer: 'Bill Shufelt and John Walker, founded 2017 in Stratford, Connecticut.' },
+        { question: 'Is Athletic Brewing beer really non-alcoholic?', answer: 'Yes — all core Athletic Brewing beers are brewed to below 0.5% ABV, the US legal threshold for "non-alcoholic."' },
+        { question: 'Does Athletic Brewing taste like real beer?', answer: 'Unlike most legacy NA brewers, Athletic ferments each beer from scratch specifically to be alcohol-free, rather than dealcoholizing a regular beer afterward — the brand’s entire reputation rests on that approach delivering closer-to-real-beer flavor.' },
+      ],
+    }),
+  },
+
+  // ─── BEER ───────────────────────────────────────────
+  {
+    categorySlug: 'beer', hubSlug: 'brooklyn-brewery', brandKeywords: ['Brooklyn', 'Brooklyn Brewery'], name: 'Brooklyn Brewery',
+    seo: brandSeo({
+      brand: 'Brooklyn Brewery', categoryLabel: 'Lager',
+      titleTag: 'Brooklyn Brewery — Lager & Pilsner',
+      h1: 'Brooklyn Brewery — Brooklyn Lager & Pilsner',
+      metaDescription: 'Buy Brooklyn Brewery online — Brooklyn Lager and Brooklyn Pilsner. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Brooklyn Brewery was founded in 1988 by former Middle East correspondent Steve Hindy and banker Tom Potter, reviving brewing in a borough that had once been home to dozens of breweries before Prohibition. Brooklyn Lager, the flagship, is a 5.2% ABV Amber Lager modeled on pre-Prohibition New York lagers, dry-hopped for a grapefruit-and-pine aroma; Brooklyn Pilsner is the lighter, crisper sibling.',
+      faqs: [
+        { question: 'What’s the difference between Brooklyn Lager and Brooklyn Pilsner?', answer: 'Lager is a fuller-bodied 5.2% ABV Amber Lager with dry-hopped citrus/pine aroma; Pilsner is a lighter, crisper golden lager.' },
+        { question: 'Is Brooklyn Lager an IPA?', answer: 'No — it’s an Amber Lager, though the dry-hopping technique (unusual for a lager) gives it more hop aroma than most lagers, which sometimes causes confusion.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'corona', brandKeywords: ['Corona'], name: 'Corona',
+    seo: brandSeo({
+      brand: 'Corona', categoryLabel: 'Lager',
+      titleTag: 'Corona — Extra & Light Mexican Lager',
+      h1: 'Corona — Extra & Light Mexican Lager',
+      metaDescription: 'Buy Corona online — Corona Extra and Corona Light Mexican Lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Corona traces to 1925 and Cervecería Modelo in Mexico City; Corona Extra became Mexico’s top-selling beer in the 1980s and the top-selling imported beer in the US shortly after. Corona Extra (4.6% ABV) is the classic clear-bottle pale lager customarily served with a lime wedge; Corona Light (4.0% ABV) is the lower-calorie companion. Constellation Brands holds exclusive US import and marketing rights following a 2013 sale by AB InBev.',
+      faqs: [
+        { question: 'Who owns Corona?', answer: 'Corona is brewed by Grupo Modelo in Mexico; Constellation Brands holds the exclusive US import and marketing rights following a 2013 sale by AB InBev as a condition of the Grupo Modelo acquisition.' },
+        { question: 'What’s the difference between Corona Extra and Corona Light?', answer: 'Extra is the standard 4.6% ABV pale lager; Light is a 4.0% ABV, lower-calorie version aimed at the light-beer segment.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'coors', brandKeywords: ['Coors'], name: 'Coors',
+    seo: brandSeo({
+      brand: 'Coors', categoryLabel: 'Lager',
+      titleTag: 'Coors — Banquet & Light American Lager',
+      h1: 'Coors — Banquet & Light American Lager',
+      metaDescription: 'Buy Coors online — Coors Banquet and Coors Light American Lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Coors traces to 1873 when Adolph Coors and Jacob Schueler founded a brewery in Golden, Colorado, using Rocky Mountain water. Coors Light, launched in 1978, became one of the best-selling light lagers in the US and is known for its "cold-activated" mountains-turn-blue can; Coors Banquet is the brewery’s original full-flavor lager, largely unchanged in recipe since the 1930s.',
+      faqs: [
+        { question: 'What is Coors Banquet?', answer: 'Molson Coors’ original American lager recipe, brewed continuously (aside from Prohibition) since the 1930s in Golden, Colorado.' },
+        { question: 'What’s the ABV of Coors Light?', answer: '4.2% ABV, versus roughly 5% for full-strength Coors Banquet.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'heineken', brandKeywords: ['Heineken'], name: 'Heineken',
+    seo: brandSeo({
+      brand: 'Heineken', categoryLabel: 'Lager',
+      titleTag: 'Heineken — Original Dutch Lager',
+      h1: 'Heineken — Original Dutch Lager',
+      metaDescription: 'Buy Heineken online — Original Dutch Lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Heineken was founded in 1864 by Gerard Adriaan Heineken in Amsterdam and is now one of the largest brewing groups in the world. Heineken Original is a 5% ABV pale lager brewed with the company’s proprietary "A-yeast," a strain used across nearly all Heineken breweries worldwide to keep the flavor consistent regardless of where it’s brewed.',
+      faqs: [
+        { question: 'What type of beer is Heineken?', answer: 'A pale lager, brewed with Heineken’s own proprietary A-yeast strain.' },
+        { question: 'What is Heineken’s alcohol content?', answer: '5% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'miller-high-life', brandKeywords: ['Miller High Life'], name: 'Miller High Life',
+    seo: brandSeo({
+      brand: 'Miller High Life', categoryLabel: 'Lager',
+      titleTag: 'Miller High Life — The Champagne of Beers',
+      h1: 'Miller High Life — American Lager',
+      metaDescription: 'Buy Miller High Life online — the Champagne of Beers, American lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Miller High Life launched on New Year’s Eve 1903, when founder Frederick Miller set out to make "the good life" accessible to everyday drinkers, not just the upper crust. Its nickname, "The Champagne of Beers," comes from the bottle itself — a Champagne-shaped bottle with sloping shoulders and an elongated neck, deliberately modeled after Champagne bottles, not from any actual similarity in taste or process.',
+      faqs: [
+        { question: 'Why is Miller High Life called the Champagne of Beers?', answer: 'The nickname refers to the Champagne-shaped bottle, not the beer style; the slogan itself dates to the late 1960s.' },
+        { question: 'What is Miller High Life’s ABV?', answer: '4.6% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'miller-lite', brandKeywords: ['Miller Lite'], name: 'Miller Lite',
+    seo: brandSeo({
+      brand: 'Miller Lite', categoryLabel: 'Lager',
+      titleTag: 'Miller Lite — American Light Lager',
+      h1: 'Miller Lite — American Light Lager',
+      metaDescription: 'Buy Miller Lite online — American light lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Miller Lite launched in 1975 and is widely credited with creating the modern American light-beer category — a descendant of Miller High Life, built to deliver a full beer taste at roughly a third fewer calories.',
+      faqs: [
+        { question: 'Was Miller Lite the first light beer?', answer: 'It’s widely credited as the beer that popularized and defined the modern American light-lager category, though early light-beer experiments predate it.' },
+        { question: 'What is Miller Lite’s ABV?', answer: '4.2% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'modelo', brandKeywords: ['Modelo'], name: 'Modelo',
+    seo: brandSeo({
+      brand: 'Modelo', categoryLabel: 'Lager',
+      titleTag: 'Modelo — Especial & Negra Mexican Lager',
+      h1: 'Modelo — Especial & Negra Mexican Lager',
+      metaDescription: 'Buy Modelo online — Modelo Especial and Negra Modelo Mexican lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Grupo Modelo began brewing in Mexico City in 1925, launching the Modelo and Negra Modelo brands together by 1928. Modelo Especial (4.4-4.5% ABV) is a full-flavored pale adjunct lager introduced to US drinkers in 1990 and has since become one of the top-selling beer brands in the country; Negra Modelo (5.4% ABV) is a Munich Dunkel-style dark lager, brewed nearly twice as long for a fuller, maltier body.',
+      faqs: [
+        { question: 'What’s the difference between Modelo Especial and Negra Modelo?', answer: 'Especial is a pale adjunct lager at 4.4-4.5% ABV; Negra Modelo is a darker, maltier Munich Dunkel-style lager at 5.4% ABV.' },
+        { question: 'Is Modelo owned by the same company as Corona?', answer: 'Both are brewed by Grupo Modelo; Constellation Brands holds US import/marketing rights for both, following the same 2013 AB InBev divestiture.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'pacifico', brandKeywords: ['Pacifico'], name: 'Pacifico',
+    seo: brandSeo({
+      brand: 'Pacifico', categoryLabel: 'Lager',
+      titleTag: 'Pacifico — Clara Mexican Lager',
+      h1: 'Pacifico Clara — Mexican Lager',
+      metaDescription: 'Buy Pacifico online — Pacifico Clara Mexican lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Cerveza Pacífico Clara has been brewed in the Pacific coast port city of Mazatlán, Sinaloa, since 1900, when three German immigrants opened the Cervecería del Pacífico. It’s a golden, light-bodied Mexican pilsner-style lager, now part of the Grupo Modelo portfolio.',
+      faqs: [
+        { question: 'Where is Pacifico beer from?', answer: 'Mazatlán, Sinaloa, Mexico, brewed continuously since 1900.' },
+        { question: 'What is Pacifico’s ABV?', answer: '4.4% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'peroni', brandKeywords: ['Peroni'], name: 'Peroni',
+    seo: brandSeo({
+      brand: 'Peroni', categoryLabel: 'Lager',
+      titleTag: 'Peroni — Nastro Azzurro Italian Lager',
+      h1: 'Peroni Nastro Azzurro — Italian Lager',
+      metaDescription: 'Buy Peroni online — Nastro Azzurro Italian lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Peroni Nastro Azzurro launched in 1963 as Birra Peroni’s premium export lager, brewed in Rome with Saaz and Hallertau Magnum hops. At 5.1% ABV, it’s classified as a European/Italian-style pale lager and remains one of the most recognizable Italian beer exports in the US market.',
+      faqs: [
+        { question: 'Is Peroni Italian?', answer: 'Yes, Peroni Nastro Azzurro is brewed by Birra Peroni Industriale S.p.A. in Rome, Italy.' },
+        { question: 'What is Peroni’s ABV?', answer: '5.1% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'samuel-adams', brandKeywords: ['Samuel Adams', 'Sam Adams'], name: 'Samuel Adams',
+    seo: brandSeo({
+      brand: 'Samuel Adams', categoryLabel: 'Lager',
+      titleTag: 'Samuel Adams — Boston Lager & Utopias',
+      h1: 'Samuel Adams — Boston Lager & Utopias',
+      metaDescription: 'Buy Samuel Adams online — Boston Lager and the legendary Utopias. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Boston Beer Company was founded in 1984 by Jim Koch, using a family lager recipe, and Samuel Adams Boston Lager — a Vienna-style amber lager — became one of the flagship beers of the American craft-beer revival. Utopias sits at the opposite extreme of the range: an extreme, barrel-aged, high-ABV specialty release far beyond the core Boston Lager, part of a much larger, highly seasonal lineup (Octoberfest, Summer Ale, Winter Lager) not currently stocked beyond these two.',
+      faqs: [
+        { question: 'What style of beer is Samuel Adams Boston Lager?', answer: 'A Vienna-style amber lager, one of the beers most credited with kickstarting American craft brewing in the 1980s.' },
+        { question: 'Who founded Samuel Adams?', answer: 'Jim Koch founded Boston Beer Company in 1984, using a family recipe.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'sapporo', brandKeywords: ['Sapporo'], name: 'Sapporo',
+    seo: brandSeo({
+      brand: 'Sapporo', categoryLabel: 'Lager',
+      titleTag: 'Sapporo — Premium Japanese Lager',
+      h1: 'Sapporo Premium — Japanese Lager',
+      metaDescription: 'Buy Sapporo online — Sapporo Premium Japanese lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Sapporo Breweries was established in 1876 in Hokkaido by Seibei Nakagawa, who defied a government ban to study German brewing techniques abroad — making Sapporo Premium Japan’s oldest beer brand. It’s a 4.9% ABV premium lager blending German lagering tradition with Japanese brewing precision.',
+      faqs: [
+        { question: 'Is Sapporo the oldest Japanese beer brand?', answer: 'Yes, founded 1876 in Hokkaido.' },
+        { question: 'What is Sapporo Premium’s ABV?', answer: '4.9% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'stella-artois', brandKeywords: ['Stella Artois'], name: 'Stella Artois',
+    seo: brandSeo({
+      brand: 'Stella Artois', categoryLabel: 'Lager',
+      titleTag: 'Stella Artois — Belgian Lager',
+      h1: 'Stella Artois — Belgian Lager',
+      metaDescription: 'Buy Stella Artois online — Belgian lager. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Stella Artois traces to the Den Hoorn brewery in Leuven, Belgium, founded in 1366, with the "Stella" (Latin for star) name adopted in 1926 as a Christmas beer before becoming year-round. It’s a European/Belgian pale lager at roughly 5% ABV, now part of AB InBev’s global portfolio.',
+      faqs: [
+        { question: 'What type of beer is Stella Artois?', answer: 'A European/Belgian pale lager, ~5% ABV.' },
+        { question: 'What is Stella Artois’s alcohol content?', answer: '5% ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'yuengling', brandKeywords: ['Yuengling'], name: 'Yuengling',
+    seo: brandSeo({
+      brand: 'Yuengling', categoryLabel: 'Lager',
+      titleTag: 'Yuengling — Traditional Lager',
+      h1: 'Yuengling Traditional Lager — America’s Oldest Brewery',
+      metaDescription: 'Buy Yuengling online — Traditional Lager from America’s oldest continuously-operating brewery. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'D.G. Yuengling & Son was founded in 1829 in Pottsville, Pennsylvania, making it America’s oldest continuously-operating brewery (it survived Prohibition by pivoting briefly to near-beer and dairy products). Yuengling Traditional Lager — an amber lager at 4.5% ABV — is a recipe resurrected from the brewery’s own archives in 1987 and has been the flagship beer ever since.',
+      faqs: [
+        { question: 'Is Yuengling America’s oldest brewery?', answer: 'Yes, founded 1829, continuously operating aside from a brief Prohibition-era pivot.' },
+        { question: 'What style of beer is Yuengling Traditional Lager?', answer: 'An amber lager, 4.5% ABV, brewed with caramel malt and corn grits.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'bells', brandKeywords: ["Bell's", 'Bells'], name: "Bell's",
+    seo: brandSeo({
+      brand: "Bell's", categoryLabel: 'Beer',
+      titleTag: "Bell's — Two Hearted Ale & Oberon",
+      h1: "Bell's — Two Hearted Ale IPA & Oberon Wheat Ale",
+      metaDescription: "Buy Bell's online — Two Hearted Ale IPA and Oberon Wheat Ale. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: "Founded in 1985 in Kalamazoo, Michigan by Larry Bell, Bell's built its national reputation on two very different beers: Two Hearted Ale, a 100%-Centennial-hop IPA that has repeatedly topped national \"Best Beer in America\" polls, and Oberon, a restrained four-ingredient summer wheat ale with zero added spices or fruit. Bell's was sold to Kirin's Lion Little World Beverages in November 2021.",
+      faqs: [
+        { question: 'What makes Two Hearted Ale so highly rated?', answer: "Single-hop-variety focus (100% Centennial) and remarkable year-to-year consistency; it's repeatedly named America's best beer in national homebrewer/consumer polls." },
+        { question: 'Does Oberon have fruit or spices in it?', answer: "No — a deliberate point of difference from most competing summer wheat ales; it's brewed with just wheat malt, Saaz hops, water, and Bell's house ale yeast." },
+        { question: "Is Bell's still an independent brewery?", answer: "No; Kirin's Lion Little World Beverages acquired Bell's in November 2021, and founder Larry Bell retired from the company at that time." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'dogfish-head', brandKeywords: ['Dogfish Head'], name: 'Dogfish Head',
+    seo: brandSeo({
+      brand: 'Dogfish Head', categoryLabel: 'IPA',
+      titleTag: 'Dogfish Head — 60 Minute & 90 Minute IPA',
+      h1: 'Dogfish Head — 60 Minute & 90 Minute Imperial IPA',
+      metaDescription: 'Buy Dogfish Head online — 60 Minute IPA and 90 Minute Imperial IPA. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1995 in Milton, Delaware by Sam Calagione, Dogfish Head pioneered "continuous hopping" — a steady stream of hop additions throughout the boil rather than a few discrete additions — to brew both 60 Minute IPA (6% ABV) and 90 Minute IPA (9% ABV, first released 2001). Dogfish Head merged with The Boston Beer Company (Samuel Adams) in a deal that closed in July 2019.',
+      faqs: [
+        { question: 'What is continuous hopping?', answer: "Dogfish Head's signature technique: instead of adding hops at just a few points in the boil, hops are added in a steady stream throughout, originally accomplished with a hacked vibrating football game." },
+        { question: "What's the difference between 60 Minute and 90 Minute IPA?", answer: 'Both use continuous hopping, but 90 Minute is boiled/hopped longer, runs stronger (9% vs. 6% ABV), and carries more malt backbone to balance the added bitterness.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'elysian', brandKeywords: ['Elysian'], name: 'Elysian',
+    seo: brandSeo({
+      brand: 'Elysian', categoryLabel: 'IPA',
+      titleTag: 'Elysian — Space Dust IPA',
+      h1: 'Elysian Space Dust IPA',
+      metaDescription: 'Buy Elysian Space Dust IPA online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Elysian Brewing was founded in Seattle in 1996 and built Space Dust IPA (8.2% ABV, Chinook-bittered with Citra and Amarillo dry-hop additions) into one of the most recognizable IPAs on the West Coast after its 2012 debut. Anheuser-Busch InBev acquired Elysian in January 2015.',
+      faqs: [
+        { question: 'What hops are in Space Dust IPA?', answer: 'Chinook for bittering, with late and dry additions of Citra and Amarillo delivering candied grapefruit, mango, and pine.' },
+        { question: 'Is Elysian still an independent craft brewery?', answer: 'No; Anheuser-Busch InBev has owned Elysian since January 2015.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'firestone-walker', brandKeywords: ['Firestone Walker'], name: 'Firestone Walker',
+    seo: brandSeo({
+      brand: 'Firestone Walker', categoryLabel: 'IPA',
+      titleTag: 'Firestone Walker — Union Jack IPA',
+      h1: 'Firestone Walker Union Jack IPA',
+      metaDescription: 'Buy Firestone Walker Union Jack IPA online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Founded in 1996 by brothers-in-law Adam Firestone and David Walker, Firestone Walker's Union Jack IPA (7.0% ABV) won back-to-back gold medals in the American IPA category at the Great American Beer Festival in 2008 and 2009, plus gold at the World Beer Cup. In 2015 the brewery merged with Belgium's Duvel Moortgat, which became majority owner.",
+      faqs: [
+        { question: 'Has Union Jack IPA won major awards?', answer: 'Yes: back-to-back GABF gold medals (2008, 2009) plus World Beer Cup gold, among the most decorated American IPA award records.' },
+        { question: 'Is Firestone Walker still independently run?', answer: "Belgium's Duvel Moortgat became majority owner in 2015, but founders David Walker (CEO) and Adam Firestone (board) still lead day-to-day operations in Paso Robles, CA." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'lagunitas', brandKeywords: ['Lagunitas'], name: 'Lagunitas',
+    seo: brandSeo({
+      brand: 'Lagunitas', categoryLabel: 'IPA',
+      titleTag: 'Lagunitas — IPA',
+      h1: 'Lagunitas IPA',
+      metaDescription: 'Buy Lagunitas IPA online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Lagunitas Brewing Company launched its IPA in 1995 from Petaluma, California, and it became one of the foundational, best-known West Coast IPAs in American craft beer, carrying more than 800,000 Untappd ratings. Heineken acquired a 50% stake in 2015 and full ownership by 2017.',
+      faqs: [
+        { question: 'Who owns Lagunitas now?', answer: 'Heineken has owned Lagunitas fully since 2017 (an initial 50% stake was acquired in 2015).' },
+        { question: 'Is Lagunitas IPA a West Coast style?', answer: "Yes, at 6.2% ABV it's widely cited as one of the beers that helped define and popularize the modern West Coast IPA style nationally." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'new-belgium', brandKeywords: ['New Belgium', 'Voodoo Ranger'], name: 'New Belgium',
+    seo: brandSeo({
+      brand: 'New Belgium', categoryLabel: 'Beer',
+      titleTag: 'New Belgium — Fat Tire & Voodoo Ranger IPA',
+      h1: 'New Belgium — Fat Tire Ale & Voodoo Ranger IPA',
+      metaDescription: 'Buy New Belgium online — Fat Tire Ale and the Voodoo Ranger IPA line. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "New Belgium Brewing was founded in 1991 in Fort Collins, Colorado by Jeff Lebesch and Kim Jordan. Fat Tire Amber Ale, its longtime flagship, became America's first independently certified carbon-neutral beer in 2020. The brewery also built the Voodoo Ranger line into more than 20 distinct IPAs before selling to Kirin's Lion Little World Beverages in an all-cash deal completed in early 2020 after an employee-owner vote.",
+      faqs: [
+        { question: 'Why is it called "Fat Tire"?', answer: "Named for co-founder Jeff Lebesch's 1988 bicycle tour through Belgium that directly inspired the recipe." },
+        { question: 'Is Fat Tire carbon neutral?', answer: "Yes — it became America's first certified carbon-neutral beer in 2020." },
+        { question: "What's the difference between Voodoo Ranger IPA and Imperial IPA?", answer: 'The flagship IPA runs 7% ABV/50 IBU; Imperial IPA is a stronger, more heavily hopped 9% ABV/70 IBU step up.' },
+        { question: 'Is New Belgium still employee-owned?', answer: "No; the company sold to Kirin's Lion Little World Beverages in a deal completed in early 2020, ending its run as a 100% employee-owned brewery (since 2012)." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'sierra-nevada', brandKeywords: ['Sierra Nevada'], name: 'Sierra Nevada',
+    seo: brandSeo({
+      brand: 'Sierra Nevada', categoryLabel: 'Beer',
+      titleTag: 'Sierra Nevada — Pale Ale, IPA & Torpedo',
+      h1: 'Sierra Nevada — Pale Ale, Celebration IPA, Hazy Little Thing & Torpedo',
+      metaDescription: 'Buy Sierra Nevada online — Pale Ale, Celebration IPA, Hazy Little Thing, and Torpedo Extra IPA. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Sierra Nevada was founded in 1980 in Chico, California by Ken Grossman, and Sierra Nevada Pale Ale is one of the beers most directly credited with launching the modern American craft-beer movement and defining the American Pale Ale style. Its IPA lineup spans Celebration IPA (an annual fresh-hop release every fall since 1981), Hazy Little Thing, and Torpedo Extra IPA, named for the brewery\'s "Hop Torpedo" dry-hopping device. Sierra Nevada remains one of the largest breweries still under independent/employee ownership in the US.',
+      faqs: [
+        { question: "What's the ABV of Sierra Nevada Pale Ale?", answer: '~5.6% ABV.' },
+        { question: 'Is Sierra Nevada still independently owned?', answer: 'Yes — unlike several peer craft breweries now owned by AB InBev, Heineken, or Kirin, Sierra Nevada has never sold to a multinational beverage company.' },
+        { question: 'What is Torpedo Extra IPA named after?', answer: "Sierra Nevada's proprietary \"Hop Torpedo\" device, which infuses extra hop aroma during dry-hopping without adding bitterness." },
+        { question: 'Is Celebration IPA a seasonal beer?', answer: "Yes, released every fall since 1981 using that year's freshly harvested hops, making it one of the longest-running fresh-hop beers in American craft brewing." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'stone-brewing', brandKeywords: ['Stone', 'Stone Brewing'], name: 'Stone Brewing',
+    seo: brandSeo({
+      brand: 'Stone', categoryLabel: 'IPA',
+      titleTag: 'Stone Brewing — Stone IPA',
+      h1: 'Stone IPA',
+      metaDescription: 'Buy Stone IPA online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Stone Brewing was founded in 1996 in San Diego County by Greg Koch and Steve Wagner. Stone IPA, first brewed in 1997 to mark the company’s first anniversary, became its flagship and is widely credited as one of the beers that defined the West Coast IPA style before the term was in common use. Sapporo, Japan’s oldest beer brand, acquired Stone for $165 million in a deal that closed August 2022.',
+      faqs: [
+        { question: 'Is Stone IPA a true West Coast IPA?', answer: "Yes; first brewed in 1997, it's one of the style's founding examples." },
+        { question: 'Who owns Stone Brewing now?', answer: 'Sapporo acquired Stone Brewing in a deal that closed August 2022; production remains based in Escondido, CA.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'allagash', brandKeywords: ['Allagash'], name: 'Allagash',
+    seo: brandSeo({
+      brand: 'Allagash', categoryLabel: 'Ale & Wheat',
+      titleTag: 'Allagash — White Belgian-Style Wheat Beer',
+      h1: 'Allagash White — Belgian-Style Wheat Beer',
+      metaDescription: 'Buy Allagash White online — Belgian-style wheat beer. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1995 by Rob Tod in Portland, Maine, with the goal of introducing Americans to Belgian-inspired ales, Allagash built its entire reputation on one beer: Allagash White, its first-ever recipe and still its flagship today. The witbier has earned 18 total medals across the Great American Beer Festival, World Beer Cup, and European Beer Star, including 10 golds.',
+      faqs: [
+        { question: 'What makes Allagash White a witbier?', answer: 'Spiced with coriander and curaçao orange peel over a wheat-and-oat grain bill, unfiltered for a hazy, pale-straw pour.' },
+        { question: 'Is Allagash White the brewery’s flagship?', answer: "Yes — it was Allagash's very first recipe in 1995 and remains the beer the brewery is best known for." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'blue-moon', brandKeywords: ['Blue Moon'], name: 'Blue Moon',
+    seo: brandSeo({
+      brand: 'Blue Moon', categoryLabel: 'Ale & Wheat',
+      titleTag: 'Blue Moon — Belgian White',
+      h1: 'Blue Moon Belgian White',
+      metaDescription: 'Buy Blue Moon Belgian White online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Blue Moon Belgian White traces to 1995, when brewer Keith Villa created it at the Sandlot Brewery inside Coors Field in Denver, before it grew into Molson Coors\' own Blue Moon Brewing Co. The witbier is built on Valencia orange peel and coriander at 5.4% ABV, and remains one of the most widely available Belgian-style wheat beers in the US.',
+      faqs: [
+        { question: 'Who created Blue Moon?', answer: 'Brewer Keith Villa, in 1995, at the Sandlot Brewery inside Coors Field, Denver.' },
+        { question: 'What’s in Blue Moon Belgian White?', answer: 'Malted barley, white wheat, oats, Valencia orange peel, and coriander.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'kona-brewing', brandKeywords: ['Kona', 'Kona Brewing'], name: 'Kona Brewing',
+    seo: brandSeo({
+      brand: 'Kona', categoryLabel: 'Ale & Wheat',
+      titleTag: 'Kona — Big Wave Golden Ale',
+      h1: 'Kona Big Wave Golden Ale',
+      metaDescription: 'Buy Kona Big Wave Golden Ale online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Kona Big Wave Golden Ale is named for the waves at Makaha, on Oahu, where Hawaii\'s first surf competition was held in 1954 — a fitting tribute from a beer brewed in Kailua-Kona on the Big Island. Originally launched in 1994, it\'s built on Galaxy and Citra hops for a bright, tropical character at 4.4% ABV.',
+      faqs: [
+        { question: 'Where is Kona Big Wave brewed?', answer: "Kailua-Kona, on Hawaii's Big Island — worth verifying against current packaging, since some Kona-branded beers sold on the mainland are produced under license." },
+        { question: 'What’s the ABV of Kona Big Wave?', answer: '4.4% ABV, 21 IBU.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'leinenkugels', brandKeywords: ["Leinenkugel's", 'Leinenkugels'], name: "Leinenkugel's",
+    seo: brandSeo({
+      brand: "Leinenkugel's", categoryLabel: 'Ale & Wheat',
+      titleTag: "Leinenkugel's — Summer Shandy & Sunset Wheat",
+      h1: "Leinenkugel's — Summer Shandy & Sunset Wheat",
+      metaDescription: "Buy Leinenkugel's online — Summer Shandy and Sunset Wheat. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: 'Jacob Leinenkugel Brewing Company has operated out of Chippewa Falls, Wisconsin since 1867. Sunset Wheat (2006) is an award-winning Belgian-style witbier with orange and blueberry notes; Summer Shandy (2007) is the beer that arguably invented the modern American shandy category by blending wheat beer with a natural lemonade-style flavor.',
+      faqs: [
+        { question: 'What is a shandy?', answer: "A beer blended with a lemon-lime soda or lemonade-style flavoring; Leinenkugel's Summer Shandy (2007) is widely credited with popularizing the category nationally." },
+        { question: 'Is Sunset Wheat a witbier?', answer: 'Yes, a Belgian-style witbier with orange and blueberry character, GABF Silver and World Beer Cup Bronze medalist in 2006.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'sweetwater', brandKeywords: ['SweetWater'], name: 'SweetWater',
+    seo: brandSeo({
+      brand: 'SweetWater', categoryLabel: 'Ale & Wheat',
+      titleTag: 'SweetWater — 420 Extra Pale Ale',
+      h1: 'SweetWater 420 Extra Pale Ale',
+      metaDescription: 'Buy SweetWater 420 Extra Pale Ale online. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'SweetWater 420 Extra Pale Ale has been Atlanta’s best-selling pale ale since its first brew day on April 20, 1997 — a date, and a number, that became core to SweetWater’s laid-back brand identity. At 5.7% ABV and 39 IBU, it remains the brewery’s flagship.',
+      faqs: [
+        { question: 'Why is it called "420"?', answer: 'First brewed on April 20, 1997.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'founders', brandKeywords: ['Founders'], name: 'Founders',
+    seo: brandSeo({
+      brand: 'Founders', categoryLabel: 'Stout & Porter',
+      titleTag: 'Founders — Breakfast Stout, KBS & Porter',
+      h1: 'Founders — Breakfast Stout, KBS & Porter',
+      metaDescription: 'Buy Founders online — Breakfast Stout, KBS, and Porter. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founders Brewing Co. of Grand Rapids, Michigan has three genuinely distinct stouts stocked here: Breakfast Stout (8.3% ABV, coffee-and-chocolate imperial stout), the legendarily hard-to-find KBS/Kentucky Breakfast Stout (~12% ABV, bourbon-barrel-aged a full year, released once each spring), and the more restrained, twice-GABF-medaled Founders Porter (6.5% ABV).',
+      faqs: [
+        { question: 'What does KBS stand for?', answer: 'Kentucky Breakfast Stout; aged a full year in bourbon barrels, released annually each spring, and one of the most sought-after annual beer releases in the US.' },
+        { question: 'What’s the difference between Breakfast Stout and KBS?', answer: "Breakfast Stout (8.3% ABV) is Founders' year-round coffee-and-chocolate imperial stout; KBS (~12% ABV) is the same idea taken further and bourbon-barrel-aged for a full year as a limited annual release." },
+        { question: 'Has Founders Porter won awards?', answer: 'Yes: two-time GABF Silver Medal winner (Robust Porter category, 2014 and 2020).' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'guinness', brandKeywords: ['Guinness'], name: 'Guinness',
+    seo: brandSeo({
+      brand: 'Guinness', categoryLabel: 'Stout & Porter',
+      titleTag: 'Guinness — Draught Irish Stout',
+      h1: 'Guinness Draught — Irish Stout',
+      metaDescription: 'Buy Guinness Draught online — Irish stout, 4-pack and 8-pack cans. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Guinness Draught is the global reference point for dry Irish stout — brewed in Dublin since 1759 and instantly recognizable by its cascading nitrogen pour, delivered at home via the widget in every can. Both stocked pack sizes carry the exact same beer.',
+      faqs: [
+        { question: 'How do you pour a Guinness can properly?', answer: "Tilt the glass at 45°, pour steadily, then let the nitrogen widget settle for the signature cascade before topping off." },
+        { question: 'Why is there a ball in a Guinness can?', answer: 'It’s the nitrogen widget, which releases pressurized nitrogen gas on opening to recreate a creamy draught-style pour at home.' },
+        { question: 'Is Guinness a stout?', answer: 'Yes, it’s the style-defining example of a dry Irish stout globally.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'goose-island', brandKeywords: ['Goose Island', '312'], name: 'Goose Island',
+    seo: brandSeo({
+      brand: 'Goose Island', categoryLabel: 'Beer',
+      titleTag: 'Goose Island — 312 Urban Wheat Ale & Bourbon County Stout',
+      h1: 'Goose Island — 312 Urban Wheat Ale & Bourbon County Brand Stout',
+      metaDescription: 'Buy Goose Island online — 312 Urban Wheat Ale and Bourbon County Brand Stout. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Goose Island Beer Co. is a Chicago brewery with a genuinely striking range spanning both ends of the beer spectrum. 312 Urban Wheat Ale — named for Chicago’s original area code — is an approachable, easy-drinking wheat ale, while Bourbon County Brand Stout, first brewed in 1992, is widely credited with inventing the modern bourbon-barrel-aged beer category and remains one of the most collected annual beer releases in America. Anheuser-Busch InBev has owned Goose Island since 2011.',
+      faqs: [
+        { question: 'Why is it called "312"?', answer: "Named for Chicago's original telephone area code." },
+        { question: 'Did Goose Island invent bourbon-barrel-aged beer?', answer: 'Bourbon County Brand Stout (1992) is widely credited as the beer that started the modern bourbon-barrel-aged beer category.' },
+        { question: 'Who owns Goose Island?', answer: 'Anheuser-Busch InBev, since 2011.' },
+      ],
+    }),
+  },
+
+  // ─── NON-ALCOHOLIC CHAMPAGNE & SPARKLING ───────────────────────────────────────────
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'chateau-del-ish', brandKeywords: ['Château del ISH', 'Chateau del ISH'], name: 'Château del ISH',
+    seo: brandSeo({
+      brand: 'Château del ISH', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Château del ISH — Non-Alcoholic Sparkling White & Rosé',
+      h1: 'Château del ISH — Non-Alcoholic Sparkling White & Rosé',
+      metaDescription: 'Buy Château del ISH online — Non-Alcoholic Sparkling White and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in Copenhagen in 2018 by Morten Sørensen, ISH is a mindful-drinking company built around making it easy to say "yes" to going out — and "yes" to a productive day after. The Sparkling White is a demi-sec made from de-alcoholized Pinot Blanc and Silvaner grapes; the Sparkling Rosé is a de-alcoholized blend of Merlot and Pinot Noir. The brand has won 40+ international taste awards.',
+      faqs: [
+        { question: 'What is Château del ISH made from?', answer: 'De-alcoholized Pinot Blanc and Silvaner for the White; de-alcoholized Merlot and Pinot Noir for the Rosé — real wine grapes, not a grape-juice base.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'fre', brandKeywords: ['FRE'], name: 'FRE',
+    seo: brandSeo({
+      brand: 'FRE', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'FRE — Alcohol-Removed Sparkling Brut & Rosé',
+      h1: 'FRE — Alcohol-Removed Sparkling Brut & Rosé',
+      metaDescription: 'Buy FRE online — Alcohol-Removed Sparkling Brut and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Sutter Home has produced FRE since 1992 — making it one of the longest-running alcohol-removed wine lines in the US. The alcohol is stripped using centrifugal force combined with nitrogen gas and controlled temperature, leaving a trace typically under 0.5% ABV. FRE retail sales grew roughly 300% between 2019 and 2024.',
+      faqs: [
+        { question: 'Does FRE wine have any alcohol?', answer: 'Under 0.5% ABV, the same trace level as most alcohol-removed wines.' },
+        { question: 'Who makes FRE wine?', answer: 'Sutter Home Family Vineyards (Trinchero Family Wine & Spirits); FRE has grown into a standalone brand name in its own right.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'french-bloom', brandKeywords: ['French Bloom'], name: 'French Bloom',
+    seo: brandSeo({
+      brand: 'French Bloom', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'French Bloom — Le Blanc & Le Rosé',
+      h1: 'French Bloom — Le Blanc & Le Rosé Alcohol-Free Sparkling Wine',
+      metaDescription: 'Buy French Bloom online — Le Blanc and Le Rosé alcohol-free sparkling wine. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded by Maggie Frerejean-Taittinger and Constance Jablonski, French Bloom officially launched in October 2021 after more than two years of R&D, backed by Rodolphe Frerejean-Taittinger, CEO of Champagne Frerejean Frères. Positioned as a luxury alcohol-free alternative to Champagne, the brand’s top-tier "La Cuvée" has been described by trade press as the world’s most expensive alcohol-free wine.',
+      faqs: [
+        { question: 'Who founded French Bloom?', answer: 'Maggie Frerejean-Taittinger and Constance Jablonski, launched October 2021.' },
+        { question: 'Is French Bloom organic?', answer: 'Yes, made from organically farmed French grapes.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'leitz', brandKeywords: ['Leitz', 'Eins-Zwei-Zero'], name: 'Leitz',
+    seo: brandSeo({
+      brand: 'Leitz', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Leitz — Eins-Zwei-Zero Sparkling Riesling & Rosé',
+      h1: 'Leitz Eins-Zwei-Zero — Sparkling Riesling & Rosé',
+      metaDescription: 'Buy Leitz Eins-Zwei-Zero online — Sparkling Riesling and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Josef Leitz’s Eins-Zwei-Zero range comes from his Rheingau, Germany estate, one of the region’s most respected Riesling producers. Alcohol is removed through gentle vacuum distillation — not reverse osmosis or grape-juice blending — which the estate credits for preserving classic green-apple, pear, and Riesling-spice character.',
+      faqs: [
+        { question: 'How is Leitz Eins-Zwei-Zero made alcohol-free?', answer: 'The grapes are fully fermented into real Riesling first, then alcohol is removed via gentle vacuum distillation.' },
+        { question: 'Where is Leitz from?', answer: 'The Rheingau, one of Germany’s most historically important Riesling regions.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'noughty', brandKeywords: ['Noughty'], name: 'Noughty',
+    seo: brandSeo({
+      brand: 'Noughty', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Noughty — Alcohol-Free Sparkling Chardonnay & Rosé',
+      h1: 'Noughty — Alcohol-Free Sparkling Chardonnay & Rosé',
+      metaDescription: 'Buy Noughty online — Alcohol-Free Sparkling Chardonnay and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Noughty is made by Thomson & Scott, founded in 2013 by Amanda Thomson — a former BBC arts journalist who trained at Le Cordon Bleu — with the explicit goal of creating the world’s first premium non-alcoholic wine portfolio. Thomson & Scott is B Corp certified, and Noughty’s wines are organic and vegan.',
+      faqs: [
+        { question: 'Who makes Noughty wine?', answer: 'Thomson & Scott, founded by Amanda Thomson in 2013.' },
+        { question: 'Is Noughty organic and vegan?', answer: 'Yes to both.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'oddbird', brandKeywords: ['Oddbird'], name: 'Oddbird',
+    seo: brandSeo({
+      brand: 'Oddbird', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Oddbird — Blanc de Blancs & Rosé',
+      h1: 'Oddbird — Non-Alcoholic Blanc de Blancs & Rosé',
+      metaDescription: 'Buy Oddbird online — Non-Alcoholic Blanc de Blancs and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Oddbird was founded in Sweden by Moa Gürbüzer and has spent over a decade pushing the non-alcoholic wine category forward. Its Blanc de Blancs is 100% Chardonnay and Colombard sourced from Languedoc-Roussillon, France, matured a full 12 months before the alcohol is gently removed — a slower process the brand credits for a more complex, authentic flavor.',
+      faqs: [
+        { question: 'Where are Oddbird wines from?', answer: 'The company is Swedish, but the wine itself is French — Languedoc-Roussillon fruit, fully matured before de-alcoholization.' },
+        { question: 'What grapes make Oddbird Blanc de Blancs?', answer: 'Chardonnay and Colombard.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'welchs', brandKeywords: ["Welch's", 'Welchs'], name: "Welch's",
+    seo: brandSeo({
+      brand: "Welch's", categoryLabel: 'Sparkling Grape Juice',
+      titleTag: "Welch's — Sparkling Grape Juice",
+      h1: "Welch's — Sparkling Red & White Grape Juice",
+      metaDescription: "Buy Welch's online — Sparkling Red and White Grape Juice. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: "Welch's traces to 1869, when it was invented specifically as an unfermented, non-alcoholic grape juice for church communion services. It has been a genuine farmer-owned cooperative since 1956 (the National Grape Cooperative Association). The two stocked SKUs use different grapes entirely: deep Concord grapes for the Red Grape Juice Cocktail, and Niagara-style white grapes for the White.",
+      faqs: [
+        { question: "Is Welch's sparkling juice non-alcoholic?", answer: 'Yes, always has been; it was invented specifically to be a non-fermenting grape juice.' },
+        { question: "Is Welch's farmer-owned?", answer: 'Yes, owned by the National Grape Cooperative Association since 1956.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'wolffer-estate', brandKeywords: ['Wölffer Estate', 'Wolffer Estate', 'Spring in a Bottle'], name: 'Wölffer Estate',
+    seo: brandSeo({
+      brand: 'Wölffer Estate', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Wölffer Estate — Spring in a Bottle',
+      h1: 'Wölffer Estate Spring in a Bottle — Sparkling Blanc de Blancs & Rosé',
+      metaDescription: 'Buy Wölffer Estate Spring in a Bottle online — Sparkling Blanc de Blancs and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Wölffer Estate Vineyard has been a fixture of New York’s East End (the Hamptons, Long Island) for more than 30 years. The "Spring in a Bottle" non-alcoholic line is produced in Germany under the Wölffer name — Blanc de Blancs from Moselle Valley fruit, Rosé from Rheinhessen — extending the estate’s reputation into the alcohol-free category.',
+      faqs: [
+        { question: 'Where is Wölffer’s Spring in a Bottle made?', answer: 'In Germany (Moselle Valley for Blanc de Blancs, Rheinhessen for Rosé), under Wölffer Estate’s direction.' },
+        { question: 'What’s the difference between the two Spring in a Bottle wines?', answer: 'The Blanc de Blancs is a delicate, fruit-driven white; the Rosé shows strawberry and red-berry aromas with a fresh, dry finish.' },
+      ],
+    }),
+  },
+
+  // ─── NON-ALCOHOLIC RTD COCKTAILS ───────────────────────────────────────────
+  {
+    categorySlug: 'na-rtd-cocktails', hubSlug: 'de-soi', brandKeywords: ['De Soi'], name: 'De Soi',
+    seo: brandSeo({
+      brand: 'De Soi', categoryLabel: 'Non-Alcoholic Spritz',
+      titleTag: 'De Soi — Purple Lune & Très Rosé',
+      h1: 'De Soi — Purple Lune & Très Rosé Non-Alcoholic Aperitif',
+      metaDescription: 'Buy De Soi online — Purple Lune and Très Rosé non-alcoholic aperitif. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Co-founded in 2022 by pop star Katy Perry and Master Distiller Morgan McLachlan, De Soi ("of oneself" in French) grew out of the two women bonding over a shared love of spritzes while both were pregnant and unable to drink. The brand has since expanded to 6,000+ US retail doors including Target, Sprouts, and Publix.',
+      faqs: [
+        { question: 'Who founded De Soi?', answer: 'Katy Perry and Morgan McLachlan, co-founded 2022.' },
+        { question: 'Is De Soi safe to drink while pregnant?', answer: 'De Soi is alcohol-free but contains functional/adaptogenic ingredients; shoppers should confirm with their doctor rather than rely on a blanket claim.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-rtd-cocktails', hubSlug: 'free-af', brandKeywords: ['Free AF', 'AF Drinks'], name: 'Free AF',
+    seo: brandSeo({
+      brand: 'Free AF', categoryLabel: 'Non-Alcoholic Cocktails',
+      titleTag: 'Free AF — Apero Spritz & Cuba Libre',
+      h1: 'Free AF — Apero Spritz & Non-Alcoholic Cuba Libre',
+      metaDescription: 'Buy Free AF online — Apero Spritz and Non-Alcoholic Cuba Libre. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 2020 by New Zealand entrepreneur Lisa King — who also founded Eat My Lunch, a social enterprise that has provided over 1.7 million free lunches to children in need — Free AF (branded "AF Drinks" internationally) became New Zealand’s #1 non-alcoholic cocktail brand before expanding globally. Its defining differentiator is "Afterglow™," a proprietary natural botanical-heat extract designed to mimic the pleasant warmth of drinking alcohol.',
+      faqs: [
+        { question: 'What is "Afterglow" in Free AF drinks?', answer: 'A proprietary natural botanical-heat ingredient designed to mimic alcohol’s warming sensation — a genuine differentiator unique to this brand.' },
+        { question: 'Who makes Free AF?', answer: 'Lisa King’s AF Drinks Company, founded 2020 in New Zealand.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-rtd-cocktails', hubSlug: 'ish', brandKeywords: ['ISH'], name: 'ISH',
+    seo: brandSeo({
+      brand: 'ISH', categoryLabel: 'Non-Alcoholic Canned Cocktails',
+      titleTag: 'ISH — Lime Daiquiri, Mojito, Paloma & SpritzISH',
+      h1: 'ISH — Lime Daiquiri, Mojito, Paloma & SpritzISH',
+      metaDescription: 'Buy ISH online — Non-Alcoholic Lime Daiquiri, Mojito, Paloma, and SpritzISH. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 2018 in Copenhagen by Morten Sørensen after he took a 100-day break from alcohol and found the alcohol-free options on the market lacking. Backed by a 2022 investment from Anora, ISH has won 40+ international taste awards and built out a full range spanning NA sparkling wines, NA "spirits," and canned RTD cocktails — the 4 SKUs stocked here are its RTD cocktail line.',
+      faqs: [
+        { question: 'Where is ISH from?', answer: 'Copenhagen, Denmark; founded 2018 by Morten Sørensen.' },
+        { question: 'Does ISH make anything besides canned cocktails?', answer: 'Yes: the brand’s full range also includes NA sparkling wines and NA "spirits" styled after rum, gin, and tequila.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-rtd-cocktails', hubSlug: 'mingle', brandKeywords: ['Mingle'], name: 'Mingle',
+    seo: brandSeo({
+      brand: 'Mingle', categoryLabel: 'Non-Alcoholic Canned Cocktails',
+      titleTag: 'Mingle — Cranberry Cosmo & Key Lime Margarita Mocktails',
+      h1: 'Mingle Mocktails — Cranberry Cosmo, Key Lime Margarita & Variety Pack',
+      metaDescription: 'Buy Mingle Mocktails online — Cranberry Cosmo, Key Lime Margarita, and the Variety Pack. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 2017 by Laura Taylor, who had been alcohol-free for 5+ years and grew tired of "boring seltzer" being her only option at social events. Mingle has since publicly partnered with Bethenny Frankel to push mocktails into the mainstream. The line is sparkling, juice-and-botanical-based, spanning flavors like Blackberry Hibiscus Bellini, Cranberry Cosmo, and Key Lime Margarita.',
+      faqs: [
+        { question: 'Who founded Mingle Mocktails?', answer: 'Laura Taylor, in 2017.' },
+        { question: 'Is Bethenny Frankel involved with Mingle?', answer: 'Yes, a real, publicized partnership aimed at bringing mocktails into the mainstream.' },
       ],
     }),
   },
