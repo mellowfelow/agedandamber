@@ -342,6 +342,28 @@ No generic "beer" category export existed this round, so most of the volume belo
 
 ---
 
+## RTD & LIQUEURS — 0 of ~23 core topics live
+
+- 🎯 **Aperitif vs. Digestif: What's the Difference and When to Drink Each** — ~40,000+/mo, single largest cluster in this whole batch
+- 🎯 **What Is Triple Sec? Orange Liqueur 101** — ~30,000+/mo
+- 🎯 **What Is Amaro? A Beginner's Guide to Italian Bitter Liqueurs** — ~13,000+/mo, directly supports all 4 Amaro & Digestifs SKUs
+- 🏷️ Cointreau vs. Triple Sec vs. Grand Marnier: Choosing the Right Orange Liqueur — ~5,000+/mo
+- 🏷️ Best Coffee Liqueurs for Espresso Martinis — ~5,000+/mo, maps to all 5 stocked Coffee Liqueur SKUs
+- 🏷️ Kahlúa vs. Baileys: What's the Difference? — ~1,500/mo
+- 🏷️ Is Baileys Irish Cream Gluten-Free? A Straight Answer — real, high-intent FAQ
+- 🏷️ What's Actually in Jägermeister? The 56-Botanical Herbal Liqueur, Explained — ~2,000+/mo
+- 🏷️ What Does Chartreuse Taste Like? Inside the Monks' 130-Herb Secret Recipe — strong storytelling angle, no competitor can legally replicate the recipe
+- 🏷️ Aperol vs. Campari: What's the Difference? — real cultural moment (Aperol Spritz +23% sales 2023, White Lotus cameo)
+- 🎯 **The Best Ready-to-Drink Margaritas, Ranked** — ~12,200/mo, largest coherent product-type cluster in the whole RTD dataset
+- 🏷️ Hard Seltzer vs. Hard Iced Tea vs. RTD Cocktail: What's Actually the Difference? — high internal-linking value across all 44 Craft Cocktails products
+- 🏷️ What Does "On the Rocks" Actually Mean? — ~3,800/mo, doubles as brand/idiom disambiguation
+- 🏷️ Espresso Martini in a Can: Is It Any Good? — ties to Tip Top's Espresso Martini
+- 🏷️ Hard Seltzer Calorie Comparison: White Claw vs. Truly vs. Topo Chico vs. Nütrl
+- 🏷️ Canned Wine 101: Underwood, Babe, Bev & House Wine Compared
+- 🏷️ Hard Iced Tea Showdown: Twisted Tea vs. Surfside vs. Lipton vs. High Noon
+
+---
+
 ## Summary counts
 
 | Category | Live | New gaps identified |
@@ -367,7 +389,8 @@ No generic "beer" category export existed this round, so most of the volume belo
 | Non-Alcoholic Spirits | 0 | 9 |
 | Non-Alcoholic Champagne & Sparkling | 0 | 8 |
 | Non-Alcoholic RTD Cocktails | 0 | 11 |
-| **Total** | **65 live** | **~188 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| RTD & Liqueurs | 0 | 17 |
+| **Total** | **65 live** | **~205 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -391,5 +414,8 @@ No generic "beer" category export existed this round, so most of the volume belo
 18. **What Is a Mocktail? A Complete Guide** (~22,420 combined) — largest single informational cluster in the NA RTD Cocktails batch
 19. **Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide** (~10,000+ combined) — largest cross-brand cluster in Beer
 20. **Easy Mocktail Recipes to Make at Home** (~70,000 combined) — largest raw-volume number in this entire project; keep as lifestyle content cross-selling stocked SKUs rather than a product-page target
+21. **Aperitif vs. Digestif: What's the Difference and When to Drink Each** (~40,000+ combined) — largest cluster in the RTD & Liqueurs batch
+22. **What Is Triple Sec? Orange Liqueur 101** (~30,000+ combined)
+23. **The Best Ready-to-Drink Margaritas, Ranked** (~12,200 combined) — largest coherent product-type cluster in the RTD dataset
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.

@@ -1,4 +1,4 @@
-# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine, Cider, Beer, Non-Alcoholic Beer/Cider/Spirits/Champagne/RTD)
+# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine, Cider, Beer, Non-Alcoholic Beer/Cider/Spirits/Champagne/RTD, RTD & Liqueurs)
 
 Consolidated from every "not currently in your catalog" and "missing expression within a brand you already carry" finding across every keyword batch processed so far. This is the running answer to "which products with real search demand should I add to inventory" — every item below carries genuine demand signal (SEMrush-sourced where available, web-research-confirmed and clearly flagged where not). KD = keyword difficulty (lower is easier to rank for). Volume floor applied: 50+; most items here are well above that.
 
@@ -568,7 +568,45 @@ Sourced from `keyword-map-na-rtd-cocktails.md`. Covers all 19 stocked NA RTD Coc
 
 ---
 
-## Updated recommended stocking priority, across all 18 categories
+## RTD & Liqueurs
+
+Sourced from `keyword-map-liqueurs.md` and `keyword-map-craft-cocktails.md`. Covers all 73 stocked RTD & Liqueurs SKUs (29 liqueurs across 7 subcategories + 44 Craft Cocktails).
+
+### Missing expressions within brands you already stock
+
+| Brand | Missing expression | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **On The Rocks** (Margarita, Old Fashioned stocked) | **7 more real expressions**: Cosmopolitan, Espresso Martini, Jalapeño Pineapple Margarita, Strawberry Daiquiri, Mai Tai, Aviation, Manhattan | — | confirmed real via WebSearch | Only 2 of the brand's 9 nationally available expressions are stocked — largest single-brand whitespace in this batch |
+| **Cutwater** (8 SKUs stocked) | ~9 more real flavors: Watermelon/Grapefruit/Spicy Mango Margarita, Long Island Iced Tea, Bloody Mary, Old Fashioned, Espresso Martini, Vodka Soda, Vodka Lemonade | — | confirmed real via WebSearch | Real range extends well past an already-deep 8-SKU assortment |
+| White Claw (Black Cherry, Variety Pack stocked) | Mango, Ruby Grapefruit, Lime (founding flavors) + White Claw Surge | — | confirmed real via WebSearch | Mango is reportedly White Claw's single best-selling standalone flavor |
+| Kahlúa (Original stocked) | Kahlúa Dunkin' Caramel Swirl Cream Liqueur | kahlúa dunkin caramel swirl cream liqueur (590, KD 22) | — | Real, CSV-backed direct hit |
+| DeKuyper (Peachtree + Triple Sec stocked) | Any of 100+ other real schnapps flavors (Sour Apple Pucker, Watermelon Pucker, Buttershots, Razzmatazz, Blue Curaçao) | flavored liqueur (1,000, KD 19) | — | Single largest real line-extension opportunity in the whole batch |
+| RumChata (Original stocked) | RumChata Limón | rumchata limon cream liqueur (390, KD 8) | — | Real, CSV-backed direct hit |
+| Tip Top Proper Cocktails (3 of 6 stocked) | Negroni, Manhattan, Daiquiri | — | confirmed real via WebSearch | Completes the brand's real 6-can lineup |
+| Underwood (3 SKUs stocked) | The Bubbles (sparkling), Rosé Bubbles, Riesling Radler, Strawberry Cooler | — | confirmed real via WebSearch, re-verify current availability | — |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Primary key (vol, KD) | Support keys | Note |
+|---|---|---|---|
+| **BuzzBallz Ready-to-Drink Cocktails** | buzzballz ready to drink cocktails (1,300, KD 23) | — | **Strongest single unstocked-brand finding in the RTD batch, CSV-backed** |
+| **Absolut Cocktails** | absolut cocktails (2,400, KD 21) | absolut espresso martini (1,300, KD 21) | Real Pernod Ricard RTD line built on Absolut Vodka, CSV-backed |
+| **Ramazzotti** (Italian amaro) | ramazzotti (3,600, KD 53) | italian liqueur (2,400, KD 7) | Strongest unstocked-brand volume in the Amaro export |
+| **Amarula** (South African cream liqueur) | amarula cream liqueur (2,400, KD 13) | south african cream liqueur (880, KD 15) | Real, CSV-backed |
+| **Chinola Passion Fruit Liqueur** | chinola passion fruit liqueur (2,900, KD 20) | passion fruit liqueur (3,600, KD 17) | Strongest unstocked-brand signal in the Fruit Liqueur export |
+| Disaronno / Disaronno Velvet | disaronno velvet cream liqueur (390, KD 9) | — | Real, CSV-backed — amaretto category entirely absent from the catalog |
+| Vizzy Hard Seltzer | — | confirmed real via WebSearch | Molson Coors brand, vitamin-C positioning |
+| Bud Light Seltzer | — | confirmed real via WebSearch | AB InBev hard seltzer, real and currently active |
+| Frangelico / Cynar / Suze / Licor 43 / Sambuca | — | confirmed real via WebSearch, no CSV volume this pull | Well-known liqueurs entirely absent from the catalog — recommend dedicated exports before treating as confirmed demand |
+| **Limoncello** (category gap, no specific brand) | limoncello cream liqueur (480) | is limoncello an aperitif (40+30) | Real demand exists but zero limoncello SKU of any brand currently in the catalog |
+
+**Note:** the Craft Cocktails research flagged that Babe wine may have been discontinued by AB InBev in 2023 per WebSearch — worth confirming with procurement before further investment in that SKU's copy.
+
+**Priority:** On The Rocks and Cutwater are both cases of a brand already stocked carrying a fraction of its real lineup — easiest, lowest-risk expansions. BuzzBallz and Absolut Cocktails are the standout new-brand picks, both CSV-backed.
+
+---
+
+## Updated recommended stocking priority, across all 19 categories
 
 1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
 2. **Pinnacle Whipped Cream** (Vodka) — real demand exceeds the base brand's own keyword pool, only plain base stocked
@@ -597,8 +635,10 @@ Sourced from `keyword-map-na-rtd-cocktails.md`. Covers all 19 stocked NA RTD Coc
 25. **Seedlip Spice 94** (NA Spirits) — real third leg of an already-stocked 2-flavor range, fixes a live hook/inventory mismatch
 26. **Lapo's real 6-SKU range** (NA RTD Cocktails) — brand already stocked at 1 of 6 real SKUs
 27. **Lyre's Classico** (NA Champagne) — ~2,720 combined, strongest new-brand signal in the NA sparkling batch
-28. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+28. **BuzzBallz Ready-to-Drink Cocktails** (RTD & Liqueurs) — 1,300 vol, CSV-backed, strongest unstocked-brand finding in the RTD batch
+29. **On The Rocks real 9-SKU range** (RTD & Liqueurs) — brand already stocked at 2 of 9 real expressions
+30. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
 
 ---
 
-*This document will grow as remaining categories (RTD & Liqueurs, Bar Essentials, Non-Alcoholic Wine) are batch-processed.*
+*This document will grow as remaining categories (Bar Essentials, Non-Alcoholic Wine) are batch-processed.*
