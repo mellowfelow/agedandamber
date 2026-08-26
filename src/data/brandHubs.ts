@@ -4076,4 +4076,146 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+
+  // ─── RTD & LIQUEURS ───────────────────────────────────────────
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'jagermeister', brandKeywords: ['Jägermeister', 'Jagermeister'], name: 'Jägermeister',
+    seo: brandSeo({
+      brand: 'Jägermeister', categoryLabel: 'Herbal & Coffee Liqueur',
+      titleTag: 'Jägermeister — Herbal Liqueur & Cold Brew Coffee Liqueur',
+      h1: 'Jägermeister — Herbal Liqueur & Cold Brew Coffee Liqueur',
+      metaDescription: 'Buy Jägermeister online — the classic Herbal Liqueur and Cold Brew Coffee Liqueur. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Jägermeister was created in 1934 in Wolfenbüttel, Germany by Curt Mast, who blended 56 different herbs, spices, roots, and fruits — including cinnamon bark, bitter orange peel, sandalwood, ginger, juniper, ginseng, and saffron. The stag-and-cross emblem references the legend of Saint Hubertus, patron saint of hunters. The two stocked SKUs let the hub speak to both the brand's century-old herbal-digestif roots and its newer move into the fast-growing cold-brew-coffee-liqueur category.",
+      faqs: [
+        { question: 'Is Jägermeister German?', answer: 'Yes — created in 1934 in Wolfenbüttel, Germany, and still produced there today.' },
+        { question: 'What flavor is Jägermeister?', answer: 'A bittersweet, herbal-digestif profile built from 56 botanicals, with notes of licorice, citrus peel, and warm spice.' },
+        { question: 'What do you mix with Jägermeister?', answer: 'Most commonly served ice-cold as a shot, or mixed with energy drink; it also works in warm winter cocktails given its spice-forward profile.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'dekuyper', brandKeywords: ['DeKuyper'], name: 'DeKuyper',
+    seo: brandSeo({
+      brand: 'DeKuyper', categoryLabel: 'Fruit & Orange Liqueur',
+      titleTag: 'DeKuyper — Peachtree Schnapps & Triple Sec',
+      h1: 'DeKuyper — Peachtree Schnapps & Triple Sec Liqueur',
+      metaDescription: 'Buy DeKuyper online — Peachtree Peach Schnapps and Triple Sec Liqueur. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'DeKuyper traces back to 1695, when Petrus De Kuyper founded a barrel-and-cask business in the Netherlands; the family distillery has been run by 11 consecutive generations, and Queen Beatrix granted the company the "Royal" title on its 300th anniversary in 1995. DeKuyper is arguably the single most influential name in American flavored schnapps — its 1984 launch of Peachtree Schnapps became the fastest-selling new liquor product in the US since Prohibition and directly gave rise to the Sex on the Beach cocktail.',
+      faqs: [
+        { question: 'What is triple sec?', answer: 'A clear, orange-flavored liqueur distilled from dried orange peels — a foundational ingredient in cocktails like the Margarita and Cosmopolitan.' },
+        { question: 'Is triple sec alcoholic?', answer: 'Yes — typically 15-40% ABV depending on the brand and style.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'cutwater', brandKeywords: ['Cutwater', 'Cutwater Spirits'], name: 'Cutwater Spirits',
+    seo: brandSeo({
+      brand: 'Cutwater Spirits', categoryLabel: 'Craft Cocktails',
+      titleTag: 'Cutwater Spirits — Canned Cocktails Made with Real Spirits',
+      h1: 'Cutwater Spirits — Gin & Tonic, Margarita, Mai Tai & More Canned Cocktails',
+      metaDescription: 'Buy Cutwater Spirits online — canned cocktails made with real distilled spirits, not a malt base. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: "Cutwater began as a side project inside Ballast Point Brewing — the brainchild of then-head brewer Yuseff Cherney and founder Jack White. When Constellation Brands bought Ballast Point in 2015, Cutwater split off as its own company (2017), building a 50,000-square-foot distillery on San Diego's Distribution Road. Anheuser-Busch acquired Cutwater in 2019. Every Cutwater cocktail is made with actual spirits (vodka, rum, gin, tequila, whiskey) distilled in-house, not a flavored malt base — closer to a bar-made cocktail than a hard seltzer. The brand has won more than 300 gold medals at spirits competitions.",
+      faqs: [
+        { question: 'What makes Cutwater different from a hard seltzer?', answer: 'Cutwater cocktails are made with real distilled spirits from its own San Diego distillery, not a fermented-sugar or malt base — closer to a bar-made cocktail in a can.' },
+        { question: 'Who owns Cutwater Spirits?', answer: 'Anheuser-Busch, since 2019; the brand was founded independently in San Diego in 2017 after splitting off from Ballast Point Brewing.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'high-noon', brandKeywords: ['High Noon'], name: 'High Noon',
+    seo: brandSeo({
+      brand: 'High Noon', categoryLabel: 'Craft Cocktails',
+      titleTag: 'High Noon — Vodka Seltzer & Vodka Iced Tea',
+      h1: 'High Noon — Vodka Seltzer & Vodka Iced Tea Variety Packs',
+      metaDescription: 'Buy High Noon online — Vodka Seltzer and Vodka Iced Tea variety packs. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "High Noon Sun Sips launched in May 2019 from E. & J. Gallo Winery — the same family-owned company behind New Amsterdam Vodka. Unlike most hard seltzers, High Noon's alcohol comes from actual vodka, not malt liquor or fermented cane sugar, paired with real fruit juice. High Noon was named Beverage Brand of the Year at the 2021 Wine Enthusiast Wine Star Awards and was reported as the top-selling spirit brand by volume in the US as of 2023.",
+      faqs: [
+        { question: "What's different about High Noon vs. a typical hard seltzer?", answer: "It's made with real vodka and real fruit juice, not a malt or fermented-sugar base — a genuine formulation difference, not just marketing." },
+        { question: 'Who makes High Noon?', answer: 'E. & J. Gallo Winery, the same family-owned company behind New Amsterdam Vodka.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'mikes-hard-lemonade', brandKeywords: ["Mike's Hard Lemonade", "Mike's"], name: "Mike's Hard Lemonade",
+    seo: brandSeo({
+      brand: "Mike's Hard Lemonade", categoryLabel: 'Craft Cocktails',
+      titleTag: "Mike's Hard Lemonade — Original & Variety Pack",
+      h1: "Mike's Hard Lemonade — Original & Variety Pack",
+      metaDescription: "Buy Mike's Hard Lemonade online — Original and the Variety Pack. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: 'Mike\'s Hard Lemonade was created in 1996 by Canadian entrepreneur Anthony von Mandl — the same founder behind Mark Anthony Brands, which later launched White Claw. There was never an actual person named "Mike"; the name was chosen purely for its approachable feel. After US launch in 1999, Mike\'s exploded from 1.1 million cases to 13 million cases by 2001, and — alongside Smirnoff Ice — helped define the flavored-malt-beverage category that hard seltzer would later grow out of.',
+      faqs: [
+        { question: 'Who is "Mike" from Mike\'s Hard Lemonade?', answer: 'There isn\'t one — "Mike" was invented purely as an approachable brand name by founder Anthony von Mandl in 1996.' },
+        { question: "Is Mike's Hard Lemonade a beer, a malt beverage, or a spirit?", answer: "It's a flavored malt beverage (FMB), like a hard seltzer — the alcohol comes from a malted base, not distilled spirits or a wine base." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'on-the-rocks', brandKeywords: ['On The Rocks', 'On The Rocks Premium Cocktails'], name: 'On The Rocks',
+    seo: brandSeo({
+      brand: 'On The Rocks', categoryLabel: 'Craft Cocktails',
+      titleTag: 'On The Rocks — Margarita & Old Fashioned',
+      h1: 'On The Rocks Premium Cocktails — Margarita & Old Fashioned',
+      metaDescription: 'Buy On The Rocks online — The Margarita and The Old Fashioned. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'On The Rocks Cocktails was founded in Dallas in 2015 by restaurateurs Patrick Halbert and Rocco Milano. Beam Suntory acquired the brand outright in September 2020. The lineup uses real Beam Suntory spirits by name inside each bottle — the Old Fashioned is built on Knob Creek bourbon, the Margarita on Hornitos tequila — and now spans nine nationally available expressions.',
+      faqs: [
+        { question: 'Is "On The Rocks" just a generic term for a drink over ice, or a real brand?', answer: 'Both — "on the rocks" is the generic bartending term for a drink served over ice, but On The Rocks Premium Cocktails is also a real, Beam Suntory-owned RTD brand founded in Dallas in 2015.' },
+        { question: 'What spirits are actually in On The Rocks cocktails?', answer: 'Named Beam Suntory spirits: Knob Creek bourbon in the Old Fashioned, Hornitos tequila in the Margarita, among others across the line.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'tip-top-cocktails', brandKeywords: ['Tip Top Proper Cocktails', 'Tip Top'], name: 'Tip Top Proper Cocktails',
+    seo: brandSeo({
+      brand: 'Tip Top Proper Cocktails', categoryLabel: 'Craft Cocktails',
+      titleTag: "Tip Top Proper Cocktails — Bee's Knees, Espresso Martini & Old Fashioned",
+      h1: "Tip Top Proper Cocktails — Bee's Knees, Espresso Martini & Old Fashioned",
+      metaDescription: "Buy Tip Top Proper Cocktails online — Bee's Knees, Espresso Martini, and Old Fashioned. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: 'Tip Top Proper Cocktails is an Atlanta-founded brand built around a real point of difference: small, 100ml cans of classic cocktails at genuine cocktail-bar strength (24-37% ABV, not diluted to beer strength), canned in Michigan under the tagline "always balanced, never too sweet." The lineup spans six classic recipes, of which this catalog stocks three.',
+      faqs: [
+        { question: 'Why are Tip Top cocktails sold in such small cans?', answer: 'The 100ml format is deliberate: it mirrors a single bar-poured serving at real cocktail strength (up to 37% ABV), rather than diluting the recipe down to a full 12oz can at beer-level ABV.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'twisted-tea', brandKeywords: ['Twisted Tea'], name: 'Twisted Tea',
+    seo: brandSeo({
+      brand: 'Twisted Tea', categoryLabel: 'Craft Cocktails',
+      titleTag: 'Twisted Tea — Original & Half & Half Hard Iced Tea',
+      h1: 'Twisted Tea — Original & Half & Half Hard Iced Tea',
+      metaDescription: 'Buy Twisted Tea online — Original and Half & Half Hard Iced Tea. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Twisted Tea launched in 2001 from the Boston Beer Company (makers of Samuel Adams). Despite the name, Twisted Tea is malt-based, like a beer or hard seltzer, not a distilled spirit — the brewing process is engineered to mask the maltiness and foreground a crisp, tea-forward flavor. By 2022 it had become the best-selling hard iced tea in the US.",
+      faqs: [
+        { question: 'Is Twisted Tea a beer or a spirit?', answer: "Neither exactly — it's a malt-based beverage (the same brewing base as beer), flavored to taste like sweet tea, not a distilled spirit." },
+        { question: 'Who makes Twisted Tea?', answer: 'The Boston Beer Company, the same publicly traded company behind Samuel Adams and Truly Hard Seltzer.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'underwood', brandKeywords: ['Underwood'], name: 'Underwood',
+    seo: brandSeo({
+      brand: 'Underwood', categoryLabel: 'Craft Cocktails',
+      titleTag: 'Underwood — Canned Pinot Noir, Pinot Gris & Rosé',
+      h1: 'Underwood — Canned Pinot Noir, Pinot Gris & Rosé',
+      metaDescription: 'Buy Underwood online — canned Pinot Noir, Pinot Gris, and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Underwood is the flagship canned line of Union Wine Company, an Oregon winery founded by Ryan Harms in 2005. The team debuted canned Underwood Pinot Noir at Feast PDX in September 2013, a genuine origin point for the modern US canned-wine category. Underwood has grown into the top seller in the premium canned-wine segment by Nielsen sales data.',
+      faqs: [
+        { question: 'Who makes Underwood wine?', answer: 'Union Wine Company, an Oregon winery founded by Ryan Harms in 2005; Underwood is its canned-wine brand, launched in 2013-2014.' },
+        { question: 'Was Underwood really the first canned wine?', answer: "Not the literal first ever, but a genuine category-defining launch: its 2013 canned Pinot Noir debut is widely credited with kicking off the modern US premium canned-wine trend." },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'white-claw', brandKeywords: ['White Claw'], name: 'White Claw',
+    seo: brandSeo({
+      brand: 'White Claw', categoryLabel: 'Craft Cocktails',
+      titleTag: 'White Claw — Black Cherry & Variety Pack Hard Seltzer',
+      h1: 'White Claw Hard Seltzer — Black Cherry & Variety Pack',
+      metaDescription: 'Buy White Claw online — Black Cherry Hard Seltzer and the Variety Pack. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'White Claw Hard Seltzer, introduced in 2016 by Mark Anthony Group and Canadian entrepreneur Anthony von Mandl (the same founder behind Mike\'s Hard Lemonade a generation earlier), is credited with creating the hard seltzer category as a mass-market phenomenon. It\'s made from a blend of seltzer water, a gluten-free malted alcohol base, and fruit flavor.',
+      faqs: [
+        { question: 'Who owns White Claw?', answer: 'Mark Anthony Group, a Canadian company founded by Anthony von Mandl, who also created Mike\'s Hard Lemonade in the 1990s.' },
+        { question: 'What\'s actually in White Claw?', answer: 'Carbonated water, a gluten-free malted alcohol base, and fruit flavoring — not vodka, despite the "spiked seltzer" framing some competitors use.' },
+      ],
+    }),
+  },
 ];

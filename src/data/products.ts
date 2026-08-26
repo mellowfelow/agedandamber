@@ -13129,6 +13129,10 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Grappa-Based Herbal Maceration",
     distilleryLocation: "Nonino Distillatori, Italy (Friuli)",
+    seo: {
+      primaryKeyword: "amaro nonino quintessentia",
+      secondaryKeywords: ["amaro nonino", "nonino amaro", "amaro liqueur", "italian herbal liqueur", "italian liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-02',
@@ -13153,6 +13157,13 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Bitter Orange & Herb Infusion",
     distilleryLocation: "Gruppo Campari, Italy (Padova)",
+    seo: {
+      primaryKeyword: "aperol aperitif",
+      secondaryKeywords: ["is aperol an aperitif", "is aperol a digestif", "aperitif", "italian aperitif", "campari aperitif"],
+      faqs: [
+        { question: "Is Aperol a digestif or an aperitif?", answer: "Aperol is an aperitif — a low-proof, bittersweet drink meant to be enjoyed before a meal to stimulate the appetite, rather than after dinner as a digestif." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-03',
@@ -13177,6 +13188,10 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Herbal & Root Maceration",
     distilleryLocation: "Fratelli Averna, Italy (Sicily)",
+    seo: {
+      primaryKeyword: "averna amaro",
+      secondaryKeywords: ["amaro averna", "amaro liqueur", "italian liqueur", "amaro in italy"],
+    },
   },
   {
     id: 'prod-liqueur-04',
@@ -13201,6 +13216,14 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Cream & Irish Whiskey Blend",
     distilleryLocation: "Baileys / Diageo, Ireland",
+    seo: {
+      primaryKeyword: "baileys irish cream liqueur",
+      secondaryKeywords: ["baileys original irish cream liqueur", "baileys vs kahlua", "irish cream liqueur brands", "best irish cream liqueur", "is baileys irish cream liqueur gluten free"],
+      faqs: [
+        { question: "What does Baileys Irish Cream taste like?", answer: "Baileys blends fresh Irish dairy cream with Irish whiskey and cocoa for a smooth, sweet, vanilla-and-caramel profile with gentle whiskey warmth underneath." },
+        { question: "Is Baileys Irish Cream liqueur gluten free?", answer: "Baileys does not use any gluten-containing ingredients in its recipe, though it's produced on shared equipment, so highly sensitive drinkers should check the latest label or contact the manufacturer directly." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-05',
@@ -13225,6 +13248,13 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Cream & Bourbon Blend",
     distilleryLocation: "Buffalo Trace Distillery, USA (Kentucky)",
+    seo: {
+      primaryKeyword: "bourbon cream liqueur",
+      secondaryKeywords: ["cream liqueur", "irish cream whiskey", "does bourbon cream liqueur go bad", "how to make bourbon cream liqueur", "does bourbon cream liqueur need to be refrigerated"],
+      faqs: [
+        { question: "Does bourbon cream liqueur go bad?", answer: "Unopened, bourbon cream liqueur typically keeps for about 2 years thanks to its alcohol content acting as a natural preservative; once opened, refrigerate it and use it within a few months for best flavor." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-06',
@@ -13249,6 +13279,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Espresso Extract Blend",
     distilleryLocation: "Borghetti, Italy",
+    seo: {
+      primaryKeyword: "espresso liqueur",
+      secondaryKeywords: ["italian coffee liqueur", "coffee liqueur from italy", "coffee liqueur italy", "coffee liqueur", "premium coffee liqueur"],
+      faqs: [
+        { question: "What is coffee liqueur?", answer: "Coffee liqueur is a sweetened, coffee-flavored spirit made by infusing or blending real coffee or espresso extract into a neutral or rum base — used both for sipping and as a key ingredient in cocktails like the Espresso Martini and White Russian." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-07',
@@ -13273,6 +13310,13 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Bitter Herb & Citrus Infusion",
     distilleryLocation: "Davide Campari-Milano, Italy (Milan)",
+    seo: {
+      primaryKeyword: "campari aperitif",
+      secondaryKeywords: ["is campari an aperitif", "is campari a digestif", "is campari aperitif or digestif", "aperitif", "italian aperitif"],
+      faqs: [
+        { question: "Is Campari a digestif or an aperitif?", answer: "Campari is traditionally served as an aperitif — its assertive bitterness is meant to stimulate the appetite before a meal, most famously in the Negroni and Americano." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-08',
@@ -13297,6 +13341,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Fruit Maceration",
     distilleryLocation: "Chambord / Pernod Ricard, France (Loire Valley)",
+    seo: {
+      // "chambord black raspberry liqueur" confirmed real via WebSearch, not volume-backed — no direct "chambord" row surfaced in the Fruit Liqueur export; legendary 1685 origin story tied to Louis XIV at Château de Chambord, modern brand created 1982 by Norton "Sky" Cooper.
+      primaryKeyword: "chambord black raspberry liqueur",
+      secondaryKeywords: ["fruit liqueur", "berry liqueur", "french fruit liqueurs", "flavored liqueur", "fruit flavoured liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-09',
@@ -13321,6 +13370,13 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "130-Herb Maceration",
     distilleryLocation: "Chartreuse Diffusion (Carthusian Monks), France",
+    seo: {
+      primaryKeyword: "chartreuse herbal liqueur",
+      secondaryKeywords: ["italian herbal liqueur", "french herbal liqueur", "herbal liqueur", "green liqueurs", "botanical liqueur"],
+      faqs: [
+        { question: "What does Chartreuse taste like?", answer: "Green Chartreuse is intensely herbal and high-proof, with notes of pine, anise, and alpine botanicals over a spicy-sweet body — the recipe of roughly 130 plants and herbs is known only to two Carthusian monks and has stayed unchanged for centuries." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-10',
@@ -13345,6 +13401,14 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Orange Peel Distillation",
     distilleryLocation: "Cointreau / Rémy Cointreau, France",
+    seo: {
+      primaryKeyword: "cointreau orange liqueur",
+      secondaryKeywords: ["cointreau", "cointreau liqueur", "cointreau triple sec", "what is cointreau", "cointreau cocktails"],
+      faqs: [
+        { question: "What is Cointreau?", answer: "Cointreau is a French orange liqueur produced since 1875, distilled from a blend of sweet and bitter orange peels — it's the benchmark triple sec used in classic cocktails like the Margarita, Cosmopolitan, and Sidecar." },
+        { question: "Is Cointreau the same as triple sec?", answer: "Cointreau is a specific, premium brand within the broader triple sec category — all Cointreau is triple sec, but not all triple sec is Cointreau; generic triple secs are typically sweeter and less refined." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-11',
@@ -13369,6 +13433,14 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Cocoa Extract Blend",
     distilleryLocation: "DeKuyper, USA",
+    seo: {
+      // "creme de cacao liqueur" confirmed real via WebSearch, not volume-backed — no Cordial Liqueurs export exists and the term did not surface in any of the 9 category exports checked.
+      primaryKeyword: "creme de cacao liqueur",
+      secondaryKeywords: ["chocolate liqueur", "creme de cacao cocktails", "grasshopper cocktail", "brandy alexander cocktail", "cordial liqueur"],
+      faqs: [
+        { question: "What is crème de cacao?", answer: "Crème de cacao is a sweet, chocolate-flavored liqueur made by infusing cocoa into a neutral spirit base — it's the core ingredient (alongside crème de menthe) in classic dessert cocktails like the Grasshopper and the Brandy Alexander." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-12',
@@ -13393,6 +13465,14 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Mint Extract Blend",
     distilleryLocation: "DeKuyper, USA",
+    seo: {
+      // "creme de menthe liqueur" confirmed real via WebSearch, not volume-backed — same data gap as Crème de Cacao; no Cordial Liqueurs export exists.
+      primaryKeyword: "creme de menthe liqueur",
+      secondaryKeywords: ["peppermint liqueur", "creme de menthe cocktails", "grasshopper cocktail", "does creme de menthe have alcohol", "mint liqueur"],
+      faqs: [
+        { question: "Does crème de menthe contain dairy?", answer: "No — despite the French word 'crème' in its name, crème de menthe contains no cream or dairy at all; it's simply a peppermint-infused spirit, first invented in the 1880s." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-13',
@@ -13417,6 +13497,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Fruit Extract Blend",
     distilleryLocation: "DeKuyper, USA",
+    seo: {
+      // "peachtree schnapps" confirmed real via WebSearch, not volume-backed — no "dekuyper" or "peachtree" row surfaced in the Fruit Liqueur export; developed by flavor scientist Earl LaRoe for National Distillers, released fall 1984, and became the ninth best-selling alcohol brand in the US in its first year.
+      primaryKeyword: "peachtree schnapps",
+      secondaryKeywords: ["fruit liqueur", "flavored liqueur", "fruit flavored liqueur", "fruity alcohol"],
+    },
   },
   {
     id: 'prod-liqueur-14',
@@ -13441,6 +13526,15 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Orange Peel Extract Blend",
     distilleryLocation: "DeKuyper, USA",
+    seo: {
+      primaryKeyword: "triple sec liqueur",
+      secondaryKeywords: ["triple sec", "what is triple sec", "triple sec orange liqueur", "triple sec substitute", "orange flavored liqueur"],
+      faqs: [
+        { question: "What is triple sec?", answer: "Triple sec is a clear, orange-flavored liqueur distilled from the dried peels of sweet and bitter oranges — used widely in cocktails like the Margarita, Cosmopolitan, and Long Island Iced Tea." },
+        { question: "Does triple sec have alcohol?", answer: "Yes — triple sec is a genuine spirit, typically bottled between 15% and 40% ABV depending on the brand, not a non-alcoholic flavoring syrup." },
+        { question: "What is triple sec made of?", answer: "Triple sec is made by distilling or infusing dried sweet and bitter orange peels into a neutral spirit base, then sweetening and bottling the result — DeKuyper's version is built for straightforward, affordable mixing." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-15',
@@ -13465,6 +13559,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Scotch Whisky & Honey Blend",
     distilleryLocation: "Drambuie, Scotland",
+    seo: {
+      // "drambuie scotch whisky liqueur" confirmed real via WebSearch, not volume-backed — zero rows for "drambuie" across all 9 exports checked; legend holds that Bonnie Prince Charlie gifted the recipe to Captain John MacKinnon of Skye after the 1746 Battle of Culloden.
+      primaryKeyword: "drambuie scotch whisky liqueur",
+      secondaryKeywords: ["herbal liqueur", "herbal liquor", "botanical liqueur", "aromatic liquors"],
+    },
   },
   {
     id: 'prod-liqueur-16',
@@ -13489,6 +13588,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "27-Herb Maceration",
     distilleryLocation: "Fratelli Branca Distillerie, Italy (Milan)",
+    seo: {
+      // "fernet branca" confirmed real via WebSearch, not volume-backed — zero rows for "fernet" in any form across all 9 exports checked; real, high-profile brand nationally, just absent from this category pull.
+      primaryKeyword: "fernet branca",
+      secondaryKeywords: ["amaro liqueur", "italian liqueur", "italian herbal liqueur", "what is amaro"],
+    },
   },
   {
     id: 'prod-liqueur-17',
@@ -13513,6 +13617,10 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Cognac & Orange Peel Blend",
     distilleryLocation: "Marnier-Lapostolle / Gruppo Campari, France",
+    seo: {
+      primaryKeyword: "grand marnier orange liqueur",
+      secondaryKeywords: ["grand marnier substitute", "grand marnier alternative", "substitute for grand marnier liqueur", "grand marnier fruit liqueur", "orange marnier"],
+    },
   },
   {
     id: 'prod-liqueur-18',
@@ -13537,6 +13645,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Herbal & Cold Brew Coffee Blend",
     distilleryLocation: "Mast-Jägermeister, Germany",
+    seo: {
+      primaryKeyword: "cold brew coffee liqueur",
+      secondaryKeywords: ["coffee liqueur", "best coffee liqueur", "mr black cold brew coffee liqueur", "coffee flavored liqueur", "best coffee liqueur for espresso martini"],
+    },
   },
   {
     id: 'prod-liqueur-19',
@@ -13561,6 +13673,14 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "56-Herb & Spice Maceration",
     distilleryLocation: "Mast-Jägermeister, Germany",
+    seo: {
+      primaryKeyword: "jagermeister herbal liqueur",
+      secondaryKeywords: ["jagermeister flavor", "jager herbal liqueur", "german herbal liqueur", "what to mix with jagermeister", "flavor of jagermeister"],
+      faqs: [
+        { question: "Is Jägermeister German?", answer: "Yes — Jägermeister was created in 1934 in Wolfenbüttel, Germany, by Curt Mast, and is still produced there today." },
+        { question: "What flavor is Jägermeister?", answer: "Jägermeister blends 56 herbs, spices, roots, and fruits — including cinnamon bark, bitter orange peel, sandalwood, ginger, juniper, ginseng, and saffron — into a bittersweet, licorice-forward herbal liqueur." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-20',
@@ -13585,6 +13705,16 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Coffee & Rum Blend",
     distilleryLocation: "Kahlúa / Pernod Ricard, Mexico (Veracruz)",
+    seo: {
+      primaryKeyword: "kahlua coffee liqueur",
+      secondaryKeywords: ["kahlua", "kahlua liqueur", "coffee liqueur", "kahlua vs baileys", "kahlua cocktails"],
+      faqs: [
+        { question: "What is Kahlúa?", answer: "Kahlúa is a Mexican coffee liqueur made by blending rum with arabica coffee grown in Veracruz, Mexico, for a sweet, creamy-bodied liqueur used in cocktails like the White Russian and Espresso Martini." },
+        { question: "Does Kahlúa have caffeine?", answer: "Yes — because it's made with real coffee, Kahlúa does contain a small amount of caffeine, though far less than a cup of brewed coffee." },
+        { question: "Does Kahlúa have dairy?", answer: "No — Kahlúa itself contains no dairy; it's a rum-and-coffee liqueur, though it's frequently mixed with cream or milk in drinks like the White Russian." },
+        { question: "Is Kahlúa the same as Baileys?", answer: "No — Kahlúa is a rum-based coffee liqueur with no dairy, while Baileys is an Irish whiskey-based cream liqueur made with real dairy cream; they're often compared but have distinctly different bases and flavor profiles." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-21',
@@ -13609,6 +13739,14 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Marasca Cherry Distillate",
     distilleryLocation: "Girolamo Luxardo, Italy (Veneto)",
+    seo: {
+      // "luxardo maraschino liqueur" confirmed real via WebSearch, not volume-backed for this stocked SKU — only "luxardo del santo herbal liqueur" (170, KD14), a different Luxardo product, surfaced in the Herbal-Liqueur export.
+      primaryKeyword: "luxardo maraschino liqueur",
+      secondaryKeywords: ["maraschino liqueur", "maraschino cherry liqueur", "italian maraschino liqueur", "aviation cocktail liqueur", "last word cocktail ingredient"],
+      faqs: [
+        { question: "What is maraschino liqueur, and is it the same as maraschino cherry syrup?", answer: "Maraschino liqueur is a dry, delicately fruity spirit distilled from Marasca cherries (including the pits), used in cocktails like the Aviation and Last Word — it's a completely different product from the bright-red, sugar-syrup maraschino cherries sold in grocery stores." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-22',
@@ -13633,6 +13771,11 @@ export const PRODUCTS: Product[] = [
     stock: 32,
     caskType: "Muskmelon Extract Blend",
     distilleryLocation: "Suntory, Japan",
+    seo: {
+      // "midori melon liqueur" confirmed real via WebSearch, not volume-backed — zero rows for "midori" in any form across this pull; Suntory's melon liqueur, launched in Japan in 1964 and renamed Midori for its 1978 US debut at a Studio 54 party.
+      primaryKeyword: "midori melon liqueur",
+      secondaryKeywords: ["fruit liqueur", "flavored liqueur", "fruity alcohol"],
+    },
   },
   {
     id: 'prod-liqueur-23',
@@ -13657,6 +13800,10 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "40-Herb Maceration",
     distilleryLocation: "Gruppo Montenegro, Italy (Bologna)",
+    seo: {
+      primaryKeyword: "amaro montenegro",
+      secondaryKeywords: ["montenegro liquor", "montenegro liqueur", "amaro liqueur", "italian liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-24',
@@ -13681,6 +13828,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Cold Brew Arabica Blend",
     distilleryLocation: "Mr Black Spirits, Australia",
+    seo: {
+      primaryKeyword: "mr black cold brew coffee liqueur",
+      secondaryKeywords: ["mr black coffee liqueur", "mr. black coffee liqueur", "cold brew coffee liqueur", "best coffee liqueur", "best coffee liqueur for espresso martini"],
+    },
   },
   {
     id: 'prod-liqueur-25',
@@ -13705,6 +13856,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Pomegranate Juice Blend",
     distilleryLocation: "PAMA, USA",
+    seo: {
+      // "pama pomegranate liqueur" confirmed real via WebSearch, not volume-backed — no direct "pama" row surfaced in the Fruit Liqueur export; produced by PAMA Spirits Co. of Bardstown, KY, a Heaven Hill Distilleries subsidiary.
+      primaryKeyword: "pama pomegranate liqueur",
+      secondaryKeywords: ["fruit liqueur", "flavored liqueur", "fruit in liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-26',
@@ -13729,6 +13885,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Cognac & Bitter Orange Blend",
     distilleryLocation: "Maison Ferrand, France",
+    seo: {
+      // "pierre ferrand dry curacao" confirmed real via WebSearch, not volume-backed — no direct "pierre ferrand" row surfaced in the Orange Liqueur export; created by Alexandre Gabriel with spirits historian David Wondrich, based on a 19th-century distiller's-handbook formula.
+      primaryKeyword: "pierre ferrand dry curacao",
+      secondaryKeywords: ["orange curacao liqueur", "curacao liqueur brands", "combier liqueur d'orange", "blue curacao substitute", "orange liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-27',
@@ -13753,6 +13914,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Cream & Caribbean Rum Blend",
     distilleryLocation: "RumChata, USA (Wisconsin)",
+    seo: {
+      primaryKeyword: "rumchata cream liqueur",
+      secondaryKeywords: ["rumchata limon cream liqueur", "cream liqueur", "rum cream liqueur", "rum and cream liqueur", "coconut cream liqueur"],
+    },
   },
   {
     id: 'prod-liqueur-28',
@@ -13777,6 +13942,14 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Elderflower Blossom Maceration",
     distilleryLocation: "St-Germain / Bacardi, France",
+    seo: {
+      // "st germain elderflower liqueur" confirmed real via WebSearch, not volume-backed beyond one low-volume row ("is st germain an aperitif," 30, KD36, found in the Aperitifs export) — no direct "st germain" row in the Herbal export.
+      primaryKeyword: "st germain elderflower liqueur",
+      secondaryKeywords: ["herbal liqueur", "floral liqueur", "botanical liqueur", "french herbal liqueur"],
+      faqs: [
+        { question: "Is St-Germain an aperitif?", answer: "St-Germain is most often used as a cocktail-building liqueur rather than served as a standalone aperitif, though its light, floral sweetness works well in spritz-style drinks before a meal — bartenders nicknamed it 'the bartender's ketchup' for how easily it blends into almost anything." },
+      ],
+    },
   },
   {
     id: 'prod-liqueur-29',
@@ -13801,6 +13974,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Coffee & Rum Blend",
     distilleryLocation: "Illva Saronno, Italy (Jamaican origin)",
+    seo: {
+      primaryKeyword: "tia maria coffee liqueur",
+      secondaryKeywords: ["coffee liqueur", "jamaican coffee liqueur", "coffee liqueur brands", "best coffee liqueur", "coffee liqueur cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-01',
@@ -13825,6 +14002,11 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "1800 Silver Tequila, triple sec, lime juice",
     distilleryLocation: "Jalisco, Mexico",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "1800 ultimate margarita",
+      secondaryKeywords: ["margarita in a can", "ready to drink margarita", "ready to drink tequila cocktails", "margarita cans", "canned marg", "premium canned cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-02',
@@ -13849,6 +14031,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Malt base, brewed green tea, ginseng, honey",
     distilleryLocation: "Woodbury, NY",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "arizona hard green tea",
+      secondaryKeywords: ["flavored alcoholic drinks", "canned alcoholic drinks", "ready to drink lemonade"],
+    },
   },
   {
     id: 'prod-rtdc-03',
@@ -13873,6 +14060,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Sparkling rosé wine, California grapes",
     distilleryLocation: "California",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "babe rose with bubbles",
+      secondaryKeywords: ["canned drinks", "canned beverages", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-04',
@@ -13897,6 +14089,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Bacardí Superior Rum, mint, lime",
     distilleryLocation: "San Juan, Puerto Rico",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bacardi mojito ready to drink",
+      secondaryKeywords: ["ready to drink cocktails", "pre mixed cocktail drinks", "canned cocktails", "rtd cocktails", "premium canned cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-05',
@@ -13921,6 +14118,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Sparkling rosé wine, California grapes",
     distilleryLocation: "California",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bev glam sparkling rose",
+      secondaryKeywords: ["canned drinks", "canned beverages", "sparkling wine"],
+    },
   },
   {
     id: 'prod-rtdc-06',
@@ -13945,6 +14147,11 @@ export const PRODUCTS: Product[] = [
     stock: 28,
     caskType: "Bombay Sapphire Gin, tonic water, botanicals",
     distilleryLocation: "Laverstoke, England",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bombay sapphire gin and tonic ready to drink",
+      secondaryKeywords: ["canned cocktails", "ready to drink cocktails", "premium canned cocktails", "rtd cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-07',
@@ -13969,6 +14176,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Bulleit Bourbon, orange bitters, sugar",
     distilleryLocation: "Louisville, KY",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "bulleit old fashioned cocktail",
+      secondaryKeywords: ["on the rocks old fashioned", "premium canned cocktails", "canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-08',
@@ -13993,6 +14205,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Cutwater Old Grove Gin, grapefruit, cucumber tonic",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater gin and tonic",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "canned cocktails", "premium canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-09',
@@ -14017,6 +14234,11 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Tequila, lime juice, agave",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater lime margarita",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "margarita in a can", "ready to drink margarita", "margarita cans", "canned marg"],
+    },
   },
   {
     id: 'prod-rtdc-10',
@@ -14041,6 +14263,11 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Barrel-aged rum, orgeat, orange, pineapple",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater mai tai",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "canned cocktails", "premium canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-11',
@@ -14065,6 +14292,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Tequila, mango, lime",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater mango margarita",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "margarita in a can", "margarita cans", "ready to drink margaritas", "canned margaritas"],
+    },
   },
   {
     id: 'prod-rtdc-12',
@@ -14089,6 +14321,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Rum, pineapple, coconut cream",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater pina colada",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "canned cocktails", "premium canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-13',
@@ -14113,6 +14350,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Tequila, grapefruit soda",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater tequila paloma",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "ready to drink tequila cocktails", "canned cocktails", "premium canned cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-14',
@@ -14137,6 +14379,11 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Vodka, ginger beer, lime",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater vodka mule",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "canned vodka drinks", "vodka drinks in a can", "canned cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-15',
@@ -14161,6 +14408,11 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "Vodka, coffee cream liqueur",
     distilleryLocation: "San Diego, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "cutwater white russian",
+      secondaryKeywords: ["cutwater spirits ready to drink cocktails", "canned cocktails", "premium canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-16',
@@ -14185,6 +14437,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Vodka, brewed tea, natural fruit flavors",
     distilleryLocation: "Modesto, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "high noon vodka iced tea",
+      secondaryKeywords: ["canned vodka drinks", "flavored alcoholic drinks", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-17',
@@ -14209,6 +14466,12 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Vodka, sparkling water, real fruit juice",
     distilleryLocation: "Modesto, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "high noon vodka seltzer",
+      secondaryKeywords: ["canned vodka drinks", "flavored alcoholic drinks", "canned alcoholic drinks", "vodka drinks in a can"],
+      faqs: [{ question: "What makes High Noon different from a malt-based seltzer?", answer: "It's made with real vodka and real fruit juice rather than a fermented-sugar or malt base — a genuine formulation difference, not just marketing." }],
+    },
   },
   {
     id: 'prod-rtdc-18',
@@ -14233,6 +14496,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Bourbon, rye whiskey, demerara sugar, bitters",
     distilleryLocation: "Park City, UT",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "high west barrel finished old fashioned",
+      secondaryKeywords: ["on the rocks old fashioned", "premium canned cocktails", "canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-19',
@@ -14257,6 +14525,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Red wine blend",
     distilleryLocation: "Walla Walla, WA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "house wine red blend",
+      secondaryKeywords: ["canned drinks", "canned beverages", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-20',
@@ -14281,6 +14554,12 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Jack Daniel's Tennessee Whiskey, Coca-Cola",
     distilleryLocation: "Lynchburg, TN",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "jack daniels and coca cola ready to drink",
+      secondaryKeywords: ["canned cocktails", "ready to drink cocktails", "premium ready to drink cocktails", "pre mixed cocktail drinks"],
+      faqs: [{ question: "Is Jack and Coke in a can made by Jack Daniel's itself?", answer: "Yes — it's an official Brown-Forman/Coca-Cola joint product, not a third-party mixer." }],
+    },
   },
   {
     id: 'prod-rtdc-21',
@@ -14305,6 +14584,10 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Jose Cuervo Gold Tequila, agave nectar, lime",
     distilleryLocation: "Tequila, Jalisco, Mexico",
+    seo: {
+      primaryKeyword: "jose cuervo margarita ready to drink",
+      secondaryKeywords: ["margarita in a can", "ready to drink margarita", "ready to drink tequila cocktails", "margarita cans", "canned marg"],
+    },
   },
   {
     id: 'prod-rtdc-22',
@@ -14329,6 +14612,11 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Malt base, brewed tea, lemon",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "lipton hard iced tea lemon",
+      secondaryKeywords: ["flavored alcoholic drinks", "canned alcoholic drinks", "ready to drink lemonade"],
+    },
   },
   {
     id: 'prod-rtdc-23',
@@ -14353,6 +14641,11 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Malibu Coconut Rum, pineapple, coconut cream",
     distilleryLocation: "Barbados",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "malibu pina colada ready to drink",
+      secondaryKeywords: ["canned cocktails", "ready to drink cocktails", "premium canned cocktails", "pre mixed cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-24',
@@ -14377,6 +14670,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Malt base, lemonade",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "mikes hard lemonade original",
+      secondaryKeywords: ["ready to drink lemonade", "flavored alcoholic drinks", "canned alcoholic drinks", "new alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-25',
@@ -14401,6 +14699,11 @@ export const PRODUCTS: Product[] = [
     stock: 36,
     caskType: "Malt base, lemonade, assorted fruit flavors",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "mikes hard lemonade variety pack",
+      secondaryKeywords: ["ready to drink lemonade", "flavored alcoholic drinks", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-26',
@@ -14425,6 +14728,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Triple-distilled vodka, sparkling water, real fruit juice",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "nutrl vodka seltzer",
+      secondaryKeywords: ["canned alcoholic drinks", "canned vodka drinks", "vodka drinks in a can", "flavored alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-27',
@@ -14449,6 +14757,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Hornitos Tequila, triple sec, lime juice",
     distilleryLocation: "Louisville, KY",
+    seo: {
+      primaryKeyword: "on the rocks margarita",
+      secondaryKeywords: ["on the rocks cocktails", "on the rocks premium cocktails", "margarita in a can", "ready to drink margarita", "margarita cans"],
+    },
   },
   {
     id: 'prod-rtdc-28',
@@ -14473,6 +14785,10 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Knob Creek Bourbon, bitters, natural flavors",
     distilleryLocation: "Louisville, KY",
+    seo: {
+      primaryKeyword: "on the rocks old fashioned",
+      secondaryKeywords: ["on the rocks cocktails", "on the rocks premium cocktails", "premium canned cocktails", "canned cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-29',
@@ -14497,6 +14813,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Malt base, real lemonade, assorted fruit flavors",
     distilleryLocation: "St. Louis, MO",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "simply spiked lemonade",
+      secondaryKeywords: ["ready to drink lemonade", "flavored alcoholic drinks", "canned alcoholic drinks", "new alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-30',
@@ -14521,6 +14842,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Malt base, lemon, strawberry, raspberry",
     distilleryLocation: "Plainfield, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "smirnoff ice pink lemonade",
+      secondaryKeywords: ["ready to drink lemonade", "flavored alcoholic drinks", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-31',
@@ -14545,6 +14871,12 @@ export const PRODUCTS: Product[] = [
     stock: 27,
     caskType: "Stateside Vodka, brewed tea, lemonade",
     distilleryLocation: "San Luis Obispo, CA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "surfside half and half vodka iced tea lemonade",
+      secondaryKeywords: ["canned vodka drinks", "ready to drink lemonade", "flavored alcoholic drinks"],
+      faqs: [{ question: "Does Surfside have carbonation like a hard seltzer?", answer: "No — it's a still (non-carbonated) tea-and-lemonade base, unlike White Claw, Truly, or Topo Chico." }],
+    },
   },
   {
     id: 'prod-rtdc-32',
@@ -14569,6 +14901,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Tanqueray London Dry Gin, tonic water",
     distilleryLocation: "London, England",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tanqueray gin and tonic ready to drink",
+      secondaryKeywords: ["canned cocktails", "ready to drink cocktails", "premium canned cocktails", "rtd cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-33',
@@ -14593,6 +14930,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Gin, lemon, honey",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tip top proper cocktails bees knees",
+      secondaryKeywords: ["premium canned cocktails", "canned cocktails", "ready to drink cocktails", "premium cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-34',
@@ -14617,6 +14959,11 @@ export const PRODUCTS: Product[] = [
     stock: 44,
     caskType: "Vodka, espresso, vanilla",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tip top proper cocktails espresso martini",
+      secondaryKeywords: ["absolut espresso martini", "canned cocktails", "premium canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-35',
@@ -14641,6 +14988,11 @@ export const PRODUCTS: Product[] = [
     stock: 22,
     caskType: "Whiskey, bitters, sugar",
     distilleryLocation: "Brooklyn, NY",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "tip top proper cocktails old fashioned",
+      secondaryKeywords: ["on the rocks old fashioned", "premium canned cocktails", "canned cocktails", "ready to drink cocktails"],
+    },
   },
   {
     id: 'prod-rtdc-36',
@@ -14665,6 +15017,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Sparkling mineral water, natural fruit flavors",
     distilleryLocation: "Monterrey, Mexico",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "topo chico hard seltzer",
+      secondaryKeywords: ["canned alcoholic drinks", "flavored alcoholic drinks", "canned drinks", "canned beverages"],
+    },
   },
   {
     id: 'prod-rtdc-37',
@@ -14689,6 +15046,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Sparkling seltzer water, cane sugar, natural berry flavors",
     distilleryLocation: "Boston, MA",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "truly hard seltzer berry variety pack",
+      secondaryKeywords: ["flavored alcoholic drinks", "canned alcoholic drinks", "canned beverages", "canned drinks"],
+    },
   },
   {
     id: 'prod-rtdc-38',
@@ -14713,6 +15075,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Malt base, brewed black tea, lemonade",
     distilleryLocation: "Cincinnati, OH",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "twisted tea half and half",
+      secondaryKeywords: ["flavored alcoholic drinks", "canned alcoholic drinks", "ready to drink lemonade"],
+    },
   },
   {
     id: 'prod-rtdc-39',
@@ -14737,6 +15104,11 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Malt base, brewed black tea, natural lemon",
     distilleryLocation: "Cincinnati, OH",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "twisted tea original",
+      secondaryKeywords: ["flavored alcoholic drinks", "canned alcoholic drinks", "new alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-40',
@@ -14761,6 +15133,11 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Pinot Gris grapes",
     distilleryLocation: "Willamette Valley, OR",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "underwood pinot gris",
+      secondaryKeywords: ["canned drinks", "canned beverages", "underwood wine"],
+    },
   },
   {
     id: 'prod-rtdc-41',
@@ -14785,6 +15162,11 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Pinot Noir grapes",
     distilleryLocation: "Willamette Valley, OR",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "underwood pinot noir",
+      secondaryKeywords: ["canned drinks", "canned beverages", "pinot noir wine"],
+    },
   },
   {
     id: 'prod-rtdc-42',
@@ -14809,6 +15191,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Pinot Gris, Pinot Noir, Muscat grapes",
     distilleryLocation: "Willamette Valley, OR",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "underwood rose",
+      secondaryKeywords: ["canned drinks", "canned beverages", "canned alcoholic drinks"],
+    },
   },
   {
     id: 'prod-rtdc-43',
@@ -14833,6 +15220,11 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Sparkling seltzer water, black cherry natural flavor",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "white claw black cherry",
+      secondaryKeywords: ["canned alcoholic drinks", "flavored alcoholic drinks", "canned drinks"],
+    },
   },
   {
     id: 'prod-rtdc-44',
@@ -14857,6 +15249,11 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Sparkling seltzer water, natural fruit flavors",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // No SEMrush volume data found for this product — confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "white claw variety pack",
+      secondaryKeywords: ["canned alcoholic drinks", "canned beverages", "flavored alcoholic drinks"],
+    },
   },
 
   // NON-ALCOHOLIC WINE
