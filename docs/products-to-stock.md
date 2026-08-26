@@ -1,4 +1,4 @@
-# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine)
+# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine, Cider, Beer, Non-Alcoholic Beer/Cider/Spirits/Champagne/RTD)
 
 Consolidated from every "not currently in your catalog" and "missing expression within a brand you already carry" finding across every keyword batch processed so far. This is the running answer to "which products with real search demand should I add to inventory" — every item below carries genuine demand signal (SEMrush-sourced where available, web-research-confirmed and clearly flagged where not). KD = keyword difficulty (lower is easier to rank for). Volume floor applied: 50+; most items here are well above that.
 
@@ -460,7 +460,115 @@ Sourced from real SEMrush data across three docs (`keyword-map-champagne-a-l.md`
 
 ---
 
-## Updated recommended stocking priority, across all 12 categories
+## Cider
+
+Sourced from `keyword-map-cider.md`. Covers all 19 stocked Hard Cider SKUs.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| Original Sin (Dry stocked) | **Original Sin Black Widow** (blackberry) | original sin black widow cider (1,300, KD 4) | black widow cider (1,900, KD 9) · original sin black widow (260, KD 2) | **~3,500+ combined — Original Sin's own actual best-selling flagship, not stocked at all** |
+| Downeast (Aloha Friday, Blackberry stocked) | **Downeast Original Blend** | downeast original blend (210, KD 4) | downeast original cider (170, KD 3) | Downeast's real flagship/best-seller, entirely unstocked |
+| Downeast (as above) | Pumpkin Blend / Winter Blend (seasonal) | downeast cider pumpkin (590, KD 6) | downeast cider winter blend (390, KD 10) | ~1,820 combined, obvious seasonal-SKU gap |
+| ACE (Apple, Mango, Pineapple stocked) | **ACE Pear Cider** | ace pear cider (1,300, KD 5) | ace perry cider (1,000, KD 8) | ~2,700+ combined |
+| **Bold Rock Hard Cider** | new brand | bold rock cider (5,400, KD 26) | — | America's largest independently-owned cidery (800,000+ cases/yr) — strongest new-brand signal in this batch |
+| Magners | new brand | magners cider (3,600, KD 27) | — | Real, well-known Irish cider, Strongbow's direct rival |
+| Schilling Cider | new brand | schilling cider (4,400, KD 18) | — | Seattle-based, runs the nation's largest craft-cider-selection cider house |
+
+**Priority:** Original Sin Black Widow and Downeast Original Blend are both cases of a brand's real flagship sitting entirely unstocked while a lesser SKU is carried — easiest wins in this category.
+
+---
+
+## Non-Alcoholic Beer & Cider
+
+Sourced from `keyword-map-na-beer-cider.md`. Covers all 15 stocked NA beer/cider SKUs.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| Budweiser (Zero stocked) | **Bud Light Zero** | bud light zero (590, KD 15) | bud light non alcoholic beer (590, KD 29) | ~1,850 combined, real separate AB SKU |
+| Go Brewing | new brand | go brewing (5,400, KD 18) | go brewed (2,400, KD 13) | Independent NA craft brewery, volume rivals several stocked brands |
+| Blue Moon NA | new brand | blue moon non alcoholic beer (1,600, KD 11) | — | Highest single unstocked-brand volume in this batch |
+| Bero (Tom Holland) | new brand | tom holland non alcoholic beer (1,000, KD 47) | — | Real celebrity crossover (actor co-founded, launched 2024) |
+| Clausthaler | new brand | clausthaler non alcoholic beer (1,300, KD 15) | — | Long-established German NA beer brand |
+
+**Priority:** Bud Light Zero is the clearest same-brand win. Go Brewing and Blue Moon NA lead the new-brand candidates.
+
+---
+
+## Beer
+
+Sourced from `keyword-map-beer-lager.md`, `keyword-map-beer-ipa.md`, `keyword-map-beer-ale-stout.md`. Covers all 105 stocked Beer SKUs. **Note:** no generic "beer" category export existed this round — most Part B findings below are WebSearch-confirmed rather than volume-backed; flagged inline.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **Deschutes** (Black Butte Porter stocked) | **Deschutes Fresh Squeezed IPA** | deschutes fresh squeezed ipa (1,900, KD 18) | deschutes brewery fresh squeezed ipa (1,300, KD 19) | **~6,000+ combined — the single strongest unstocked-SKU signal in the entire Beer batch, CSV-backed** |
+| Samuel Adams (Utopias stocked) | **Samuel Adams Boston Lager** | samuel adams boston lager (4,400, KD 27) | sam adams boston lager (2,900, KD 24) | ~10,000+ combined — Sam Adams' actual flagship, currently unstocked in favor of the extreme-tier Utopias |
+| Samuel Adams (as above) | Sam Adams Octoberfest / Summer Ale (seasonal) | sam adams octoberfest (5,400, KD 22) | sam adams summer ale (3,600, KD 15) | ~15,000 combined across both seasonals |
+| Corona (Extra + Light stocked) | Coronita (7oz mini) | coronita beer (1,300, KD 14) | coronita alcohol content (1,900, KD 19) | Real, currently-sold SKU |
+| Anheuser-Busch (Budweiser stocked) | Bud Ice | bud ice (6,600, KD 14) | bud ice beer (2,400, KD 19) | Real Busch-family SKU |
+| Heineken (Original stocked) | Heineken Silver | heineken silver beer (720, KD 11) | — | Real, currently-marketed lower-ABV line |
+| Guinness (Draught stocked) | Guinness 0 (non-alcoholic) | guinness non alcoholic beer (1,600, KD 26) | — | Real, sizeable demand — note this is separately stocked in the NA Beer & Cider category |
+| **Bell's Two Hearted Ale** | new brand (Ale & Wheat subcat, Bell's Oberon already stocked) | — | confirmed real via WebSearch | Frequently ranked America's #1 beer in national polls; already added to the beer catalog and hub in this batch under IPA — flagging here since the Ale & Wheat gap analysis independently surfaced it too |
+| Sierra Nevada Pilsner | same-brewer gap, no stocked Lager SKU | sierra nevada pilsner (1,000, KD 11) | — | Real product; Sierra Nevada currently has zero Lager-subcategory SKUs |
+| Beck's / Amstel Light / Red Stripe / Tsingtao | new brands (Lager) | — | confirmed real via WebSearch, not volume-backed | Would round out the German/light/Caribbean/Asian lager sets alongside stocked Heineken/Stella/Peroni/Asahi/Sapporo/Kirin |
+| Ballast Point Sculpin IPA | new brand | — | confirmed real via WebSearch, not volume-backed | One of the most ubiquitous, gold-medal-winning American IPAs |
+| The Alchemist Heady Topper | new brand | — | confirmed real via WebSearch, not volume-backed | Credited with kickstarting the entire hazy/New England IPA movement |
+| Hoegaarden / Franziskaner / Weihenstephaner | new brands (wheat beer) | — | confirmed real via WebSearch, not volume-backed | Would add the missing German-hefeweizen style alongside stocked Belgian witbiers |
+| North Coast Old Rasputin | new brand (Stout) | — | confirmed real via WebSearch, not volume-backed | Iconic, widely available imperial stout |
+
+**Priority:** Deschutes Fresh Squeezed IPA is the standout — real, CSV-backed, ~6,000+ combined, same brewer already stocked. Samuel Adams Boston Lager is the clearest "the flagship itself isn't stocked" case in the whole project.
+
+---
+
+## Non-Alcoholic Spirits
+
+Sourced from `keyword-map-na-spirits.md`. Covers all 22 stocked NA Spirits SKUs.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **Seedlip** (Garden 108, Grove 42 stocked) | **Seedlip Spice 94** | seedlip spice (880, KD 19) | seedlip non alcoholic spirits (1,900, KD 15) | Real third leg of Seedlip's actual 3-flavor range — strongest Part A finding by volume; current hub copy was fixed this batch to only claim the 2 stocked ranges |
+| Lyre's (3 SKUs stocked) | **Lyre's Italian Spritz** | lyre's italian spritz (1,600, KD 9) | lyres (2,900, KD 54) | Real product, standalone volume higher than several already-stocked Lyre's SKUs |
+| Lyre's (as above) | Lyre's Amalfi Spritz | lyre's amalfi spritz (880, KD 8) | — | Same brand, same real gap category |
+| Cut Above (Agave Blanco, Mezcal stocked) | Cut Above Whiskey + Gin | cut above whiskey (210, KD 4) | cut above gin (70, KD 3) | Real, confirmed 4th/5th SKUs in Cut Above's actual lineup |
+| **CleanCo / Clean T** | new brand | clean t (260, KD 4) | cleanco clean t 750 ml (260, KD 3) | Founded 2019 by TV personality Spencer Matthews; ~950 combined, strongest unstocked-brand signal |
+| Tanqueray 0.0% | new brand | tanqueray non alcoholic gin (210, KD 6) | — | Diageo-backed — notable since Diageo also owns Ritual and Seedlip, both already stocked |
+
+**Priority:** Seedlip Spice 94 is the standout — fixes a real hook/inventory mismatch on an already-live hub page.
+
+---
+
+## Non-Alcoholic Champagne & Sparkling
+
+Sourced from `keyword-map-na-champagne.md`. Covers all 22 stocked NA Champagne/Sparkling SKUs.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **Lyre's Classico** | new brand | lyre's non alcoholic classico sparkling wine 4 pack (2,400, KD 15) | lyres classico (320, KD 20) | **~2,720 combined — the single strongest Part B finding in this report.** Built non-alcoholic from the start (not dealcoholized); 2025 IWSC silver medal |
+| Surely (Brut stocked) | Surely Sparkling Rosé | surely sparkling rosé (90, KD 12) | — | Real, current Surely SKU |
+| French Bloom (Le Blanc + Le Rosé stocked) | French Bloom La Cuvée (prestige tier) | — | confirmed real via WebSearch, not volume-backed | Called the world's most expensive alcohol-free wine by trade press — genuine premium-upsell opportunity |
+| Gruvi | new brand | gruvi bubbly rose (210, KD 3) | — | Colorado-based, picked as "best NA wine" by USA Today, Forbes, Cosmopolitan |
+| Jøyus Wine | new brand | joyous wine (170, KD 15) | — | Seattle's first NA winery, woman-owned |
+
+**Priority:** Lyre's Classico is the clear standout new-brand pick.
+
+---
+
+## Non-Alcoholic RTD Cocktails
+
+Sourced from `keyword-map-na-rtd-cocktails.md`. Covers all 19 stocked NA RTD Cocktail SKUs.
+
+| Brand | Missing expression / New brand | Primary key | Support keys | Note |
+|---|---|---|---|---|
+| **Lapo's** (Negroni stocked) | **5 more real SKUs**: Espresso Martini, Melograno Mule, Amaro Cola, Citrus Spritz, Negroni Water | — | confirmed real via WebSearch (BevNET/PR Newswire) | **Strongest Part A finding in this report** — the brand's real line has expanded to 6 total SKUs, only 1 stocked |
+| **Curious Elixirs** (No. 1 stocked) | Real numbered range continues through No. 9 | — | confirmed real via WebSearch | Large, legitimate expansion opportunity from a single stocked SKU |
+| De Soi (Purple Lune, Très Rosé stocked) | **Golden Hour**, **Spritz Italiano**, **Haute Margarita** | de soi golden hour (170, KD 16) | de soi spritz italiano (260, KD 13) · de soi haute margarita (170, KD 14) | Real, CSV-backed — Haute Margarita is the single strongest finding for this brand |
+| **Kin Euphorics** | new brand | — | confirmed real via WebSearch | One of the most recognized names in the NA-functional-aperitif category |
+| **Casamara Club** | new brand | — | confirmed real via WebSearch | Detroit-founded, one of VinePair's 2026 top-22 NA brands |
+
+**Priority:** Lapo's real 6-SKU range and Curious Elixirs' real 9-flavor range are both cases of a brand already stocked carrying a fraction of its actual lineup — the easiest, lowest-risk expansions in this whole batch.
+
+---
+
+## Updated recommended stocking priority, across all 18 categories
 
 1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
 2. **Pinnacle Whipped Cream** (Vodka) — real demand exceeds the base brand's own keyword pool, only plain base stocked
@@ -483,8 +591,14 @@ Sourced from real SEMrush data across three docs (`keyword-map-champagne-a-l.md`
 19. **Moët Nectar Impérial / Ice Impérial** (Champagne) — ~6,970 combined vol, real demand on the brand with the biggest footprint in the whole Champagne catalog
 20. **Freixenet Prosecco** (Champagne & Sparkling) — CSV-backed, zero new-vendor risk, same brand already stocked in Cava
 21. **Josh Cellars Prosecco** (Champagne & Sparkling) — 2,900 vol, natural line extension of a brand already stocked at 5 SKUs
-22. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+22. **Original Sin Black Widow** (Cider) — ~3,500+ combined, Original Sin's own actual best-selling flagship, not stocked at all
+23. **Deschutes Fresh Squeezed IPA** (Beer) — ~6,000+ combined, CSV-backed, strongest unstocked-SKU signal in the whole Beer batch, same brewer already stocked
+24. **Samuel Adams Boston Lager** (Beer) — ~10,000+ combined, the brand's actual flagship sits entirely unstocked in favor of the extreme-tier Utopias
+25. **Seedlip Spice 94** (NA Spirits) — real third leg of an already-stocked 2-flavor range, fixes a live hook/inventory mismatch
+26. **Lapo's real 6-SKU range** (NA RTD Cocktails) — brand already stocked at 1 of 6 real SKUs
+27. **Lyre's Classico** (NA Champagne) — ~2,720 combined, strongest new-brand signal in the NA sparkling batch
+28. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
 
 ---
 
-*This document will grow as remaining categories (Beer, Cider, RTD/Liqueurs, NA Wine/Champagne, NA RTD Cocktails) are batch-processed.*
+*This document will grow as remaining categories (RTD & Liqueurs, Bar Essentials, Non-Alcoholic Wine) are batch-processed.*

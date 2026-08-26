@@ -262,6 +262,86 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 
 ---
 
+## CIDER — 0 of ~7 core topics live
+
+- 🎯 **Is Hard Cider Gluten Free?** — ~3,000+/mo, strongest real informational cluster in the category
+- 🏷️ How Much Alcohol Is in Hard Cider? — combined well over 7,000/mo across brand ABV queries
+- 🏷️ Hard Cider vs. Beer: What's the Difference? — real, recurring confusion pattern
+- 🏷️ Hard Cider vs. Sweet (Non-Alcoholic) Apple Cider — real disambiguation need
+- 🏷️ What's the Best Cider Apple? Bittersweet vs. Dessert Apples — ties to Farnum Hill's real story
+- 🎯 **Best Fall & Winter Hard Ciders** — seasonal roundup, ties to Downeast Pumpkin/Winter Blend
+- 🏷️ Hard Cider Brands Guide — broad pillar page, links every brand hub
+
+## NON-ALCOHOLIC BEER & CIDER — 0 of ~10 core topics live
+
+- 🎯 **Is Non-Alcoholic Beer Really Alcohol-Free?** — foundational pillar
+- 🏷️ 0.0% vs. "Non-Alcoholic": What the Label Actually Means — O'Doul's is ~0.4% vs. true 0.0% competitors
+- 🏷️ Is Non-Alcoholic Beer Safe During Pregnancy? — ~3,500+ combined, handle sensitively, cite guidance don't assert
+- 🏷️ How Is Non-Alcoholic Beer Actually Made? — sets up the Athletic Brewing (fermented-from-scratch) distinction
+- 🏷️ Does Non-Alcoholic Beer Break Sobriety? — sensitive recovery-adjacent cluster, handle responsibly
+- 🎯 **Best Non-Alcoholic Beers for Dry January** — 9,900/mo head term
+- 🏷️ Meet Bero: The Celebrity-Backed NA Beer Everyone's Asking About — Tom Holland pop-culture angle
+
+## BEER — 0 of ~24 core topics live (largest unbuilt cluster in the whole project)
+
+No generic "beer" category export existed this round, so most of the volume below is scattered across brand-specific pulls rather than one big category cluster.
+
+- 🎯 **Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide** — ~10,000+/mo combined, largest cross-brand cluster in the whole Beer batch
+- 🎯 **Lager vs. Ale: What Actually Makes a Beer a Lager?** — ~3,500+/mo, most-repeated informational pattern in the batch
+- 🎯 **How Many Calories Are Actually in a Guinness?** — ~40,000-50,000/mo raw volume once every phrasing variant is summed, strongest data-backed cluster in the entire Beer batch
+- 🏷️ The Guinness Widget, Explained — ~5,400+/mo
+- 🏷️ Is Guinness a Stout? A Straight Answer — ~4,300+/mo
+- 🏷️ Mexican Lager Guide: Corona, Modelo, Pacifico, Tecate & Dos Equis Compared — ties 5 stocked brands, 10 SKUs
+- 🏷️ Japanese Lager Guide: Asahi, Sapporo & Kirin — ties 3 stocked brands
+- 🏷️ American Light Lager Showdown — Bud Light vs. Coors Light vs. Miller Lite vs. Michelob Ultra
+- 🏷️ What Makes an IPA an IPA? — style-origin explainer anchor piece
+- 🏷️ Hazy IPA vs. West Coast IPA: What's the Difference? — catalog splits cleanly between both styles
+- 🏷️ Double IPA / Imperial IPA Explained — ties to Pliny the Elder, Dogfish Head 90 Minute, Elysian Space Dust
+- 🏷️ Who Invented the Double IPA? The Vinnie Cilurzo / Blind Pig / Russian River Story
+- 🎯 **Craft Beer Independence: Which of Our IPA Brands Are Still Independently Owned?** — genuine trust/education angle given how many stocked brands now sit under AB InBev/Heineken/Kirin
+- 🏷️ What Makes a Beer "Barrel-Aged"? — ties Founders KBS, Goose Island Bourbon County, Firestone Walker Parabola, The Bruery Black Tuesday
+- 🏷️ Trappist Beer 101: What Makes Chimay "Authentic" — real, one of roughly a dozen certified Trappist breweries worldwide
+- 🏷️ Stout vs. Porter: What's Actually the Difference? — evergreen educational anchor
+- 🏷️ Nitro Beer, Explained — ties Guinness widget + Left Hand Milk Stout Nitro's "first craft brewery to bottle nitro" claim
+- 🎯 **Sierra Nevada Pale Ale at 45: How One Beer Started the Craft Revolution**
+- 🏷️ What Is a Belgian Witbier? Allagash, Blue Moon & Shock Top Compared
+- 🏷️ Why Is Miller High Life Called the "Champagne of Beers"?
+
+## NON-ALCOHOLIC SPIRITS — 0 of ~9 core topics live
+
+- 🎯 **What Is a Non-Alcoholic Spirit? A Buyer's Guide** — 9,900/mo head term, foundational pillar
+- 🏷️ Do Non-Alcoholic Spirits Taste Like the Real Thing? — consistent PAA-demand signal
+- 🎯 **Best Non-Alcoholic Spirits for Mocktails** — good internal-linking hub for all 4 subcategories
+- 🏷️ Zero Proof, Explained: A Non-Alcoholic Spirits Glossary — low-KD, under-served definitional cluster
+- 🎯 **Dry January / Sober-Curious Starter Guide** — strong seasonal angle
+- 🏷️ Non-Alcoholic Gin vs. Whiskey vs. Tequila: Which to Try First — ~1,790/mo combined
+- 🏷️ Substitute for Bourbon, Gin, or Tequila in Your Favorite Cocktail
+- 🏷️ Non-Alcoholic Mezcal vs. Tequila Alternative: What's the Difference — supports Cut Above Mezcal directly
+
+## NON-ALCOHOLIC CHAMPAGNE & SPARKLING — 0 of ~8 core topics live
+
+- 🎯 **Is Non-Alcoholic Champagne a Real Thing?** — real, recurring skepticism cluster
+- 🏷️ How Is the Alcohol Removed From Wine? (Vacuum Distillation vs. Spinning Cone vs. Twice-Fermented) — real, brand-confirmed production methods across Leitz/Giesen/BOLLE/Proxies
+- 🎯 **Best Non-Alcoholic Sparkling Wine for Toasts and Celebrations** — ~1,360/mo combined, maps to nearly every SKU
+- 🏷️ Non-Alcoholic Champagne and Pregnancy: What to Know
+- 🏷️ Sparkling Wine vs. Sparkling Grape Juice vs. Non-Alcoholic Champagne: What's the Difference
+- 🎯 **How to Pick a Non-Alcoholic Wine That Doesn't Taste "Fake"** — 4,400/mo, addresses the #1 consumer objection
+- 🏷️ Kosher and Family-Friendly Sparkling Grape Juice for Every Celebration — Kedem/Welch's/St. Julian real brand stories
+
+## NON-ALCOHOLIC RTD COCKTAILS — 0 of ~11 core topics live
+
+- 🎯 **What Is a Mocktail? A Complete Guide** — ~22,420/mo, largest single informational cluster in this whole batch
+- 🏷️ Do Non-Alcoholic Cocktails Actually Taste Good? — directly addresses category skepticism
+- 🎯 **Easy Mocktail Recipes to Make at Home** — ~70,000/mo raw volume, keep as lifestyle content cross-selling stocked SKUs
+- 🎯 **What to Order When You're Not Drinking: Best NA Drinks at a Bar** — ~9,000+/mo, low KD, strong quick-win
+- 🏷️ Alcohol Alternatives 101: Zero Proof, Social Tonics & Functional Beverages Explained
+- 🏷️ Sober Curious? A Beginner's Guide to Non-Alcoholic Cocktails — ~4,000+/mo
+- 🎯 **Best Non-Alcoholic Cocktails for a Party** — ~8,300+/mo
+- 🏷️ Holiday & Seasonal Mocktails Guide — spans multiple holidays, evergreen seasonal calendar
+- 🏷️ Is It Safe to Drink Non-Alcoholic Aperitifs While Pregnant? — ties to De Soi's own founding story, write carefully
+
+---
+
 ## Summary counts
 
 | Category | Live | New gaps identified |
@@ -281,7 +361,13 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 | Bar Essentials | 2 | 4 |
 | Fine Wine | 0 | 28 |
 | Champagne & Sparkling Wine | 0 | 19 |
-| **Total** | **65 live** | **~119 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| Cider | 0 | 7 |
+| Non-Alcoholic Beer & Cider | 0 | 10 |
+| Beer | 0 | 24 |
+| Non-Alcoholic Spirits | 0 | 9 |
+| Non-Alcoholic Champagne & Sparkling | 0 | 8 |
+| Non-Alcoholic RTD Cocktails | 0 | 11 |
+| **Total** | **65 live** | **~188 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -301,5 +387,9 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 14. **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa** (~40,000+ combined) — largest single raw-volume opportunity in the entire Champagne & Sparkling batch
 15. **Prosecco vs. Champagne: What's Actually Different?** (~18,700 combined) — largest Champagne-category comparison cluster
 16. **Does Champagne Go Bad?** (~10,700 combined) — very low KD across the board, strong pillar-page candidate
+17. **How Many Calories Are Actually in a Guinness?** (~40,000-50,000 combined) — strongest data-backed cluster in the entire Beer batch
+18. **What Is a Mocktail? A Complete Guide** (~22,420 combined) — largest single informational cluster in the NA RTD Cocktails batch
+19. **Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide** (~10,000+ combined) — largest cross-brand cluster in Beer
+20. **Easy Mocktail Recipes to Make at Home** (~70,000 combined) — largest raw-volume number in this entire project; keep as lifestyle content cross-selling stocked SKUs rather than a product-page target
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.
