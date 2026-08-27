@@ -4218,4 +4218,114 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+
+  // ─── NON-ALCOHOLIC WINE ───────────────────────────────────────────
+  {
+    categorySlug: 'na-wine', hubSlug: 'ariel', brandKeywords: ['Ariel'], name: 'Ariel',
+    seo: brandSeo({
+      brand: 'Ariel', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Ariel — Non-Alcoholic Cabernet Sauvignon & Chardonnay',
+      h1: 'Ariel Non-Alcoholic Wine — Cabernet Sauvignon & Chardonnay',
+      metaDescription: 'Buy Ariel non-alcoholic wine online — Cabernet Sauvignon and Chardonnay. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Ariel Vineyards has been made by J. Lohr Vineyards & Wines since 1985 — seven years before FRE launched — making it one of the very first alcohol-removed wine brands sold in the US. Unlike most of the category, which uses spinning cone technology, Ariel relies on J. Lohr\'s own patented reverse osmosis process, drawing grapes from J. Lohr\'s 4,000+ certified-sustainable acres across Paso Robles and Monterey County\'s Arroyo Seco.',
+      faqs: [
+        { question: 'Who makes Ariel wine?', answer: 'J. Lohr Vineyards & Wines; Ariel dates to 1985, one of the original alcohol-removed wine brands in the US.' },
+        { question: 'How is Ariel wine made alcohol-free?', answer: 'Reverse osmosis, a process J. Lohr patented, rather than the spinning-cone method used by many competitors.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'fre', brandKeywords: ['FRE'], name: 'FRE',
+    seo: brandSeo({
+      brand: 'FRE', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'FRE — Alcohol-Removed Cabernet, Chardonnay, Merlot & Rosé',
+      h1: 'FRE Non-Alcoholic Wine — Cabernet Sauvignon, Chardonnay, Merlot & Rosé',
+      metaDescription: 'Buy FRE non-alcoholic wine online — Cabernet Sauvignon, Chardonnay, Merlot, and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Sutter Home has produced FRE since 1992, making it one of the longest-running alcohol-removed wine lines in the US; alcohol is stripped using a spinning cone process combined with controlled temperature, leaving a trace typically under 0.5% ABV. FRE\'s retail sales grew roughly 300% between 2019 and 2024. FRE also makes a Sparkling Brut and Sparkling Rosé, stocked separately in the Champagne & Sparkling shop.',
+      faqs: [
+        { question: 'Does FRE wine have any alcohol?', answer: 'Under 0.5% ABV, the same trace level as most alcohol-removed wines.' },
+        { question: 'Who makes FRE wine?', answer: 'Sutter Home Family Vineyards (Trinchero Family Wine & Spirits).' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'giesen', brandKeywords: ['Giesen'], name: 'Giesen',
+    seo: brandSeo({
+      brand: 'Giesen', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Giesen 0% — Pinot Grigio, Sauvignon Blanc, Red Blend & Rosé',
+      h1: 'Giesen 0% Non-Alcoholic Wine — Pinot Grigio, Sauvignon Blanc, Premium Red Blend & Rosé',
+      metaDescription: 'Buy Giesen 0% non-alcoholic wine online — Pinot Grigio, Sauvignon Blanc, Premium Red Blend, and Rosé. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Giesen is New Zealand\'s largest family-owned winery and was the first New Zealand winery to install spinning cone technology, which separates fragrance and alcohol from the base wine under vacuum. Giesen 0% Sauvignon Blanc is the #1 selling premium alcohol-removed wine in the US, and the Premium Red won 95 points and a Gold Medal at the 2022 International Wine and Spirit Competition.',
+      faqs: [
+        { question: 'Is Giesen 0% really alcohol-free?', answer: 'Not more than 0.5% ABV, the legal standard for "non-alcoholic" wine in the US, NZ, and Australia.' },
+        { question: 'What\'s Giesen\'s best-selling 0% wine?', answer: 'Sauvignon Blanc, the #1 selling premium alcohol-removed wine in the US.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'lautus', brandKeywords: ['Lautus'], name: 'Lautus',
+    seo: brandSeo({
+      brand: 'Lautus', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Lautus — Non-Alcoholic Sauvignon Blanc & Savvy Red',
+      h1: 'Lautus Non-Alcoholic Wine — Sauvignon Blanc & Savvy Red Blend',
+      metaDescription: 'Buy Lautus non-alcoholic wine online — Sauvignon Blanc and Savvy Red Blend. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Lautus was founded in South Africa in 2017 by winemaker Reg Holder — the country\'s first de-alcoholized wine producer — after his wife wanted a genuine wine experience while pregnant. Grapes are picked in two passes, some early for acidity and some at peak ripeness, then run through spinning cone technology twice: once to capture flavor, once to remove alcohol. The name is Latin for "pure, elegant, and sumptuous."',
+      faqs: [
+        { question: 'Who founded Lautus?', answer: 'Winemaker Reg Holder, South Africa, 2017; inspired by his pregnant wife wanting a real wine experience.' },
+        { question: 'What does "Lautus" mean?', answer: 'Latin for pure, elegant, and sumptuous.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'leitz', brandKeywords: ['Leitz', 'Eins-Zwei-Zero'], name: 'Leitz',
+    seo: brandSeo({
+      brand: 'Leitz', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Leitz — Eins-Zwei-Zero Riesling & Rosé',
+      h1: 'Leitz Eins-Zwei-Zero — Non-Alcoholic Riesling & Rosé',
+      metaDescription: 'Buy Leitz Eins-Zwei-Zero non-alcoholic wine online — Riesling and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Josef Leitz\'s Rheingau, Germany estate is one of the region\'s most respected Riesling producers, and its Eins-Zwei-Zero range removes alcohol through gentle vacuum distillation rather than reverse osmosis or spinning cone technology — a process the estate credits for preserving classic green-apple, pear, and Riesling-spice character. A Sparkling Riesling and Sparkling Rosé from the same estate are stocked separately in the Champagne & Sparkling shop.',
+      faqs: [
+        { question: 'How is Leitz Eins-Zwei-Zero made alcohol-free?', answer: 'The grapes are fully fermented into real wine first, then alcohol is removed via gentle vacuum distillation.' },
+        { question: 'Where is Leitz from?', answer: 'The Rheingau, one of Germany\'s most historically important Riesling regions.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'noughty', brandKeywords: ['Noughty'], name: 'Noughty',
+    seo: brandSeo({
+      brand: 'Noughty', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Noughty — Non-Alcoholic Chardonnay, Rosé & Rouge',
+      h1: 'Noughty Non-Alcoholic Wine — Chardonnay, Rosé & Rouge',
+      metaDescription: 'Buy Noughty non-alcoholic wine online — Chardonnay, Rosé, and Rouge. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Noughty is made by Thomson & Scott, founded in 2013 by Amanda Thomson — a former BBC arts journalist trained at Le Cordon Bleu — with the explicit goal of building the world\'s first premium non-alcoholic wine portfolio. Thomson & Scott is B Corp certified and Noughty\'s wines are organic and vegan. The Rouge is a genuinely rare fully-still (not lightly sparkling) alcohol-free red made from 100% Syrah.',
+      faqs: [
+        { question: 'Who makes Noughty wine?', answer: 'Thomson & Scott, founded by Amanda Thomson in 2013.' },
+        { question: 'Is Noughty organic and vegan?', answer: 'Yes to both.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'oddbird', brandKeywords: ['Oddbird'], name: 'Oddbird',
+    seo: brandSeo({
+      brand: 'Oddbird', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Oddbird — Non-Alcoholic GSM Red & Rosé',
+      h1: 'Oddbird Non-Alcoholic Wine — GSM Red Blend & Rosé',
+      metaDescription: 'Buy Oddbird non-alcoholic wine online — GSM Red Blend and Rosé. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Oddbird was founded in Sweden by Moa Gürbüzer and has spent over a decade pushing the non-alcoholic wine category forward. The GSM sources Grenache, Syrah, Mourvèdre, and Carignan from Saint-Chinian in the Languedoc-Roussillon region of France, using a patented gentle process to remove alcohol after full fermentation — a genuinely uncommon still-red style in a category dominated by whites and rosés.',
+      faqs: [
+        { question: 'What does GSM stand for?', answer: 'Grenache, Syrah, Mourvèdre (plus Carignan in Oddbird\'s specific blend).' },
+        { question: 'Where are Oddbird wines from?', answer: 'The company is Swedish, but the wine itself is French — Saint-Chinian, Languedoc-Roussillon.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'saint-viviana', brandKeywords: ['Saint Viviana'], name: 'Saint Viviana',
+    seo: brandSeo({
+      brand: 'Saint Viviana', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'Saint Viviana — Non-Alcoholic Cabernet Sauvignon & Sauvignon Blanc',
+      h1: 'Saint Viviana Non-Alcoholic Wine — Cabernet Sauvignon & Sauvignon Blanc',
+      metaDescription: 'Buy Saint Viviana non-alcoholic wine online — Cabernet Sauvignon and Sauvignon Blanc. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Saint Viviana is a US brand built around a year-long development process involving California and Pacific Northwest winemakers and a master sommelier, starting from high-end base wines specifically so little needs correcting after the alcohol is removed — a Paso Robles Cabernet Sauvignon and a Washington State Sauvignon Blanc.',
+    }),
+  },
 ];

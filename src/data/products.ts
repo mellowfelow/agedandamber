@@ -15280,6 +15280,10 @@ export const PRODUCTS: Product[] = [
     stock: 33,
     caskType: "Cabernet Sauvignon, De-Alcoholized",
     distilleryLocation: "San Luis Obispo, California",
+    seo: {
+      primaryKeyword: "ariel non alcoholic red wine",
+      secondaryKeywords: ["ariel non alcoholic wine", "non alcoholic cabernet sauvignon", "non alcoholic cabernet", "best non alcoholic red wine", "alcohol free red wine"],
+    },
   },
   {
     id: 'prod-na-wine-02',
@@ -15304,6 +15308,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "San Luis Obispo, California",
+    seo: {
+      primaryKeyword: "ariel chardonnay non alcoholic wine",
+      secondaryKeywords: ["ariel non alcoholic wine", "non alcoholic white wine", "best non alcoholic chardonnay", "best non alcoholic white wine", "nice non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-wine-03',
@@ -15328,6 +15336,14 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Cabernet Sauvignon, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      primaryKeyword: "fre cabernet sauvignon",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "non alcoholic cabernet sauvignon", "is fre wine alcohol free", "is fre wine good"],
+      faqs: [
+        { question: 'Is FRE wine alcohol-free?', answer: 'FRE is dealcoholized to under 0.5% ABV, the same trace level as most alcohol-removed wines.' },
+        { question: 'Is FRE wine good?', answer: 'FRE is one of the longest-running, most widely distributed alcohol-removed wine lines in the US — a solid, approachable everyday choice rather than a boutique bottle, and a reliable entry point into the category.' },
+      ],
+    },
   },
   {
     id: 'prod-na-wine-04',
@@ -15352,6 +15368,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "fre chardonnay",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "best non alcoholic chardonnay", "non alcoholic white wine", "best non alcoholic white wine"],
+    },
   },
   {
     id: 'prod-na-wine-05',
@@ -15376,6 +15397,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Merlot, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "fre merlot",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "alcohol free red wine", "non alcoholic red wine", "best non alcoholic red wine"],
+    },
   },
   {
     id: 'prod-na-wine-06',
@@ -15400,6 +15426,10 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Rosé Blend, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
+    seo: {
+      primaryKeyword: "fre rose",
+      secondaryKeywords: ["fre wine", "fre non alcoholic wine", "non alcoholic rose", "non alcoholic rose wine", "alcohol removed wine"],
+    },
   },
   {
     id: 'prod-na-wine-07',
@@ -15424,6 +15454,11 @@ export const PRODUCTS: Product[] = [
     stock: 38,
     caskType: "Rosé Blend, De-Alcoholized",
     distilleryLocation: "Marlborough, New Zealand",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "giesen rose non alcoholic wine",
+      secondaryKeywords: ["giesen non alcoholic wine", "giesen sauvignon blanc non alcoholic wine", "non alcoholic rose", "rose fizzy wine", "dealcoholized wine"],
+    },
   },
   {
     id: 'prod-na-wine-08',
@@ -15448,6 +15483,11 @@ export const PRODUCTS: Product[] = [
     stock: 34,
     caskType: "Pinot Grigio, De-Alcoholized",
     distilleryLocation: "Marlborough, New Zealand",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "giesen pinot grigio non alcoholic wine",
+      secondaryKeywords: ["giesen non alcoholic wine", "non alcoholic white wine", "giesen sauvignon blanc non alcoholic wine", "best non alcoholic white wine", "dealcoholized wine"],
+    },
   },
   {
     id: 'prod-na-wine-09',
@@ -15472,6 +15512,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Merlot, Cabernet Franc, De-Alcoholized",
     distilleryLocation: "Marlborough, New Zealand",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "giesen premium red blend non alcoholic wine",
+      secondaryKeywords: ["giesen non alcoholic wine", "non alcoholic red wine", "alcohol free red wine", "dealcoholized wine", "best non alcoholic red wine"],
+    },
   },
   {
     id: 'prod-na-wine-10',
@@ -15496,6 +15541,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Sauvignon Blanc, De-Alcoholized",
     distilleryLocation: "Marlborough, New Zealand",
+    seo: {
+      primaryKeyword: "giesen sauvignon blanc non alcoholic wine",
+      secondaryKeywords: ["giesen non alcoholic wine", "non alcoholic white wine", "best non alcoholic white wine", "nice non alcoholic wine", "dealcoholized wine"],
+    },
   },
   {
     id: 'prod-na-wine-11',
@@ -15520,6 +15569,11 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Sauvignon Blanc, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "lautus sauvignon blanc non alcoholic wine",
+      secondaryKeywords: ["lautus savvy red", "lautus savvy red non alcoholic red wine", "non alcoholic white wine", "best non alcoholic white wine", "nice non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-wine-12',
@@ -15544,6 +15598,10 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Shiraz, Cabernet Sauvignon, Pinotage, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
+    seo: {
+      primaryKeyword: "lautus savvy red non alcoholic red wine",
+      secondaryKeywords: ["lautus savvy red", "non alcoholic red wine", "alcohol free red wine", "non alcoholic red wines", "best non alcoholic red wine"],
+    },
   },
   {
     id: 'prod-na-wine-13',
@@ -15568,6 +15626,13 @@ export const PRODUCTS: Product[] = [
     stock: 51,
     caskType: "Riesling, De-Alcoholized",
     distilleryLocation: "Rüdesheim, Germany",
+    seo: {
+      primaryKeyword: "leitz non alcoholic wine",
+      secondaryKeywords: ["non alcoholic white wine", "dealcoholized wine", "alcohol removed wine", "best non alcoholic white wine", "nice non alcoholic wine"],
+      faqs: [
+        { question: 'How is Leitz Eins-Zwei-Zero made alcohol-free?', answer: 'The grapes are fully fermented into real Riesling first, then alcohol is removed via gentle vacuum distillation rather than reverse osmosis or spinning cone technology.' },
+      ],
+    },
   },
   {
     id: 'prod-na-wine-14',
@@ -15592,6 +15657,11 @@ export const PRODUCTS: Product[] = [
     stock: 23,
     caskType: "Pinot Noir, De-Alcoholized",
     distilleryLocation: "Rüdesheim, Germany",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "leitz rose non alcoholic wine",
+      secondaryKeywords: ["leitz non alcoholic wine", "non alcoholic rose", "rose fizzy wine", "dealcoholized wine", "sparkling rose non alcoholic"],
+    },
   },
   {
     id: 'prod-na-wine-15',
@@ -15616,6 +15686,11 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "luminara napa valley chardonnay non alcoholic",
+      secondaryKeywords: ["non alcoholic white wine", "best non alcoholic chardonnay", "dealcoholized wine", "alcohol removed wine", "best non alcoholic white wine"],
+    },
   },
   {
     id: 'prod-na-wine-16',
@@ -15640,6 +15715,10 @@ export const PRODUCTS: Product[] = [
     stock: 52,
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
+    seo: {
+      primaryKeyword: "noughty non alcoholic wine",
+      secondaryKeywords: ["non alcoholic white wine", "dealcoholized wine", "best non alcoholic chardonnay", "best non alcoholic white wine", "nice non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-wine-17',
@@ -15664,6 +15743,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Rosé Blend, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
+    seo: {
+      primaryKeyword: "noughty non alcoholic wine",
+      secondaryKeywords: ["non alcoholic rose", "rose fizzy wine", "dealcoholized wine", "non alcoholic sparkling rose", "sparkling rose non alcoholic"],
+    },
   },
   {
     id: 'prod-na-wine-18',
@@ -15688,6 +15771,11 @@ export const PRODUCTS: Product[] = [
     stock: 49,
     caskType: "Syrah, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "noughty rouge non alcoholic red wine",
+      secondaryKeywords: ["noughty non alcoholic wine", "non alcoholic red wine", "alcohol free red wine", "dealcoholized wine", "best non alcoholic red wine"],
+    },
   },
   {
     id: 'prod-na-wine-19',
@@ -15712,6 +15800,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Grenache, Syrah, Mourvèdre, Carignan, De-Alcoholized",
     distilleryLocation: "Languedoc-Roussillon, France",
+    seo: {
+      primaryKeyword: "oddbird gsm non alcoholic red wine",
+      secondaryKeywords: ["oddbird non alcoholic wine", "non alcoholic red wine", "alcohol free red wine", "best non alcoholic red wine", "dealcoholized wine"],
+      faqs: [
+        { question: 'What does GSM stand for?', answer: 'Grenache, Syrah, Mourvèdre — the classic Rhône-style blend, with Carignan rounding out Oddbird\'s specific version.' },
+      ],
+    },
   },
   {
     id: 'prod-na-wine-20',
@@ -15736,6 +15831,10 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Chardonnay, Syrah, De-Alcoholized",
     distilleryLocation: "Languedoc-Roussillon, France",
+    seo: {
+      primaryKeyword: "oddbird non alcoholic wine",
+      secondaryKeywords: ["non alcoholic rose", "rose fizzy wine", "dealcoholized wine", "non alcoholic sparkling rose", "alcohol removed wine"],
+    },
   },
   {
     id: 'prod-na-wine-21',
@@ -15760,6 +15859,11 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Cabernet Sauvignon, De-Alcoholized",
     distilleryLocation: "Paso Robles, California",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "saint viviana non alcoholic cabernet sauvignon",
+      secondaryKeywords: ["non alcoholic cabernet sauvignon", "non alcoholic red wine", "best non alcoholic red wine", "alcohol free red wine", "non alcoholic cabernet"],
+    },
   },
   {
     id: 'prod-na-wine-22',
@@ -15784,6 +15888,11 @@ export const PRODUCTS: Product[] = [
     stock: 24,
     caskType: "Sauvignon Blanc, De-Alcoholized",
     distilleryLocation: "Washington State",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "saint viviana non alcoholic sauvignon blanc",
+      secondaryKeywords: ["non alcoholic white wine", "best non alcoholic white wine", "nice non alcoholic wine", "wine without alcohol", "good non alcoholic wine"],
+    },
   },
   {
     id: 'prod-na-wine-23',
@@ -15808,6 +15917,10 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Barbera, De-Alcoholized",
     distilleryLocation: "Sonoma, California",
+    seo: {
+      primaryKeyword: "surely non alcoholic wine",
+      secondaryKeywords: ["non alcoholic rose", "rose fizzy wine", "non alcoholic sparkling rose", "alcohol removed wine"],
+    },
   },
   {
     id: 'prod-na-wine-24',
@@ -15832,6 +15945,14 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Petite Sirah Blend, De-Alcoholized",
     distilleryLocation: "Northern California",
+    // No SEMrush volume for this SKU — confirmed real via WebSearch as genuine product, not volume-backed.
+    seo: {
+      primaryKeyword: "tomorrow cellars non alcoholic red blend",
+      secondaryKeywords: ["non alcoholic red wine", "alcohol free red wine", "best non alcoholic red wine", "non alcoholic wine brands", "non alcoholic red wines"],
+      faqs: [
+        { question: "What's in Tomorrow Cellars' botanical blend?", answer: 'A custom mix of cassis, blueberry, and cacao, developed with a master mixologist and added back after dealcoholization to recreate the wine\'s original depth.' },
+      ],
+    },
   },
 
   // NON-ALCOHOLIC CHAMPAGNE & SPARKLING
