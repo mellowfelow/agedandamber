@@ -182,17 +182,40 @@ This is a **living document**. Every time a new blog post is built (from this po
 
 ---
 
-## BAR ESSENTIALS — 2 of ~6 topics live (biggest unbuilt cluster in the whole project)
+## BAR ESSENTIALS — 2 of ~25 core topics live (biggest unbuilt cluster in the whole project)
 
 ✅ how-to-build-a-home-bar · ✅ best-whiskey-gifts
 
-**New gaps found this pass — all real, all currently zero-content:**
+**Gaps found in the general pass — all real, all currently zero-content:**
 - 🎯 **Whiskey Glasses 101 / Glencairn Glass Guide** (8,100/12 ⚡ — highest volume, lowest KD in the entire bar-accessories cluster)
 - 🎯 **Best Whiskey Decanters** (6,600/22, plus a 2,900/19 and 1,600/17 sub-cluster)
 - 🎯 **Whiskey Stones vs Ice — Which Is Better?** (5,400/11 ⚡)
 - 🎯 **How to Choose a Cocktail Shaker** (22,200/22 — on par with your largest built blog primaries, e.g. best-gin/best-vodka at 22,200 each)
 
-Together these 4 would round out a complete bar-essentials content cluster alongside the 2 already live.
+**New gaps found from the Bitters/Vermouth/Garnishes CSV pass (`keyword-map-bar-essentials-bitters-vermouth.md`):**
+- 🎯 **What Are Cocktail Bitters, and How Do They Actually Work?** (~12,760 combined across 3 phrasings) — foundational pillar page for the whole Bitters hub
+- 🎯 **Does Vermouth Go Bad? How to Store an Opened Bottle** (~2,910 combined) — genuinely low KD, strong practical quick-win cluster
+- 🎯 **What Makes a Martini "Dirty"? Olive Brine, Explained** (~4,500 combined) — ties directly to the Dirty Sue and Filthy olive/brine product pages
+- 🏷️ **Angostura vs. Peychaud's: What's Actually Different?** (~870 combined) — real, recurring comparison, directly supports both product pages
+- 🏷️ **Sweet vs. Dry Vermouth, Explained** (~640 combined) — foundational for the whole vermouth hub
+- 🏷️ **How Many Dashes of Bitters Should You Actually Use?** (720, KD 20) — practical, low-competition quick win
+- 🏷️ **Cocktail Bitters vs. Digestive/Herbal Bitters — Not the Same Thing** — clarifying post; the raw keyword data shows real customer confusion between the two categories
+- 🏷️ **Best Garnishes for Classic Cocktails** (Old Fashioned, Manhattan, Martini) (~1,460 combined) — cross-links cherries, olives, and citrus-garnish content
+- 🏷️ **Luxardo Cherries vs. Regular Maraschino Cherries: Why the Price Gap?** — directly supports the Luxardo product page
+- 🏷️ **What Is Vermouth de Chambéry, and Why Is Dolin the Only One?** — small volume but a genuinely differentiated, PDO-backed brand story
+
+**New gaps found from the Mixers/Cocktail Mixes/Glassware CSV pass (`keyword-map-bar-essentials-mixers-glassware.md`):**
+- 🎯 **Sweet and Sour Mix 101: What's In It and How to Use It** (~11,500 combined) — single largest informational cluster found in this entire Bar Essentials batch
+- 🎯 **Club Soda vs. Tonic Water vs. Seltzer: What's the Difference?** — no single mega-volume row, but the pattern repeats across three separate brand exports (Canada Dry, Fever-Tree, Topo Chico); ties to five stocked SKUs
+- 🎯 **What's the Difference Between Ginger Beer and Ginger Ale?** (~2,610 combined) — site stocks five ginger beers and zero ginger ales, a real disambiguation opportunity
+- 🏷️ **Moscow Mule vs. Dark 'n' Stormy: What's the Real Difference?** — ties to the ginger-beer lineup and Goslings' legally trademarked Dark 'n' Stormy claim
+- 🏷️ **Is Margarita Mix Just for Margaritas?** (~420 combined) — FAQ demand flagged on both Finest Call and Master of Mixes pages
+- 🏷️ **How to Make a Proper Bloody Mary Bar for Brunch** — ties to the four stocked Bloody Mary mixes (Demitri's, McClure's, Mr & Mrs T, Zing Zang)
+- 📎 **"How to Build a Home Bar Starter Kit"** angle (~9,000+ combined: cocktail shaker set, whiskey decanter set, bar shaker set, cocktail accessories) — expand the already-live `how-to-build-a-home-bar` post with this cross-sell cluster rather than building new
+- 📎 Whiskey Stones vs. Ice — reinforces the already-flagged gap above; same well-established gift-category question, ties to the stocked Whiskey Chilling Stones Gift Set
+- 📎 Why Does Whiskey Taste Different in a Glencairn Glass? — expand the flagged Glencairn Glass Guide gap above with this angle; ties to two stocked Glencairn SKUs
+
+Together these would round out a genuinely complete bar-essentials content cluster alongside the 2 already live.
 
 ---
 
@@ -394,7 +417,7 @@ No generic "beer" category export existed this round, so most of the volume belo
 | Cognac | 5 | 3 |
 | Vodka | 1 | 6 |
 | NA Spirits | 1 | 2 |
-| Bar Essentials | 2 | 4 |
+| Bar Essentials | 2 | 23 |
 | Fine Wine | 0 | 28 |
 | Champagne & Sparkling Wine | 0 | 19 |
 | Cider | 0 | 7 |
@@ -405,7 +428,7 @@ No generic "beer" category export existed this round, so most of the volume belo
 | Non-Alcoholic RTD Cocktails | 0 | 11 |
 | RTD & Liqueurs | 0 | 17 |
 | Non-Alcoholic Wine | 0 | 9 |
-| **Total** | **65 live** | **~214 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| **Total** | **65 live** | **~233 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -434,5 +457,7 @@ No generic "beer" category export existed this round, so most of the volume belo
 23. **The Best Ready-to-Drink Margaritas, Ranked** (~12,200 combined) — largest coherent product-type cluster in the RTD dataset
 24. **Best Non-Alcoholic Wine for Every Occasion** (~6,900+ combined) — maps to the whole 24-SKU NA Wine catalog
 25. **Is Non-Alcoholic Wine Safe During Pregnancy?** (~2,300+ combined) — largest cluster in the NA Wine batch
+26. **Sweet and Sour Mix 101: What's In It and How to Use It** (~11,500 combined) — single largest informational cluster found in the entire Bar Essentials batch
+27. **What Are Cocktail Bitters, and How Do They Actually Work?** (~12,760 combined) — foundational pillar page for the whole Bitters hub, zero content today
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.

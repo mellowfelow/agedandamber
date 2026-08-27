@@ -637,7 +637,57 @@ Sourced from `keyword-map-na-wine.md`. Covers all 24 stocked NA Wine SKUs (Red, 
 
 ---
 
-## Updated recommended stocking priority, across all 20 categories
+## Bar Essentials
+
+Sourced from `keyword-map-bar-essentials-bitters-vermouth.md` and `keyword-map-bar-essentials-mixers-glassware.md`. Covers all 52 stocked Bar Essentials SKUs across 6 subcategories (Bitters, Vermouth, Garnishes, Mixers & Syrups, Cocktail Mixes, Glassware & Barware) — the first non-drink-style category processed in this project.
+
+### Missing expressions within brands you already stock
+
+| Brand (in catalog) | Missing expression | Signal | Note |
+|---|---|---|---|
+| **Dolin** (Rouge stocked) | **Dolin Blanc** | CSV-backed, ~2,890 combined | Strongest Part A finding in this category |
+| **Martini & Rossi** (Rosso stocked) | **Martini Bianco** | CSV-backed | Rivals the stocked Rosso's own volume |
+| Angostura (Aromatic + Orange Bitters stocked) | Cocoa Bitters | CSV-backed, ~960 combined | Real, confirmed current SKU |
+| Noilly Prat (Extra Dry stocked) | Ambré, Rouge | confirmed real | Both real, currently-sold expressions |
+| Carpano Antica (stocked) | Carpano Bianco, Carpano Dry, Punt e Mes | confirmed real | Rounds out Carpano's real house range |
+| Mezzetta (1 olive SKU stocked) | Other real olive lines | CSV-backed, ~1,090 combined | |
+| Bittermens (1 flavor stocked) | 4 more real flavors | confirmed real | |
+| Fee Brothers (1 flavor stocked) | Broader real lineup | confirmed real | |
+| Dirty Sue (stocked) | Broader olive lineup | confirmed real | |
+| Filthy (4 SKUs stocked) | Cocktail Onions, Cocktail Picks | confirmed real | |
+| **Finest Call** (partial line stocked) | 9 real unstocked flavors — Bloody Mary, Sweet & Sour, Simple Syrup, Grenadine, Triple Sec, Piña Colada, fruit purées, Old Fashioned Mix, Mojito Mix | confirmed real | Single largest Part A cluster in this category by SKU count |
+| Master of Mixes (partial line stocked) | 10 real unstocked flavors | confirmed real | |
+| Zing Zang (partial line stocked) | Margarita, Michelada, Blazing Bloody Mary | confirmed real | |
+| Fever-Tree (partial line stocked) | Elderflower Tonic, Sparkling Pink Grapefruit, Mediterranean Tonic, Sicilian Lemonade, Blood Orange Ginger Beer | confirmed real, 5 flavors | |
+| Tillen Farms (1 SKU stocked) | Other real cherry lines | confirmed real | |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Primary key (vol, KD) | Note |
+|---|---|---|
+| **Topo Chico Hard Seltzer** | topo chico hard seltzer (9,900, KD 21) | **Largest single gap found in this entire Bar Essentials batch by volume** — the plain sparkling mineral water is a separate, already-considered non-alcoholic product, not conflated here |
+| **Cocchi Vermouth di Torino / Americano** | — | CSV-backed, "strong finding" — respected Italian aromatized-wine house, zero shelf presence despite the stocked-vermouth category |
+| Underberg | underberg (2,400) | CSV-backed digestive bitters |
+| Cinzano | cinzano vermouth (880) | CSV-backed |
+| **Yeti** (cocktail shaker) | yeti cocktail shaker (1,900) | CSV-backed |
+| **Stanley** (cocktail shaker) | stanley cocktail shaker (720) | CSV-backed — "currently a cultural/viral product category" |
+| OXO (cocktail shaker/jigger) | oxo cocktail shaker (480) | CSV-backed |
+| Regan's / Scrappy's / The Bitter Truth | — | confirmed real; well-known craft bitters houses, none stocked |
+| Punt e Mes / Lillet Blanc / Sable & Rosenfeld | — | confirmed real |
+| Stirrings | — | confirmed real; margarita/old-fashioned mix line |
+| Bundaberg Rum | — | confirmed real; same parent brand as the stocked Bundaberg ginger beer |
+| Rose's / Torani | — | confirmed real |
+| Riedel | — | confirmed real; glassware |
+| Coca-Cola Signature Mixers | — | zero-volume this pull, flagged for a dedicated future export |
+| Skinny Mixes / Skinnies | — | confirmed real |
+
+**Checked and excluded:** "Luxardo's own olives" and "Tio Pepe cocktail onions" — both suggested as possible candidates during research briefing, both WebSearch-verified as not real products and dropped rather than force-fit.
+
+**Priority:** Dolin Blanc and Martini Bianco are the clearest same-brand wins — both CSV-backed, both fill a real gap in an already-stocked vermouth line. Topo Chico Hard Seltzer is the standout new-brand pick by raw volume. Cocchi Vermouth di Torino/Americano is the strongest "real, respected brand entirely missing" case.
+
+---
+
+## Updated recommended stocking priority, across all 21 categories
 
 1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
 2. **Pinnacle Whipped Cream** (Vodka) — real demand exceeds the base brand's own keyword pool, only plain base stocked
@@ -670,8 +720,10 @@ Sourced from `keyword-map-na-wine.md`. Covers all 24 stocked NA Wine SKUs (Red, 
 29. **On The Rocks real 9-SKU range** (RTD & Liqueurs) — brand already stocked at 2 of 9 real expressions
 30. **FRE Red Blend** (Non-Alcoholic Wine) — CSV-backed, real Sutter Home SKU, fills a gap in an already-4-SKU-deep line
 31. **Stella Rosa Naturals** (Non-Alcoholic Wine) — 1,000 vol, CSV-backed, strongest new-brand pick in the NA wine batch
-32. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+32. **Dolin Blanc** (Bar Essentials) — CSV-backed, ~2,890 combined, strongest Part A finding in the Bar Essentials batch, brand already stocked
+33. **Topo Chico Hard Seltzer** (Bar Essentials) — CSV-backed, 9,900 vol, largest single gap found in the entire Bar Essentials batch by volume
+34. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
 
 ---
 
-*This document will grow as the remaining category (Bar Essentials) is batch-processed.*
+*Every category with keyword export data has now been batch-processed. This document remains a living reference — update it whenever a listed product is actually stocked (delete its row) or a new export surfaces further gaps.*
