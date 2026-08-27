@@ -364,6 +364,20 @@ No generic "beer" category export existed this round, so most of the volume belo
 
 ---
 
+## NON-ALCOHOLIC WINE — 0 of ~9 core topics live
+
+- 🎯 **Is Non-Alcoholic Wine Safe During Pregnancy?** — ~2,300+/mo, largest informational cluster in this batch
+- 🎯 **Best Non-Alcoholic Wine for Every Occasion (Buying Guide)** — ~6,900+/mo, maps to the whole 24-SKU catalog
+- 🎯 **Does Non-Alcoholic Wine Actually Taste Like Real Wine?** — ~3,400+/mo, addresses the #1 category objection head-on
+- 🏷️ How Is the Alcohol Actually Removed From Wine? (Reverse Osmosis vs. Spinning Cone vs. Vacuum Distillation) — ~1,120+/mo, ties to real, brand-confirmed methods (Ariel=RO, FRE/Giesen/Lautus=spinning cone, Leitz=vacuum distillation)
+- 🏷️ How Is Non-Alcoholic Wine Made? — ~1,090/mo, companion piece to the above
+- 🏷️ Does Non-Alcoholic Wine Have Any Alcohol? The 0.5% Rule Explained — ~520/mo
+- 🏷️ Is Non-Alcoholic Wine Good (or Bad) for You? — ~470/mo, handle with careful, non-medical-advice framing
+- 🏷️ Non-Alcoholic Wine 101: What "Zero Proof," "Alcohol-Removed," and "Dealcoholized" Actually Mean — maps directly onto the site's own product badges
+- 🏷️ Dry January and Non-Alcoholic Wine: A Buyer's Guide — seasonal angle, also ties to real Spanish-language demand ("vino sin alcohol")
+
+---
+
 ## Summary counts
 
 | Category | Live | New gaps identified |
@@ -390,7 +404,8 @@ No generic "beer" category export existed this round, so most of the volume belo
 | Non-Alcoholic Champagne & Sparkling | 0 | 8 |
 | Non-Alcoholic RTD Cocktails | 0 | 11 |
 | RTD & Liqueurs | 0 | 17 |
-| **Total** | **65 live** | **~205 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| Non-Alcoholic Wine | 0 | 9 |
+| **Total** | **65 live** | **~214 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -417,5 +432,7 @@ No generic "beer" category export existed this round, so most of the volume belo
 21. **Aperitif vs. Digestif: What's the Difference and When to Drink Each** (~40,000+ combined) — largest cluster in the RTD & Liqueurs batch
 22. **What Is Triple Sec? Orange Liqueur 101** (~30,000+ combined)
 23. **The Best Ready-to-Drink Margaritas, Ranked** (~12,200 combined) — largest coherent product-type cluster in the RTD dataset
+24. **Best Non-Alcoholic Wine for Every Occasion** (~6,900+ combined) — maps to the whole 24-SKU NA Wine catalog
+25. **Is Non-Alcoholic Wine Safe During Pregnancy?** (~2,300+ combined) — largest cluster in the NA Wine batch
 
 Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.

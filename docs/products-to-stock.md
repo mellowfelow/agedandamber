@@ -1,4 +1,4 @@
-# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine, Cider, Beer, Non-Alcoholic Beer/Cider/Spirits/Champagne/RTD, RTD & Liqueurs)
+# Products to Stock — Master List (Rum, Gin, Cognac, Bourbon, Scotch, Irish, Japanese, Vodka, Rye & Other Whiskey, Tequila & Mezcal, Fine Wine, Champagne & Sparkling Wine, Cider, Beer, Non-Alcoholic Beer/Cider/Spirits/Champagne/RTD/Wine, RTD & Liqueurs)
 
 Consolidated from every "not currently in your catalog" and "missing expression within a brand you already carry" finding across every keyword batch processed so far. This is the running answer to "which products with real search demand should I add to inventory" — every item below carries genuine demand signal (SEMrush-sourced where available, web-research-confirmed and clearly flagged where not). KD = keyword difficulty (lower is easier to rank for). Volume floor applied: 50+; most items here are well above that.
 
@@ -606,7 +606,38 @@ Sourced from `keyword-map-liqueurs.md` and `keyword-map-craft-cocktails.md`. Cov
 
 ---
 
-## Updated recommended stocking priority, across all 19 categories
+## Non-Alcoholic Wine
+
+Sourced from `keyword-map-na-wine.md`. Covers all 24 stocked NA Wine SKUs (Red, White, Rosé). Only category-level exports existed this round — no per-brand data.
+
+### Missing expressions within brands you already stock
+
+| Brand | Missing expression | Signal | Note |
+|---|---|---|---|
+| FRE (Cab, Chardonnay, Merlot, Rosé stocked) | **FRE Red Blend** | fre red blend (260, KD 12) + fre non-alcoholic red blend (210, KD 4) | Both CSV-backed, real Sutter Home SKU |
+| FRE (as above) | FRE Sauvignon Blanc | fre non alcoholic wine (2,900, halo) | Real, widely distributed at Walmart/Amazon/Albertsons |
+| Giesen (Rosé, Pinot Grigio, Red, Sauv Blanc stocked) | Giesen 0% Riesling + Giesen 0% Chardonnay | — | Both real, confirmed current SKUs (Chardonnay added Sept 2024), completing the brand's real 7-SKU 0% lineup |
+| Leitz (Riesling, Rosé stocked) | **Leitz Pinot Noir** (still red) | — | Real, confirmed 100% Pinot Noir still red — would give Leitz its first stocked red |
+| Surely (Rosé stocked) | Surely Cabernet Sauvignon, Sauvignon Blanc, Red Blend | — | All 3 real, confirmed current SKUs (Amazon listings) |
+| Lautus (Sauv Blanc, Savvy Red stocked) | Lautus Chardonnay + Lautus Rosé (still) | — | Both real, confirmed current SKUs |
+| Tomorrow Cellars (Red Blend stocked) | Tomorrow Cellars Rhône Blanc White | — | Real still-white sibling to the stocked red (Amazon "Duo 2 Pack" listing) |
+
+### Brands with real demand, not in catalog at all
+
+| Brand | Primary key (vol, KD) | Note |
+|---|---|---|
+| **Stella Rosa Naturals** | stella rosa non alcoholic wine (1,000, KD 6) | Real 0.3% ABV semi-sweet line, CSV-backed — strongest Part B finding by volume. **Caution:** confirm the alcoholic Stella Rosa isn't already stocked elsewhere before treating as a clean gap |
+| **Zeronimo (Leonis Blend)** | zeronimo leonis blend non alcoholic wine (720, KD 9) | CSV-backed. Austrian family winery, 70+ year-old vines, winner of USA TODAY's 2026 Best Non-Alcoholic Wine |
+| Torres Natureo | — | Real, Familia Torres (Spain), pioneer European dealcoholized-wine program since 2008; investing €6M (2024-2026) in a dedicated NA winery. No US-market CSV volume this pull |
+| McGuigan Zero | — | Real, Hunter Valley Australia, 5-SKU range, 90+ point reviews. No US-market CSV volume this pull |
+
+**Checked and excluded:** Josh Cellars NA (real but sparkling-only, already covered under NA Champagne & Sparkling). TÖST (real but a from-scratch tea/botanical beverage, not a wine — adjacent category, not a fit here).
+
+**Priority:** FRE Red Blend and Leitz Pinot Noir are the clearest same-brand wins (both fill a real gap in an already-stocked, already-successful line). Stella Rosa Naturals and Zeronimo are the strongest new-brand picks, both CSV-backed.
+
+---
+
+## Updated recommended stocking priority, across all 20 categories
 
 1. **Martell Blue Swift** (Cognac) — ~22,000 combined vol, confirmed twice, T1
 2. **Pinnacle Whipped Cream** (Vodka) — real demand exceeds the base brand's own keyword pool, only plain base stocked
@@ -637,8 +668,10 @@ Sourced from `keyword-map-liqueurs.md` and `keyword-map-craft-cocktails.md`. Cov
 27. **Lyre's Classico** (NA Champagne) — ~2,720 combined, strongest new-brand signal in the NA sparkling batch
 28. **BuzzBallz Ready-to-Drink Cocktails** (RTD & Liqueurs) — 1,300 vol, CSV-backed, strongest unstocked-brand finding in the RTD batch
 29. **On The Rocks real 9-SKU range** (RTD & Liqueurs) — brand already stocked at 2 of 9 real expressions
-30. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
+30. **FRE Red Blend** (Non-Alcoholic Wine) — CSV-backed, real Sutter Home SKU, fills a gap in an already-4-SKU-deep line
+31. **Stella Rosa Naturals** (Non-Alcoholic Wine) — 1,000 vol, CSV-backed, strongest new-brand pick in the NA wine batch
+32. Everything else above ~2,000 combined vol / real-confirmed-but-thin is a reasonable second-tier candidate — see per-category tables above.
 
 ---
 
-*This document will grow as remaining categories (Bar Essentials, Non-Alcoholic Wine) are batch-processed.*
+*This document will grow as the remaining category (Bar Essentials) is batch-processed.*
