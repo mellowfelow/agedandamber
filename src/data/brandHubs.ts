@@ -4328,4 +4328,132 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Saint Viviana is a US brand built around a year-long development process involving California and Pacific Northwest winemakers and a master sommelier, starting from high-end base wines specifically so little needs correcting after the alcohol is removed — a Paso Robles Cabernet Sauvignon and a Washington State Sauvignon Blanc.',
     }),
   },
+
+  // ─── BAR ESSENTIALS ───────────────────────────────────────────
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'angostura', brandKeywords: ['Angostura'], name: 'Angostura',
+    seo: brandSeo({
+      brand: 'Angostura', categoryLabel: 'Bitters',
+      titleTag: 'Angostura — Aromatic & Orange Bitters',
+      h1: 'Angostura Bitters — Aromatic & Orange',
+      metaDescription: 'Buy Angostura Bitters online — Aromatic and Orange. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1824 by Dr. Johann Gottlieb Benjamin Siegert, a German-born surgeon in Simón Bolívar\'s army, in the town of Angostura, Venezuela — the family-owned House of Angostura relocated to Trinidad in 1875 amid regional unrest and remains headquartered there today. The exact recipe is a closely guarded secret known to only a handful of people at any time, and the bottle\'s oversized, mismatched label is a genuine 200-year-old production quirk. Aromatic Bitters (44.7% ABV) has been the house\'s core product since 1824; Orange Bitters followed in 2007.',
+      faqs: [
+        { question: 'Is Angostura bitters alcoholic?', answer: 'Yes, notably so — Aromatic Bitters is 44.7% ABV, higher-proof than most spirits, despite being used only a few dashes at a time.' },
+        { question: 'Do Angostura bitters expire or go bad?', answer: 'Effectively no; the high alcohol content preserves it indefinitely, though flavor intensity can mellow slightly over years.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'dolin', brandKeywords: ['Dolin'], name: 'Dolin',
+    seo: brandSeo({
+      brand: 'Dolin', categoryLabel: 'Vermouth',
+      titleTag: 'Dolin — Dry & Rouge Vermouth de Chambéry',
+      h1: 'Dolin Vermouth de Chambéry — Dry & Rouge',
+      metaDescription: 'Buy Dolin Vermouth de Chambéry online — Dry and Rouge. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in 1821 in Chambéry, Savoie, by distiller Joseph Chavasse, who built the house\'s style around real, locally macerated Alpine botanicals rather than pre-made extracts — a production method formalized in 1932 when Vermouth de Chambéry became the only vermouth style in the world to earn a French Protected Designation of Origin (PDO). Now run by the fifth generation of the Sevez family, Dolin is the last remaining producer still making authentic Vermouth de Chambéry.',
+      faqs: [
+        { question: 'What makes Vermouth de Chambéry different from other French vermouth?', answer: 'It\'s the only vermouth with a legal French PDO (since 1932), requiring production in Chambéry itself using real botanicals macerated on-site rather than concentrated extracts.' },
+        { question: 'Is Dolin family-owned?', answer: 'Yes, run by the Sevez family for five generations since 1905, and one of the very few genuinely independent vermouth houses left in France.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'martini-rossi', brandKeywords: ['Martini & Rossi', 'Martini and Rossi'], name: 'Martini & Rossi',
+    seo: brandSeo({
+      brand: 'Martini & Rossi', categoryLabel: 'Vermouth',
+      titleTag: 'Martini & Rossi — Extra Dry & Rosso Vermouth',
+      h1: 'Martini & Rossi Vermouth — Extra Dry & Rosso',
+      metaDescription: 'Buy Martini & Rossi Vermouth online — Extra Dry and Rosso. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Founded in July 1863 in Turin by Alessandro Martini, Teofilo Sola, and Luigi Rossi, Martini & Rossi grew into the world\'s largest-volume vermouth producer. Rossi is credited with creating the original Rosso recipe that still anchors the sweet-vermouth line today. Bacardi Limited acquired Martini & Rossi in 1993, pairing its strong European standing with Bacardi\'s dominant US/Latin American presence.',
+      faqs: [
+        { question: 'Is Martini & Rossi owned by Bacardi?', answer: 'Yes, since 1993; it\'s now part of Bacardi Limited\'s global portfolio alongside its own core rum brand.' },
+        { question: 'What\'s the difference between Martini & Rossi Rosso and Extra Dry?', answer: 'Rosso is the original 1863 sweet, red vermouth recipe (built for a Manhattan or a sweet martini); Extra Dry is the pale, crisp style built for the classic dry martini.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'filthy', brandKeywords: ['Filthy'], name: 'Filthy',
+    seo: brandSeo({
+      brand: 'Filthy', categoryLabel: 'Garnishes',
+      titleTag: 'Filthy — Cocktail Cherries & Olives',
+      h1: 'Filthy Cocktail Garnishes — Cherries & Stuffed Olives',
+      metaDescription: 'Buy Filthy cocktail garnishes online — Black Cherries, Blue Cheese Stuffed Olives, Pimento Olives, and Olive Brine. Direct allocations. Free on $300+.',
+      hook: 'Founded by Daniel Singer, who set out to build a genuinely premium alternative to salad-jar olives and dyed dessert cherries, Filthy has become the industry-standard cocktail-garnish brand — served at leading bars, restaurants, hotels, and even on some airlines. Its olives are naturally cured rather than packed in salt and oil, so they don\'t leave the oily slick on a drink that cheaper jarred olives do.',
+      faqs: [
+        { question: 'What makes Filthy olives different from regular jarred olives?', answer: 'They\'re naturally cured rather than packed in salt brine and oil, so they don\'t leave an oily film on top of a cocktail — a real, brand-stated differentiator.' },
+        { question: 'Does Filthy make cocktail onions too?', answer: 'Yes — the brand\'s full real lineup extends beyond what\'s stocked here to include cocktail onions and other olive varieties.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'fever-tree', brandKeywords: ['Fever-Tree', 'Fever Tree'], name: 'Fever-Tree',
+    seo: brandSeo({
+      brand: 'Fever-Tree', categoryLabel: 'Mixers',
+      titleTag: 'Fever-Tree — Tonic Water & Ginger Beer',
+      h1: 'Fever-Tree — Club Soda, Tonic Water & Ginger Beer',
+      metaDescription: 'Buy Fever-Tree online — Club Soda, Light Tonic, Premium Indian Tonic Water, and Premium Ginger Beer. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Fever-Tree was founded in the UK in 2004 on a simple premise — mixers are half the drink, so they deserve the same care as the spirit — and it\'s credited with essentially inventing the "premium mixer" category. Every stocked line is made with naturally sourced ingredients: real quinine from the Democratic Republic of Congo for the tonics, and a three-ginger blend (Nigerian, Ivory Coast, and Cochin) for the ginger beer.',
+      faqs: [
+        { question: 'What makes Fever-Tree different from regular tonic water?', answer: 'Naturally sourced quinine and no artificial sweeteners in the standard line — the brand\'s own tagline is "If ¾ of your drink is the mixer, mix with the best."' },
+        { question: 'What\'s the difference between Fever-Tree Tonic and Fever-Tree Light Tonic?', answer: 'Light has 44% fewer calories and less sugar, built on the same natural quinine base.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'monin', brandKeywords: ['Monin'], name: 'Monin',
+    seo: brandSeo({
+      brand: 'Monin', categoryLabel: 'Syrups',
+      titleTag: 'Monin — Grenadine, Mojito Mint & Cane Syrup',
+      h1: 'Monin Cocktail Syrups — Grenadine, Mojito Mint & Pure Cane',
+      metaDescription: 'Buy Monin cocktail syrups online — Grenadine, Mojito Mint, and Pure Cane Syrup. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Monin has made flavored syrups in Bourges, France since 1912, and while the brand is best known in coffee shops, its cocktail-syrup line is a genuine bar staple — the same syrups that show up on the back bar at cocktail-forward restaurants.',
+      faqs: [
+        { question: 'Is Monin syrup only for coffee?', answer: 'No — Monin\'s cocktail range (grenadine, mint, cane syrup, and dozens of fruit flavors) is a genuine bar-industry staple, not a coffee-only product.' },
+        { question: 'What is grenadine made of?', answer: 'Pomegranate, not cherry, despite the common assumption.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'liber-co', brandKeywords: ['Liber & Co.', 'Liber and Co'], name: 'Liber & Co.',
+    seo: brandSeo({
+      brand: 'Liber & Co.', categoryLabel: 'Syrups',
+      titleTag: 'Liber & Co. — Orgeat & Passion Fruit Syrup',
+      h1: 'Liber & Co. Cocktail Syrups — Orgeat & Passion Fruit',
+      metaDescription: 'Buy Liber & Co. cocktail syrups online — Orgeat Almond Syrup and Passion Fruit Syrup. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Liber & Co. is a small-batch craft syrup maker built specifically for the modern cocktail-bar market — its Orgeat and Passion Fruit syrups are widely used by bartenders rather than aimed primarily at home-baking or coffee use.',
+      faqs: [
+        { question: 'What is orgeat syrup used for?', answer: 'The essential almond syrup for a Mai Tai; also used broadly in tiki and Japanese-style cocktails.' },
+        { question: 'Is Liber & Co. syrup alcohol-free?', answer: 'Yes, all Liber & Co. syrups are non-alcoholic flavor bases.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'q-mixers', brandKeywords: ['Q Mixers', 'Q Tonic'], name: 'Q Mixers',
+    seo: brandSeo({
+      brand: 'Q Mixers', categoryLabel: 'Mixers',
+      titleTag: 'Q Mixers — Ginger Beer & Tonic Water',
+      h1: 'Q Mixers — Ginger Beer & Indian Tonic Water',
+      metaDescription: 'Buy Q Mixers online — Ginger Beer and Indian Tonic Water. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Q Mixers built its whole positioning around real cane sugar or agave, high carbonation, and noticeably less sweetness than legacy tonic and ginger-beer brands — a direct answer to bartenders who found even the premium-mixer category too sweet for a spirit-forward drink.',
+      faqs: [
+        { question: 'What makes Q Mixers less sweet than other tonic waters?', answer: 'Agave-sweetened rather than cane-sugar-heavy, with markedly higher carbonation — a deliberate, well-documented brand positioning.' },
+        { question: 'Does Q Mixers ginger beer contain alcohol?', answer: 'No.' },
+      ],
+    }),
+  },
+  {
+    categorySlug: 'bar-essentials', hubSlug: 'mr-and-mrs-t', brandKeywords: ['Mr & Mrs T', 'Mr and Mrs T'], name: 'Mr & Mrs T',
+    seo: brandSeo({
+      brand: 'Mr & Mrs T', categoryLabel: 'Cocktail Mixes',
+      titleTag: 'Mr & Mrs T — Bloody Mary & Margarita Mix',
+      h1: 'Mr & Mrs T Cocktail Mixes — Bold & Spicy Bloody Mary & Original Margarita',
+      metaDescription: 'Buy Mr & Mrs T cocktail mixes online — Bold & Spicy Bloody Mary Mix and Original Margarita Mix. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Mr & Mrs T has been a bar and brunch staple for generations — one of the longest-running ready-to-pour mixer brands in the category, currently owned by Mott\'s/Keurig Dr Pepper.',
+      faqs: [
+        { question: 'Is Mr & Mrs T Bloody Mary mix spicy?', answer: 'The Bold & Spicy version is moderately spicy, horseradish-and-pepper forward.' },
+        { question: 'Does Mr & Mrs T margarita mix contain alcohol?', answer: 'No.' },
+      ],
+    }),
+  },
 ];

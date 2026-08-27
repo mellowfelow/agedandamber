@@ -28162,6 +28162,15 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Secret gentian-based recipe, aged since 1824",
     distilleryLocation: "Trinidad and Tobago",
+    seo: {
+      primaryKeyword: "angostura aromatic bitters",
+      secondaryKeywords: ["angostura bitters", "angostura bitters aromatic", "bitters angostura aromatic", "aromatic bitters", "aromatic angostura bitters", "angostura bitters cocktails"],
+      faqs: [
+        { question: "What is Angostura bitters?", answer: "Angostura Aromatic Bitters is a concentrated, gentian-based flavoring extract created in Trinidad in 1824 to a closely guarded family recipe — a few dashes add depth and complexity to cocktails like the Old Fashioned and Manhattan." },
+        { question: "Do Angostura bitters go bad?", answer: "No — the high alcohol content in Angostura bitters means they essentially don't spoil, though the flavor intensity can mellow slightly after many years on the shelf." },
+        { question: "What's the difference between Angostura and Peychaud's bitters?", answer: "Both are gentian-based, but Angostura is warmer and clove-and-cinnamon forward, while Peychaud's is lighter, brighter, and more anise-and-mint forward — the bitters that gives the Sazerac its distinctive character." },
+      ],
+    },
   },
   {
     id: 'prod-baress-02',
@@ -28186,6 +28195,13 @@ export const PRODUCTS: Product[] = [
     stock: 31,
     caskType: "Tropical orange peel, cinnamon, gentian, angelica",
     distilleryLocation: "Trinidad and Tobago",
+    seo: {
+      primaryKeyword: "angostura orange bitters",
+      secondaryKeywords: ["orange bitters", "angostura bitters orange", "what is orange bitters", "what are orange bitters", "angostura bitters vs orange bitters", "orange bitters vs angostura bitters"],
+      faqs: [
+        { question: "What are orange bitters used for?", answer: "Orange bitters add bright, aromatic citrus lift to cocktails — they're the classic finishing touch in a Martini, a Corpse Reviver No. 2, and many champagne cocktails." },
+      ],
+    },
   },
   {
     id: 'prod-baress-03',
@@ -28210,6 +28226,14 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Cacao nibs, chile pepper, allspice, cinnamon",
     distilleryLocation: "New York, NY",
+    seo: {
+      // "bittermens" and "xocolatl mole bitters" confirmed real via WebSearch, not volume-backed — no "bittermens" or "xocolatl" volume surfaced in either bitters export; closest real-volume match is "mole bitters."
+      primaryKeyword: "mole bitters",
+      secondaryKeywords: ["chocolate bitters", "cocktail bitters", "bittermens", "xocolatl mole bitters", "aromatic bitters"],
+      faqs: [
+        { question: "What are mole bitters?", answer: "Mole bitters are inspired by Mexican mole sauce, built on cacao, cinnamon, chile, and warm baking spices — Bittermens' flagship flavor since the company's 2007 founding by Avery and Janet Glasser." },
+      ],
+    },
   },
   {
     id: 'prod-baress-04',
@@ -28234,6 +28258,11 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Slow-brewed real ginger, naturally carbonated",
     distilleryLocation: "Bundaberg, Australia",
+    seo: {
+      primaryKeyword: "bundaberg ginger beer",
+      secondaryKeywords: ["bundaberg", "bundaberg ginger", "ginger beer bundaberg", "bundaberg ginger ale", "bundaberg ginger beer near me", "australian ginger beer"],
+      faqs: [{ question: "Is Bundaberg ginger beer alcoholic?", answer: "No — Bundaberg Ginger Beer is a brewed, naturally carbonated soft drink, not an alcoholic ginger beer." }],
+    },
   },
   {
     id: 'prod-baress-05',
@@ -28258,6 +28287,11 @@ export const PRODUCTS: Product[] = [
     stock: 43,
     caskType: "Carbonated water with mineral salts",
     distilleryLocation: "United States",
+    seo: {
+      primaryKeyword: "canada dry club soda",
+      secondaryKeywords: ["club soda canada dry", "canada dry club soda ingredients", "is canada dry a club soda", "canada dry club soda nutrition facts", "schweppes vs canada dry club soda"],
+      faqs: [{ question: "Does Canada Dry club soda have caffeine?", answer: "No — Canada Dry Club Soda is caffeine-free." }],
+    },
   },
   {
     id: 'prod-baress-06',
@@ -28282,6 +28316,13 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "1786 original recipe, wine macerated with vanilla and botanicals",
     distilleryLocation: "Turin, Italy",
+    seo: {
+      primaryKeyword: "carpano antica formula sweet vermouth",
+      secondaryKeywords: ["carpano antica", "carpano antica vermouth", "carpano antica formula vermouth", "carpano antica formula", "antica formula vermouth", "carpano vermouth"],
+      faqs: [
+        { question: "What is Carpano Antica Formula?", answer: "Carpano Antica Formula is a sweet vermouth invented in 1786 in Turin by Antonio Benedetto Carpano — widely credited as the world's first sweet vermouth — and preserved today by Fratelli Branca Distillerie." },
+      ],
+    },
   },
   {
     id: 'prod-baress-07',
@@ -28306,6 +28347,12 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Concentrated horseradish, celery, and spice blend",
     distilleryLocation: "Chicago, IL",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "demitri's bloody mary seasoning",
+      secondaryKeywords: ["bloody mary mix near me", "sour mix for cocktails", "finest call bloody mary mix"],
+      faqs: [{ question: "What's the difference between Bloody Mary mix and Bloody Mary seasoning?", answer: "Demitri's is a concentrated seasoning blend meant to be added to tomato juice, not a ready-to-pour mix like Zing Zang or Mr & Mrs T." }],
+    },
   },
   {
     id: 'prod-baress-08',
@@ -28330,6 +28377,14 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Made from real brined olives, no artificial flavoring",
     distilleryLocation: "Australia",
+    seo: {
+      // "dirty sue olive juice" confirmed real via WebSearch, not volume-backed — no "dirty sue" rows surfaced in any export pulled; Dirty Sue is a Los Angeles-based, twice-filtered olive brine made from olives sourced in southern Spain.
+      primaryKeyword: "dirty sue olive juice",
+      secondaryKeywords: ["martini olives", "good olives for martinis", "dry martini with olives", "olive in martini", "dirty martini vermouth"],
+      faqs: [
+        { question: "What is olive brine/juice used for in a martini?", answer: "A dash to a full splash of olive brine or juice turns a standard martini \"dirty,\" adding salinity and a cloudy finish — the more you add, the dirtier (and saltier) the drink." },
+      ],
+    },
   },
   {
     id: 'prod-baress-09',
@@ -28354,6 +28409,10 @@ export const PRODUCTS: Product[] = [
     stock: 45,
     caskType: "Alpine botanicals macerated in white wine, AOC Chambéry",
     distilleryLocation: "Chambéry, France",
+    seo: {
+      primaryKeyword: "dolin dry vermouth",
+      secondaryKeywords: ["dolin vermouth", "dolin vermouth de chambery dry", "dolin dry vermouth de chambery", "dolin dry", "dolin", "dolin vermouth dry"],
+    },
   },
   {
     id: 'prod-baress-10',
@@ -28378,6 +28437,10 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Alpine botanicals, caramel and spice, AOC Chambéry",
     distilleryLocation: "Chambéry, France",
+    seo: {
+      primaryKeyword: "dolin rouge",
+      secondaryKeywords: ["dolin rouge vermouth", "vermouth rouge dolin", "dolin sweet vermouth", "dolin vermouth rouge", "dolin rouge sweet vermouth"],
+    },
   },
   {
     id: 'prod-baress-11',
@@ -28402,6 +28465,10 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Toasted black walnut extract, family recipe since 1863",
     distilleryLocation: "Rochester, NY",
+    seo: {
+      primaryKeyword: "black walnut bitters",
+      secondaryKeywords: ["walnut bitters", "fee brothers bitters", "cocktail bitters", "cardamom bitters", "aromatic bitters"],
+    },
   },
   {
     id: 'prod-baress-12',
@@ -28426,6 +28493,10 @@ export const PRODUCTS: Product[] = [
     stock: 29,
     caskType: "Cotswolds spring water, naturally carbonated",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "fever tree club soda",
+      secondaryKeywords: ["fever-tree club soda", "fever tree premium club soda", "fever-tree premium club soda", "fever tree soda water", "fever tree soda", "fever tree mixers"],
+    },
   },
   {
     id: 'prod-baress-13',
@@ -28450,6 +28521,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Natural quinine, reduced sugar formula",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "fever tree light tonic water",
+      secondaryKeywords: ["fever-tree light tonic water", "fever tree light tonic", "fever-tree diet tonic water", "fever tree tonic", "fever tree tonic water"],
+      faqs: [{ question: "What's the difference between Fever-Tree tonic and Fever-Tree Light Tonic?", answer: "Fever-Tree Light Tonic has 44% fewer calories and less sugar than the classic Indian Tonic, while keeping the same natural quinine base." }],
+    },
   },
   {
     id: 'prod-baress-14',
@@ -28474,6 +28550,14 @@ export const PRODUCTS: Product[] = [
     stock: 48,
     caskType: "Blend of Nigerian, Ivory Coast, and Cochin ginger",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "fever tree ginger beer",
+      secondaryKeywords: ["fever-tree ginger beer", "fever tree premium ginger beer", "fever-tree premium ginger beer", "ginger beer fever tree", "fever tree ginger ale"],
+      faqs: [
+        { question: "Does Fever-Tree ginger beer have alcohol?", answer: "No — Fever-Tree Premium Ginger Beer is a non-alcoholic mixer." },
+        { question: "Is Fever-Tree ginger beer gluten free?", answer: "Yes, Fever-Tree Premium Ginger Beer is gluten free." },
+      ],
+    },
   },
   {
     id: 'prod-baress-15',
@@ -28498,6 +28582,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Natural quinine, natural citrus oils, cane sugar",
     distilleryLocation: "London, England",
+    seo: {
+      primaryKeyword: "fever tree tonic water",
+      secondaryKeywords: ["fever-tree tonic water", "fever tree indian tonic water", "fever tree tonic", "fever tree premium indian tonic water", "indian tonic water fever tree", "tonic water fever tree cans"],
+      faqs: [{ question: "What makes Fever-Tree tonic water different from regular tonic?", answer: "Fever-Tree uses naturally sourced quinine from the Congo and no artificial sweeteners — the brand credited with starting the \"premium mixer\" category." }],
+    },
   },
   {
     id: 'prod-baress-16',
@@ -28522,6 +28611,11 @@ export const PRODUCTS: Product[] = [
     stock: 39,
     caskType: "Whole dark cherries, natural syrup, no artificial dyes",
     distilleryLocation: "United States",
+    seo: {
+      // "filthy black cherries" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "filthy black cherries",
+      secondaryKeywords: ["cocktail cherries", "dark cherries for cocktails", "maraschino cherries in liqueur", "what are cocktail cherries", "filthy martini"],
+    },
   },
   {
     id: 'prod-baress-17',
@@ -28546,6 +28640,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Naturally cured queen olives, hand-stuffed Wisconsin blue cheese",
     distilleryLocation: "United States",
+    seo: {
+      // "filthy blue cheese stuffed olives" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "filthy blue cheese stuffed olives",
+      secondaryKeywords: ["mezzetta blue cheese stuffed olives", "stuffed olives", "martini olives", "good olives for martinis", "blue cheese olives"],
+    },
   },
   {
     id: 'prod-baress-18',
@@ -28570,6 +28669,14 @@ export const PRODUCTS: Product[] = [
     stock: 19,
     caskType: "Genuine pressed olive brine, non-GMO",
     distilleryLocation: "United States",
+    seo: {
+      // "filthy olive brine" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "filthy olive brine",
+      secondaryKeywords: ["olive brine", "martini olives", "olive in martini", "good olives for martinis", "dry martini with olives"],
+      faqs: [
+        { question: "What is olive brine used for in a martini?", answer: "A splash of olive brine turns a standard martini \"dirty,\" adding salinity and a cloudy finish — brine and olive juice are largely interchangeable terms for the same use." },
+      ],
+    },
   },
   {
     id: 'prod-baress-19',
@@ -28594,6 +28701,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Naturally cured queen olives, stuffed with pimento pepper",
     distilleryLocation: "United States",
+    seo: {
+      // "filthy pimento olives" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "filthy pimento olives",
+      secondaryKeywords: ["pimento olives", "martini olives", "dry martini with olives", "olive in martini"],
+    },
   },
   {
     id: 'prod-baress-20',
@@ -28618,6 +28730,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Real lime juice, cane sugar, ready-to-pour",
     distilleryLocation: "United States",
+    seo: {
+      primaryKeyword: "finest call margarita mix",
+      secondaryKeywords: ["finest call", "finest call mixers", "finest call syrup", "finest call grenadine", "finest call lime juice"],
+      faqs: [{ question: "Is Finest Call a bar-industry brand?", answer: "Yes — Finest Call is a professional, on-premise cocktail-mixer line widely used by bars and restaurants, not primarily a retail-grocery brand, a real differentiator versus Mr & Mrs T or Zing Zang." }],
+    },
   },
   {
     id: 'prod-baress-21',
@@ -28642,6 +28759,14 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Bermudian recipe, official Dark 'n' Stormy partner",
     distilleryLocation: "Bermuda",
+    seo: {
+      primaryKeyword: "goslings ginger beer",
+      secondaryKeywords: ["gosling ginger beer", "gosling's ginger beer", "goslings stormy ginger beer", "gosling's ginger beer cans", "fever tree vs goslings ginger beer"],
+      faqs: [
+        { question: "Is Goslings ginger beer gluten free?", answer: "Yes, Goslings Ginger Beer is gluten free." },
+        { question: "What makes a real Dark 'n' Stormy?", answer: "Goslings legally trademarked the Dark 'n' Stormy name and requires its own Black Seal rum plus its own ginger beer for the \"official\" version of the cocktail." },
+      ],
+    },
   },
   {
     id: 'prod-baress-22',
@@ -28666,6 +28791,12 @@ export const PRODUCTS: Product[] = [
     stock: 15,
     caskType: "California almonds, orange blossom water, small-batch made",
     distilleryLocation: "Austin, TX",
+    seo: {
+      // "liber & co orgeat" confirmed real via WebSearch, not volume-backed — closest real-volume match is the category term "orgeat syrup."
+      primaryKeyword: "orgeat syrup",
+      secondaryKeywords: ["finest call orgeat", "finest call orgeat syrup", "fruit syrup", "flavored syrup"],
+      faqs: [{ question: "What is orgeat syrup used for?", answer: "Orgeat is the essential almond syrup for a Mai Tai, and it's also used broadly in tiki drinks, Japanese-style cocktails, and the Falernum family." }],
+    },
   },
   {
     id: 'prod-baress-23',
@@ -28690,6 +28821,11 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Real passion fruit juice, small-batch made",
     distilleryLocation: "Austin, TX",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "liber & co passion fruit syrup",
+      secondaryKeywords: ["fruit syrup", "flavored syrup", "monin passion fruit syrup", "flavored syrups for drinks"],
+    },
   },
   {
     id: 'prod-baress-24',
@@ -28714,6 +28850,15 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Marasca cherries candied in their own syrup, since 1905",
     distilleryLocation: "Torreglia, Italy",
+    seo: {
+      primaryKeyword: "luxardo maraschino cherries",
+      secondaryKeywords: ["luxardo cherries", "luxardo cherry", "luxardo original maraschino cherries", "luxardo cocktail cherries", "dark maraschino cherries", "what are cocktail cherries"],
+      faqs: [
+        { question: "What are Luxardo cherries?", answer: "Luxardo cherries are whole Marasca cherries candied in Italy in their own rich syrup, using Luxardo's proprietary 200-year-old process — a different product from the bright-red dyed maraschino cherries found in most supermarkets." },
+        { question: "Why are Luxardo cherries so expensive?", answer: "Luxardo cherries are made from real Marasca cherries in Italy using a slow, proprietary candying process passed down over 200 years, rather than the artificially dyed, corn-syrup-packed cherries typical of mass-market brands." },
+        { question: "Do Luxardo cherries have alcohol?", answer: "No, the cherries themselves are non-alcoholic — that's distinct from Luxardo's separately-sold Maraschino Liqueur." },
+      ],
+    },
   },
   {
     id: 'prod-baress-25',
@@ -28738,6 +28883,13 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "White wine base, botanical blend, since 1863",
     distilleryLocation: "Turin, Italy",
+    seo: {
+      primaryKeyword: "martini and rossi extra dry vermouth",
+      secondaryKeywords: ["martini rossi extra dry vermouth", "martini & rossi extra dry vermouth", "martini and rossi extra dry", "martini rossi extra dry", "martini and rossi vermouth dry", "martini rossi vermouth dry"],
+      faqs: [
+        { question: "What's the best vermouth for a martini?", answer: "Martini & Rossi Extra Dry is one of the most widely poured dry vermouths for a classic Martini — its light, crisp, herbal profile is built specifically to pair with gin or vodka without overpowering the spirit." },
+      ],
+    },
   },
   {
     id: 'prod-baress-26',
@@ -28762,6 +28914,13 @@ export const PRODUCTS: Product[] = [
     stock: 11,
     caskType: "Red wine base, caramel and spice botanicals",
     distilleryLocation: "Turin, Italy",
+    seo: {
+      primaryKeyword: "martini & rossi rosso",
+      secondaryKeywords: ["martini and rossi sweet vermouth", "martini rossi sweet vermouth", "martini rosso vermouth", "martini and rossi rosso sweet vermouth", "martini rossi rosso sweet vermouth", "martini rosso"],
+      faqs: [
+        { question: "Is Martini Rosso a sweet vermouth?", answer: "Yes — Rosso is Martini & Rossi's sweet, red vermouth style, based on the original 1863 recipe created by co-founder Luigi Rossi, and a staple in Manhattans and Negronis." },
+      ],
+    },
   },
   {
     id: 'prod-baress-27',
@@ -28786,6 +28945,11 @@ export const PRODUCTS: Product[] = [
     stock: 40,
     caskType: "Real fruit juice, no artificial sweeteners",
     distilleryLocation: "United States",
+    seo: {
+      primaryKeyword: "master of mixes margarita mix",
+      secondaryKeywords: ["master of mixes margarita", "master of mixes", "master of mixes margarita mixer", "margarita mixer", "margarita mixers", "master margarita mix"],
+      faqs: [{ question: "Is Master of Mixes margarita mix pre-mixed with alcohol?", answer: "No — Master of Mixes Margarita Mix is non-alcoholic, so you add your own tequila." }],
+    },
   },
   {
     id: 'prod-baress-28',
@@ -28810,6 +28974,12 @@ export const PRODUCTS: Product[] = [
     stock: 35,
     caskType: "Real horseradish, garlic, and pickle brine",
     distilleryLocation: "Detroit, MI",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "mcclure's bloody mary mix",
+      secondaryKeywords: ["bloody mary mix near me", "sour mix for drinks", "finest call bloody mary mix"],
+      faqs: [{ question: "What makes McClure's Bloody Mary mix different?", answer: "McClure's builds its Bloody Mary Mix with real pickle brine and horseradish from a family pickling company, a genuine, differentiating brand fact." }],
+    },
   },
   {
     id: 'prod-baress-29',
@@ -28834,6 +29004,10 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Spanish queen olives, brine-cured since 1935",
     distilleryLocation: "Napa Valley, CA",
+    seo: {
+      primaryKeyword: "mezzetta olives",
+      secondaryKeywords: ["mezzetta", "jarred olives", "jar of olives", "mezzetta martini olives", "mezzetta stuffed olives"],
+    },
   },
   {
     id: 'prod-baress-30',
@@ -28858,6 +29032,11 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Natural pomegranate flavoring, vibrant red color",
     distilleryLocation: "Bourges, France",
+    seo: {
+      primaryKeyword: "monin grenadine syrup",
+      secondaryKeywords: ["monin syrup", "monin", "monin syrups", "finest call grenadine", "master of mixes grenadine syrup"],
+      faqs: [{ question: "What is grenadine made of?", answer: "Grenadine is a pomegranate-based syrup, not cherry-flavored as many assume." }],
+    },
   },
   {
     id: 'prod-baress-31',
@@ -28882,6 +29061,11 @@ export const PRODUCTS: Product[] = [
     stock: 13,
     caskType: "Real mint extract, natural flavoring",
     distilleryLocation: "Bourges, France",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "monin mojito mint syrup",
+      secondaryKeywords: ["monin syrup", "monin flavors", "monin syrup flavors", "fruit syrup"],
+    },
   },
   {
     id: 'prod-baress-32',
@@ -28906,6 +29090,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Pure cane sugar, ready-to-pour simple syrup",
     distilleryLocation: "Bourges, France",
+    seo: {
+      primaryKeyword: "monin pure cane syrup",
+      secondaryKeywords: ["monin syrup", "flavoring syrup", "syrup for drinks", "drink syrup", "syrups for drinks"],
+      faqs: [{ question: "What's the difference between simple syrup and pure cane syrup?", answer: "They're functionally the same — dissolved sugar for cocktails — \"pure cane\" simply signals the sugar source." }],
+    },
   },
   {
     id: 'prod-baress-33',
@@ -28930,6 +29119,11 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Vine-ripened tomato juice, horseradish and spice blend",
     distilleryLocation: "United States",
+    seo: {
+      primaryKeyword: "mr and mrs t bloody mary mix bold and spicy",
+      secondaryKeywords: ["mr and mrs t bloody mary mix", "mr & mrs t bloody mary mix", "mr t bloody mary mix", "mrs t bloody mary mix", "bloody mary mix mr & mrs t"],
+      faqs: [{ question: "Is Mr & Mrs T Bold & Spicy actually spicy?", answer: "It's moderately spicy — horseradish and pepper forward, milder than a dedicated hot-sauce-forward mix." }],
+    },
   },
   {
     id: 'prod-baress-34',
@@ -28954,6 +29148,10 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Real lime juice, ready-to-pour formula",
     distilleryLocation: "United States",
+    seo: {
+      primaryKeyword: "mr and mrs t margarita mix",
+      secondaryKeywords: ["mr mrs t margarita mix", "mr & mrs t margarita mix", "mrs t margarita mix", "margarita mix mr and mrs t's", "mr and mrs t"],
+    },
   },
   {
     id: 'prod-baress-35',
@@ -28978,6 +29176,10 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Oak-aged wine base, coastal maturation, since 1813",
     distilleryLocation: "Marseillan, France",
+    seo: {
+      primaryKeyword: "noilly prat dry vermouth",
+      secondaryKeywords: ["noilly prat vermouth", "noilly prat extra dry vermouth", "dry vermouth", "dolin dry vermouth vs noilly prat", "vermouth de chambery"],
+    },
   },
   {
     id: 'prod-baress-36',
@@ -29002,6 +29204,14 @@ export const PRODUCTS: Product[] = [
     stock: 37,
     caskType: "Gentian and anise-forward recipe, since the 1830s",
     distilleryLocation: "New Orleans, LA",
+    seo: {
+      primaryKeyword: "peychaud's bitters",
+      secondaryKeywords: ["peychaud bitters", "peychauds bitters", "peychaud's bitters vs angostura", "peychaud's bitters vs angostura bitters", "what is peychaud's bitters", "what is peychaud bitters"],
+      faqs: [
+        { question: "What is Peychaud's Bitters?", answer: "Peychaud's Bitters was created in New Orleans between 1849 and 1857 by Creole apothecary Antoine Amédée Peychaud — a gentian-based bitters like Angostura, but anise-and-mint forward, and the bitters that gave the Sazerac its name and character." },
+        { question: "What's the difference between Peychaud's and Angostura bitters?", answer: "Both are gentian-based, but Peychaud's is lighter, brighter, and more anise-and-mint forward, while Angostura is warmer and clove-and-cinnamon forward." },
+      ],
+    },
   },
   {
     id: 'prod-baress-37',
@@ -29026,6 +29236,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Pure carbonated water, no added flavor or sodium",
     distilleryLocation: "Worcester, MA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed (Polar Beverages, Worcester MA, since 1882 — real, well-known brand).
+      primaryKeyword: "polar seltzer",
+      secondaryKeywords: ["topo chico seltzer", "sparkling mixer", "water mixers"],
+    },
   },
   {
     id: 'prod-baress-38',
@@ -29050,6 +29265,11 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Real ginger extract, organic agave, highly carbonated",
     distilleryLocation: "New York, NY",
+    seo: {
+      // Confirmed real via WebSearch, largely not volume-backed.
+      primaryKeyword: "q mixers ginger beer",
+      secondaryKeywords: ["ginger beer fever tree", "single serve mixers"],
+    },
   },
   {
     id: 'prod-baress-39',
@@ -29074,6 +29294,11 @@ export const PRODUCTS: Product[] = [
     stock: 26,
     caskType: "Real quinine, organic agave, highly carbonated",
     distilleryLocation: "New York, NY",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "q mixers indian tonic water",
+      secondaryKeywords: ["fever tree tonic water", "single serve mixers"],
+    },
   },
   {
     id: 'prod-baress-40',
@@ -29098,6 +29323,11 @@ export const PRODUCTS: Product[] = [
     stock: 17,
     caskType: "Real fresh ginger root, extra-strength brew",
     distilleryLocation: "Los Angeles, CA",
+    seo: {
+      primaryKeyword: "reeds extra ginger beer",
+      secondaryKeywords: ["reed's ginger beer", "reeds ginger beer", "reeds craft ginger beer", "reeds strongest ginger beer", "real ginger ale"],
+      faqs: [{ question: "Is Reed's Extra stronger than regular Reed's ginger beer?", answer: "Yes — Extra uses a heavier dose of fresh ginger root than Reed's standard line." }],
+    },
   },
   {
     id: 'prod-baress-41',
@@ -29122,6 +29352,12 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Real coconut purée, no artificial flavoring",
     distilleryLocation: "United States",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed (Reàl/Cutwater's fruit purée line is real and widely distributed to bars).
+      primaryKeyword: "real coconut cream",
+      secondaryKeywords: ["fruit syrup", "fruit syrup for drinks", "strawberry puree for drinks"],
+      faqs: [{ question: "What's the difference between coconut cream and coconut milk for cocktails?", answer: "Coconut cream is thicker and sweeter, the correct choice for a proper Piña Colada, while coconut milk is thinner and lighter." }],
+    },
   },
   {
     id: 'prod-baress-42',
@@ -29146,6 +29382,12 @@ export const PRODUCTS: Product[] = [
     stock: 21,
     caskType: "Quinine-based formula, classic recipe since 1783",
     distilleryLocation: "United States",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed; brand demand is real but only surfaced as comparison rows.
+      primaryKeyword: "schweppes tonic water",
+      secondaryKeywords: ["schweppes vs canada dry club soda", "best schweppes mixers for parties"],
+      faqs: [{ question: "How long has Schweppes made tonic water?", answer: "Schweppes is credited with commercializing tonic water in 1870, well before Fever-Tree or Q Mixers existed — a genuine \"original tonic\" positioning." }],
+    },
   },
   {
     id: 'prod-baress-43',
@@ -29170,6 +29412,11 @@ export const PRODUCTS: Product[] = [
     stock: 47,
     caskType: "Whole cherries, natural syrup, small-batch packed",
     distilleryLocation: "Woodinville, WA",
+    seo: {
+      // "tillen farms bada bing cherries" confirmed real via WebSearch, not volume-backed — no Tillen Farms rows surfaced in either garnish/bitters export; Tillen Farms has made premium cocktail garnishes since 2004, sourcing cherries from Oregon's Willamette Valley.
+      primaryKeyword: "tillen farms bada bing cherries",
+      secondaryKeywords: ["bada bing cherries", "cocktail cherries", "dark cherries for cocktails", "what are cocktail cherries"],
+    },
   },
   {
     id: 'prod-baress-44',
@@ -29194,6 +29441,14 @@ export const PRODUCTS: Product[] = [
     stock: 30,
     caskType: "Naturally carbonated spring water, sourced since 1895",
     distilleryLocation: "Nuevo León, Mexico",
+    seo: {
+      primaryKeyword: "topo chico mineral water",
+      secondaryKeywords: ["topo chico sparkling water", "mexican sparkling water", "topo chico agua mineral", "is topo chico good for you", "mexican mineral water"],
+      faqs: [
+        { question: "What is Topo Chico?", answer: "Topo Chico is naturally carbonated mineral water from Nuevo León, Mexico, bottled since 1895." },
+        { question: "Is Topo Chico good for you?", answer: "Yes, in moderation — it's naturally carbonated mineral water with no added sugar, calories, or sodium." },
+      ],
+    },
   },
   {
     id: 'prod-baress-45',
@@ -29218,6 +29473,11 @@ export const PRODUCTS: Product[] = [
     stock: 46,
     caskType: "Organic lime juice, organic agave nectar",
     distilleryLocation: "San Francisco, CA",
+    seo: {
+      primaryKeyword: "tres agaves organic margarita mix",
+      secondaryKeywords: ["tres agaves margarita mix", "tres agaves", "agave margarita mix", "tres agaves organic lime margarita mix", "tres agaves tequila"],
+      faqs: [{ question: "Is Tres Agaves margarita mix really organic?", answer: "Yes — Tres Agaves Organic Margarita mix is USDA-certified organic, made with organic lime juice and organic agave nectar." }],
+    },
   },
   {
     id: 'prod-baress-46',
@@ -29242,6 +29502,11 @@ export const PRODUCTS: Product[] = [
     stock: 41,
     caskType: "Cherries steeped in bourbon-inspired syrup, oak and caramel notes",
     distilleryLocation: "Louisville, KY",
+    seo: {
+      // "woodford reserve bourbon cherries" confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "woodford reserve bourbon cherries",
+      secondaryKeywords: ["bourbon cherries", "cocktail cherries", "luxardo cherries", "old fashioned with luxardo cherries"],
+    },
   },
   {
     id: 'prod-baress-47',
@@ -29266,6 +29531,14 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Vine-ripened tomato juice, proprietary spice blend",
     distilleryLocation: "Woodridge, IL",
+    seo: {
+      primaryKeyword: "zing zang bloody mary mix",
+      secondaryKeywords: ["zing zang", "bloody mary mix zing zang", "zing zang bloody mary", "zing zang non-alcoholic bloody mary mix", "zing zang bloody mary with vodka"],
+      faqs: [
+        { question: "What's the best vodka for a Zing Zang Bloody Mary?", answer: "Any clean, neutral vodka works well — Zing Zang's bold tomato-and-spice base is built to pair with vodka generically rather than needing a specific brand." },
+        { question: "Does Zing Zang Bloody Mary mix have alcohol?", answer: "No, it's a non-alcoholic mix — you add your own vodka." },
+      ],
+    },
   },
 
   // NEW ARRIVALS — researched batch, added for upcoming product photography
@@ -29720,6 +29993,12 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Hand-blown glass with embedded copper bullet",
     distilleryLocation: "Wisconsin, USA",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed (BenShot is a real Wisconsin glassblowing company known for embedding real bullets/shot casings in glassware).
+      primaryKeyword: "whiskey decanter",
+      secondaryKeywords: ["crystal whiskey decanter", "custom whiskey decanter", "personalized whiskey decanter", "glass whiskey decanter"],
+      faqs: [{ question: "Is the bullet in a BenShot decanter real?", answer: "Yes — a genuine, lead-free solid copper bullet, hand-blown into the glass base." }],
+    },
   },
   {
     id: 'prod-baress-new-02',
@@ -29738,6 +30017,11 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Stainless steel and bamboo",
     distilleryLocation: "N/A",
+    seo: {
+      primaryKeyword: "cocktail shaker set",
+      secondaryKeywords: ["bar shaker set", "boston shaker set", "bartender shaker set", "best cocktail shaker set", "martini shaker set"],
+      faqs: [{ question: "How do you use a cocktail shaker?", answer: "Fill with ice, add your ingredients, seal, shake vigorously for about 10-15 seconds, then strain into a glass — a straightforward, first-time-friendly bartending skill." }],
+    },
   },
   {
     id: 'prod-baress-new-03',
@@ -29756,6 +30040,11 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Cut crystal",
     distilleryLocation: "East Kilbride, Scotland",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "glencairn decanter",
+      secondaryKeywords: ["whiskey decanter set", "crystal decanter set", "personalized decanter set", "decanter and glass set", "crystal whiskey decanter set"],
+    },
   },
   {
     id: 'prod-baress-new-04',
@@ -29774,6 +30063,12 @@ export const PRODUCTS: Product[] = [
     stock: 7,
     caskType: "Cut crystal",
     distilleryLocation: "Scotland",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed.
+      primaryKeyword: "glencairn glass",
+      secondaryKeywords: ["crystal decanter", "personalized whiskey glassware", "whiskey glasses and decanter"],
+      faqs: [{ question: "What is a Glencairn glass for?", answer: "The Glencairn glass is the industry-standard whisky-tasting glass, designed in 2001 specifically to concentrate whisky aroma for nosing and tasting." }],
+    },
   },
   {
     id: 'prod-baress-new-05',
@@ -29792,6 +30087,12 @@ export const PRODUCTS: Product[] = [
     stock: 25,
     caskType: "Granite",
     distilleryLocation: "N/A",
+    seo: {
+      // Confirmed real via WebSearch, not volume-backed (whiskey/whisky stones are a well-established, widely sold gift-category product).
+      primaryKeyword: "whiskey stones",
+      secondaryKeywords: ["gift set", "personalized decanter set"],
+      faqs: [{ question: "Do whiskey stones actually chill whiskey without watering it down?", answer: "Yes — that's the entire point. Reusable granite stones chill a pour without melting or diluting it the way ice does." }],
+    },
   },
 
   // COMING SOON — awaiting product photography, listed now for catalog/shot-list purposes
