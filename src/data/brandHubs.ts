@@ -984,6 +984,50 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
+    categorySlug: 'irish-whiskey', hubSlug: 'dingle', brandKeywords: ['Dingle'], name: 'Dingle',
+    seo: brandSeo({
+      brand: 'Dingle', categoryLabel: 'Irish Whiskey',
+      titleTag: 'Dingle — Ireland\'s Westernmost Distillery',
+      h1: 'Dingle Irish Whiskey — Single Malt Allocations',
+      metaDescription: 'Buy Dingle Single Malt online — triple-distilled whiskey from Ireland\'s remote Dingle Peninsula. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Dingle Distillery sits on Ireland\'s remote Dingle Peninsula, the country\'s westernmost distillery, triple-distilling and fully maturing its single malt across bourbon and Pedro Ximénez sherry casks.',
+      faqs: [{ question: 'Where is Dingle whiskey made?', answer: "Dingle is distilled on Ireland's Dingle Peninsula in County Kerry, the westernmost point of the country." }],
+    }),
+  },
+  {
+    categorySlug: 'irish-whiskey', hubSlug: 'kilbeggan', brandKeywords: ['Kilbeggan'], name: 'Kilbeggan',
+    seo: brandSeo({
+      brand: 'Kilbeggan', categoryLabel: 'Irish Whiskey',
+      titleTag: 'Kilbeggan — Historic Blended Irish Whiskey',
+      h1: 'Kilbeggan Irish Whiskey — Allocations',
+      metaDescription: 'Buy Kilbeggan online — a budget-accessible blend from a distillery site licensed in 1757, one of Ireland\'s oldest. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Kilbeggan takes its name from a County Westmeath distillery site licensed in 1757, one of the oldest in Ireland, now blended into an easy-drinking, entry-priced whiskey.',
+      faqs: [{ question: 'How old is the Kilbeggan distillery site?', answer: 'The Kilbeggan distillery site in County Westmeath was licensed in 1757, making it one of the oldest in Ireland.' }],
+    }),
+  },
+  {
+    categorySlug: 'irish-whiskey', hubSlug: 'method-and-madness', brandKeywords: ['Method and Madness', 'Method & Madness'], name: 'Method and Madness',
+    seo: brandSeo({
+      brand: 'Method and Madness', categoryLabel: 'Irish Whiskey',
+      titleTag: 'Method and Madness — Experimental Midleton Whiskey',
+      h1: 'Method and Madness Irish Whiskey — Allocations',
+      metaDescription: 'Buy Method and Madness online — Midleton Distillery\'s experimental line, using unconventional cask finishes. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Method and Madness is Midleton Distillery\'s experimental line, encouraging its distillers to try unconventional cask types like French chestnut rarely used elsewhere in whiskey maturation.',
+      faqs: [{ question: 'Who makes Method and Madness whiskey?', answer: 'Method and Madness is produced by Midleton Distillery in County Cork, the same distillery behind Jameson and Redbreast, as an experimental line.' }],
+    }),
+  },
+  {
+    categorySlug: 'irish-whiskey', hubSlug: 'writers-tears', brandKeywords: ["Writers' Tears", 'Writers Tears'], name: "Writers' Tears",
+    seo: brandSeo({
+      brand: "Writers' Tears", categoryLabel: 'Irish Whiskey',
+      titleTag: "Writers' Tears — Copper Pot Irish Whiskey",
+      h1: "Writers' Tears Irish Whiskey — Allocations",
+      metaDescription: "Buy Writers' Tears online — a Copper Pot blend of pot still and malt whiskey, including limited Marsala cask finishes. Direct allocations at Aged & Amber.",
+      hook: "Writers' Tears blends pot still and malt whiskey into its signature Copper Pot style, with limited-edition releases finished in unconventional casks like Sicilian Florio Marsala.",
+      faqs: [{ question: "What does Writers' Tears mean?", answer: "The name references Ireland's literary tradition and the whiskey's approachable, well-rounded character." }],
+    }),
+  },
+  {
     categorySlug: 'rtd-liqueurs', hubSlug: 'coole-swan', brandKeywords: ['Coole Swan'], name: 'Coole Swan',
     seo: brandSeo({
       brand: 'Coole Swan', categoryLabel: 'Irish Cream Liqueur', titleTag: 'Coole Swan — Premium Irish Cream Liqueur',

@@ -53,30 +53,12 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Irish
 
-Sourced from real SEMrush data (`keyword-map-irish-v2.md`).
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Spot range | **Red Spot** | red spot whiskey (confirmed real, ~$235) | red spot 15 year† · red spot price† · buy red spot whiskey† · red spot vs green spot† | Was actively named on your hub's planned copy before this build corrected it to only Green/Yellow/Blue. **Highest-priority item in the whole Irish category.** |
-| Powers | Gold Label | powers gold label (confirmed real, likely Powers' highest-volume search term) | powers gold label price† · buy powers gold label† · powers gold vs john's lane† | Entry blended expression, not stocked |
-| Jameson | Caskmates | jameson caskmates (confirmed real, currently sold, $30-40) | jameson caskmates ipa† · jameson caskmates stout† · jameson caskmates price† · buy jameson caskmates† | |
-| Teeling | Single Grain | teeling single grain (confirmed real, ~$40-50) | teeling single grain price† · buy teeling single grain† · teeling single grain vs small batch† | |
-| Connemara | Cask Strength | connemara cask strength (confirmed real, steady demand) | connemara cask strength price† · buy connemara cask strength† | |
-| Tullamore D.E.W. | 18 Year | tullamore dew 18 year (320, KD 6) | tullamore dew 18 price† · buy tullamore dew 18† · tullamore dew 18 vs 12† | |
-
-### Brands with real demand, not in catalog at all
+✅ **Mostly stocked** (2026-08-28) — Red Spot 15 Year, Powers Gold Label, Jameson Caskmates IPA, Teeling Single Grain, Connemara Cask Strength, Tullamore D.E.W. 18 Year, Writers' Tears (Copper Pot Florio), Kilbeggan, Method and Madness, and Dingle Single Malt are all now live in `products.ts` — with 4 new brand hubs (Dingle, Kilbeggan, Method and Madness, Writers' Tears; the rest already had hubs). Still open:
 
 | Brand | Primary key | Support keys | Note |
 |---|---|---|---|
-| Writers' Tears | writers tears irish whiskey† | writers tears copper pot† · writers tears price† · buy writers tears† | Confirmed real (category-page LSI) |
-| Kilbeggan | kilbeggan irish whiskey† | kilbeggan single malt (real)† · kilbeggan price† · buy kilbeggan† | Thin data — budget-accessible ~$24-31 |
-| Method and Madness | method and madness irish whiskey† | method and madness single pot still† · method and madness price† | Confirmed real (single-pot-still subcategory keyword data) |
-| Dingle, Roe & Co | dingle single malt† / roe & co† | dingle price† · roe and co price† · buy dingle whiskey† · buy roe and co† | Real per web research, not found in the SEMrush data — lower confidence |
-| Waterford | waterford whiskey† | waterford price† · buy waterford whiskey† | Real cult following, but mid-acquisition (receivership → new owner, April 2026) — **watch, don't stock yet** |
-
-**Priority:** Red Spot is the clearest "just go get it" case in this whole project.
+| Roe & Co | roe & co† | roe and co price† · buy roe and co† | Real per web research, not found in the SEMrush data — lower confidence |
+| Waterford | waterford whiskey† | waterford price† · buy waterford whiskey† | Real cult following, but mid-acquisition (receivership → new owner, April 2026) — **watch, don't stock yet, ownership situation unresolved as of this pass** |
 
 ---
 
