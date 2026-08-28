@@ -89,66 +89,9 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Tequila & Mezcal
 
-Sourced from `MASTER_SEO_IMPLEMENTATION.md` Section 8 + `product-gaps-batch5.md`, cross-checked against `products.ts` (46 tequila + 17 mezcal SKUs stocked), WebSearch-verified where no SEMrush data existed.
+✅ **Fully stocked** (2026-08-28) — all 56 items identified in this pass are now live in `products.ts`, spanning every gap and new-brand candidate: Don Julio (Rosado, Primavera), Patrón (Extra Añejo, Gran Patrón Piedra, Gran Patrón Platinum, Roca Patrón Silver), Herradura (Ultra, Legend), José Cuervo Tradicional, Casamigos Mezcal, Clase Azul (Plata, Añejo, Gold, Mezcal Guerrero), Del Maguey (Tobalá, San Luis del Río, Santo Domingo Albarradas, Minero), Teremana Añejo, El Tesoro (Añejo, Extra Añejo), Espolòn Cristalino, Casa Dragones Joven, plus new brands Milagro, Olmeca Altos, Corralejo, Maestro Dobel, Astral, Dulce Vida, Suerte, Siete Leguas (Blanco, Reposado, Añejo), Tapatío, Volcán de Mi Tierra (Blanco, Reposado), Cabo Wabo (Blanco, Reposado), DeLeón (Blanco, Añejo), Avión, Padre Azul (Silver, Reposado, Añejo), Alipús (San Juan, San Andrés), Los Danzantes, Wahaka, Rey Campero, Fidencio, Marca Negra, Real Minero (Pechuga, Sierrudo), Sombra (Joven, Reposado), and Yuu Baal — with 21 new brand hubs. This is the single largest batch processed in the entire product-import project. No open gaps remain in this category from this pass.
 
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Don Julio | Rosado | confirmed real via WebSearch | don julio rosado price† · don julio rosado review† · buy don julio rosado† · don julio rosado vs reposado† | Ruby Port-cask-finished reposado, gifting/visual appeal |
-| Don Julio | Primavera | don julio primavera (2,900, KD 17) | don julio primavera price† · buy don julio primavera† · don julio primavera review† · don julio primavera vs reposado† | Seasonal orange-wine-cask reposado — already a validated keyword in the project's own docs |
-| Patrón | Extra Añejo | patron extra anejo (2,400, KD 19) | patron extra anejo price† · buy patron extra anejo† · patron extra anejo review† · patron extra anejo vs anejo† | Core-range 3-year extra añejo, distinct from the stocked Gran Patrón Burdeos |
-| Patrón | Gran Patrón Piedra | gran patron piedra (1,300, KD 14) | gran patron piedra price† · buy gran patron piedra† · gran patron piedra vs burdeos† | Tahona-only extra añejo, same ultra-premium tier as stocked Burdeos |
-| Patrón | Gran Patrón Platinum | gran patron platinum (1,600, KD 15) | gran patron platinum price† · buy gran patron platinum† · gran patron platinum vs burdeos† | Triple-distilled silver in hand-blown decanter |
-| Patrón | Roca Patrón Silver | patron roca (590, KD 16) | roca patron silver† · roca patron reposado† · roca patron price† · buy roca patron† | Tahona stone-crushed sub-line, distinct from Gran Patrón |
-| Herradura | Ultra | confirmed real via WebSearch | herradura ultra price† · herradura ultra review† · herradura ultra vs suprema† · buy herradura ultra† | Crystal-clear filtered añejo (cristalino-style) |
-| Herradura | Legend | confirmed real via WebSearch | herradura legend price† · herradura legend review† · herradura legend anejo† · buy herradura legend† | Ultra-premium añejo, Double Gold SFWSC 2023 |
-| José Cuervo | Tradicional (Silver/Reposado/Cristalino) | confirmed real via WebSearch | jose cuervo tradicional reposado† · jose cuervo tradicional silver† · jose cuervo tradicional price† · jose cuervo tradicional review† | Big gap — numbered-bottle mid-tier line sits between the stocked entry-level Especial and top-tier Reserva de la Familia |
-| Casamigos | Mezcal Joven | casamigos mezcal (3,600, KD 18) | casamigos mezcal price† · buy casamigos mezcal† · casamigos mezcal review† | Cross-sell: brand's own mezcal, not stocked despite stocking 3 Casamigos tequilas |
-| Clase Azul | Plata | clase azul plata (720, KD 14) | clase azul plata price† · buy clase azul plata† · clase azul plata vs reposado† | Entry-point blanco in the ceramic-decanter family |
-| Clase Azul | Añejo (Edición Indígena-Mazahua) | clase azul anejo (3,600, KD 21) | clase azul anejo price† · buy clase azul anejo† · clase azul anejo vs ultra† | Site jumps Reposado straight to Ultra Extra Añejo, skipping this tier |
-| Clase Azul | Gold | clase azul gold (2,400, KD 20) | clase azul gold price† · buy clase azul gold† · clase azul gold vs ultra† | Joven blend of Plata + Reposado + 8-year extra añejo |
-| Clase Azul | Mezcal (Durango/Guerrero/San Luis Potosí) | confirmed real via WebSearch | clase azul mezcal price† · buy clase azul mezcal† · clase azul mezcal san luis potosi† | Same cross-sell logic as Casamigos Mezcal |
-| Del Maguey | Tobalá | del maguey tobala (720, KD 14) | del maguey tobala price† · buy del maguey tobala† · del maguey tobala vs chichicapa† | Wild-agave flagship rarity, one of the brand's best-known SKUs |
-| Del Maguey | San Luis del Río | confirmed real via WebSearch | del maguey san luis del rio price† · buy del maguey san luis del rio† · del maguey san luis del rio review† | Single-village mezcal, frequently requested |
-| Del Maguey | Santo Domingo Albarradas | confirmed real via WebSearch | santo domingo albarradas price† · buy del maguey albarradas† · del maguey albarradas review† | Floral/citrus espadín, top-3 seller per retailer listings |
-| Del Maguey | Minero (Santa Catarina Minas) | confirmed real via WebSearch | del maguey minero price† · buy del maguey minero† · del maguey minero review† | Clay-pot-distilled, distinct production style from stocked SKUs |
-| Teremana | Añejo | confirmed real via WebSearch | teremana anejo price† · buy teremana anejo† · teremana anejo vs reposado† | Dwayne Johnson brand's 3rd core expression — site stocks only Blanco + Reposado |
-| El Tesoro | Añejo | confirmed real via WebSearch | el tesoro anejo price† · buy el tesoro anejo† · el tesoro anejo vs extra anejo† | Standard core-range tier skipped between stocked Reposado and Extra Añejo |
-| Espolòn | Cristalino | confirmed real via WebSearch | espolon cristalino price† · buy espolon cristalino† · espolon cristalino vs anejo† | Charcoal-filtered añejo/extra añejo blend — would also strengthen a future cristalino subcategory page |
-| Casa Dragones | Joven | confirmed real via WebSearch | casa dragones joven price† · buy casa dragones joven† · casa dragones joven review† | Brand's actual flagship/original release (96pts Wine Enthusiast) — site stocks Añejo Barrel Blend and Blanco but not the more famous original |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key | Support keys | Note |
-|---|---|---|---|
-| **Milagro** | milagro tequila† | milagro tequila price† · buy milagro tequila† · milagro reposado† · milagro silver† · milagro anejo† | ~1M cases, fastest-growing reposado in the US — sits just below Don Julio/Clase Azul, no celebrity angle |
-| **Olmeca Altos** | olmeca altos tequila† | olmeca altos price† · buy olmeca altos† · olmeca altos plata† · olmeca altos reposado† | 1.3M cases 2023, +12.3% growth — bartender-favorite value 100% agave |
-| Corralejo | corralejo tequila† | corralejo tequila price† · buy corralejo tequila† · corralejo reposado† · corralejo anejo† | ~$30, historic 1996 Hacienda brand, ~70% of sales in the US |
-| Maestro Dobel | maestro dobel diamante† | maestro dobel price† · buy maestro dobel† · dobel diamante review† · dobel tequila near me† | Beckmann family (Cuervo owners), category-inventing "world's first cristalino tequila" |
-| Astral | astral tequila† | astral tequila price† · buy astral tequila† · astral blanco tequila† · astral tequila margarita† | Single-estate organic blue agave, margarita-forward positioning |
-| Dulce Vida | dulce vida tequila† | dulce vida tequila price† · buy dulce vida tequila† · dulce vida organic tequila† | ~$25-35, Austin-based organic brand, value/organic niche |
-| Suerte | suerte tequila† | suerte tequila price† · buy suerte tequila† · suerte tequila blanco† · suerte tequila reposado† | Award-winning tahona-crushed, additive-free — fits alongside stocked Fortaleza/G4 |
-| Siete Leguas | siete leguas tequila† | siete leguas tequila price† · buy siete leguas† · siete leguas blanco† · siete leguas reposado† | Historic additive-free tahona-tradition brand, highly respected among enthusiasts |
-| Tapatío | tapatio tequila† | tapatio tequila price† · buy tapatio tequila† · tapatio blanco† · tapatio anejo† | ~$25-35, cult-classic bartender favorite, same Camarena family lineage as stocked El Tesoro/Fortaleza/G4 |
-| Volcán de Mi Tierra | volcan de mi tierra tequila† | volcan de mi tierra price† · buy volcan de mi tierra† · volcan blanco tequila† · volcan x.a. tequila† | Clooney & Gerber's second, LVMH-backed venture — same founders as stocked Casamigos, strong cross-sell |
-| Cabo Wabo | cabo wabo tequila† | cabo wabo tequila price† · buy cabo wabo tequila† · cabo wabo reposado† · cabo wabo anejo† | ~$25-40, Sammy Hagar's original 1996 celebrity tequila, arguably the category's OG |
-| DeLeón | deleon tequila† | deleon tequila price† · buy deleon tequila† · deleon blanco tequila† · deleon anejo† | Prestige tier, Diageo/Diddy joint venture (now Diageo sole-owned) — **flag: recent litigation/controversy is a brand-reputation consideration** |
-| Avión | avion tequila† | avion tequila price† · buy avion tequila† · avion silver tequila† · avion reposado† | Mainstream premium, Pernod Ricard-owned, born from an HBO Entourage plotline |
-| Padre Azul | padre azul tequila† | padre azul tequila price† · buy padre azul tequila† · padre azul reposado† | Ultra-premium/luxury, Austrian-founded, distinctive skull-motif bottle, smaller cult niche |
-| Alipús | alipus mezcal† | alipus mezcal price† · buy alipus mezcal† · alipus san andres† · alipus san baltazar† | Top-10 best-selling/trending mezcal (US bar surveys), Los Danzantes-owned village-mezcal marketplace |
-| Los Danzantes | los danzantes mezcal† | los danzantes mezcal price† · buy los danzantes mezcal† · los danzantes reposado† · los danzantes joven† | Top-10 bestselling/trending, pioneering 1997 Oaxaca brand, Emperador acquired 60% stake 2025 |
-| Wahaka | wahaka mezcal† | wahaka mezcal price† · buy wahaka mezcal† · wahaka espadin† | Award-winning, broad varietal range including experimental "Vino de Mezcal" series |
-| Rey Campero | rey campero mezcal† | rey campero mezcal price† · buy rey campero† · rey campero mexicano† · rey campero tobasiche† | Family-run Southern Highlands producer, 12 varietals, enthusiast/collector reputation |
-| Fidencio | fidencio mezcal† | fidencio mezcal price† · buy fidencio mezcal† · fidencio clasico† · fidencio tobala† | 4th-generation Santiago Matatlán mezcalero, 9 varietals including Sin Humo and Pechuga |
-| Marca Negra | marca negra mezcal† | marca negra mezcal price† · buy marca negra† · marca negra sierra negra† · marca negra espadin† | US market since 2011, wild/cultivated agave range, rotating limited batches for collectors |
-| Real Minero | real minero mezcal† | real minero mezcal price† · buy real minero† · real minero pechuga† · real minero tobasiche† | Top-tier prestige — "considered by many one of the world's finest mezcal producers" |
-| Sombra | sombra mezcal† | sombra mezcal price† · buy sombra mezcal† · sombra mezcal joven† · sombra mezcal cocktails† | Accessible/mixing tier, intensely smoky, joven-only, popular bar-menu staple |
-| Yuu Baal | yuu baal mezcal† | yuu baal mezcal price† · buy yuu baal† · yuu baal espadin† · yuu baal anejo† | Oaxacan producer collective with barrel-aged Reposado/Añejo — differentiator vs. mostly-joven stocked mezcal |
-
-**Checked and excluded:** El Padrino tequila (real brand, small footprint, no meaningful search-volume signal — lower priority). "Los Amantes" mezcal (no distinct, verifiable current brand found under this exact name).
-
-**Priority:** José Cuervo Tradicional is the standout expression gap — it fills the entire missing middle tier of the brand you already anchor the category with. Volcán de Mi Tierra and Cabo Wabo are the strongest new-brand cases for a "celebrity tequila" content/stocking angle alongside the already-stocked 818/Cincoro/Lobos 1707.
+**Checked and excluded:** El Padrino tequila (real brand, small footprint, no meaningful search-volume signal — lower priority, no image sourced). "Los Amantes" mezcal (no distinct, verifiable current brand found under this exact name).
 
 ---
 
