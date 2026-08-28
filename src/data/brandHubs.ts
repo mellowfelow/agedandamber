@@ -450,6 +450,39 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Frank August Small Batch is bottled at a robust 100 proof from a small, hand-selected batch of Kentucky straight bourbon barrels — a craft-positioned release with limited distribution that delivers more intensity and structure than standard-proof small batch bourbons.',
     }),
   },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'henry-mckenna', brandKeywords: ['Henry McKenna'], name: 'Henry McKenna',
+    seo: brandSeo({
+      brand: 'Henry McKenna', categoryLabel: 'Bourbon',
+      titleTag: 'Henry McKenna — 10 Year Bottled-in-Bond',
+      h1: 'Henry McKenna Bourbon — 10 Year Single Barrel, Allocations',
+      metaDescription: 'Buy Henry McKenna 10 Year online — Heaven Hill\'s bottled-in-bond single barrel, Best in Show Whiskey at the 2019 SFWSC. Direct allocations at Aged & Amber.',
+      hook: 'Henry McKenna 10 Year won Best in Show Whiskey at the 2019 San Francisco World Spirits Competition — a rare feat for a bottled-in-bond bourbon that regularly retails under $70, made by Heaven Hill in Bardstown.',
+      faqs: [{ question: 'Did Henry McKenna win an award?', answer: 'Yes — Henry McKenna 10 Year Bottled-in-Bond won Best in Show Whiskey at the 2019 San Francisco World Spirits Competition.' }],
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'very-old-barton', brandKeywords: ['Very Old Barton'], name: 'Very Old Barton',
+    seo: brandSeo({
+      brand: 'Very Old Barton', categoryLabel: 'Bourbon',
+      titleTag: 'Very Old Barton — Bottled-in-Bond Budget Bourbon',
+      h1: 'Very Old Barton Bourbon — Bottled-in-Bond Allocations',
+      metaDescription: 'Buy Very Old Barton online — a budget-priced bottled-in-bond bourbon named a Whisky Advocate Best Buy. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Very Old Barton is bottled in bond at 100 proof from Barton 1792 Distillery and has been named a Best Buy Whiskey of the Year by Whisky Advocate, consistently over-delivering for its price.',
+      faqs: [{ question: 'Is Very Old Barton a good bourbon?', answer: 'Very Old Barton is widely considered one of the best-value bourbons on the market — Whisky Advocate has named it a Best Buy Whiskey of the Year.' }],
+    }),
+  },
+  {
+    categorySlug: 'bourbon-whiskey', hubSlug: 'willett', brandKeywords: ['Willett'], name: 'Willett',
+    seo: brandSeo({
+      brand: 'Willett', categoryLabel: 'Bourbon',
+      titleTag: 'Willett — Pot Still Reserve Bourbon',
+      h1: 'Willett Bourbon — Pot Still Reserve, Allocations',
+      metaDescription: 'Buy Willett Pot Still Reserve online — small batch bourbon in the brand\'s signature pot-still-shaped bottle. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Willett Pot Still Reserve is sourced and blended by the Kulsveen family's Willett Distillery, bottled in the brand's distinctive pot-still-shaped decanter and carrying strong collector and social-media interest.",
+      faqs: [{ question: 'Why is Willett bottled in a pot-still-shaped bottle?', answer: "It's a signature packaging choice for the Willett Distillery, distinguishing the brand's bottles on the shelf." }],
+    }),
+  },
 
   // ─── SCOTCH ───────────────────────────────────────────
   {

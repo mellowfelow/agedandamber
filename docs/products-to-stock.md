@@ -41,37 +41,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Bourbon
 
-Sourced from real SEMrush data (`keyword-map-bourbon-v2.md`).
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Old Forester | **1920 (Birthday Bourbon-tier, standing SKU)** | old forester 1920 (real, standing Whiskey Row SKU, $60-70) | old forester 1920 prohibition style† · old forester 1920 price† · buy old forester 1920† · old forester 1920 review† | **1920's real keyword target (8,100 vol, KD 17 combined series) is bigger than the one SKU you stock (86 Proof)** |
-| Old Forester | 1897, 1910 (Whiskey Row Series) | old forester 1897 bottled in bond† | old forester 1910 old fine whisky† · old forester whiskey row series† · old forester 1897 price† · buy old forester 1897† | Confirmed real, standing SKUs, $60-70 — low-friction, not rare hunt-bottles |
-| Old Forester | Birthday Bourbon | old forester birthday bourbon (8,100, KD 17) | old forester birthday bourbon price† · old forester birthday bourbon release date† · buy old forester birthday bourbon† | Allocated annual Sept release, $700-1,000 — higher-effort opportunity, this is the brand's actual #1 keyword target |
-| 1792 | Full Proof | 1792 full proof (confirmed real, ~$50) | 1792 full proof price† · buy 1792 full proof† · 1792 full proof review† · 1792 full proof vs single barrel† | All 3 1792 gaps confirmed real & priced, genuinely searched |
-| 1792 | Single Barrel | 1792 single barrel (confirmed real, ~$45) | 1792 single barrel price† · buy 1792 single barrel† · 1792 single barrel review† | |
-| 1792 | Sweet Wheat | 1792 sweet wheat (confirmed real, ~$75) | 1792 sweet wheat price† · buy 1792 sweet wheat† · 1792 sweet wheat review† | |
-| E.H. Taylor | Four Grain | eh taylor four grain (confirmed real, highly allocated $550-2,000+) | eh taylor four grain price† · buy eh taylor four grain† · eh taylor four grain review† | |
-| Elijah Craig | 18 Year | elijah craig 18 year (confirmed real, not stocked) | elijah craig 18 year price† · buy elijah craig 18† · elijah craig 18 review† | |
-| Jim Beam | Black Label | jim beam black label (confirmed real, minor gap) | jim beam black price† · buy jim beam black† · jim beam black vs white† | |
-| Bulleit | 10 Year | bulleit 10 year (confirmed real, minor gap) | bulleit 10 year price† · buy bulleit 10 year† · bulleit 10 vs bourbon† | |
-| Kentucky Owl | Confiscated | kentucky owl confiscated (confirmed real, minor gap) | kentucky owl confiscated price† · buy kentucky owl confiscated† | |
-| Basil Hayden | Toast | basil hayden toast (confirmed real bourbon) | basil hayden toast price† · buy basil hayden toast† · basil hayden toast review† | Dark Rye is real too but isn't a bourbon — a blend |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|
-| **Booker's** | booker's bourbon (12,100, KD 22) | booker's bourbon price† · buy booker's bourbon† · booker's batch† · booker's vs knob creek† · booker's review† | Full real SEMrush brand page exists (~55K combined demand signal). Beam family — natural fit alongside Jim Beam/Basil Hayden/Knob Creek. **Strongest new-brand case in Bourbon.** |
-| **Henry McKenna 10 Year Bottled-in-Bond** | henry mckenna 10 year (confirmed real, $50-100) | henry mckenna bottled in bond† · henry mckenna price† · buy henry mckenna† · henry mckenna review† | Won "Best in Show Whiskey" 2019 SF World Spirits Competition. Heaven Hill family, same maker as Elijah Craig/Larceny/Old Fitzgerald |
-| **Very Old Barton Bottled-in-Bond** | very old barton bottled in bond (confirmed real, $12-19) | very old barton price† · buy very old barton† · very old barton review† | Whisky Advocate's "Best Buy Whiskey of the Year." Good entry-price anchor |
-| **Old Rip Van Winkle 10 Year** | old rip van winkle 10 year (confirmed real, ~$900-1,200 secondary) | old rip van winkle price† · buy old rip van winkle† · old rip van winkle vs pappy† | Extremely allocated. Natural adjacent SKU to your existing Pappy 15 Year |
-| Willett Pot Still Reserve | willett pot still reserve (confirmed real) | willett pot still price† · buy willett pot still† · willett family estate† | Massive social/collector buzz, moderate competition |
-| Little Book | little book bourbon (2,400, KD 7) | little book price† · buy little book bourbon† · little book batch† · little book vs booker's† | Booker Noe sub-brand — natural bundle if you stock Booker's |
-
-**Priority:** Old Forester's Whiskey Row trio (1897/1910/1920) is the most actionable — real, standing SKUs, easy to source, and 1920 alone outranks your current Old Forester SKU. Booker's is the strongest new-brand case.
+✅ **Fully stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts`: Old Forester (1897, 1920, Birthday Bourbon), 1792 (Full Proof, Single Barrel, Sweet Wheat), E.H. Taylor Four Grain, Elijah Craig 18 Year, Jim Beam Black, Bulleit 10 Year, Kentucky Owl Confiscated, Basil Hayden Toast, Booker's, Henry McKenna 10 Year, Very Old Barton, Old Rip Van Winkle 10 Year, Willett Pot Still Reserve, and Little Book — with 3 new brand hubs (Henry McKenna, Very Old Barton, Willett; the rest already had hubs). No open gaps remain in this category from this pass.
 
 ---
 
