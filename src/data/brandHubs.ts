@@ -4771,6 +4771,50 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'cider', hubSlug: 'bold-rock', brandKeywords: ['Bold Rock'], name: 'Bold Rock',
+    seo: brandSeo({
+      brand: 'Bold Rock', categoryLabel: 'Hard Cider',
+      titleTag: 'Bold Rock — America\'s Largest Independent Cidery',
+      h1: 'Bold Rock Hard Cider — Allocations',
+      metaDescription: 'Buy Bold Rock online — America\'s largest independently-owned cidery, 800,000+ cases a year. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Bold Rock is America's largest independently-owned cidery, producing over 800,000 cases a year from its Blue Ridge Mountains base in Virginia.",
+      faqs: [{ question: 'Is Bold Rock independently owned?', answer: 'Yes — Bold Rock is America\'s largest independently-owned cidery.' }],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'magners', brandKeywords: ['Magners'], name: 'Magners',
+    seo: brandSeo({
+      brand: 'Magners', categoryLabel: 'Irish Cider',
+      titleTag: 'Magners — Traditional Irish Cider',
+      h1: 'Magners Irish Cider — Allocations',
+      metaDescription: "Buy Magners online — a real, well-known Irish cider and Strongbow's direct rival. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: 'Magners is a real, widely known Irish cider brand, traditionally served over ice.',
+      faqs: [{ question: 'How is Magners traditionally served?', answer: 'Magners is traditionally served over ice, a serving style the brand popularized.' }],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'original-sin', brandKeywords: ['Original Sin'], name: 'Original Sin',
+    seo: brandSeo({
+      brand: 'Original Sin', categoryLabel: 'Hard Cider',
+      titleTag: 'Original Sin — Black Widow & Dry Cider',
+      h1: 'Original Sin Cider — Black Widow Allocations',
+      metaDescription: "Buy Original Sin online — Black Widow, the brand's own real best-selling blackberry flagship. Direct allocations at Aged & Amber. Free shipping on $300+.",
+      hook: "Black Widow is Original Sin's real, best-selling flagship blend — a blackberry-infused cider that outsells the brand's Dry cider.",
+      faqs: [{ question: 'What is Original Sin\'s best-selling cider?', answer: "Black Widow, a blackberry-infused blend, is the brand's actual best-selling flagship." }],
+    }),
+  },
+  {
+    categorySlug: 'cider', hubSlug: 'schilling-cider', brandKeywords: ['Schilling Cider', 'Schilling'], name: 'Schilling Cider',
+    seo: brandSeo({
+      brand: 'Schilling Cider', categoryLabel: 'Hard Cider',
+      titleTag: 'Schilling Cider — Seattle\'s Largest Craft-Cider House',
+      h1: 'Schilling Cider — Allocations',
+      metaDescription: 'Buy Schilling Cider online — a Seattle-based brand running the nation\'s largest craft-cider-selection cider house. Direct allocations at Aged & Amber.',
+      hook: "Schilling Cider is based in Seattle and runs the nation's largest craft-cider-selection cider house.",
+      faqs: [{ question: 'Where is Schilling Cider from?', answer: 'Schilling Cider is based in Seattle, Washington.' }],
+    }),
+  },
 
   // ─── NON-ALCOHOLIC BEER & CIDER ───────────────────────────────────────────
   {

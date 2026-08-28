@@ -111,19 +111,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Cider
 
-Sourced from `keyword-map-cider.md`. Covers all 19 stocked Hard Cider SKUs.
-
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Original Sin (Dry stocked) | **Original Sin Black Widow** (blackberry) | original sin black widow cider (1,300, KD 4) | black widow cider (1,900, KD 9) · original sin black widow (260, KD 2) | **~3,500+ combined — Original Sin's own actual best-selling flagship, not stocked at all** |
-| Downeast (Aloha Friday, Blackberry stocked) | **Downeast Original Blend** | downeast original blend (210, KD 4) | downeast original cider (170, KD 3) | Downeast's real flagship/best-seller, entirely unstocked |
-| Downeast (as above) | Pumpkin Blend / Winter Blend (seasonal) | downeast cider pumpkin (590, KD 6) | downeast cider winter blend (390, KD 10) | ~1,820 combined, obvious seasonal-SKU gap |
-| ACE (Apple, Mango, Pineapple stocked) | **ACE Pear Cider** | ace pear cider (1,300, KD 5) | ace perry cider (1,000, KD 8) | ~2,700+ combined |
-| **Bold Rock Hard Cider** | new brand | bold rock cider (5,400, KD 26) | — | America's largest independently-owned cidery (800,000+ cases/yr) — strongest new-brand signal in this batch |
-| Magners | new brand | magners cider (3,600, KD 27) | — | Real, well-known Irish cider, Strongbow's direct rival |
-| Schilling Cider | new brand | schilling cider (4,400, KD 18) | — | Seattle-based, runs the nation's largest craft-cider-selection cider house |
-
-**Priority:** Original Sin Black Widow and Downeast Original Blend are both cases of a brand's real flagship sitting entirely unstocked while a lesser SKU is carried — easiest wins in this category.
+✅ **Fully stocked** (2026-08-28) — Original Sin Black Widow, Downeast (Original Blend + Pumpkin Blend), ACE Pear, Bold Rock (Variety Pack + Virginia Apple + Imperial Cider), Magners, and Schilling Cider (Imperial Mango + Local Legend + Variety Pack) are all now live in `products.ts` — with 4 new brand hubs (Bold Rock, Magners, Original Sin, Schilling Cider). No open gaps remain in this category from this pass.
 
 ---
 
