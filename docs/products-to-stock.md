@@ -160,41 +160,7 @@ Sourced from real SEMrush data (`keyword-map-japanese-v2.md`).
 
 ## Vodka
 
-Sourced from real SEMrush data (`keyword-map-vodka.md`).
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Pinnacle** | **Whipped Cream** | pinnacle whipped vodka (5,400, KD 9) | pinnacle whipped cream price† · buy pinnacle whipped vodka† · pinnacle whipped cream drinks† · pinnacle whipped vs cotton candy† | **Real demand outweighs the base "pinnacle vodka" brand term's own secondary pool — strongest single gap in the whole Vodka batch.** Only the plain base is currently stocked |
-| Pinnacle | Cotton Candy | pinnacle cotton candy vodka (1,300, KD 12) | pinnacle cotton candy price† · buy pinnacle cotton candy† | |
-| Pinnacle | Birthday Cake | pinnacle cake vodka (720, KD 11) | pinnacle birthday cake price† · buy pinnacle cake vodka† | |
-| **New Amsterdam** | **Pink Whitney** | new amsterdam pink whitney vodka (3,600, KD 10) | pink whitney price† · buy pink whitney vodka† · pink whitney vs new amsterdam† · pink whitney flavors† | Real, popular collab flavor (with Whitney Cummings) — large combined demand, not stocked at all |
-| Absolut | Elyx | absolut elyx vodka (1,900, KD 12) | absolut elyx price† · buy absolut elyx† · absolut elyx vs absolut† | Premium copper-distilled line, not stocked |
-| Grey Goose | VX | grey goose vx (590, KD 11) | grey goose vx price† · buy grey goose vx† | |
-| Smirnoff | Green Apple | smirnoff green apple (1,900, KD 11) | smirnoff green apple price† · buy smirnoff green apple† | Large flavor line only partially stocked |
-| Smirnoff | Whipped Cream, Vanilla, Kissed Caramel | smirnoff whipped cream vodka† | smirnoff vanilla vodka† · smirnoff kissed caramel vodka (real, 1,900/11)† | |
-| Cîroc | Apple, Coconut, Mango, Watermelon | ciroc apple vodka† | ciroc coconut vodka† · ciroc mango vodka† · ciroc watermelon vodka† | Large flavor line only partially stocked |
-| Ketel One | Peach and Orange Blossom | ketel one peach and orange blossom (480, KD 13) | ketel one peach orange price† · buy ketel one peach orange† | 3rd real botanical flavor, not stocked |
-| Svedka | Blue Raspberry | svedka blue raspberry vodka (1,300, KD 9) | svedka blue raspberry price† · buy svedka blue raspberry† | |
-| Chopin | Rye, Wheat | chopin rye vodka (210, KD 8) | chopin wheat vodka (90, KD 11) · chopin rye price† · buy chopin rye† | Only Potato stocked — Chopin's identity is offering all 3 base grains |
-| Crystal Head | Aurora, Onyx | crystal head aurora (170, KD 8) | crystal head onyx (110, KD 14) · crystal head aurora price† · buy crystal head aurora† | Real limited-edition colorways |
-| Deep Eddy | Grapefruit, Pineapple, Lime | deep eddy grapefruit vodka† | deep eddy pineapple vodka† · deep eddy lime vodka† | |
-| Prairie Organic | Cucumber | prairie cucumber vodka (140, KD 4) | prairie cucumber price† · buy prairie cucumber vodka† | Real flavor line extension, not stocked |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|
-| **Beluga** | beluga vodka (12,100, KD 15) | beluga noble vodka† · beluga price† · buy beluga vodka† · beluga vs stolichnaya† · beluga review† | Premium Russian vodka, real and well-known — **strongest new-brand case in this batch** |
-| **Skyy** | skyy vodka (12,100, KD 19) | skyy vodka price† · buy skyy vodka† · skyy vodka flavors† · skyy vs smirnoff† | Major mainstream brand, not stocked |
-| **Effen** | effen vodka (5,400, KD 11) | effen black cherry† · effen price† · buy effen vodka† · effen review† | Real French vodka, excellent KD |
-| **Burnett's** | burnett's vodka (6,600, KD 10) | burnett's flavors† · burnett's price† · buy burnett's vodka† · burnett's review† | Budget/value brand, excellent KD |
-| **Zubrowka** | zubrowka bison grass vodka (4,400, KD 25) | zubrowka price† · buy zubrowka vodka† · zubrowka review† · bison grass vodka† | Real Polish specialty (bison grass), distinctive, no close competitor in current lineup |
-| **Three Olives** | three olives vodka (3,600, KD 10) | three olives flavors† · three olives price† · buy three olives vodka† | Real, excellent KD |
-| **Level Vodka** | level vodka† | level vodka price† · buy level vodka† · level vs absolut† | Absolut's own premium sister line — natural bundle since you already stock Absolut |
-
-**Priority:** Pinnacle Whipped Cream is the standout — real demand that outweighs the parent brand's own secondary keyword pool, on a brand where you currently stock only the plain base. New Amsterdam Pink Whitney is a close second. Beluga is the strongest new-brand case.
+✅ **Fully stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts`: Pinnacle (Whipped Cream, Cotton Candy, Cake), New Amsterdam Pink Whitney, Absolut Elyx, Grey Goose VX, Smirnoff (Green Apple, Whipped Cream), Cîroc Apple, Ketel One Peach & Orange Blossom, Svedka Blue Raspberry, Chopin Rye, Crystal Head Aurora, Deep Eddy Grapefruit, Prairie Organic Cucumber, plus new brands Beluga, SKYY (+ Infusions Raspberry), Effen, Burnett's (Original, Pink Lemonade, Raspberry), Żubrówka, Three Olives (Cherry, Grape), and Level Vodka — with 7 new brand hubs (Beluga, Burnett's, Effen, Level, SKYY, Three Olives, Żubrówka). No open gaps remain in this category from this pass.
 
 ---
 

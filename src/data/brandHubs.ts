@@ -2968,6 +2968,83 @@ export const BRAND_HUBS: BrandHub[] = [
       hook: 'Crop Harvest Earth distills its Artisanal Vodka from certified organic grain in Princeton, Minnesota, using additive-free methods and grain grown without artificial fertilizers or pesticides — prized for a light, clean, precise character.',
     }),
   },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'beluga', brandKeywords: ['Beluga'], name: 'Beluga',
+    seo: brandSeo({
+      brand: 'Beluga', categoryLabel: 'Vodka',
+      titleTag: 'Beluga — Premium Russian Vodka',
+      h1: 'Beluga Vodka — Noble, Allocations',
+      metaDescription: 'Buy Beluga vodka online — Noble, a premium Siberian-distilled vodka rested with malt spirit. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Beluga distills its vodka in Siberia from malted grain and rests it with additional malt spirit before filtering — a process the house says softens the profile — finished with its signature sturgeon-cartilage filtration.',
+      faqs: [{ question: 'What makes Beluga vodka different?', answer: "Beluga rests its vodka with additional malt spirit before bottling and filters it through sturgeon cartilage, both unusual steps in vodka production most brands skip." }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'burnetts', brandKeywords: ["Burnett's", 'Burnetts'], name: "Burnett's",
+    seo: brandSeo({
+      brand: "Burnett's", categoryLabel: 'Vodka',
+      titleTag: "Burnett's — Value Flavored Vodka",
+      h1: "Burnett's Vodka — Original & Flavored Allocations",
+      metaDescription: "Buy Burnett's vodka online — one of the largest flavored-vodka lineups in the category at a value price. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Burnett's built its identity around sheer flavor variety, offering dozens of fruit, sweet, and spiced vodka flavors at a value price point.",
+      faqs: [{ question: "How many flavors does Burnett's vodka make?", answer: "Burnett's offers dozens of flavors across fruit, sweet, and spiced categories, one of the largest flavored-vodka lineups on the market." }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'effen', brandKeywords: ['Effen'], name: 'Effen',
+    seo: brandSeo({
+      brand: 'Effen', categoryLabel: 'Vodka',
+      titleTag: 'Effen — French Wheat Vodka',
+      h1: 'Effen Vodka — Black Cherry, Allocations',
+      metaDescription: 'Buy Effen vodka online — French wheat vodka in a signature engraved-glass bottle, including Black Cherry. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Effen distills a French wheat vodka base, known for its distinctive engraved-glass bottle design and a flavor lineup including Black Cherry and Cucumber.",
+      faqs: [{ question: 'What is Effen vodka made from?', answer: 'Effen is distilled from French wheat.' }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'level', brandKeywords: ['Level'], name: 'Level',
+    seo: brandSeo({
+      brand: 'Level', categoryLabel: 'Vodka',
+      titleTag: 'Level — Absolut\'s Premium Sister Line',
+      h1: 'Level Vodka — Allocations',
+      metaDescription: "Buy Level vodka online — Absolut's premium sister line, distilled and filtered separately for a smoother profile. Direct allocations at Aged & Amber. Free $300+.",
+      hook: 'Level is produced by Absolut as a step-up premium line, distilled and charcoal-filtered separately from the standard Absolut process for a smoother, more refined profile.',
+      faqs: [{ question: 'Who makes Level vodka?', answer: 'Level is produced by Absolut/Pernod Ricard as a premium line above the standard Absolut range.' }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'skyy', brandKeywords: ['SKYY', 'Skyy'], name: 'SKYY',
+    seo: brandSeo({
+      brand: 'SKYY', categoryLabel: 'Vodka',
+      titleTag: 'SKYY — Quadruple-Distilled American Vodka',
+      h1: 'SKYY Vodka — Original & Infusions, Allocations',
+      metaDescription: 'Buy SKYY vodka online — San Francisco-founded, quadruple-distilled and triple-filtered, including the Infusions real-fruit line. Direct allocations at Aged & Amber.',
+      hook: 'SKYY was founded in San Francisco in 1992 and built its identity around a proprietary four-column distillation and triple-filtration process aimed at reducing congeners and impurities.',
+      faqs: [{ question: 'Where is SKYY vodka made?', answer: 'SKYY was founded in San Francisco, California, in 1992.' }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'three-olives', brandKeywords: ['Three Olives'], name: 'Three Olives',
+    seo: brandSeo({
+      brand: 'Three Olives', categoryLabel: 'Vodka',
+      titleTag: 'Three Olives — British Flavored Vodka',
+      h1: 'Three Olives Vodka — Flavors, Allocations',
+      metaDescription: 'Buy Three Olives vodka online — British-distilled, built around a wide, playful flavored-vodka lineup. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Three Olives is distilled in England and built its identity around a wide flavored-vodka lineup spanning fruit and dessert-inspired flavors.",
+      faqs: [{ question: 'Where is Three Olives vodka made?', answer: 'Three Olives is distilled in England.' }],
+    }),
+  },
+  {
+    categorySlug: 'craft-vodka', hubSlug: 'zubrowka', brandKeywords: ['Żubrówka', 'Zubrowka'], name: 'Żubrówka',
+    seo: brandSeo({
+      brand: 'Żubrówka', categoryLabel: 'Vodka',
+      titleTag: 'Żubrówka — Polish Bison Grass Vodka',
+      h1: 'Żubrówka Bison Grass Vodka — Allocations',
+      metaDescription: 'Buy Żubrówka vodka online — Polish rye vodka infused with bison grass from the Białowieża Forest. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Żubrówka is distilled from rye and infused with bison grass harvested from Poland's Białowieża Forest, giving it a distinctive, slightly sweet, herbal character unlike any other widely available vodka.",
+      faqs: [{ question: 'What gives Żubrówka its flavor?', answer: "Żubrówka is infused with bison grass (żubrówka in Polish) harvested from Poland's Białowieża Forest, giving it a distinctive herbal, vanilla-like note." }],
+    }),
+  },
 
   // ─── NON-ALCOHOLIC SPIRITS ───────────────────────────────────────────
   {
