@@ -16,26 +16,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Cognac & Brandy
 
-### Missing expressions within brands you already stock (fix first — same brand page, just add the SKU)
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Combined vol |
-|---|---|---|---|---|
-| Martell | **Blue Swift** | martell blue swift (12,100, KD 18) | martell blue swift cognac (9,900, KD 10) · martell blue swift price† · martell blue swift review† · buy martell blue swift† · martell blue swift vs vsop† | ~22,000 |
-| Martell | **XXO** | martell xxo (8,100, KD 11) | martell xxo cognac† · martell xxo price† · martell xxo review† · buy martell xxo† · martell xxo vs cordon bleu† | 8,100 |
-| Martell | Cordon Bleu (base tier — you stock **Extra**) | martell cordon bleu (3,600, KD 12) | martell cordon bleu cognac 750ml (2,400, KD 10) · martell cordon bleu price† · martell cordon bleu vs extra† · buy martell cordon bleu† | ~6,000 |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|
-| Meukow | meukow cognac (1,600, KD 16) | meukow vsop† · meukow price† · buy meukow cognac† · meukow review† · meukow vs hennessy† | Family-owned French cognac house since 1839 |
-| Le Portier | le portier cognac (1,600, KD 16) | le portier vsop† · le portier price† · buy le portier† · le portier review† | Cognac brand |
-| ABK6 | abk6 cognac (1,300, KD 15) | abk6 vsop† · abk6 price† · buy abk6 cognac† · abk6 review† | Single-estate producer |
-| Salignac | salignac cognac (1,300, KD 7) | salignac vsop† · salignac price† · buy salignac cognac† | Historic house, excellent KD |
-| Villon | villon cognac (1,300, KD 8) | villon vsop† · villon price† · buy villon cognac† | Newer brand, excellent KD |
-| Ararat | ararat brandy (1,000, KD 18) | ararat armenian brandy† · ararat price† · buy ararat brandy† | **Flag: Armenian brandy, not French cognac** — only relevant under a broader "brandy" umbrella |
-
-**Priority:** Martell Blue Swift is the clear #1 — highest combined volume (~22,000), lowest effective KD, confirmed twice. XXO is a strong #2 for the same brand.
+✅ **Fully stocked** (2026-08-28) — Martell Blue Swift, Martell Chanteloup XXO, Martell Cordon Bleu, Meukow VSOP, Le Portier Shay VSOP, ABK6 VSOP, Salignac VSOP, Villon VSOP, and Ararat VS Armenian Brandy are all now live in `products.ts` with brand hubs in `brandHubs.ts`. No open gaps remain in this category from this pass.
 
 ---
 

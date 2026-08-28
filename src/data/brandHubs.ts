@@ -2400,6 +2400,72 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
+    categorySlug: 'cognac-brandy', hubSlug: 'meukow', brandKeywords: ['Meukow'], name: 'Meukow',
+    seo: brandSeo({
+      brand: 'Meukow', categoryLabel: 'Cognac',
+      titleTag: 'Meukow — VSOP Cognac',
+      h1: 'Meukow Cognac — VSOP Allocations',
+      metaDescription: 'Buy Meukow VSOP cognac online — family-owned since 1862, recognized by its black panther bottle. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Meukow has been family-run since 1862, one of the smaller independent houses still operating in Cognac today — instantly recognizable by the black panther on its bottle, a mark the family has used since the 19th century.',
+      faqs: [{ question: 'How old is Meukow cognac?', answer: 'Meukow was founded in 1862 by Gustave Meukow and remains a family-owned Cognac house today.' }],
+    }),
+  },
+  {
+    categorySlug: 'cognac-brandy', hubSlug: 'le-portier', brandKeywords: ['Le Portier'], name: 'Le Portier',
+    seo: brandSeo({
+      brand: 'Le Portier', categoryLabel: 'Cognac',
+      titleTag: 'Le Portier — Shay VSOP Cognac',
+      h1: 'Le Portier Cognac — Shay VSOP Allocations',
+      metaDescription: 'Buy Le Portier Shay VSOP cognac online — a modern Cognac AOC house from the Charente region. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Le Portier is a modern Cognac house producing traditional Charente-region VSOP under contemporary branding aimed at drinkers exploring cognac for the first time — while still meeting the same AOC production standards as the region's oldest houses.",
+      faqs: [{ question: 'What is Le Portier Shay VSOP?', answer: 'A VSOP-designated Cognac from the Charente region, aged a minimum of four years, produced by the modern Cognac house Le Portier.' }],
+    }),
+  },
+  {
+    categorySlug: 'cognac-brandy', hubSlug: 'abk6', brandKeywords: ['ABK6'], name: 'ABK6',
+    seo: brandSeo({
+      brand: 'ABK6', categoryLabel: 'Cognac',
+      titleTag: 'ABK6 — Single Estate VSOP Cognac',
+      h1: 'ABK6 Cognac — Single Estate VSOP Allocations',
+      metaDescription: 'Buy ABK6 VSOP cognac online — single-estate, grown and distilled entirely on one Fins Bois family property. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'ABK6 is grown, distilled, and aged entirely on a single family estate in the Fins Bois cru of Cognac — a genuinely single-estate cognac, rather than blended from purchased eaux-de-vie as most house-style cognacs are.',
+      faqs: [{ question: 'What makes ABK6 different from other cognac brands?', answer: 'ABK6 is produced entirely on one family-owned estate in the Fins Bois cru — the grapes, distillation, and aging all happen on the same property, unlike most cognac houses that blend purchased eaux-de-vie.' }],
+    }),
+  },
+  {
+    categorySlug: 'cognac-brandy', hubSlug: 'salignac', brandKeywords: ['Salignac'], name: 'Salignac',
+    seo: brandSeo({
+      brand: 'Salignac', categoryLabel: 'Cognac',
+      titleTag: 'Salignac — Fine Champagne VSOP Cognac',
+      h1: 'Salignac Cognac — Fine Champagne VSOP Allocations',
+      metaDescription: 'Buy Salignac VSOP cognac online — a historic house since 1809, Fine Champagne designation. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Salignac has produced cognac since 1809, making it one of the older continuously operating houses in the region. Its VSOP carries the Fine Champagne designation, meaning it is blended entirely from Grande and Petite Champagne cru eaux-de-vie.',
+      faqs: [{ question: 'What does "Fine Champagne" mean on a cognac label?', answer: 'Fine Champagne is a legal designation meaning the cognac is blended entirely from Grande Champagne and Petite Champagne cru eaux-de-vie, with at least 50% from Grande Champagne.' }],
+    }),
+  },
+  {
+    categorySlug: 'cognac-brandy', hubSlug: 'villon', brandKeywords: ['Villon'], name: 'Villon',
+    seo: brandSeo({
+      brand: 'Villon', categoryLabel: 'Cognac',
+      titleTag: 'Villon — VSOP Cognac Liqueur',
+      h1: 'Villon Cognac Liqueur — VSOP Allocations',
+      metaDescription: 'Buy Villon VSOP cognac liqueur online — built on genuine VSOP and XO cognac, softened for easy mixing. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Villon is built on a base of genuine VSOP and XO cognac, then gently sweetened for a more approachable, mixable style than a traditional straight VSOP — positioned as a lower-cost entry point into cognac-based drinks rather than a sipping cognac.",
+      faqs: [{ question: 'Is Villon a real cognac?', answer: "Villon is a cognac liqueur — it's built on a base of genuine VSOP and XO cognac blended with natural flavors, rather than being sold as a straight, unflavored cognac." }],
+    }),
+  },
+  {
+    categorySlug: 'cognac-brandy', hubSlug: 'ararat', brandKeywords: ['Ararat'], name: 'Ararat',
+    seo: brandSeo({
+      brand: 'Ararat', categoryLabel: 'Brandy',
+      titleTag: 'Ararat — Armenian Brandy',
+      h1: 'Ararat Armenian Brandy — Allocations',
+      metaDescription: "Buy Ararat Armenian brandy online — Yerevan Brandy Company's signature spirit since 1887, aged in Caucasian oak. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Ararat is Armenia's best-known brandy, produced by the Yerevan Brandy Company since 1887 and aged in oak from the Caucasus mountains. It is a distinct Armenian spirit — legally and stylistically separate from French Cognac — with a history that reportedly includes an endorsement from Winston Churchill.",
+      faqs: [{ question: 'Is Ararat a cognac?', answer: 'No — Ararat is Armenian brandy, a distinct spirit legally and stylistically separate from French Cognac, though it is often shelved alongside cognac and other brandies.' }],
+    }),
+  },
+  {
     categorySlug: 'cognac-brandy', hubSlug: 'pierre-ferrand', brandKeywords: ['Pierre Ferrand'], name: 'Pierre Ferrand',
     seo: brandSeo({
       brand: 'Pierre Ferrand', categoryLabel: 'Cognac',
