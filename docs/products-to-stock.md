@@ -76,43 +76,14 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Rye & Other Whiskey
 
-Sourced from `MASTER_SEO_IMPLEMENTATION.md` Sections 6-7 + `product-gaps-batch4.md`, cross-checked against `products.ts` (59 stocked SKUs), WebSearch-verified where no SEMrush data existed.
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| WhistlePig | FarmStock Rye | confirmed real via WebSearch | farmstock rye price† · farmstock rye review† · whistlepig farmstock beyond bonded† · buy whistlepig farmstock† · farmstock vs 10 year† · whistlepig farmstock near me† | Core ongoing line (blend of estate-grown rye + aged rye), distinct from the 5 WhistlePig SKUs already stocked |
-| Jack Daniel's | Bonded | confirmed real via WebSearch | jack daniel's bonded price† · jack daniel's bonded review† · jack daniel's bonded vs single barrel† · buy jack daniel's bonded† · jack daniel's bottled in bond† | Real, currently-sold bottled-in-bond expression |
-| Crown Royal | Salted Caramel | confirmed real via WebSearch | crown royal salted caramel price† · buy crown royal salted caramel† · crown royal salted caramel review† · crown royal salted caramel vs regal apple† | Popular flavored line extension, not stocked |
-| George Dickel | Rye Whisky | confirmed real via WebSearch | george dickel rye price† · buy george dickel rye† · george dickel rye review† · george dickel rye vs bulleit† | Core rye SKU from a brand where you stock other Dickel expressions |
-| Uncle Nearest | 1820 Single Barrel Edition | confirmed real via WebSearch | uncle nearest 1820 price† · buy uncle nearest 1820† · uncle nearest 1820 review† · uncle nearest 1820 vs 1856† | Premium single-barrel tier, not stocked |
-| J.P. Wiser's | Triple Barrel Rye | confirmed real via WebSearch | jp wisers triple barrel price† · buy jp wisers triple barrel† · jp wisers triple barrel review† | Canadian rye line extension |
-| Stranahan's | Blue Peak | confirmed real via WebSearch | stranahans blue peak price† · buy stranahans blue peak† · stranahans blue peak review† · stranahans blue peak vs original† | Colorado craft brand's premium expression |
-| Westward | Pinot Noir Cask Finish | confirmed real via WebSearch | westward pinot noir cask price† · buy westward pinot noir cask† · westward pinot noir cask review† | Oregon American single malt, wine-cask finish |
-
-### Brands with real demand, not in catalog at all
+✅ **Mostly stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts` except two: Jack Daniel's Bonded, Crown Royal Salted Caramel, George Dickel Rye, Uncle Nearest (1820 + Rye), J.P. Wiser's Triple Barrel, Stranahan's Blue Peak, Westward Pinot Noir Cask, Old Overholt, Redemption Rye, Templeton Rye, Woodinville (Straight Rye + 6 Year + 8 Year Limited Edition — a real 3-SKU range, not just the one gap originally identified), Wilderness Trail (Kentucky Straight + Bottled-in-Bond — 2 real SKUs), Frey Ranch Bottled-in-Bond, Woodford Reserve Rye, Angel's Envy Rye, Alberta Premium, Lot No. 40, Journeyman Featherbone Bourbon, and Lost Lantern — with 11 new brand hubs. Still open (no image sourced this round):
 
 | Brand | Primary key | Support keys | Note |
 |---|---|---|---|
-| **Old Overholt** | old overholt rye† | old overholt price† · buy old overholt rye† · old overholt review† · old overholt vs rittenhouse† | America's oldest continuously-produced whiskey brand, budget rye staple |
-| Redemption Rye | redemption rye† | redemption rye price† · buy redemption rye† · redemption rye review† | Established craft rye, widely available |
-| Templeton Rye | templeton rye† | templeton rye price† · buy templeton rye† · templeton rye review† | "The Good Stuff" — Prohibition-era branding, well-known |
-| Woodinville Straight Rye | woodinville rye† | woodinville rye price† · buy woodinville rye† · woodinville rye review† | Washington craft distillery, grain-to-glass |
-| Wilderness Trail Rye | wilderness trail rye† | wilderness trail rye price† · buy wilderness trail rye† | Kentucky craft distillery, strong critical reputation |
-| Frey Ranch Bottled-in-Bond Straight Rye | frey ranch bib rye† | frey ranch rye price† · buy frey ranch rye† | Nevada farm-to-bottle distillery, estate-grown grain |
-| Woodford Reserve Rye | woodford reserve rye† | woodford reserve rye price† · buy woodford reserve rye† · woodford rye vs bourbon† | Major brand, you stock Woodford bourbon but not their rye |
-| Angel's Envy Rye | angel's envy rye† | angel's envy rye price† · buy angel's envy rye† · angel's envy rye vs bourbon† | Rum/port-cask-finished rye, sibling to their stocked bourbon |
-| Alberta Premium | alberta premium rye† | alberta premium price† · buy alberta premium† · alberta premium cask strength† | 100% rye Canadian whisky, cult favorite (Cask Strength variant especially) |
-| Lot No. 40 | lot no 40 rye† | lot 40 price† · buy lot no 40† · lot 40 review† | Premium 100% rye Canadian whisky |
 | Westland American Single Malt | westland american single malt† | westland price† · buy westland single malt† · westland review† | Seattle craft distillery, category leader in American single malt |
 | Copperworks American Single Malt | copperworks single malt† | copperworks price† · buy copperworks single malt† | Seattle craft distillery, award-winning |
-| Journeyman Distillery | journeyman whiskey† | journeyman featherbone bourbon† · journeyman price† · buy journeyman whiskey† | Michigan craft distillery, organic/rye-forward lineup |
-| Lost Lantern | lost lantern whiskey† | lost lantern single cask† · lost lantern price† · buy lost lantern† | Independent bottler of American craft whiskey, collector interest |
 
 **Checked and excluded:** Old Elk (wheated bourbon focus, not rye — doesn't fit this category). Filibuster Rye flagged as unconfirmed/lower-confidence, not included as a verified finding.
-
-**Priority:** Woodford Reserve Rye and Angel's Envy Rye are the standout cases — both are rye expressions from brands whose bourbon you already stock, so the brand trust and page infrastructure already exist.
 
 ---
 

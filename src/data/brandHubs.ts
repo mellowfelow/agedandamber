@@ -1579,6 +1579,138 @@ export const BRAND_HUBS: BrandHub[] = [
       faqs: [{ question: 'What does "VO" stand for in Seagram\'s VO?', answer: "VO stands for 'Very Own' — the whisky was originally created in 1913 as a special reserve blend, distinct from Seagram's standard offerings, and the name stuck as the brand grew into one of Canada's best-known whisky exports." }],
     }),
   },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'alberta-premium', brandKeywords: ['Alberta Premium'], name: 'Alberta Premium',
+    seo: brandSeo({
+      brand: 'Alberta Premium', categoryLabel: 'Canadian Whisky',
+      titleTag: 'Alberta Premium — 100% Rye Canadian Whisky',
+      h1: 'Alberta Premium Rye — Allocations',
+      metaDescription: 'Buy Alberta Premium online — a 100% rye Canadian whisky and cult favorite, especially the Cask Strength variant. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Alberta Premium is one of the few widely available Canadian whiskies made from 100% rye grain rather than a corn-based blend, giving it a spicier, more assertive character.',
+      faqs: [{ question: 'What makes Alberta Premium different from other Canadian whisky?', answer: 'Alberta Premium is distilled from 100% rye grain, unlike most Canadian whisky, which blends in corn — giving it a spicier, more rye-forward character.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'angels-envy-rye', brandKeywords: ["Angel's Envy Rye"], name: "Angel's Envy",
+    seo: brandSeo({
+      brand: "Angel's Envy", categoryLabel: 'Rye Whiskey',
+      titleTag: "Angel's Envy Rye — Rum & Port Cask Finished",
+      h1: "Angel's Envy Rye — Allocations",
+      metaDescription: "Buy Angel's Envy Rye online — the rye sibling to the brand's cask-finished bourbon, finished in rum and port casks. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Angel's Envy Rye applies the same cask-finishing philosophy as the brand's flagship bourbon to rye whiskey, finishing in Caribbean rum and port casks for a fruitier counterpoint to the grain's natural spice.",
+      faqs: [{ question: 'Is Angel\'s Envy Rye finished the same way as their bourbon?', answer: "Yes — Angel's Envy Rye is finished in rum and port casks, following the same cask-finishing approach the brand is known for with its bourbon." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'frey-ranch', brandKeywords: ['Frey Ranch'], name: 'Frey Ranch',
+    seo: brandSeo({
+      brand: 'Frey Ranch', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Frey Ranch — Farm-to-Bottle Nevada Rye',
+      h1: 'Frey Ranch Whiskey — Bottled-in-Bond Rye Allocations',
+      metaDescription: 'Buy Frey Ranch online — a genuinely farm-to-bottle Nevada rye, grown, distilled, aged, and bottled on the same estate. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Frey Ranch grows its own rye on its Nevada farm, then distills, ages, and bottles it entirely on-site — a genuinely rare farm-to-bottle model in American whiskey.',
+      faqs: [{ question: 'What makes Frey Ranch a "farm-to-bottle" whiskey?', answer: 'Frey Ranch grows its own grain on its Nevada farm and distills, ages, and bottles the whiskey entirely on the same property — a rare, fully vertically integrated model in American whiskey.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'journeyman', brandKeywords: ['Journeyman'], name: 'Journeyman Distillery',
+    seo: brandSeo({
+      brand: 'Journeyman Distillery', categoryLabel: 'Craft American Whiskey',
+      titleTag: 'Journeyman Distillery — Featherbone Bourbon',
+      h1: 'Journeyman Whiskey — Featherbone Bourbon, Allocations',
+      metaDescription: 'Buy Journeyman Featherbone Bourbon online — handmade, organic craft bourbon from a converted 19th-century Michigan factory. Direct allocations at Aged & Amber.',
+      hook: "Journeyman Distillery operates out of the former Featherbone Factory in Three Oaks, Michigan — a 19th-century corset-stay manufacturer the whiskey is named for.",
+      faqs: [{ question: 'Where is Journeyman whiskey made?', answer: 'Journeyman Distillery is located in Three Oaks, Michigan, inside the former Featherbone Factory building.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'lot-no-40', brandKeywords: ['Lot No. 40', 'Lot 40'], name: 'Lot No. 40',
+    seo: brandSeo({
+      brand: 'Lot No. 40', categoryLabel: 'Canadian Whisky',
+      titleTag: 'Lot No. 40 — 100% Rye Canadian Whisky',
+      h1: 'Lot No. 40 Rye — Allocations',
+      metaDescription: 'Buy Lot No. 40 online — a rare 100% rye Canadian whisky, pot-distilled by the historic Hiram Walker distillery. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Lot No. 40 is distilled entirely from rye grain using pot stills at Hiram Walker's historic Windsor, Ontario distillery — a departure from the corn-based blends that dominate Canadian whisky.",
+      faqs: [{ question: 'Is Lot No. 40 a rye or a blend?', answer: 'Lot No. 40 is distilled from 100% rye grain using pot stills, unlike most Canadian whisky, which blends in corn.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'lost-lantern', brandKeywords: ['Lost Lantern'], name: 'Lost Lantern',
+    seo: brandSeo({
+      brand: 'Lost Lantern', categoryLabel: 'Independent Bottler',
+      titleTag: 'Lost Lantern — American Independent Bottler',
+      h1: 'Lost Lantern Whiskey — Allocations',
+      metaDescription: 'Buy Lost Lantern online — an independent bottler sourcing and blending single malt whiskey from craft distilleries nationwide. Direct allocations at Aged & Amber.',
+      hook: 'Lost Lantern operates in the Scottish independent-bottler tradition — rather than distilling its own spirit, it sources and blends casks from craft distilleries across the country.',
+      faqs: [{ question: 'Does Lost Lantern distill its own whiskey?', answer: "No — Lost Lantern is an independent bottler that sources and blends whiskey from other American craft distilleries, similar to the independent-bottler tradition in Scotch whisky." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'old-overholt', brandKeywords: ['Old Overholt'], name: 'Old Overholt',
+    seo: brandSeo({
+      brand: 'Old Overholt', categoryLabel: 'Rye Whiskey',
+      titleTag: "Old Overholt — America's Oldest Whiskey Brand",
+      h1: 'Old Overholt Rye — Allocations',
+      metaDescription: "Buy Old Overholt online — America's oldest continuously produced whiskey brand, dating to 1810, now a budget rye staple. Direct allocations at Aged & Amber. Free $300+.",
+      hook: 'Old Overholt traces its name to 1810, making it the oldest continuously produced whiskey brand in the United States.',
+      faqs: [{ question: 'How old is the Old Overholt brand?', answer: 'Old Overholt dates to 1810, making it the oldest continuously produced whiskey brand in the United States.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'redemption', brandKeywords: ['Redemption'], name: 'Redemption',
+    seo: brandSeo({
+      brand: 'Redemption', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Redemption Rye — High-Rye Craft Whiskey',
+      h1: 'Redemption Rye — Allocations',
+      metaDescription: 'Buy Redemption Rye online — an established, widely-available craft rye built for classic cocktails. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Redemption Rye is distilled from a high-rye mash bill, widely available and priced accessibly for both sipping and classic rye cocktails.',
+      faqs: [{ question: 'Is Redemption Rye good for cocktails?', answer: "Yes — its high-rye mash bill and accessible price make it a popular choice for classic rye cocktails like the Manhattan and Sazerac." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'templeton', brandKeywords: ['Templeton'], name: 'Templeton',
+    seo: brandSeo({
+      brand: 'Templeton', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Templeton Rye — "The Good Stuff"',
+      h1: 'Templeton Rye — Allocations',
+      metaDescription: 'Buy Templeton Rye online — an Iowa rye brand built on real Prohibition-era bootlegging history. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Templeton Rye trades on its hometown's real Prohibition-era history — Templeton, Iowa was a documented bootlegging hotspot — branding itself \"The Good Stuff.\"",
+      faqs: [{ question: 'Why is Templeton Rye called "The Good Stuff"?', answer: 'The nickname references the real Prohibition-era moonshine reportedly made in Templeton, Iowa, which the brand is named after.' }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'wilderness-trail', brandKeywords: ['Wilderness Trail'], name: 'Wilderness Trail',
+    seo: brandSeo({
+      brand: 'Wilderness Trail', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Wilderness Trail — Sweet Mash Kentucky Rye',
+      h1: 'Wilderness Trail Rye — Allocations',
+      metaDescription: 'Buy Wilderness Trail online — Kentucky craft rye distilled using a proprietary sweet mash process, including a Bottled-in-Bond tier. Direct allocations at Aged & Amber.',
+      hook: "Wilderness Trail distills its rye using founder Shane Baker's proprietary sweet mash fermentation process — a technique credited with producing a smoother, more consistent whiskey than the industry-standard sour mash approach.",
+      faqs: [{ question: 'What is sweet mash fermentation?', answer: "Wilderness Trail's proprietary sweet mash process uses fresh yeast for each fermentation rather than recycling backset from a previous batch (the industry-standard sour mash method), which the distillery says produces a more consistent result." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'woodford-reserve', brandKeywords: ['Woodford Reserve'], name: 'Woodford Reserve',
+    seo: brandSeo({
+      brand: 'Woodford Reserve', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Woodford Reserve Rye — Triple Pot Still Distilled',
+      h1: 'Woodford Reserve Rye — Allocations',
+      metaDescription: 'Buy Woodford Reserve Rye online — the rye sibling to the brand\'s bourbon, from the same historic triple-copper-pot-still distillery. Direct allocations at Aged & Amber.',
+      hook: "Woodford Reserve Rye applies the distillery's triple-copper-pot-still process to a rye mash bill, from the same historic Kentucky distillery as the brand's bourbon.",
+      faqs: [{ question: 'Is Woodford Reserve Rye made the same way as their bourbon?', answer: "Yes — Woodford Reserve Rye is distilled using the same triple-copper-pot-still process at the same historic Versailles, Kentucky distillery as the brand's bourbon." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'woodinville', brandKeywords: ['Woodinville'], name: 'Woodinville',
+    seo: brandSeo({
+      brand: 'Woodinville', categoryLabel: 'Rye Whiskey',
+      titleTag: 'Woodinville — Grain-to-Glass Washington Rye',
+      h1: 'Woodinville Rye — Allocations',
+      metaDescription: 'Buy Woodinville online — 100% rye whiskey grown, distilled, and aged entirely at the Washington State distillery, including 6 and 8 Year releases. Direct allocations.',
+      hook: "Woodinville Whiskey Co. distills its flagship rye from 100% rye grain grown on the company's own farm in eastern Washington, then pot-distills and ages it at the Woodinville facility for a genuinely grain-to-glass product.",
+      faqs: [{ question: 'Where does Woodinville source its rye grain?', answer: "Woodinville grows its own rye on a company-owned farm in eastern Washington, making its whiskey a genuinely grain-to-glass product distilled and aged at the Woodinville, Washington facility." }],
+    }),
+  },
 
   // ─── TEQUILA & MEZCAL ───────────────────────────────────────────
   {
