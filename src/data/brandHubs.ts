@@ -1158,18 +1158,40 @@ export const BRAND_HUBS: BrandHub[] = [
     // Informational/brand-education only: Mars Shinshu's core Komagatake and Maltage Cosmo range is NOT stocked —
     // only the sister Iwai range (separate hub above) is in our allocation. No transactional CTA or "buy"
     // framing here so this page never implies unstocked products are purchasable.
-    categorySlug: 'japanese-whisky', hubSlug: 'mars-shinshu', brandKeywords: ['Mars Shinshu', 'Mars Komagatake', 'Mars Maltage'], name: 'Mars Shinshu',
+    categorySlug: 'japanese-whisky', hubSlug: 'mars-shinshu', brandKeywords: ['Mars Shinshu', 'Mars Komagatake', 'Mars Maltage', 'Mars Tsunuki'], name: 'Mars Shinshu',
     seo: brandSeo({
       brand: 'Mars Shinshu', categoryLabel: 'Japanese Whisky',
-      titleTag: 'Mars Shinshu Distillery — Japanese Whisky Guide',
+      titleTag: 'Mars Shinshu — Komagatake, Tsunuki & Iwai',
       h1: 'Mars Shinshu — Japan’s Highest-Altitude Whisky Distillery',
-      metaDescription: 'Learn about Mars Shinshu, Japan’s highest-altitude whisky distillery, home of the Komagatake and Maltage Cosmo lines — plus its Iwai range, available direct at Aged & Amber.',
-      transactionalCTA: 'Mars Shinshu\'s core Komagatake and Maltage Cosmo range is not currently part of our allocation. We do carry the distillery\'s sister Iwai range direct — browse Iwai 45 and Iwai Tradition.',
-      hook: 'Mars Shinshu is Japan’s highest-altitude whisky distillery, set in the Japanese Alps at over 800 metres — the cool climate slows maturation for a lighter, more delicate spirit. The distillery produces the Komagatake single malt and Maltage Cosmo blended lines, alongside the more widely available Iwai range.',
+      metaDescription: 'Buy Mars Shinshu online — Komagatake single malt, Tsunuki single malt, and the Iwai range. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Mars Shinshu is Japan’s highest-altitude whisky distillery, set in the Japanese Alps at over 800 metres, and also operates a second, subtropical distillery in Kagoshima producing the Tsunuki single malt — a warm-climate counterpoint to Komagatake\'s mountain-matured style. The distillery also produces the more widely distributed Iwai range.',
       faqs: [
-        { question: 'Is Mars Shinshu the same as Mars Iwai?', answer: 'They\'re related but distinct lines from the same distillery. Mars Shinshu is the distillery itself, home to the Komagatake single malt and Maltage Cosmo blended ranges. Iwai is a separate, more widely distributed blended line from the same distillery, named for co-founder Kiichiro Iwai.' },
-        { question: 'Where can I buy Mars Komagatake or Maltage Cosmo?', answer: 'Komagatake and Maltage Cosmo are not currently part of our direct allocation. We do carry Mars Shinshu\'s Iwai range — Iwai 45 and Iwai Tradition — available now.' },
+        { question: 'What is the difference between Mars Komagatake and Mars Tsunuki?', answer: 'Both are single malts from Mars Shinshu, but Komagatake is distilled at the original high-altitude Nagano site in the Japanese Alps, while Tsunuki is distilled at a second, subtropical site in Kagoshima — the warmer climate matures the whisky faster and gives it a distinct character.' },
+        { question: 'Is Mars Shinshu the same as Mars Iwai?', answer: 'They\'re related but distinct lines from the same distillery. Mars Shinshu is the distillery itself, home to the Komagatake and Tsunuki single malts. Iwai is a separate, more widely distributed blended line from the same distillery, named for co-founder Kiichiro Iwai.' },
       ],
+    }),
+  },
+
+  {
+    categorySlug: 'japanese-whisky', hubSlug: 'chichibu', brandKeywords: ['Chichibu', "Ichiro's Malt"], name: 'Chichibu',
+    seo: brandSeo({
+      brand: 'Chichibu', categoryLabel: 'Japanese Whisky',
+      titleTag: "Chichibu — Ichiro's Malt Cult Japanese Whisky",
+      h1: 'Chichibu Whisky — Distillery II, Allocations',
+      metaDescription: "Buy Chichibu online — Ichiro Akuto's cult Japanese whisky, Distillery II's 2025-debut release at a more attainable price than the original line. Direct allocations.",
+      hook: "Chichibu, founded by Ichiro Akuto, is one of the most sought-after names in Japanese whisky, producing only around 60,000 liters a year — original-line bottles regularly trade for four figures on the secondary market. The 2025-introduced Distillery II line offers a more attainable entry point.",
+      faqs: [{ question: 'Why is Chichibu whisky so expensive?', answer: 'Chichibu produces only around 60,000 liters a year, and cult demand for the original single malt line has pushed secondary-market prices into four figures. The newer Distillery II line is priced more accessibly.' }],
+    }),
+  },
+  {
+    categorySlug: 'japanese-whisky', hubSlug: 'fuji', brandKeywords: ['Fuji'], name: 'Fuji',
+    seo: brandSeo({
+      brand: 'Fuji', categoryLabel: 'Japanese Whisky',
+      titleTag: 'Fuji — Kirin\'s Single Malt from Fuji Gotemba',
+      h1: 'Fuji Whisky — Single Malt Allocations',
+      metaDescription: 'Buy Fuji Single Malt online — Kirin\'s whisky from the Fuji Gotemba Distillery at the base of Mount Fuji. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Fuji is distilled at Kirin\'s Fuji Gotemba Distillery, sited at the base of Mount Fuji, released under a rebranded export line the company introduced to build recognition beyond Japan\'s better-known distilleries.',
+      faqs: [{ question: 'Who makes Fuji whisky?', answer: 'Fuji is produced by Kirin at the Fuji Gotemba Distillery, located at the base of Mount Fuji in Shizuoka, Japan.' }],
     }),
   },
 

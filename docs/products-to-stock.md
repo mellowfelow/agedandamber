@@ -64,24 +64,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Japanese
 
-Sourced from real SEMrush data (`keyword-map-japanese-v2.md`).
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Mars/Hombo (Iwai hub) | Mars Komagatake, Maltage Cosmo | mars komagatake (confirmed real, currently in production) | mars maltage cosmo† · mars komagatake price† · buy mars komagatake† · mars komagatake vs iwai† | "A permanent part of the core range, readily available in several international markets" — not a rarity. Resolves the two-hub Mars problem |
-| Nikka | Pure Malt Red | nikka pure malt red (confirmed real, currently attainable) | nikka pure malt red price† · buy nikka pure malt red† · nikka pure malt red vs black† | Distinct flavor profile (Yoichi + Miyagikyo blend) |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key | Support keys | Note |
-|---|---|---|---|
-| **Fuji (Kirin)** | fuji single malt† | fuji single blended† · fuji sanroku† · fuji price† · buy fuji whisky† | Confirmed real, M-H demand and rising — Kirin's Mount Fuji/Gotemba distillery, actively pushed as an export brand. Zero shelf presence currently |
-| Mars Tsunuki | mars tsunuki single malt† | mars tsunuki price† · buy mars tsunuki† | Confirmed real, second Mars/Hombo distillery, current 2025/2026 releases |
-| Chichibu / Ichiro's Malt | chichibu whisky† | ichiro's malt price† · ichiro's malt review† | Confirmed real but effectively unstockable at real volume (cult status, ~60,000L/year production, 4-figure secondary prices) — better as a blog topic than a stocking target |
-
-**Priority:** Mars Komagatake/Maltage Cosmo is the cleanest win — resolves an existing site architecture problem (two Mars hubs) and is confirmed genuinely available, not rare.
+✅ **Fully stocked** (2026-08-28) — Mars Komagatake, Mars Tsunuki, Fuji Single Malt, Nikka Pure Malt Red, and Ichiro's Malt Chichibu Distillery II are all now live in `products.ts` — resolving the two-hub Mars problem (the Mars Shinshu hub copy is corrected to reflect real stock) and adding 2 new brand hubs (Fuji, Chichibu). Chichibu was originally flagged as "effectively unstockable" due to the original line's four-figure secondary prices, but the newly-introduced (2025) Distillery II release is a real, more attainable entry point — priced accordingly (~$200) and clearly framed as a debut sub-line, not the ultra-rare original. No open gaps remain in this category from this pass.
 
 ---
 
