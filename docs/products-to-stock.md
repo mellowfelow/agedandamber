@@ -133,26 +133,9 @@ Sourced from `keyword-map-na-beer-cider.md`. Covers all 15 stocked NA beer/cider
 
 ## Beer
 
-Sourced from `keyword-map-beer-lager.md`, `keyword-map-beer-ipa.md`, `keyword-map-beer-ale-stout.md`. Covers all 105 stocked Beer SKUs. **Note:** no generic "beer" category export existed this round — most Part B findings below are WebSearch-confirmed rather than volume-backed; flagged inline.
+✅ **Fully stocked** (2026-08-28) — Deschutes Fresh Squeezed IPA, Samuel Adams Boston Lager, Sam Adams Octoberfest, Coronita, Bud Ice, Heineken Silver, Sierra Nevada Pilsner, Ballast Point Sculpin IPA, Ballast Point Grapefruit Sculpin IPA, Bell's Two Hearted Ale, and The Alchemist Heady Topper are all now live in `products.ts`, with new brand hubs added in `brandHubs.ts` for Deschutes, Ballast Point, and The Alchemist (Samuel Adams, Corona, Bud/Anheuser-Busch, Heineken, Sierra Nevada, and Bell's hubs already existed). Guinness 0 remains covered under the NA Beer & Cider category rather than here.
 
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Deschutes** (Black Butte Porter stocked) | **Deschutes Fresh Squeezed IPA** | deschutes fresh squeezed ipa (1,900, KD 18) | deschutes brewery fresh squeezed ipa (1,300, KD 19) | **~6,000+ combined — the single strongest unstocked-SKU signal in the entire Beer batch, CSV-backed** |
-| Samuel Adams (Utopias stocked) | **Samuel Adams Boston Lager** | samuel adams boston lager (4,400, KD 27) | sam adams boston lager (2,900, KD 24) | ~10,000+ combined — Sam Adams' actual flagship, currently unstocked in favor of the extreme-tier Utopias |
-| Samuel Adams (as above) | Sam Adams Octoberfest / Summer Ale (seasonal) | sam adams octoberfest (5,400, KD 22) | sam adams summer ale (3,600, KD 15) | ~15,000 combined across both seasonals |
-| Corona (Extra + Light stocked) | Coronita (7oz mini) | coronita beer (1,300, KD 14) | coronita alcohol content (1,900, KD 19) | Real, currently-sold SKU |
-| Anheuser-Busch (Budweiser stocked) | Bud Ice | bud ice (6,600, KD 14) | bud ice beer (2,400, KD 19) | Real Busch-family SKU |
-| Heineken (Original stocked) | Heineken Silver | heineken silver beer (720, KD 11) | — | Real, currently-marketed lower-ABV line |
-| Guinness (Draught stocked) | Guinness 0 (non-alcoholic) | guinness non alcoholic beer (1,600, KD 26) | — | Real, sizeable demand — note this is separately stocked in the NA Beer & Cider category |
-| **Bell's Two Hearted Ale** | new brand (Ale & Wheat subcat, Bell's Oberon already stocked) | — | confirmed real via WebSearch | Frequently ranked America's #1 beer in national polls; already added to the beer catalog and hub in this batch under IPA — flagging here since the Ale & Wheat gap analysis independently surfaced it too |
-| Sierra Nevada Pilsner | same-brewer gap, no stocked Lager SKU | sierra nevada pilsner (1,000, KD 11) | — | Real product; Sierra Nevada currently has zero Lager-subcategory SKUs |
-| Beck's / Amstel Light / Red Stripe / Tsingtao | new brands (Lager) | — | confirmed real via WebSearch, not volume-backed | Would round out the German/light/Caribbean/Asian lager sets alongside stocked Heineken/Stella/Peroni/Asahi/Sapporo/Kirin |
-| Ballast Point Sculpin IPA | new brand | — | confirmed real via WebSearch, not volume-backed | One of the most ubiquitous, gold-medal-winning American IPAs |
-| The Alchemist Heady Topper | new brand | — | confirmed real via WebSearch, not volume-backed | Credited with kickstarting the entire hazy/New England IPA movement |
-| Hoegaarden / Franziskaner / Weihenstephaner | new brands (wheat beer) | — | confirmed real via WebSearch, not volume-backed | Would add the missing German-hefeweizen style alongside stocked Belgian witbiers |
-| North Coast Old Rasputin | new brand (Stout) | — | confirmed real via WebSearch, not volume-backed | Iconic, widely available imperial stout |
-
-**Priority:** Deschutes Fresh Squeezed IPA is the standout — real, CSV-backed, ~6,000+ combined, same brewer already stocked. Samuel Adams Boston Lager is the clearest "the flagship itself isn't stocked" case in the whole project.
+Still open (no image sourced this round): Sam Adams Summer Ale, Beck's / Amstel Light / Red Stripe / Tsingtao (Lager), Hoegaarden / Franziskaner / Weihenstephaner (wheat beer), North Coast Old Rasputin (Stout).
 
 ---
 

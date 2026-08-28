@@ -5247,6 +5247,39 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'beer', hubSlug: 'deschutes', brandKeywords: ['Deschutes'], name: 'Deschutes Brewery',
+    seo: brandSeo({
+      brand: 'Deschutes Brewery', categoryLabel: 'Beer',
+      titleTag: 'Deschutes Brewery — Fresh Squeezed IPA & Black Butte Porter',
+      h1: 'Deschutes Brewery — Fresh Squeezed IPA Allocations',
+      metaDescription: 'Buy Deschutes Brewery online — Fresh Squeezed IPA, from the same Bend, Oregon brewery behind the site\'s stocked Black Butte Porter. Direct allocations.',
+      hook: "Fresh Squeezed IPA is Deschutes Brewery's citrus-forward flagship IPA, brewed with Citra and Mosaic hops — from the same Bend, Oregon brewery behind Black Butte Porter.",
+      faqs: [{ question: 'Where is Deschutes Brewery located?', answer: 'Deschutes Brewery is based in Bend, Oregon.' }],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'ballast-point', brandKeywords: ['Ballast Point'], name: 'Ballast Point',
+    seo: brandSeo({
+      brand: 'Ballast Point', categoryLabel: 'IPA',
+      titleTag: 'Ballast Point — Sculpin IPA',
+      h1: 'Ballast Point — Sculpin & Grapefruit Sculpin IPA Allocations',
+      metaDescription: 'Buy Ballast Point online — Sculpin IPA, one of the most ubiquitous, gold-medal-winning American IPAs. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Sculpin is Ballast Point's flagship IPA, a gold-medal-winning beer that helped define the modern West Coast IPA style.",
+      faqs: [{ question: 'Has Sculpin IPA won awards?', answer: 'Yes — Sculpin has won multiple gold medals at major beer competitions and is one of the most widely available craft IPAs in the US.' }],
+    }),
+  },
+  {
+    categorySlug: 'beer', hubSlug: 'the-alchemist', brandKeywords: ['The Alchemist', 'Heady Topper'], name: 'The Alchemist',
+    seo: brandSeo({
+      brand: 'The Alchemist', categoryLabel: 'IPA',
+      titleTag: 'The Alchemist — Heady Topper',
+      h1: 'The Alchemist Heady Topper — Allocations',
+      metaDescription: 'Buy The Alchemist Heady Topper online — the beer widely credited with kickstarting the hazy/New England IPA movement. Direct allocations.',
+      hook: 'Heady Topper is widely credited with kickstarting the entire hazy, New England-style IPA movement, brewed by a small, cult-followed Vermont brewery.',
+      faqs: [{ question: 'Why is Heady Topper so famous?', answer: "Heady Topper is widely credited with kickstarting the hazy, New England-style IPA movement that now dominates much of American craft brewing." }],
+    }),
+  },
 
   // ─── NON-ALCOHOLIC CHAMPAGNE & SPARKLING ───────────────────────────────────────────
   {
