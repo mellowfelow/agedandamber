@@ -53,12 +53,11 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Irish
 
-✅ **Mostly stocked** (2026-08-28) — Red Spot 15 Year, Powers Gold Label, Jameson Caskmates IPA, Teeling Single Grain, Connemara Cask Strength, Tullamore D.E.W. 18 Year, Writers' Tears (Copper Pot Florio), Kilbeggan, Method and Madness, and Dingle Single Malt are all now live in `products.ts` — with 4 new brand hubs (Dingle, Kilbeggan, Method and Madness, Writers' Tears; the rest already had hubs). Still open:
+✅ **Mostly stocked** (2026-08-28) — Red Spot 15 Year, Powers Gold Label, Jameson Caskmates IPA, Teeling Single Grain, Connemara Cask Strength, Tullamore D.E.W. 18 Year, Writers' Tears (Copper Pot Florio), Kilbeggan, Method and Madness, Dingle Single Malt, and (as of a later pass) Waterford Organic Gaia 1.1 are all now live in `products.ts` — with 5 new brand hubs (Dingle, Kilbeggan, Method and Madness, Writers' Tears, Waterford; the rest already had hubs). A real image surfaced for Waterford's Organic Gaia 1.1 in the general stock-photo batch, superseding the earlier "watch, don't stock" flag — the ownership situation is noted in the product copy but no longer a blocker since this is a clearly-labeled, real, currently-sold expression. Still open:
 
 | Brand | Primary key | Support keys | Note |
 |---|---|---|---|
 | Roe & Co | roe & co† | roe and co price† · buy roe and co† | Real per web research, not found in the SEMrush data — lower confidence |
-| Waterford | waterford whiskey† | waterford price† · buy waterford whiskey† | Real cult following, but mid-acquisition (receivership → new owner, April 2026) — **watch, don't stock yet, ownership situation unresolved as of this pass** |
 
 ---
 
@@ -76,12 +75,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Rye & Other Whiskey
 
-✅ **Mostly stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts` except two: Jack Daniel's Bonded, Crown Royal Salted Caramel, George Dickel Rye, Uncle Nearest (1820 + Rye), J.P. Wiser's Triple Barrel, Stranahan's Blue Peak, Westward Pinot Noir Cask, Old Overholt, Redemption Rye, Templeton Rye, Woodinville (Straight Rye + 6 Year + 8 Year Limited Edition — a real 3-SKU range, not just the one gap originally identified), Wilderness Trail (Kentucky Straight + Bottled-in-Bond — 2 real SKUs), Frey Ranch Bottled-in-Bond, Woodford Reserve Rye, Angel's Envy Rye, Alberta Premium, Lot No. 40, Journeyman Featherbone Bourbon, and Lost Lantern — with 11 new brand hubs. Still open (no image sourced this round):
-
-| Brand | Primary key | Support keys | Note |
-|---|---|---|---|
-| Westland American Single Malt | westland american single malt† | westland price† · buy westland single malt† · westland review† | Seattle craft distillery, category leader in American single malt |
-| Copperworks American Single Malt | copperworks single malt† | copperworks price† · buy copperworks single malt† | Seattle craft distillery, award-winning |
+✅ **Fully stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts`: Jack Daniel's Bonded, Crown Royal Salted Caramel, George Dickel Rye, Uncle Nearest (1820 + Rye), J.P. Wiser's Triple Barrel, Stranahan's Blue Peak, Westward Pinot Noir Cask, Old Overholt, Redemption Rye, Templeton Rye, Woodinville (Straight Rye + 6 Year + 8 Year Limited Edition), Wilderness Trail (Kentucky Straight + Bottled-in-Bond), Frey Ranch Bottled-in-Bond, Woodford Reserve Rye, Angel's Envy Rye, Alberta Premium, Lot No. 40, Journeyman Featherbone Bourbon, Lost Lantern, plus (in a later pass) Copperworks American Single Malt (Cask No. 160-2 Special Release), Westland American Single Malt, and WhistlePig FarmStock Rye — with 13 new brand hubs total (11 + Copperworks + Westland). No open gaps remain in this category from this pass.
 
 **Checked and excluded:** Old Elk (wheated bourbon focus, not rye — doesn't fit this category). Filibuster Rye flagged as unconfirmed/lower-confidence, not included as a verified finding.
 
@@ -103,7 +97,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Champagne & Sparkling Wine
 
-✅ **Mostly stocked** (2026-08-28) — 47 items identified in this pass are now live in `products.ts`: Moët Nectar Impérial, G.H. Mumm Cordon Rouge, Krug Clos d'Ambonnay, Perrier-Jouët Grand Brut, Piper-Heidsieck Rare, Veuve Clicquot Rich, Billecart-Salmon Demi-Sec, Mionetto Valdobbiadene Prosecco Superiore, Louis Roederer Brut Nature, Dom Ruinart Rosé, Taittinger (Nocturne + Comtes de Champagne Rosé), Anna de Codorníu, Schramsberg J. Schram, Jacquesson, Deutz (Brut Classic + Amour de Deutz + Rosé), Duval-Leroy, Philipponnat (Royale Réserve + Réserve Non Dosé), Mercier (Brut + Rosé), Bruno Paillard (Brut + Rosé), Henriot (Brut + Rosé), Josh Cellars (Prosecco + Rosé), Cupcake, Zonin (+ Rosé), Avissi (Extra Dry + DOC), Lunetta, La Vostra (+ Rosé), Riondo (Extra Dry + Rosé), Coppola, Asolo, Kim Crawford, Belaire, McBride Sisters (Brut + Rosé), and Barefoot Bubbly (Brut + Pink Moscato) — with 22 new brand hubs. Still open (no image sourced this round): **Freixenet Prosecco** (CSV-backed, zero new-vendor risk — same brand already stocked in Cava), **Gosset** (founded 1584, oldest wine house in Champagne), and **Ayala** (founded 1860, Aÿ Grand Cru). **Viarae** (non-alcoholic Prosecco) belongs under the Non-Alcoholic Champagne & Sparkling section, not here.
+✅ **Mostly stocked** (2026-08-28) — 47 items identified in this pass are now live in `products.ts`: Moët Nectar Impérial, G.H. Mumm Cordon Rouge, Krug Clos d'Ambonnay, Perrier-Jouët Grand Brut, Piper-Heidsieck Rare, Veuve Clicquot Rich, Billecart-Salmon Demi-Sec, Mionetto Valdobbiadene Prosecco Superiore, Louis Roederer Brut Nature, Dom Ruinart Rosé, Taittinger (Nocturne + Comtes de Champagne Rosé), Anna de Codorníu, Schramsberg J. Schram, Jacquesson, Deutz (Brut Classic + Amour de Deutz + Rosé), Duval-Leroy, Philipponnat (Royale Réserve + Réserve Non Dosé), Mercier (Brut + Rosé), Bruno Paillard (Brut + Rosé), Henriot (Brut + Rosé), Josh Cellars (Prosecco + Rosé), Cupcake, Zonin (+ Rosé), Avissi (Extra Dry + DOC), Lunetta, La Vostra (+ Rosé), Riondo (Extra Dry + Rosé), Coppola, Asolo, Kim Crawford, Belaire, McBride Sisters (Brut + Rosé), and Barefoot Bubbly (Brut + Pink Moscato) — with 22 new brand hubs. In a later pass, **Gosset Grand Rosé Brut** and **Viarae Prosecco DOC** (a real alcoholic Prosecco co-founded by Issa Rae — a correction to this doc's earlier note miscategorizing it as non-alcoholic) were also added, with 2 more brand hubs. Still open (no image sourced this round): **Freixenet Prosecco** (CSV-backed, zero new-vendor risk — same brand already stocked in Cava) and **Ayala** (founded 1860, Aÿ Grand Cru).
 
 **Checked and excluded:** Devaux (only thinly confirmed). Gramona and Juvé & Camps' broader ranges (couldn't independently confirm specific missing tiers). Dow's/Warre's/Cockburn's/Niepoort-equivalent situation doesn't apply here.
 
@@ -117,17 +111,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Non-Alcoholic Beer & Cider
 
-Sourced from `keyword-map-na-beer-cider.md`. Covers all 15 stocked NA beer/cider SKUs.
-
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Budweiser (Zero stocked) | **Bud Light Zero** | bud light zero (590, KD 15) | bud light non alcoholic beer (590, KD 29) | ~1,850 combined, real separate AB SKU |
-| Go Brewing | new brand | go brewing (5,400, KD 18) | go brewed (2,400, KD 13) | Independent NA craft brewery, volume rivals several stocked brands |
-| Blue Moon NA | new brand | blue moon non alcoholic beer (1,600, KD 11) | — | Highest single unstocked-brand volume in this batch |
-| Bero (Tom Holland) | new brand | tom holland non alcoholic beer (1,000, KD 47) | — | Real celebrity crossover (actor co-founded, launched 2024) |
-| Clausthaler | new brand | clausthaler non alcoholic beer (1,300, KD 15) | — | Long-established German NA beer brand |
-
-**Priority:** Bud Light Zero is the clearest same-brand win. Go Brewing and Blue Moon NA lead the new-brand candidates.
+✅ **Mostly stocked** (2026-08-28) — Bud Light Zero, Go Brewing (New School Sour, Sunbeam Pils, Sunshine State Tropical IPA), BERO Noon Wheat (Tom Holland's NA beer brand), and Clausthaler (Original, Dry Hopped, Santa Clausthaler holiday seasonal) are all now live in `products.ts` — with 3 new brand hubs (Go Brewing, BERO, Clausthaler). Still open (no image sourced this round): **Blue Moon NA** (the alcoholic Blue Moon Belgian White is already stocked, but no non-alcoholic version image was in this batch).
 
 ---
 
@@ -141,88 +125,27 @@ Still open (no image sourced this round): Sam Adams Summer Ale, Beck's / Amstel 
 
 ## Non-Alcoholic Spirits
 
-Sourced from `keyword-map-na-spirits.md`. Covers all 22 stocked NA Spirits SKUs.
-
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Seedlip** (Garden 108, Grove 42 stocked) | **Seedlip Spice 94** | seedlip spice (880, KD 19) | seedlip non alcoholic spirits (1,900, KD 15) | Real third leg of Seedlip's actual 3-flavor range — strongest Part A finding by volume; current hub copy was fixed this batch to only claim the 2 stocked ranges |
-| Lyre's (3 SKUs stocked) | **Lyre's Italian Spritz** | lyre's italian spritz (1,600, KD 9) | lyres (2,900, KD 54) | Real product, standalone volume higher than several already-stocked Lyre's SKUs |
-| Lyre's (as above) | Lyre's Amalfi Spritz | lyre's amalfi spritz (880, KD 8) | — | Same brand, same real gap category |
-| Cut Above (Agave Blanco, Mezcal stocked) | Cut Above Whiskey + Gin | cut above whiskey (210, KD 4) | cut above gin (70, KD 3) | Real, confirmed 4th/5th SKUs in Cut Above's actual lineup |
-| **CleanCo / Clean T** | new brand | clean t (260, KD 4) | cleanco clean t 750 ml (260, KD 3) | Founded 2019 by TV personality Spencer Matthews; ~950 combined, strongest unstocked-brand signal |
-| Tanqueray 0.0% | new brand | tanqueray non alcoholic gin (210, KD 6) | — | Diageo-backed — notable since Diageo also owns Ritual and Seedlip, both already stocked |
-
-**Priority:** Seedlip Spice 94 is the standout — fixes a real hook/inventory mismatch on an already-live hub page.
+✅ **Mostly stocked** (2026-08-28) — Lyre's Italian Spritz and Lyre's Amalfi Spritz were confirmed already live from an earlier pass. In this pass, **CleanCo / Clean T**, **Cut Above Whiskey**, and **Tanqueray 0.0%** were added, with 2 new brand hubs (CleanCo, Tanqueray under NA Spirits; Cut Above already had a hub). Still open (no image sourced this round): **Seedlip Spice 94** (the third leg of Seedlip's real 3-flavor range) and **Cut Above Gin**.
 
 ---
 
 ## Non-Alcoholic Champagne & Sparkling
 
-Sourced from `keyword-map-na-champagne.md`. Covers all 22 stocked NA Champagne/Sparkling SKUs.
-
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Lyre's Classico** | new brand | lyre's non alcoholic classico sparkling wine 4 pack (2,400, KD 15) | lyres classico (320, KD 20) | **~2,720 combined — the single strongest Part B finding in this report.** Built non-alcoholic from the start (not dealcoholized); 2025 IWSC silver medal |
-| Surely (Brut stocked) | Surely Sparkling Rosé | surely sparkling rosé (90, KD 12) | — | Real, current Surely SKU |
-| French Bloom (Le Blanc + Le Rosé stocked) | French Bloom La Cuvée (prestige tier) | — | confirmed real via WebSearch, not volume-backed | Called the world's most expensive alcohol-free wine by trade press — genuine premium-upsell opportunity |
-| Gruvi | new brand | gruvi bubbly rose (210, KD 3) | — | Colorado-based, picked as "best NA wine" by USA Today, Forbes, Cosmopolitan |
-| Jøyus Wine | new brand | joyous wine (170, KD 15) | — | Seattle's first NA winery, woman-owned |
-
-**Priority:** Lyre's Classico is the clear standout new-brand pick.
+✅ **Mostly stocked** (2026-08-28) — **Grüvi Bubbly Rosé** and **JOYUS Non-Alcoholic Sparkling Wine** (Seattle's first NA winery) are now live in `products.ts`, with 2 new brand hubs (Grüvi, JOYUS). Still open (no image sourced this round): **Lyre's Classico**, **Surely Sparkling Rosé**, and **French Bloom La Cuvée**.
 
 ---
 
 ## Non-Alcoholic RTD Cocktails
 
-Sourced from `keyword-map-na-rtd-cocktails.md`. Covers all 19 stocked NA RTD Cocktail SKUs.
-
-| Brand | Missing expression / New brand | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Lapo's** (Negroni stocked) | **5 more real SKUs**: Espresso Martini, Melograno Mule, Amaro Cola, Citrus Spritz, Negroni Water | — | confirmed real via WebSearch (BevNET/PR Newswire) | **Strongest Part A finding in this report** — the brand's real line has expanded to 6 total SKUs, only 1 stocked |
-| **Curious Elixirs** (No. 1 stocked) | Real numbered range continues through No. 9 | — | confirmed real via WebSearch | Large, legitimate expansion opportunity from a single stocked SKU |
-| De Soi (Purple Lune, Très Rosé stocked) | **Golden Hour**, **Spritz Italiano**, **Haute Margarita** | de soi golden hour (170, KD 16) | de soi spritz italiano (260, KD 13) · de soi haute margarita (170, KD 14) | Real, CSV-backed — Haute Margarita is the single strongest finding for this brand |
-| **Kin Euphorics** | new brand | — | confirmed real via WebSearch | One of the most recognized names in the NA-functional-aperitif category |
-| **Casamara Club** | new brand | — | confirmed real via WebSearch | Detroit-founded, one of VinePair's 2026 top-22 NA brands |
-
-**Priority:** Lapo's real 6-SKU range and Curious Elixirs' real 9-flavor range are both cases of a brand already stocked carrying a fraction of its actual lineup — the easiest, lowest-risk expansions in this whole batch.
+✅ **Mostly stocked** (2026-08-28) — **Lapo's Melograno Mule**, **De Soi Golden Hour**, and **Kin Euphorics** (Kin Spritz Energizing Flow + Lightwave) are all now live in `products.ts` — with 1 new brand hub (Kin Euphorics; Lapo's and De Soi already had hubs). Still open (no image sourced this round): Lapo's Espresso Martini/Amaro Cola/Citrus Spritz, Curious Elixirs' broader numbered range, De Soi Spritz Italiano/Haute Margarita, and Casamara Club.
 
 ---
 
 ## RTD & Liqueurs
 
-Sourced from `keyword-map-liqueurs.md` and `keyword-map-craft-cocktails.md`. Covers all 73 stocked RTD & Liqueurs SKUs (29 liqueurs across 7 subcategories + 44 Craft Cocktails).
-
-### Missing expressions within brands you already stock
-
-| Brand | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **On The Rocks** (Margarita, Old Fashioned stocked) | **7 more real expressions**: Cosmopolitan, Espresso Martini, Jalapeño Pineapple Margarita, Strawberry Daiquiri, Mai Tai, Aviation, Manhattan | — | confirmed real via WebSearch | Only 2 of the brand's 9 nationally available expressions are stocked — largest single-brand whitespace in this batch |
-| **Cutwater** (8 SKUs stocked) | ~9 more real flavors: Watermelon/Grapefruit/Spicy Mango Margarita, Long Island Iced Tea, Bloody Mary, Old Fashioned, Espresso Martini, Vodka Soda, Vodka Lemonade | — | confirmed real via WebSearch | Real range extends well past an already-deep 8-SKU assortment |
-| White Claw (Black Cherry, Variety Pack stocked) | Mango, Ruby Grapefruit, Lime (founding flavors) + White Claw Surge | — | confirmed real via WebSearch | Mango is reportedly White Claw's single best-selling standalone flavor |
-| Kahlúa (Original stocked) | Kahlúa Dunkin' Caramel Swirl Cream Liqueur | kahlúa dunkin caramel swirl cream liqueur (590, KD 22) | — | Real, CSV-backed direct hit |
-| DeKuyper (Peachtree + Triple Sec stocked) | Any of 100+ other real schnapps flavors (Sour Apple Pucker, Watermelon Pucker, Buttershots, Razzmatazz, Blue Curaçao) | flavored liqueur (1,000, KD 19) | — | Single largest real line-extension opportunity in the whole batch |
-| RumChata (Original stocked) | RumChata Limón | rumchata limon cream liqueur (390, KD 8) | — | Real, CSV-backed direct hit |
-| Tip Top Proper Cocktails (3 of 6 stocked) | Negroni, Manhattan, Daiquiri | — | confirmed real via WebSearch | Completes the brand's real 6-can lineup |
-| Underwood (3 SKUs stocked) | The Bubbles (sparkling), Rosé Bubbles, Riesling Radler, Strawberry Cooler | — | confirmed real via WebSearch, re-verify current availability | — |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|
-| **BuzzBallz Ready-to-Drink Cocktails** | buzzballz ready to drink cocktails (1,300, KD 23) | — | **Strongest single unstocked-brand finding in the RTD batch, CSV-backed** |
-| **Absolut Cocktails** | absolut cocktails (2,400, KD 21) | absolut espresso martini (1,300, KD 21) | Real Pernod Ricard RTD line built on Absolut Vodka, CSV-backed |
-| **Ramazzotti** (Italian amaro) | ramazzotti (3,600, KD 53) | italian liqueur (2,400, KD 7) | Strongest unstocked-brand volume in the Amaro export |
-| **Amarula** (South African cream liqueur) | amarula cream liqueur (2,400, KD 13) | south african cream liqueur (880, KD 15) | Real, CSV-backed |
-| **Chinola Passion Fruit Liqueur** | chinola passion fruit liqueur (2,900, KD 20) | passion fruit liqueur (3,600, KD 17) | Strongest unstocked-brand signal in the Fruit Liqueur export |
-| Disaronno / Disaronno Velvet | disaronno velvet cream liqueur (390, KD 9) | — | Real, CSV-backed — amaretto category entirely absent from the catalog |
-| Vizzy Hard Seltzer | — | confirmed real via WebSearch | Molson Coors brand, vitamin-C positioning |
-| Bud Light Seltzer | — | confirmed real via WebSearch | AB InBev hard seltzer, real and currently active |
-| Frangelico / Cynar / Suze / Licor 43 / Sambuca | — | confirmed real via WebSearch, no CSV volume this pull | Well-known liqueurs entirely absent from the catalog — recommend dedicated exports before treating as confirmed demand |
-| **Limoncello** (category gap, no specific brand) | limoncello cream liqueur (480) | is limoncello an aperitif (40+30) | Real demand exists but zero limoncello SKU of any brand currently in the catalog |
+✅ **Mostly stocked** (2026-08-28) — **BuzzBallz** (all 9 flavors: Berry Cherry Limeade, Chili Mango, Espresso Martini, Lime 'Rita, Peachballz, Pineapple Jalapeño, Strawberry 'Rita, Tequila 'Rita, Watermelon Smash), **Ramazzotti** (Amaro, Rosato, Sambuca), **Amarula** (Cream Liqueur + Vanilla Spice), **Chinola Passion Fruit Liqueur**, **Disaronno Velvet**, **Lina's Crema di Limoncello** (resolves the limoncello category gap), and 3 new DeKuyper flavors (Blue Curaçao, Razzmatazz, Watermelon Pucker) are all now live in `products.ts` — with 6 new brand hubs (BuzzBallz, Ramazzotti, Amarula, Chinola, Disaronno, Lina's; DeKuyper already had a hub). Still open (no image sourced this round): On The Rocks' and Cutwater's broader flavor ranges, White Claw founding flavors, Kahlúa Dunkin' Caramel Swirl, RumChata Limón, Tip Top's remaining 3 flavors, Underwood's sparkling extensions, Absolut Cocktails, Vizzy/Bud Light Seltzer, and Frangelico/Cynar/Suze/Licor 43/Sambuca (non-Ramazzotti).
 
 **Note:** the Craft Cocktails research flagged that Babe wine may have been discontinued by AB InBev in 2023 per WebSearch — worth confirming with procurement before further investment in that SKU's copy.
-
-**Priority:** On The Rocks and Cutwater are both cases of a brand already stocked carrying a fraction of its real lineup — easiest, lowest-risk expansions. BuzzBallz and Absolut Cocktails are the standout new-brand picks, both CSV-backed.
 
 ---
 
@@ -254,6 +177,8 @@ Sourced from `keyword-map-na-wine.md`. Covers all 24 stocked NA Wine SKUs (Red, 
 **Checked and excluded:** Josh Cellars NA (real but sparkling-only, already covered under NA Champagne & Sparkling). TÖST (real but a from-scratch tea/botanical beverage, not a wine — adjacent category, not a fit here).
 
 **Priority:** FRE Red Blend and Leitz Pinot Noir are the clearest same-brand wins (both fill a real gap in an already-stocked, already-successful line). Stella Rosa Naturals and Zeronimo are the strongest new-brand picks, both CSV-backed.
+
+✅ **Update (2026-08-28):** **JOYUS Non-Alcoholic Cabernet Sauvignon** (Seattle's first NA winery, sourced separately from the Jøyus Wine listing above — same brand) is now live in `products.ts`, with a new brand hub. Its sparkling companion, JOYUS Non-Alcoholic Sparkling Wine, was added under the Non-Alcoholic Champagne & Sparkling category instead, since it's sparkling rather than still wine.
 
 ---
 

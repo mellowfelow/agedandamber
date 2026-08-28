@@ -1028,6 +1028,17 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
+    categorySlug: 'irish-whiskey', hubSlug: 'waterford', brandKeywords: ['Waterford'], name: 'Waterford',
+    seo: brandSeo({
+      brand: 'Waterford', categoryLabel: 'Irish Whiskey',
+      titleTag: 'Waterford — Organic Gaia & Single Farm Origin Irish Whiskey',
+      h1: 'Waterford Distillery — Organic Gaia Irish Single Malt',
+      metaDescription: "Buy Waterford Irish whiskey online — Organic Gaia 1.1, Ireland's first fully organic single malt. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Waterford Distillery, founded by ex-Bruichladdich chief Mark Reynier, built its reputation on terroir-driven \"Single Farm Origin\" whiskies tracing every batch to a specific farm; Organic Gaia extends that philosophy to Ireland's first fully organic-certified single malt whiskey.",
+      faqs: [{ question: 'What makes Waterford whiskey different?', answer: "Waterford is known for terroir-driven whiskey, tracing individual releases to specific farms, and for producing Organic Gaia, one of the only fully organic-certified single malt whiskeys on the market." }],
+    }),
+  },
+  {
     categorySlug: 'rtd-liqueurs', hubSlug: 'coole-swan', brandKeywords: ['Coole Swan'], name: 'Coole Swan',
     seo: brandSeo({
       brand: 'Coole Swan', categoryLabel: 'Irish Cream Liqueur', titleTag: 'Coole Swan — Premium Irish Cream Liqueur',
@@ -1709,6 +1720,28 @@ export const BRAND_HUBS: BrandHub[] = [
       metaDescription: 'Buy Woodinville online — 100% rye whiskey grown, distilled, and aged entirely at the Washington State distillery, including 6 and 8 Year releases. Direct allocations.',
       hook: "Woodinville Whiskey Co. distills its flagship rye from 100% rye grain grown on the company's own farm in eastern Washington, then pot-distills and ages it at the Woodinville facility for a genuinely grain-to-glass product.",
       faqs: [{ question: 'Where does Woodinville source its rye grain?', answer: "Woodinville grows its own rye on a company-owned farm in eastern Washington, making its whiskey a genuinely grain-to-glass product distilled and aged at the Woodinville, Washington facility." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'copperworks', brandKeywords: ['Copperworks'], name: 'Copperworks',
+    seo: brandSeo({
+      brand: 'Copperworks', categoryLabel: 'American Single Malt',
+      titleTag: 'Copperworks — Cask-Strength American Single Malt',
+      h1: 'Copperworks — Single Cask American Single Malt Whiskey',
+      metaDescription: 'Buy Copperworks online — cask-strength, single-cask American Single Malt whiskey from a founding member of the American Single Malt Whiskey Commission.',
+      hook: "Copperworks Distilling started as a craft brewery before turning its brewing know-how toward whiskey, and was a founding member of the American Single Malt Whiskey Commission that helped win the category federal recognition in 2025. Each numbered cask is bottled at full cask strength without chill filtration.",
+      faqs: [{ question: 'What makes Copperworks whiskey distinctive?', answer: "Copperworks mashes and ferments like a brewery before distilling, and bottles each numbered cask release at full cask strength, uncut and non-chill filtered." }],
+    }),
+  },
+  {
+    categorySlug: 'other-whiskey', hubSlug: 'westland', brandKeywords: ['Westland'], name: 'Westland',
+    seo: brandSeo({
+      brand: 'Westland', categoryLabel: 'American Single Malt',
+      titleTag: 'Westland — Pacific Northwest American Single Malt',
+      h1: 'Westland American Single Malt Whiskey — Allocations',
+      metaDescription: 'Buy Westland online — Seattle\'s pioneering American Single Malt, distilled from a five-malt bill including Washington-grown barley. Direct allocations.',
+      hook: "Westland Distillery helped pioneer the modern American Single Malt category from Seattle, distilling its flagship from a five-malt bill that includes Washington-grown barley varieties, non-chill filtered with no coloring added.",
+      faqs: [{ question: 'What makes Westland different from Scotch single malt?', answer: "Westland is distilled in Seattle from a five-malt bill including Pacific Northwest-grown barley, giving it a richer, maltier profile than typical Scotch single malt." }],
     }),
   },
 
@@ -3655,6 +3688,27 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'na-spirits', hubSlug: 'cleanco', brandKeywords: ['CleanCo', 'Clean T'], name: 'CleanCo',
+    seo: brandSeo({
+      brand: 'CleanCo', categoryLabel: 'Non-Alcoholic Spirits',
+      titleTag: 'CleanCo — Clean T Non-Alcoholic Tequila Alternative',
+      h1: 'CleanCo Clean T — Non-Alcoholic Tequila Alternative',
+      metaDescription: 'Buy CleanCo online — Clean T, a creamy, peppery non-alcoholic tequila alternative. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'CleanCo was founded in 2019 by television personality Spencer Matthews after he gave up drinking, built around the idea of "drinking less, without giving up entirely." Clean T blends agave, olive, and melon notes into a creamy, alcohol-free spirit designed to mix directly into Margaritas.',
+      faqs: [{ question: 'Who founded CleanCo?', answer: "Television personality Spencer Matthews founded CleanCo in 2019 after giving up drinking, positioning the brand around moderation rather than full sobriety." }],
+    }),
+  },
+  {
+    categorySlug: 'na-spirits', hubSlug: 'tanqueray', brandKeywords: ['Tanqueray'], name: 'Tanqueray',
+    seo: brandSeo({
+      brand: 'Tanqueray', categoryLabel: 'Non-Alcoholic Spirits',
+      titleTag: 'Tanqueray — 0.0% Alcohol-Free Gin',
+      h1: 'Tanqueray 0.0% — Alcohol-Free Gin Alternative',
+      metaDescription: 'Buy Tanqueray 0.0% online — Diageo\'s alcohol-free gin alternative, built on the same juniper-led botanicals. Direct allocations at Aged & Amber.',
+      hook: "Tanqueray 0.0% is Diageo's alcohol-free extension of its classic London Dry Gin, using the same core botanicals to recreate the brand's signature dry, juniper-forward profile without the alcohol.",
+    }),
+  },
 
   // ─── FINE WINE ───────────────────────────────────────────
   {
@@ -4832,6 +4886,39 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'na-beer-cider', hubSlug: 'go-brewing', brandKeywords: ['Go Brewing'], name: 'Go Brewing',
+    seo: brandSeo({
+      brand: 'Go Brewing', categoryLabel: 'Non-Alcoholic Beer',
+      titleTag: 'Go Brewing — Award-Winning Non-Alcoholic Craft Beer',
+      h1: 'Go Brewing — Sunbeam Pils, Tropical IPA & New School Sour',
+      metaDescription: 'Buy Go Brewing online — award-winning non-alcoholic craft beer including Sunbeam Pils, Sunshine State Tropical IPA, and New School Sour. Free on $300+.',
+      hook: 'Go Brewing is a fully non-alcoholic craft brewery based in San Diego whose beers have won medals at the World Beer Cup and Great American Beer Festival — a rarity for the NA category, brewed from scratch rather than dealcoholized afterward.',
+      faqs: [{ question: 'Has Go Brewing won any awards?', answer: "Yes — Go Brewing is one of the few fully non-alcoholic breweries to win medals at major competitions including the World Beer Cup and Great American Beer Festival." }],
+    }),
+  },
+  {
+    categorySlug: 'na-beer-cider', hubSlug: 'bero', brandKeywords: ['BERO'], name: 'BERO',
+    seo: brandSeo({
+      brand: 'BERO', categoryLabel: 'Non-Alcoholic Beer',
+      titleTag: 'BERO — Non-Alcoholic Beer by Tom Holland',
+      h1: 'BERO — Noon Wheat Non-Alcoholic Beer',
+      metaDescription: "Buy BERO online — the non-alcoholic beer brand founded by actor Tom Holland, including Noon Wheat. Direct allocations at Aged & Amber. Free on $300+.",
+      hook: 'BERO is the non-alcoholic beer brand founded in 2024 by actor Tom Holland, built around delivering genuinely craft-quality NA beer rather than a novelty celebrity release.',
+      faqs: [{ question: 'Who founded BERO beer?', answer: "Actor Tom Holland founded BERO in 2024 as a non-alcoholic beer brand aimed at matching the taste and quality of full-strength craft beer." }],
+    }),
+  },
+  {
+    categorySlug: 'na-beer-cider', hubSlug: 'clausthaler', brandKeywords: ['Clausthaler'], name: 'Clausthaler',
+    seo: brandSeo({
+      brand: 'Clausthaler', categoryLabel: 'Non-Alcoholic Beer',
+      titleTag: 'Clausthaler — German Non-Alcoholic Beer',
+      h1: 'Clausthaler — Original, Dry Hopped & Santa Holiday Brew',
+      metaDescription: 'Buy Clausthaler online — the pioneering German non-alcoholic pilsner, including Dry Hopped and the Santa Clausthaler holiday seasonal. Free on $300+.',
+      hook: 'Brewed in Frankfurt using a proprietary interrupted-fermentation process since the late 1970s, Clausthaler is widely credited as one of the original pioneers of the modern non-alcoholic beer category.',
+      faqs: [{ question: 'How is Clausthaler brewed without alcohol?', answer: "Clausthaler uses a proprietary interrupted-fermentation brewing process, rather than brewing a full-strength beer and removing the alcohol afterward." }],
+    }),
+  },
 
   // ─── BEER ───────────────────────────────────────────
   {
@@ -5393,6 +5480,26 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'gruvi', brandKeywords: ['Grüvi', 'Gruvi'], name: 'Grüvi',
+    seo: brandSeo({
+      brand: 'Grüvi', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'Grüvi — Bubbly Rosé',
+      h1: 'Grüvi Bubbly Rosé — Non-Alcoholic Sparkling Wine',
+      metaDescription: 'Buy Grüvi online — gluten-free, alcohol-free sparkling Bubbly Rosé at just 60 calories per bottle. Direct allocations at Aged & Amber. Free on $300+.',
+      hook: 'Grüvi makes dealcoholized sparkling wine designed to look and pour like the real thing, packaged in individual foil-topped bottles at a light 60 calories each.',
+    }),
+  },
+  {
+    categorySlug: 'na-champagne-sparkling', hubSlug: 'joyus', brandKeywords: ['JOYUS', 'Joyus'], name: 'JOYUS',
+    seo: brandSeo({
+      brand: 'JOYUS', categoryLabel: 'Non-Alcoholic Sparkling Wine',
+      titleTag: 'JOYUS — Non-Alcoholic Sparkling Wine',
+      h1: 'JOYUS — Non-Alcoholic Sparkling Wine & Cabernet Sauvignon',
+      metaDescription: 'Buy JOYUS online — non-alcoholic sparkling wine and Cabernet Sauvignon from California. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'JOYUS sources California wine and removes the alcohol via spinning cone technology, aiming to preserve real structure and fruit character across its Cabernet Sauvignon and Sparkling Wine.',
+    }),
+  },
 
   // ─── NON-ALCOHOLIC RTD COCKTAILS ───────────────────────────────────────────
   {
@@ -5449,6 +5556,17 @@ export const BRAND_HUBS: BrandHub[] = [
         { question: 'Who founded Mingle Mocktails?', answer: 'Laura Taylor, in 2017.' },
         { question: 'Is Bethenny Frankel involved with Mingle?', answer: 'Yes, a real, publicized partnership aimed at bringing mocktails into the mainstream.' },
       ],
+    }),
+  },
+  {
+    categorySlug: 'na-rtd-cocktails', hubSlug: 'kin-euphorics', brandKeywords: ['Kin Euphorics', 'Kin Spritz'], name: 'Kin Euphorics',
+    seo: brandSeo({
+      brand: 'Kin Euphorics', categoryLabel: 'Non-Alcoholic Canned Cocktails',
+      titleTag: 'Kin Euphorics — Kin Spritz & Lightwave',
+      h1: 'Kin Euphorics — Functional Beverages for Modern Rituals',
+      metaDescription: 'Buy Kin Euphorics online — Kin Spritz Energizing Flow and Lightwave, functional non-alcoholic beverages built on adaptogens and nootropics. Free on $300+.',
+      hook: 'Kin Euphorics builds "functional beverages for modern rituals" around adaptogens and nootropics rather than alcohol — Kin Spritz Energizing Flow leans on gentle caffeine, rhodiola, and GABA, while the caffeine-free Lightwave uses reishi mushroom and L-theanine for a grounding, calming effect.',
+      faqs: [{ question: 'Does Kin Euphorics contain alcohol?', answer: 'No — Kin Euphorics beverages are 0.0% ABV, built around adaptogens and nootropics instead of alcohol.' }],
     }),
   },
 
@@ -5593,6 +5711,71 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'buzzballz', brandKeywords: ['BuzzBallz'], name: 'BuzzBallz',
+    seo: brandSeo({
+      brand: 'BuzzBallz', categoryLabel: 'Craft Cocktails',
+      titleTag: 'BuzzBallz — Single-Serve Cocktails',
+      h1: 'BuzzBallz — Single-Serve Round-Can Cocktails',
+      metaDescription: 'Buy BuzzBallz online — premixed single-serve cocktails in the signature round can, from Tequila \'Rita to Espresso Martini. Direct allocations at Aged & Amber.',
+      hook: "BuzzBallz Cocktails, based in Carrollton, Texas, are known for their distinctive round, single-serve can — a shatterproof, grab-and-go format that helped the brand become one of the best-selling premixed cocktail lines in the US.",
+      faqs: [{ question: 'What is the ABV of BuzzBallz?', answer: 'Most BuzzBallz flavors are bottled at 15% ABV (30 proof) in a 200ml single-serve can.' }],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'amarula', brandKeywords: ['Amarula'], name: 'Amarula',
+    seo: brandSeo({
+      brand: 'Amarula', categoryLabel: 'Cream Liqueurs',
+      titleTag: 'Amarula — South African Marula Fruit Cream Liqueur',
+      h1: 'Amarula — Cream Liqueur & Vanilla Spice',
+      metaDescription: 'Buy Amarula online — South African cream liqueur made from marula fruit, plus the Vanilla Spice variant. Direct allocations at Aged & Amber.',
+      hook: "Amarula is distilled in South Africa from the fruit of the marula tree — a fruit also famously beloved by wild elephants — then aged two years in French oak before blending with fresh cream, making it one of the best-known African liqueurs sold worldwide.",
+      faqs: [{ question: 'What does Amarula taste like?', answer: 'Creamy and fruity with notes of ripe tropical fruit and caramel, similar in style to Baileys but built on marula fruit rather than whiskey.' }],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'chinola', brandKeywords: ['Chinola'], name: 'Chinola',
+    seo: brandSeo({
+      brand: 'Chinola', categoryLabel: 'Fruit Liqueur',
+      titleTag: 'Chinola — Passion Fruit Liqueur',
+      h1: 'Chinola Passion Fruit Liqueur — Vine to Bottle',
+      metaDescription: 'Buy Chinola online — vine-to-bottle passion fruit liqueur from the Dominican Republic. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Chinola is produced "vine to bottle" in the Dominican Republic, growing and processing its own passion fruit on-site before blending it into a bright, tropical liqueur.',
+      faqs: [{ question: 'What does "vine to bottle" mean for Chinola?', answer: 'Chinola grows, harvests, and processes its own passion fruit on its Dominican Republic estate rather than sourcing concentrate, then blends it into the finished liqueur on-site.' }],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'disaronno', brandKeywords: ['Disaronno'], name: 'Disaronno',
+    seo: brandSeo({
+      brand: 'Disaronno', categoryLabel: 'Amaretto & Cream Liqueurs',
+      titleTag: 'Disaronno — Amaretto & Velvet Cream Liqueur',
+      h1: 'Disaronno — Original Amaretto & Velvet Cream Liqueur',
+      metaDescription: 'Buy Disaronno online — the original Italian amaretto and Disaronno Velvet cream liqueur. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Disaronno's recipe traces to 1525 in Saronno, Italy — a secret blend of herbs and fruit extracts in an apricot-kernel-oil base, notably containing no almonds despite the almond-like flavor. Velvet extends that classic flavor into a smoother, cream-based liqueur.",
+      faqs: [{ question: 'Does Disaronno contain almonds?', answer: "No — despite its almond-like flavor, Disaronno's recipe is a secret blend of herbs and fruit extracts in an apricot-kernel-oil base, containing no actual almonds." }],
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'linas', brandKeywords: ["Lina's"], name: "Lina's",
+    seo: brandSeo({
+      brand: "Lina's", categoryLabel: 'Cream Liqueurs',
+      titleTag: "Lina's — Crema di Limoncello",
+      h1: "Lina's Crema di Limoncello",
+      metaDescription: "Buy Lina's Crema di Limoncello online — an Italian-imported cream liqueur built on sun-ripened lemons. Direct allocations at Aged & Amber.",
+      hook: "Lina's Crema di Limoncello blends traditional Italian limoncello with fresh cream for a dessert-style twist on the classic Amalfi Coast liqueur.",
+    }),
+  },
+  {
+    categorySlug: 'rtd-liqueurs', hubSlug: 'ramazzotti', brandKeywords: ['Ramazzotti'], name: 'Ramazzotti',
+    seo: brandSeo({
+      brand: 'Ramazzotti', categoryLabel: 'Amaro & Digestifs',
+      titleTag: 'Ramazzotti — Amaro, Rosato & Sambuca',
+      h1: 'Ramazzotti — Amaro, Rosato Aperitivo & Sambuca',
+      metaDescription: 'Buy Ramazzotti online — the historic Italian Amaro, Rosato aperitivo, and Sambuca. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Ramazzotti Amaro follows a recipe created by Ausano Ramazzotti in Milan in 1815, infusing over 30 herbs, spices, and citrus peels into a bittersweet digestif that remains one of Italy\'s most exported amaros — the house has since expanded into a Rosato aperitivo and a classic Sambuca.',
+      faqs: [{ question: 'How old is Ramazzotti?', answer: 'The Ramazzotti Amaro recipe dates to 1815, created by Ausano Ramazzotti in Milan.' }],
+    }),
+  },
 
   // ─── NON-ALCOHOLIC WINE ───────────────────────────────────────────
   {
@@ -5701,6 +5884,16 @@ export const BRAND_HUBS: BrandHub[] = [
       h1: 'Saint Viviana Non-Alcoholic Wine — Cabernet Sauvignon & Sauvignon Blanc',
       metaDescription: 'Buy Saint Viviana non-alcoholic wine online — Cabernet Sauvignon and Sauvignon Blanc. Direct allocations at Aged & Amber. Free shipping on $300+.',
       hook: 'Saint Viviana is a US brand built around a year-long development process involving California and Pacific Northwest winemakers and a master sommelier, starting from high-end base wines specifically so little needs correcting after the alcohol is removed — a Paso Robles Cabernet Sauvignon and a Washington State Sauvignon Blanc.',
+    }),
+  },
+  {
+    categorySlug: 'na-wine', hubSlug: 'joyus', brandKeywords: ['JOYUS', 'Joyus'], name: 'JOYUS',
+    seo: brandSeo({
+      brand: 'JOYUS', categoryLabel: 'Non-Alcoholic Wine',
+      titleTag: 'JOYUS — Non-Alcoholic Cabernet Sauvignon',
+      h1: 'JOYUS — Non-Alcoholic Cabernet Sauvignon & Sparkling Wine',
+      metaDescription: 'Buy JOYUS online — non-alcoholic Cabernet Sauvignon from California. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'JOYUS sources California Cabernet Sauvignon and removes the alcohol via spinning cone technology, aiming to preserve tannin structure and dark fruit character that many dealcoholized reds lose in the process.',
     }),
   },
 
