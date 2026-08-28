@@ -2,7 +2,7 @@
 **Generated:** August 2026 | **Source:** Full mining pass across `MASTER_SEO_IMPLEMENTATION.md` + all 8 raw batch files (blog-plan-batch1/2/5/6/7.md, keyword-map-batch3/4.md, product-gaps files) + this session's own v2 keyword-map docs (Bourbon/Scotch/Irish/Japanese/Vodka)
 **Status:** Reference document — no posts built from this pass yet. This is the full topic pool for building against, now and in the future.
 
-**Current live count: 65 blog posts.** Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
+**Current live count: 64 blog posts** (verified directly against `src/data/blog.ts` on 2026-08-28 — corrected from a stale 65). Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
 
 ## Maintenance — keep this current
 
