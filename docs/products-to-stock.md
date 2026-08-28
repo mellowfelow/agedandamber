@@ -47,32 +47,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Scotch
 
-Sourced from real SEMrush data (`keyword-map-scotch-v2.md`).
-
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| Highland Park | **Viking Honour (real 12 Year flagship)** | highland park viking honour (confirmed real, ~$55-65) | highland park 12 year† · highland park viking honour price† · buy highland park viking honour† · highland park 12 vs 18† | Currently named on your own hub page — **the single strongest expression gap in this whole whiskey pass** |
-| Lagavulin | 8 Year | lagavulin 8 year (confirmed real, ~$69) | lagavulin 8 price† · buy lagavulin 8† · lagavulin 8 vs 16† | |
-| Lagavulin | Distillers Edition | lagavulin distillers edition (confirmed real, ~$144) | lagavulin distillers edition price† · buy lagavulin distillers edition† | |
-| Ardbeg | Corryvreckan, Wee Beastie, An Oa | ardbeg corryvreckan† | ardbeg wee beastie† · ardbeg an oa† · ardbeg corryvreckan price† · buy ardbeg corryvreckan† | Confirmed current core range, differentiated price points |
-| Balvenie | Caribbean Cask 14 | balvenie 14 caribbean cask (confirmed real, ~$85) | balvenie caribbean cask price† · buy balvenie caribbean cask† · balvenie caribbean cask vs doublewood† | |
-| Glenlivet | Founder's Reserve, Nadurra | glenlivet founder's reserve (confirmed real)† | glenlivet nadurra oloroso (confirmed real)† · glenlivet founder's reserve price† · buy glenlivet founder's reserve† | |
-| Laphroaig | Quarter Cask | laphroaig quarter cask (confirmed real, popular) | laphroaig quarter cask price† · buy laphroaig quarter cask† · laphroaig quarter cask vs 10† | |
-| Aberlour | A'bunadh | aberlour a'bunadh (confirmed real, cult favorite) | aberlour a'bunadh price† · buy aberlour a'bunadh† · aberlour a'bunadh batch† | You already have a dedicated blog post reviewing it but don't stock it |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|
-| **Talisker** | talisker 10 (confirmed strong candidate, web research) | talisker storm† · talisker skye† · talisker price† · buy talisker† · talisker review† | Diageo's most-visited distillery, same "Classic Malts" tier as your already-stocked Oban |
-| Glenmorangie siblings | glenmorangie lasanta† | glenmorangie quinta ruban† · glenmorangie nectar d'or† · glenmorangie 18† · glenmorangie lasanta price† | You stock only "The Original" — hub already exists, low-effort expansion |
-| Auchentoshan | auchentoshan 12† | auchentoshan american oak† · auchentoshan price† · buy auchentoshan† | Confirmed real Lowland distillery — you stock zero Lowland malts currently |
-| Cragganmore | cragganmore 12† | cragganmore price† · buy cragganmore† | Diageo "Classic Malts," moderate demand, low competition |
-| Aberfeldy | aberfeldy 12† | aberfeldy price† · buy aberfeldy† | Dewar's family, moderate demand, low competition |
-
-**Priority:** Highland Park Viking Honour is the standout — real demand, moderate price, and it's already the headline name on your own live page.
+✅ **Fully stocked** (2026-08-28) — every item identified in this pass is now live in `products.ts`: Highland Park Viking Honour, Lagavulin (8 Year + Distillers Edition), Ardbeg Corryvreckan, Balvenie 14 Caribbean Cask, Glenlivet Founder's Reserve, Laphroaig Quarter Cask, Aberlour A'bunadh, Talisker 10, Glenmorangie (Lasanta — relaunched 2025 as a 15 Year — + 18 Year), Auchentoshan 12, Cragganmore 12, and Aberfeldy 12 — with 5 new brand hubs (Aberfeldy, Auchentoshan, Cragganmore, Talisker, Glenmorangie; the rest already had hubs). No open gaps remain in this category from this pass.
 
 ---
 

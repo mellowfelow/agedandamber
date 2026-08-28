@@ -773,6 +773,61 @@ export const BRAND_HUBS: BrandHub[] = [
       ],
     }),
   },
+  {
+    categorySlug: 'scotch-whisky', hubSlug: 'aberfeldy', brandKeywords: ['Aberfeldy'], name: 'Aberfeldy',
+    seo: brandSeo({
+      brand: 'Aberfeldy', categoryLabel: 'Highland Scotch',
+      titleTag: 'Aberfeldy — Highland Single Malt, Heart of Dewar\'s',
+      h1: 'Aberfeldy Scotch — 12 Year, Allocations',
+      metaDescription: 'Buy Aberfeldy 12 Year online — the Highland single malt at the heart of Dewar\'s blended whisky. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Aberfeldy supplies the malt whisky at the heart of Dewar's blend while also bottling its own 12 Year single malt, known for a distinctive heather-honey sweetness from its local water source.",
+      faqs: [{ question: 'What is Aberfeldy known for?', answer: "Aberfeldy is the distillery that supplies the malt whisky component of Dewar's blended Scotch, while also releasing its own honeyed 12 Year single malt." }],
+    }),
+  },
+  {
+    categorySlug: 'scotch-whisky', hubSlug: 'auchentoshan', brandKeywords: ['Auchentoshan'], name: 'Auchentoshan',
+    seo: brandSeo({
+      brand: 'Auchentoshan', categoryLabel: 'Lowland Scotch',
+      titleTag: 'Auchentoshan — Triple-Distilled Lowland Scotch',
+      h1: 'Auchentoshan Scotch — 12 Year, Allocations',
+      metaDescription: 'Buy Auchentoshan 12 Year online — one of the few triple-distilled Scotch whiskies, from Scotland\'s only Lowland distillery inside Glasgow. Direct allocations.',
+      hook: 'Auchentoshan triple-distills its whisky — unusual in Scotch production — for an unusually light, smooth Lowland style, and is Scotland\'s only distillery located within Glasgow\'s city limits.',
+      faqs: [{ question: 'Why is Auchentoshan triple distilled?', answer: 'Most Scotch is distilled twice; Auchentoshan distills three times, a technique more common in Irish whiskey, producing a lighter, smoother spirit.' }],
+    }),
+  },
+  {
+    categorySlug: 'scotch-whisky', hubSlug: 'cragganmore', brandKeywords: ['Cragganmore'], name: 'Cragganmore',
+    seo: brandSeo({
+      brand: 'Cragganmore', categoryLabel: 'Speyside Scotch',
+      titleTag: 'Cragganmore — Diageo Classic Malts, Speyside',
+      h1: 'Cragganmore Scotch — 12 Year, Allocations',
+      metaDescription: 'Buy Cragganmore 12 Year online — one of Diageo\'s six Classic Malts, distilled with unusually flat-topped stills. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Cragganmore is one of Diageo\'s original six Classic Malts, distilled using distinctively flat-topped pot stills that produce a more complex, fruit-forward spirit than typical Speyside malts.',
+      faqs: [{ question: 'What are the Diageo Classic Malts?', answer: 'The Classic Malts are six single malts Diageo selected to represent Scotland\'s whisky regions, including Cragganmore for Speyside, Oban for the West Highlands, and Talisker for the islands.' }],
+    }),
+  },
+  {
+    categorySlug: 'scotch-whisky', hubSlug: 'glenmorangie', brandKeywords: ['Glenmorangie'], name: 'Glenmorangie',
+    seo: brandSeo({
+      brand: 'Glenmorangie', categoryLabel: 'Highland Scotch',
+      titleTag: 'Glenmorangie — Highland Single Malt, Lasanta & 18 Year',
+      h1: 'Glenmorangie Scotch — Lasanta & 18 Year, Allocations',
+      metaDescription: 'Buy Glenmorangie online — The Lasanta (relaunched 2025 as a 15 Year) and 18 Year Extremely Rare. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Glenmorangie uses some of the tallest stills in Scotland, producing an unusually light, floral new-make spirit before finishing expressions like Lasanta in sherry casks for added depth.',
+      faqs: [{ question: 'What changed with Glenmorangie Lasanta in 2025?', answer: "Glenmorangie relaunched Lasanta in 2025, raising its age statement from 12 to 15 years as part of a recipe update by director of whisky creation Dr. Bill Lumsden." }],
+    }),
+  },
+  {
+    categorySlug: 'scotch-whisky', hubSlug: 'talisker', brandKeywords: ['Talisker'], name: 'Talisker',
+    seo: brandSeo({
+      brand: 'Talisker', categoryLabel: 'Island Scotch',
+      titleTag: 'Talisker — Isle of Skye Single Malt',
+      h1: 'Talisker Scotch — 10 Year, Allocations',
+      metaDescription: 'Buy Talisker 10 Year online — the peppery, maritime flagship from Diageo\'s most-visited distillery, on the Isle of Skye. Direct allocations at Aged & Amber.',
+      hook: "Talisker is the only distillery on the Isle of Skye and one of Diageo's most-visited, known for a distinctively peppery, maritime character — part of the same Classic Malts tier as the site's Oban.",
+      faqs: [{ question: 'Where is Talisker made?', answer: 'Talisker is distilled on the Isle of Skye, off Scotland\'s northwest coast, and is the only distillery on the island.' }],
+    }),
+  },
 
   // ─── IRISH ───────────────────────────────────────────
   {
