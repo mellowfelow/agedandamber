@@ -103,58 +103,9 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Champagne & Sparkling Wine
 
-Sourced from real SEMrush data across three docs (`keyword-map-champagne-a-l.md`, `keyword-map-champagne-m-z.md`, `keyword-map-sparkling-wine.md`) — covering all 84 stocked Champagne & Sparkling SKUs. Note: a few brands got flagged as "unstocked" by one research agent simply because that brand's SKUs belonged to a sibling agent's scope (e.g. Louis Roederer, Laurent-Perrier, G.H. Mumm, Lanson, and Mumm Napa Rosé are all genuinely already stocked) — those false positives are excluded below.
+✅ **Mostly stocked** (2026-08-28) — 47 items identified in this pass are now live in `products.ts`: Moët Nectar Impérial, G.H. Mumm Cordon Rouge, Krug Clos d'Ambonnay, Perrier-Jouët Grand Brut, Piper-Heidsieck Rare, Veuve Clicquot Rich, Billecart-Salmon Demi-Sec, Mionetto Valdobbiadene Prosecco Superiore, Louis Roederer Brut Nature, Dom Ruinart Rosé, Taittinger (Nocturne + Comtes de Champagne Rosé), Anna de Codorníu, Schramsberg J. Schram, Jacquesson, Deutz (Brut Classic + Amour de Deutz + Rosé), Duval-Leroy, Philipponnat (Royale Réserve + Réserve Non Dosé), Mercier (Brut + Rosé), Bruno Paillard (Brut + Rosé), Henriot (Brut + Rosé), Josh Cellars (Prosecco + Rosé), Cupcake, Zonin (+ Rosé), Avissi (Extra Dry + DOC), Lunetta, La Vostra (+ Rosé), Riondo (Extra Dry + Rosé), Coppola, Asolo, Kim Crawford, Belaire, McBride Sisters (Brut + Rosé), and Barefoot Bubbly (Brut + Pink Moscato) — with 22 new brand hubs. Still open (no image sourced this round): **Freixenet Prosecco** (CSV-backed, zero new-vendor risk — same brand already stocked in Cava), **Gosset** (founded 1584, oldest wine house in Champagne), and **Ayala** (founded 1860, Aÿ Grand Cru). **Viarae** (non-alcoholic Prosecco) belongs under the Non-Alcoholic Champagne & Sparkling section, not here.
 
-### Missing expressions within brands you already stock
-
-| Brand (in catalog) | Missing expression | Primary key | Support keys | Note |
-|---|---|---|---|---|
-| **Moët & Chandon** | **Nectar Impérial** (demi-sec) and **Ice Impérial** (made to serve over ice) | moet nectar imperial (1,300, KD 18) | moet chandon nectar imperial (1,300, KD 11) · moet ice (880, KD 19) · moet ice imperial (720, KD 18) | **Strongest single Part A finding in the whole Champagne batch** — ~6,970 combined volume, real, currently-sold, on the brand you already carry 3 SKUs of |
-| G.H. Mumm | **Cordon Rouge** (the actual flagship, currently only RSRV Blanc de Blancs is stocked) | mumm cordon rouge (170, KD 13) | cordon rouge champagne (—) · gh mumm grand cordon (260, KD 11) | ~1,710 combined across the Cordon Rouge cluster — arguably a stronger case than the prestige tier you do stock |
-| Krug | **Clos d'Ambonnay** (single-vineyard Blanc de Noirs sister wine to the stocked Clos du Mesnil) | krug clos d'ambonnay (480, KD 9) | champagne krug clos d'ambonnay (260, KD 14) · krug clos d'ambonnay champagne (170, KD 13) | ~1,090 combined, directly comparable to Clos du Mesnil's own numbers |
-| **Freixenet** | **Freixenet Prosecco** (a real, separate line — you stock their Cava and Italian Rosé) | freixenet prosecco (1,600, KD 15) | — | **CSV-backed, zero new-vendor risk** — same brand, different subcategory |
-| Perrier-Jouët | **Grand Brut** (the house's actual NV entry point) | perrier jouet grand brut (1,900, KD 16) | — | Real, sizeable, and notably more volume than either currently-stocked Perrier-Jouët SKU pulls individually |
-| Piper-Heidsieck | **Rare** (prestige cuvée, 1928 origin, Marilyn Monroe association) | rare champagne (720, KD 20) | champagne rare (320, KD 17) · piper heidsieck rare (140, KD 7) | ~1,270 combined — strong for a single-SKU brand |
-| Veuve Clicquot | **Rich** (demi-sec, designed for ice/cocktails) | veuve clicquot rich (1,000, KD 11) | — | Real, notable independent volume |
-| Billecart-Salmon | **Demi-Sec** and **Brut Sous Bois** | billecart salmon demi sec champagne (260, KD 5) | billecart salmon brut sous bois (90, KD 6) | ~850 combined across both expressions |
-| Mionetto | **Valdobbiadene Prosecco Superiore DOCG** (a real, confirmed higher tier — you stock only the DOC-level Brut/Rosé) | valdobbiadene prosecco superiore (880, KD 16) | — | Category-level volume maps directly onto this tier |
-| Louis Roederer | **Brut Nature** (zero-dosage) | — | not volume-backed, WebSearch-confirmed real | Real, published expression |
-| Ruinart | **Dom Ruinart Rosé** (sibling to the stocked Dom Ruinart Blanc de Blancs) | — | not volume-backed, WebSearch-confirmed real | Same-tier logic as the Krug Clos d'Ambonnay finding |
-| Taittinger | **Comtes de Champagne Rosé** and **Nocturne** (off-dry/sec) | taittinger nocturne (50, KD 8) | — | Nocturne is small but real and exact-match |
-| Codorníu | **Anna de Codorníu** (Brut/Rosé/Blanc de Noirs — Spain's best-selling Cava per Codorníu's own claim) | — | not volume-backed, WebSearch-confirmed real | Strongest brand-heritage angle in the Cava subcategory |
-| Schramsberg | **J. Schram** prestige tier (incl. J. Schram Rosé) and **Blanc de Noirs** | — | not volume-backed, WebSearch-confirmed real | Schramsberg's own real, current range |
-
-### Brands with real demand, not in catalog at all
-
-| Brand | Category | Primary key (vol, KD) | Support keys | Note |
-|---|---|---|---|---|
-| Gosset | Champagne | — | not volume-backed; founded 1584, oldest wine house in Champagne (not just oldest Champagne house) | Real, well-documented |
-| Jacquesson | Champagne | — | not volume-backed; founded 1798, known for numbered "700-series" Cuvée releases | Real, well-documented |
-| Deutz | Champagne | — | not volume-backed; founded 1838, Aÿ Grand Cru, Amour de Deutz prestige cuvée | Real, well-documented |
-| Ayala | Champagne | — | not volume-backed; founded 1860, Aÿ Grand Cru | Real, well-documented |
-| Duval-Leroy | Champagne | — | not volume-backed; founded 1859, one of the last large independently/family-owned houses | Real, well-documented |
-| Philipponnat | Champagne | — | not volume-backed; real, well-regarded grower-house, Clos des Goisses is a genuinely famous single-vineyard cuvée | Real, well-documented |
-| Mercier | Champagne | — | not volume-backed; historic Épernay house, sister brand under LVMH alongside Moët, founded 1858 | Real, well-documented |
-| Bruno Paillard | Champagne | — | not volume-backed; respected récoltant-manipulant house founded 1981 | Real, well-documented |
-| Henriot | Champagne | — | not volume-backed; independent family house since 1808, owner of Bouchard Père & Fils in Burgundy | Real, well-documented |
-| **Josh Cellars** | Prosecco | josh prosecco (2,900, KD 13) | — | You already stock 5 Josh Cellars wine SKUs — natural line extension |
-| **Cupcake** | Prosecco | cupcake prosecco (2,400, KD 13) | — | Large-scale grocery-channel brand |
-| Zonin | Prosecco | zonin prosecco (1,900, KD 14) | — | Major Veneto Prosecco house, real US distribution |
-| Avissi | Prosecco | avissi prosecco (1,600, KD 13) | — | Real, established brand |
-| Lunetta | Prosecco | lunetta prosecco (1,600, KD 12) | — | Cavit-owned, widely available |
-| La Vostra | Prosecco | la vostra prosecco (1,600, KD 10) | — | Real, established brand |
-| Riondo | Prosecco | riondo prosecco (1,300, KD 12) | — | Real, established brand |
-| Coppola (Francis Ford) | Prosecco | coppola prosecco (1,000, KD 11) | — | Celebrity-adjacent (Francis Ford Coppola Winery) |
-| Asolo | Prosecco | asolo prosecco (1,000, KD 24) | — | Asolo Prosecco Superiore DOCG, a distinct DOCG zone from Valdobbiadene |
-| Kim Crawford | Prosecco | kim crawford prosecco (880, KD 10) | — | Major NZ wine brand's Prosecco extension |
-| Belaire (Luc Belaire) | Sparkling Rosé | belaire rose sparkling wine (480, KD 8) | luc belaire rare rosé sparkling wine (320, KD 10) | Strong hip-hop/culture crossover recognition |
-| McBride Sisters | Sparkling Rosé | mcbride sisters sparkling brut rose (210, KD 8) | — | Largest Black-owned wine company in the US |
-| Barefoot | Sparkling Wine (general) | barefoot sparkling wine (480, KD 13) | — | Major grocery-channel brand's sparkling extension; you already stock 3 Barefoot Fine Wine SKUs |
-| Viarae | Prosecco (non-alcoholic) | viarae prosecco (2,400, KD 24) | — | Growing NA-Prosecco alternative — a genuinely different product category worth its own stocking conversation |
-
-**Checked and excluded:** Devaux (Champagne, only thinly confirmed — flag for a dedicated check). Gramona and Juvé & Camps' broader ranges (real but couldn't independently confirm specific missing tiers to the same standard as the rest of this table). Dow's/Warre's/Cockburn's/Niepoort-equivalent situation doesn't apply here — no similarly-thin Champagne export this round.
-
-**Priority:** Moët Nectar Impérial/Ice Impérial (~6,970 combined) is the standout — real, sizeable demand on the brand with the biggest footprint in your catalog. Freixenet Prosecco is the lowest-risk pick (CSV-backed, zero new-vendor onboarding since you already carry the brand). Josh Cellars Prosecco and Cupcake Prosecco lead the real unstocked-brand candidates by volume.
+**Checked and excluded:** Devaux (only thinly confirmed). Gramona and Juvé & Camps' broader ranges (couldn't independently confirm specific missing tiers). Dow's/Warre's/Cockburn's/Niepoort-equivalent situation doesn't apply here.
 
 ---
 
