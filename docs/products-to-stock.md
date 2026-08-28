@@ -28,18 +28,12 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Gin
 
-### Missing expressions within brands you already stock
+✅ **Mostly stocked** (2026-08-28) — Barr Hill Tom Cat, Beefeater 24, Beefeater Pink, and Bombay Sapphire East are now live in `products.ts` (existing brand hubs already covered all four, no new hubs needed). Still open:
 
 | Brand (in catalog) | Missing expression | Primary key | Support keys | Combined vol |
 |---|---|---|---|---|
-| Barr Hill | Tom Cat Gin (barrel-aged) | barr hill tom cat gin (480, KD 11) | barr hill reserve tom cat gin (140, KD 3) · barr hill tom cat price† · buy barr hill tom cat† · barr hill tom cat review† | 620 |
-| Beefeater | Beefeater 24 | beefeater 24 (480, KD 7) | beefeater 24 price† · buy beefeater 24† · beefeater 24 vs london dry† · beefeater 24 review† | 480 |
-| Beefeater | Beefeater Pink Gin | beefeater pink gin (480, KD 7) | beefeater pink price† · buy beefeater pink gin† · beefeater pink gin review† | 480 |
-| Bombay Sapphire | Bombay Sapphire East | bombay sapphire east (260, KD 6) | bombay sapphire east price† · buy bombay sapphire east† · bombay east vs original† | 260 |
 | Bombay Sapphire | Bombay Sapphire Premier Cru | bombay sapphire premier cru (210, KD 7) | bombay premier cru price† · buy bombay premier cru† | 210 |
 | Ki No Bi | Ki No Bi Sei (navy-strength/travel-retail) | ki no bi sei† | long-tail, all under 20/row · ki no bi sei price† · buy ki no bi sei† | low but consistent |
-
-Every one of these is a line extension of a brand you already carry, not a new brand. All have excellent KD (single digits to low teens).
 
 **Out of scope / needs confirmation, not gin:** Drumshanbo also makes a whiskey (390, KD 15) and a vodka (110, KD 6) — only relevant if stocked under their own categories.
 
