@@ -2069,6 +2069,171 @@ export const BRAND_HUBS: BrandHub[] = [
       faqs: [{ question: 'Can you drink Wray and Nephew Overproof neat?', answer: 'At 126 proof (63% ABV), Wray & Nephew Overproof is rarely sipped neat — in Jamaica it\'s traditionally used in small quantities to season punches, cocktails, and even cooking, or occasionally taken as a small "chaser" shot rather than a full pour.' }],
     }),
   },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'admiral-nelson', brandKeywords: ['Admiral Nelson'], name: 'Admiral Nelson',
+    seo: brandSeo({
+      brand: 'Admiral Nelson', categoryLabel: 'Spiced Rum',
+      titleTag: 'Admiral Nelson — Value Spiced Rum',
+      h1: 'Admiral Nelson Spiced Rum — Allocations',
+      metaDescription: 'Buy Admiral Nelson spiced rum online — Heaven Hill\'s value-priced spiced rum. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Admiral Nelson is Heaven Hill's budget-friendly entry in the spiced rum category, built for mixing rather than sipping.",
+      faqs: [{ question: 'Who makes Admiral Nelson rum?', answer: 'Admiral Nelson Spiced Rum is produced by Heaven Hill, the family-owned Kentucky distiller better known for its bourbon lineup.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'blue-chair-bay', brandKeywords: ['Blue Chair Bay'], name: 'Blue Chair Bay',
+    seo: brandSeo({
+      brand: 'Blue Chair Bay', categoryLabel: 'Spiced Rum',
+      titleTag: 'Blue Chair Bay — Coconut Spiced Rum',
+      h1: 'Blue Chair Bay Rum — Coconut Spiced Allocations',
+      metaDescription: 'Buy Blue Chair Bay rum online — Kenny Chesney\'s Caribbean-inspired coconut spiced rum. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Blue Chair Bay was co-founded by musician Kenny Chesney, building a Caribbean-inspired rum lineup around his own beach-and-island brand identity.',
+      faqs: [{ question: 'Who owns Blue Chair Bay rum?', answer: 'Blue Chair Bay was co-founded by country music artist Kenny Chesney, named after his own beach house.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'brugal', brandKeywords: ['Brugal'], name: 'Brugal',
+    seo: brandSeo({
+      brand: 'Brugal', categoryLabel: 'Aged Rum',
+      titleTag: 'Brugal — Dominican Rum Since 1888',
+      h1: 'Brugal Rum — Dominican Republic Allocations',
+      metaDescription: 'Buy Brugal rum online — Dominican rum since 1888, including the sherry-cask-finished 1888. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Brugal has distilled rum in the Dominican Republic since 1888; its 1888 expression is aged twice, finishing in Spanish Oloroso sherry casks for extra depth.',
+      faqs: [{ question: 'What is Brugal 1888?', answer: "Brugal 1888 is the brand's double-aged rum, finished in Spanish Oloroso sherry casks after primary aging in American oak — named for Brugal's founding year." }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'cruzan', brandKeywords: ['Cruzan'], name: 'Cruzan',
+    seo: brandSeo({
+      brand: 'Cruzan', categoryLabel: 'Spiced Rum',
+      titleTag: 'Cruzan — 9-Spice Rum from the US Virgin Islands',
+      h1: 'Cruzan Rum — 9 Spiced, Allocations',
+      metaDescription: 'Buy Cruzan rum online — 9 Spiced blend from one of the oldest rum distilleries in the world, on St. Croix. Direct allocations at Aged & Amber. Free $300+.',
+      hook: "Cruzan Rum Distillery on St. Croix is one of the oldest continuously operating rum distilleries in the world; its 9 Spiced expression blends the house rum with nine natural spices.",
+      faqs: [{ question: 'Where is Cruzan rum made?', answer: 'Cruzan is distilled at the Cruzan Rum Distillery on St. Croix in the US Virgin Islands.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'don-papa', brandKeywords: ['Don Papa'], name: 'Don Papa',
+    seo: brandSeo({
+      brand: 'Don Papa', categoryLabel: 'Aged Rum',
+      titleTag: 'Don Papa — Filipino Small-Batch Rum',
+      h1: 'Don Papa Rum — Negros Island Allocations',
+      metaDescription: 'Buy Don Papa rum online — small-batch rum aged 7 years on Negros Island, Philippines. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: "Don Papa is distilled from sugarcane grown on Negros Island in the Philippines and aged at the foot of Mount Kanlaon — part of a wave of premium Filipino rum gaining international attention.",
+      faqs: [{ question: 'Where does Don Papa rum come from?', answer: "Don Papa is distilled and aged on Negros Island in the Philippines, a region historically known as the country's sugarcane heartland." }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'havana-club', brandKeywords: ['Havana Club'], name: 'Havana Club',
+    seo: brandSeo({
+      brand: 'Havana Club', categoryLabel: 'Aged Rum',
+      titleTag: 'Havana Club — 7 Años Aged Rum',
+      h1: 'Havana Club Rum — 7 Años, Allocations',
+      metaDescription: 'Buy Havana Club rum online — the 7 Años aged expression, produced by Bacardi in Puerto Rico for the US market. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Havana Club is one of the best-known rum names worldwide, but the bottle legally sold in the US is produced by Bacardi in Puerto Rico rather than Cuba, following a long-running trademark dispute with the Cuban state-owned original.',
+      faqs: [{ question: 'Is the Havana Club sold in the US the same as the Cuban version?', answer: "No. Due to a decades-long trademark dispute, the Havana Club sold legally in the US is produced by Bacardi in Puerto Rico — a different product from the Cuban state-owned Havana Club sold internationally." }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'koloa', brandKeywords: ['Koloa'], name: 'Koloa Rum Company',
+    seo: brandSeo({
+      brand: 'Koloa Rum Company', categoryLabel: 'Aged Rum',
+      titleTag: "Koloa — Hawaiian Pot Still Rum",
+      h1: "Koloa Rum — Kaua'i Gold Allocations",
+      metaDescription: "Buy Koloa Hawaiian rum online — pot-still rum distilled on Kaua'i from locally grown sugarcane. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Koloa Rum Company distills on the island of Kaua'i using pot-still methods and Hawaii-grown sugarcane — a small but growing craft rum scene distilling entirely within the US.",
+      faqs: [{ question: 'Is Koloa rum made in Hawaii?', answer: "Yes — Koloa Rum Company distills on the island of Kaua'i, Hawaii, using locally grown sugarcane." }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'old-monk', brandKeywords: ['Old Monk'], name: 'Old Monk',
+    seo: brandSeo({
+      brand: 'Old Monk', categoryLabel: 'Dark Rum',
+      titleTag: 'Old Monk — Iconic Indian Dark Rum',
+      h1: 'Old Monk Rum — 7 Year, Allocations',
+      metaDescription: 'Buy Old Monk rum online — India\'s iconic dark rum since 1954, aged 7 years. Direct allocations at Aged & Amber. Free shipping on $300+.',
+      hook: 'Old Monk has been distilled in India since 1954 and remains a cult-favorite dark rum, prized for its bold vanilla character from extended oak aging.',
+      faqs: [{ question: 'How old is Old Monk rum?', answer: 'Old Monk has been produced by Mohan Meakin in India since 1954.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'parrot-bay', brandKeywords: ['Parrot Bay'], name: 'Parrot Bay',
+    seo: brandSeo({
+      brand: 'Parrot Bay', categoryLabel: 'Flavored Rum',
+      titleTag: 'Parrot Bay — Coconut Rum',
+      h1: 'Parrot Bay Coconut Rum — Allocations',
+      metaDescription: 'Buy Parrot Bay coconut rum online — a low-proof, widely available coconut rum from the Captain Morgan family of brands. Direct allocations at Aged & Amber.',
+      hook: 'Parrot Bay is a Puerto Rican coconut rum from Diageo\'s Captain Morgan family of brands, bottled at a lower 42 proof for easy tropical mixing.',
+      faqs: [{ question: 'Who makes Parrot Bay rum?', answer: "Parrot Bay is produced by Diageo, the same parent company behind Captain Morgan." }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'privateer', brandKeywords: ['Privateer'], name: 'Privateer',
+    seo: brandSeo({
+      brand: 'Privateer', categoryLabel: 'American Rum',
+      titleTag: 'Privateer — American Rum from Massachusetts',
+      h1: 'Privateer Rum — New England Reserve Allocations',
+      metaDescription: 'Buy Privateer rum online — distilled and aged in Ipswich, Massachusetts, reviving New England\'s colonial rum trade. Direct allocations at Aged & Amber.',
+      hook: "Privateer was founded by Andrew Cabot, a descendant of a family that distilled rum in Massachusetts in the 18th century — part of a small movement of American-made rum reviving New England's colonial rum trade.",
+      faqs: [{ question: 'Where is Privateer rum made?', answer: 'Privateer distills and ages its rum entirely in Ipswich, Massachusetts.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'pussers', brandKeywords: ["Pusser's", 'Pussers'], name: "Pusser's",
+    seo: brandSeo({
+      brand: "Pusser's", categoryLabel: 'Dark Rum',
+      titleTag: "Pusser's — Original British Navy Rum Recipe",
+      h1: "Pusser's Rum — British Navy Recipe Allocations",
+      metaDescription: "Buy Pusser's rum online — based on the original rum ration recipe issued to the British Royal Navy until 1970. Direct allocations at Aged & Amber. Free $300+.",
+      hook: "Pusser's is produced from the recipe used for the British Royal Navy's official rum ration, which was discontinued in 1970 after nearly 300 years of continuous use.",
+      faqs: [{ question: 'What does "Pusser\'s" mean?', answer: '"Pusser" was Royal Navy slang for the ship\'s purser, the officer responsible for distributing the daily rum ration to sailors.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'ron-barcelo', brandKeywords: ['Ron Barceló', 'Barcelo', 'Barceló'], name: 'Ron Barceló',
+    seo: brandSeo({
+      brand: 'Ron Barceló', categoryLabel: 'Aged Rum',
+      titleTag: 'Ron Barceló — Dominican Sipping Rum',
+      h1: 'Ron Barceló Rum — Imperial, Allocations',
+      metaDescription: 'Buy Ron Barceló rum online — Imperial, a 10-year Dominican sipping rum and repeat Double Gold medal winner. Direct allocations at Aged & Amber.',
+      hook: "Ron Barceló Imperial is aged a minimum of ten years in the Dominican Republic, a repeat Double Gold medal winner at international spirits competitions.",
+      faqs: [{ question: 'How old is Ron Barceló Imperial?', answer: 'Ron Barceló Imperial is aged a minimum of ten years.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'siesta-key', brandKeywords: ['Siesta Key'], name: 'Siesta Key',
+    seo: brandSeo({
+      brand: 'Siesta Key', categoryLabel: 'Spiced & Flavored Rum',
+      titleTag: 'Siesta Key — Florida Craft Rum',
+      h1: 'Siesta Key Rum — Spiced & Toasted Coconut Allocations',
+      metaDescription: 'Buy Siesta Key rum online — Sarasota, Florida craft rum, including Spiced and 100-proof Toasted Coconut. Direct allocations at Aged & Amber. Free $300+.',
+      hook: 'Siesta Key Distillery makes its rum in Sarasota, Florida, offering both a standard spiced expression and a higher-proof toasted coconut variant.',
+      faqs: [{ question: 'Where is Siesta Key rum made?', answer: 'Siesta Key Rum is distilled in Sarasota, Florida.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'ten-to-one', brandKeywords: ['Ten To One', 'Ten to One'], name: 'Ten To One',
+    seo: brandSeo({
+      brand: 'Ten To One', categoryLabel: 'Pan-Caribbean Rum',
+      titleTag: 'Ten To One — Pan-Caribbean Rum Blends',
+      h1: 'Ten To One Rum — Dark & White, Allocations',
+      metaDescription: 'Buy Ten To One rum online — Dark and White pan-Caribbean blends celebrating Caribbean rum heritage and Carnival culture. Direct allocations at Aged & Amber.',
+      hook: 'Ten To One blends rums from across the Caribbean into single expressions, founded to celebrate the region\'s rum-making traditions and Carnival culture through both the product and its branding.',
+      faqs: [{ question: 'Is Ten To One rum from one island?', answer: 'No — Ten To One blends rum sourced from across the Caribbean into a single pan-Caribbean expression, rather than sourcing from one country or distillery.' }],
+    }),
+  },
+  {
+    categorySlug: 'aged-dark-rum', hubSlug: 'zaya', brandKeywords: ['Zaya'], name: 'Zaya',
+    seo: brandSeo({
+      brand: 'Zaya', categoryLabel: 'Aged Rum',
+      titleTag: 'Zaya — 12 Year Gran Reserva Rum',
+      h1: 'Zaya Rum — 12 Year Gran Reserva Allocations',
+      metaDescription: 'Buy Zaya rum online — 12 Year Gran Reserva, a rich sipping rum blend with an excellent reputation for its price. Direct allocations at Aged & Amber.',
+      hook: 'Zaya Gran Reserva blends rum aged an average of twelve years into a rich, dessert-like sipping profile that regularly punches above its price point in blind tastings.',
+      faqs: [{ question: 'How old is Zaya rum?', answer: 'Zaya Gran Reserva is a blend averaging twelve years of age.' }],
+    }),
+  },
 
   // ─── GIN ───────────────────────────────────────────
   {

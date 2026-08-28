@@ -22,28 +22,7 @@ This is a **living document**, same as `blog-content-calendar.md`. Every time a 
 
 ## Rum
 
-### Brands with real demand, not in catalog at all
-
-| Brand | Primary key (vol, KD) | Support keys | Combined vol | Tier |
-|---|---|---|---|---|
-| **Privateer** | privateer rum (14,800, KD 35) | andrew cabot privateer rum (1,300) · privateer rum ceo (1,900) · privateer rum price† · buy privateer rum† · privateer rum review† | ~18,000 | T2 — highest-priority candidate |
-| **Pusser's** | pusser's rum (1,900, KD 17) | pussers rum (5,400, KD 21) · pusser's rum price† · buy pusser's rum† · pusser's rum review† · pusser's navy rum† | ~7,300 | T1 — second-highest priority |
-| Koloa Rum | koloa rum (4,400, KD 32) | koloa rum company (1,900, KD 16) · koloa rum price† · buy koloa rum† · koloa rum review† | ~6,300 | T2 |
-| Havana Club | havana club rum (5,400, KD 36) | havana club 7 anos† · havana club price† · buy havana club rum† · havana club review† | 5,400 | T2 |
-| Brugal | brugal rum (6,600, KD 12) | brugal 1888† · brugal price† · buy brugal rum† · brugal review† | 6,600 | T1 — excellent KD |
-| Cruzan | cruzan rum (5,400, KD 17) | cruzan 9 rum† · cruzan price† · buy cruzan rum† · cruzan review† | 5,400 | T1 |
-| Parrot Bay | parrot bay rum (2,900, KD 10) | parrot bay coconut rum (1,600, KD 8) · parrot bay price† · buy parrot bay rum† | ~4,500 | T1 — excellent KD |
-| Blue Chair Bay | blue chair bay rum (4,400, KD 33) | blue chair bay coconut spiced† · blue chair bay price† · buy blue chair bay rum† | 4,400 | T2 |
-| Old Monk | old monk rum (2,900, KD 15) | old monk 7 year† · old monk price† · buy old monk rum† | 2,900 | T1 |
-| Tanduay | tanduay rum (2,400, KD 18) | tanduay 5 years† · tanduay price† · buy tanduay rum† | 2,400 | T1 |
-| Siesta Key | siesta key rum (2,400, KD 33) | siesta key spiced rum† · siesta key price† · buy siesta key rum† | 2,400 | T2 |
-| Ten To One | ten to one rum (1,900, KD 25) | ten to one dark rum† · ten to one price† · buy ten to one rum† | 1,900 | T1 |
-| Don Papa | don papa rum (1,900, KD 27) | don papa 7 rum† · don papa price† · buy don papa rum† | 1,900 | T2 |
-| Zaya | zaya rum (1,900, KD 6) | zaya 12 rum† · zaya price† · buy zaya rum† | 1,900 | T1 — best KD in this list |
-| Ron Barceló | barcelo rum (1,900, KD 12) | ron barcelo imperial† · barcelo price† · buy barcelo rum† | 1,900 | T1 |
-| Admiral Nelson | admiral nelson rum (1,900, KD 9) | admiral nelson spiced rum† · admiral nelson price† · buy admiral nelson rum† | 1,900 | T1 |
-
-Re-checked at the lower 500-vol threshold — no additional brands surfaced below the 1,900 floor already covered above.
+✅ **Fully stocked** (2026-08-28) — Privateer, Pusser's, Koloa (Kaua'i Gold), Havana Club 7 Años, Brugal 1888, Cruzan 9 Spiced, Parrot Bay Coconut, Blue Chair Bay Coconut Spiced, Old Monk 7 Year, Tanduay 5 Years Dark, Siesta Key (Spiced + Toasted Coconut), Ten To One (Dark + White), Don Papa 7, Zaya 12 Gran Reserva, Ron Barceló Imperial, and Admiral Nelson Spiced are all now live in `products.ts` with brand hubs in `brandHubs.ts`. No open gaps remain in this category from this pass.
 
 ---
 
