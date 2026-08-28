@@ -621,7 +621,7 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
-    categorySlug: 'scotch-whisky', hubSlug: 'bruichladdich', brandKeywords: ['Bruichladdich'], name: 'Bruichladdich',
+    categorySlug: 'scotch-whisky', hubSlug: 'bruichladdich', brandKeywords: ['Bruichladdich', 'Port Charlotte', 'Octomore'], name: 'Bruichladdich',
     seo: brandSeo({
       brand: 'Bruichladdich', categoryLabel: 'Islay Scotch',
       titleTag: 'Bruichladdich — Port Charlotte 10 Year',
@@ -1039,7 +1039,7 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
-    categorySlug: 'rtd-liqueurs', hubSlug: 'coole-swan', brandKeywords: ['Coole Swan'], name: 'Coole Swan',
+    categorySlug: 'irish-whiskey', hubSlug: 'coole-swan', brandKeywords: ['Coole Swan'], name: 'Coole Swan',
     seo: brandSeo({
       brand: 'Coole Swan', categoryLabel: 'Irish Cream Liqueur', titleTag: 'Coole Swan — Premium Irish Cream Liqueur',
       h1: 'Coole Swan Irish Cream Liqueur — Premium Direct Allocations',
@@ -1602,7 +1602,7 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
-    categorySlug: 'other-whiskey', hubSlug: 'angels-envy-rye', brandKeywords: ["Angel's Envy Rye"], name: "Angel's Envy",
+    categorySlug: 'other-whiskey', hubSlug: 'angels-envy', brandKeywords: ["Angel's Envy Rye"], name: "Angel's Envy",
     seo: brandSeo({
       brand: "Angel's Envy", categoryLabel: 'Rye Whiskey',
       titleTag: "Angel's Envy Rye — Rum & Port Cask Finished",
@@ -3240,7 +3240,7 @@ export const BRAND_HUBS: BrandHub[] = [
     }),
   },
   {
-    categorySlug: 'craft-vodka', hubSlug: 'ciroc', brandKeywords: ['Ciroc'], name: 'Cîroc',
+    categorySlug: 'craft-vodka', hubSlug: 'ciroc', brandKeywords: ['Cîroc', 'Ciroc'], name: 'Cîroc',
     seo: brandSeo({
       brand: 'Cîroc', categoryLabel: 'Vodka',
       titleTag: 'Cîroc — French Grape Vodka',

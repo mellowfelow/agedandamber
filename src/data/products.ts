@@ -229,6 +229,7 @@ export const CATEGORIES: Category[] = [
       'VS Cognac',
       'VSOP Cognac',
       'XO Cognac',
+      'XXO Cognac',
       'Rare Brandy',
     ],
     seo: {
@@ -247,7 +248,7 @@ export const CATEGORIES: Category[] = [
     slug: 'rtd-liqueurs',
     name: 'RTD & Liqueurs',
     description: 'Masterfully batched pour-over cocktails, decadent cream liqueurs, bitter amari, and aperitifs crafted with pure spirits.',
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/rtd-liqueurs.webp',
     subcategories: [
       'Craft Cocktails',
       'Cream Liqueurs',
@@ -332,7 +333,7 @@ export const CATEGORIES: Category[] = [
     slug: 'na-wine',
     name: 'Non-Alcoholic Wine',
     description: 'De-alcoholized fine red, white, and rosé wines crafted from premium vineyard grapes while retaining full varietal tannins, oak finish, and aromas.',
-    image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/na-wine.webp',
     subcategories: [
       'Non-Alcoholic Red Wine',
       'Non-Alcoholic White Wine',
@@ -374,7 +375,7 @@ export const CATEGORIES: Category[] = [
     slug: 'na-spirits',
     name: 'Non-Alcoholic Spirits',
     description: 'Distilled zero-proof alternatives for whiskey, gin, and tequila botanically layered to deliver authentic bite, smoke, and complexity.',
-    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/na-spirits.webp',
     subcategories: [
       'Non-Alcoholic Whiskey Alternative',
       'Non-Alcoholic Gin Alternative',
@@ -396,7 +397,7 @@ export const CATEGORIES: Category[] = [
     slug: 'na-rtd-cocktails',
     name: 'Ready-to-Drink Non-Alcoholic Cocktails',
     description: 'Pre-mixed alcohol-free spritzes, mocktails, and canned artisanal elixirs crafted with natural bitters and fresh botanicals.',
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/na-rtd-cocktails.webp',
     subcategories: [
       'Non-Alcoholic Cocktails',
       'Non-Alcoholic Spritz',
@@ -417,7 +418,7 @@ export const CATEGORIES: Category[] = [
     slug: 'na-beer-cider',
     name: 'Non-Alcoholic Beer & Cider',
     description: 'Craft brewed zero-proof IPAs, rich stouts, crisp lagers, and cold-pressed apple ciders packed with natural hop character.',
-    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/na-beer-cider.webp',
     subcategories: [
       'Non-Alcoholic Beer',
       'Non-Alcoholic Cider',
@@ -437,7 +438,7 @@ export const CATEGORIES: Category[] = [
     slug: 'beer',
     name: 'Beer',
     description: 'Hop-forward IPAs, crisp lagers, rich stouts and porters, and Belgian-style ales from craft breweries and iconic import houses alike.',
-    image: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/beer.webp',
     subcategories: [
       'IPA',
       'Lager',
@@ -459,7 +460,7 @@ export const CATEGORIES: Category[] = [
     slug: 'cider',
     name: 'Cider',
     description: 'Crisp, fruit-forward hard ciders pressed from real apples and orchard fruit, from classic dry styles to modern flavored cans.',
-    image: 'https://images.unsplash.com/photo-1571613316887-6f8d5cbf7ef7?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/cider.webp',
     subcategories: [
       'Hard Cider',
     ],
@@ -478,7 +479,7 @@ export const CATEGORIES: Category[] = [
     slug: 'bar-essentials',
     name: 'Bar Essentials',
     description: 'The bitters, vermouths, mixers, syrups, and garnishes every serious home bar needs to build a proper cocktail from scratch.',
-    image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800',
+    image: '/images/categories/bar-essentials.webp',
     subcategories: [
       'Bitters',
       'Vermouth',
@@ -622,18 +623,18 @@ export const PRODUCTS: Product[] = [
     price: 95,
     category: 'bourbon-whiskey',
     subcategory: 'Small Batch Bourbon',
-    proof: 124,
-    age: 'No Age Statement (Batch Varies)',
+    proof: 126.8,
+    age: '6-8 Year (Batch Varies)',
     volume: '750ml',
-    shortDescription: 'Uncut, unfiltered, barrel-proof small batch bourbon from Jim Beam, bottled straight from the barrel.',
-    fullDescription: "Booker's is bottled uncut and unfiltered directly from the barrel at Jim Beam's Clermont, Kentucky distillery, with proof varying by batch. We source current-batch releases directly from licensed Kentucky distributors.",
+    shortDescription: "Jim Beam's uncut, unfiltered barrel-proof bourbon, named for master distiller Booker Noe.",
+    fullDescription: "Booker's is named for Booker Noe, Jim Beam's sixth-generation master distiller, and bottled uncut and unfiltered straight from the barrel at the Clermont, Kentucky distillery. Batches vary slightly in proof and age, released a few times a year with distinct names — we source current-batch releases directly from licensed Kentucky distributors.",
     tastingNotes: {
       nose: 'Intense oak, brown sugar, and dark fruit.',
       palate: 'Rich and full-proof, rewarding a splash of water.',
       finish: 'Long and warming with concentrated caramel and spice.',
     },
-    badge: 'Barrel Proof',
-    featured: false,
+    badge: 'Uncut, Unfiltered, Barrel Proof',
+    featured: true,
     images: ['/images/products/bourbon/bookers-small-batch-bourbon.webp'],
     stock: 12,
     caskType: 'New Charred American Oak',
@@ -641,7 +642,7 @@ export const PRODUCTS: Product[] = [
     seo: {
       // Brand-level demand (~55K combined signal per keyword-map-bourbon-v2.md) is real, but the source's per-product table treats Booker's as unstocked and doesn't break out this SKU — product-level split here is inferred, not SEMrush-backed.
       primaryKeyword: "booker's bourbon",
-      secondaryKeywords: ["booker's small batch bourbon", "booker's bourbon proof", "jim beam booker's bourbon", "little book bourbon"],
+      secondaryKeywords: ["booker's small batch bourbon", "booker's bourbon proof", "jim beam booker's bourbon", "little book bourbon", "booker's bourbon price", "buy booker's bourbon", "booker's vs knob creek"],
     },
   },
   {
@@ -2093,34 +2094,6 @@ export const PRODUCTS: Product[] = [
     seo: {
       primaryKeyword: "basil hayden toast",
       secondaryKeywords: ["basil hayden toast price", "buy basil hayden toast", "basil hayden toast review"],
-    },
-  },
-  {
-    id: 'prod-bourbon-b3-05',
-    slug: 'bookers-bourbon',
-    name: "Booker's Bourbon",
-    price: 89.99,
-    category: 'bourbon-whiskey',
-    subcategory: "Small Batch Bourbon",
-    proof: 126.8,
-    age: "6-8 Year",
-    volume: '750ml',
-    shortDescription: "Jim Beam's uncut, unfiltered barrel-proof bourbon, named for master distiller Booker Noe.",
-    fullDescription: "Booker's is named for Booker Noe, Jim Beam's sixth-generation master distiller, and bottled uncut and unfiltered straight from the barrel. Batches vary slightly in proof and age, released a few times a year with distinct names.",
-    tastingNotes: {
-      nose: "Rich caramel, dark fruit, oak.",
-      palate: "Bold, high-proof caramel and baking spice.",
-      finish: "Long, hot, oak-forward.",
-    },
-    badge: "Uncut, Unfiltered, Barrel Proof",
-    featured: true,
-    images: ["/images/products/bourbon-whiskey/bookers-bourbon.webp"],
-    stock: 10,
-    caskType: "New Charred American Oak",
-    distilleryLocation: "Clermont, Kentucky",
-    seo: {
-      primaryKeyword: "booker's bourbon",
-      secondaryKeywords: ["booker's bourbon price", "buy booker's bourbon", "booker's batch", "booker's vs knob creek", "booker's review"],
     },
   },
   {
@@ -5519,7 +5492,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka Miyagikyo Distillery, Sendai, Japan",
     seo: {
-      primaryKeyword: "nikka miyagikyo",
+      primaryKeyword: "nikka miyagikyo single malt",
       secondaryKeywords: ["miyagikyo distillery", "nikka whisky", "nikka vs suntory"],
     },
   },
@@ -5575,7 +5548,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Ex-Bourbon & Sherry Oak",
     distilleryLocation: "Nikka Yoichi Distillery, Hokkaido, Japan",
     seo: {
-      primaryKeyword: "nikka yoichi",
+      primaryKeyword: "nikka yoichi single malt",
       secondaryKeywords: ["yoichi distillery", "nikka whisky", "nikka review"],
     },
   },
@@ -5773,7 +5746,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Repurposed Mountain Tunnel",
     distilleryLocation: "Chugoku Jozo, Hiroshima, Japan",
     seo: {
-      primaryKeyword: "togouchi whisky",
+      primaryKeyword: "togouchi premium blended whisky",
       secondaryKeywords: ["togouchi blended japanese whisky", "buy togouchi whisky", "togouchi review"],
     },
   },
@@ -5858,7 +5831,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Miyagikyo Distillery, Sendai, Japan",
     // No distinct SEMrush term exists for this specific variant — falling back to the brand-line term per the source's own convention.
     seo: {
-      primaryKeyword: "nikka miyagikyo",
+      primaryKeyword: "nikka miyagikyo aromatic yeast",
       secondaryKeywords: ["miyagikyo distillery", "nikka whisky"],
     },
   },
@@ -5915,7 +5888,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Yoichi, Hokkaido, Japan",
     // No age-specific SEMrush term exists ("nikka yoichi 10" untracked) — falling back to the brand-line term per the source's own convention.
     seo: {
-      primaryKeyword: "nikka yoichi",
+      primaryKeyword: "nikka yoichi 10 year",
       secondaryKeywords: ["yoichi distillery", "nikka price", "nikka whisky"],
     },
   },
@@ -8322,7 +8295,7 @@ export const PRODUCTS: Product[] = [
     caskType: "New Charred American Oak",
     distilleryLocation: "Danville, Kentucky",
     seo: {
-      primaryKeyword: "wilderness trail rye",
+      primaryKeyword: "wilderness trail kentucky straight rye",
       secondaryKeywords: ["wilderness trail rye price", "buy wilderness trail rye"],
     },
   },
@@ -8350,7 +8323,7 @@ export const PRODUCTS: Product[] = [
     caskType: "New Charred American Oak",
     distilleryLocation: "Danville, Kentucky",
     seo: {
-      primaryKeyword: "wilderness trail rye",
+      primaryKeyword: "wilderness trail bottled in bond rye",
       secondaryKeywords: ["wilderness trail rye price", "buy wilderness trail rye"],
     },
   },
@@ -8406,7 +8379,7 @@ export const PRODUCTS: Product[] = [
     caskType: "New Charred American Oak",
     distilleryLocation: "Woodinville, Washington",
     seo: {
-      primaryKeyword: "woodinville rye",
+      primaryKeyword: "woodinville straight rye",
       secondaryKeywords: ["woodinville rye price", "buy woodinville rye", "woodinville rye review"],
     },
   },
@@ -8434,7 +8407,7 @@ export const PRODUCTS: Product[] = [
     caskType: "New Charred American Oak",
     distilleryLocation: "Woodinville, Washington",
     seo: {
-      primaryKeyword: "woodinville rye",
+      primaryKeyword: "woodinville 6 year rye",
       secondaryKeywords: ["woodinville rye 6 year", "woodinville rye price", "buy woodinville rye"],
     },
   },
@@ -10749,7 +10722,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "cabo wabo tequila", secondaryKeywords: ["cabo wabo tequila price", "buy cabo wabo tequila", "cabo wabo reposado", "cabo wabo anejo"] },
+    seo: { primaryKeyword: "cabo wabo blanco", secondaryKeywords: ["cabo wabo tequila price", "buy cabo wabo tequila", "cabo wabo reposado", "cabo wabo anejo"] },
   },
   {
     id: 'prod-tequila-b3-04',
@@ -10770,7 +10743,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "cabo wabo tequila", secondaryKeywords: ["cabo wabo reposado tequila", "cabo wabo price", "buy cabo wabo tequila"] },
+    seo: { primaryKeyword: "cabo wabo reposado", secondaryKeywords: ["cabo wabo reposado tequila", "cabo wabo price", "buy cabo wabo tequila"] },
   },
   {
     id: 'prod-tequila-b3-05',
@@ -11001,7 +10974,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "deleon tequila", secondaryKeywords: ["deleon tequila price", "buy deleon tequila", "deleon blanco tequila", "deleon anejo"] },
+    seo: { primaryKeyword: "deleon blanco tequila", secondaryKeywords: ["deleon tequila price", "buy deleon tequila", "deleon blanco tequila", "deleon anejo"] },
   },
   {
     id: 'prod-tequila-b3-16',
@@ -11022,7 +10995,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "deleon tequila", secondaryKeywords: ["deleon anejo tequila", "deleon tequila price", "buy deleon tequila"] },
+    seo: { primaryKeyword: "deleon anejo tequila", secondaryKeywords: ["deleon anejo tequila", "deleon tequila price", "buy deleon tequila"] },
   },
   {
     id: 'prod-tequila-b3-17',
@@ -11107,27 +11080,6 @@ export const PRODUCTS: Product[] = [
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
     seo: { primaryKeyword: "el tesoro anejo", secondaryKeywords: ["el tesoro anejo price", "buy el tesoro anejo", "el tesoro anejo vs extra anejo"] },
-  },
-  {
-    id: 'prod-tequila-b3-21',
-    slug: 'el-tesoro-extra-anejo',
-    name: "El Tesoro Extra Añejo",
-    price: 99.99,
-    category: 'tequila-mezcal',
-    subcategory: "Extra Añejo Tequila",
-    proof: 80,
-    age: "No Age Statement",
-    volume: '750ml',
-    shortDescription: "El Tesoro's own real extra añejo, an award-winning portfolio addition.",
-    fullDescription: "El Tesoro introduced its own Extra Añejo to round out an award-winning tequila portfolio, aged the legally required minimum of three years for the extra añejo classification.",
-    tastingNotes: { nose: "Dark caramel, dried fruit, oak", palate: "Deep, rich, spiced agave sweetness", finish: "Very long, warm" },
-    badge: "Extra Añejo, Award-Winning House",
-    featured: false,
-    images: ["/images/products/tequila-mezcal/el-tesoro-extra-anejo.webp"],
-    stock: 6,
-    caskType: "American Oak",
-    distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "el tesoro extra anejo", secondaryKeywords: ["el tesoro extra anejo price", "buy el tesoro extra anejo"] },
   },
   {
     id: 'prod-tequila-b3-22',
@@ -11337,7 +11289,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "milagro tequila", secondaryKeywords: ["milagro tequila price", "buy milagro tequila", "milagro reposado", "milagro silver", "milagro anejo"] },
+    seo: { primaryKeyword: "milagro silver tequila", secondaryKeywords: ["milagro tequila price", "buy milagro tequila", "milagro reposado", "milagro silver", "milagro anejo"] },
   },
   {
     id: 'prod-tequila-b3-32',
@@ -11358,7 +11310,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "milagro tequila", secondaryKeywords: ["milagro tequila price", "buy milagro tequila", "milagro reposado"] },
+    seo: { primaryKeyword: "milagro reposado tequila", secondaryKeywords: ["milagro tequila price", "buy milagro tequila", "milagro reposado"] },
   },
   {
     id: 'prod-tequila-b3-33',
@@ -11400,7 +11352,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "padre azul tequila", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila", "padre azul reposado"] },
+    seo: { primaryKeyword: "padre azul silver", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila", "padre azul reposado"] },
   },
   {
     id: 'prod-tequila-b3-35',
@@ -11421,7 +11373,7 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "padre azul tequila", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila", "padre azul reposado"] },
+    seo: { primaryKeyword: "padre azul reposado", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila", "padre azul reposado"] },
   },
   {
     id: 'prod-tequila-b3-36',
@@ -11442,7 +11394,7 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "padre azul tequila", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila"] },
+    seo: { primaryKeyword: "padre azul anejo", secondaryKeywords: ["padre azul tequila price", "buy padre azul tequila"] },
   },
   {
     id: 'prod-tequila-b3-37',
@@ -11505,7 +11457,7 @@ export const PRODUCTS: Product[] = [
     stock: 2,
     caskType: "Unaged, Triple-Distilled with Pechuga",
     distilleryLocation: "Santa Catarina Minas, Oaxaca",
-    seo: { primaryKeyword: "real minero mezcal", secondaryKeywords: ["real minero mezcal price", "buy real minero", "real minero pechuga"] },
+    seo: { primaryKeyword: "real minero pechuga", secondaryKeywords: ["real minero mezcal price", "buy real minero", "real minero pechuga"] },
   },
   {
     id: 'prod-tequila-b3-40',
@@ -11526,7 +11478,7 @@ export const PRODUCTS: Product[] = [
     stock: 3,
     caskType: "Unaged, Clay Pot Distilled",
     distilleryLocation: "Santa Catarina Minas, Oaxaca",
-    seo: { primaryKeyword: "real minero mezcal", secondaryKeywords: ["real minero sierrudo mezcal", "real minero mezcal price", "buy real minero"] },
+    seo: { primaryKeyword: "real minero sierrudo", secondaryKeywords: ["real minero sierrudo mezcal", "real minero mezcal price", "buy real minero"] },
   },
   {
     id: 'prod-tequila-b3-41',
@@ -11568,7 +11520,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "siete leguas tequila", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco", "siete leguas reposado"] },
+    seo: { primaryKeyword: "siete leguas blanco", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco", "siete leguas reposado"] },
   },
   {
     id: 'prod-tequila-b3-43',
@@ -11589,7 +11541,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "siete leguas tequila", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco"] },
+    seo: { primaryKeyword: "siete leguas reposado", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco"] },
   },
   {
     id: 'prod-tequila-b3-44',
@@ -11610,7 +11562,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "siete leguas tequila", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco"] },
+    seo: { primaryKeyword: "siete leguas anejo", secondaryKeywords: ["siete leguas tequila price", "buy siete leguas", "siete leguas blanco"] },
   },
   {
     id: 'prod-tequila-b3-45',
@@ -11631,7 +11583,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Unaged",
     distilleryLocation: "Oaxaca, Mexico",
-    seo: { primaryKeyword: "sombra mezcal", secondaryKeywords: ["sombra mezcal price", "buy sombra mezcal", "sombra mezcal joven", "sombra mezcal cocktails"] },
+    seo: { primaryKeyword: "sombra joven mezcal", secondaryKeywords: ["sombra mezcal price", "buy sombra mezcal", "sombra mezcal joven", "sombra mezcal cocktails"] },
   },
   {
     id: 'prod-tequila-b3-46',
@@ -11652,7 +11604,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "American Oak",
     distilleryLocation: "Oaxaca, Mexico",
-    seo: { primaryKeyword: "sombra mezcal", secondaryKeywords: ["sombra mezcal price", "buy sombra mezcal"] },
+    seo: { primaryKeyword: "sombra reposado mezcal", secondaryKeywords: ["sombra mezcal price", "buy sombra mezcal"] },
   },
   {
     id: 'prod-tequila-b3-47',
@@ -11736,7 +11688,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Unaged",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "volcan de mi tierra tequila", secondaryKeywords: ["volcan de mi tierra price", "buy volcan de mi tierra", "volcan blanco tequila", "volcan x.a. tequila"] },
+    seo: { primaryKeyword: "volcan de mi tierra blanco", secondaryKeywords: ["volcan de mi tierra price", "buy volcan de mi tierra", "volcan blanco tequila", "volcan x.a. tequila"] },
   },
   {
     id: 'prod-tequila-b3-51',
@@ -11757,7 +11709,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "American Oak",
     distilleryLocation: "Jalisco, Mexico",
-    seo: { primaryKeyword: "volcan de mi tierra tequila", secondaryKeywords: ["volcan de mi tierra price", "buy volcan de mi tierra", "volcan x.a. tequila"] },
+    seo: { primaryKeyword: "volcan de mi tierra reposado", secondaryKeywords: ["volcan de mi tierra price", "buy volcan de mi tierra", "volcan x.a. tequila"] },
   },
   {
     id: 'prod-tequila-b3-52',
@@ -11820,7 +11772,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Unaged",
     distilleryLocation: "Oaxaca, Mexico",
-    seo: { primaryKeyword: "alipus mezcal", secondaryKeywords: ["alipus mezcal price", "buy alipus mezcal", "alipus san andres", "alipus san baltazar"] },
+    seo: { primaryKeyword: "alipus san juan mezcal", secondaryKeywords: ["alipus mezcal price", "buy alipus mezcal", "alipus san andres", "alipus san baltazar"] },
   },
   {
     id: 'prod-tequila-b3-55',
@@ -11841,7 +11793,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Unaged",
     distilleryLocation: "Oaxaca, Mexico",
-    seo: { primaryKeyword: "alipus mezcal", secondaryKeywords: ["alipus mezcal price", "buy alipus mezcal", "alipus san juan"] },
+    seo: { primaryKeyword: "alipus san andres mezcal", secondaryKeywords: ["alipus mezcal price", "buy alipus mezcal", "alipus san juan"] },
   },
   {
     id: 'prod-tequila-b3-56',
@@ -13357,7 +13309,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column Still",
     distilleryLocation: "USA",
     seo: {
-      primaryKeyword: "burnett's vodka",
+      primaryKeyword: "burnett's pink lemonade vodka",
       secondaryKeywords: ["burnett's flavors", "burnett's price", "buy burnett's vodka"],
     },
   },
@@ -13385,7 +13337,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column Still",
     distilleryLocation: "USA",
     seo: {
-      primaryKeyword: "burnett's vodka",
+      primaryKeyword: "burnett's raspberry vodka",
       secondaryKeywords: ["burnett's flavors", "burnett's price", "buy burnett's vodka"],
     },
   },
@@ -13805,7 +13757,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column Still",
     distilleryLocation: "San Francisco, California, USA",
     seo: {
-      primaryKeyword: "skyy vodka",
+      primaryKeyword: "skyy infusions raspberry vodka",
       secondaryKeywords: ["skyy infusions raspberry", "skyy vodka flavors", "buy skyy vodka"],
     },
   },
@@ -13917,7 +13869,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column Still",
     distilleryLocation: "England",
     seo: {
-      primaryKeyword: "three olives vodka",
+      primaryKeyword: "three olives cherry vodka",
       secondaryKeywords: ["three olives flavors", "three olives price", "buy three olives vodka"],
     },
   },
@@ -13945,7 +13897,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column Still",
     distilleryLocation: "England",
     seo: {
-      primaryKeyword: "three olives vodka",
+      primaryKeyword: "three olives grape vodka",
       secondaryKeywords: ["three olives flavors", "three olives price", "buy three olives vodka"],
     },
   },
@@ -16170,7 +16122,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Oak Casks",
     distilleryLocation: "Caribbean (Multi-Island Blend)",
     seo: {
-      primaryKeyword: "ten to one rum",
+      primaryKeyword: "ten to one dark rum",
       secondaryKeywords: ["ten to one dark rum", "ten to one price", "buy ten to one rum"],
     },
   },
@@ -16198,7 +16150,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Column & Pot Still",
     distilleryLocation: "Caribbean (Multi-Island Blend)",
     seo: {
-      primaryKeyword: "ten to one rum",
+      primaryKeyword: "ten to one white rum",
       secondaryKeywords: ["ten to one white rum", "ten to one price", "buy ten to one rum"],
     },
   },
@@ -16683,7 +16635,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Virginia/New Jersey, USA",
     seo: {
       // No export data for this brand — using general brandy-category terms.
-      primaryKeyword: "laird's apple brandy",
+      primaryKeyword: "laird's straight apple brandy",
       secondaryKeywords: ['apple brandy', 'bottled in bond brandy', 'american brandy'],
     },
   },
@@ -16796,7 +16748,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "California, USA",
     seo: {
       // No export data for this brand — using general brandy-category terms.
-      primaryKeyword: 'paul masson brandy',
+      primaryKeyword: 'paul masson vs brandy',
       secondaryKeywords: ['california brandy', 'cheap brandy', 'brandy brands'],
     },
   },
@@ -17369,7 +17321,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Scobeyville, New Jersey, USA",
     seo: {
       // No export data for this brand — using general brandy-category terms.
-      primaryKeyword: "laird's apple brandy",
+      primaryKeyword: "laird's 7.5 year apple brandy",
       secondaryKeywords: ['apple brandy', 'applejack', "laird's 7 year", 'american apple brandy'],
     },
   },
@@ -17426,7 +17378,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Madera, California, USA",
     seo: {
       // No export data for this brand — using general brandy-category terms.
-      primaryKeyword: 'paul masson brandy',
+      primaryKeyword: 'paul masson grande amber brandy',
       secondaryKeywords: ['grande amber brandy', 'california brandy', 'cheap brandy'],
     },
   },
@@ -20661,7 +20613,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Rosé Blend, De-Alcoholized",
     distilleryLocation: "Napa Valley, California",
     seo: {
-      primaryKeyword: "fre rose",
+      primaryKeyword: "fre non alcoholic rose wine",
       secondaryKeywords: ["fre wine", "fre non alcoholic wine", "non alcoholic rose", "non alcoholic rose wine", "alcohol removed wine"],
     },
   },
@@ -20950,7 +20902,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
     seo: {
-      primaryKeyword: "noughty non alcoholic wine",
+      primaryKeyword: "noughty alcohol free chardonnay",
       secondaryKeywords: ["non alcoholic white wine", "dealcoholized wine", "best non alcoholic chardonnay", "best non alcoholic white wine", "nice non alcoholic wine"],
     },
   },
@@ -20978,7 +20930,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Rosé Blend, De-Alcoholized",
     distilleryLocation: "Western Cape, South Africa",
     seo: {
-      primaryKeyword: "noughty non alcoholic wine",
+      primaryKeyword: "noughty alcohol free rose",
       secondaryKeywords: ["non alcoholic rose", "rose fizzy wine", "dealcoholized wine", "non alcoholic sparkling rose", "sparkling rose non alcoholic"],
     },
   },
@@ -21152,7 +21104,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Barbera, De-Alcoholized",
     distilleryLocation: "Sonoma, California",
     seo: {
-      primaryKeyword: "surely non alcoholic wine",
+      primaryKeyword: "surely non alcoholic rose",
       secondaryKeywords: ["non alcoholic rose", "rose fizzy wine", "non alcoholic sparkling rose", "alcohol removed wine"],
     },
   },
@@ -21464,7 +21416,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pinot Noir & Chardonnay, De-Alcoholized",
     distilleryLocation: "California",
     seo: {
-      primaryKeyword: "fre rose",
+      primaryKeyword: "fre non alcoholic sparkling rose",
       secondaryKeywords: ["fre wine", "fre non alcoholic wine", "fre champagne", "non alcoholic sparkling rose", "rose fizzy wine"],
     },
   },
@@ -21747,7 +21699,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Chardonnay, De-Alcoholized",
     distilleryLocation: "California",
     seo: {
-      primaryKeyword: "surely non alcoholic wine",
+      primaryKeyword: "surely non alcoholic brut",
       secondaryKeywords: ["non alcoholic sparkling wine", "sparkling brut", "dealcoholized wine", "alcohol free sparkling wine", "sparkling non alcoholic wine"],
     },
   },
@@ -25772,7 +25724,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Organic, Vegan Red Blend",
     distilleryLocation: "France",
     seo: {
-      primaryKeyword: "avaline organic wine",
+      primaryKeyword: "avaline red wine",
       secondaryKeywords: ["organic red wine", "organic wines", "clean wine brands", "natural red wine", "organic wine brands"],
     },
   },
@@ -25800,7 +25752,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Cinsault, Grenache, Cabernet Sauvignon Blend",
     distilleryLocation: "Provence, France",
     seo: {
-      primaryKeyword: "avaline organic wine",
+      primaryKeyword: "avaline rose wine",
       secondaryKeywords: ["organic rose wine", "clean wine brands", "organic wines", "rose wine", "is rose wine sweet"],
       faqs: [
         { question: "Is rosé wine sweet?", answer: "Most rosé, including Avaline's, is fermented dry — any sense of sweetness comes from ripe berry aromatics rather than residual sugar; Avaline Rosé is also made with no added sugar." },
@@ -25831,7 +25783,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Organic, Vegan White Blend",
     distilleryLocation: "Spain",
     seo: {
-      primaryKeyword: "avaline organic wine",
+      primaryKeyword: "avaline white wine",
       secondaryKeywords: ["organic white wine", "organic white wines", "clean wine brands", "organic wines", "organic wine brands"],
     },
   },
@@ -25890,7 +25842,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Certified Organic Cabernet Sauvignon",
     distilleryLocation: "Sonoma County, California",
     seo: {
-      primaryKeyword: "organic cabernet sauvignon",
+      primaryKeyword: "benziger organic cabernet sauvignon",
       secondaryKeywords: ["organic cabernet", "organic cabernet wine", "cabernet organic", "biodynamic wine", "organic red wine"],
     },
   },
@@ -25918,7 +25870,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Certified Organic Cabernet Sauvignon",
     distilleryLocation: "Mendocino County, California",
     seo: {
-      primaryKeyword: "bonterra organic wine",
+      primaryKeyword: "bonterra organic cabernet sauvignon",
       secondaryKeywords: ["organic cabernet sauvignon", "organic cabernet", "organic red wine", "organic wine brands", "america's #1 organic winery"],
     },
   },
@@ -25946,7 +25898,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Certified Organic Chardonnay",
     distilleryLocation: "Mendocino County, California",
     seo: {
-      primaryKeyword: "bonterra organic wine",
+      primaryKeyword: "bonterra organic chardonnay",
       secondaryKeywords: ["organic white wine", "organic white wines", "organic wine brands", "organic wines", "wine organic"],
     },
   },
@@ -25974,7 +25926,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Certified Organic Merlot",
     distilleryLocation: "Mendocino County, California",
     seo: {
-      primaryKeyword: "bonterra organic wine",
+      primaryKeyword: "bonterra organic merlot",
       secondaryKeywords: ["organic red wine", "organic red wines", "organic wine brands", "organic wines", "organic vineyard"],
     },
   },
@@ -26002,7 +25954,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Certified Organic Sauvignon Blanc",
     distilleryLocation: "Mendocino County, California",
     seo: {
-      primaryKeyword: "bonterra organic wine",
+      primaryKeyword: "bonterra organic sauvignon blanc",
       secondaryKeywords: ["organic white wine", "organic white wines", "organic wine brands", "organic wineries", "eco friendly wine"],
     },
   },
@@ -26063,7 +26015,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "California",
     seo: {
       // Category-level primary — no Broc Cellars-specific SEMrush volume; "organic rose wine" is a shared category-level term also used for Avaline Rosé.
-      primaryKeyword: "organic rose wine",
+      primaryKeyword: "broc cellars love rose natural wine",
       secondaryKeywords: ["natural wine", "rose wine", "is rose wine sweet", "what is natural wine", "natural wines"],
       faqs: [
         { question: "Is rosé wine sweet?", answer: "Most rosé is fermented dry, and Broc Cellars' Love Rosé is no exception — its bright, fruity character comes from grape aromatics and minimal intervention, not residual sugar." },
@@ -26186,7 +26138,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Central Valley, Chile",
     seo: {
       // Category-level primary — no Emiliana-specific SEMrush volume; "organic cabernet sauvignon" is a category-level term shared with Benziger.
-      primaryKeyword: "organic cabernet sauvignon",
+      primaryKeyword: "emiliana natura cabernet sauvignon",
       secondaryKeywords: ["organic cabernet", "natura rose wine", "biodynamic wine", "vegan wine", "organic red wine"],
     },
   },
@@ -26215,7 +26167,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Central Valley, Chile",
     seo: {
       // Category-level primary — no Emiliana-specific SEMrush volume; "organic white wine" is a category-level term.
-      primaryKeyword: "organic white wine",
+      primaryKeyword: "emiliana natura chardonnay",
       secondaryKeywords: ["organic white wines", "natura rose wine", "biodynamic wine", "organic wines", "eco friendly wine"],
     },
   },
@@ -26307,7 +26259,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Trentino-Alto Adige, Italy",
     seo: {
       // Category-level primary — no Foradori-specific SEMrush volume; "natural wine" is the category head term.
-      primaryKeyword: "natural wine",
+      primaryKeyword: "foradori teroldego natural wine",
       secondaryKeywords: ["what is natural wine", "biodynamic wine", "natural wines", "natural winemaking", "biodynamic wines"],
       faqs: [
         { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites. Foradori has been Demeter-certified biodynamic since 2002, a benchmark producer of the style." },
@@ -26680,7 +26632,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "California",
     seo: {
       // Category-level primary — no Las Jaras-specific SEMrush volume; "natural wine" is the category head term.
-      primaryKeyword: "natural wine",
+      primaryKeyword: "las jaras superbloom natural wine",
       secondaryKeywords: ["what is natural wine", "natural wines", "natural wine brands", "natural wine near me", "natural winemaking"],
       faqs: [
         { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites, fining, or filtration. Las Jaras built its cult following on approachable, unpretentious wines made this way." },
@@ -26776,7 +26728,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mendocino/North Coast, California",
     seo: {
       // Category-level primary — no Martha Stoumen-specific SEMrush volume; "natural wine" is the category head term.
-      primaryKeyword: "natural wine",
+      primaryKeyword: "martha stoumen natural red wine",
       secondaryKeywords: ["what is natural wine", "natural winemaking", "natural wine brands", "organic red wine", "natural wines"],
       faqs: [
         { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites. Martha Stoumen sources from organic, dry-farmed old vineyards for exactly this style." },
@@ -26808,7 +26760,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Burgenland, Austria",
     seo: {
       // Category-level primary — no Meinklang-specific SEMrush volume; "natural wine" is the category head term.
-      primaryKeyword: "natural wine",
+      primaryKeyword: "meinklang mulatschak natural wine",
       secondaryKeywords: ["biodynamic wine", "what is natural wine", "biodynamic wines", "organic wine", "natural winemaking"],
       faqs: [
         { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically or biodynamically farmed grapes, native-yeast fermentation, and little to no added sulfites. Meinklang is Demeter-certified biodynamic, farming vines alongside cattle on its Austrian family estate." },
@@ -26868,7 +26820,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Veneto, Italy",
     seo: {
       // Category-level primary — no Pizzolato-specific SEMrush volume; "organic white wine" is a category-level term.
-      primaryKeyword: "organic white wine",
+      primaryKeyword: "pizzolato organic pinot grigio",
       secondaryKeywords: ["organic white wines", "italian organic wine", "organic wine brands", "organic wines", "organic winery"],
     },
   },
@@ -26925,7 +26877,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Western Cape, South Africa",
     seo: {
       // Category-level primary — no Stellar Organics-specific SEMrush volume; "organic red wine" is a category-level term.
-      primaryKeyword: "organic red wine",
+      primaryKeyword: "stellar organics running duck red wine",
       secondaryKeywords: ["organic red wines", "organic wines", "organic winery", "organic wine brands", "sustainable red wine"],
     },
   },
@@ -26954,7 +26906,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mendocino County, California",
     seo: {
       // Category-level primary — no Subject to Change-specific SEMrush volume; "natural wine" is the category head term.
-      primaryKeyword: "natural wine",
+      primaryKeyword: "subject to change lune juice natural wine",
       secondaryKeywords: ["what is natural wine", "natural wines", "organic wine", "natural winemaking", "natural wine brands"],
       faqs: [
         { question: "What is natural wine?", answer: "Natural wine is made with minimal intervention — organically farmed grapes, native-yeast fermentation, and little to no added sulfites, fining, or filtration. Lune Juice is unfined, unfiltered, and made with no added sulfur from organically sourced fruit." },
@@ -26985,7 +26937,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Touriga Nacional blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
     seo: {
-      primaryKeyword: "taylor fladgate port wine",
+      primaryKeyword: "taylor fladgate 10 year tawny port",
       secondaryKeywords: ["taylor's port wine", "taylor port wine", "tawny port", "what is tawny port", "taylor port wine alcohol percentage"],
       faqs: [
         { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to develop nutty, caramelized notes. Taylor Fladgate's real tawny range extends from 10 to 50 Year Old, and this 10 Year balances fresh fruit with mellow, nutty complexity." },
@@ -27047,7 +26999,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Touriga Nacional blend, Tawny Oak-Aged",
     distilleryLocation: "Douro Valley, Portugal",
     seo: {
-      primaryKeyword: "taylor fladgate port wine",
+      primaryKeyword: "taylor fladgate 40 year tawny port",
       secondaryKeywords: ["taylor port wine", "tawny port", "tawny port wine", "port wine ruby vs tawny", "best port wine"],
       faqs: [
         { question: "What is tawny port?", answer: "Tawny port is aged in wood casks rather than bottle, slowly oxidizing to develop nutty, caramelized notes. This 40 Year Old is among the oldest regularly bottled tawnies in the world, concentrating extraordinary layers of dried fruit and spice." },
@@ -27109,7 +27061,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Touriga Nacional blend, LBV Style",
     distilleryLocation: "Douro Valley, Portugal",
     seo: {
-      primaryKeyword: "taylor fladgate port wine",
+      primaryKeyword: "taylor fladgate late bottled vintage port",
       secondaryKeywords: ["taylor's port wine", "vintage port", "vintage port wine", "taylor port wine near me", "types of port wine"],
     },
   },
@@ -27138,7 +27090,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "California",
     seo: {
       // Category-level primary — no brand-specific SEMrush volume for The Organic Wine Co./Our Daily; "organic red wine" is a category-level term.
-      primaryKeyword: "organic red wine",
+      primaryKeyword: "organic wine co daily red blend",
       secondaryKeywords: ["organic wine brands", "organic wines", "usda organic wine", "buy organic wine online", "does organic wine have sulfites"],
       faqs: [
         { question: "Does organic wine have sulfites?", answer: "USDA-certified organic wine cannot have any sulfites added, though trace natural sulfites can still occur from fermentation. Our Daily specifically markets its wines as carrying no detectable sulfites." },
@@ -27170,7 +27122,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Central Coast, California",
     seo: {
       // Category-level primary — no Vegan Vine-specific SEMrush volume; "organic red wine" is a category-level term.
-      primaryKeyword: "organic red wine",
+      primaryKeyword: "vegan vine red blend",
       secondaryKeywords: ["organic wine brands", "clean wine brands", "organic red wines", "organic wines", "vegan wine"],
     },
   },
@@ -27199,7 +27151,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Provence, France",
     seo: {
       // Category-level primary — no AIX-specific volume in this export; shared Provence term also used for Domaines Ott and M de Minuty, differentiated via brand copy.
-      primaryKeyword: "provence rose wine",
+      primaryKeyword: "aix cotes de provence rose",
       secondaryKeywords: ["provence rose", "côtes de provence rosé wine", "best rose wine", "french rose wine", "dry rose wine"],
       faqs: [
         { question: "Is rosé wine sweet?", answer: "Not necessarily — pale color has nothing to do with sweetness. AIX is made in the classic dry Provence style, with crisp acidity and minimal residual sugar." },
@@ -27319,7 +27271,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Côtes de Provence, France",
     seo: {
       // Category-level primary — no Domaines Ott-specific volume in this export; shared Provence term also used for AIX and M de Minuty, differentiated via brand copy.
-      primaryKeyword: "provence rose wine",
+      primaryKeyword: "domaines ott chateau de selle rose",
       secondaryKeywords: ["provence rose", "french rose wine", "best rose wine", "rose wine brands", "dry rose wine"],
     },
   },
@@ -27407,7 +27359,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Côtes de Provence, France",
     seo: {
       // Category-level primary — no M de Minuty-specific volume in this export; shared Provence term also used for AIX and Domaines Ott, differentiated via brand copy.
-      primaryKeyword: "provence rose wine",
+      primaryKeyword: "m de minuty rose",
       secondaryKeywords: ["provence rose", "côtes de provence rosé wine", "french rose wine", "best rose wine", "premium rose wine"],
     },
   },
@@ -27626,7 +27578,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 28,
     age: "NV",
     volume: '750ml',
     shortDescription: "A Snoop Dogg-endorsed brand's Cabernet Sauvignon, extending its Red Blend's huge demand halo.",
@@ -27647,7 +27599,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'fine-wine',
     subcategory: "Pinot Noir",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "An organically farmed Mendocino County Pinot Noir, rounding out the site's existing Bonterra lineup.",
@@ -27668,7 +27620,7 @@ export const PRODUCTS: Product[] = [
     price: 10.99,
     category: 'fine-wine',
     subcategory: "Rosé Wine",
-    proof: 0,
+    proof: 26,
     age: "NV",
     volume: '750ml',
     shortDescription: "An organically grown California rosé, the easiest, lowest-risk same-brand addition in this batch.",
@@ -27680,7 +27632,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Stainless Steel",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "organic rose wine", secondaryKeywords: ["bonterra rose", "bonterra wine"] },
+    seo: { primaryKeyword: "bonterra rose wine", secondaryKeywords: ["bonterra rose", "bonterra wine"] },
   },
   {
     id: 'prod-wine-b3-04',
@@ -27689,7 +27641,7 @@ export const PRODUCTS: Product[] = [
     price: 64.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 29,
     age: "NV",
     volume: '750ml',
     shortDescription: "The flagship-tier Napa Valley Cabernet from the parent house of the site's already-stocked Decoy.",
@@ -27710,7 +27662,7 @@ export const PRODUCTS: Product[] = [
     price: 21.99,
     category: 'fine-wine',
     subcategory: "Port",
-    proof: 0,
+    proof: 40,
     age: "NV",
     volume: '750ml',
     shortDescription: "The world's first dry white port, created by Taylor Fladgate in 1934.",
@@ -27731,7 +27683,7 @@ export const PRODUCTS: Product[] = [
     price: 14.99,
     category: 'fine-wine',
     subcategory: "Sauvignon Blanc",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real same-brand line extension to the site's stocked Vintner's Reserve Chardonnay.",
@@ -27752,7 +27704,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'fine-wine',
     subcategory: "Red Wine",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '750ml',
     shortDescription: "The single strongest combined-volume finding in the entire Fine Wine gap analysis — a semi-sweet red flavor not previously stocked.",
@@ -27773,7 +27725,7 @@ export const PRODUCTS: Product[] = [
     price: 10.99,
     category: 'fine-wine',
     subcategory: "White Wine",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '750ml',
     shortDescription: "A peach flavored, semi-sweet, low-alcohol extension of the Stella Rosa lineup.",
@@ -27794,7 +27746,7 @@ export const PRODUCTS: Product[] = [
     price: 18.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 29,
     age: "NV",
     volume: '750ml',
     shortDescription: "The strongest unstocked-brand signal across the entire Fine Wine batch, real demand in both a red and white tier.",
@@ -27815,7 +27767,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "One of the most recognizable Napa names, previously entirely absent from the catalog.",
@@ -27836,7 +27788,7 @@ export const PRODUCTS: Product[] = [
     price: 59.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 31,
     age: "NV",
     volume: '750ml',
     shortDescription: "A Paso Robles Cabernet with excellent keyword difficulty and strong critical reputation.",
@@ -27857,7 +27809,7 @@ export const PRODUCTS: Product[] = [
     price: 54.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 29,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real Napa Valley Cabernet from the historic Stags' Leap District appellation.",
@@ -27878,7 +27830,7 @@ export const PRODUCTS: Product[] = [
     price: 64.99,
     category: 'fine-wine',
     subcategory: "Chardonnay",
-    proof: 0,
+    proof: 29,
     age: "NV",
     volume: '750ml',
     shortDescription: "A prestige Napa Valley Chardonnay from one of the region's most established estates.",
@@ -27899,7 +27851,7 @@ export const PRODUCTS: Product[] = [
     price: 34.99,
     category: 'fine-wine',
     subcategory: "Zinfandel",
-    proof: 0,
+    proof: 31,
     age: "NV",
     volume: '750ml',
     shortDescription: "A cult Zinfandel producer known for old-vine California fruit and excellent keyword difficulty.",
@@ -27920,7 +27872,7 @@ export const PRODUCTS: Product[] = [
     price: 37.99,
     category: 'fine-wine',
     subcategory: "Zinfandel",
-    proof: 0,
+    proof: 31,
     age: "NV",
     volume: '750ml',
     shortDescription: "A same-brand-different-varietal gap: Rombauer's Zinfandel, alongside the site's stocked Chardonnay.",
@@ -27941,7 +27893,7 @@ export const PRODUCTS: Product[] = [
     price: 16.99,
     category: 'fine-wine',
     subcategory: "Sauvignon Blanc",
-    proof: 0,
+    proof: 26,
     age: "NV",
     volume: '750ml',
     shortDescription: "A well-known Marlborough, New Zealand Sauvignon Blanc, previously entirely unstocked.",
@@ -27962,7 +27914,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'fine-wine',
     subcategory: "Riesling",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A Charles Smith Wines Riesling from Washington's Columbia Valley, a playful, accessible dry style.",
@@ -27983,7 +27935,7 @@ export const PRODUCTS: Product[] = [
     price: 9.99,
     category: 'fine-wine',
     subcategory: "Moscato",
-    proof: 0,
+    proof: 18,
     age: "NV",
     volume: '750ml',
     shortDescription: "A large grocery-channel brand's sweet, aromatic Moscato.",
@@ -28004,7 +27956,7 @@ export const PRODUCTS: Product[] = [
     price: 17.99,
     category: 'fine-wine',
     subcategory: "Port",
-    proof: 0,
+    proof: 40,
     age: "NV",
     volume: '750ml',
     shortDescription: "A historic Portuguese port house that also makes sherry under the same name.",
@@ -28016,7 +27968,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Oak Casks",
     distilleryLocation: "Douro Valley, Portugal",
-    seo: { primaryKeyword: "sandeman port wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "sandeman port wine", secondaryKeywords: ["sandeman founder's reserve port price", "buy sandeman founder's reserve port online", "sandeman founder's reserve port review"] },
   },
   {
     id: 'prod-wine-b3-20',
@@ -28025,7 +27977,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'fine-wine',
     subcategory: "Port",
-    proof: 0,
+    proof: 40,
     age: "NV",
     volume: '750ml',
     shortDescription: "Port from the oldest port house in the Douro, founded 1638.",
@@ -28037,7 +27989,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Oak Casks",
     distilleryLocation: "Douro Valley, Portugal",
-    seo: { primaryKeyword: "kopke port wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "kopke port wine", secondaryKeywords: ["kopke tawny port price", "buy kopke tawny port online", "kopke tawny port review"] },
   },
   {
     id: 'prod-wine-b3-21',
@@ -28046,7 +27998,7 @@ export const PRODUCTS: Product[] = [
     price: 23.99,
     category: 'fine-wine',
     subcategory: "Rosé Wine",
-    proof: 0,
+    proof: 26,
     age: "NV",
     volume: '750ml',
     shortDescription: "An English-owned Côtes de Provence rosé estate, a real premium alternative in the category.",
@@ -28058,7 +28010,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Stainless Steel",
     distilleryLocation: "Côtes de Provence, France",
-    seo: { primaryKeyword: "mirabeau rose wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mirabeau rose wine", secondaryKeywords: ["mirabeau classic rose price", "buy mirabeau classic rose online", "mirabeau classic rose review"] },
   },
   {
     id: 'prod-wine-b3-22',
@@ -28067,7 +28019,7 @@ export const PRODUCTS: Product[] = [
     price: 34.99,
     category: 'fine-wine',
     subcategory: "Icewine & Dessert Wine",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '375ml',
     shortDescription: "A US-made icewine-style dessert wine, an alternative to Canadian icewine brands.",
@@ -28088,7 +28040,7 @@ export const PRODUCTS: Product[] = [
     price: 14.99,
     category: 'fine-wine',
     subcategory: "Moscato",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '750ml',
     shortDescription: "The well-known kosher-market anchor brand's Moscato, alongside the site's stocked Bartenura Rosé.",
@@ -28109,7 +28061,7 @@ export const PRODUCTS: Product[] = [
     price: 6.99,
     category: 'fine-wine',
     subcategory: "Pinot Grigio",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real flavor/varietal gap for Barefoot, alongside the site's stocked Moscato.",
@@ -28130,7 +28082,7 @@ export const PRODUCTS: Product[] = [
     price: 17.99,
     category: 'fine-wine',
     subcategory: "Organic & Natural Wine",
-    proof: 0,
+    proof: 25,
     age: "NV",
     volume: '750ml',
     shortDescription: "Washington's first organic winery, a no-sulfite-added specialist.",
@@ -28142,7 +28094,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Stainless Steel",
     distilleryLocation: "Columbia Valley, Washington",
-    seo: { primaryKeyword: "badger mountain organic wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "badger mountain organic wine", secondaryKeywords: ["badger mountain n.s.a. organic riesling price", "buy badger mountain n.s.a. organic riesling online", "badger mountain n.s.a. organic riesling review"] },
   },
   {
     id: 'prod-wine-b3-26',
@@ -28151,7 +28103,7 @@ export const PRODUCTS: Product[] = [
     price: 9.99,
     category: 'fine-wine',
     subcategory: "Cabernet Sauvignon",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "A high-value, low-KD California Cabernet from the same family estate as the site's stocked Old Vine Zin.",
@@ -28172,7 +28124,7 @@ export const PRODUCTS: Product[] = [
     price: 9.99,
     category: 'fine-wine',
     subcategory: "Pinot Noir",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "The Pinot Noir tier of Bogle's high-value, family-owned California range.",
@@ -28193,7 +28145,7 @@ export const PRODUCTS: Product[] = [
     price: 9.99,
     category: 'fine-wine',
     subcategory: "Merlot",
-    proof: 0,
+    proof: 27,
     age: "NV",
     volume: '750ml',
     shortDescription: "The Merlot tier of Bogle's high-value, family-owned California range.",
@@ -28214,7 +28166,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'fine-wine',
     subcategory: "Pinot Grigio",
-    proof: 0,
+    proof: 26,
     age: "NV",
     volume: '750ml',
     shortDescription: "Rounds out the whole varietal range for a brand the site already carries deeply.",
@@ -28235,7 +28187,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'fine-wine',
     subcategory: "Rosé Wine",
-    proof: 0,
+    proof: 26,
     age: "NV",
     volume: '750ml',
     shortDescription: "A same-brand new-varietal case for Josh Cellars, a brand the site already carries five SKUs of.",
@@ -28247,7 +28199,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Stainless Steel",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "josh rose wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "josh rose wine", secondaryKeywords: ["josh cellars rose price", "buy josh cellars rose online", "josh cellars rose review"] },
   },
 
   // CHAMPAGNE & SPARKLING
@@ -28545,7 +28497,7 @@ export const PRODUCTS: Product[] = [
     caskType: "100% Pinot Noir",
     distilleryLocation: "Tours-sur-Marne, Champagne, France",
     seo: {
-      primaryKeyword: "laurent perrier champagne",
+      primaryKeyword: "laurent perrier cuvee rose champagne",
       secondaryKeywords: ["rosé champagne", "rose champagne", "champagne rose champagne", "pink champagne", "best champagne"],
       faqs: [
         { question: 'What makes Laurent-Perrier Cuvée Rosé special?', answer: 'Laurent-Perrier reintroduced non-vintage rosé champagne in 1968 using a proprietary 48–72 hour skin-maceration technique, and Cuvée Rosé is widely regarded as the benchmark rosé champagne worldwide.' },
@@ -28576,7 +28528,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier blend",
     distilleryLocation: "Tours-sur-Marne, Champagne, France",
     seo: {
-      primaryKeyword: "laurent perrier champagne",
+      primaryKeyword: "laurent perrier la cuvee brut champagne",
       secondaryKeywords: ["brut champagne", "best champagne", "champagne brands", "french champagne", "champagne houses"],
     },
   },
@@ -29599,7 +29551,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Glera, Extended Charmat Method",
     distilleryLocation: "Valdobbiadene, Italy",
     seo: {
-      primaryKeyword: "valdobbiadene prosecco superiore",
+      primaryKeyword: "nino franco rustico prosecco",
       secondaryKeywords: ["prosecco superiore di valdobbiadene", "what is prosecco wine", "italian prosecco", "best prosecco", "prosecco doc"],
       faqs: [
         { question: "What's the difference between Prosecco DOC and Prosecco Superiore DOCG?", answer: "Prosecco DOC comes from a broad zone spanning the plains of Veneto and Friuli-Venezia Giulia. Prosecco Superiore DOCG is a stricter designation reserved for the hillside Conegliano-Valdobbiadene zone, with lower yields and higher quality standards. Nino Franco's Rustico is a DOCG wine from this more restrictive zone." },
@@ -29630,7 +29582,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pinot Noir & Chardonnay, Traditional Method",
     distilleryLocation: "Anderson Valley, California",
     seo: {
-      primaryKeyword: "roederer estate",
+      primaryKeyword: "roederer estate brut rose",
       secondaryKeywords: ["roederer estate winery", "sparkling rose wine", "rose sparkling wine", "california sparkling wine", "roederer california"],
       faqs: [
         { question: 'Is Roederer Estate the same as Louis Roederer champagne?', answer: 'Related but distinct: Roederer Estate is Louis Roederer\'s own California sparkling-wine label, made in Anderson Valley from estate-grown fruit — a different, non-Champagne-AOC product from the same family-owned parent company, comparable to how Mumm Napa relates to G.H. Mumm.' },
@@ -29661,7 +29613,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Chardonnay & Pinot Noir, Traditional Method",
     distilleryLocation: "Anderson Valley, California",
     seo: {
-      primaryKeyword: "roederer estate",
+      primaryKeyword: "roederer estate brut sparkling wine",
       secondaryKeywords: ["roederer estate winery", "roederer california", "roderer estate", "california sparkling wine", "sparkling wine"],
       faqs: [
         { question: 'Is Roederer Estate the same as Louis Roederer champagne?', answer: 'Roederer Estate is Louis Roederer\'s California sparkling-wine venture, founded 1982 in the cool, fog-shrouded Anderson Valley of Mendocino County — a genuinely separate consumer-facing brand and product (US sparkling wine, not French Champagne AOC), the same relationship as Mumm Napa to G.H. Mumm.' },
@@ -30577,7 +30529,7 @@ export const PRODUCTS: Product[] = [
     caskType: "50% Pinot Noir, 30% Chardonnay, 20% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
     seo: {
-      primaryKeyword: "pommery champagne",
+      primaryKeyword: "pommery brut rose champagne",
       secondaryKeywords: ["rosé champagne", "rose champagne", "pink champagne", "champagne rose champagne", "best champagne"],
     },
   },
@@ -30605,7 +30557,7 @@ export const PRODUCTS: Product[] = [
     caskType: "33% Chardonnay, 33% Pinot Noir, 34% Pinot Meunier",
     distilleryLocation: "Reims, Champagne, France",
     seo: {
-      primaryKeyword: "pommery champagne",
+      primaryKeyword: "pommery brut royal champagne",
       secondaryKeywords: ["brut champagne", "champagne brands", "what is brut champagne", "is brut champagne", "best champagne"],
       faqs: [
         { question: 'What is brut champagne?', answer: 'Champagne made with minimal added sugar (dosage), resulting in a dry, crisp style. Pommery — under Madame Pommery, who took over in 1860 — was the first house to commercialize a dry "brut" champagne, in 1874, breaking from the sweeter style fashionable at the time.' },
@@ -30774,7 +30726,7 @@ export const PRODUCTS: Product[] = [
     price: 64.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "Moët's real demi-sec expression, the single strongest Part A finding in the whole Champagne gap analysis.",
@@ -30795,7 +30747,7 @@ export const PRODUCTS: Product[] = [
     price: 46.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "G.H. Mumm's actual flagship, instantly recognizable by its red-sash label.",
@@ -30816,7 +30768,7 @@ export const PRODUCTS: Product[] = [
     price: 3499.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A single-vineyard Blanc de Noirs, the direct sister wine to the site's stocked Clos du Mesnil.",
@@ -30837,7 +30789,7 @@ export const PRODUCTS: Product[] = [
     price: 59.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The house's actual NV entry point, real and sizeable volume beyond either currently-stocked Perrier-Jouët SKU.",
@@ -30849,7 +30801,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier Blend",
     distilleryLocation: "Épernay, Champagne, France",
-    seo: { primaryKeyword: "perrier jouet grand brut", secondaryKeywords: [] },
+    seo: { primaryKeyword: "perrier jouet grand brut", secondaryKeywords: ["perrier-jouet grand brut price", "buy perrier-jouet grand brut online", "perrier-jouet grand brut review"] },
   },
   {
     id: 'prod-champ-b3-05',
@@ -30858,7 +30810,7 @@ export const PRODUCTS: Product[] = [
     price: 229.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A prestige cuvée dating to 1928, famously associated with Marilyn Monroe.",
@@ -30879,7 +30831,7 @@ export const PRODUCTS: Product[] = [
     price: 69.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A demi-sec Champagne designed to be served over ice or in cocktails.",
@@ -30891,7 +30843,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Pinot Noir, Pinot Meunier, Chardonnay Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "veuve clicquot rich", secondaryKeywords: [] },
+    seo: { primaryKeyword: "veuve clicquot rich", secondaryKeywords: ["veuve clicquot rich price", "buy veuve clicquot rich online", "veuve clicquot rich review"] },
   },
   {
     id: 'prod-champ-b3-07',
@@ -30900,7 +30852,7 @@ export const PRODUCTS: Product[] = [
     price: 74.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, notable-volume demi-sec expression from the site's already-stocked Billecart-Salmon house.",
@@ -30921,7 +30873,7 @@ export const PRODUCTS: Product[] = [
     price: 69.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, published zero-dosage expression from the Louis Roederer house.",
@@ -30933,7 +30885,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Pinot Noir, Chardonnay Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "louis roederer brut nature", secondaryKeywords: [] },
+    seo: { primaryKeyword: "louis roederer brut nature", secondaryKeywords: ["louis roederer brut nature price", "buy louis roederer brut nature online", "louis roederer brut nature review"] },
   },
   {
     id: 'prod-champ-b3-09',
@@ -30942,7 +30894,7 @@ export const PRODUCTS: Product[] = [
     price: 349.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé sibling to the site's stocked Dom Ruinart Blanc de Blancs prestige cuvée.",
@@ -30954,7 +30906,7 @@ export const PRODUCTS: Product[] = [
     stock: 3,
     caskType: "Chardonnay with Still Red Wine",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "dom ruinart rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "dom ruinart rose", secondaryKeywords: ["dom ruinart rose price", "buy dom ruinart rose online", "dom ruinart rose review"] },
   },
   {
     id: 'prod-champ-b3-10',
@@ -30963,7 +30915,7 @@ export const PRODUCTS: Product[] = [
     price: 84.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A small but real, exact-match off-dry sec Champagne from Taittinger.",
@@ -30975,7 +30927,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Chardonnay, Pinot Noir Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "taittinger nocturne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "taittinger nocturne", secondaryKeywords: ["taittinger nocturne price", "buy taittinger nocturne online", "taittinger nocturne review"] },
   },
   {
     id: 'prod-champ-b3-11',
@@ -30984,7 +30936,7 @@ export const PRODUCTS: Product[] = [
     price: 259.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "Taittinger's prestige rosé cuvée, sister wine to the house's celebrated Comtes de Champagne Blanc de Blancs.",
@@ -30996,7 +30948,7 @@ export const PRODUCTS: Product[] = [
     stock: 3,
     caskType: "Pinot Noir, Chardonnay Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "taittinger comtes de champagne rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "taittinger comtes de champagne rose", secondaryKeywords: ["taittinger comtes de champagne rose price", "buy taittinger comtes de champagne rose online", "taittinger comtes de champagne rose review"] },
   },
   {
     id: 'prod-champ-b3-12',
@@ -31005,7 +30957,7 @@ export const PRODUCTS: Product[] = [
     price: 14.99,
     category: 'champagne-sparkling',
     subcategory: "Cava",
-    proof: 0,
+    proof: 23,
     age: "NV",
     volume: '750ml',
     shortDescription: "Spain's best-selling Cava per Codorníu's own claim, the strongest brand-heritage angle in the site's Cava lineup.",
@@ -31017,7 +30969,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Macabeo, Xarel-lo, Parellada Blend",
     distilleryLocation: "Sant Sadurní d'Anoia, Catalonia, Spain",
-    seo: { primaryKeyword: "anna de codorniu cava", secondaryKeywords: [] },
+    seo: { primaryKeyword: "anna de codorniu cava", secondaryKeywords: ["anna de codorniu brut price", "buy anna de codorniu brut online", "anna de codorniu brut review"] },
   },
   {
     id: 'prod-champ-b3-13',
@@ -31026,7 +30978,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, confirmed higher DOCG tier above the DOC-level Mionetto Brut and Rosé the site already carries.",
@@ -31038,7 +30990,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera",
     distilleryLocation: "Valdobbiadene, Veneto, Italy",
-    seo: { primaryKeyword: "valdobbiadene prosecco superiore", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mionetto valdobbiadene prosecco superiore", secondaryKeywords: ["mionetto valdobbiadene prosecco superiore docg price", "buy mionetto valdobbiadene prosecco superiore docg online", "mionetto valdobbiadene prosecco superiore docg review"] },
   },
   {
     id: 'prod-champ-b3-14',
@@ -31047,7 +30999,7 @@ export const PRODUCTS: Product[] = [
     price: 89.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real house founded 1798, known for numbered '700-series' Cuvée releases rather than a fixed non-vintage blend.",
@@ -31059,7 +31011,7 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier Blend",
     distilleryLocation: "Dizy, Champagne, France",
-    seo: { primaryKeyword: "jacquesson champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "jacquesson champagne", secondaryKeywords: ["jacquesson cuvee 7-series extra brut price", "buy jacquesson cuvee 7-series extra brut online", "jacquesson cuvee 7-series extra brut review"] },
   },
   {
     id: 'prod-champ-b3-15',
@@ -31068,7 +31020,7 @@ export const PRODUCTS: Product[] = [
     price: 59.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, well-documented house founded 1838, based in the Aÿ Grand Cru.",
@@ -31080,7 +31032,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Pinot Noir, Chardonnay, Pinot Meunier Blend",
     distilleryLocation: "Aÿ, Champagne, France",
-    seo: { primaryKeyword: "deutz champagne brut", secondaryKeywords: [] },
+    seo: { primaryKeyword: "deutz champagne brut", secondaryKeywords: ["deutz brut classic price", "buy deutz brut classic online", "deutz brut classic review"] },
   },
   {
     id: 'prod-champ-b3-16',
@@ -31089,7 +31041,7 @@ export const PRODUCTS: Product[] = [
     price: 199.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "Deutz's real prestige Blanc de Blancs cuvée, from the same Aÿ Grand Cru house since 1838.",
@@ -31101,7 +31053,7 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "100% Chardonnay",
     distilleryLocation: "Aÿ, Champagne, France",
-    seo: { primaryKeyword: "deutz champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "deutz champagne", secondaryKeywords: ["amour de deutz price", "buy amour de deutz online", "amour de deutz review"] },
   },
   {
     id: 'prod-champ-b3-17',
@@ -31110,7 +31062,7 @@ export const PRODUCTS: Product[] = [
     price: 69.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, Aÿ Grand Cru-based Deutz house.",
@@ -31122,7 +31074,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Pinot Noir, Chardonnay Blend",
     distilleryLocation: "Aÿ, Champagne, France",
-    seo: { primaryKeyword: "deutz champagne rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "deutz champagne rose", secondaryKeywords: ["deutz brut rose price", "buy deutz brut rose online", "deutz brut rose review"] },
   },
   {
     id: 'prod-champ-b3-18',
@@ -31131,7 +31083,7 @@ export const PRODUCTS: Product[] = [
     price: 54.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "One of the last large independently and family-owned Champagne houses.",
@@ -31143,7 +31095,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier Blend",
     distilleryLocation: "Vertus, Champagne, France",
-    seo: { primaryKeyword: "duval leroy champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "duval leroy champagne", secondaryKeywords: ["duval-leroy fleur de champagne brut price", "buy duval-leroy fleur de champagne brut online", "duval-leroy fleur de champagne brut review"] },
   },
   {
     id: 'prod-champ-b3-19',
@@ -31152,7 +31104,7 @@ export const PRODUCTS: Product[] = [
     price: 57.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "An independent family house since 1808, also owner of Bouchard Père & Fils in Burgundy.",
@@ -31164,7 +31116,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Chardonnay-Dominant Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "henriot champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "henriot champagne", secondaryKeywords: ["henriot brut souverain price", "buy henriot brut souverain online", "henriot brut souverain review"] },
   },
   {
     id: 'prod-champ-b3-20',
@@ -31173,7 +31125,7 @@ export const PRODUCTS: Product[] = [
     price: 79.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, independently family-owned Henriot house since 1808.",
@@ -31185,7 +31137,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Pinot Noir, Chardonnay Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "henriot champagne rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "henriot champagne rose", secondaryKeywords: ["henriot brut rose price", "buy henriot brut rose online", "henriot brut rose review"] },
   },
   {
     id: 'prod-champ-b3-21',
@@ -31194,7 +31146,7 @@ export const PRODUCTS: Product[] = [
     price: 46.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A historic Épernay house, sister brand under LVMH alongside Moët, founded 1858.",
@@ -31206,7 +31158,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Pinot Meunier-Dominant Blend",
     distilleryLocation: "Épernay, Champagne, France",
-    seo: { primaryKeyword: "mercier champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mercier champagne", secondaryKeywords: ["mercier brut price", "buy mercier brut online", "mercier brut review"] },
   },
   {
     id: 'prod-champ-b3-22',
@@ -31215,7 +31167,7 @@ export const PRODUCTS: Product[] = [
     price: 44.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, LVMH-owned Mercier house, founded 1858.",
@@ -31227,7 +31179,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "Pinot Noir-Dominant Blend",
     distilleryLocation: "Épernay, Champagne, France",
-    seo: { primaryKeyword: "mercier champagne rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mercier champagne rose", secondaryKeywords: ["mercier brut rose price", "buy mercier brut rose online", "mercier brut rose review"] },
   },
   {
     id: 'prod-champ-b3-23',
@@ -31236,7 +31188,7 @@ export const PRODUCTS: Product[] = [
     price: 79.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A respected récoltant-manipulant house founded 1981, notable for hand-riddling and back-labeling disgorgement dates.",
@@ -31248,7 +31200,7 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Chardonnay, Pinot Noir, Pinot Meunier Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "bruno paillard champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "bruno paillard champagne", secondaryKeywords: ["bruno paillard premiere cuvee brut price", "buy bruno paillard premiere cuvee brut online", "bruno paillard premiere cuvee brut review"] },
   },
   {
     id: 'prod-champ-b3-24',
@@ -31257,7 +31209,7 @@ export const PRODUCTS: Product[] = [
     price: 89.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, meticulous récoltant-manipulant Bruno Paillard house.",
@@ -31269,7 +31221,7 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "Pinot Noir, Chardonnay Blend",
     distilleryLocation: "Reims, Champagne, France",
-    seo: { primaryKeyword: "bruno paillard champagne rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "bruno paillard champagne rose", secondaryKeywords: ["bruno paillard premiere cuvee rose price", "buy bruno paillard premiere cuvee rose online", "bruno paillard premiere cuvee rose review"] },
   },
   {
     id: 'prod-champ-b3-25',
@@ -31278,7 +31230,7 @@ export const PRODUCTS: Product[] = [
     price: 64.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, well-regarded grower-house whose Clos des Goisses is a genuinely famous single-vineyard cuvée.",
@@ -31290,7 +31242,7 @@ export const PRODUCTS: Product[] = [
     stock: 8,
     caskType: "Pinot Noir-Dominant Blend",
     distilleryLocation: "Mareuil-sur-Aÿ, Champagne, France",
-    seo: { primaryKeyword: "philipponnat champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "philipponnat royale reserve brut", secondaryKeywords: ["philipponnat royale reserve brut price", "buy philipponnat royale reserve brut online", "philipponnat royale reserve brut review"] },
   },
   {
     id: 'prod-champ-b3-26',
@@ -31299,7 +31251,7 @@ export const PRODUCTS: Product[] = [
     price: 69.99,
     category: 'champagne-sparkling',
     subcategory: "Champagne",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A zero-dosage expression from the real, respected Philipponnat grower-house.",
@@ -31311,7 +31263,7 @@ export const PRODUCTS: Product[] = [
     stock: 6,
     caskType: "Pinot Noir-Dominant Blend",
     distilleryLocation: "Mareuil-sur-Aÿ, Champagne, France",
-    seo: { primaryKeyword: "philipponnat champagne", secondaryKeywords: [] },
+    seo: { primaryKeyword: "philipponnat reserve non dose", secondaryKeywords: ["philipponnat reserve non dose price", "buy philipponnat reserve non dose online", "philipponnat reserve non dose review"] },
   },
   {
     id: 'prod-champ-b3-27',
@@ -31320,7 +31272,7 @@ export const PRODUCTS: Product[] = [
     price: 129.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Wine",
-    proof: 0,
+    proof: 23,
     age: "NV",
     volume: '750ml',
     shortDescription: "Schramsberg's own real prestige tier, the California sparkling house's top expression.",
@@ -31332,7 +31284,7 @@ export const PRODUCTS: Product[] = [
     stock: 4,
     caskType: "Chardonnay, Pinot Noir Blend",
     distilleryLocation: "Calistoga, California",
-    seo: { primaryKeyword: "schramsberg j schram", secondaryKeywords: [] },
+    seo: { primaryKeyword: "schramsberg j schram", secondaryKeywords: ["schramsberg j. schram price", "buy schramsberg j. schram online", "schramsberg j. schram review"] },
   },
   {
     id: 'prod-champ-b3-28',
@@ -31341,7 +31293,7 @@ export const PRODUCTS: Product[] = [
     price: 11.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A natural line extension for Josh Cellars, a brand the site already carries 5 wine SKUs of.",
@@ -31353,7 +31305,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "josh prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "josh cellars prosecco", secondaryKeywords: ["josh cellars prosecco price", "buy josh cellars prosecco online", "josh cellars prosecco review"] },
   },
   {
     id: 'prod-champ-b3-29',
@@ -31362,7 +31314,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of Josh Cellars' real Prosecco line extension.",
@@ -31374,7 +31326,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera, Pinot Noir",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "josh prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "josh cellars prosecco rose", secondaryKeywords: ["josh cellars prosecco rose price", "buy josh cellars prosecco rose online", "josh cellars prosecco rose review"] },
   },
   {
     id: 'prod-champ-b3-30',
@@ -31383,7 +31335,7 @@ export const PRODUCTS: Product[] = [
     price: 9.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A large-scale grocery-channel brand's real Prosecco extension.",
@@ -31395,7 +31347,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "cupcake prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "cupcake prosecco", secondaryKeywords: ["cupcake prosecco price", "buy cupcake prosecco online", "cupcake prosecco review"] },
   },
   {
     id: 'prod-champ-b3-31',
@@ -31404,7 +31356,7 @@ export const PRODUCTS: Product[] = [
     price: 14.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A major Veneto Prosecco house with real, established US distribution.",
@@ -31416,7 +31368,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "zonin prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "zonin prosecco", secondaryKeywords: ["zonin prosecco price", "buy zonin prosecco online", "zonin prosecco review"] },
   },
   {
     id: 'prod-champ-b3-32',
@@ -31425,7 +31377,7 @@ export const PRODUCTS: Product[] = [
     price: 15.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, established Zonin Veneto Prosecco house.",
@@ -31437,7 +31389,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera, Pinot Noir",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "zonin prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "zonin prosecco rose", secondaryKeywords: ["zonin prosecco rose price", "buy zonin prosecco rose online", "zonin prosecco rose review"] },
   },
   {
     id: 'prod-champ-b3-33',
@@ -31446,7 +31398,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, established Prosecco brand's extra-dry tier.",
@@ -31458,7 +31410,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "avissi prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "avissi prosecco extra dry", secondaryKeywords: ["avissi prosecco extra dry price", "buy avissi prosecco extra dry online", "avissi prosecco extra dry review"] },
   },
   {
     id: 'prod-champ-b3-34',
@@ -31467,7 +31419,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "The base DOC tier of the real, established Avissi Prosecco brand.",
@@ -31479,7 +31431,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "avissi prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "avissi prosecco doc", secondaryKeywords: ["avissi prosecco doc price", "buy avissi prosecco doc online", "avissi prosecco doc review"] },
   },
   {
     id: 'prod-champ-b3-35',
@@ -31488,7 +31440,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A Cavit-owned, widely available Prosecco brand.",
@@ -31500,7 +31452,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Trentino, Italy",
-    seo: { primaryKeyword: "lunetta prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "lunetta prosecco", secondaryKeywords: ["lunetta prosecco price", "buy lunetta prosecco online", "lunetta prosecco review"] },
   },
   {
     id: 'prod-champ-b3-36',
@@ -31509,7 +31461,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, established Prosecco brand at an accessible everyday price.",
@@ -31521,7 +31473,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "la vostra prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "la vostra prosecco", secondaryKeywords: ["la vostra prosecco price", "buy la vostra prosecco online", "la vostra prosecco review"] },
   },
   {
     id: 'prod-champ-b3-37',
@@ -31530,7 +31482,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, established La Vostra Prosecco brand.",
@@ -31542,7 +31494,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera, Pinot Noir",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "la vostra prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "la vostra prosecco rose", secondaryKeywords: ["la vostra prosecco rose price", "buy la vostra prosecco rose online", "la vostra prosecco rose review"] },
   },
   {
     id: 'prod-champ-b3-38',
@@ -31551,7 +31503,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A real, established Prosecco brand's extra-dry DOC tier.",
@@ -31563,7 +31515,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "riondo prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "riondo prosecco extra dry", secondaryKeywords: ["riondo prosecco extra dry price", "buy riondo prosecco extra dry online", "riondo prosecco extra dry review"] },
   },
   {
     id: 'prod-champ-b3-39',
@@ -31572,7 +31524,7 @@ export const PRODUCTS: Product[] = [
     price: 15.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "The rosé tier of the real, established Riondo Prosecco brand.",
@@ -31584,7 +31536,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera, Pinot Noir",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "riondo prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "riondo prosecco rose", secondaryKeywords: ["riondo prosecco rose price", "buy riondo prosecco rose online", "riondo prosecco rose review"] },
   },
   {
     id: 'prod-champ-b3-40',
@@ -31593,7 +31545,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A celebrity-adjacent Prosecco from Francis Ford Coppola Winery's Diamond Collection.",
@@ -31605,7 +31557,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "coppola prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "coppola prosecco", secondaryKeywords: ["francis coppola diamond collection prosecco price", "buy francis coppola diamond collection prosecco online", "francis coppola diamond collection prosecco review"] },
   },
   {
     id: 'prod-champ-b3-41',
@@ -31614,7 +31566,7 @@ export const PRODUCTS: Product[] = [
     price: 16.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "Asolo Prosecco Superiore DOCG, a distinct, real DOCG zone separate from Valdobbiadene.",
@@ -31626,7 +31578,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Glera",
     distilleryLocation: "Asolo, Veneto, Italy",
-    seo: { primaryKeyword: "asolo prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "asolo prosecco", secondaryKeywords: ["asolo prosecco superiore docg price", "buy asolo prosecco superiore docg online", "asolo prosecco superiore docg review"] },
   },
   {
     id: 'prod-champ-b3-42',
@@ -31635,7 +31587,7 @@ export const PRODUCTS: Product[] = [
     price: 16.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "A major New Zealand wine brand's real Prosecco extension.",
@@ -31647,7 +31599,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Glera",
     distilleryLocation: "Veneto, Italy",
-    seo: { primaryKeyword: "kim crawford prosecco", secondaryKeywords: [] },
+    seo: { primaryKeyword: "kim crawford prosecco", secondaryKeywords: ["kim crawford prosecco price", "buy kim crawford prosecco online", "kim crawford prosecco review"] },
   },
   {
     id: 'prod-champ-b3-43',
@@ -31656,7 +31608,7 @@ export const PRODUCTS: Product[] = [
     price: 34.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Rosé",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A strong hip-hop and culture crossover brand with real recognition beyond wine circles.",
@@ -31677,7 +31629,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Rosé",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "The largest Black-owned wine company in the US, real and growing distribution.",
@@ -31689,7 +31641,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Blended Sparkling",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "mcbride sisters sparkling brut rose", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mcbride sisters sparkling brut rose", secondaryKeywords: ["mcbride sisters sparkling brut rose price", "buy mcbride sisters sparkling brut rose online", "mcbride sisters sparkling brut rose review"] },
   },
   {
     id: 'prod-champ-b3-45',
@@ -31698,7 +31650,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Wine",
-    proof: 0,
+    proof: 23,
     age: "NV",
     volume: '750ml',
     shortDescription: "The base Brut tier of the largest Black-owned wine company in the US.",
@@ -31710,7 +31662,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Blended Sparkling",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "mcbride sisters sparkling brut", secondaryKeywords: [] },
+    seo: { primaryKeyword: "mcbride sisters sparkling brut", secondaryKeywords: ["mcbride sisters sparkling brut price", "buy mcbride sisters sparkling brut online", "mcbride sisters sparkling brut review"] },
   },
   {
     id: 'prod-champ-b3-46',
@@ -31719,7 +31671,7 @@ export const PRODUCTS: Product[] = [
     price: 8.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Wine",
-    proof: 0,
+    proof: 23,
     age: "NV",
     volume: '750ml',
     shortDescription: "A major grocery-channel brand's sparkling extension, alongside the site's stocked Barefoot Fine Wine SKUs.",
@@ -31731,7 +31683,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Blended Sparkling",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "barefoot sparkling wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "barefoot bubbly brut cuvee", secondaryKeywords: ["barefoot bubbly brut cuvee price", "buy barefoot bubbly brut cuvee online", "barefoot bubbly brut cuvee review"] },
   },
   {
     id: 'prod-champ-b3-47',
@@ -31740,7 +31692,7 @@ export const PRODUCTS: Product[] = [
     price: 9.49,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Wine",
-    proof: 0,
+    proof: 18,
     age: "NV",
     volume: '750ml',
     shortDescription: "A sweet, sparkling Moscato extension of the massive grocery-channel Barefoot brand.",
@@ -31752,7 +31704,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Blended Sparkling",
     distilleryLocation: "California",
-    seo: { primaryKeyword: "barefoot sparkling wine", secondaryKeywords: [] },
+    seo: { primaryKeyword: "barefoot bubbly pink moscato", secondaryKeywords: ["barefoot bubbly pink moscato price", "buy barefoot bubbly pink moscato online", "barefoot bubbly pink moscato review"] },
   },
   {
     id: 'prod-champ-b4-01',
@@ -31761,7 +31713,7 @@ export const PRODUCTS: Product[] = [
     price: 89.99,
     category: 'champagne-sparkling',
     subcategory: "Sparkling Rosé",
-    proof: 0,
+    proof: 24,
     age: "NV",
     volume: '750ml',
     shortDescription: "A rosé from Champagne's oldest wine house, founded in 1584, built around Gosset's signature non-malolactic style.",
@@ -31786,7 +31738,7 @@ export const PRODUCTS: Product[] = [
     price: 19.99,
     category: 'champagne-sparkling',
     subcategory: "Prosecco",
-    proof: 0,
+    proof: 22,
     age: "NV",
     volume: '750ml',
     shortDescription: "An accessible Prosecco DOC co-founded by actress and creator Issa Rae.",
@@ -31861,7 +31813,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Portland, ME",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "allagash white belgian-style wheat beer",
+      primaryKeyword: "allagash white bottles",
       secondaryKeywords: ["allagash white price", "buy allagash white", "allagash white review", "allagash white near me", "allagash white abv"],
       faqs: [{ question: "What makes Allagash White a witbier?", answer: "Spiced with coriander and curaçao orange peel over a wheat and oat base, unfiltered for a hazy, pale-straw appearance — it's the beer Allagash founder Rob Tod built the entire brewery around in 1995." }],
     },
@@ -31891,7 +31843,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Portland, ME",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "allagash white belgian-style wheat beer",
+      primaryKeyword: "allagash white cans",
       secondaryKeywords: ["allagash white can price", "buy allagash white cans", "allagash white review", "allagash white near me", "allagash white abv"],
     },
   },
@@ -31950,7 +31902,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Comstock, MI",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "bell's oberon wheat ale",
+      primaryKeyword: "bell's oberon bottles",
       secondaryKeywords: ["bell's oberon price", "buy bell's oberon", "bell's oberon review", "bell's oberon near me", "bell's oberon abv"],
       faqs: [{ question: "Does Oberon have fruit or spices in it?", answer: "No — Oberon is brewed with just four ingredients (wheat malt, Saaz hops, water, and Bell's house ale yeast) and no added fruit or spices, unlike most \"summer wheat\" competitors that lean on citrus or coriander." }],
     },
@@ -31980,7 +31932,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Comstock, MI",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "bell's oberon wheat ale",
+      primaryKeyword: "bell's oberon cans",
       secondaryKeywords: ["bell's oberon can price", "buy bell's oberon cans", "bell's oberon review", "bell's oberon near me", "bell's oberon abv"],
     },
   },
@@ -32009,7 +31961,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Comstock, MI",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "bell's two hearted ale",
+      primaryKeyword: "bell's two hearted ale bottles",
       secondaryKeywords: ["bell's two hearted ale price", "buy bell's two hearted ale", "bell's two hearted ale review", "bell's two hearted ale near me", "bell's two hearted ale abv", "two hearted ale bottles"],
       faqs: [{ question: "What makes Two Hearted Ale so acclaimed?", answer: "It's brewed with a single hop variety, Centennial, and has topped national \"Best Beer\" rankings more than almost any other American craft beer, carrying a 95/100 score across nearly 16,000 BeerAdvocate ratings." }],
     },
@@ -32032,7 +31984,7 @@ export const PRODUCTS: Product[] = [
       finish: "Long, clean, bittersweet",
     },
     badge: "#1 Rated IPA",
-    featured: false,
+    featured: true,
     images: ["/images/products/beer/bells-two-hearted-ale-6-x-12oz-can.webp"],
     stock: 32,
     caskType: "Centennial Hops, 2-Row Malt",
@@ -32069,7 +32021,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Denver, CO",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "blue moon belgian white beer",
+      primaryKeyword: "blue moon belgian white bottles",
       secondaryKeywords: ["blue moon belgian white price", "buy blue moon belgian white beer", "blue moon beer review", "blue moon belgian white near me", "blue moon beer abv"],
       faqs: [{ question: "Who created Blue Moon?", answer: "Brewer Keith Villa created it in 1995 at the Sandlot Brewery inside Coors Field in Denver, originally under the name \"Bellyslide Belgian White.\"" }],
     },
@@ -32099,7 +32051,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Denver, CO",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "blue moon belgian white beer",
+      primaryKeyword: "blue moon belgian white cans",
       secondaryKeywords: ["blue moon belgian white can price", "buy blue moon belgian white cans", "blue moon beer review", "blue moon belgian white near me", "blue moon beer abv"],
     },
   },
@@ -32128,7 +32080,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Brooklyn, NY",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "brooklyn lager",
+      primaryKeyword: "brooklyn lager bottles",
       secondaryKeywords: ["brooklyn lager price", "buy brooklyn lager", "brooklyn lager review", "brooklyn brewery near me", "brooklyn lager abv", "brooklyn lager vs pilsner"],
     },
   },
@@ -32157,7 +32109,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Brooklyn, NY",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "brooklyn lager",
+      primaryKeyword: "brooklyn lager cans",
       secondaryKeywords: ["brooklyn lager price", "buy brooklyn lager", "brooklyn lager review", "brooklyn brewery near me", "brooklyn lager abv", "brooklyn lager vs pilsner"],
     },
   },
@@ -32396,7 +32348,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
     seo: {
-      primaryKeyword: "corona extra",
+      primaryKeyword: "corona extra bottles",
       secondaryKeywords: ["corona extra beer", "corona extra abv", "corona extra alcohol content", "corona extra calories", "corona extra mexican beer", "is corona a lager"],
       faqs: [
         { question: "Is Corona a lager?", answer: "Yes — Corona Extra is a pale lager in the pilsner-adjacent style." },
@@ -32428,7 +32380,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
     seo: {
-      primaryKeyword: "corona extra",
+      primaryKeyword: "corona extra cans",
       secondaryKeywords: ["corona cans", "corona can", "corona beer can", "corona extra abv", "corona extra alcohol content"],
       faqs: [
         { question: "Is Corona a lager?", answer: "Yes — Corona Extra is a pale lager in the pilsner-adjacent style." },
@@ -32460,7 +32412,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
     seo: {
-      primaryKeyword: "corona light beer",
+      primaryKeyword: "corona light bottles",
       secondaryKeywords: ["percent alcohol in corona light", "corona light beer nutrition", "how many calories in a corona light beer", "how many carbs in a corona light beer", "is corona light gluten free beer"],
     },
   },
@@ -32488,7 +32440,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Pale Malt & Corn, Galena Hops",
     distilleryLocation: "Mexico City, Mexico",
     seo: {
-      primaryKeyword: "corona light beer",
+      primaryKeyword: "corona light cans",
       secondaryKeywords: ["percent alcohol in corona light", "corona light beer nutrition", "how many calories in a corona light beer", "how many carbs in a corona light beer", "is corona light gluten free beer"],
     },
   },
@@ -33112,7 +33064,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Roasted Barley, Nitrogen-Infused",
     distilleryLocation: "Dublin, Ireland",
     seo: {
-      primaryKeyword: "guinness draught",
+      primaryKeyword: "guinness draught 4 pack",
       secondaryKeywords: ["draught guinness stout", "guinness draught stout", "how to pour a guinness can", "guinness abv", "guinness near me", "guinness can"],
       faqs: [
         { question: "How do you pour a Guinness can properly?", answer: "Tilt the glass at 45 degrees, pour steadily, then let the nitrogen widget settle for the signature cascade before topping off." },
@@ -33144,7 +33096,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Roasted Barley, Nitrogen-Infused",
     distilleryLocation: "Dublin, Ireland",
     seo: {
-      primaryKeyword: "guinness draught",
+      primaryKeyword: "guinness draught 8 pack",
       secondaryKeywords: ["guinness draught beer", "guinness stout", "guinness calories", "guinness abv", "where to buy guinness"],
       faqs: [
         { question: "Is Guinness a stout?", answer: "Yes — Guinness Draught is the global style-defining example of a dry Irish stout." },
@@ -33176,7 +33128,7 @@ export const PRODUCTS: Product[] = [
     caskType: "A-Yeast, Saaz Hops & Pale Malt",
     distilleryLocation: "Amsterdam, Netherlands",
     seo: {
-      primaryKeyword: "heineken beer",
+      primaryKeyword: "heineken original bottles",
       secondaryKeywords: ["heineken lager", "heineken abv", "heineken original beer", "heineken lager bottles", "what type of beer is heineken"],
       faqs: [
         { question: "What type of beer is Heineken?", answer: "Heineken Original is a pale lager, brewed with the brewery's own proprietary A-yeast strain used across nearly all Heineken breweries worldwide to keep the flavor consistent." },
@@ -33208,7 +33160,7 @@ export const PRODUCTS: Product[] = [
     caskType: "A-Yeast, Saaz Hops & Pale Malt",
     distilleryLocation: "Amsterdam, Netherlands",
     seo: {
-      primaryKeyword: "heineken beer",
+      primaryKeyword: "heineken original cans",
       secondaryKeywords: ["heineken lager", "heineken abv", "heineken original beer", "heineken lager bottles", "what type of beer is heineken"],
       faqs: [
         { question: "What type of beer is Heineken?", answer: "Heineken Original is a pale lager, brewed with the brewery's own proprietary A-yeast strain used across nearly all Heineken breweries worldwide to keep the flavor consistent." },
@@ -33271,7 +33223,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Kailua-Kona, HI",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "kona big wave golden ale",
+      primaryKeyword: "kona big wave bottles",
       secondaryKeywords: ["kona big wave price", "buy kona big wave", "kona big wave review", "kona big wave near me", "kona big wave abv"],
     },
   },
@@ -33300,7 +33252,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Kailua-Kona, HI",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "kona big wave golden ale",
+      primaryKeyword: "kona big wave cans",
       secondaryKeywords: ["kona big wave can price", "buy kona big wave cans", "kona big wave review", "kona big wave near me", "kona big wave abv"],
     },
   },
@@ -33508,7 +33460,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Milwaukee, WI",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "miller high life",
+      primaryKeyword: "miller high life bottles",
       secondaryKeywords: ["miller high life price", "buy miller high life", "miller high life review", "miller high life near me", "miller high life abv", "champagne of beers"],
       faqs: [{ question: "Why is Miller High Life called the Champagne of Beers?", answer: "The nickname refers to Miller High Life's Champagne-shaped bottle with sloping shoulders, not the beer style itself — the slogan dates to the late 1960s." }],
     },
@@ -33538,7 +33490,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Milwaukee, WI",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "miller high life",
+      primaryKeyword: "miller high life cans",
       secondaryKeywords: ["miller high life price", "buy miller high life", "miller high life review", "miller high life near me", "miller high life abv", "champagne of beers"],
       faqs: [{ question: "Why is Miller High Life called the Champagne of Beers?", answer: "The nickname refers to Miller High Life's Champagne-shaped bottle with sloping shoulders, not the beer style itself — the slogan dates to the late 1960s." }],
     },
@@ -33568,7 +33520,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Milwaukee, WI",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "miller lite",
+      primaryKeyword: "miller lite bottles",
       secondaryKeywords: ["miller lite price", "buy miller lite", "miller lite review", "miller lite near me", "miller lite abv", "is miller lite good"],
     },
   },
@@ -33597,7 +33549,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Milwaukee, WI",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "miller lite",
+      primaryKeyword: "miller lite cans",
       secondaryKeywords: ["miller lite price", "buy miller lite", "miller lite review", "miller lite near me", "miller lite abv", "is miller lite good"],
     },
   },
@@ -33626,7 +33578,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mexico City, Mexico",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "modelo especial",
+      primaryKeyword: "modelo especial bottles",
       secondaryKeywords: ["modelo especial price", "buy modelo especial", "modelo especial review", "modelo especial near me", "modelo especial abv", "is modelo especial good"],
     },
   },
@@ -33655,7 +33607,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mexico City, Mexico",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "modelo especial",
+      primaryKeyword: "modelo especial cans",
       secondaryKeywords: ["modelo especial price", "buy modelo especial", "modelo especial review", "modelo especial near me", "modelo especial abv", "is modelo especial good"],
     },
   },
@@ -33773,7 +33725,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Fort Collins, CO",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "new belgium fat tire amber ale",
+      primaryKeyword: "new belgium fat tire bottles",
       secondaryKeywords: ["fat tire beer price", "buy fat tire beer", "fat tire beer review", "fat tire beer near me", "fat tire beer abv"],
       faqs: [{ question: "Why is it called \"Fat Tire\"?", answer: "Named for co-founder Jeff Lebesch's 1988 bicycle tour through Belgium, which directly inspired the beer's recipe." }],
     },
@@ -33803,7 +33755,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Fort Collins, CO",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "new belgium fat tire amber ale",
+      primaryKeyword: "new belgium fat tire cans",
       secondaryKeywords: ["fat tire beer can price", "buy fat tire beer cans", "fat tire beer review", "fat tire beer near me", "fat tire beer abv"],
     },
   },
@@ -33921,7 +33873,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mazatlán, Mexico",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "pacifico",
+      primaryKeyword: "pacifico clara bottles",
       secondaryKeywords: ["pacifico price", "buy pacifico beer", "pacifico review", "pacifico near me", "pacifico abv", "pacifico clara mazatlan"],
     },
   },
@@ -33950,7 +33902,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Mazatlán, Mexico",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "pacifico",
+      primaryKeyword: "pacifico clara cans",
       secondaryKeywords: ["pacifico price", "buy pacifico beer", "pacifico review", "pacifico near me", "pacifico abv", "pacifico clara mazatlan"],
     },
   },
@@ -33979,7 +33931,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Rome, Italy",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "peroni",
+      primaryKeyword: "peroni nastro azzurro bottles",
       secondaryKeywords: ["peroni price", "buy peroni nastro azzurro", "peroni review", "peroni near me", "peroni abv", "is peroni italian"],
     },
   },
@@ -34008,7 +33960,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Rome, Italy",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "peroni",
+      primaryKeyword: "peroni nastro azzurro cans",
       secondaryKeywords: ["peroni price", "buy peroni nastro azzurro", "peroni review", "peroni near me", "peroni abv", "is peroni italian"],
     },
   },
@@ -34090,13 +34042,13 @@ export const PRODUCTS: Product[] = [
       finish: "Clean, hoppy snap",
     },
     badge: "Craft Beer Pioneer",
-    featured: false,
+    featured: true,
     images: ["/images/products/beer/samuel-adams-boston-lager-12-x-12oz-bottles.webp"],
     stock: 17,
     caskType: "Two-Row Malt, Noble Hops",
     distilleryLocation: "Boston, MA",
     seo: {
-      primaryKeyword: "samuel adams boston lager",
+      primaryKeyword: "samuel adams boston lager bottles",
       secondaryKeywords: ["sam adams boston lager", "boston lager", "samuel adams lager", "sam adams lager beer", "samuel adams boston lager beer"],
     },
   },
@@ -34124,7 +34076,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Two-Row Malt, Noble Hops",
     distilleryLocation: "Boston, MA",
     seo: {
-      primaryKeyword: "samuel adams boston lager",
+      primaryKeyword: "samuel adams boston lager cans",
       secondaryKeywords: ["sam adams boston lager", "boston lager", "samuel adams lager", "sam adams lager beer", "samuel adams boston lager beer"],
     },
   },
@@ -34212,7 +34164,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Sapporo, Japan",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "sapporo",
+      primaryKeyword: "sapporo premium bottles",
       secondaryKeywords: ["sapporo price", "buy sapporo beer", "sapporo review", "sapporo near me", "sapporo abv", "sapporo premium history"],
       faqs: [{ question: "Is Sapporo the oldest Japanese beer brand?", answer: "Yes — Sapporo was founded in 1876 in Hokkaido, making it Japan's oldest beer brand." }],
     },
@@ -34242,7 +34194,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Sapporo, Japan",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "sapporo",
+      primaryKeyword: "sapporo premium cans",
       secondaryKeywords: ["sapporo price", "buy sapporo beer", "sapporo review", "sapporo near me", "sapporo abv", "sapporo premium history"],
       faqs: [{ question: "Is Sapporo the oldest Japanese beer brand?", answer: "Yes — Sapporo was founded in 1876 in Hokkaido, making it Japan's oldest beer brand." }],
     },
@@ -34389,7 +34341,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Cascade Hops, 2-Row Pale Malt",
     distilleryLocation: "Chico, CA",
     seo: {
-      primaryKeyword: "sierra nevada pale ales",
+      primaryKeyword: "sierra nevada pale ale bottles",
       secondaryKeywords: ["alcohol content in sierra nevada pale ale", "sierra nevada pale ale alcohol content", "sierra nevada pale ale alcohol percent", "sierra nevada beer", "sierra nevada brewing co pale ale", "buy sierra nevada pale ale"],
       faqs: [{ question: "What's the ABV of Sierra Nevada Pale Ale?", answer: "About 5.6% ABV. Sierra Nevada Pale Ale (1980) is widely credited as one of the beers that launched the modern American craft-pale-ale category." }],
     },
@@ -34418,7 +34370,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Cascade Hops, 2-Row Pale Malt",
     distilleryLocation: "Chico, CA",
     seo: {
-      primaryKeyword: "sierra nevada pale ales",
+      primaryKeyword: "sierra nevada pale ale cans",
       secondaryKeywords: ["sierra nevada pale ale can price", "buy sierra nevada pale ale cans", "alcohol content in sierra nevada pale ale", "sierra nevada beer", "sierra nevada brewing co pale ale"],
     },
   },
@@ -34446,7 +34398,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Magnum, Crystal & Citra Hops",
     distilleryLocation: "Chico, CA",
     seo: {
-      primaryKeyword: "sierra nevada ipa",
+      primaryKeyword: "sierra nevada torpedo ipa bottles",
       secondaryKeywords: ["torpedo beer", "sierra nevada beer ipa", "sierra nevada brewing company ipa", "sierra nevada india pale ale", "sierra nevada torpedo extra ipa price", "buy sierra nevada torpedo ipa"],
       faqs: [{ question: "What is Torpedo Extra IPA?", answer: "Sierra Nevada's Extra IPA, named for the brewery's \"Hop Torpedo\" dry-hopping device that infuses extra hop aroma without added bitterness." }],
     },
@@ -34475,7 +34427,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Magnum, Crystal & Citra Hops",
     distilleryLocation: "Chico, CA",
     seo: {
-      primaryKeyword: "sierra nevada ipa",
+      primaryKeyword: "sierra nevada torpedo ipa cans",
       secondaryKeywords: ["torpedo beer", "sierra nevada beer ipa", "sierra nevada abv", "sierra nevada torpedo ipa cans", "buy sierra nevada torpedo cans", "sierra nevada torpedo near me"],
       faqs: [{ question: "What is Torpedo Extra IPA?", answer: "Sierra Nevada's Extra IPA, named for the brewery's \"Hop Torpedo\" dry-hopping device that infuses extra hop aroma without added bitterness." }],
     },
@@ -34504,7 +34456,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Saaz Noble Hops, Pilsner Malt",
     distilleryLocation: "Leuven, Belgium",
     seo: {
-      primaryKeyword: "stella artois beer",
+      primaryKeyword: "stella artois bottles",
       secondaryKeywords: ["stella artois lager", "stella artois abv", "stella lager", "stella artois lager bottles", "what type of beer is stella artois"],
       faqs: [
         { question: "What type of beer is Stella Artois?", answer: "Stella Artois is a European/Belgian pale lager at roughly 5% ABV, brewed in Leuven, Belgium since 1926." },
@@ -34536,7 +34488,7 @@ export const PRODUCTS: Product[] = [
     caskType: "Saaz Noble Hops, Pilsner Malt",
     distilleryLocation: "Leuven, Belgium",
     seo: {
-      primaryKeyword: "stella artois beer",
+      primaryKeyword: "stella artois cans",
       secondaryKeywords: ["stella artois lager", "stella artois abv", "stella lager", "stella artois lager bottles", "what type of beer is stella artois"],
       faqs: [
         { question: "What type of beer is Stella Artois?", answer: "Stella Artois is a European/Belgian pale lager at roughly 5% ABV, brewed in Leuven, Belgium since 1926." },
@@ -34629,7 +34581,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Atlanta, GA",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "sweetwater 420 extra pale ale",
+      primaryKeyword: "sweetwater 420 bottles",
       secondaryKeywords: ["sweetwater 420 price", "buy sweetwater 420", "sweetwater 420 review", "sweetwater 420 near me", "sweetwater 420 abv"],
       faqs: [{ question: "Why is it called \"420\"?", answer: "First brewed on April 20, 1997 (4/20) — a date that also ties into the cannabis-culture number fitting SweetWater's laid-back brand identity. It remains the best-selling pale ale in Georgia." }],
     },
@@ -34659,7 +34611,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Atlanta, GA",
     seo: {
       // No SEMrush volume data found for this brand — generic/inferred keywords, not volume-backed.
-      primaryKeyword: "sweetwater 420 extra pale ale",
+      primaryKeyword: "sweetwater 420 cans",
       secondaryKeywords: ["sweetwater 420 can price", "buy sweetwater 420 cans", "sweetwater 420 review", "sweetwater 420 near me", "sweetwater 420 abv"],
     },
   },
@@ -34895,7 +34847,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Pottsville, PA",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "yuengling",
+      primaryKeyword: "yuengling traditional lager bottles",
       secondaryKeywords: ["yuengling price", "buy yuengling", "yuengling review", "yuengling near me", "yuengling abv", "america's oldest brewery"],
       faqs: [{ question: "Is Yuengling America's oldest brewery?", answer: "Yes — D.G. Yuengling & Son was founded in 1829 in Pottsville, Pennsylvania, and has operated continuously aside from a brief Prohibition-era pivot to near-beer and ice cream." }],
     },
@@ -34925,7 +34877,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Pottsville, PA",
     seo: {
       // Confirmed real via WebSearch, not volume-backed.
-      primaryKeyword: "yuengling",
+      primaryKeyword: "yuengling traditional lager cans",
       secondaryKeywords: ["yuengling price", "buy yuengling", "yuengling review", "yuengling near me", "yuengling abv", "america's oldest brewery"],
       faqs: [{ question: "Is Yuengling America's oldest brewery?", answer: "Yes — D.G. Yuengling & Son was founded in 1829 in Pottsville, Pennsylvania, and has operated continuously aside from a brief Prohibition-era pivot to near-beer and ice cream." }],
     },
@@ -34939,7 +34891,7 @@ export const PRODUCTS: Product[] = [
     price: 14.49,
     category: 'beer',
     subcategory: "IPA",
-    proof: 0,
+    proof: 13,
     age: "NV",
     volume: '6 x 12oz bottles',
     shortDescription: "The single strongest unstocked-SKU signal in the whole Beer gap analysis, from the same brewer as the site's stocked Black Butte Porter.",
@@ -34954,34 +34906,13 @@ export const PRODUCTS: Product[] = [
     seo: { primaryKeyword: "deschutes fresh squeezed ipa", secondaryKeywords: ["deschutes brewery fresh squeezed ipa"] },
   },
   {
-    id: 'prod-beer-b3-02',
-    slug: 'samuel-adams-boston-lager',
-    name: "Samuel Adams Boston Lager",
-    price: 18.99,
-    category: 'beer',
-    subcategory: "Lager",
-    proof: 0,
-    age: "NV",
-    volume: '12 x 12oz bottles',
-    shortDescription: "Samuel Adams' actual flagship beer, currently unstocked in favor of the extreme-tier Utopias.",
-    fullDescription: "Boston Lager is Samuel Adams' real, original flagship beer — the recipe the entire Boston Beer Company was founded on in 1984 — a notable gap on a site that stocks the brand's extreme-tier Utopias but not its actual best-known beer.",
-    tastingNotes: { nose: "Noble hop spice, toasted malt", palate: "Balanced, caramel malt, floral hops", finish: "Clean, moderately bitter" },
-    badge: "The Actual Flagship",
-    featured: true,
-    images: ["/images/products/beer/samuel-adams-boston-lager.webp"],
-    stock: 24,
-    caskType: "Two-Row Pale Malt, Noble Hops",
-    distilleryLocation: "Boston, Massachusetts",
-    seo: { primaryKeyword: "samuel adams boston lager", secondaryKeywords: ["sam adams boston lager"] },
-  },
-  {
     id: 'prod-beer-b3-03',
     slug: 'sam-adams-octoberfest',
     name: "Samuel Adams Octoberfest",
     price: 15.99,
     category: 'beer',
     subcategory: "Lager",
-    proof: 0,
+    proof: 11,
     age: "NV",
     volume: '12 x 12oz bottles',
     shortDescription: "A real seasonal Märzen-style lager from Samuel Adams, alongside the site's stocked flagship and Utopias.",
@@ -35002,7 +34933,7 @@ export const PRODUCTS: Product[] = [
     price: 21.99,
     category: 'beer',
     subcategory: "Lager",
-    proof: 0,
+    proof: 9,
     age: "NV",
     volume: '24 x 7oz bottles',
     shortDescription: "The real, currently-sold 7oz mini-bottle format of Corona.",
@@ -35023,7 +34954,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'beer',
     subcategory: "Lager",
-    proof: 0,
+    proof: 11,
     age: "NV",
     volume: '12 x 12oz cans',
     shortDescription: "A real, higher-ABV Anheuser-Busch lager, using an ice-brewing process for extra strength.",
@@ -35044,7 +34975,7 @@ export const PRODUCTS: Product[] = [
     price: 10.99,
     category: 'beer',
     subcategory: "Lager",
-    proof: 0,
+    proof: 8,
     age: "NV",
     volume: '6 x 12oz bottles',
     shortDescription: "Heineken's real, currently-marketed lower-ABV, lighter line extension.",
@@ -35056,7 +34987,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Lighter-Bodied Lager",
     distilleryLocation: "Netherlands",
-    seo: { primaryKeyword: "heineken silver beer", secondaryKeywords: [] },
+    seo: { primaryKeyword: "heineken silver beer", secondaryKeywords: ["heineken silver price", "buy heineken silver online", "heineken silver review"] },
   },
   {
     id: 'prod-beer-b3-07',
@@ -35065,7 +34996,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'beer',
     subcategory: "Lager",
-    proof: 0,
+    proof: 9,
     age: "NV",
     volume: '8 x 8.4oz cans',
     shortDescription: "A real Sierra Nevada release, filling the brand's currently-empty Lager subcategory slot.",
@@ -35077,7 +35008,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Noble Hops, Pilsner Malt",
     distilleryLocation: "Chico, California",
-    seo: { primaryKeyword: "sierra nevada pilsner", secondaryKeywords: [] },
+    seo: { primaryKeyword: "sierra nevada pilsner", secondaryKeywords: ["sierra nevada pilsner price", "buy sierra nevada pilsner online", "sierra nevada pilsner review"] },
   },
   {
     id: 'prod-beer-b3-08',
@@ -35086,7 +35017,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'beer',
     subcategory: "IPA",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "One of the most ubiquitous, gold-medal-winning American IPAs.",
@@ -35098,7 +35029,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "American Hops",
     distilleryLocation: "San Diego, California",
-    seo: { primaryKeyword: "ballast point sculpin ipa", secondaryKeywords: [] },
+    seo: { primaryKeyword: "ballast point sculpin ipa", secondaryKeywords: ["ballast point sculpin ipa price", "buy ballast point sculpin ipa online", "ballast point sculpin ipa review"] },
   },
   {
     id: 'prod-beer-b3-09',
@@ -35107,7 +35038,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'beer',
     subcategory: "IPA",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "A real grapefruit-infused variant of Ballast Point's iconic Sculpin IPA.",
@@ -35119,28 +35050,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "American Hops, Grapefruit",
     distilleryLocation: "San Diego, California",
-    seo: { primaryKeyword: "ballast point sculpin ipa", secondaryKeywords: [] },
-  },
-  {
-    id: 'prod-beer-b3-10',
-    slug: 'bells-two-hearted-ale',
-    name: "Bell's Two Hearted Ale",
-    price: 22.99,
-    category: 'beer',
-    subcategory: "IPA",
-    proof: 0,
-    age: "NV",
-    volume: '12 x 12oz cans',
-    shortDescription: "Frequently ranked America's #1 beer in national polls, alongside the site's stocked Bell's Oberon.",
-    fullDescription: "Two Hearted Ale is Bell's flagship IPA, frequently ranked the #1 beer in America in national polls and blind tastings — a real, must-carry gap alongside the site's already-stocked Bell's Oberon.",
-    tastingNotes: { nose: "Grapefruit, pine, floral hops", palate: "Balanced, bold hop character, biscuity malt", finish: "Clean, lingering bitterness" },
-    badge: "Frequently Ranked America's #1 Beer",
-    featured: true,
-    images: ["/images/products/beer/bells-two-hearted-ale.webp"],
-    stock: 18,
-    caskType: "Centennial Hops",
-    distilleryLocation: "Comstock, Michigan",
-    seo: { primaryKeyword: "bell's two hearted ale", secondaryKeywords: [] },
+    seo: { primaryKeyword: "ballast point grapefruit sculpin ipa", secondaryKeywords: ["ballast point grapefruit sculpin ipa price", "buy ballast point grapefruit sculpin ipa online", "ballast point grapefruit sculpin ipa review"] },
   },
   {
     id: 'prod-beer-b3-11',
@@ -35149,7 +35059,7 @@ export const PRODUCTS: Product[] = [
     price: 17.99,
     category: 'beer',
     subcategory: "IPA",
-    proof: 0,
+    proof: 16,
     age: "NV",
     volume: '4 x 16oz cans',
     shortDescription: "Credited with kickstarting the entire hazy/New England IPA movement.",
@@ -35161,7 +35071,7 @@ export const PRODUCTS: Product[] = [
     stock: 10,
     caskType: "American Hops, Unfiltered",
     distilleryLocation: "Stowe, Vermont",
-    seo: { primaryKeyword: "the alchemist heady topper", secondaryKeywords: [] },
+    seo: { primaryKeyword: "the alchemist heady topper", secondaryKeywords: ["the alchemist heady topper price", "buy the alchemist heady topper online", "the alchemist heady topper review"] },
   },
 
   // CIDER
@@ -35723,7 +35633,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '6 x 12oz bottles',
     shortDescription: "A real pear cider from ACE, the brand the site already carries Apple, Mango, and Pineapple flavors of.",
@@ -35744,7 +35654,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '12 x 12oz cans',
     shortDescription: "America's largest independently-owned cidery, 800,000+ cases a year, strongest new-brand signal in the cider gap analysis.",
@@ -35756,7 +35666,7 @@ export const PRODUCTS: Product[] = [
     stock: 16,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Nellysford, Virginia",
-    seo: { primaryKeyword: "bold rock cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "bold rock variety pack", secondaryKeywords: ["bold rock hard cider variety pack price", "buy bold rock hard cider variety pack online", "bold rock hard cider variety pack review"] },
   },
   {
     id: 'prod-cider-b3-03',
@@ -35765,7 +35675,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '6 x 12oz bottles',
     shortDescription: "Bold Rock's flagship apple cider from America's largest independently-owned cidery.",
@@ -35777,7 +35687,7 @@ export const PRODUCTS: Product[] = [
     stock: 20,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Nellysford, Virginia",
-    seo: { primaryKeyword: "bold rock cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "bold rock virginia apple cider", secondaryKeywords: ["bold rock virginia apple cider price", "buy bold rock virginia apple cider online", "bold rock virginia apple cider review"] },
   },
   {
     id: 'prod-cider-b3-04',
@@ -35786,7 +35696,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 16,
     age: "NV",
     volume: '4 x 16oz cans',
     shortDescription: "A higher-ABV imperial-style cider from America's largest independently-owned cidery.",
@@ -35798,7 +35708,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Nellysford, Virginia",
-    seo: { primaryKeyword: "bold rock cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "bold rock imperial cider", secondaryKeywords: ["bold rock imperial cider price", "buy bold rock imperial cider online", "bold rock imperial cider review"] },
   },
   {
     id: 'prod-cider-b3-05',
@@ -35807,7 +35717,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "Downeast's real flagship/best-seller, previously entirely unstocked despite the brand's Aloha Friday and Blackberry already being carried.",
@@ -35828,7 +35738,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 10,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "A seasonal fall cider from Downeast, an obvious seasonal-SKU gap alongside the brand's year-round flavors.",
@@ -35849,7 +35759,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 9,
     age: "NV",
     volume: '6 x 12oz bottles',
     shortDescription: "A real, well-known Irish cider and Strongbow's direct rival.",
@@ -35861,7 +35771,7 @@ export const PRODUCTS: Product[] = [
     stock: 18,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Clonmel, Ireland",
-    seo: { primaryKeyword: "magners cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "magners cider", secondaryKeywords: ["magners irish cider price", "buy magners irish cider online", "magners irish cider review"] },
   },
   {
     id: 'prod-cider-b3-08',
@@ -35870,7 +35780,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "Original Sin's own actual best-selling flagship (blackberry), not previously stocked at all.",
@@ -35891,7 +35801,7 @@ export const PRODUCTS: Product[] = [
     price: 13.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '4 x 16oz cans',
     shortDescription: "A higher-ABV, mango-flavored cider from Seattle's Schilling Cider House.",
@@ -35903,7 +35813,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Fresh Apple Juice Fermentation, Mango",
     distilleryLocation: "Seattle, Washington",
-    seo: { primaryKeyword: "schilling cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "schilling cider imperial mango", secondaryKeywords: ["schilling cider imperial mango price", "buy schilling cider imperial mango online", "schilling cider imperial mango review"] },
   },
   {
     id: 'prod-cider-b3-10',
@@ -35912,7 +35822,7 @@ export const PRODUCTS: Product[] = [
     price: 12.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '6 x 12oz cans',
     shortDescription: "A core-range cider from Seattle-based Schilling Cider.",
@@ -35924,7 +35834,7 @@ export const PRODUCTS: Product[] = [
     stock: 14,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Seattle, Washington",
-    seo: { primaryKeyword: "schilling cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "schilling cider local legend", secondaryKeywords: ["schilling cider local legend price", "buy schilling cider local legend online", "schilling cider local legend review"] },
   },
   {
     id: 'prod-cider-b3-11',
@@ -35933,7 +35843,7 @@ export const PRODUCTS: Product[] = [
     price: 15.99,
     category: 'cider',
     subcategory: "Hard Cider",
-    proof: 0,
+    proof: 14,
     age: "NV",
     volume: '12 x 12oz cans',
     shortDescription: "A sampler pack from Schilling Cider, the Seattle brand behind the nation's largest craft-cider-selection cider house.",
@@ -35945,7 +35855,7 @@ export const PRODUCTS: Product[] = [
     stock: 12,
     caskType: "Fresh Apple Juice Fermentation",
     distilleryLocation: "Seattle, Washington",
-    seo: { primaryKeyword: "schilling cider", secondaryKeywords: [] },
+    seo: { primaryKeyword: "schilling cider variety pack", secondaryKeywords: ["schilling cider variety pack price", "buy schilling cider variety pack online", "schilling cider variety pack review"] },
   },
 
   // BAR ESSENTIALS
@@ -37600,7 +37510,7 @@ export const PRODUCTS: Product[] = [
     distilleryLocation: "Hiroshima, Japan",
     // No "togouchi 15" SEMrush term exists (only "togouchi 9" and "togouchi 18" are tracked, neither matching actual stock) — falling back to the brand-line term per the source's own convention.
     seo: {
-      primaryKeyword: "togouchi whisky",
+      primaryKeyword: "togouchi 15 year",
       secondaryKeywords: ["togouchi review", "buy togouchi whisky"],
     },
   },

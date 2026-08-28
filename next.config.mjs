@@ -27,6 +27,26 @@ const nextConfig = {
         destination: '/shop/scotch-whisky/glendronach-15-year-old-revival-single-malt-scotch-whisky',
         permanent: true,
       },
+      {
+        source: '/shop/bourbon-whiskey/bookers-bourbon',
+        destination: '/shop/bourbon-whiskey/bookers-small-batch-bourbon',
+        permanent: true,
+      },
+      {
+        source: '/shop/beer/samuel-adams-boston-lager',
+        destination: '/shop/beer/samuel-adams-boston-lager-12-x-12oz-bottles',
+        permanent: true,
+      },
+      {
+        source: '/shop/tequila-mezcal/el-tesoro-extra-anejo',
+        destination: '/shop/tequila-mezcal/el-tesoro-extra-anejo-tequila-750ml',
+        permanent: true,
+      },
+      {
+        source: '/shop/beer/bells-two-hearted-ale',
+        destination: '/shop/beer/bells-two-hearted-ale-6-x-12oz-can',
+        permanent: true,
+      },
     ];
   },
 };
