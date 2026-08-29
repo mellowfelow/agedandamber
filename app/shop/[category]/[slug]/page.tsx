@@ -27,10 +27,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const brandHub = BRAND_HUBS.find((h) => h.categorySlug === category && h.hubSlug === slug);
   const hub = subHub || brandHub;
   if (hub) {
+    // Prefer an actual product photo from within this hub (e.g. a real
+    // Blanton's bottle for the Blanton's brand hub) over the generic
+    // category image, so all 511 hub pages get a genuinely representative
+    // share image instead of falling back to the sitewide default.
+    let ogImage: string | undefined;
+    if (subHub) {
+      ogImage = PRODUCTS.find(
+        (p) => p.category === subHub.categorySlug && p.subcategory === subHub.subcategoryName
+      )?.images?.[0];
+    } else if (brandHub) {
+      const lowerKeywords = brandHub.brandKeywords.map((k) => k.toLowerCase());
+      ogImage = PRODUCTS.find(
+        (p) => p.category === brandHub.categorySlug && lowerKeywords.some((kw) => p.name.toLowerCase().includes(kw))
+      )?.images?.[0];
+    }
+    if (!ogImage) {
+      ogImage = CATEGORIES.find((c) => c.slug === hub.categorySlug)?.image;
+    }
+
     return {
       title: hub.seo.titleTag,
       description: hub.seo.metaDescription,
       alternates: { canonical: `https://${SITE.domain}/shop/${hub.categorySlug}/${hub.hubSlug}/` },
+      openGraph: ogImage ? { images: [ogImage] } : undefined,
     };
   }
 
