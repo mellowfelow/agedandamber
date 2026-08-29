@@ -27,11 +27,11 @@ import { SITE, BRAND, SHOP, CONTACT } from '../config/site';
 import { getRouteUrl } from '../utils/routes';
 
 interface HomeViewProps {
-  products: Product[];
+  featuredProducts: Product[];
+  totalProductCount: number;
 }
 
-export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
-  const featuredProducts = products.filter((p) => p.featured).slice(0, 8);
+export const HomeView: React.FC<HomeViewProps> = ({ featuredProducts, totalProductCount }) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
@@ -346,7 +346,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
             href={getRouteUrl.shop()}
             className="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1"
           >
-            View Full Vault ({products.length} bottles)
+            View Full Vault ({totalProductCount} bottles)
             <ChevronRight className="w-4 h-4" />
           </Link>
         </div>

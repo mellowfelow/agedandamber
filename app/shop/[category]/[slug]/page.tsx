@@ -127,6 +127,15 @@ export default async function ProductPage({ params }: Props) {
 
   const productCat = CATEGORIES.find((c) => c.slug === product.category);
 
+  // Same fix as the homepage: compute the (at most 3) related products on
+  // the server instead of handing the client component the entire
+  // 1,347-product catalog just to filter it down itself. This one matters
+  // more than the homepage fix — it was happening on every single one of
+  // the ~1,347 product pages, not just one page.
+  const relatedProducts = PRODUCTS
+    .filter((p) => p.id !== product.id && p.category === product.category)
+    .slice(0, 3);
+
   return (
     <>
       <JsonLd type="product" data={product} />
@@ -140,7 +149,7 @@ export default async function ProductPage({ params }: Props) {
           { name: product.name, url: `/shop/${product.category}/${product.slug}/` },
         ]}
       />
-      <ProductDetailView product={product} allProducts={PRODUCTS} />
+      <ProductDetailView product={product} relatedProducts={relatedProducts} />
     </>
   );
 }

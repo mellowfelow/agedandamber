@@ -12,18 +12,14 @@ import { useAppState } from '../../app/providers';
 
 interface ProductDetailViewProps {
   product: Product;
-  allProducts: Product[];
+  relatedProducts: Product[];
 }
 
-export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, allProducts }) => {
+export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, relatedProducts }) => {
   const { addToCart } = useAppState();
   const [selectedImg, setSelectedImg] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
-
-  const relatedProducts = allProducts
-    .filter((p) => p.id !== product.id && p.category === product.category)
-    .slice(0, 3);
 
   const handleAdd = () => {
     addToCart(product, quantity);

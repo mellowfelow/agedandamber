@@ -19,11 +19,20 @@ export default function HomePage() {
     highPrice: Math.max(...prices),
   };
 
+  // Filter on the server and hand HomeView only the 8 it actually renders.
+  // It used to receive the entire 1,347-product catalog just to run this
+  // same filter client-side — every field of every product (full
+  // descriptions, tasting notes, SEO keywords) was getting serialized into
+  // the homepage's hydration payload for no reason, ballooning it to 1.8MB
+  // of HTML and triggering an "HTML size is too long" flag in Bing
+  // Webmaster Tools' URL inspection.
+  const featuredProducts = PRODUCTS.filter((p) => p.featured).slice(0, 8);
+
   return (
     <>
       <JsonLd type="homepage" data={homepageStats} />
       <JsonLd type="faq" data={FAQ_ITEMS.slice(0, 5)} />
-      <HomeView products={PRODUCTS} />
+      <HomeView featuredProducts={featuredProducts} totalProductCount={PRODUCTS.length} />
     </>
   );
 }
