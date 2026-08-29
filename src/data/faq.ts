@@ -1,5 +1,5 @@
 import { FaqItem } from '../types';
-import { SHOP } from '../config/site';
+import { SHOP, CONTACT } from '../config/site';
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
@@ -36,5 +36,15 @@ export const FAQ_ITEMS: FaqItem[] = [
     category: 'shipping',
     question: 'Do you offer same-day spirits delivery?',
     answer: `Yes. Orders placed before ${SHOP.sameDayCutoff} to ${SHOP.sameDayStates.slice(0, -1).join(', ')}, or ${SHOP.sameDayStates[SHOP.sameDayStates.length - 1]} qualify for same-day dispatch through our compliant liquor carrier network. All other states we ship to receive spirits within ${SHOP.standardDelivery}.`,
+  },
+  {
+    category: 'ordering',
+    question: 'What is your return policy on spirits, wine, beer, and cider?',
+    answer: `Once an alcohol order ships, it's final sale — most states' liquor laws don't permit alcohol to be returned once it has left a licensed retailer. If your order arrives damaged in transit or we shipped the wrong item, contact ${CONTACT.email} within 7 days of delivery and we'll replace it or refund it in full at no cost to you — no return shipment required.`,
+  },
+  {
+    category: 'ordering',
+    question: 'Can I return non-alcoholic products or bar essentials?',
+    answer: `Yes. Non-alcoholic spirits, wine, Champagne, beer, cider, and RTD cocktails, plus bar essentials like glassware, bitters, and mixers, can be returned unopened and in original condition within 30 days of delivery for a full refund. Contact ${CONTACT.email} to start a return.`,
   },
 ];

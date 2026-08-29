@@ -59,6 +59,7 @@ ${categoryLines}
 - Shipping Eligibility: ${SHOP.shippingEligibility} Non-alcoholic products ship nationwide with no age or shipping restrictions.
 - Crypto Discount: ${SHOP.cryptoDiscount}% off instantly when paying via Bitcoin (BTC) or Tether (USDT)
 - Legal Age Guard: Mandatory 21+ age verification and adult signature required upon delivery of alcoholic products
+- Returns: Alcohol orders are final sale once shipped (most states' liquor laws don't permit returning alcohol) — damaged or wrong items are replaced/refunded free, no return needed. Non-alcoholic products and bar essentials can be returned unopened within 30 days for a full refund.
 - Contact: ${CONTACT.email} | ${CONTACT.phone}
 
 ## Agent Resources & API Specifications
@@ -66,14 +67,14 @@ ${categoryLines}
 - [API Catalog](${base}/.well-known/api-catalog): RFC 9727 linkset of all public site resources and API endpoints.
 - [Agent Skills Index](${base}/.well-known/agent-skills/index.json): Declarative schema of supported agent skills.
 - [MCP Server Card](${base}/.well-known/mcp/server-card.json): Model Context Protocol server capabilities and tool schema.
-- [MCP Streamable Server](${base}/api/mcp): Live MCP endpoint — search_products, get_product, list_categories, get_policies, create_order_draft.
+- [MCP Streamable Server](${base}/api/mcp/): Live MCP endpoint — search_products, get_product, list_categories, get_policies, create_order_draft.
 - [Authentication Specification](${base}/auth.md): Public access declaration for autonomous AI agents.
 
 ## Optional
 
-- [Products API](${base}/api/products): Full catalog as JSON (${totalProducts} products).
-- [Categories API](${base}/api/categories): Category list as JSON.
-- [Search API](${base}/api/search?q=): Product and blog search as JSON.
+- [Products API](${base}/api/products/): Full catalog as JSON (${totalProducts} products).
+- [Categories API](${base}/api/categories/): Category list as JSON.
+- [Search API](${base}/api/search/?q=): Product and blog search as JSON.
 `;
 
   return new NextResponse(content, {

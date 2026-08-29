@@ -8,13 +8,13 @@
   "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "services": [
     { "id": "product-catalog", "type": "catalog", "url": "https://www.agedandamber.com/shop/", "description": "Full catalog of spirits, wine, Champagne, beer, and cider" },
-    { "id": "mcp-server", "type": "mcp", "url": "https://www.agedandamber.com/api/mcp", "description": "MCP Streamable HTTP server" },
+    { "id": "mcp-server", "type": "mcp", "url": "https://www.agedandamber.com/api/mcp/", "description": "MCP Streamable HTTP server" },
     { "id": "order", "type": "commerce", "url": "https://www.agedandamber.com/shop/", "description": "Place orders via 21+ verified checkout" },
     { "id": "wholesale", "type": "b2b", "url": "https://www.agedandamber.com/wholesale/", "description": "Wholesale case pricing and single barrel allocations" }
   ],
   "capabilities": ["browse", "search", "inquiry", "wholesale", "content", "mcp"],
   "endpoints": {
-    "mcp": "https://www.agedandamber.com/api/mcp",
+    "mcp": "https://www.agedandamber.com/api/mcp/",
     "catalog": "https://www.agedandamber.com/shop/",
     "contact": "https://www.agedandamber.com/contact/",
     "agent_skills": "https://www.agedandamber.com/.well-known/agent-skills/index.json",

@@ -6,6 +6,30 @@ interface JsonLdProps {
   data?: any;
 }
 
+// Matches the published policy (FAQ + llms.txt): once an alcohol order
+// ships it's final sale, since most states' liquor laws don't allow
+// returning alcohol once it's left a licensed retailer — damaged/wrong
+// items are still replaced free, just not via a return. Everything not
+// in this set (NA spirits/wine/champagne/beer/cider/RTD, bar essentials)
+// gets a real 30-day return window instead.
+const NO_RETURN_ALCOHOL_CATEGORIES = new Set([
+  'bourbon-whiskey',
+  'scotch-whisky',
+  'irish-whiskey',
+  'japanese-whisky',
+  'other-whiskey',
+  'craft-vodka',
+  'tequila-mezcal',
+  'artisanal-gin',
+  'aged-dark-rum',
+  'cognac-brandy',
+  'rtd-liqueurs',
+  'fine-wine',
+  'champagne-sparkling',
+  'beer',
+  'cider',
+]);
+
 export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
   let schemaData: any = null;
 
@@ -104,11 +128,19 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           '@type': 'Organization',
           name: SITE.name,
         },
-        // Real, documented shipping terms only (matches the FAQ/checkout
-        // copy) — no hasMerchantReturnPolicy here, since there's no
-        // documented return policy anywhere on the site to accurately
-        // represent; fabricating one in structured data would be a false
-        // claim, not a technical fix.
+        hasMerchantReturnPolicy: NO_RETURN_ALCOHOL_CATEGORIES.has(data.category)
+          ? {
+              '@type': 'MerchantReturnPolicy',
+              returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+              applicableCountry: 'US',
+            }
+          : {
+              '@type': 'MerchantReturnPolicy',
+              returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+              merchantReturnDays: 30,
+              returnMethod: 'https://schema.org/ReturnByMail',
+              applicableCountry: 'US',
+            },
         shippingDetails: {
           '@type': 'OfferShippingDetails',
           shippingRate: {

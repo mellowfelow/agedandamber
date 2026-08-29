@@ -12,7 +12,7 @@
   },
   "transport": {
     "type": "streamable-http",
-    "endpoint": "https://www.agedandamber.com/api/mcp"
+    "endpoint": "https://www.agedandamber.com/api/mcp/"
   },
   "capabilities": {
     "tools": [

@@ -8,7 +8,7 @@
       "name": "search-products",
       "type": "commerce",
       "description": "Search spirits catalog by keyword, category, or maximum price",
-      "url": "https://www.agedandamber.com/api/mcp"
+      "url": "https://www.agedandamber.com/api/mcp/"
     },
     {
       "name": "browse-catalog",
@@ -20,7 +20,7 @@
       "name": "order-draft",
       "type": "commerce",
       "description": "Create a prefilled order draft for adult 21+ verification. Human completes order.",
-      "url": "https://www.agedandamber.com/api/mcp"
+      "url": "https://www.agedandamber.com/api/mcp/"
     },
     {
       "name": "wholesale-inquiry",

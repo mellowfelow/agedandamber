@@ -16,22 +16,22 @@
       "title": "Aged And Amber Wholesale Allocations"
     },
     {
-      "anchor": "https://www.agedandamber.com/api/products",
+      "anchor": "https://www.agedandamber.com/api/products/",
       "type": "application/json",
       "title": "Aged And Amber Products API"
     },
     {
-      "anchor": "https://www.agedandamber.com/api/categories",
+      "anchor": "https://www.agedandamber.com/api/categories/",
       "type": "application/json",
       "title": "Aged And Amber Categories API"
     },
     {
-      "anchor": "https://www.agedandamber.com/api/search",
+      "anchor": "https://www.agedandamber.com/api/search/",
       "type": "application/json",
       "title": "Aged And Amber Search API"
     },
     {
-      "anchor": "https://www.agedandamber.com/api/mcp",
+      "anchor": "https://www.agedandamber.com/api/mcp/",
       "type": "application/json",
       "https://www.iana.org/assignments/link-relations/service-desc": [{ "href": "https://www.agedandamber.com/.well-known/mcp/server-card.json" }],
       "title": "Aged And Amber MCP Server"

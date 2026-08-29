@@ -12,7 +12,7 @@ No authentication required. All resources and API endpoints are publicly accessi
 | Spirits Journal | https://www.agedandamber.com/blog/ |
 | Policy FAQ | https://www.agedandamber.com/faq/ |
 | Wholesale Allocations | https://www.agedandamber.com/wholesale/ |
-| MCP Streamable Server | https://www.agedandamber.com/api/mcp |
+| MCP Streamable Server | https://www.agedandamber.com/api/mcp/ |
 
 ## Authentication
 

@@ -23,7 +23,7 @@
       "identifier": "urn:air:agedandamber.com:api:products",
       "displayName": "Products API",
       "type": "application/json",
-      "url": "https://www.agedandamber.com/api/products",
+      "url": "https://www.agedandamber.com/api/products/",
       "representativeQueries": [
         "list all products",
         "search products by category",
@@ -34,7 +34,7 @@
       "identifier": "urn:air:agedandamber.com:api:search",
       "displayName": "Search API",
       "type": "application/json",
-      "url": "https://www.agedandamber.com/api/search",
+      "url": "https://www.agedandamber.com/api/search/",
       "representativeQueries": [
         "search products and blog posts",
         "find a bottle by name"
@@ -44,7 +44,7 @@
       "identifier": "urn:air:agedandamber.com:mcp:server",
       "displayName": "MCP Streamable Server",
       "type": "application/json",
-      "url": "https://www.agedandamber.com/api/mcp",
+      "url": "https://www.agedandamber.com/api/mcp/",
       "representativeQueries": [
         "search products via MCP",
         "get shipping and payment policies",
