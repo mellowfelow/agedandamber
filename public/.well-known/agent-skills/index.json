@@ -8,43 +8,37 @@
       "name": "search-products",
       "type": "commerce",
       "description": "Search spirits catalog by keyword, category, or maximum price",
-      "url": "https://www.agedandamber.com/api/mcp",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/api/mcp"
     },
     {
       "name": "browse-catalog",
       "type": "navigation",
       "description": "Browse spirits catalog by cask category",
-      "url": "https://www.agedandamber.com/shop/",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/shop/"
     },
     {
       "name": "order-draft",
       "type": "commerce",
       "description": "Create a prefilled order draft for adult 21+ verification. Human completes order.",
-      "url": "https://www.agedandamber.com/api/mcp",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/api/mcp"
     },
     {
       "name": "wholesale-inquiry",
       "type": "commerce",
       "description": "Wholesale pricing tiers and single barrel allocations",
-      "url": "https://www.agedandamber.com/wholesale/",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/wholesale/"
     },
     {
       "name": "product-education",
       "type": "content",
       "description": "Educational articles on cask wood finishes and non-chill filtration",
-      "url": "https://www.agedandamber.com/blog/",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/blog/"
     },
     {
       "name": "contact",
       "type": "support",
       "description": "Contact Aged And Amber spirits advisory concierge",
-      "url": "https://www.agedandamber.com/contact/",
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "url": "https://www.agedandamber.com/contact/"
     }
   ]
 }
