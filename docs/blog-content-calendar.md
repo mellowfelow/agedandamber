@@ -1,8 +1,27 @@
 # Master Blog Content Calendar — Aged & Amber
 **Generated:** August 2026 | **Source:** Full mining pass across `MASTER_SEO_IMPLEMENTATION.md` + all 8 raw batch files (blog-plan-batch1/2/5/6/7.md, keyword-map-batch3/4.md, product-gaps files) + this session's own v2 keyword-map docs (Bourbon/Scotch/Irish/Japanese/Vodka)
-**Status:** Reference document — no posts built from this pass yet. This is the full topic pool for building against, now and in the future.
+**Status:** Living document — Phase 1 (2026-08-29) closed the zero-coverage-category gap. This is the full topic pool for building against, now and in the future.
 
-**Current live count: 64 blog posts** (verified directly against `src/data/blog.ts` on 2026-08-28 — corrected from a stale 65). Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
+**Current live count: 74 blog posts** (verified directly against `src/data/blog.ts`). Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
+
+## Phase 1 (built 2026-08-29): one flagship pillar post per zero-coverage category
+
+Every category with product pages live but zero blog content got exactly one foundational post, closing the single worst gap in the project — 10 categories, 10 posts:
+
+| Category | Post built | Why this one |
+|---|---|---|
+| Beer | ✅ [who-owns-your-favorite-beer](../src/data/blog.ts) | Broadest possible anchor for a 0-post category; cross-links to the most stocked brands |
+| Fine Wine | ✅ is-chardonnay-sweet-or-dry | Best single low-KD opportunity flagged for the category |
+| Champagne & Sparkling | ✅ does-champagne-go-bad | Doc's own "strong pillar-page candidate" call, very low KD |
+| Cider | ✅ is-hard-cider-gluten-free | Doc's own "strongest real informational cluster" call |
+| Non-Alcoholic Beer & Cider | ✅ is-non-alcoholic-beer-really-alcohol-free | Foundational category-definition pillar |
+| Non-Alcoholic Spirits | ✅ what-is-a-non-alcoholic-spirit | 9,900/mo head term, foundational pillar |
+| Non-Alcoholic Champagne & Sparkling | ✅ is-non-alcoholic-champagne-a-real-thing | Real, recurring skepticism/definitional cluster |
+| Non-Alcoholic RTD Cocktails | ✅ what-is-a-mocktail-complete-guide | 22,420/mo, largest single informational cluster in the batch |
+| RTD & Liqueurs | ✅ aperitif-vs-digestif | ~40,000+/mo, single largest cluster in the whole batch |
+| Non-Alcoholic Wine | ✅ best-non-alcoholic-wine-buying-guide | Maps to the entire 24-SKU NA Wine catalog |
+
+**Phase 2 (future, not yet scheduled):** everything else below — the remaining ~223 gap items across every category, including the categories above (each now has 1 post, not full coverage) and the still-thin whiskey/spirits categories (Irish at 2, Japanese at 2, Rye/Other Whiskey at 1, Vodka at 1, Bar Essentials at 2). Recommended order: work the "Highest-priority build-first shortlist" at the bottom of this doc top-down, then fill out each of the 10 Phase-1 categories with their next 2-3 gap items so they read as a real content hub rather than a single orphan post.
 
 ## Maintenance — keep this current
 
@@ -219,9 +238,9 @@ Together these would round out a genuinely complete bar-essentials content clust
 
 ---
 
-## FINE WINE — 0 of ~28 core topics live (newest category, first batch just SEO'd)
+## FINE WINE — 1 of ~28 core topics live
 
-No wine blog posts exist yet. All 28 candidates below are sourced from real SEMrush data across the three wine keyword-map docs (`keyword-map-wine-red.md`, `keyword-map-wine-white.md`, `keyword-map-wine-fortified.md`).
+✅ is-chardonnay-sweet-or-dry (built 2026-08-29, Phase 1 flagship). Remaining 27 candidates below are sourced from real SEMrush data across the three wine keyword-map docs (`keyword-map-wine-red.md`, `keyword-map-wine-white.md`, `keyword-map-wine-fortified.md`).
 
 **Reds:**
 - 🎯 **How to Pronounce Wine Names** (Cabernet/Malbec/Merlot/Pinot Noir) — ~7,000+/mo combined
@@ -238,7 +257,6 @@ No wine blog posts exist yet. All 28 candidates below are sourced from real SEMr
 - 🏷️ Full-Bodied Red Wines Guide — 2,900/17
 
 **Whites:**
-- 🎯 **Is Chardonnay Sweet or Dry?** — ~9,300/mo combined, best single blog opportunity in the whole white batch
 - 🎯 **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** — ~14,700/mo combined, largest comparison cluster in the whole wine batch
 - 🎯 **What Is Moscato Wine? Sweetness, Styles & Serving** — ~6,800/mo combined
 - 🎯 **Buttery vs. Unoaked Chardonnay** — ~6,900/mo, extremely low KD, quick win; cross-links stocked Rombauer (buttery) vs. Sonoma-Cutrer (unoaked)
@@ -259,11 +277,10 @@ No wine blog posts exist yet. All 28 candidates below are sourced from real SEMr
 
 ---
 
-## CHAMPAGNE & SPARKLING WINE — 0 of ~19 core topics live
+## CHAMPAGNE & SPARKLING WINE — 1 of ~19 core topics live
 
-No Champagne blog posts exist yet. All candidates below are sourced from real SEMrush data across three keyword-map docs (`keyword-map-champagne-a-l.md`, `-m-z.md`, `keyword-map-sparkling-wine.md`).
+✅ does-champagne-go-bad (built 2026-08-29, Phase 1 flagship). Remaining candidates below are sourced from real SEMrush data across three keyword-map docs (`keyword-map-champagne-a-l.md`, `-m-z.md`, `keyword-map-sparkling-wine.md`).
 
-- 🎯 **Does Champagne Go Bad? How Long It Lasts, Opened and Unopened** — ~10,700/mo combined, very low KD across the board, strong pillar-page candidate
 - 🎯 **How to Open Champagne Safely** — ~5,100/mo combined, genuinely useful safety angle (champagne corks cause real eye injuries)
 - 🎯 **Prosecco vs. Champagne: What's Actually Different?** — ~18,700/mo combined, single largest volume opportunity across the whole Champagne & Sparkling batch
 - 🎯 **Is Sparkling Wine the Same as Champagne?** — ~4,500/mo combined, very low KD
@@ -285,9 +302,10 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 
 ---
 
-## CIDER — 0 of ~7 core topics live
+## CIDER — 1 of ~7 core topics live
 
-- 🎯 **Is Hard Cider Gluten Free?** — ~3,000+/mo, strongest real informational cluster in the category
+✅ is-hard-cider-gluten-free (built 2026-08-29, Phase 1 flagship).
+
 - 🏷️ How Much Alcohol Is in Hard Cider? — combined well over 7,000/mo across brand ABV queries
 - 🏷️ Hard Cider vs. Beer: What's the Difference? — real, recurring confusion pattern
 - 🏷️ Hard Cider vs. Sweet (Non-Alcoholic) Apple Cider — real disambiguation need
@@ -295,9 +313,10 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 - 🎯 **Best Fall & Winter Hard Ciders** — seasonal roundup, ties to Downeast Pumpkin/Winter Blend
 - 🏷️ Hard Cider Brands Guide — broad pillar page, links every brand hub
 
-## NON-ALCOHOLIC BEER & CIDER — 0 of ~10 core topics live
+## NON-ALCOHOLIC BEER & CIDER — 1 of ~10 core topics live
 
-- 🎯 **Is Non-Alcoholic Beer Really Alcohol-Free?** — foundational pillar
+✅ is-non-alcoholic-beer-really-alcohol-free (built 2026-08-29, Phase 1 flagship).
+
 - 🏷️ 0.0% vs. "Non-Alcoholic": What the Label Actually Means — O'Doul's is ~0.4% vs. true 0.0% competitors
 - 🏷️ Is Non-Alcoholic Beer Safe During Pregnancy? — ~3,500+ combined, handle sensitively, cite guidance don't assert
 - 🏷️ How Is Non-Alcoholic Beer Actually Made? — sets up the Athletic Brewing (fermented-from-scratch) distinction
@@ -305,11 +324,10 @@ No Champagne blog posts exist yet. All candidates below are sourced from real SE
 - 🎯 **Best Non-Alcoholic Beers for Dry January** — 9,900/mo head term
 - 🏷️ Meet Bero: The Celebrity-Backed NA Beer Everyone's Asking About — Tom Holland pop-culture angle
 
-## BEER — 0 of ~24 core topics live (largest unbuilt cluster in the whole project)
+## BEER — 1 of ~24 core topics live (was the largest unbuilt cluster in the whole project)
 
-No generic "beer" category export existed this round, so most of the volume below is scattered across brand-specific pulls rather than one big category cluster.
+✅ who-owns-your-favorite-beer (built 2026-08-29, Phase 1 flagship). No generic "beer" category export existed this round, so most of the remaining volume below is scattered across brand-specific pulls rather than one big category cluster.
 
-- 🎯 **Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide** — ~10,000+/mo combined, largest cross-brand cluster in the whole Beer batch
 - 🎯 **Lager vs. Ale: What Actually Makes a Beer a Lager?** — ~3,500+/mo, most-repeated informational pattern in the batch
 - 🎯 **How Many Calories Are Actually in a Guinness?** — ~40,000-50,000/mo raw volume once every phrasing variant is summed, strongest data-backed cluster in the entire Beer batch
 - 🏷️ The Guinness Widget, Explained — ~5,400+/mo
@@ -330,9 +348,10 @@ No generic "beer" category export existed this round, so most of the volume belo
 - 🏷️ What Is a Belgian Witbier? Allagash, Blue Moon & Shock Top Compared
 - 🏷️ Why Is Miller High Life Called the "Champagne of Beers"?
 
-## NON-ALCOHOLIC SPIRITS — 0 of ~9 core topics live
+## NON-ALCOHOLIC SPIRITS — 1 of ~9 core topics live
 
-- 🎯 **What Is a Non-Alcoholic Spirit? A Buyer's Guide** — 9,900/mo head term, foundational pillar
+✅ what-is-a-non-alcoholic-spirit (built 2026-08-29, Phase 1 flagship).
+
 - 🏷️ Do Non-Alcoholic Spirits Taste Like the Real Thing? — consistent PAA-demand signal
 - 🎯 **Best Non-Alcoholic Spirits for Mocktails** — good internal-linking hub for all 4 subcategories
 - 🏷️ Zero Proof, Explained: A Non-Alcoholic Spirits Glossary — low-KD, under-served definitional cluster
@@ -341,9 +360,10 @@ No generic "beer" category export existed this round, so most of the volume belo
 - 🏷️ Substitute for Bourbon, Gin, or Tequila in Your Favorite Cocktail
 - 🏷️ Non-Alcoholic Mezcal vs. Tequila Alternative: What's the Difference — supports Cut Above Mezcal directly
 
-## NON-ALCOHOLIC CHAMPAGNE & SPARKLING — 0 of ~8 core topics live
+## NON-ALCOHOLIC CHAMPAGNE & SPARKLING — 1 of ~8 core topics live
 
-- 🎯 **Is Non-Alcoholic Champagne a Real Thing?** — real, recurring skepticism cluster
+✅ is-non-alcoholic-champagne-a-real-thing (built 2026-08-29, Phase 1 flagship).
+
 - 🏷️ How Is the Alcohol Removed From Wine? (Vacuum Distillation vs. Spinning Cone vs. Twice-Fermented) — real, brand-confirmed production methods across Leitz/Giesen/BOLLE/Proxies
 - 🎯 **Best Non-Alcoholic Sparkling Wine for Toasts and Celebrations** — ~1,360/mo combined, maps to nearly every SKU
 - 🏷️ Non-Alcoholic Champagne and Pregnancy: What to Know
@@ -351,9 +371,10 @@ No generic "beer" category export existed this round, so most of the volume belo
 - 🎯 **How to Pick a Non-Alcoholic Wine That Doesn't Taste "Fake"** — 4,400/mo, addresses the #1 consumer objection
 - 🏷️ Kosher and Family-Friendly Sparkling Grape Juice for Every Celebration — Kedem/Welch's/St. Julian real brand stories
 
-## NON-ALCOHOLIC RTD COCKTAILS — 0 of ~11 core topics live
+## NON-ALCOHOLIC RTD COCKTAILS — 1 of ~11 core topics live
 
-- 🎯 **What Is a Mocktail? A Complete Guide** — ~22,420/mo, largest single informational cluster in this whole batch
+✅ what-is-a-mocktail-complete-guide (built 2026-08-29, Phase 1 flagship).
+
 - 🏷️ Do Non-Alcoholic Cocktails Actually Taste Good? — directly addresses category skepticism
 - 🎯 **Easy Mocktail Recipes to Make at Home** — ~70,000/mo raw volume, keep as lifestyle content cross-selling stocked SKUs
 - 🎯 **What to Order When You're Not Drinking: Best NA Drinks at a Bar** — ~9,000+/mo, low KD, strong quick-win
@@ -365,9 +386,10 @@ No generic "beer" category export existed this round, so most of the volume belo
 
 ---
 
-## RTD & LIQUEURS — 0 of ~23 core topics live
+## RTD & LIQUEURS — 1 of ~23 core topics live
 
-- 🎯 **Aperitif vs. Digestif: What's the Difference and When to Drink Each** — ~40,000+/mo, single largest cluster in this whole batch
+✅ aperitif-vs-digestif (built 2026-08-29, Phase 1 flagship).
+
 - 🎯 **What Is Triple Sec? Orange Liqueur 101** — ~30,000+/mo
 - 🎯 **What Is Amaro? A Beginner's Guide to Italian Bitter Liqueurs** — ~13,000+/mo, directly supports all 4 Amaro & Digestifs SKUs
 - 🏷️ Cointreau vs. Triple Sec vs. Grand Marnier: Choosing the Right Orange Liqueur — ~5,000+/mo
@@ -387,10 +409,11 @@ No generic "beer" category export existed this round, so most of the volume belo
 
 ---
 
-## NON-ALCOHOLIC WINE — 0 of ~9 core topics live
+## NON-ALCOHOLIC WINE — 1 of ~9 core topics live
+
+✅ best-non-alcoholic-wine-buying-guide (built 2026-08-29, Phase 1 flagship).
 
 - 🎯 **Is Non-Alcoholic Wine Safe During Pregnancy?** — ~2,300+/mo, largest informational cluster in this batch
-- 🎯 **Best Non-Alcoholic Wine for Every Occasion (Buying Guide)** — ~6,900+/mo, maps to the whole 24-SKU catalog
 - 🎯 **Does Non-Alcoholic Wine Actually Taste Like Real Wine?** — ~3,400+/mo, addresses the #1 category objection head-on
 - 🏷️ How Is the Alcohol Actually Removed From Wine? (Reverse Osmosis vs. Spinning Cone vs. Vacuum Distillation) — ~1,120+/mo, ties to real, brand-confirmed methods (Ariel=RO, FRE/Giesen/Lautus=spinning cone, Leitz=vacuum distillation)
 - 🏷️ How Is Non-Alcoholic Wine Made? — ~1,090/mo, companion piece to the above
@@ -418,17 +441,19 @@ No generic "beer" category export existed this round, so most of the volume belo
 | Vodka | 1 | 6 |
 | NA Spirits | 1 | 2 |
 | Bar Essentials | 2 | 23 |
-| Fine Wine | 0 | 28 |
-| Champagne & Sparkling Wine | 0 | 19 |
-| Cider | 0 | 7 |
-| Non-Alcoholic Beer & Cider | 0 | 10 |
-| Beer | 0 | 24 |
-| Non-Alcoholic Spirits | 0 | 9 |
-| Non-Alcoholic Champagne & Sparkling | 0 | 8 |
-| Non-Alcoholic RTD Cocktails | 0 | 11 |
-| RTD & Liqueurs | 0 | 17 |
-| Non-Alcoholic Wine | 0 | 9 |
-| **Total** | **65 live** | **~233 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+| Fine Wine | 1 | 27 |
+| Champagne & Sparkling Wine | 1 | 18 |
+| Cider | 1 | 6 |
+| Non-Alcoholic Beer & Cider | 1 | 9 |
+| Beer | 1 | 23 |
+| Non-Alcoholic Spirits | 1 | 8 |
+| Non-Alcoholic Champagne & Sparkling | 1 | 7 |
+| Non-Alcoholic RTD Cocktails | 1 | 10 |
+| RTD & Liqueurs | 1 | 16 |
+| Non-Alcoholic Wine | 1 | 8 |
+| **Total** | **74 live** | **~223 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
+
+*10 posts built 2026-08-29 (Phase 1) — one flagship pillar per zero-coverage category. Every category on the site now has at least one blog post.*
 
 ## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
 
@@ -444,18 +469,18 @@ No generic "beer" category export existed this round, so most of the volume belo
 10. **Best Vodka for Martini/Mule/Bloody Mary** (~7,700 combined)
 11. **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** (~14,700 combined) — largest comparison cluster in the whole wine batch, zero content in a brand-new category
 12. **How to Choose a Cocktail Shaker** tier win for wine: **Is Dessert Wine the Same as Sweet Wine?** (~54,300 combined across 3 exact phrasings) — huge volume relative to KD
-13. **Is Chardonnay Sweet or Dry?** (~9,300 combined) — best single opportunity in Fine Wine, low KD throughout
+13. ~~Is Chardonnay Sweet or Dry?~~ ✅ **BUILT 2026-08-29** as `is-chardonnay-sweet-or-dry`
 14. **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa** (~40,000+ combined) — largest single raw-volume opportunity in the entire Champagne & Sparkling batch
 15. **Prosecco vs. Champagne: What's Actually Different?** (~18,700 combined) — largest Champagne-category comparison cluster
-16. **Does Champagne Go Bad?** (~10,700 combined) — very low KD across the board, strong pillar-page candidate
+16. ~~Does Champagne Go Bad?~~ ✅ **BUILT 2026-08-29** as `does-champagne-go-bad`
 17. **How Many Calories Are Actually in a Guinness?** (~40,000-50,000 combined) — strongest data-backed cluster in the entire Beer batch
-18. **What Is a Mocktail? A Complete Guide** (~22,420 combined) — largest single informational cluster in the NA RTD Cocktails batch
-19. **Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide** (~10,000+ combined) — largest cross-brand cluster in Beer
+18. ~~What Is a Mocktail? A Complete Guide~~ ✅ **BUILT 2026-08-29** as `what-is-a-mocktail-complete-guide`
+19. ~~Who Really Owns Your Favorite Beer?~~ ✅ **BUILT 2026-08-29** as `who-owns-your-favorite-beer`
 20. **Easy Mocktail Recipes to Make at Home** (~70,000 combined) — largest raw-volume number in this entire project; keep as lifestyle content cross-selling stocked SKUs rather than a product-page target
-21. **Aperitif vs. Digestif: What's the Difference and When to Drink Each** (~40,000+ combined) — largest cluster in the RTD & Liqueurs batch
+21. ~~Aperitif vs. Digestif~~ ✅ **BUILT 2026-08-29** as `aperitif-vs-digestif`
 22. **What Is Triple Sec? Orange Liqueur 101** (~30,000+ combined)
 23. **The Best Ready-to-Drink Margaritas, Ranked** (~12,200 combined) — largest coherent product-type cluster in the RTD dataset
-24. **Best Non-Alcoholic Wine for Every Occasion** (~6,900+ combined) — maps to the whole 24-SKU NA Wine catalog
+24. ~~Best Non-Alcoholic Wine for Every Occasion~~ ✅ **BUILT 2026-08-29** as `best-non-alcoholic-wine-buying-guide`
 25. **Is Non-Alcoholic Wine Safe During Pregnancy?** (~2,300+ combined) — largest cluster in the NA Wine batch
 26. **Sweet and Sour Mix 101: What's In It and How to Use It** (~11,500 combined) — single largest informational cluster found in the entire Bar Essentials batch
 27. **What Are Cocktail Bitters, and How Do They Actually Work?** (~12,760 combined) — foundational pillar page for the whole Bitters hub, zero content today

@@ -3250,4 +3250,473 @@ If you want the classic, internationally recognized "cognac" style — layered d
       { question: 'Is cognac always better quality than brandy?', answer: 'Not necessarily — "cognac" is a legal production standard, not a quality guarantee. Brandies outside the cognac designation, like aged Spanish Brandy de Jerez or premium apple brandy, can be just as complex and well-regarded; they simply aren\'t made in the Cognac region using the cognac method.' },
     ],
   },
+  {
+    slug: 'who-owns-your-favorite-beer',
+    title: 'Who Really Owns Your Favorite Beer? A Beer Brand Ownership Guide',
+    excerpt: "A guide to which \"craft\" beer brands are still independent and which now sit under Anheuser-Busch InBev, Molson Coors, Heineken, or Kirin — and why it's changed the industry.",
+    content: `
+Walk down a beer aisle and it looks like hundreds of independent breweries competing for your attention. In reality, a handful of multinational brewing groups now own a large share of the "craft" and import brands on the shelf. Knowing who owns what doesn't make a beer taste any different, but it explains a lot about pricing, distribution, and why so many "rival" brands taste suspiciously similar.
+
+## Anheuser-Busch InBev
+
+The world's largest brewer by volume owns Budweiser and Bud Light outright, plus a long list of acquired craft names: Goose Island, Elysian, and 10 Barrel Brewing among them. AB InBev's strategy since the early 2010s has been to buy up beloved regional craft breweries rather than compete with them directly — Goose Island's 312 Urban Wheat Ale and Elysian's Space Dust IPA both started as genuinely independent Seattle/Chicago craft beers before AB InBev acquisitions.
+
+## Molson Coors
+
+Coors Banquet and Miller Lite both live under the same corporate roof following the 2016 merger of MillerCoors' parent companies. Molson Coors also owns Blue Moon, the Belgian-style witbier that helped popularize the style in American bars — and, more recently, has leaned into acquiring non-alcoholic and hard seltzer brands to diversify beyond traditional lager.
+
+## Constellation Brands
+
+Constellation doesn't brew Corona and Modelo — Grupo Modelo does that in Mexico — but it holds the exclusive US import and marketing rights for the entire Modelo portfolio (Corona Extra, Corona Light, Modelo Especial, Pacifico, Victoria) as a condition of AB InBev's 2013 acquisition of Grupo Modelo, which required divesting the US rights to satisfy antitrust regulators.
+
+## Heineken
+
+Heineken owns its namesake Dutch lager outright and has also acquired Lagunitas, taking full ownership of the influential Petaluma, California craft brewery by 2017 after an initial 2015 stake.
+
+## Kirin (via Lion Little World Beverages)
+
+The Japanese brewing giant Kirin owns New Belgium (Fat Tire, the Voodoo Ranger IPA line) and Bell's (Two Hearted Ale, Oberon) through its Lion Little World Beverages subsidiary, acquiring both well-regarded American craft breweries in 2020 and 2021 respectively.
+
+## Who's Still Independent
+
+Not every recognizable name has sold. Sierra Nevada remains fully independently and family-owned since its 1980 founding — one of the largest breweries in the country to have never sold a stake to a multinational. Yuengling, America's oldest continuously operating brewery (founded 1829), also remains independent and family-run.
+
+## Does Ownership Change the Beer?
+
+Usually not the recipe itself, at least initially — acquiring companies generally want to preserve what made the brand successful. What does change is distribution reach (acquired brands often get wider shelf placement almost overnight), and sometimes production location, as brewing shifts to larger regional facilities for efficiency. For most drinkers, the practical takeaway is simply this: "craft" on the label doesn't guarantee independent ownership anymore, and knowing the corporate structure behind a brand can be useful information if supporting independent breweries specifically matters to you.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Beer Education',
+    date: 'August 29, 2026',
+    isoDate: '2026-08-29',
+    readTime: '6 min read',
+    image: '/images/categories/beer.webp',
+    tags: ['Beer', 'Beer Education', 'Craft Beer', 'Brand Ownership'],
+    faqs: [
+      { question: 'Is Corona owned by Anheuser-Busch?', answer: 'No — Corona and the rest of the Modelo portfolio are brewed by Grupo Modelo in Mexico. Constellation Brands holds the exclusive US import and marketing rights, following a 2013 divestiture required when AB InBev acquired Grupo Modelo.' },
+      { question: 'Is Sierra Nevada still independently owned?', answer: 'Yes — Sierra Nevada has remained independently and family-owned since its 1980 founding, unlike many peer craft breweries now owned by AB InBev, Molson Coors, Heineken, or Kirin.' },
+      { question: "Who owns Bell's Brewery?", answer: "Kirin's Lion Little World Beverages subsidiary acquired Bell's Brewery, maker of Two Hearted Ale and Oberon, in November 2021." },
+    ],
+  },
+  {
+    slug: 'is-chardonnay-sweet-or-dry',
+    title: 'Is Chardonnay Sweet or Dry? A Complete Guide',
+    excerpt: "Chardonnay's reputation swings from buttery and rich to lean and mineral — here's why, and how to tell a dry Chablis-style bottle from an oaked, richer California style before you buy.",
+    content: `
+Chardonnay is one of the most widely planted and widely misunderstood white grapes in the world. The short answer is that virtually all Chardonnay is a dry wine — meaning it has little to no residual sugar — but the *style* varies so dramatically from producer to producer that many people assume some bottles must be sweet. Here's what's actually going on.
+
+## Dry Doesn't Mean What You Think
+
+"Dry" in wine refers to sugar content, not flavor intensity or body. A wine can be bone-dry and still taste rich, buttery, and full — that richness comes from oak aging and a process called malolactic fermentation, not sugar. Chardonnay is almost always fermented completely dry, converting essentially all of the grape's natural sugar into alcohol.
+
+## Why Chardonnay Tastes So Different Bottle to Bottle
+
+Two winemaking choices explain almost all the variation you'll find:
+
+**Oak aging** — Chardonnay fermented or aged in new oak barrels picks up vanilla, toast, and baking-spice notes, along with a rounder, sometimes creamy texture. This is the "buttery" style most associated with warmer-climate California Chardonnay.
+
+**Malolactic fermentation** — A secondary fermentation that converts sharp malic acid (think green apple) into softer lactic acid (think milk), which is where the literal "buttery" flavor compound, diacetyl, comes from. Winemakers can choose to encourage or block this process.
+
+Skip both, and you get the other end of the spectrum: lean, high-acid, citrus- and mineral-driven Chardonnay, typified by unoaked Chablis from France's cool northern Burgundy region.
+
+## Buttery vs. Unoaked: Two Legitimate Styles
+
+Neither style is more "correct" — they're different winemaking philosophies applied to the same grape:
+
+- **Buttery/oaked** (California-style): vanilla, butterscotch, baking spice, rounder texture. Look for producers who lean into "barrel-fermented" or "buttery" on the label.
+- **Unoaked/lean** (Chablis-style): green apple, citrus, wet stone, crisp acidity. Often labeled "unoaked Chardonnay" or simply Chablis if from that specific French region.
+
+## What About "Sweet Chardonnay" Claims?
+
+You may occasionally see a genuinely off-dry or lightly sweet Chardonnay, usually from a producer deliberately stopping fermentation early to retain some residual sugar, or blending in a small amount of unfermented grape juice. This is uncommon and typically noted explicitly on the label — it is not the standard style for the grape, and if a bottle doesn't say "sweet" or "off-dry," assume it's dry.
+
+## How to Choose
+
+If you enjoyed a rich, creamy Chardonnay and want more of that style, look for terms like "barrel-fermented," "buttery," or producers known for a fuller house style. If you found that style heavy and prefer something crisper, seek out "unoaked Chardonnay" on the label or a Chablis specifically — same grape, dramatically different glass.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Wine Education',
+    date: 'August 30, 2026',
+    isoDate: '2026-08-30',
+    readTime: '5 min read',
+    image: '/images/categories/fine-wine.webp',
+    tags: ['Wine', 'Wine Education', 'Chardonnay', 'White Wine'],
+    faqs: [
+      { question: 'Is Chardonnay a sweet wine?', answer: 'No — virtually all Chardonnay is fermented dry, with little to no residual sugar. The rich, buttery character some Chardonnays have comes from oak aging and malolactic fermentation, not sugar.' },
+      { question: 'What makes Chardonnay taste buttery?', answer: "Two winemaking choices: aging in oak barrels (which adds vanilla and baking-spice notes) and malolactic fermentation, a process that produces diacetyl, the same compound responsible for butter's flavor." },
+      { question: 'What is the difference between Chardonnay and Chablis?', answer: 'Chablis is Chardonnay — specifically, Chardonnay grown in the Chablis region of northern Burgundy, France, and typically made in an unoaked, lean, high-acid style rather than the richer, oaked style common in warmer regions.' },
+    ],
+  },
+  {
+    slug: 'does-champagne-go-bad',
+    title: 'Does Champagne Go Bad? How Long It Lasts, Opened and Unopened',
+    excerpt: "Unopened Champagne can age gracefully for years — but once the cork is out, the clock starts ticking fast. Here's exactly how long each stage actually lasts.",
+    content: `
+Champagne has a reputation as an occasion-only drink, which means bottles often sit in a cabinet far longer than intended — or get opened and then abandoned half-full after the toast. Here's what actually happens to Champagne over time, unopened and opened.
+
+## Unopened Non-Vintage Champagne
+
+Most Champagne on the market is non-vintage (NV) — a blend of multiple years designed to deliver a consistent house style every time. NV Champagne is generally made to be enjoyed within 3–4 years of purchase and is already release-ready when you buy it; the producer has done the aging for you. Stored properly (on its side, in a cool, dark place, away from temperature swings), an unopened NV bottle can safely hold for several years past that window without spoiling, though it will gradually lose some of its fresh, lively character.
+
+## Unopened Vintage Champagne
+
+Vintage Champagne — made entirely from grapes of a single exceptional year and aged longer before release — is built to improve with additional bottle age. Top vintage Champagne from producers like Dom Pérignon or Krug can continue developing positively for a decade or more past its release date when stored correctly, taking on deeper, more complex toasted, nutty, and honeyed notes.
+
+## The Real Enemy: Storage Conditions, Not Time Alone
+
+Champagne doesn't have a hard expiration date, but poor storage accelerates decline dramatically:
+
+- **Heat and light** are the biggest threats — a bottle stored upright on a sunlit counter for months will degrade far faster than one stored on its side in a dark, cool cellar.
+- **Temperature swings** stress the cork and can let in small amounts of oxygen over time, flattening the wine prematurely.
+- **Upright vs. on its side**: for longer-term storage, lying bottles on their side keeps the cork moist and properly sealed; for shorter-term storage (under a year), upright is fine.
+
+## Once You Open It: The Clock Speeds Up
+
+An opened bottle of Champagne loses its carbonation within about 1–3 days, even with a proper Champagne stopper, and the flavor flattens noticeably faster than the bubbles disappear completely. For the best experience:
+
+1. Use a dedicated Champagne stopper (not just foil or a regular cork) immediately after pouring.
+2. Refrigerate — cold slows the loss of carbonation significantly.
+3. Plan to finish within 1–3 days for the best texture, and within a week at the latest before it's essentially still wine.
+
+## How to Tell If a Bottle Has Actually Gone Bad
+
+True spoilage is rare but does happen — usually from a compromised cork letting in oxygen over a long period. Warning signs include a flat, dull straw color instead of bright gold, no fizz at all when poured, and a flat, vinegar-like, or musty smell rather than the expected toasty, fruity aroma. If it smells off, it's safest not to drink it — but a bottle that's simply lost some effervescence after being open a few extra days is not spoiled, just past its best moment.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Champagne Education',
+    date: 'August 30, 2026',
+    isoDate: '2026-08-30',
+    readTime: '6 min read',
+    image: '/images/categories/champagne-sparkling.webp',
+    tags: ['Champagne', 'Champagne Education', 'Sparkling Wine', 'Storage'],
+    faqs: [
+      { question: 'How long does an unopened bottle of Champagne last?', answer: 'Non-vintage Champagne is ready to drink at purchase and holds well for several years past that when stored on its side in a cool, dark place. Vintage Champagne is built to age further and can improve for a decade or more under the same conditions.' },
+      { question: 'How long does Champagne last after opening?', answer: 'An opened bottle loses most of its carbonation within 1–3 days, even with a proper Champagne stopper and refrigeration. For the best texture and flavor, finish it within that window.' },
+      { question: 'Can Champagne actually go bad or spoil?', answer: "It can, though it's uncommon — usually from a failed cork letting oxygen in over a long period. Signs include a flat color, no fizz at all, and a musty or vinegar-like smell rather than a toasty, fruity aroma." },
+    ],
+  },
+  {
+    slug: 'is-hard-cider-gluten-free',
+    title: 'Is Hard Cider Gluten Free? A Straight Answer',
+    excerpt: "Made from apples rather than grain, hard cider is naturally gluten-free in almost every case — here's what to actually check before buying if you're avoiding gluten.",
+    content: `
+For anyone avoiding gluten, hard cider is one of the easiest alcoholic drinks to reach for with confidence — but "naturally gluten-free" and "guaranteed safe for celiac disease" aren't always exactly the same thing. Here's the real answer.
+
+## Why Cider Is Naturally Gluten-Free
+
+Hard cider is fermented apple juice — there's no wheat, barley, or rye anywhere in the base ingredient, unlike beer, which is traditionally brewed from malted barley. Because gluten is a protein found specifically in those grains, straightforward apple cider made from apples, yeast, and water contains no gluten as a matter of basic ingredients, the same way wine (fermented from grapes) is naturally gluten-free.
+
+## When It's Worth Double-Checking
+
+A small number of ciders add ingredients beyond apples that could introduce gluten or manufacturing risk:
+
+- **Flavored ciders** with unusual additions (some spiced or specialty ciders use malt-based coloring or flavoring agents) — check the label if the cider has an unusual flavor profile beyond straightforward fruit.
+- **Shared production facilities** — if a cidery also brews beer on the same equipment, there's a small theoretical cross-contamination risk, though reputable producers manage this carefully.
+- **"Certified gluten-free" labeling** — this is the most reliable signal if you have celiac disease specifically rather than a general gluten sensitivity, since certification involves batch testing rather than just ingredient review.
+
+## Cider vs. Beer for Gluten-Sensitive Drinkers
+
+This is genuinely one of the clearest lines in the alcohol aisle: standard beer is off-limits without a dedicated gluten-free brewing process (and even "gluten-removed" beers, which use an enzyme to break down gluten proteins, remain a point of debate for people with celiac disease specifically). Hard cider sidesteps the issue entirely by simply never containing grain in the first place, which is a major part of why the category has grown so quickly among drinkers managing gluten sensitivity or celiac disease.
+
+## What About Celiac Disease Specifically?
+
+For celiac disease, where even trace amounts of gluten matter, look for ciders that are explicitly labeled "gluten-free" (a regulated claim in the US, requiring under 20 parts per million) rather than assuming safety purely from the apple-based ingredient list. The overwhelming majority of hard ciders qualify easily, but the label claim is the more rigorous signal if celiac disease — rather than general preference — is the reason you're checking.
+
+## The Short Version
+
+If you're avoiding gluten by preference or general sensitivity, virtually any straightforward hard cider is a safe, easy choice. If you have celiac disease and need certainty, look for the explicit "gluten-free" label claim rather than relying on the apple-based ingredients alone.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cider Education',
+    date: 'August 31, 2026',
+    isoDate: '2026-08-31',
+    readTime: '4 min read',
+    image: '/images/categories/cider.webp',
+    tags: ['Cider', 'Cider Education', 'Gluten Free', 'Hard Cider'],
+    faqs: [
+      { question: 'Is all hard cider gluten-free?', answer: 'The vast majority is, since cider is fermented from apples rather than grain. A small number of flavored ciders or those made in shared facilities with beer production carry a slightly higher theoretical risk, so check the label if you have celiac disease specifically.' },
+      { question: 'Is hard cider safer than beer for celiac disease?', answer: 'Generally yes — standard beer is brewed from gluten-containing grains like barley, while cider is grain-free by nature. For celiac disease specifically, look for an explicit "gluten-free" label claim rather than assuming safety from ingredients alone.' },
+    ],
+  },
+  {
+    slug: 'is-non-alcoholic-beer-really-alcohol-free',
+    title: 'Is Non-Alcoholic Beer Really Alcohol-Free? A Straight Answer',
+    excerpt: "\"Non-alcoholic\" beer usually still contains a trace amount of alcohol. Here's what the labels actually mean, and how true 0.0% brands differ from the classic 0.5%-and-under category.",
+    content: `
+Non-alcoholic beer has exploded from a niche, often-mocked category into one of the fastest-growing segments in the entire beer industry — but the labeling on the shelf can be genuinely confusing. "Non-alcoholic" doesn't automatically mean zero alcohol, and knowing the difference matters for anyone avoiding alcohol entirely.
+
+## The Legal Definition Isn't What You'd Guess
+
+In the United States, a beer can legally be labeled "non-alcoholic" with up to 0.5% ABV — a small but real amount of alcohol, roughly the same trace level naturally present in some fruit juices and breads from fermentation. This standard has existed for decades and covers most of the classic non-alcoholic beer brands that have been on shelves since the 1990s.
+
+## True 0.0% Is a Newer, Distinct Category
+
+A newer wave of brands has pushed specifically for genuine 0.0% ABV — literally no detectable alcohol at all, rather than the "under 0.5%" standard. Athletic Brewing, one of the brands most credited with reigniting interest in the category, brews its beers to be alcohol-free from the start using proprietary fermentation techniques, rather than brewing a full-strength beer and removing the alcohol afterward. Always check the specific ABV printed on the can if true zero alcohol matters to you — "non-alcoholic" and "0.0%" are not automatically synonyms.
+
+## How Non-Alcoholic Beer Is Actually Made
+
+There are two fundamentally different approaches:
+
+**Brewed to be alcohol-free from the start** — using specialized yeast strains or arrested fermentation that never produces significant alcohol in the first place. This tends to produce a fresher, more "real beer" flavor profile, since the brewer isn't working backward from a full-strength beer.
+
+**Dealcoholized after brewing** — a full-strength beer is brewed normally, then the alcohol is removed afterward via vacuum distillation or reverse osmosis. This was the standard method for decades and can sometimes produce a slightly different mouthfeel than beer brewed alcohol-free from the start, since removing alcohol also strips out some flavor compounds carried alongside it.
+
+## Why the Distinction Matters
+
+For most people enjoying a non-alcoholic beer occasionally, the difference between 0.0% and under 0.5% is negligible. It matters more for a specific set of people: those in recovery from alcohol use disorder, pregnant people avoiding alcohol entirely, people taking medications that interact with alcohol, and anyone subject to a zero-tolerance testing requirement (certain jobs, probation conditions, or personal choice). If any of those apply to you, read the actual ABV on the can rather than relying on the word "non-alcoholic" alone.
+
+## The Bottom Line
+
+Most "non-alcoholic" beer contains a small, legally permitted trace of alcohol (up to 0.5% ABV) — genuinely negligible for the vast majority of drinkers, but worth knowing if you need true zero alcohol. Brands explicitly labeled 0.0% ABV are formulated to contain none at all, and are the safer choice if that distinction matters to you specifically.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Non-Alcoholic Education',
+    date: 'August 31, 2026',
+    isoDate: '2026-08-31',
+    readTime: '5 min read',
+    image: '/images/categories/na-beer-cider.webp',
+    tags: ['Non-Alcoholic', 'NA Beer', 'Beer Education', 'Sober Curious'],
+    faqs: [
+      { question: 'Does non-alcoholic beer have any alcohol in it?', answer: 'Most does — US law allows beer labeled "non-alcoholic" to contain up to 0.5% ABV, a legally permitted trace amount. Brands explicitly labeled 0.0% ABV are formulated to contain no detectable alcohol at all.' },
+      { question: 'How is non-alcoholic beer made?', answer: "Either brewed to be alcohol-free from the start using specialized fermentation techniques, or brewed as a full-strength beer and then dealcoholized afterward via vacuum distillation or reverse osmosis." },
+      { question: 'Can I drink non-alcoholic beer if I need zero alcohol?', answer: "Only if it is specifically labeled 0.0% ABV. Beer labeled simply \"non-alcoholic\" without an ABV listed can legally contain up to 0.5% alcohol, which matters for anyone in recovery, pregnant, or subject to zero-tolerance testing." },
+    ],
+  },
+  {
+    slug: 'what-is-a-non-alcoholic-spirit',
+    title: "What Is a Non-Alcoholic Spirit? A Buyer's Guide",
+    excerpt: 'Zero-proof spirits are built to mimic the botanical complexity of gin, whiskey, and tequila without the alcohol — here is how they actually work and how to choose your first bottle.',
+    content: `
+Non-alcoholic spirits are one of the fastest-growing categories in the entire drinks industry, but they're also one of the most misunderstood — many people assume they're just flavored water, when in reality the better brands are genuinely complex products built through real distillation-adjacent processes.
+
+## What "Non-Alcoholic Spirit" Actually Means
+
+A non-alcoholic spirit is a 0.0% ABV product engineered to replicate the role a traditional spirit like gin, whiskey, or tequila plays in a cocktail — meant to be poured, mixed, and sipped the same way, rather than simply substituted with juice or soda. The category is sometimes called "zero-proof spirits" for exactly this reason: proof (the measure of alcohol strength) is genuinely zero, but the product is still built to function like a spirit.
+
+## How They're Actually Made
+
+There's no single method — brands take meaningfully different approaches:
+
+**Distillate reconstruction** — some producers distill the natural aromatic essence out of real ingredients (juniper, oak, agave) and then reconstruct the resulting nose, flavor, and mouthfeel without alcohol as the carrier.
+
+**Botanical infusion and blending** — steeping and blending real botanicals, spices, and extracts in a non-alcoholic base to build layered, spirit-like complexity, similar in spirit to how bitters are made but built for pouring in volume rather than dashing.
+
+**Reverse-distilled bases** — starting from an actual distilled spirit and using specialized processes to remove the alcohol while retaining as much of the flavor character as possible.
+
+## The Four Main Categories
+
+- **Gin alternatives** — typically the most successful category, since gin's identity is built entirely on botanicals (juniper, coriander, citrus) rather than the alcohol itself, making it a natural fit to replicate.
+- **Whiskey alternatives** — aim to recreate oak, caramel, and spice notes, often using real oak-derived extracts.
+- **Tequila alternatives** — built around agave, citrus, and pepper notes to capture tequila's distinctive bite.
+- **Aperitif/botanical spirits** — a broader category not tied to replicating one specific traditional spirit, often built as their own distinct flavor profile.
+
+## Choosing Your First Bottle
+
+If you're new to the category, start with whichever traditional spirit you already drink most — a gin alternative if you're a gin-and-tonic drinker, a tequila alternative if margaritas are your usual order. Look at the ingredient list for real botanicals and extracts rather than an unusually short, generic ingredient panel, which is often a sign of a less complex product.
+
+## Do They Taste Exactly Like the Real Thing?
+
+No — and the better brands don't claim to. The honest framing is "built to fill the same role in a cocktail," not "a perfect flavor match." Complexity and mixability have improved dramatically in recent years, but the alcohol itself does carry some of a traditional spirit's mouthfeel and warmth that no current process fully replicates. Approaching the category on its own terms, rather than expecting an identical substitute, is the key to actually enjoying it.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Non-Alcoholic Education',
+    date: 'September 1, 2026',
+    isoDate: '2026-09-01',
+    readTime: '6 min read',
+    image: '/images/categories/na-spirits.webp',
+    tags: ['Non-Alcoholic', 'Zero Proof', 'NA Spirits', 'Sober Curious'],
+    faqs: [
+      { question: 'Are non-alcoholic spirits actually 0% alcohol?', answer: 'Yes — unlike "non-alcoholic" beer, which can legally contain up to 0.5% ABV, non-alcoholic spirits are formulated to contain genuinely zero alcohol.' },
+      { question: 'Do non-alcoholic spirits taste like the real thing?', answer: "They're built to fill the same role in a cocktail rather than being an identical flavor match. Gin alternatives tend to be the most convincing, since gin's flavor comes almost entirely from botanicals rather than the alcohol itself." },
+      { question: 'What is the best non-alcoholic spirit for a beginner?', answer: 'Start with whichever traditional spirit you already drink most often — a gin alternative for gin-and-tonic drinkers, or a tequila alternative if margaritas are your usual order.' },
+    ],
+  },
+  {
+    slug: 'is-non-alcoholic-champagne-a-real-thing',
+    title: 'Is Non-Alcoholic Champagne a Real Thing?',
+    excerpt: "True Champagne can't legally be non-alcoholic — here's the real distinction between de-alcoholized sparkling wine, sparkling grape juice, and what's actually in your glass.",
+    content: `
+"Non-alcoholic Champagne" is a phrase you'll see used loosely, but the real answer requires separating two things: what Champagne legally is, and what the non-alcoholic products marketed alongside it actually are.
+
+## Champagne Is a Protected, Alcoholic Category
+
+Champagne is a legally protected name, restricted to sparkling wine made in the Champagne region of France under a strict set of production rules — including that it must be a genuinely fermented, alcoholic wine. There is no such thing as legally-labeled non-alcoholic Champagne; a product marketed that way is, at best, using the word loosely to describe a Champagne-style sparkling product, not an actual Champagne-region wine with the alcohol removed.
+
+## What's Actually in the Bottle
+
+What you'll find in the non-alcoholic sparkling category falls into two genuinely different types of product:
+
+**De-alcoholized sparkling wine** — real grapes are fermented into an actual sparkling wine, following genuine winemaking techniques, and the alcohol is then removed afterward using methods like vacuum distillation or a spinning cone column, which gently separates alcohol from the wine at low temperatures to preserve flavor. This is a real wine that has had its alcohol removed, not a wine substitute built from scratch.
+
+**Sparkling grape juice** — an entirely different product that was never fermented into wine at all. This is simply grape juice carbonated to be festive and celebratory, common at family gatherings, weddings, and events where some guests aren't drinking — and legally can never be confused with a de-alcoholized wine, since no fermentation or alcohol removal was ever involved.
+
+## How to Tell Which One You're Buying
+
+Check the label carefully: terms like "alcohol-removed," "de-alcoholized," or an ABV of "under 0.5%" indicate an actual dealcoholized wine. Terms like "sparkling grape juice" or "non-alcoholic sparkling beverage" without any reference to wine or dealcoholization typically indicate the grape-juice category instead. Both are legitimate, celebratory choices — they're simply different products with different production stories.
+
+## Why This Distinction Matters
+
+If you're specifically looking for the flavor experience of Champagne or sparkling wine — the dry, toasty, yeasty complexity that comes from real fermentation — a dealcoholized sparkling wine will get you much closer than sparkling grape juice, which tends to be sweeter and simpler by nature. If you're serving a mixed group and want one bottle that reads as festive without worrying about the distinction, either works for the moment itself.
+
+## The Bottom Line
+
+"Non-alcoholic Champagne" isn't a real, legally defined product — but genuine dealcoholized sparkling wine is, and it's a meaningfully different (and generally more wine-like) experience than sparkling grape juice. Reading the label for "alcohol-removed" or "de-alcoholized" language is the quickest way to know exactly what you're pouring.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Non-Alcoholic Education',
+    date: 'September 1, 2026',
+    isoDate: '2026-09-01',
+    readTime: '5 min read',
+    image: '/images/categories/na-champagne-sparkling.webp',
+    tags: ['Non-Alcoholic', 'Champagne', 'Sparkling Wine', 'NA Wine'],
+    faqs: [
+      { question: 'Can Champagne legally be non-alcoholic?', answer: 'No — Champagne is a protected name restricted to genuinely fermented, alcoholic sparkling wine made in the Champagne region of France. "Non-alcoholic Champagne" is a loose, unofficial description, not a legally recognized product.' },
+      { question: 'What is the difference between non-alcoholic sparkling wine and sparkling grape juice?', answer: 'Non-alcoholic sparkling wine is a real wine that was fermented normally and then had its alcohol removed. Sparkling grape juice was never fermented at all — it is simply carbonated grape juice.' },
+      { question: 'How is alcohol removed from wine to make it non-alcoholic?', answer: 'Common methods include vacuum distillation and spinning cone technology, both of which gently separate alcohol from the wine at low temperatures to preserve as much of the original flavor as possible.' },
+    ],
+  },
+  {
+    slug: 'what-is-a-mocktail-complete-guide',
+    title: 'What Is a Mocktail? A Complete Guide',
+    excerpt: 'A mocktail is a genuinely crafted non-alcoholic cocktail, not just juice in a fancy glass. Here is what actually separates a good one from a soft drink, and how to build one at home.',
+    content: `
+"Mocktail" has shed a lot of its dated, afterthought reputation in the last several years, as bartenders and brands have started treating non-alcoholic drinks with the same care as their alcoholic counterparts. Here's what actually defines the category today.
+
+## More Than Just "A Drink Without Alcohol"
+
+A true mocktail is built with the same structural thinking as a classic cocktail — balancing sweet, sour, bitter, and aromatic elements — rather than simply being a soft drink or juice served in a cocktail glass. The difference between a good mocktail and a bad one usually comes down to whether the person making it actually thought about balance, the same way a good Margarita balances tequila, lime, and sweetener rather than just tasting like tequila.
+
+## The Building Blocks of a Good Mocktail
+
+- **Acid** — fresh citrus juice (lime, lemon, grapefruit) provides the brightness that keeps a mocktail from tasting flat or one-dimensional, the same role it plays in an alcoholic cocktail.
+- **Sweetener** — simple syrup, honey syrup, or fruit purée balances the acid; the goal is balance, not maximum sweetness.
+- **Bitterness or complexity** — this is often the missing piece in weak mocktails. Non-alcoholic bitters, strong tea, or a non-alcoholic aperitif/spirit alternative add the layered, slightly bitter backbone that makes a drink feel adult and considered rather than simply sweet.
+- **Texture and dilution** — proper shaking or stirring with ice, just like a real cocktail, matters more than people expect; a mocktail poured flat and undiluted often tastes harsh or cloying.
+
+## Ready-Made Options Have Gotten Genuinely Good
+
+You don't have to build every mocktail from scratch. A wave of dedicated non-alcoholic aperitif and canned-cocktail brands now make it possible to pour a genuinely complex, bitter-forward mocktail straight from a bottle or can — often built by the same techniques (botanical infusion, adaptogens, real citrus) used in the DIY approach above, just pre-balanced by a brand's own recipe development.
+
+## Common Mocktail Styles
+
+- **Spritz-style** — a non-alcoholic bittersweet base topped with sparkling water or soda, mirroring the structure of an Aperol Spritz.
+- **Sour-style** — citrus and sweetener shaken hard, mirroring a Whiskey Sour or Daiquiri's structure.
+- **Mule-style** — ginger beer plus citrus over ice, mirroring a Moscow Mule.
+- **Botanical/herbal** — built around a non-alcoholic gin or amaro alternative for a more complex, adult flavor profile.
+
+## Why the Category Has Grown So Fast
+
+A meaningful and growing share of drinkers now choose not to drink alcohol on a given night — or ever — for reasons ranging from health, to medication, to simply preference, without necessarily identifying as fully sober. A well-made mocktail lets that choice feel like an upgrade rather than a compromise, which is the real shift the category has made: from an obligatory substitute to a genuinely well-crafted drink in its own right.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Cocktail Guide',
+    date: 'September 2, 2026',
+    isoDate: '2026-09-02',
+    readTime: '6 min read',
+    image: '/images/categories/na-rtd-cocktails.webp',
+    tags: ['Mocktails', 'Non-Alcoholic', 'Cocktail Guide', 'Sober Curious'],
+    faqs: [
+      { question: 'What is the difference between a mocktail and just juice?', answer: 'A mocktail is deliberately balanced across acid, sweetness, and often bitterness or aromatic complexity, the same way a real cocktail is built — rather than being a single juice or soda served in a fancy glass.' },
+      { question: 'What makes a mocktail taste more "adult" or complex?', answer: 'Bitterness and aromatic complexity are usually the missing piece. Non-alcoholic bitters, strong tea, or a non-alcoholic aperitif alternative add the layered backbone that pure juice and soda lack.' },
+      { question: 'Can I buy pre-made mocktails instead of making them from scratch?', answer: 'Yes — a growing number of non-alcoholic aperitif and canned-cocktail brands make genuinely complex, ready-to-pour mocktails built with real botanical infusion and citrus, not just sweetened soda.' },
+    ],
+  },
+  {
+    slug: 'aperitif-vs-digestif',
+    title: "Aperitif vs. Digestif: What's the Difference and When to Drink Each",
+    excerpt: 'One is meant to open your appetite before a meal, the other to settle your stomach after. Here is how to actually use aperitifs and digestifs the way Italian and French dining traditions intended.',
+    content: `
+Aperitif and digestif are two of the most commonly misused terms in the drinks world — often treated as interchangeable "fancy liqueur" categories, when they actually describe two opposite moments in a meal.
+
+## Aperitif: Before the Meal
+
+An aperitif (from the Latin *aperire*, "to open") is meant to be drunk before eating, specifically to stimulate the appetite rather than fill you up or overwhelm your palate before food arrives. The defining characteristic of a good aperitif is that it's light, bright, and often slightly bitter — bitterness is genuinely believed to stimulate digestive juices and appetite, which is why so many aperitifs (Aperol, Campari, dry vermouth) lean bitter rather than sweet.
+
+**Classic aperitif choices:** Aperol Spritz, a dry Vermouth on the rocks, Champagne or other dry sparkling wine, a light Negroni, or a simple dry white wine.
+
+## Digestif: After the Meal
+
+A digestif is the opposite bookend — consumed after eating, traditionally believed to aid digestion of a rich meal. Digestifs tend to be stronger, sweeter, or more herbally intense than aperitifs, sipped slowly in a small glass rather than consumed quickly.
+
+**Classic digestif choices:** Amaro (Italy's bitter herbal liqueur category), Cognac or aged brandy, a herbal liqueur like Chartreuse, Limoncello, or a rich Tawny Port.
+
+## Why the Order Actually Matters
+
+The logic isn't just tradition for its own sake — it reflects real culinary reasoning. A rich, high-proof digestif like Cognac or a syrupy dessert liqueur would overwhelm your palate and appetite if drunk before a meal, dulling your ability to taste the food that follows. Conversely, a light, bright aperitif served after a heavy meal would feel thin and unsatisfying compared to something richer and more warming.
+
+## Amaro: The Digestif Workhorse
+
+Amaro deserves special mention as arguably the most versatile digestif category — a broad family of Italian bitter herbal liqueurs (Amaro Nonino, Averna, Ramazzotti among the best-known) built specifically around the belief that bitter, herbal complexity aids digestion after a meal. Amaro varies enormously in style, from lighter and more citrus-forward to dense, syrupy, and intensely herbal, making it worth exploring beyond just one bottle.
+
+## Can the Same Drink Ever Be Both?
+
+Not really — the categories are defined by role and style, not a fixed ingredient list. Vermouth, for example, is typically an aperitif when served dry and chilled before a meal, but a sweeter, richer vermouth style sipped slowly could functionally work as a light digestif too. The honest rule of thumb: light, bright, and bitter before eating; richer, stronger, and more herbal after.
+
+## Building Both Into Your Home Bar
+
+You don't need a huge collection to cover both moments properly — one good bitter aperitif (Aperol or a dry vermouth) and one good digestif (an Amaro or a modest Cognac) genuinely rounds out a dinner-party bar far more completely than another bottle of the same spirit you already have.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Liqueur Education',
+    date: 'September 2, 2026',
+    isoDate: '2026-09-02',
+    readTime: '6 min read',
+    image: '/images/categories/rtd-liqueurs.webp',
+    tags: ['Liqueur', 'Aperitif', 'Digestif', 'Amaro'],
+    faqs: [
+      { question: 'Is Aperol an aperitif or a digestif?', answer: 'Aperol is a classic aperitif — light, bright, and bitter, meant to be enjoyed before a meal to stimulate the appetite, most famously in an Aperol Spritz.' },
+      { question: 'What is the best digestif after a heavy meal?', answer: 'Amaro is one of the most versatile choices — a broad family of Italian bitter herbal liqueurs built specifically around the idea that bitter, herbal complexity aids digestion. Cognac and other aged brandies are classic alternatives.' },
+      { question: 'Why are aperitifs usually bitter?', answer: "Bitterness is traditionally believed to stimulate digestive juices and appetite, which is why bitter ingredients like Aperol, Campari, and dry vermouth are common aperitif choices rather than sweet ones." },
+    ],
+  },
+  {
+    slug: 'best-non-alcoholic-wine-buying-guide',
+    title: 'Best Non-Alcoholic Wine for Every Occasion: A Buying Guide',
+    excerpt: 'From weeknight dinners to formal toasts, non-alcoholic wine has grown far beyond a single generic option — here is how to choose the right style for the moment.',
+    content: `
+Non-alcoholic wine has come a long way from the syrupy, one-note bottles that gave the category a bad reputation years ago. Modern dealcoholized wine is made from real grapes using increasingly sophisticated techniques, and choosing the right style for the occasion makes a real difference.
+
+## How Non-Alcoholic Wine Is Actually Made
+
+Nearly all quality non-alcoholic wine starts as a genuine, fully fermented wine — real grapes, real fermentation, real winemaking technique — and has the alcohol removed afterward using one of a few methods: spinning cone technology (gently separates alcohol from wine at low temperature and pressure to preserve flavor), reverse osmosis (filters alcohol out through a membrane), or vacuum distillation (uses lower pressure to evaporate alcohol at a lower, flavor-preserving temperature). This matters because it means better non-alcoholic wine genuinely tastes like wine that's had something removed, rather than a from-scratch grape beverage built to vaguely resemble wine.
+
+## For a Weeknight Dinner
+
+Look for a straightforward dealcoholized red or white built from a familiar grape — Cabernet Sauvignon or Chardonnay alternatives are the most widely available and easiest to pair with everyday cooking the same way you'd use their alcoholic counterparts.
+
+## For a Celebration or Toast
+
+Reach for a dealcoholized sparkling wine rather than sparkling grape juice if you want something that reads as genuinely "wine-like" rather than sweet and juice-forward — the drier, more complex character of a proper sparkling wine alternative holds up much better next to a real Champagne toast happening at the same table.
+
+## For Someone New to the Category
+
+Start with a rosé. Non-alcoholic rosé tends to be one of the most consistently well-executed styles across brands, since rosé's naturally lighter, fruit-forward profile is easier to replicate convincingly without alcohol than a structured, tannic red.
+
+## For Pairing With a Rich Meal
+
+Look specifically for a red labeled with tannin-preserving language or built from a naturally structured grape like Cabernet Sauvignon or a GSM (Grenache-Syrah-Mourvèdre) blend — structure and tannin are the hardest qualities to retain through dealcoholization, so brands that specifically address this are usually more serious about matching a real wine experience.
+
+## What to Check on the Label
+
+- **"Alcohol-removed" or "de-alcoholized"** signals a real wine that went through an actual dealcoholization process.
+- **The specific grape or blend named** (rather than just "red wine" or "white wine") is generally a good sign of a more serious product.
+- **ABV under 0.5%** is standard for the category and worth confirming if you need certainty for medical, pregnancy, or recovery reasons.
+
+## The Bottom Line
+
+Treat non-alcoholic wine shopping the same way you'd treat regular wine shopping — matching grape, style, and occasion — rather than assuming one generic bottle covers every situation. The category has genuinely diversified enough now to reward that approach.
+    `,
+    author: 'The Aged And Amber Spirits Team',
+    category: 'Non-Alcoholic Education',
+    date: 'September 3, 2026',
+    isoDate: '2026-09-03',
+    readTime: '6 min read',
+    image: '/images/categories/na-wine.webp',
+    tags: ['Non-Alcoholic', 'NA Wine', 'Wine Education', 'Buying Guide'],
+    faqs: [
+      { question: 'Does non-alcoholic wine taste like real wine?', answer: 'Better brands genuinely do, since most start as a real, fully fermented wine that has the alcohol removed afterward via spinning cone technology, reverse osmosis, or vacuum distillation — rather than being built from scratch as a wine substitute.' },
+      { question: 'What is the best non-alcoholic wine style for a beginner?', answer: 'Rosé tends to be the most consistently well-executed style across brands, since its naturally lighter, fruit-forward profile is easier to replicate convincingly without alcohol than a structured, tannic red.' },
+      { question: 'How much alcohol is actually in non-alcoholic wine?', answer: 'Typically under 0.5% ABV, the standard threshold for the non-alcoholic wine category, though the exact amount can vary slightly by brand and production method.' },
+    ],
+  },
 ];
