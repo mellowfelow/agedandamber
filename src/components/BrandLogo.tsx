@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 
 interface BrandLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -11,6 +11,15 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   showText = true,
   className = '',
 }) => {
+  // BrandLogo renders more than once per page (Header + Footer, plus the
+  // age-gate modal) — hardcoded gradient ids collided across instances, so
+  // fill="url(#logoGold)" could silently resolve to nothing in some of
+  // them, rendering an empty/invisible crest. useId() scopes each
+  // instance's gradients to itself.
+  const uid = useId();
+  const goldId = `logoGold-${uid}`;
+  const copperId = `amberCopper-${uid}`;
+
   const dimensions = {
     sm: { box: 'w-8 h-8', icon: 32, text: 'text-lg', sub: 'text-[9px]' },
     md: { box: 'w-9 h-9 sm:w-11 sm:h-11', icon: 44, text: 'text-base sm:text-xl md:text-2xl', sub: 'text-[10px]' },
@@ -35,27 +44,27 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           className="w-full h-full transform group-hover:scale-105 transition-transform duration-300"
         >
           <defs>
-            <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id={goldId} x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#F7E7A9" />
               <stop offset="35%" stopColor="#D4AF37" />
               <stop offset="70%" stopColor="#AA820A" />
               <stop offset="100%" stopColor="#F5D77F" />
             </linearGradient>
-            <linearGradient id="amberCopper" x1="0%" y1="0%" x2="100%" y2="100%">
+            <linearGradient id={copperId} x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#E67E22" />
               <stop offset="100%" stopColor="#8E44AD" />
             </linearGradient>
           </defs>
 
           {/* Double Octagon Gold Frame */}
-          <rect x="6" y="6" width="88" height="88" rx="16" fill="none" stroke="url(#logoGold)" strokeWidth="1.5" />
-          <circle cx="50" cy="50" r="39" fill="none" stroke="url(#logoGold)" strokeWidth="1" strokeDasharray="3 2" opacity="0.7" />
+          <rect x="6" y="6" width="88" height="88" rx="16" fill="none" stroke={`url(#${goldId})`} strokeWidth="1.5" />
+          <circle cx="50" cy="50" r="39" fill="none" stroke={`url(#${goldId})`} strokeWidth="1" strokeDasharray="3 2" opacity="0.7" />
 
           {/* Oak Cask Stave Contour Silhouette */}
           <path
             d="M32 24 C38 22, 62 22, 68 24 C74 38, 74 62, 68 76 C62 78, 38 78, 32 76 C26 62, 26 38, 32 24 Z"
             fill="none"
-            stroke="url(#logoGold)"
+            stroke={`url(#${goldId})`}
             strokeWidth="1.2"
             opacity="0.35"
           />
@@ -64,19 +73,19 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
           {/* First A */}
           <path
             d="M34 68 L44 32 L49 32 L59 68 L53 68 L51 59 L42 59 L40 68 Z M43 54 L50 54 L46.5 40 Z"
-            fill="url(#logoGold)"
+            fill={`url(#${goldId})`}
           />
           {/* Second Interlocking A */}
           <path
             d="M48 68 L58 32 L63 32 L73 68 L67 68 L65 59 L56 59 L54 68 Z M57 54 L64 54 L60.5 40 Z"
-            fill="url(#logoGold)"
+            fill={`url(#${goldId})`}
             opacity="0.85"
           />
 
           {/* Central Wax Seal / Amber Gem Drop */}
           <path
             d="M50 72 C48 75, 46 78, 46 80 C46 82.5, 47.8 84, 50 84 C52.2 84, 54 82.5, 54 80 C54 78, 52 75, 50 72 Z"
-            fill="url(#logoGold)"
+            fill={`url(#${goldId})`}
           />
         </svg>
       </div>

@@ -4,6 +4,17 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }],
+    // Vercel's on-the-fly image optimization is metered per source image on
+    // the Hobby plan and this catalog has 1,300+ product photos plus 268
+    // blog images — well past that quota, which made most /_next/image
+    // requests fail with 402 Payment Required in production (confirmed via
+    // direct fetch against the live site) even though the underlying static
+    // files were all serving fine. Disabling optimization serves the
+    // pre-built webp files directly instead of transforming them on
+    // request: no quota, no 402s, and next/image still provides lazy
+    // loading, `fill`, and `sizes` layout — it just skips resizing/format
+    // negotiation. Revisit if the project ever moves to a paid Vercel plan.
+    unoptimized: true,
   },
   async redirects() {
     return [
