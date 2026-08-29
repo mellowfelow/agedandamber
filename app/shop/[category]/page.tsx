@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: cat.seo?.titleTag || `${cat.name} — Shop`,
     description: cat.seo?.metaDescription || cat.description,
     alternates: { canonical: `https://${SITE.domain}/shop/${cat.slug}/` },
+    openGraph: { images: [cat.image] },
   };
 }
 

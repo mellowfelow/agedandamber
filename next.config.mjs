@@ -16,6 +16,22 @@ const nextConfig = {
     // negotiation. Revisit if the project ever moves to a paid Vercel plan.
     unoptimized: true,
   },
+  async headers() {
+    // Standard security headers — Vercel already terminates TLS and adds
+    // HSTS for the custom domain at the edge, so this only covers the
+    // headers the app itself is responsible for.
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       {

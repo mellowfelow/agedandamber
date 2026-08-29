@@ -104,6 +104,32 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           '@type': 'Organization',
           name: SITE.name,
         },
+        // Real, documented shipping terms only (matches the FAQ/checkout
+        // copy) — no hasMerchantReturnPolicy here, since there's no
+        // documented return policy anywhere on the site to accurately
+        // represent; fabricating one in structured data would be a false
+        // claim, not a technical fix.
+        shippingDetails: {
+          '@type': 'OfferShippingDetails',
+          shippingRate: {
+            '@type': 'MonetaryAmount',
+            value: data.price >= SHOP.freeShippingThreshold ? 0 : SHOP.shippingFee,
+            currency: SITE.currency,
+          },
+          shippingDestination: {
+            '@type': 'DefinedRegion',
+            addressCountry: 'US',
+          },
+          deliveryTime: {
+            '@type': 'ShippingDeliveryTime',
+            transitTime: {
+              '@type': 'QuantitativeValue',
+              minValue: 2,
+              maxValue: 5,
+              unitCode: 'DAY',
+            },
+          },
+        },
       },
     };
   } else if (type === 'article' && data) {

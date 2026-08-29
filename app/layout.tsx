@@ -39,6 +39,14 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     type: 'website',
     locale: SITE.locale,
+    // Fallback for every page that doesn't set its own openGraph.images
+    // (about, FAQ, wholesale, contact, shop index, blog index, hub pages,
+    // and previously the homepage) — without this, links to those pages
+    // shared on social/Slack/iMessage, or scraped by an AI crawler looking
+    // for a representative image, had nothing to show at all. Individual
+    // product pages, and now blog posts and category pages, override this
+    // with their own more specific image.
+    images: ['/images/hero/hero-1.webp'],
   },
   twitter: {
     card: 'summary_large_image',

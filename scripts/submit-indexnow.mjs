@@ -21,7 +21,13 @@
 
 const SITE_ORIGIN = process.argv[2] || 'https://www.agedandamber.com';
 const INDEXNOW_KEY = '002a541a7ee2c7c51188fb5517599103';
-const INDEXNOW_ENDPOINT = 'https://api.indexnow.org/indexnow';
+// The generic api.indexnow.org relay returned a transient
+// "SiteVerificationNotCompleted" 403 on first submission even though the
+// key file was confirmed correctly hosted (200 OK, right content) — likely
+// first-time propagation across the engines it fans out to. Bing's own
+// endpoint accepted the exact same key/payload immediately (200 OK), so
+// that's the one this script actually calls.
+const INDEXNOW_ENDPOINT = 'https://www.bing.com/indexnow';
 
 async function main() {
   const sitemapUrl = `${SITE_ORIGIN}/sitemap.xml`;
