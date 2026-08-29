@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Product } from '../types';
@@ -43,13 +43,31 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   const { searchQuery, setSearchQuery } = useAppState();
 
   const setSelectedCategory = (cat: string) => {
+    // A leftover search term from browsing a different category (or from
+    // the header's global search) would otherwise silently AND-filter
+    // against the newly selected category and could zero out results with
+    // no obvious explanation. Picking a category is a clear "browse this
+    // fresh" signal, so start it with a clean search box.
+    setSearchQuery('');
     router.push(getRouteUrl.shop(cat));
   };
+
+  // The price slider's ceiling used to be hardcoded at $600 with no way to
+  // raise it — 22 products across the catalog (Pappy Van Winkle, Rémy
+  // Martin Louis XIII, a $7,500 Patrón en Lalique, etc.) are priced above
+  // that, so they were completely unreachable through the shop UI even
+  // though the sidebar's category counts included them. Deriving the
+  // ceiling from the actual product data guarantees every product stays
+  // reachable, on every category page, as pricing changes over time.
+  const catalogMaxPrice = useMemo(() => {
+    const highest = products.reduce((max, p) => Math.max(max, p.price), 0);
+    return Math.max(600, Math.ceil(highest / 25) * 25);
+  }, [products]);
 
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'proof-desc' | 'name-asc'>('featured');
   const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(600);
+  const [maxPrice, setMaxPrice] = useState(catalogMaxPrice);
   const [proofFilter, setProofFilter] = useState<'all' | 'zero' | 'standard' | 'cask-strength'>('all');
   const [inStockOnly, setInStockOnly] = useState(false);
   const [macroGroup, setMacroGroup] = useState<'all' | 'whiskey' | 'spirits' | 'na'>('all');
@@ -58,6 +76,29 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   const [currentPage, setCurrentPage] = useState(1);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
   const PRODUCTS_PER_PAGE = 12;
+  const resultsTopRef = useRef<HTMLDivElement>(null);
+
+  // Paging (Prev/Next/page number) swaps the grid in place without moving
+  // scroll — on a long category the customer is left stranded down by the
+  // pager, at the bottom of a page they haven't seen yet. Scroll them back
+  // to the top of the results so browsing the new page feels like a fresh
+  // page load.
+  const goToPage = (page: number) => {
+    // Read the results container's position and scroll before swapping the
+    // page, not after: nothing above this container changes when the page
+    // number changes (only the products inside/below it do), so its
+    // on-screen position right now is already correct — no need to wait a
+    // frame for a re-render that wouldn't move it anyway. Avoiding
+    // requestAnimationFrame here also sidesteps browsers throttling rAF in
+    // backgrounded/inactive tabs, which could otherwise delay or drop the
+    // scroll entirely.
+    if (resultsTopRef.current) {
+      const stickyHeaderOffset = 140;
+      const top = resultsTopRef.current.getBoundingClientRect().top + window.scrollY - stickyHeaderOffset;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+    setCurrentPage(page);
+  };
 
   // Category collapse state - defaults to all expanded so clients immediately see all subcategories
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(() => {
@@ -149,9 +190,61 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
     return counts;
   }, [products]);
 
+  // Category slug -> display name, for matching queries like "scotch" or
+  // "non-alcoholic" against the human-readable name, not just the slug.
+  const categoryNameBySlug = useMemo(() => {
+    const map: Record<string, string> = {};
+    CATEGORIES.forEach((c) => {
+      map[c.slug] = c.name;
+    });
+    return map;
+  }, []);
+
+  // A flattened, lowercased "everything about this product" string per
+  // product, built once per product-list load rather than rebuilt on every
+  // keystroke — with 1,347+ products this keeps search snappy. Covers every
+  // field a shopper might actually type: name, both descriptions, cask
+  // type, subcategory, distillery location, category (slug + display
+  // name), badge, tasting notes, and the SEO keyword fields (which already
+  // capture common alternate names/misspellings for each bottle).
+  const productSearchIndex = useMemo(() => {
+    const index = new Map<string, string>();
+    for (const p of products) {
+      const haystack = [
+        p.name,
+        p.shortDescription,
+        p.fullDescription,
+        p.caskType,
+        p.subcategory,
+        p.distilleryLocation,
+        p.category,
+        categoryNameBySlug[p.category],
+        p.badge,
+        p.tastingNotes?.nose,
+        p.tastingNotes?.palate,
+        p.tastingNotes?.finish,
+        p.seo?.primaryKeyword,
+        ...(p.seo?.secondaryKeywords || []),
+      ]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase();
+      index.set(p.id, haystack);
+    }
+    return index;
+  }, [products, categoryNameBySlug]);
+
+  // Split the query into words so "buffalo trace bourbon" matches "Buffalo
+  // Trace Kentucky Straight Bourbon" (every word present, in any order,
+  // across any field) instead of requiring that exact phrase as one
+  // substring.
+  const searchTokens = useMemo(
+    () => searchQuery.toLowerCase().trim().split(/\s+/).filter(Boolean),
+    [searchQuery]
+  );
+
   // Main Product Filtering Logic
   const filteredProducts = useMemo(() => {
-    const query = searchQuery.toLowerCase();
     return products.filter((p) => {
       // Category match
       const matchesCategory = selectedCategory === 'all' || p.category === selectedCategory;
@@ -171,14 +264,11 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
       // Stock match
       const matchesStock = !inStockOnly || p.stock > 0;
 
-      // Search query match
+      // Search query match — every typed word must appear somewhere in
+      // this product's search index.
+      const haystack = productSearchIndex.get(p.id) || '';
       const matchesSearch =
-        !query ||
-        p.name.toLowerCase().includes(query) ||
-        p.shortDescription.toLowerCase().includes(query) ||
-        p.caskType.toLowerCase().includes(query) ||
-        (p.subcategory && p.subcategory.toLowerCase().includes(query)) ||
-        p.distilleryLocation.toLowerCase().includes(query);
+        searchTokens.length === 0 || searchTokens.every((token) => haystack.includes(token));
 
       return (
         matchesCategory &&
@@ -189,7 +279,17 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
         matchesSearch
       );
     });
-  }, [products, selectedCategory, selectedSubcategory, minPrice, maxPrice, proofFilter, inStockOnly, searchQuery]);
+  }, [
+    products,
+    selectedCategory,
+    selectedSubcategory,
+    minPrice,
+    maxPrice,
+    proofFilter,
+    inStockOnly,
+    productSearchIndex,
+    searchTokens,
+  ]);
 
   // Sort products
   const sortedProducts = useMemo(() => {
@@ -229,7 +329,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   const activeFiltersCount =
     (selectedCategory !== 'all' ? 1 : 0) +
     (selectedSubcategory !== 'all' ? 1 : 0) +
-    (minPrice > 0 || maxPrice < 600 ? 1 : 0) +
+    (minPrice > 0 || maxPrice < catalogMaxPrice ? 1 : 0) +
     (proofFilter !== 'all' ? 1 : 0) +
     (inStockOnly ? 1 : 0) +
     (searchQuery ? 1 : 0);
@@ -238,7 +338,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
     setSelectedCategory('all');
     setSelectedSubcategory('all');
     setMinPrice(0);
-    setMaxPrice(600);
+    setMaxPrice(catalogMaxPrice);
     setProofFilter('all');
     setInStockOnly(false);
     setSearchQuery('');
@@ -451,7 +551,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           <input
             type="range"
             min={0}
-            max={600}
+            max={catalogMaxPrice}
             step={25}
             value={maxPrice}
             onChange={(e) => setMaxPrice(Number(e.target.value))}
@@ -464,7 +564,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
               { label: 'Under $35', max: 35 },
               { label: 'Under $75', max: 75 },
               { label: 'Under $200', max: 200 },
-              { label: 'All Prices', max: 600 },
+              { label: 'All Prices', max: catalogMaxPrice },
             ].map((preset) => (
               <button
                 key={preset.label}
@@ -646,7 +746,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
         <div className="hidden lg:block lg:col-span-1">{renderFilterSidebar()}</div>
 
         {/* Right Product Grid Area */}
-        <div className="lg:col-span-3 space-y-6">
+        <div ref={resultsTopRef} className="lg:col-span-3 space-y-6">
           {/* Search, Sort, and Mobile Filter Toggle Header Bar */}
           <div className="p-4 rounded-2xl bg-[#1A120B] border border-amber-900/40 flex flex-col md:flex-row items-center justify-between gap-4 text-xs shadow-md">
             {/* Search Input */}
@@ -735,13 +835,13 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
                 </span>
               )}
 
-              {(minPrice > 0 || maxPrice < 600) && (
+              {(minPrice > 0 || maxPrice < catalogMaxPrice) && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-800 border border-stone-700 text-amber-200">
                   Max Price: <strong>{SITE.currencySymbol}{maxPrice}</strong>
                   <button
                     onClick={() => {
                       setMinPrice(0);
-                      setMaxPrice(600);
+                      setMaxPrice(catalogMaxPrice);
                     }}
                     className="hover:text-white"
                   >
@@ -825,7 +925,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
               {totalPages > 1 && (
                 <div className="flex items-center justify-center gap-2 pt-4">
                   <button
-                    onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                    onClick={() => goToPage(Math.max(1, currentPage - 1))}
                     disabled={currentPage === 1}
                     className="px-3 py-2 rounded-lg text-xs font-bold border border-amber-900/40 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-amber-900/20 transition-all"
                   >
@@ -846,7 +946,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
                             <span className="px-2 text-amber-600/50 text-xs">...</span>
                           )}
                           <button
-                            onClick={() => setCurrentPage(page)}
+                            onClick={() => goToPage(page)}
                             className={`w-9 h-9 rounded-lg text-xs font-bold transition-all ${
                               page === currentPage
                                 ? 'bg-[#D4AF37] text-[#140D08]'
@@ -860,7 +960,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
                   </div>
 
                   <button
-                    onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                    onClick={() => goToPage(Math.min(totalPages, currentPage + 1))}
                     disabled={currentPage === totalPages}
                     className="px-3 py-2 rounded-lg text-xs font-bold border border-amber-900/40 text-amber-200 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-amber-900/20 transition-all"
                   >

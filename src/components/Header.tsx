@@ -41,7 +41,13 @@ export const Header: React.FC = () => {
 
   const handleSearchChange = (value: string) => {
     setSearchQuery(value);
-    if (!pathname.startsWith('/shop')) {
+    // The header search is the site-wide "mega store" search — it should
+    // always search the full catalog, not stay scoped to whatever category
+    // page the shopper happens to be on. Jump to the all-products view as
+    // soon as they start typing (but don't fight the page's own on-page
+    // search box: this only fires from the header input, and only once
+    // there's an actual query to run).
+    if (value.trim() && pathname !== '/shop/') {
       router.push('/shop/');
     }
   };
