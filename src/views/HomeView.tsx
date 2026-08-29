@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
+import { SmartImage } from '../components/SmartImage';
 import { CATEGORIES } from '../data/products';
 import { BLOG_POSTS } from '../data/blog';
 import { FAQ_ITEMS } from '../data/faq';
@@ -398,10 +399,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
           </div>
 
           <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
-            <img
+            <SmartImage
               src="/images/hero/hero-9.webp"
               alt="Rows of wine and spirits bottles resting in a climate-controlled Napa Valley cellar rack"
-              className="w-full h-full object-cover filter brightness-90"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover filter brightness-90"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-stone-950/80 backdrop-blur-md border border-stone-800 text-amber-100 text-xs">
@@ -444,10 +446,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ products }) => {
             >
               <div>
                 <div className="aspect-video relative overflow-hidden bg-stone-900">
-                  <img
+                  <SmartImage
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <span className="absolute top-3 left-3 py-1 px-2.5 rounded-md bg-[#140D08]/90 text-[#D4AF37] text-[10px] font-bold uppercase">
                     {post.category}

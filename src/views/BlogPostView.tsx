@@ -1,11 +1,15 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { BlogPost } from '../types';
+import { BLOG_POSTS } from '../data/blog';
+import { CATEGORIES } from '../data/products';
 import { getRouteUrl } from '../utils/routes';
 import { MarkdownContent } from '../components/MarkdownContent';
-import { ArrowLeft, Clock, Calendar, Tag, ChevronDown } from 'lucide-react';
+import { SmartImage } from '../components/SmartImage';
+import { getRelatedPosts, getShopSlugForPost } from '../utils/blogLinks';
+import { ArrowLeft, ArrowRight, Clock, Calendar, Tag, ChevronDown, ShoppingBag } from 'lucide-react';
 
 interface BlogPostViewProps {
   post: BlogPost;
@@ -13,6 +17,10 @@ interface BlogPostViewProps {
 
 export const BlogPostView: React.FC<BlogPostViewProps> = ({ post }) => {
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
+
+  const relatedPosts = useMemo(() => getRelatedPosts(post, BLOG_POSTS, 3), [post]);
+  const shopSlug = useMemo(() => getShopSlugForPost(post), [post]);
+  const shopCategory = CATEGORIES.find((c) => c.slug === shopSlug);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
@@ -51,10 +59,37 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ post }) => {
       </div>
 
       <div className="aspect-video relative rounded-3xl overflow-hidden border border-amber-900/40">
-        <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+        <SmartImage
+          src={post.image}
+          alt={post.title}
+          priority
+          sizes="(max-width: 1024px) 100vw, 896px"
+          className="object-cover"
+        />
       </div>
 
       <MarkdownContent content={post.content} />
+
+      {/* Shop This Category CTA — links the article to the relevant shop page */}
+      <Link
+        href={getRouteUrl.shop(shopSlug)}
+        className="flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-[#2C1A0E] to-[#1A120B] border border-[#D4AF37]/40 p-5 hover:border-[#D4AF37] transition-all group"
+      >
+        <div className="flex items-center gap-3">
+          <span className="p-2.5 rounded-xl bg-[#D4AF37]/15 text-[#D4AF37]">
+            <ShoppingBag className="w-5 h-5" />
+          </span>
+          <div>
+            <p className="text-[11px] text-amber-400/70 uppercase tracking-wider font-semibold">
+              Shop the Collection
+            </p>
+            <p className="font-serif font-bold text-amber-100 text-base">
+              {shopCategory ? shopCategory.name : 'All Spirits & Zero Proof'}
+            </p>
+          </div>
+        </div>
+        <ArrowRight className="w-5 h-5 text-[#D4AF37] shrink-0 transform group-hover:translate-x-1 transition-transform" />
+      </Link>
 
       <div className="pt-6 border-t border-amber-900/40 flex items-center gap-2 flex-wrap">
         <Tag className="w-4 h-4 text-[#D4AF37]" />
@@ -91,6 +126,39 @@ export const BlogPostView: React.FC<BlogPostViewProps> = ({ post }) => {
                   </div>
                 )}
               </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <div className="pt-6 border-t border-amber-900/40 space-y-4">
+          <h2 className="text-2xl font-serif font-bold text-amber-100">Related Articles</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {relatedPosts.map((rp) => (
+              <Link
+                key={rp.slug}
+                href={getRouteUrl.blog(rp.slug)}
+                className="bg-[#1A120B] rounded-2xl border border-amber-900/30 overflow-hidden hover:border-[#D4AF37]/50 transition-all group flex flex-col"
+              >
+                <div className="aspect-video relative overflow-hidden bg-stone-900">
+                  <SmartImage
+                    src={rp.image}
+                    alt={rp.title}
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <span className="absolute top-2.5 left-2.5 py-1 px-2 rounded-md bg-[#140D08]/90 text-[#D4AF37] text-[9px] font-bold uppercase">
+                    {rp.category}
+                  </span>
+                </div>
+                <div className="p-4 space-y-1.5 flex-1 flex flex-col justify-between">
+                  <h3 className="font-serif font-bold text-amber-100 text-sm group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                    {rp.title}
+                  </h3>
+                  <span className="text-[11px] text-amber-400/70">{rp.readTime}</span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>

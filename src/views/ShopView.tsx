@@ -5,9 +5,12 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
+import { SmartImage } from '../components/SmartImage';
 import { CATEGORIES } from '../data/products';
 import { SUBCATEGORY_HUBS } from '../data/subcategoryHubs';
 import { BRAND_HUBS } from '../data/brandHubs';
+import { BLOG_POSTS } from '../data/blog';
+import { getShopSlugForPost } from '../utils/blogLinks';
 import { getRouteUrl } from '../utils/routes';
 import {
   Search,
@@ -25,6 +28,7 @@ import {
   Square,
   Sparkles,
   SlidersHorizontal,
+  BookOpen,
 } from 'lucide-react';
 import { SITE } from '../config/site';
 import { useAppState } from '../../app/providers';
@@ -210,6 +214,16 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   );
 
   const activeCategoryObj = CATEGORIES.find((c) => c.slug === selectedCategory);
+
+  // Blog posts whose derived shop category matches the currently viewed
+  // category — surfaces a "From the Journal" reading list so shop pages
+  // link back out to the relevant education content (and vice versa).
+  const journalPosts = useMemo(() => {
+    if (!activeCategoryObj) return [];
+    return BLOG_POSTS.filter((p) => getShopSlugForPost(p) === activeCategoryObj.slug)
+      .sort((a, b) => (a.isoDate < b.isoDate ? 1 : -1))
+      .slice(0, 3);
+  }, [activeCategoryObj]);
 
   // Count active filters
   const activeFiltersCount =
@@ -858,6 +872,49 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           )}
         </div>
       </div>
+
+      {/* From the Journal — reading list linking back to relevant blog education content */}
+      {activeCategoryObj && selectedSubcategory === 'all' && journalPosts.length > 0 && (
+        <div className="space-y-4 pt-4">
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-xl font-serif font-bold text-amber-100 flex items-center gap-2">
+              <BookOpen className="w-5 h-5 text-[#D4AF37]" />
+              From the Journal: {activeCategoryObj.name}
+            </h2>
+            <Link
+              href={getRouteUrl.blog()}
+              className="text-xs font-bold text-[#D4AF37] hover:underline flex items-center gap-1 shrink-0"
+            >
+              All Articles
+              <ChevronRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {journalPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={getRouteUrl.blog(post.slug)}
+                className="bg-[#1A120B] rounded-2xl border border-amber-900/30 overflow-hidden hover:border-[#D4AF37]/50 transition-all group flex flex-col"
+              >
+                <div className="aspect-video relative overflow-hidden bg-stone-900">
+                  <SmartImage
+                    src={post.image}
+                    alt={post.title}
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4 space-y-1.5">
+                  <h3 className="font-serif font-bold text-amber-100 text-sm group-hover:text-[#D4AF37] transition-colors line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <span className="text-[11px] text-amber-400/70">{post.readTime}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Category FAQ */}
       {activeCategoryObj?.seo?.faqs && activeCategoryObj.seo.faqs.length > 0 && selectedSubcategory === 'all' && (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { SmartImage } from '../components/SmartImage';
 import { SITE, BRAND, CONTACT } from '../config/site';
 import { Wine, Award, ShieldCheck, MapPin, Calendar, Clock, Flame } from 'lucide-react';
 
@@ -20,10 +21,12 @@ export const AboutView: React.FC = () => {
 
       {/* Hero Image */}
       <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
-        <img
+        <SmartImage
           src="/images/hero/hero-9.webp"
           alt="Aged And Amber Napa Valley spirits cellar with rows of bottles resting in a climate-controlled rack"
-          className="w-full h-full object-cover"
+          priority
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
         <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-stone-950/80 backdrop-blur-md border border-stone-800 text-amber-100">
