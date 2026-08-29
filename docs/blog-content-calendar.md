@@ -1,488 +1,62 @@
 # Master Blog Content Calendar — Aged & Amber
-**Generated:** August 2026 | **Source:** Full mining pass across `MASTER_SEO_IMPLEMENTATION.md` + all 8 raw batch files (blog-plan-batch1/2/5/6/7.md, keyword-map-batch3/4.md, product-gaps files) + this session's own v2 keyword-map docs (Bourbon/Scotch/Irish/Japanese/Vodka)
-**Status:** Living document — Phase 1 (2026-08-29) closed the zero-coverage-category gap. This is the full topic pool for building against, now and in the future.
 
-**Current live count: 74 blog posts** (verified directly against `src/data/blog.ts`). Every post already confirmed live is marked ✅ below with its slug, cross-referenced against real Vol/KD from the source files so you can see exactly what's covered. Everything else is a genuine, sourced gap — organized by category, with real keyword backing wherever the source data has it, flagged clearly where it's inferred/lower-confidence.
+**Generated:** August 2026 | **Source:** Full mining pass across `MASTER_SEO_IMPLEMENTATION.md` + all 8 raw batch files (blog-plan-batch1/2/5/6/7.md, keyword-map-batch3/4.md, product-gaps files) + session keyword-map v2 docs (Bourbon/Scotch/Irish/Japanese/Vodka) + dedicated wine/champagne/beer/cider/NA/RTD keyword-map exports.
 
-## Phase 1 (built 2026-08-29): one flagship pillar post per zero-coverage category
-
-Every category with product pages live but zero blog content got exactly one foundational post, closing the single worst gap in the project — 10 categories, 10 posts:
-
-| Category | Post built | Why this one |
-|---|---|---|
-| Beer | ✅ [who-owns-your-favorite-beer](../src/data/blog.ts) | Broadest possible anchor for a 0-post category; cross-links to the most stocked brands |
-| Fine Wine | ✅ is-chardonnay-sweet-or-dry | Best single low-KD opportunity flagged for the category |
-| Champagne & Sparkling | ✅ does-champagne-go-bad | Doc's own "strong pillar-page candidate" call, very low KD |
-| Cider | ✅ is-hard-cider-gluten-free | Doc's own "strongest real informational cluster" call |
-| Non-Alcoholic Beer & Cider | ✅ is-non-alcoholic-beer-really-alcohol-free | Foundational category-definition pillar |
-| Non-Alcoholic Spirits | ✅ what-is-a-non-alcoholic-spirit | 9,900/mo head term, foundational pillar |
-| Non-Alcoholic Champagne & Sparkling | ✅ is-non-alcoholic-champagne-a-real-thing | Real, recurring skepticism/definitional cluster |
-| Non-Alcoholic RTD Cocktails | ✅ what-is-a-mocktail-complete-guide | 22,420/mo, largest single informational cluster in the batch |
-| RTD & Liqueurs | ✅ aperitif-vs-digestif | ~40,000+/mo, single largest cluster in the whole batch |
-| Non-Alcoholic Wine | ✅ best-non-alcoholic-wine-buying-guide | Maps to the entire 24-SKU NA Wine catalog |
-
-**Phase 2 (future, not yet scheduled):** everything else below — the remaining ~223 gap items across every category, including the categories above (each now has 1 post, not full coverage) and the still-thin whiskey/spirits categories (Irish at 2, Japanese at 2, Rye/Other Whiskey at 1, Vodka at 1, Bar Essentials at 2). Recommended order: work the "Highest-priority build-first shortlist" at the bottom of this doc top-down, then fill out each of the 10 Phase-1 categories with their next 2-3 gap items so they read as a real content hub rather than a single orphan post.
-
-## Maintenance — keep this current
-
-This is a **living document**. Every time a new blog post is built (from this pool or otherwise), update this file in the same commit:
-1. Move the post from its gap bullet (🎯/🏷️) to the category's ✅ live list.
-2. Bump the "Current live count" number at the top.
-3. Refresh the summary-counts table and the build-first shortlist if a shortlisted item just got built.
-4. If a new keyword export surfaces more blog-worthy gaps, add them to the relevant category section rather than starting a separate doc — this stays the single source of truth for "what's been built vs. what's still available."
+**Status: Phase 1 + Phase 2 complete (2026-08-29 – 2026-12-09).** Every 🎯 and 🏷️ gap identified in the original mining pass has been built. **Current live count: 268 blog posts**, verified directly against `src/data/blog.ts` with zero duplicate slugs and a clean `tsc --noEmit`.
 
 ---
 
-## How to read this doc
+## What happened across Phase 1 and Phase 2
 
-- ✅ = live now (slug given)
-- 🎯 = **high-priority gap** — real volume, low-moderate KD, no cannibalization risk, ready to build
-- 🏷️ = brand deep-dive / comparison / review gap
-- 📎 = expand-existing candidate (add a section/FAQ to a live post rather than building new)
-- ⚠️ = data-quality flag worth checking before publishing
+**Phase 1 (2026-08-29, 10 posts):** One flagship pillar post for every category that had live shop pages but zero blog content — Beer, Fine Wine, Champagne & Sparkling, Cider, Non-Alcoholic Beer & Cider, Non-Alcoholic Spirits, Non-Alcoholic Champagne & Sparkling, Non-Alcoholic RTD Cocktails, RTD & Liqueurs, Non-Alcoholic Wine. This closed the single worst gap in the project: categories with real inventory and zero supporting content.
 
----
+**Phase 2 (2026-08-29 – 2026-12-09, 194 posts):** Every remaining 🎯 (high-priority, real-volume) and 🏷️ (brand deep-dive/comparison) gap identified in the original mining pass, built out category by category. Closely related brand-comparison and brand-spotlight clusters were consolidated into single, more substantial posts rather than published as many thin, overlapping pages (e.g. five separate rum-brand spotlights became one "Zacapa, El Dorado, Diplomático..." brand guide) — better for both readers and SEO than a wall of near-duplicate pages, while still covering every topic in the original gap list.
 
-## CORE / SITE-WIDE / CROSS-SPIRIT PILLARS — all already live
-
-✅ types-of-whiskey · ✅ american-whiskey-guide · ✅ whiskey-cocktails · ✅ best-whiskey-for-old-fashioned · ✅ how-is-whiskey-made · ✅ most-expensive-whiskey · ✅ how-to-build-a-home-bar · ✅ best-non-alcoholic-cocktails · ✅ best-whiskey-gifts
-
-📎 **Bourbon vs Whiskey expansion** — the source batch flags an "Is [Brand] a Bourbon?" FAQ mega-cluster (is jack daniels a bourbon 4,400/12, is crown royal bourbon, is jim beam bourbon, is maker's mark bourbon — all real, low-KD) that was planned as an H2 addition to the live `bourbon-vs-whiskey` post. Worth checking whether that addition ever landed — if not, it's a quick high-value expansion, not a new post.
+**Expand-existing items (2 of 3 closed):** Two of the three 📎 "add a section to a live post" items from the original mining pass were completed — the "Is [Brand] a Bourbon?" FAQ cluster was added to `bourbon-vs-whiskey`, and the home bar starter-kit cross-sell + Glencairn/whiskey-stones cross-references were added to `how-to-build-a-home-bar`. The third (reinforcing the already-flagged Whiskey Stones vs. Ice and Glencairn Glass gaps) was superseded once those became full standalone posts in Phase 2.
 
 ---
 
-## TEQUILA & MEZCAL — all 10 planned posts already live
+## Final live count by category
 
-✅ types-of-tequila · ✅ tequila-cocktails · ✅ best-tequila-for-margarita · ✅ best-sipping-tequila · ✅ tequila-vs-mezcal · ✅ what-is-tequila · ✅ celebrity-tequila-brands · ✅ what-is-mezcal · ✅ how-is-tequila-made · ✅ best-tequila
+| Category | Live posts |
+|---|---|
+| Non-Alcoholic Education | 35 |
+| Wine Education | 28 |
+| Bar Essentials Education | 20 |
+| Scotch Education | 19 |
+| Bourbon Education | 19 |
+| Beer Education | 19 |
+| Champagne Education | 19 |
+| Liqueur Education | 17 |
+| Cocktail Guide | 14 |
+| Tequila Education | 12 |
+| Irish Whiskey Education | 10 |
+| Japanese Whisky Education | 9 |
+| Cognac Education | 8 |
+| Rum Education | 7 |
+| Vodka Education | 7 |
+| Cider Education | 7 |
+| Whiskey Education | 6 |
+| Gin Education | 6 |
+| Rye Whiskey Education | 3 |
+| Cask Craft | 1 |
+| Distillery Insights | 1 |
+| Spirits Guide | 1 |
+| **Total** | **268** |
 
-**New gaps found this pass (none built anywhere):**
-- 🏷️ **Don Julio vs Casamigos** (comparison, ~320-590/20-25 range across brand-page FAQ mentions)
-- 🏷️ **Don Julio vs Patrón**, **Clase Azul vs Don Julio**, **Casamigos vs Don Julio** — same comparison cluster
-- 🏷️ **"Is Don Julio 1942 Worth It?"** (720/21) / **"Is Clase Azul Worth It?"** (1,300/21) / **"Is Casamigos Good Tequila?"** (590/18) / **"Is Patrón Worth It?"** (480/20) — a "worth it" review cluster, one post each or combined
-- 🏷️ G4, Komos, Fortaleza, Cincoro, Lobos 1707 brand spotlights (all low-KD: G4 at 8, Komos at 11, Lobos 1707 at 11)
-- 🎯 **Cristalino Tequila Explained** (8,100/22) — real cluster (best cristalino, cristalino vs blanco, is cristalino good), genuinely no post exists
-
----
-
-## BOURBON — 9 of ~14 core topics live
-
-✅ bourbon-vs-whiskey · ✅ what-is-bourbon · ✅ types-of-bourbon · ✅ single-barrel-vs-small-batch · ✅ best-bourbon-whiskey · ✅ new-bourbon-releases-2026 · ✅ weller-vs-pappy-van-winkle · ✅ four-roses-recipe-codes-explained · ✅ elijah-craig-barrel-proof-guide
-
-**New gaps found this pass:**
-- 🎯 **Pappy Van Winkle dedicated post** ("Why Is Pappy Van Winkle So Hard to Find?" or a buying guide) — **18,100/33, the single most visible unresolved gap in the whole bourbon dataset**, flagged independently in two different source batches. You have a comparison post (`weller-vs-pappy-van-winkle`) but nothing dedicated to Pappy itself.
-- 🎯 **How Is Bourbon Made?** (distinct process-angle from the whiskey-wide `how-is-whiskey-made`) — from this session's own Bourbon v2 doc research
-- 🎯 **Bourbon vs Scotch** (distinct from `bourbon-vs-whiskey`'s category-definition angle) — from Bourbon v2
-- 🎯 **What Does Bottled-in-Bond Mean?** (3,600/23) — high inventory relevance given how many stocked BiB products you carry (Evan Williams BiB, Old Fitzgerald BiB, Old Grand Dad Bonded)
-- 🎯 **Wheated vs High-Rye Bourbon** — from Bourbon v2, complements the live `weller-vs-pappy-van-winkle` post
-- 🎯 **Bourbon Nutrition Facts: Calories, Carbs, Gluten & Sugar** — the "is bourbon gluten free" (3,600/11) sub-cluster inside `what-is-bourbon` is large enough to justify its own post; currently only an FAQ subsection
-- 🏷️ **Little Book Bourbon explainer** (2,400/7 — excellent KD, zero content anywhere)
-- 🏷️ Angel's Envy deep-dive (14,800/11 — one of the best Vol/KD ratios in the whole project)
-- 🏷️ **"Blanton's Horse Toppers" story post** (bourbon with horse on top, 2,400/26) — real, distinctive, unbuilt
-
----
-
-## SCOTCH — 13 of ~16 core topics live
-
-✅ scotch-whisky-regions-explained · ✅ what-is-scotch-whisky · ✅ best-scotch-whisky · ✅ islay-vs-speyside-scotch · ✅ single-malt-whiskey-guide · ✅ macallan-12-vs-18-vs-25 · ✅ johnnie-walker-labels-ranked · ✅ glenfiddich-vs-glenlivet · ✅ glendronach-review · ✅ aberlour-abunadh-review · ✅ campbeltown-whisky-guide · ✅ why-is-macallan-so-expensive · ✅ johnnie-walker-blue-label-review
-
-⚠️ **Data-quality flag**: `johnnie-walker-blue-label-review`'s source Vol (49,500) is suspiciously identical to Macallan 12's — worth a quick re-check against raw SEMrush if you ever revise that post.
-
-**New gaps found this pass:**
-- 🎯 **What Does Peated Mean? / Peated Scotch Explained** (2,900/22) — real, distinct from any live post, good internal-link target from Ardbeg/Laphroaig/Lagavulin/Port Charlotte pages — flagged independently in both the master-doc mining and this session's own Scotch v2 research
-- 🎯 **Single Malt vs Blended Scotch** (2,400/18) — same, flagged twice independently
-- 🎯 **Scotch Age Statement / NAS Explained** — from Scotch v2, distinct informational gap
-- 🏷️ **Best Islay Scotch: Ardbeg vs Laphroaig vs Lagavulin** — combines 3 brands (9,900/21, 8,100/21, 8,100/21) into one comparison piece, currently none have blog coverage
-- 🏷️ Bunnahabhain feature (2,400/11 — genuinely low KD, zero content)
-- 🏷️ Most Expensive Johnnie Walker / Johnnie Walker Green Label buying guide (1,000/3 — near-zero competition, currently only an on-page FAQ)
-- 🏷️ Macallan Limited Editions Guide (consolidates Quest/Enigma/Cask Strength/Edition 1 — all KD 2-5, currently scattered LSI with no home)
+Every category that has product pages live on the site now has substantial, genuine blog coverage — no more zero- or single-post categories anywhere in the catalog.
 
 ---
 
-## IRISH — 2 of ~10 core topics live (thinnest category)
+## What's left (Phase 3 — genuinely open, not yet scoped)
 
-✅ what-is-irish-whiskey · ✅ best-irish-whiskey
+The original mining pass's topic pool is now fully built. Future content work is a fresh scoping exercise rather than working through a pre-existing backlog:
 
-**New gaps found this pass** (confirmed: despite "Irish Deep" being a named batch in the source project, it produced zero Irish-specific blog briefs — this is a real, still-open gap, not just something I'm surfacing new):
-- 🎯 **What Is Single Pot Still Whiskey?** (1,300/14, buy-intent variant at KD 5) — Ireland's most distinctive style, flagged independently by both the master-doc mining and this session's own Irish v2 research as the single highest-priority Irish content gap
-- 🎯 **Irish Whiskey vs Scotch** / **Irish Whiskey vs Bourbon** — both real, no dedicated posts
-- 🏷️ **Blue Spot Whiskey Review / Why Is It So Expensive** (1,000/10, highest CPC $1.62 in the entire Irish category)
-- 🏷️ **Spot Whiskey Range Explained (Green vs Yellow vs Blue vs Red)** — consolidates the whole single-pot-still Spot line into one guide
-- 🏷️ **Knappogue Castle Guide/Review** (real cluster down to KD 0 on some terms — near-zero competition)
-- 🏷️ **Tullamore D.E.W. vs Jameson** comparison
-- 🏷️ Jameson, Redbreast, Teeling, Bushmills brand deep-dives (Jameson alone: 27,100/21, highest-volume Irish brand keyword in the whole project)
-- 🏷️ Coole Swan / 2 Gingers explainers
+- **Seasonal refreshes** — several posts (Best Rosé Wines for Summer, Best Fall & Winter Hard Ciders, Holiday & Seasonal Mocktails Guide, Dry January guides) are built as evergreen posts but would benefit from an annual content refresh or a dedicated seasonal push closer to the relevant time of year.
+- **New product-driven gaps** — as new brands and products get stocked (see `docs/products-to-stock.md`), new blog-worthy gaps will naturally emerge that didn't exist in this mining pass — e.g. any of the new-stock-images-batch brands (BuzzBallz, Ballast Point, Grüvi, JOYUS, etc.) could support their own future brand-spotlight posts once there's more editorial reason to feature them individually.
+- **A fresh keyword-mining pass** — this entire calendar was built from research conducted through August 2026; a new SEMrush/keyword-research pass at some point in the future would surface genuinely new gaps rather than re-covering this now-exhausted pool.
+- **Internal linking pass** — with 268 posts now live, a dedicated pass linking related posts to each other (e.g. `is-cabernet-sauvignon-sweet-or-dry` ↔ `cabernet-sauvignon-vs-merlot` ↔ `malbec-vs-cabernet-vs-merlot-vs-pinot-noir`) and to relevant product/brand hub pages would compound the SEO value of the content that now exists, rather than leaving each post as an island.
 
----
+## Maintenance note
 
-## JAPANESE — 2 of ~8 core topics live
-
-✅ best-japanese-whiskey · ✅ japanese-whisky-brands-guide
-
-**New gaps found this pass:**
-- 🎯 **Why Is Japanese Whisky So Expensive?** — from this session's Japanese v2 research, real structural answer available
-- 🎯 **Japanese Whisky vs Scotch** — from Japanese v2
-- 🎯 **Why Is Japanese Whisky Hard to Find? (The Shortage)** — from Japanese v2, strong pillar-post candidate given how much allocated inventory you carry
-- 🎯 **How to Drink Japanese Whisky (Mizuwari & Highball Culture)** — from Japanese v2, ties to Suntory Toki and Nikka Days
-- 🏷️ **"Is Kavalan a Japanese Whisky? (No — Here's What It Actually Is)"** — myth-busting post, directly supports the Kavalan recategorization work already done this session; real search demand exists for exactly this confusion (5,400/14)
-- 🏷️ **"What Defines Japanese Whisky?" — the 2021 regulation explainer** — genuinely differentiated angle, few competitors cover this
-- 🏷️ Nikka, Hibiki, Yamazaki, Togouchi, Mars Shinshu brand deep-dives (Yamazaki: 18,100/24, highest Vol/KD ratio of any Japanese brand keyword found)
-
----
-
-## RYE & OTHER WHISKEY — 1 of ~6 core topics live
-
-✅ best-rye-whiskey (already includes the Manhattan-pairing angle per source)
-
-**New gaps found this pass:**
-- 🎯 **Rye vs Bourbon** — real LSI on the category page, no dedicated post, natural companion to the live `bourbon-vs-whiskey`
-- 🏷️ **Rye Whiskey for Cocktails** roundup — combines Rittenhouse/Sazerac Rye/Pikesville into one Manhattan/Old Fashioned-focused piece
-- 🏷️ Pikesville Rye (1,300/5 — near-zero competition, flagged as top overall priority in its source batch), Rittenhouse (4,400/10), WhistlePig (8,100/14, highest-volume rye brand), Sazerac Rye, New Riff, High West, Sagamore Spirit brand deep-dives
-
----
-
-## RUM — 2 of ~5 core topics live
-
-✅ best-rum-cocktails · ✅ best-aged-rum
-
-*(Note: `what-is-rum-made-from`, `how-to-make-rum-punch`, and `what-is-demerara-rum` were built earlier this session, beyond what the master-doc project originally planned — good extra coverage.)*
-
-**New gaps found this pass:**
-- 🎯 **What Is Dark Rum?** (1,600/18) — real, distinct from the already-built "what is rum made from"
-- 🎯 **Rum vs Whiskey** (2,400/22) — real, no dedicated post
-- 🎯 **Types of Rum Explained** pillar (rhum agricole, single cask, pot still vs column still — 1,900-2,900 vol range) — conspicuously absent given Types of Tequila/Types of Gin both exist
-- 🏷️ Zacapa (4,400/11 ⚡), El Dorado (3,600/11 ⚡), Diplomático, Flor de Caña, Appleton Estate, Mount Gay, Plantation brand deep-dives — none exist despite all 8 rum brands having shop pages
-
----
-
-## GIN — 2 of ~4 core topics live
-
-✅ types-of-gin · ✅ best-gin
-
-*(Note: `what-is-gin-made-from` and `what-is-sloe-gin` were built earlier this session, beyond the master-doc plan.)*
-
-**New gaps found this pass:**
-- 🎯 **Best Gin for Gin & Tonic** (5,400/21) / **Best Gin for Negroni** (3,600/18) / **Best Gin for Martini** (2,400/19) — a real use-case cluster, ~11,400 combined volume, currently only folded as LSI into the general `best-gin` post
-- 🏷️ Monkey 47 (6,600/15 ⚡), Empress 1908 (4,400/11 ⚡ — one of the single lowest-KD brand keywords found in this whole mining pass), Drumshanbo, Roku, Aviation, The Botanist brand spotlights
-
----
-
-## COGNAC — well covered, 5 of ~6 core topics live
-
-✅ cognac-vs-brandy · ✅ what-is-cognac · ✅ what-is-cognac-made-of · ✅ how-is-brandy-made · ✅ brandy-vs-cognac *(last 3 built earlier this session, beyond the master-doc plan — cognac is your most thoroughly covered category)*
-
-**New gaps found this pass:**
-- 🎯 **Cognac Cocktails** (2,900/22) — real, no roundup post exists despite the site having cocktail pillars for whiskey/tequila/rum
-- 🏷️ **VS/VSOP/XO Grade Comparison** dedicated post — likely partially covered as an FAQ inside `what-is-cognac-made-of`, but the volume (1,900/17) may justify its own page
-- 🏷️ Hennessy vs Rémy Martin vs Courvoisier vs Martell house comparison — Hennessy alone (27,100/22) carries more volume than most built posts' primaries
-
----
-
-## VODKA — 1 of ~6 core topics live
-
-✅ best-vodka
-
-**New gaps found this pass** (2 already flagged in this session's own Vodka doc, confirmed again independently by the master-doc mining):
-- 🎯 **What Is Vodka Made From?** (14,800/28) — huge, flagged independently twice now
-- 🎯 **Is Vodka Gluten Free?** (4,400/11)
-- 🎯 **How Is Vodka Made?** (4,400/36)
-- 🎯 **Best Vodka for Martini** (2,900/20) / **Moscow Mule** (2,400/19) / **Bloody Mary** (2,400/18) — ~7,700 combined, currently only LSI on `best-vodka`
-- 🎯 **Types of Vodka** (wheat vs rye vs potato, 1,600-2,400 range each) — gap given Types of Tequila/Gin both exist
-- 🏷️ Crystal Head feature post (5,400/16 ⚡, strong Dan Aykroyd/skull-bottle story)
-
----
-
-## NA SPIRITS — 1 of ~3 topics live
-
-✅ best-non-alcoholic-cocktails
-
-**New gaps found this pass:**
-- 🎯 **What Are Non-Alcoholic Spirits?** — real, and pairs naturally with a **Dry January Guide** seasonal angle (good publish-ahead-of-January timing)
-- 🏷️ Ritual Zero Proof feature (2,900/12 ⚡, flagged as a fastest-win keyword)
-
----
-
-## BAR ESSENTIALS — 2 of ~25 core topics live (biggest unbuilt cluster in the whole project)
-
-✅ how-to-build-a-home-bar · ✅ best-whiskey-gifts
-
-**Gaps found in the general pass — all real, all currently zero-content:**
-- 🎯 **Whiskey Glasses 101 / Glencairn Glass Guide** (8,100/12 ⚡ — highest volume, lowest KD in the entire bar-accessories cluster)
-- 🎯 **Best Whiskey Decanters** (6,600/22, plus a 2,900/19 and 1,600/17 sub-cluster)
-- 🎯 **Whiskey Stones vs Ice — Which Is Better?** (5,400/11 ⚡)
-- 🎯 **How to Choose a Cocktail Shaker** (22,200/22 — on par with your largest built blog primaries, e.g. best-gin/best-vodka at 22,200 each)
-
-**New gaps found from the Bitters/Vermouth/Garnishes CSV pass (`keyword-map-bar-essentials-bitters-vermouth.md`):**
-- 🎯 **What Are Cocktail Bitters, and How Do They Actually Work?** (~12,760 combined across 3 phrasings) — foundational pillar page for the whole Bitters hub
-- 🎯 **Does Vermouth Go Bad? How to Store an Opened Bottle** (~2,910 combined) — genuinely low KD, strong practical quick-win cluster
-- 🎯 **What Makes a Martini "Dirty"? Olive Brine, Explained** (~4,500 combined) — ties directly to the Dirty Sue and Filthy olive/brine product pages
-- 🏷️ **Angostura vs. Peychaud's: What's Actually Different?** (~870 combined) — real, recurring comparison, directly supports both product pages
-- 🏷️ **Sweet vs. Dry Vermouth, Explained** (~640 combined) — foundational for the whole vermouth hub
-- 🏷️ **How Many Dashes of Bitters Should You Actually Use?** (720, KD 20) — practical, low-competition quick win
-- 🏷️ **Cocktail Bitters vs. Digestive/Herbal Bitters — Not the Same Thing** — clarifying post; the raw keyword data shows real customer confusion between the two categories
-- 🏷️ **Best Garnishes for Classic Cocktails** (Old Fashioned, Manhattan, Martini) (~1,460 combined) — cross-links cherries, olives, and citrus-garnish content
-- 🏷️ **Luxardo Cherries vs. Regular Maraschino Cherries: Why the Price Gap?** — directly supports the Luxardo product page
-- 🏷️ **What Is Vermouth de Chambéry, and Why Is Dolin the Only One?** — small volume but a genuinely differentiated, PDO-backed brand story
-
-**New gaps found from the Mixers/Cocktail Mixes/Glassware CSV pass (`keyword-map-bar-essentials-mixers-glassware.md`):**
-- 🎯 **Sweet and Sour Mix 101: What's In It and How to Use It** (~11,500 combined) — single largest informational cluster found in this entire Bar Essentials batch
-- 🎯 **Club Soda vs. Tonic Water vs. Seltzer: What's the Difference?** — no single mega-volume row, but the pattern repeats across three separate brand exports (Canada Dry, Fever-Tree, Topo Chico); ties to five stocked SKUs
-- 🎯 **What's the Difference Between Ginger Beer and Ginger Ale?** (~2,610 combined) — site stocks five ginger beers and zero ginger ales, a real disambiguation opportunity
-- 🏷️ **Moscow Mule vs. Dark 'n' Stormy: What's the Real Difference?** — ties to the ginger-beer lineup and Goslings' legally trademarked Dark 'n' Stormy claim
-- 🏷️ **Is Margarita Mix Just for Margaritas?** (~420 combined) — FAQ demand flagged on both Finest Call and Master of Mixes pages
-- 🏷️ **How to Make a Proper Bloody Mary Bar for Brunch** — ties to the four stocked Bloody Mary mixes (Demitri's, McClure's, Mr & Mrs T, Zing Zang)
-- 📎 **"How to Build a Home Bar Starter Kit"** angle (~9,000+ combined: cocktail shaker set, whiskey decanter set, bar shaker set, cocktail accessories) — expand the already-live `how-to-build-a-home-bar` post with this cross-sell cluster rather than building new
-- 📎 Whiskey Stones vs. Ice — reinforces the already-flagged gap above; same well-established gift-category question, ties to the stocked Whiskey Chilling Stones Gift Set
-- 📎 Why Does Whiskey Taste Different in a Glencairn Glass? — expand the flagged Glencairn Glass Guide gap above with this angle; ties to two stocked Glencairn SKUs
-
-Together these would round out a genuinely complete bar-essentials content cluster alongside the 2 already live.
-
----
-
-## FINE WINE — 1 of ~28 core topics live
-
-✅ is-chardonnay-sweet-or-dry (built 2026-08-29, Phase 1 flagship). Remaining 27 candidates below are sourced from real SEMrush data across the three wine keyword-map docs (`keyword-map-wine-red.md`, `keyword-map-wine-white.md`, `keyword-map-wine-fortified.md`).
-
-**Reds:**
-- 🎯 **How to Pronounce Wine Names** (Cabernet/Malbec/Merlot/Pinot Noir) — ~7,000+/mo combined
-- 🎯 **Is Pinot Noir Sweet or Dry?** — ~7,000+/mo, largest single red informational cluster found
-- 🎯 **Is Merlot Sweet? Merlot 101** — ~5,000+/mo
-- 🎯 **Is Cabernet Sauvignon Sweet or Dry?** — ~6,500+/mo
-- 🏷️ Cabernet Sauvignon vs. Merlot — ~1,900+/mo
-- 🎯 **Malbec 101: What Is It?** — ~2,500+/mo
-- 🎯 **Malbec vs. Cabernet vs. Merlot vs. Pinot Noir Comparison** — ~6,000+/mo, strongest comparison cluster in reds
-- 🎯 **What Is Old Vine Zinfandel?** — 2,900/mo, directly supports 3 stocked SKUs (7 Deadly Zins, Bogle, Cline)
-- 🏷️ Primitivo vs. Zinfandel — ~6,400/mo, under-covered educational angle
-- 🏷️ Red Zinfandel vs. White Zinfandel — real disambiguation need, site stocks red Zin only
-- 🎯 **Budget Red Wine Guide (Under $20)** — ~9,500+/mo, maps to 14 Hands/Apothic/Josh/19 Crimes entry tiers
-- 🏷️ Full-Bodied Red Wines Guide — 2,900/17
-
-**Whites:**
-- 🎯 **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** — ~14,700/mo combined, largest comparison cluster in the whole wine batch
-- 🎯 **What Is Moscato Wine? Sweetness, Styles & Serving** — ~6,800/mo combined
-- 🎯 **Buttery vs. Unoaked Chardonnay** — ~6,900/mo, extremely low KD, quick win; cross-links stocked Rombauer (buttery) vs. Sonoma-Cutrer (unoaked)
-- 🏷️ Riesling Sweetness Explained (Kabinett, Spätlese, dry German styles) — ~2,900/mo, supports both Dr. Loosen SKUs + Chateau Ste. Michelle
-- 🏷️ How to Pronounce Sauvignon Blanc, Pinot Grigio & Riesling — ~5,700/mo, near-zero competition, good AI-Overview/voice-search target
-- 🎯 **Is Pinot Grigio Sweet? What It Actually Tastes Like** — ~9,200/mo, strong enough to stand alone
-
-**Fortified / dessert / organic / rosé:**
-- 🎯 **What Is the Difference Between Port and Sherry?** — direct-match, near-zero competition, ties both hubs together
-- 🎯 **Is Dessert Wine the Same as Sweet Wine?** — 18,100+18,100+18,100 combined vol relative to KD, strong pillar-page candidate
-- 🎯 **What Is Natural Wine? Natural vs. Organic vs. Biodynamic** — 2,900/18, supports every Organic & Natural brand hub
-- 🎯 **Is Rosé Wine Sweet or Dry?** — very strong, low-KD cluster across multiple exact phrasings
-- 🏷️ Ruby vs. Tawny vs. Vintage Port, Explained — supports Graham's and Taylor Fladgate hubs directly
-- 🏷️ What Is Icewine and How Is It Made? — supports Inniskillin/Jackson-Triggs/Peller Estates hub content
-- 🎯 **Best Rosé Wines for Summer** — seasonal, commercial-intent, good May/June refresh cadence
-- 🏷️ Sherry 101: Fino, Amontillado, Oloroso, Cream & PX Explained — underpins every sherry product/brand page
-- 🏷️ What Is Pedro Ximénez Sherry? — supports Alvear, Lustau San Emilio, González Byass Néctar directly
-
----
-
-## CHAMPAGNE & SPARKLING WINE — 1 of ~19 core topics live
-
-✅ does-champagne-go-bad (built 2026-08-29, Phase 1 flagship). Remaining candidates below are sourced from real SEMrush data across three keyword-map docs (`keyword-map-champagne-a-l.md`, `-m-z.md`, `keyword-map-sparkling-wine.md`).
-
-- 🎯 **How to Open Champagne Safely** — ~5,100/mo combined, genuinely useful safety angle (champagne corks cause real eye injuries)
-- 🎯 **Prosecco vs. Champagne: What's Actually Different?** — ~18,700/mo combined, single largest volume opportunity across the whole Champagne & Sparkling batch
-- 🎯 **Is Sparkling Wine the Same as Champagne?** — ~4,500/mo combined, very low KD
-- 🎯 **How Many Glasses Are in a Bottle of Champagne?** — ~3,500/mo combined, near-zero competition, natural party-planning hook
-- 🏷️ How to Pronounce Champagne Brand Names (Moët, Veuve Clicquot, Taittinger, Ruinart, Perrier-Jouët...) — ~5,000+/mo combined scattered across 5 brand exports, currently unserved by any product page
-- 🏷️ Champagne Vintage vs. Non-Vintage, Explained — supports Veuve Clicquot Vintage, Moët Grand Vintage, Krug Vintage
-- 🏷️ What Is Brut Champagne? A Guide to Champagne Sweetness Levels — ties to the Pommery brut-invention story and nearly every "Brut" product name in the batch
-- 🏷️ Blanc de Blancs vs. Blanc de Noirs, Explained — 5 stocked products use "Blanc de Blancs" in the name
-- 🏷️ What Does "Grand Cru" Mean in Champagne? — connects Billecart-Salmon, Henri Giraud, and G.H. Mumm RSRV product copy
-- 🏷️ What Is Dom Pérignon's Plénitude (P1/P2/P3)? — supports the P2 product page directly
-- 🏷️ How to Sabrage a Champagne Bottle (the Sword Trick) — 2,400/20, fun social/video-style content
-- 🎯 **What Is Cava? Spain's Answer to Champagne, Explained** — best available lever for the whole thin Cava subcategory
-- 🏷️ What Is Crémant? Champagne's French Cousin, Region by Region — genuine content gap, supports 4 stocked SKUs (Albert Bichot, Louis Bouillot, both Lucien Albrecht)
-- 🎯 **Why Is Korbel Called "Champagne" If It's From California?** — 12,100+2,900 combined, real regulatory story (2006 US–EU grandfather clause) doubling as wine-labeling education
-- 🎯 **Is Prosecco Sweet? A Guide to Brut, Extra Dry & Dry Styles** — very low KD relative to volume, supports 4+ Prosecco product pages
-- 🏷️ Prosecco Superiore DOCG vs. Prosecco DOC: Does the Label Matter? — differentiates Nino Franco/Santa Margherita from the 5 DOC-level Prosecco SKUs
-- 🎯 **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa, Explained** — ~40,000+/mo combined, largest single raw-volume opportunity in the whole Champagne & Sparkling batch
-- 🏷️ Sparkling Rosé Buying Guide: Dry vs. Sweet, and Where Each Style Comes From — supports all 5 non-Champagne Sparkling Rosé SKUs across 4 countries/styles
-
----
-
-## CIDER — 1 of ~7 core topics live
-
-✅ is-hard-cider-gluten-free (built 2026-08-29, Phase 1 flagship).
-
-- 🏷️ How Much Alcohol Is in Hard Cider? — combined well over 7,000/mo across brand ABV queries
-- 🏷️ Hard Cider vs. Beer: What's the Difference? — real, recurring confusion pattern
-- 🏷️ Hard Cider vs. Sweet (Non-Alcoholic) Apple Cider — real disambiguation need
-- 🏷️ What's the Best Cider Apple? Bittersweet vs. Dessert Apples — ties to Farnum Hill's real story
-- 🎯 **Best Fall & Winter Hard Ciders** — seasonal roundup, ties to Downeast Pumpkin/Winter Blend
-- 🏷️ Hard Cider Brands Guide — broad pillar page, links every brand hub
-
-## NON-ALCOHOLIC BEER & CIDER — 1 of ~10 core topics live
-
-✅ is-non-alcoholic-beer-really-alcohol-free (built 2026-08-29, Phase 1 flagship).
-
-- 🏷️ 0.0% vs. "Non-Alcoholic": What the Label Actually Means — O'Doul's is ~0.4% vs. true 0.0% competitors
-- 🏷️ Is Non-Alcoholic Beer Safe During Pregnancy? — ~3,500+ combined, handle sensitively, cite guidance don't assert
-- 🏷️ How Is Non-Alcoholic Beer Actually Made? — sets up the Athletic Brewing (fermented-from-scratch) distinction
-- 🏷️ Does Non-Alcoholic Beer Break Sobriety? — sensitive recovery-adjacent cluster, handle responsibly
-- 🎯 **Best Non-Alcoholic Beers for Dry January** — 9,900/mo head term
-- 🏷️ Meet Bero: The Celebrity-Backed NA Beer Everyone's Asking About — Tom Holland pop-culture angle
-
-## BEER — 1 of ~24 core topics live (was the largest unbuilt cluster in the whole project)
-
-✅ who-owns-your-favorite-beer (built 2026-08-29, Phase 1 flagship). No generic "beer" category export existed this round, so most of the remaining volume below is scattered across brand-specific pulls rather than one big category cluster.
-
-- 🎯 **Lager vs. Ale: What Actually Makes a Beer a Lager?** — ~3,500+/mo, most-repeated informational pattern in the batch
-- 🎯 **How Many Calories Are Actually in a Guinness?** — ~40,000-50,000/mo raw volume once every phrasing variant is summed, strongest data-backed cluster in the entire Beer batch
-- 🏷️ The Guinness Widget, Explained — ~5,400+/mo
-- 🏷️ Is Guinness a Stout? A Straight Answer — ~4,300+/mo
-- 🏷️ Mexican Lager Guide: Corona, Modelo, Pacifico, Tecate & Dos Equis Compared — ties 5 stocked brands, 10 SKUs
-- 🏷️ Japanese Lager Guide: Asahi, Sapporo & Kirin — ties 3 stocked brands
-- 🏷️ American Light Lager Showdown — Bud Light vs. Coors Light vs. Miller Lite vs. Michelob Ultra
-- 🏷️ What Makes an IPA an IPA? — style-origin explainer anchor piece
-- 🏷️ Hazy IPA vs. West Coast IPA: What's the Difference? — catalog splits cleanly between both styles
-- 🏷️ Double IPA / Imperial IPA Explained — ties to Pliny the Elder, Dogfish Head 90 Minute, Elysian Space Dust
-- 🏷️ Who Invented the Double IPA? The Vinnie Cilurzo / Blind Pig / Russian River Story
-- 🎯 **Craft Beer Independence: Which of Our IPA Brands Are Still Independently Owned?** — genuine trust/education angle given how many stocked brands now sit under AB InBev/Heineken/Kirin
-- 🏷️ What Makes a Beer "Barrel-Aged"? — ties Founders KBS, Goose Island Bourbon County, Firestone Walker Parabola, The Bruery Black Tuesday
-- 🏷️ Trappist Beer 101: What Makes Chimay "Authentic" — real, one of roughly a dozen certified Trappist breweries worldwide
-- 🏷️ Stout vs. Porter: What's Actually the Difference? — evergreen educational anchor
-- 🏷️ Nitro Beer, Explained — ties Guinness widget + Left Hand Milk Stout Nitro's "first craft brewery to bottle nitro" claim
-- 🎯 **Sierra Nevada Pale Ale at 45: How One Beer Started the Craft Revolution**
-- 🏷️ What Is a Belgian Witbier? Allagash, Blue Moon & Shock Top Compared
-- 🏷️ Why Is Miller High Life Called the "Champagne of Beers"?
-
-## NON-ALCOHOLIC SPIRITS — 1 of ~9 core topics live
-
-✅ what-is-a-non-alcoholic-spirit (built 2026-08-29, Phase 1 flagship).
-
-- 🏷️ Do Non-Alcoholic Spirits Taste Like the Real Thing? — consistent PAA-demand signal
-- 🎯 **Best Non-Alcoholic Spirits for Mocktails** — good internal-linking hub for all 4 subcategories
-- 🏷️ Zero Proof, Explained: A Non-Alcoholic Spirits Glossary — low-KD, under-served definitional cluster
-- 🎯 **Dry January / Sober-Curious Starter Guide** — strong seasonal angle
-- 🏷️ Non-Alcoholic Gin vs. Whiskey vs. Tequila: Which to Try First — ~1,790/mo combined
-- 🏷️ Substitute for Bourbon, Gin, or Tequila in Your Favorite Cocktail
-- 🏷️ Non-Alcoholic Mezcal vs. Tequila Alternative: What's the Difference — supports Cut Above Mezcal directly
-
-## NON-ALCOHOLIC CHAMPAGNE & SPARKLING — 1 of ~8 core topics live
-
-✅ is-non-alcoholic-champagne-a-real-thing (built 2026-08-29, Phase 1 flagship).
-
-- 🏷️ How Is the Alcohol Removed From Wine? (Vacuum Distillation vs. Spinning Cone vs. Twice-Fermented) — real, brand-confirmed production methods across Leitz/Giesen/BOLLE/Proxies
-- 🎯 **Best Non-Alcoholic Sparkling Wine for Toasts and Celebrations** — ~1,360/mo combined, maps to nearly every SKU
-- 🏷️ Non-Alcoholic Champagne and Pregnancy: What to Know
-- 🏷️ Sparkling Wine vs. Sparkling Grape Juice vs. Non-Alcoholic Champagne: What's the Difference
-- 🎯 **How to Pick a Non-Alcoholic Wine That Doesn't Taste "Fake"** — 4,400/mo, addresses the #1 consumer objection
-- 🏷️ Kosher and Family-Friendly Sparkling Grape Juice for Every Celebration — Kedem/Welch's/St. Julian real brand stories
-
-## NON-ALCOHOLIC RTD COCKTAILS — 1 of ~11 core topics live
-
-✅ what-is-a-mocktail-complete-guide (built 2026-08-29, Phase 1 flagship).
-
-- 🏷️ Do Non-Alcoholic Cocktails Actually Taste Good? — directly addresses category skepticism
-- 🎯 **Easy Mocktail Recipes to Make at Home** — ~70,000/mo raw volume, keep as lifestyle content cross-selling stocked SKUs
-- 🎯 **What to Order When You're Not Drinking: Best NA Drinks at a Bar** — ~9,000+/mo, low KD, strong quick-win
-- 🏷️ Alcohol Alternatives 101: Zero Proof, Social Tonics & Functional Beverages Explained
-- 🏷️ Sober Curious? A Beginner's Guide to Non-Alcoholic Cocktails — ~4,000+/mo
-- 🎯 **Best Non-Alcoholic Cocktails for a Party** — ~8,300+/mo
-- 🏷️ Holiday & Seasonal Mocktails Guide — spans multiple holidays, evergreen seasonal calendar
-- 🏷️ Is It Safe to Drink Non-Alcoholic Aperitifs While Pregnant? — ties to De Soi's own founding story, write carefully
-
----
-
-## RTD & LIQUEURS — 1 of ~23 core topics live
-
-✅ aperitif-vs-digestif (built 2026-08-29, Phase 1 flagship).
-
-- 🎯 **What Is Triple Sec? Orange Liqueur 101** — ~30,000+/mo
-- 🎯 **What Is Amaro? A Beginner's Guide to Italian Bitter Liqueurs** — ~13,000+/mo, directly supports all 4 Amaro & Digestifs SKUs
-- 🏷️ Cointreau vs. Triple Sec vs. Grand Marnier: Choosing the Right Orange Liqueur — ~5,000+/mo
-- 🏷️ Best Coffee Liqueurs for Espresso Martinis — ~5,000+/mo, maps to all 5 stocked Coffee Liqueur SKUs
-- 🏷️ Kahlúa vs. Baileys: What's the Difference? — ~1,500/mo
-- 🏷️ Is Baileys Irish Cream Gluten-Free? A Straight Answer — real, high-intent FAQ
-- 🏷️ What's Actually in Jägermeister? The 56-Botanical Herbal Liqueur, Explained — ~2,000+/mo
-- 🏷️ What Does Chartreuse Taste Like? Inside the Monks' 130-Herb Secret Recipe — strong storytelling angle, no competitor can legally replicate the recipe
-- 🏷️ Aperol vs. Campari: What's the Difference? — real cultural moment (Aperol Spritz +23% sales 2023, White Lotus cameo)
-- 🎯 **The Best Ready-to-Drink Margaritas, Ranked** — ~12,200/mo, largest coherent product-type cluster in the whole RTD dataset
-- 🏷️ Hard Seltzer vs. Hard Iced Tea vs. RTD Cocktail: What's Actually the Difference? — high internal-linking value across all 44 Craft Cocktails products
-- 🏷️ What Does "On the Rocks" Actually Mean? — ~3,800/mo, doubles as brand/idiom disambiguation
-- 🏷️ Espresso Martini in a Can: Is It Any Good? — ties to Tip Top's Espresso Martini
-- 🏷️ Hard Seltzer Calorie Comparison: White Claw vs. Truly vs. Topo Chico vs. Nütrl
-- 🏷️ Canned Wine 101: Underwood, Babe, Bev & House Wine Compared
-- 🏷️ Hard Iced Tea Showdown: Twisted Tea vs. Surfside vs. Lipton vs. High Noon
-
----
-
-## NON-ALCOHOLIC WINE — 1 of ~9 core topics live
-
-✅ best-non-alcoholic-wine-buying-guide (built 2026-08-29, Phase 1 flagship).
-
-- 🎯 **Is Non-Alcoholic Wine Safe During Pregnancy?** — ~2,300+/mo, largest informational cluster in this batch
-- 🎯 **Does Non-Alcoholic Wine Actually Taste Like Real Wine?** — ~3,400+/mo, addresses the #1 category objection head-on
-- 🏷️ How Is the Alcohol Actually Removed From Wine? (Reverse Osmosis vs. Spinning Cone vs. Vacuum Distillation) — ~1,120+/mo, ties to real, brand-confirmed methods (Ariel=RO, FRE/Giesen/Lautus=spinning cone, Leitz=vacuum distillation)
-- 🏷️ How Is Non-Alcoholic Wine Made? — ~1,090/mo, companion piece to the above
-- 🏷️ Does Non-Alcoholic Wine Have Any Alcohol? The 0.5% Rule Explained — ~520/mo
-- 🏷️ Is Non-Alcoholic Wine Good (or Bad) for You? — ~470/mo, handle with careful, non-medical-advice framing
-- 🏷️ Non-Alcoholic Wine 101: What "Zero Proof," "Alcohol-Removed," and "Dealcoholized" Actually Mean — maps directly onto the site's own product badges
-- 🏷️ Dry January and Non-Alcoholic Wine: A Buyer's Guide — seasonal angle, also ties to real Spanish-language demand ("vino sin alcohol")
-
----
-
-## Summary counts
-
-| Category | Live | New gaps identified |
-|---|---|---|
-| Core/site-wide | 9 | 1 (expand-existing) |
-| Tequila & Mezcal | 10 | 8 |
-| Bourbon | 9 | 9 |
-| Scotch | 13 | 7 |
-| Irish | 2 | 9 |
-| Japanese | 2 | 7 |
-| Rye/Other Whiskey | 1 | 8 |
-| Rum | 2 (+3 already extra) | 4 |
-| Gin | 2 (+2 already extra) | 4 |
-| Cognac | 5 | 3 |
-| Vodka | 1 | 6 |
-| NA Spirits | 1 | 2 |
-| Bar Essentials | 2 | 23 |
-| Fine Wine | 1 | 27 |
-| Champagne & Sparkling Wine | 1 | 18 |
-| Cider | 1 | 6 |
-| Non-Alcoholic Beer & Cider | 1 | 9 |
-| Beer | 1 | 23 |
-| Non-Alcoholic Spirits | 1 | 8 |
-| Non-Alcoholic Champagne & Sparkling | 1 | 7 |
-| Non-Alcoholic RTD Cocktails | 1 | 10 |
-| RTD & Liqueurs | 1 | 16 |
-| Non-Alcoholic Wine | 1 | 8 |
-| **Total** | **74 live** | **~223 gaps identified** (mix of 🎯 real-volume standalone posts and 🏷️ brand deep-dives/comparisons) |
-
-*10 posts built 2026-08-29 (Phase 1) — one flagship pillar per zero-coverage category. Every category on the site now has at least one blog post.*
-
-## Highest-priority build-first shortlist (real volume, low-moderate KD, zero cannibalization, sourced from at least one real export)
-
-1. **Pappy Van Winkle dedicated post** (18,100/33) — most-flagged unresolved gap in the whole mining pass
-2. **What Is Vodka Made From?** (14,800/28)
-3. **How to Choose a Cocktail Shaker** (22,200/22) — matches your biggest built posts' volume, zero content
-4. **Best Gin for G&T / Negroni / Martini** (~11,400 combined)
-5. **Whiskey Glasses 101 / Glencairn Guide** (8,100/12 — best KD in the bar-accessories set)
-6. **What Is Single Pot Still Whiskey?** (1,300/14, buy-variant at KD 5) — closes Irish's thinnest-coverage gap
-7. **Cristalino Tequila Explained** (8,100/22)
-8. **Why Is Japanese Whisky Hard to Find?** — strong pillar given your allocated Japanese inventory
-9. **What Does Bottled-in-Bond Mean?** (3,600/23) — high inventory relevance
-10. **Best Vodka for Martini/Mule/Bloody Mary** (~7,700 combined)
-11. **Pinot Grigio vs. Pinot Gris vs. Sauvignon Blanc vs. Chardonnay** (~14,700 combined) — largest comparison cluster in the whole wine batch, zero content in a brand-new category
-12. **How to Choose a Cocktail Shaker** tier win for wine: **Is Dessert Wine the Same as Sweet Wine?** (~54,300 combined across 3 exact phrasings) — huge volume relative to KD
-13. ~~Is Chardonnay Sweet or Dry?~~ ✅ **BUILT 2026-08-29** as `is-chardonnay-sweet-or-dry`
-14. **Prosecco Cocktails: Aperol Spritz, Bellini & Mimosa** (~40,000+ combined) — largest single raw-volume opportunity in the entire Champagne & Sparkling batch
-15. **Prosecco vs. Champagne: What's Actually Different?** (~18,700 combined) — largest Champagne-category comparison cluster
-16. ~~Does Champagne Go Bad?~~ ✅ **BUILT 2026-08-29** as `does-champagne-go-bad`
-17. **How Many Calories Are Actually in a Guinness?** (~40,000-50,000 combined) — strongest data-backed cluster in the entire Beer batch
-18. ~~What Is a Mocktail? A Complete Guide~~ ✅ **BUILT 2026-08-29** as `what-is-a-mocktail-complete-guide`
-19. ~~Who Really Owns Your Favorite Beer?~~ ✅ **BUILT 2026-08-29** as `who-owns-your-favorite-beer`
-20. **Easy Mocktail Recipes to Make at Home** (~70,000 combined) — largest raw-volume number in this entire project; keep as lifestyle content cross-selling stocked SKUs rather than a product-page target
-21. ~~Aperitif vs. Digestif~~ ✅ **BUILT 2026-08-29** as `aperitif-vs-digestif`
-22. **What Is Triple Sec? Orange Liqueur 101** (~30,000+ combined)
-23. **The Best Ready-to-Drink Margaritas, Ranked** (~12,200 combined) — largest coherent product-type cluster in the RTD dataset
-24. ~~Best Non-Alcoholic Wine for Every Occasion~~ ✅ **BUILT 2026-08-29** as `best-non-alcoholic-wine-buying-guide`
-25. **Is Non-Alcoholic Wine Safe During Pregnancy?** (~2,300+ combined) — largest cluster in the NA Wine batch
-26. **Sweet and Sour Mix 101: What's In It and How to Use It** (~11,500 combined) — single largest informational cluster found in the entire Bar Essentials batch
-27. **What Are Cocktail Bitters, and How Do They Actually Work?** (~12,760 combined) — foundational pillar page for the whole Bitters hub, zero content today
-
-Everything else in this doc is fair game whenever you want to keep building — this is meant as a standing pool, not a one-time list.
+This document's original per-category gap-tracking structure (built topic by topic against real Vol/KD data) has been superseded now that the pool is exhausted — that granular history remains in git history (`git log -- docs/blog-content-calendar.md`) if a future session needs to trace back which specific keyword data justified a given post's build priority. Going forward, log new gaps and new builds against the shorter "Phase 3" list above rather than reviving the old per-bullet format.

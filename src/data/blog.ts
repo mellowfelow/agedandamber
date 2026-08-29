@@ -842,6 +842,10 @@ Knowing bourbon's specific rules tells you exactly what you're getting: a corn-f
     faqs: [
       { question: "Is all bourbon whiskey?", answer: "Yes — bourbon is a specific, legally defined style of whiskey. Every bourbon is a whiskey, but not every whiskey qualifies as bourbon, since bourbon has additional requirements around grain content, barrel type, and where it can be made." },
       { question: "What is the minimum corn content for bourbon?", answer: "Bourbon must be distilled from a grain mash containing at least 51% corn, along with other grains like rye, wheat, or malted barley making up the remainder." },
+      { question: "Is Jack Daniel's a bourbon?", answer: "No, technically — Jack Daniel's meets every legal requirement for bourbon, but the brand specifically markets itself as \"Tennessee whiskey\" rather than bourbon, since it also goes through the Lincoln County Process (charcoal mellowing through sugar maple charcoal before barreling), a step bourbon doesn't require." },
+      { question: "Is Crown Royal a bourbon?", answer: "No — Crown Royal is a Canadian whisky, made in Canada under Canadian whisky rules, which have no corn-percentage or new-charred-oak requirement the way bourbon does. It's whiskey, but not bourbon." },
+      { question: "Is Jim Beam a bourbon?", answer: "Yes — Jim Beam is a straight bourbon, meeting all the legal requirements: at least 51% corn mash, distilled and aged in the US, entered into new charred oak barrels, with no added coloring or flavoring." },
+      { question: "Is Maker's Mark a bourbon?", answer: "Yes — Maker's Mark is a wheated bourbon, using wheat instead of rye as its secondary grain alongside the required corn majority, giving it a softer, rounder profile than a standard rye-forward bourbon." },
     ],
   },
   {
@@ -2498,6 +2502,18 @@ That five-bottle base alone unlocks the overwhelming majority of classic cocktai
 - **Coupe or Nick and Nora glasses** — for shaken or stirred drinks served "up," like a Daiquiri or Manhattan.
 - **Highball glasses** — for G&Ts, Palomas, and other tall mixed drinks.
 
+## Consider a Starter Kit for the Gifting-Friendly Version
+
+If you're setting up a home bar as a gift, or just want the tool and glassware side handled in one purchase rather than sourcing each piece separately, a proper cocktail shaker set, whiskey decanter set, or bar tool set bundles the shaker, jigger, strainer, and bar spoon together — genuinely convenient for getting the essentials in one box rather than assembling them piece by piece, even though building your own selection over time (as outlined above) usually gets you better individual tool quality for the same total spend.
+
+## Whiskey Stones vs. Ice for This Setup
+
+Once your core spirits are in place, a set of reusable whiskey chilling stones is a popular, low-cost addition specifically for anyone who wants a bourbon or rye chilled without dilution — a genuinely different trade-off than the large-format ice cubes recommended above, worth having both options on hand depending on whether you want zero dilution (stones) or a slower, gentler opening-up of the whiskey's aroma over time (ice).
+
+## Why a Proper Glass Actually Changes the Drink
+
+It's worth calling out specifically: the glassware section above isn't just about matching a drink to convention — a Glencairn-style nosing glass genuinely concentrates a whiskey's aroma more than a wide rocks glass does, which is why it's worth adding to your setup even though it's not one of the core "must-have" categories listed first. If you find yourself sipping whiskey neat more often than mixing it into cocktails, a couple of Glencairn glasses are a worthwhile early upgrade alongside the standard rocks and coupe glasses.
+
 ## Building Out From There
 
 Once the core five spirits and essential tools are covered, expand based on what you actually enjoy drinking — a good mezcal if you loved exploring tequila, an aged rum if the Mai Tai became a favourite, a rye whiskey once you understand how it differs from bourbon in a Manhattan. A focused, well-chosen core setup will teach you more about what to add next than buying broadly and randomly ever will.
@@ -2512,6 +2528,7 @@ Once the core five spirits and essential tools are covered, expand based on what
     faqs: [
       { question: "What are the five essential spirits for a home bar?", answer: "A solid bourbon or rye, a 100% agave Blanco tequila, a London Dry gin, a white rum, and a vodka — together, these five spirits cover the large majority of classic cocktail recipes." },
       { question: "Do I really need fresh citrus juice for cocktails?", answer: "Yes — bottled citrus juice is a genuine downgrade in nearly every classic cocktail recipe. Fresh lemon and lime juice makes a meaningfully noticeable difference and is worth the small extra effort." },
+      { question: "Is a pre-made bar tool set worth buying instead of individual pieces?", answer: "A cocktail shaker set or bar tool set is a genuinely convenient way to get the shaker, jigger, strainer, and bar spoon in one purchase — a good option for gifting or a fast setup, even though sourcing each piece individually over time often gets you better quality per tool for the same total spend." },
     ],
   },
   {
@@ -6879,6 +6896,142 @@ Treat non-alcoholic wine shopping the same way you'd treat regular wine shopping
     faqs: [
       { question: "Who makes Twisted Tea?", answer: "Boston Beer Company, the same publicly traded company behind Samuel Adams, launched Twisted Tea in 2001. It remains the best-selling hard iced tea brand in the US." },
       { question: "Is High Noon a true hard iced tea like Twisted Tea?", answer: "Not exactly — High Noon is built on real vodka rather than a malt base, making its tea-flavored offerings technically closer to an RTD cocktail than a traditional malt-based hard iced tea like Twisted Tea." },
+    ],
+  },
+  {
+    slug: "is-non-alcoholic-wine-safe-during-pregnancy",
+    title: "Is Non-Alcoholic Wine Safe During Pregnancy?",
+    excerpt: "The same nuance that applies to non-alcoholic Champagne applies here — \"non-alcoholic\" wine still typically contains a small trace of real alcohol.",
+    content: "This question deserves the same careful, honest treatment as the equivalent question for non-alcoholic beer and Champagne — the answer depends on understanding what's actually in the specific bottle.\n\n## Non-Alcoholic Wine Usually Contains Trace Alcohol\n\nMost non-alcoholic wine is real wine that underwent fermentation and then had its alcohol removed via vacuum distillation, spinning cone technology, or reverse osmosis — these processes typically leave a small residual amount, generally under 0.5% ABV, rather than achieving completely zero alcohol.\n\n## What Medical Guidance Generally Says\n\nMajor health organizations, including the CDC, generally recommend that pregnant people avoid alcohol entirely during pregnancy, since no safe level of alcohol consumption has been established — this is why the trace alcohol in dealcoholized wine is a genuinely relevant consideration, not just a technicality.\n\n## Checking Specific Products\n\nIf you want certainty about alcohol content, check the specific ABV listed on the non-alcoholic wine's label rather than assuming \"non-alcoholic\" means zero — some brands may list their exact residual ABV, which can vary somewhat by product and dealcoholization method used.\n\n## This Is Not Medical Advice\n\nThis article provides general information about labeling standards, not medical guidance — every pregnancy and individual health situation is different, and any decision about consuming a product with even trace alcohol content should be made in direct conversation with your own doctor or healthcare provider.\n\n## Alternatives With No Fermentation Involved\n\nIf you want a wine-adjacent drink with zero alcohol from the start rather than a dealcoholized product, sparkling or still grape juice (which was never fermented) sidesteps the trace-alcohol question entirely, unlike products that started as real wine and had alcohol removed afterward.\n\n## The Practical Takeaway\n\nIf avoiding all alcohol during pregnancy is your goal, read actual ABV labels on non-alcoholic wine carefully rather than assuming the category name guarantees zero alcohol, and discuss any specific product or situation directly with your healthcare provider.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 5, 2026",
+    isoDate: "2026-12-05",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","Pregnancy","NA Wine"],
+    faqs: [
+      { question: "Does non-alcoholic wine contain any alcohol?", answer: "Usually a small trace amount, generally under 0.5% ABV — most non-alcoholic wine is real wine that had alcohol removed via vacuum distillation, spinning cone technology, or reverse osmosis, rather than achieving completely zero alcohol." },
+      { question: "What is a completely alcohol-free alternative to non-alcoholic wine?", answer: "Sparkling or still grape juice, which was never fermented at all, sidesteps the trace-alcohol question entirely, unlike dealcoholized wine that started as real fermented wine. Always consult your doctor regarding your specific pregnancy." },
+    ],
+  },
+  {
+    slug: "does-non-alcoholic-wine-taste-like-real-wine",
+    title: "Does Non-Alcoholic Wine Actually Taste Like Real Wine?",
+    excerpt: "The category's biggest objection deserves an honest, specific answer rather than a blanket yes or no.",
+    content: "This is the single biggest question hanging over the non-alcoholic wine category, and the honest answer is genuinely more nuanced than a simple yes or no.\n\n## The Honest Starting Point\n\nBecause most non-alcoholic wine starts as real, fully fermented wine that then has its alcohol removed, the base is genuinely authentic — unlike some non-alcoholic spirit alternatives that are built from scratch without ever being a \"real\" version of the traditional product first.\n\n## Where the Gap Shows Up\n\nAlcohol itself carries real mouthfeel, body, and warming sensation that dealcoholization inevitably reduces to some degree, even with the best modern techniques — meaning even a well-made non-alcoholic wine will generally feel somewhat lighter-bodied and less warming than its full-strength counterpart.\n\n## Which Styles Get Closest\n\nLighter, more aromatic wine styles (rosé, some crisp whites) tend to dealcoholize more convincingly than full-bodied, tannic reds, since red wine's structure and body are genuinely harder to preserve through the alcohol-removal process than a lighter wine's more straightforward fruit-and-acid profile.\n\n## Production Method Matters Enormously\n\nAs covered in understanding dealcoholization methods, more modern techniques like spinning cone technology, which capture and reintroduce delicate aromatics separately, generally produce noticeably better, more wine-like results than older, cruder heat-based distillation methods.\n\n## Setting Realistic Expectations\n\nApproaching non-alcoholic wine expecting an identical replica of full-strength wine will likely lead to disappointment. Approaching it as \"wine that's had something removed, with real but somewhat reduced character\" tends to produce a much fairer, more positive assessment — genuinely good, just not identical.\n\n## The Honest Verdict\n\nBetter modern non-alcoholic wine, especially in lighter styles like rosé, does taste genuinely wine-like — recognizably built from real fermented grapes with real character. It's not an exact match for full-strength wine, but dismissing the entire category as tasting nothing like real wine isn't accurate either, particularly for the best modern examples.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 6, 2026",
+    isoDate: "2026-12-06",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Wine Education"],
+    faqs: [
+      { question: "Why doesn't non-alcoholic wine taste exactly like real wine?", answer: "Alcohol itself carries real mouthfeel, body, and warming sensation that dealcoholization inevitably reduces to some degree, even with the best modern techniques, meaning non-alcoholic wine generally feels somewhat lighter-bodied." },
+      { question: "Which non-alcoholic wine style tastes most convincing?", answer: "Lighter, more aromatic styles like rosé and crisp whites tend to dealcoholize more convincingly than full-bodied, tannic reds, since their structure is easier to preserve through the alcohol-removal process." },
+    ],
+  },
+  {
+    slug: "how-is-alcohol-removed-from-wine-na-wine",
+    title: "How Is the Alcohol Actually Removed From Wine?",
+    excerpt: "A closer look at the three main dealcoholization methods used specifically in the NA Wine category, and which real brands use each.",
+    content: "Understanding the specific dealcoholization method behind a non-alcoholic wine brand helps explain differences in quality and character between products that might otherwise seem similar on the shelf.\n\n## Reverse Osmosis\n\nThis method passes wine through a specialized membrane that filters out water and alcohol together, separate from the wine's other flavor components, then removes the alcohol from that separated portion before recombining the remainder with the original wine base — Ariel is a brand generally associated with this specific method.\n\n## Spinning Cone Technology\n\nA more sophisticated multi-stage process using rotating cones inside a vacuum chamber, spinning cone technology separates out alcohol and delicate aromatic compounds in stages, allowing the aromatics to be captured separately and reintroduced afterward — FRE, Giesen, and Lautus are among the brands generally associated with this technique, often cited for helping preserve more genuine wine character.\n\n## Vacuum Distillation\n\nBy lowering atmospheric pressure inside a sealed chamber, this method lowers the temperature at which alcohol evaporates, allowing removal at a lower, more flavor-preserving temperature than standard distillation would require — Leitz is a brand generally associated with this specific approach.\n\n## Why Brand-Specific Method Matters\n\nBecause each method involves genuine trade-offs between thoroughly removing alcohol and preserving the wine's original aromatic and flavor complexity, knowing which method a specific brand uses (and how well-executed their particular process is) can help you predict roughly what quality and character level to expect before purchasing.\n\n## No Single Method Is Universally Best\n\nSkilled execution matters as much as the specific technique chosen — a well-executed reverse osmosis process can outperform a poorly executed spinning cone process, and vice versa, meaning brand reputation and specific product reviews remain more useful than method alone for predicting quality.\n\n## Why This Matters for Shopping\n\nIf you've tried non-alcoholic wine before and found it lacking, trying a different brand using a different dealcoholization method (rather than assuming the entire category performs identically) is a reasonable next step, since real production differences do exist between brands and techniques.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 6, 2026",
+    isoDate: "2026-12-06",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Dealcoholization"],
+    faqs: [
+      { question: "What dealcoholization method does Ariel use?", answer: "Ariel is generally associated with reverse osmosis, a method that filters wine through a specialized membrane to separate out water and alcohol before removing the alcohol and recombining the remainder with the original wine." },
+      { question: "Which non-alcoholic wine brands use spinning cone technology?", answer: "FRE, Giesen, and Lautus are among the brands generally associated with spinning cone technology, a multi-stage process often cited for helping preserve more genuine wine aromatic character." },
+    ],
+  },
+  {
+    slug: "how-is-non-alcoholic-wine-made",
+    title: "How Is Non-Alcoholic Wine Made?",
+    excerpt: "From grape to bottle, here's the full production journey non-alcoholic wine follows, including the crucial dealcoholization step full-strength wine skips.",
+    content: "Understanding non-alcoholic wine's complete production process, start to finish, clarifies why it's a genuinely more involved product than simply \"wine with something taken out.\"\n\n## Step 1: Standard Winemaking\n\nNon-alcoholic wine begins exactly like regular wine: grapes are harvested, crushed, and fermented normally, producing a genuine, fully alcoholic wine as the starting point — this initial stage is identical to standard winemaking in every respect.\n\n## Step 2: Full Fermentation Completion\n\nProducers typically let fermentation complete fully, producing a real wine at standard alcohol strength (11-14% ABV), before moving to the dealcoholization stage — the wine genuinely exists in its full-strength form at this point, even though it will eventually have most of that alcohol removed.\n\n## Step 3: Dealcoholization\n\nUsing one of several methods (vacuum distillation, spinning cone technology, or reverse osmosis), the alcohol is removed from the finished wine, typically bringing it down to under 0.5% ABV — this is the step that most distinguishes non-alcoholic wine production from standard winemaking.\n\n## Step 4: Flavor and Aromatic Adjustment\n\nBecause dealcoholization can strip out some flavor and aromatic compounds alongside the alcohol, many producers reintroduce captured aromatics (particularly with spinning cone technology, which separates and preserves them specifically for this purpose) or make other adjustments to help restore character lost during processing.\n\n## Step 5: Final Blending and Bottling\n\nThe dealcoholized wine may undergo final blending adjustments to balance sweetness, acidity, and any reintroduced aromatics before being bottled and packaged, similar to the final blending stage in standard winemaking.\n\n## Why This Process Is More Complex Than It Might Seem\n\nNon-alcoholic wine production genuinely requires all the skill and care of standard winemaking, plus an entirely additional technical stage (dealcoholization) that full-strength wine skips entirely — a more involved, technically demanding process than simply \"wine minus alcohol\" might suggest.\n\n## What This Means for Quality Expectations\n\nGiven the genuine complexity involved, quality non-alcoholic wine reflects real technical investment and skill, not a corner-cutting shortcut — which is part of why well-made examples, despite the inherent challenges, can genuinely deliver an enjoyable, wine-like experience.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 7, 2026",
+    isoDate: "2026-12-07",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Production"],
+    faqs: [
+      { question: "Does non-alcoholic wine start as a real, fully fermented wine?", answer: "Yes — production begins exactly like standard winemaking, with grapes fermented normally into a real, full-strength wine, before the alcohol is removed afterward through dealcoholization." },
+      { question: "Why do producers reintroduce aromatics after dealcoholization?", answer: "Because the alcohol-removal process can strip out some flavor and aromatic compounds alongside the alcohol, many producers — particularly those using spinning cone technology — capture and reintroduce those aromatics to help restore character lost during processing." },
+    ],
+  },
+  {
+    slug: "does-non-alcoholic-wine-have-any-alcohol-05-rule",
+    title: "Does Non-Alcoholic Wine Have Any Alcohol? The 0.5% Rule Explained",
+    excerpt: "Understanding the specific regulatory threshold behind \"non-alcoholic\" wine labeling clarifies exactly what you're drinking.",
+    content: "The 0.5% ABV threshold is one of the most important, if under-explained, numbers in the entire non-alcoholic beverage category — here's what it actually means for wine specifically.\n\n## The Regulatory Threshold\n\nIn most jurisdictions, including the US, a wine can be labeled \"non-alcoholic\" or \"alcohol-removed\" while containing up to 0.5% ABV — a real, legally permitted trace amount rather than requiring absolute zero alcohol content.\n\n## Why This Threshold Exists\n\nThe 0.5% cutoff reflects a practical regulatory standard rather than a specific safety claim — trace amounts of alcohol occur naturally in various fermented foods as well, and 0.5% was established as a workable line for products intended to be consumed as genuinely alcohol-free alternatives to standard wine.\n\n## Why Non-Alcoholic Wine Rarely Hits Exactly Zero\n\nBecause most non-alcoholic wine starts as a real, fully fermented wine that then has alcohol removed, achieving perfectly zero alcohol is technically challenging — a small residual amount, typically well under the 0.5% legal maximum, usually remains even after thorough dealcoholization.\n\n## Comparing to Naturally Occurring Trace Alcohol\n\nFor context, some completely non-alcoholic foods and beverages (certain fruit juices, for instance) can contain small trace amounts of alcohol from natural fermentation processes occurring even without deliberate winemaking — meaning the 0.5% threshold for \"non-alcoholic\" products isn't wildly different from trace levels that occur incidentally elsewhere.\n\n## When This Trace Amount Matters\n\nFor most casual drinkers, 0.5% ABV is genuinely negligible. For specific groups — people in recovery, pregnant people avoiding alcohol entirely, people subject to strict zero-tolerance testing — this trace amount is worth knowing about specifically, since it represents real (if very small) alcohol content, not zero.\n\n## How to Verify Exact Content\n\nIf you need certainty beyond the general 0.5% legal threshold, check whether the specific brand publishes its exact tested ABV rather than relying purely on the \"non-alcoholic\" label claim, since actual content can vary somewhat by product and production method.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 7, 2026",
+    isoDate: "2026-12-07",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Regulation"],
+    faqs: [
+      { question: "What is the legal ABV limit for \"non-alcoholic\" wine?", answer: "Up to 0.5% ABV in most jurisdictions, including the US — a real, legally permitted trace amount rather than requiring absolute zero alcohol content." },
+      { question: "Why does non-alcoholic wine rarely have exactly zero alcohol?", answer: "Because it starts as a real, fully fermented wine that then has alcohol removed, achieving perfectly zero alcohol is technically challenging — a small residual amount, typically well under the legal maximum, usually remains." },
+    ],
+  },
+  {
+    slug: "is-non-alcoholic-wine-good-or-bad-for-you",
+    title: "Is Non-Alcoholic Wine Good (or Bad) for You?",
+    excerpt: "A careful, non-medical look at what non-alcoholic wine actually contains, without overstating health claims in either direction.",
+    content: "This question deserves a genuinely careful answer, avoiding both dismissive skepticism and overstated health marketing claims that sometimes surround the category.\n\n## What Non-Alcoholic Wine Actually Removes\n\nThe primary health-relevant change from standard wine is the significant reduction in alcohol content — since alcohol itself carries well-documented health considerations at essentially any consumption level, removing most of it is the main relevant difference worth discussing honestly.\n\n## What Non-Alcoholic Wine Doesn't Change\n\nCalories and sugar content in non-alcoholic wine can actually be comparable to, or in some cases higher than, standard wine, since removing alcohol (itself a significant calorie source) doesn't automatically make the remaining product low-calorie — worth checking nutrition labels rather than assuming \"non-alcoholic\" automatically means \"healthier\" in every dimension.\n\n## Antioxidants and Other Wine Compounds\n\nSome marketing around non-alcoholic wine emphasizes retained antioxidants (like resveratrol) from the grape itself, since these compounds aren't dependent on alcohol content — however, the health significance of these compounds at typical wine-drinking quantities remains a genuinely debated topic in nutrition science generally, not something specific to non-alcoholic wine.\n\n## Avoid Overstating Either Direction\n\nIt would be inaccurate to claim non-alcoholic wine is either a \"health food\" with major benefits, or that it offers no meaningful difference from standard wine — the honest, moderate position is that removing most alcohol content is a real, relevant change for anyone specifically trying to reduce alcohol consumption, without non-alcoholic wine being inherently a broader health tonic.\n\n## This Article Is Not Medical Advice\n\nSpecific questions about diet, health conditions, and appropriate consumption should be directed to your own doctor or a registered dietitian — this article provides general information, not personalized medical or nutritional guidance.\n\n## The Balanced Takeaway\n\nIf your specific goal is reducing alcohol intake, non-alcoholic wine is a genuinely relevant tool for that specific purpose. If you're expecting broader health benefits beyond the alcohol reduction itself, check actual nutrition labels rather than assuming marketing claims, and discuss any specific health goals with a qualified professional.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 8, 2026",
+    isoDate: "2026-12-08",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Health"],
+    faqs: [
+      { question: "Does non-alcoholic wine have fewer calories than regular wine?", answer: "Not necessarily — calories and sugar content can be comparable to, or in some cases higher than, standard wine, since removing alcohol (itself a significant calorie source) doesn't automatically make the remaining product low-calorie. Check nutrition labels directly." },
+      { question: "Is non-alcoholic wine healthier than regular wine?", answer: "The main relevant health difference is the significant reduction in alcohol content, which matters specifically if reducing alcohol intake is your goal — beyond that, avoid assuming broader health benefits without checking nutrition facts, and consult a healthcare professional for personalized guidance." },
+    ],
+  },
+  {
+    slug: "non-alcoholic-wine-101-terminology",
+    title: "Non-Alcoholic Wine 101: What \"Zero Proof,\" \"Alcohol-Removed,\" and \"Dealcoholized\" Actually Mean",
+    excerpt: "The NA wine category uses several overlapping terms on product badges and labels. Here's a clear guide to what each one signals.",
+    content: "Non-alcoholic wine labeling uses several terms that sound similar but carry slightly different implications — understanding them helps you read product badges and labels with more confidence.\n\n## Alcohol-Removed\n\nThis term specifically indicates the wine started as a real, fully fermented wine and then had its alcohol removed afterward through one of the standard dealcoholization methods — a genuinely accurate, specific description of the actual production process.\n\n## Dealcoholized\n\nFunctionally synonymous with \"alcohol-removed,\" this is simply an alternative, slightly more technical-sounding term for the same core process — some brands prefer one term over the other for marketing tone reasons, but they describe the same production reality.\n\n## Zero Proof\n\nMore commonly used for spirits than wine, \"zero proof\" specifically claims 0.0% ABV — genuinely no detectable alcohol at all, a stronger claim than the general \"non-alcoholic\" category standard (which allows up to 0.5% ABV) typically implies.\n\n## Non-Alcoholic\n\nThe broadest, least specific term, generally implying under 0.5% ABV without necessarily specifying the exact production method or guaranteeing genuinely zero alcohol content.\n\n## Why These Distinctions Matter\n\nIf genuinely zero alcohol content matters to your specific situation, look specifically for \"zero proof\" or an explicitly stated 0.0% ABV rather than relying on \"non-alcoholic,\" \"alcohol-removed,\" or \"dealcoholized\" alone, since these terms generally allow for the standard sub-0.5% trace amount rather than guaranteeing true zero.\n\n## How Brands Use These Terms Inconsistently\n\nBecause there's no single universally enforced standard requiring brands to use these terms with perfect consistency, it's worth checking a specific product's actual stated ABV directly rather than assuming any particular term guarantees an exact alcohol content — reading the fine print remains more reliable than the marketing language alone.\n\n## The Bottom Line\n\n\"Alcohol-removed\" and \"dealcoholized\" both indicate real wine that had alcohol taken out afterward (typically retaining a small trace amount), while \"zero proof\" makes the stronger claim of genuinely no detectable alcohol — knowing this distinction helps you shop more precisely based on your own specific needs.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 8, 2026",
+    isoDate: "2026-12-08",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Non-Alcoholic","NA Wine","Glossary"],
+    faqs: [
+      { question: "What is the difference between \"alcohol-removed\" and \"zero proof\"?", answer: "\"Alcohol-removed\" indicates real wine that had alcohol taken out afterward, typically retaining a small trace amount under 0.5% ABV. \"Zero proof\" makes the stronger claim of genuinely no detectable alcohol at all." },
+      { question: "Is \"dealcoholized\" the same as \"alcohol-removed\"?", answer: "Yes — the two terms are functionally synonymous, describing the same core production process of removing alcohol from a real, fully fermented wine, with some brands simply preferring one term over the other for marketing tone." },
+    ],
+  },
+  {
+    slug: "dry-january-non-alcoholic-wine-buyers-guide",
+    title: "Dry January and Non-Alcoholic Wine: A Buyer's Guide",
+    excerpt: "Stocking up for a wine-focused Dry January requires a slightly different approach than beer or spirits. Here's how to build a genuinely satisfying month.",
+    content: "Wine drinkers taking on Dry January face a slightly different challenge than beer or spirits drinkers, since wine's role in dining and pairing occasions is often more central to the overall experience.\n\n## Match Your Usual Wine Style\n\nIf you're normally a red wine drinker, prioritize finding a genuinely good non-alcoholic red rather than defaulting to whatever's most available — as covered elsewhere, lighter styles like rosé tend to dealcoholize more convincingly than full-bodied reds, so set realistic expectations if red is your preference specifically.\n\n## Prioritize Food Pairing Occasions\n\nSince wine is often consumed specifically alongside meals, think through your typical dinner pairings and find non-alcoholic alternatives that complement the same foods — a non-alcoholic Cabernet Sauvignon alternative for red-meat dinners, a non-alcoholic Sauvignon Blanc for lighter fish and salad-based meals.\n\n## Don't Neglect Sparkling for Celebrations\n\nIf January includes any celebrations or toasts, having a quality dealcoholized sparkling wine or sparkling grape juice on hand ensures you're not stuck without an appropriate option for a celebratory moment during your alcohol-free month.\n\n## Explore Beyond Just One Brand\n\nGiven real quality and style variation between non-alcoholic wine brands and their specific dealcoholization methods, trying a few different options during January (rather than committing to just one brand for the whole month) helps you discover which specific producers and styles you actually prefer.\n\n## Track More Than Just Completion\n\nAs with Dry January generally, paying attention to how you feel — sleep, energy, mood — throughout the month tends to produce a more meaningful experience than simply counting down days, regardless of which specific non-alcoholic wines you choose along the way.\n\n## After January Ends\n\nMany wine drinkers who complete a genuine Dry January find they continue incorporating non-alcoholic wine into at least some future dinners or occasions — using January specifically to identify a few genuinely enjoyable non-alcoholic wines sets you up with real go-to options even after the challenge itself concludes.\n\n## A Note on International Demand\n\nThere's also real, growing international demand for non-alcoholic wine beyond just English-speaking Dry January participants — including significant Spanish-language search interest in \"vino sin alcohol,\" reflecting the category's genuinely global growth beyond any single country's specific health campaign.",
+    author: "The Aged And Amber Spirits Team",
+    category: "Non-Alcoholic Education",
+    date: "December 9, 2026",
+    isoDate: "2026-12-09",
+    readTime: "3 min read",
+    image: "/images/categories/na-wine.webp",
+    tags: ["Dry January","Non-Alcoholic","NA Wine"],
+    faqs: [
+      { question: "What non-alcoholic wine style should red wine drinkers try first for Dry January?", answer: "Since lighter styles like rosé tend to dealcoholize more convincingly than full-bodied reds, it's worth setting realistic expectations for a non-alcoholic red specifically, or exploring rosé alongside it during the month." },
+      { question: "Should I have non-alcoholic sparkling wine on hand for Dry January?", answer: "Yes — if January includes any celebrations or toasts, having a quality dealcoholized sparkling wine or sparkling grape juice ready ensures you have an appropriate celebratory option during your alcohol-free month." },
     ],
   },
 ];
