@@ -24,6 +24,13 @@ export const BlogView: React.FC = () => {
   }
   categoryOrder.sort((a, b) => postsByCategory[b].length - postsByCategory[a].length);
 
+  // Render the newest posts per category as full image cards, and any
+  // beyond that as a compact title-link list. Every one of the 268 posts
+  // still gets a crawlable <a href> on this page, but a category with 35
+  // articles no longer emits 35 full ~4 KB cards — that was pushing the
+  // page's HTML past a quarter of a megabyte (and Bing's size notice).
+  const CARDS_PER_CATEGORY = 6;
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
       <div className="space-y-2">
@@ -62,7 +69,7 @@ export const BlogView: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {postsByCategory[category].map((post) => (
+              {postsByCategory[category].slice(0, CARDS_PER_CATEGORY).map((post) => (
                 <Link
                   key={post.slug}
                   href={getRouteUrl.blog(post.slug)}
@@ -104,6 +111,27 @@ export const BlogView: React.FC = () => {
                 </Link>
               ))}
             </div>
+
+            {postsByCategory[category].length > CARDS_PER_CATEGORY && (
+              <div className="space-y-2 pt-2">
+                <p className="text-[11px] text-amber-400/60 font-semibold uppercase tracking-wider">
+                  More {category} articles
+                </p>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5">
+                  {postsByCategory[category].slice(CARDS_PER_CATEGORY).map((post) => (
+                    <li key={post.slug}>
+                      <Link
+                        href={getRouteUrl.blog(post.slug)}
+                        className="text-sm text-amber-200/80 hover:text-[#D4AF37] transition-colors flex items-baseline gap-2"
+                      >
+                        <ArrowRight className="w-3 h-3 text-[#D4AF37] shrink-0 translate-y-0.5" />
+                        <span className="line-clamp-1">{post.title}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </section>
         ))}
       </div>

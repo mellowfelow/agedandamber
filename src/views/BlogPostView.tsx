@@ -3,22 +3,31 @@
 import React, { useMemo, useState } from 'react';
 import Link from 'next/link';
 import { BlogPost } from '../types';
-import { BLOG_POSTS } from '../data/blog';
-import { CATEGORIES } from '../data/products';
+import { CATEGORIES } from '../data/categories';
 import { getRouteUrl } from '../utils/routes';
 import { MarkdownContent } from '../components/MarkdownContent';
 import { SmartImage } from '../components/SmartImage';
-import { getRelatedPosts, getShopSlugForPost } from '../utils/blogLinks';
+import { getShopSlugForPost } from '../utils/blogLinks';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag, ChevronDown, ShoppingBag } from 'lucide-react';
+
+/** A "Related Articles" card. Slim — the full BLOG_POSTS module (~970 KB)
+ *  is resolved on the server and must not reach this client bundle. */
+export interface RelatedPost {
+  slug: string;
+  title: string;
+  image: string;
+  readTime: string;
+  category: string;
+}
 
 interface BlogPostViewProps {
   post: BlogPost;
+  relatedPosts: RelatedPost[];
 }
 
-export const BlogPostView: React.FC<BlogPostViewProps> = ({ post }) => {
+export const BlogPostView: React.FC<BlogPostViewProps> = ({ post, relatedPosts }) => {
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
 
-  const relatedPosts = useMemo(() => getRelatedPosts(post, BLOG_POSTS, 3), [post]);
   const shopSlug = useMemo(() => getShopSlugForPost(post), [post]);
   const shopCategory = CATEGORIES.find((c) => c.slug === shopSlug);
 

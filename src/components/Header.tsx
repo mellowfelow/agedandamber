@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Search, ShoppingBag, Menu, X, ChevronDown, ShieldCheck, Coins, PhoneCall } from 'lucide-react';
 import { SITE, SHOP, CONTACT } from '../config/site';
-import { CATEGORIES } from '../data/products';
+import { CATEGORIES } from '../data/categories';
 import { BrandLogo } from './BrandLogo';
 import { getRouteUrl } from '../utils/routes';
 import { useAppState } from '../../app/providers';

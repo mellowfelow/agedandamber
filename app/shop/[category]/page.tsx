@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { PRODUCTS, CATEGORIES } from '@/src/data/products';
+import { PRODUCTS, CATEGORIES, CATALOG_STATS } from '@/src/data/products';
+import { SUBCATEGORY_HUBS } from '@/src/data/subcategoryHubs';
+import { BRAND_HUBS } from '@/src/data/brandHubs';
+import { BLOG_POSTS } from '@/src/data/blog';
+import { getShopSlugForPost } from '@/src/utils/blogLinks';
 import { ShopView } from '@/src/views/ShopView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
@@ -32,6 +36,23 @@ export default async function ShopCategoryPage({ params }: Props) {
 
   const categoryProducts = PRODUCTS.filter((p) => p.category === cat.slug);
 
+  // Category-scoped internal-link data, resolved on the server so the big
+  // hub/blog data modules stay out of the ShopView client bundle.
+  const styleHubs = SUBCATEGORY_HUBS.filter((h) => h.categorySlug === cat.slug).map((h) => ({
+    categorySlug: h.categorySlug,
+    hubSlug: h.hubSlug,
+    name: h.name,
+  }));
+  const brandHubs = BRAND_HUBS.filter((h) => h.categorySlug === cat.slug).map((h) => ({
+    categorySlug: h.categorySlug,
+    hubSlug: h.hubSlug,
+    name: h.name,
+  }));
+  const journalPosts = BLOG_POSTS.filter((p) => getShopSlugForPost(p) === cat.slug)
+    .sort((a, b) => (a.isoDate < b.isoDate ? 1 : -1))
+    .slice(0, 3)
+    .map((p) => ({ slug: p.slug, title: p.title, image: p.image, readTime: p.readTime }));
+
   return (
     <>
       {cat.seo && (
@@ -48,7 +69,22 @@ export default async function ShopCategoryPage({ params }: Props) {
           { name: cat.name, url: `/shop/${cat.slug}/` },
         ]}
       />
-      <ShopView products={PRODUCTS} selectedCategory={category} />
+      {/*
+        Hand ShopView only this category's products, not the whole catalog.
+        A category page can only ever render and search within its own
+        category (switching category is a route navigation, not a client
+        filter), so shipping all ~1,350 products here just to show ~50 was
+        bloating every category page's HTML past Bing's size notice.
+        Catalog-wide totals still travel via CATALOG_STATS.
+      */}
+      <ShopView
+        products={categoryProducts}
+        selectedCategory={category}
+        catalogStats={CATALOG_STATS}
+        styleHubs={styleHubs}
+        brandHubs={brandHubs}
+        journalPosts={journalPosts}
+      />
     </>
   );
 }

@@ -6,11 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { SmartImage } from '../components/SmartImage';
-import { CATEGORIES } from '../data/products';
-import { SUBCATEGORY_HUBS } from '../data/subcategoryHubs';
-import { BRAND_HUBS } from '../data/brandHubs';
-import { BLOG_POSTS } from '../data/blog';
-import { getShopSlugForPost } from '../utils/blogLinks';
+import { CATEGORIES, type CatalogStats } from '../data/categories';
 import { getRouteUrl } from '../utils/routes';
 import {
   Search,
@@ -33,14 +29,101 @@ import {
 import { SITE } from '../config/site';
 import { useAppState } from '../../app/providers';
 
+/** A link to a subcategory-style or brand hub page under a shop category. */
+export interface ShopHubLink {
+  categorySlug: string;
+  hubSlug: string;
+  name: string;
+}
+
+/** A "From the Journal" card linking a shop category to a blog article. */
+export interface ShopJournalPost {
+  slug: string;
+  title: string;
+  image: string;
+  readTime: string;
+}
+
 interface ShopViewProps {
   products: Product[];
   selectedCategory: string;
+  /**
+   * Whole-catalog aggregate numbers. Category pages pass only their own
+   * category's slice as `products` (to keep the page HTML small), so the
+   * sidebar counts, the header allocation count, and the price-slider
+   * ceiling read from this instead. Falls back to deriving from `products`
+   * when absent (the all-catalog `/shop/` page, which already has every
+   * product on hand).
+   */
+  catalogStats?: CatalogStats;
+  /**
+   * Category-scoped internal-link data, computed on the server so the big
+   * hub/blog data modules (BRAND_HUBS ~550 KB, BLOG_POSTS ~970 KB) never
+   * get pulled into this client component's JS bundle. Empty on the
+   * all-catalog `/shop/` page, which doesn't render these sections.
+   */
+  styleHubs?: ShopHubLink[];
+  brandHubs?: ShopHubLink[];
+  journalPosts?: ShopJournalPost[];
+  /**
+   * The all-catalog `/shop/` page sets this so the full ~1,350-product
+   * array is fetched client-side (from `/api/products`) after hydration
+   * instead of being serialized into the page HTML — that payload alone
+   * was ~1.5 MB and tripped Bing's "HTML size is too long" notice. The
+   * `products` prop is then just a small server-rendered seed (enough to
+   * fill the first grid page and give crawlers real product links); the
+   * fetched catalog replaces it once loaded. Category pages leave this
+   * off and keep their plain synchronous slice.
+   */
+  lazyLoadFullCatalog?: boolean;
 }
 
-export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }) => {
+export const ShopView: React.FC<ShopViewProps> = ({
+  products,
+  selectedCategory,
+  catalogStats,
+  styleHubs = [],
+  brandHubs = [],
+  journalPosts = [],
+  lazyLoadFullCatalog = false,
+}) => {
   const router = useRouter();
   const { searchQuery, setSearchQuery } = useAppState();
+
+  // Total allocation count shown in the header eyebrow, the "All Spirits"
+  // sidebar badge, and the results summary — always the whole catalog, not
+  // the (possibly category-scoped) slice this view was handed.
+  const catalogTotalCount = catalogStats?.total ?? products.length;
+
+  // The working product set. Seeded from the `products` prop; on the
+  // all-catalog page it's swapped for the full list fetched from the API
+  // once that arrives.
+  const [catalog, setCatalog] = useState<Product[]>(products);
+  const [catalogLoading, setCatalogLoading] = useState(
+    lazyLoadFullCatalog && products.length < catalogTotalCount
+  );
+
+  useEffect(() => {
+    if (!lazyLoadFullCatalog) return;
+    let cancelled = false;
+    fetch('/api/products/')
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((data) => {
+        if (!cancelled && Array.isArray(data?.products)) {
+          setCatalog(data.products as Product[]);
+        }
+      })
+      .catch(() => {
+        // Keep the server-rendered seed on failure — the page stays usable,
+        // it just can't search beyond what was pre-rendered.
+      })
+      .finally(() => {
+        if (!cancelled) setCatalogLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [lazyLoadFullCatalog]);
 
   const setSelectedCategory = (cat: string) => {
     // A leftover search term from browsing a different category (or from
@@ -60,9 +143,9 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   // ceiling from the actual product data guarantees every product stays
   // reachable, on every category page, as pricing changes over time.
   const catalogMaxPrice = useMemo(() => {
-    const highest = products.reduce((max, p) => Math.max(max, p.price), 0);
+    const highest = catalogStats?.maxPrice ?? catalog.reduce((max, p) => Math.max(max, p.price), 0);
     return Math.max(600, Math.ceil(highest / 25) * 25);
-  }, [products]);
+  }, [catalog, catalogStats]);
 
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
   const [sortBy, setSortBy] = useState<'featured' | 'price-asc' | 'price-desc' | 'proof-desc' | 'name-asc'>('featured');
@@ -172,23 +255,25 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
 
   // Calculate live counts for each category
   const categoryCounts = useMemo(() => {
+    if (catalogStats) return catalogStats.categoryCounts;
     const counts: Record<string, number> = {};
     CATEGORIES.forEach((c) => {
-      counts[c.slug] = products.filter((p) => p.category === c.slug).length;
+      counts[c.slug] = catalog.filter((p) => p.category === c.slug).length;
     });
     return counts;
-  }, [products]);
+  }, [catalog, catalogStats]);
 
   // Calculate live counts for subcategories
   const subcategoryCounts = useMemo(() => {
+    if (catalogStats) return catalogStats.subcategoryCounts;
     const counts: Record<string, number> = {};
-    products.forEach((p) => {
+    catalog.forEach((p) => {
       if (p.subcategory) {
         counts[p.subcategory] = (counts[p.subcategory] || 0) + 1;
       }
     });
     return counts;
-  }, [products]);
+  }, [catalog, catalogStats]);
 
   // Category slug -> display name, for matching queries like "scotch" or
   // "non-alcoholic" against the human-readable name, not just the slug.
@@ -209,7 +294,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   // capture common alternate names/misspellings for each bottle).
   const productSearchIndex = useMemo(() => {
     const index = new Map<string, string>();
-    for (const p of products) {
+    for (const p of catalog) {
       const haystack = [
         p.name,
         p.shortDescription,
@@ -232,7 +317,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
       index.set(p.id, haystack);
     }
     return index;
-  }, [products, categoryNameBySlug]);
+  }, [catalog, categoryNameBySlug]);
 
   // Split the query into words so "buffalo trace bourbon" matches "Buffalo
   // Trace Kentucky Straight Bourbon" (every word present, in any order,
@@ -245,7 +330,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
 
   // Main Product Filtering Logic
   const filteredProducts = useMemo(() => {
-    return products.filter((p) => {
+    return catalog.filter((p) => {
       // Category match
       const matchesCategory = selectedCategory === 'all' || p.category === selectedCategory;
 
@@ -280,7 +365,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
       );
     });
   }, [
-    products,
+    catalog,
     selectedCategory,
     selectedSubcategory,
     minPrice,
@@ -314,16 +399,6 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
   );
 
   const activeCategoryObj = CATEGORIES.find((c) => c.slug === selectedCategory);
-
-  // Blog posts whose derived shop category matches the currently viewed
-  // category — surfaces a "From the Journal" reading list so shop pages
-  // link back out to the relevant education content (and vice versa).
-  const journalPosts = useMemo(() => {
-    if (!activeCategoryObj) return [];
-    return BLOG_POSTS.filter((p) => getShopSlugForPost(p) === activeCategoryObj.slug)
-      .sort((a, b) => (a.isoDate < b.isoDate ? 1 : -1))
-      .slice(0, 3);
-  }, [activeCategoryObj]);
 
   // Count active filters
   const activeFiltersCount =
@@ -429,7 +504,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
                 : 'bg-stone-800 text-amber-400/80'
             }`}
           >
-            {products.length}
+            {catalogTotalCount}
           </span>
         </button>
 
@@ -635,12 +710,12 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
         <div className="flex items-center gap-2 text-xs font-semibold text-[#D4AF37] uppercase tracking-wider">
           <span>Aged & Amber Spirits Vault</span>
           <span>•</span>
-          <span>{products.length} Direct Allocations</span>
+          <span>{catalogTotalCount} Direct Allocations</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-serif font-bold text-amber-100 tracking-tight">
           {activeCategoryObj
             ? activeCategoryObj.seo?.h1 || activeCategoryObj.name
-            : `Buy Whiskey Online — ${products.length} Direct Allocations`}
+            : `Buy Whiskey Online — ${catalogTotalCount} Direct Allocations`}
         </h1>
         <p className="text-sm text-amber-200/70 max-w-3xl leading-relaxed">
           {activeCategoryObj
@@ -656,7 +731,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           </p>
         )}
         {activeCategoryObj && selectedSubcategory === 'all' && (() => {
-          const hubs = SUBCATEGORY_HUBS.filter((h) => h.categorySlug === activeCategoryObj.slug);
+          const hubs = styleHubs;
           if (hubs.length === 0) return null;
           return (
             <div className="flex flex-wrap items-center gap-2 pt-1">
@@ -674,7 +749,7 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           );
         })()}
         {activeCategoryObj && selectedSubcategory === 'all' && (() => {
-          const brands = BRAND_HUBS.filter((h) => h.categorySlug === activeCategoryObj.slug);
+          const brands = brandHubs;
           if (brands.length === 0) return null;
           return (
             <div className="flex flex-wrap items-center gap-2 pt-1">
@@ -890,15 +965,31 @@ export const ShopView: React.FC<ShopViewProps> = ({ products, selectedCategory }
           <div className="flex items-center justify-between text-xs text-amber-400/60 border-b border-amber-900/20 pb-2">
             <span>
               Showing <strong className="text-amber-100">{sortedProducts.length}</strong> of{' '}
-              {products.length} direct allocations
+              {catalogLoading ? '…' : catalogTotalCount} direct allocations
             </span>
-            {selectedSubcategory !== 'all' && (
-              <span className="text-[#D4AF37]">Filtered by subcategory: {selectedSubcategory}</span>
+            {catalogLoading ? (
+              <span className="text-[#D4AF37] flex items-center gap-1.5">
+                <RotateCcw className="w-3 h-3 animate-spin" />
+                Loading the full vault…
+              </span>
+            ) : (
+              selectedSubcategory !== 'all' && (
+                <span className="text-[#D4AF37]">Filtered by subcategory: {selectedSubcategory}</span>
+              )
             )}
           </div>
 
           {/* Product Grid */}
-          {sortedProducts.length === 0 ? (
+          {sortedProducts.length === 0 && catalogLoading ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="aspect-[3/4] rounded-2xl bg-[#1A120B] border border-amber-900/20 animate-pulse"
+                />
+              ))}
+            </div>
+          ) : sortedProducts.length === 0 ? (
             <div className="text-center py-20 space-y-4 bg-[#160E08] rounded-3xl border border-amber-900/30 p-8 shadow-inner">
               <Filter className="w-12 h-12 text-amber-600/40 mx-auto" />
               <h3 className="font-serif font-bold text-[#D4AF37] text-xl">

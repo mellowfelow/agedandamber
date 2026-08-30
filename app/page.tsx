@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PRODUCTS } from '@/src/data/products';
+import { BLOG_POSTS } from '@/src/data/blog';
 import { FAQ_ITEMS } from '@/src/data/faq';
 import { HomeView } from '@/src/views/HomeView';
 import { JsonLd } from '@/src/components/JsonLd';
@@ -28,11 +29,28 @@ export default function HomePage() {
   // Webmaster Tools' URL inspection.
   const featuredProducts = PRODUCTS.filter((p) => p.featured).slice(0, 8);
 
+  // Same reasoning for the "Journal" strip: hand HomeView only the 3 cards
+  // it renders, slimmed, instead of letting it import the ~970 KB
+  // BLOG_POSTS module (full article bodies and all) into the client bundle.
+  const latestPosts = BLOG_POSTS.slice(0, 3).map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    excerpt: p.excerpt,
+    image: p.image,
+    category: p.category,
+    author: p.author,
+    readTime: p.readTime,
+  }));
+
   return (
     <>
       <JsonLd type="homepage" data={homepageStats} />
       <JsonLd type="faq" data={FAQ_ITEMS.slice(0, 5)} />
-      <HomeView featuredProducts={featuredProducts} totalProductCount={PRODUCTS.length} />
+      <HomeView
+        featuredProducts={featuredProducts}
+        totalProductCount={PRODUCTS.length}
+        latestPosts={latestPosts}
+      />
     </>
   );
 }

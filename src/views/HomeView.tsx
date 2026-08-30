@@ -6,8 +6,7 @@ import Image from 'next/image';
 import { Product } from '../types';
 import { ProductCard } from '../components/ProductCard';
 import { SmartImage } from '../components/SmartImage';
-import { CATEGORIES } from '../data/products';
-import { BLOG_POSTS } from '../data/blog';
+import { CATEGORIES } from '../data/categories';
 import { FAQ_ITEMS } from '../data/faq';
 import {
   Wine,
@@ -26,12 +25,29 @@ import { SITE, BRAND, SHOP, CONTACT } from '../config/site';
 
 import { getRouteUrl } from '../utils/routes';
 
+/** A homepage "Journal" preview card. Slim by design — the full 970 KB
+ *  BLOG_POSTS module must not reach this client component's bundle. */
+export interface HomeJournalPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  category: string;
+  author: string;
+  readTime: string;
+}
+
 interface HomeViewProps {
   featuredProducts: Product[];
   totalProductCount: number;
+  latestPosts: HomeJournalPost[];
 }
 
-export const HomeView: React.FC<HomeViewProps> = ({ featuredProducts, totalProductCount }) => {
+export const HomeView: React.FC<HomeViewProps> = ({
+  featuredProducts,
+  totalProductCount,
+  latestPosts,
+}) => {
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
@@ -438,7 +454,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ featuredProducts, totalProdu
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {BLOG_POSTS.slice(0, 3).map((post) => (
+          {latestPosts.map((post) => (
             <Link
               key={post.slug}
               href={getRouteUrl.blog(post.slug)}

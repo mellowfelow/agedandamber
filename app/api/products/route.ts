@@ -37,6 +37,14 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json(
     { total: mapped.length, currency: SITE.currency, products: mapped },
-    { headers: { 'Access-Control-Allow-Origin': '*' } }
+    {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        // Catalog data only changes on deploy. Let the CDN serve this
+        // (notably the full-catalog fetch the /shop/ page fires on load)
+        // from cache so it isn't recomputed per request.
+        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      },
+    }
   );
 }
