@@ -107,7 +107,7 @@ export const WholesaleView: React.FC = () => {
     setFormData((prev) => ({ ...prev, notes: stripTierLine(prev.notes) }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -134,7 +134,8 @@ export const WholesaleView: React.FC = () => {
       }),
     }).catch(() => {});
 
-    // Web3Forms, direct from the browser (populates the Web3Forms dashboard).
+    // Web3Forms, direct from the browser (Web3Forms dashboard copy).
+    // Fire-and-forget — never block the success screen on it.
     if (FORMS.web3formsKey) {
       const bodyFormData = new FormData();
       bodyFormData.append('access_key', FORMS.web3formsKey);
@@ -143,15 +144,11 @@ export const WholesaleView: React.FC = () => {
       bodyFormData.append('email', formData.email);
       bodyFormData.append('replyto', formData.email);
       bodyFormData.append('message', text);
-      try {
-        await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { Accept: 'application/json' },
-          body: bodyFormData,
-        });
-      } catch {
-        // Ad-blocker / offline — the server route above still logged it.
-      }
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: bodyFormData,
+      }).catch(() => {});
     }
 
     setIsSubmitting(false);

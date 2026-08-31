@@ -29,7 +29,6 @@ export const CheckoutModal: React.FC = () => {
     selectedPayment: string;
     name: string;
     email: string;
-    emailDelivered: boolean;
   } | null>(null);
 
   if (!checkoutModalOpen) return null;
@@ -78,14 +77,12 @@ export const CheckoutModal: React.FC = () => {
       },
     };
 
-    // Client-side fallback reference, only used if the API call can't be
-    // reached at all (offline). The server is the source of truth otherwise.
+    // Fallback reference, only used if /api/order can't be reached (offline).
     let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
-    let emailDelivered = false;
 
-    // 1) Server route: assigns the short order number, logs the full order
-    //    (durable), and emails the concierge via Zoho SMTP / Resend in the
-    //    background — the customer doesn't wait on that.
+    // Server route: assigns the order number, logs the full order (durable),
+    // and emails the concierge via Zoho SMTP / Resend after the response.
+    // This is the notification path that matters.
     try {
       const res = await fetch('/api/order/', {
         method: 'POST',
@@ -95,44 +92,37 @@ export const CheckoutModal: React.FC = () => {
       const data = await res.json();
       if (data?.ok && data.orderNumber) orderNumber = data.orderNumber;
     } catch {
-      // Network failure — keep the fallback order number.
+      // Keep the fallback order number.
     }
 
-    // 2) Web3Forms, direct from the browser — populates the Web3Forms
-    //    dashboard and is a second delivery path. Its result is what the
-    //    confirmation screen uses to decide its wording.
+    // Web3Forms, direct from the browser — a second delivery path and the
+    // Web3Forms dashboard copy. Fire-and-forget: it must never delay or
+    // block the confirmation screen (some networks stall the request).
     if (FORMS.web3formsKey) {
-      try {
-        const fd = new FormData();
-        fd.append('access_key', FORMS.web3formsKey);
-        fd.append('subject', `New order ${orderNumber} — ${formData.name} — $${grandTotal.toFixed(2)}`);
-        fd.append('from_name', `${SITE.name} Orders`);
-        fd.append('email', formData.email);
-        fd.append('replyto', formData.email);
-        fd.append(
-          'message',
-          `Order ${orderNumber}\n\n` +
-            `Items:\n${payload.items.map((i) => `- ${i.name} x${i.quantity} ($${i.lineTotal.toFixed(2)})`).join('\n')}\n\n` +
-            `Subtotal: $${subtotal.toFixed(2)}\n` +
-            `Crypto discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
-            `Shipping: $${shippingFee.toFixed(2)}\n` +
-            `Total: $${grandTotal.toFixed(2)}\n` +
-            `Payment: ${payload.paymentMethod}\n\n` +
-            `Customer:\n${formData.name}\n${formData.email}\n${formData.phone}\n` +
-            `${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\n` +
-            (formData.notes ? `Notes: ${formData.notes}` : '')
-        );
-        const w3 = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { Accept: 'application/json' },
-          body: fd,
-        });
-        const w3json = await w3.json().catch(() => ({}));
-        if (w3.ok && w3json?.success === true) emailDelivered = true;
-      } catch {
-        // Blocked by an ad-blocker / offline — the server route above still
-        // logged the order; the confirmation screen handles the messaging.
-      }
+      const fd = new FormData();
+      fd.append('access_key', FORMS.web3formsKey);
+      fd.append('subject', `New order ${orderNumber} from ${formData.name}`);
+      fd.append('from_name', SITE.name);
+      fd.append('email', formData.email);
+      fd.append('replyto', formData.email);
+      fd.append(
+        'message',
+        `Order ${orderNumber}\n\n` +
+          `Items:\n${payload.items.map((i) => `- ${i.name} x${i.quantity} ($${i.lineTotal.toFixed(2)})`).join('\n')}\n\n` +
+          `Subtotal: $${subtotal.toFixed(2)}\n` +
+          `Crypto discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
+          `Shipping: $${shippingFee.toFixed(2)}\n` +
+          `Total: $${grandTotal.toFixed(2)}\n` +
+          `Payment: ${payload.paymentMethod}\n\n` +
+          `Customer:\n${formData.name}\n${formData.email}\n${formData.phone}\n` +
+          `${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\n` +
+          (formData.notes ? `Notes: ${formData.notes}` : '')
+      );
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: fd,
+      }).catch(() => {});
     }
 
     setCompletedOrder({
@@ -141,7 +131,6 @@ export const CheckoutModal: React.FC = () => {
       selectedPayment: payload.paymentMethod,
       name: formData.name,
       email: formData.email,
-      emailDelivered,
     });
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -187,11 +176,11 @@ export const CheckoutModal: React.FC = () => {
                 <span className="font-bold text-[#D4AF37]">${completedOrder.grandTotal.toFixed(2)}</span>
               </div>
               <p className="text-[11px] text-amber-300/70 pt-1">
-                {completedOrder.emailDelivered ? (
-                  <>A confirmation has been sent to <strong>{completedOrder.email}</strong>. Our concierge will follow up within 2 hours (business hours) with payment routing details and adult-signature tracking.</>
-                ) : (
-                  <>Our concierge will contact you within 2 hours (business hours) with payment details. If you don&apos;t hear from us, reach out directly quoting order <strong>{completedOrder.orderNumber}</strong> — {CONTACT.email} or WhatsApp {CONTACT.phone}.</>
-                )}
+                Our concierge will email <strong>{completedOrder.email}</strong> within 2 hours (business
+                hours) with secure payment routing details and adult-signature tracking. If you don&apos;t
+                hear from us, reach out directly quoting order{' '}
+                <strong>{completedOrder.orderNumber}</strong> — {CONTACT.email} or WhatsApp{' '}
+                {CONTACT.phone}.
               </p>
             </div>
 
