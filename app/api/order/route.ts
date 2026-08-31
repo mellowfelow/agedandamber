@@ -36,10 +36,8 @@ interface OrderBody {
 
 /**
  * Order intake. Generates the short order reference, logs the full order
- * (durable, in the function log), and fires the email notification AFTER
- * the response so the customer never waits on SMTP. The checkout also
- * submits to Web3Forms directly from the browser, which populates the
- * Web3Forms dashboard.
+ * (durable, in the function log), and fires the single email notification
+ * AFTER the response so the customer never waits on SMTP.
  */
 export async function POST(req: NextRequest) {
   let body: OrderBody;

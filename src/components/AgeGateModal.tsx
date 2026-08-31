@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShieldCheck, AlertCircle } from 'lucide-react';
 import { SITE, COMPLIANCE } from '../config/site';
 import { BrandLogo } from './BrandLogo';
@@ -12,6 +12,16 @@ export const AgeGateModal: React.FC = () => {
   // via CSS (html.age-verified) before first paint, so it's never actually seen.
   const [dismissed, setDismissed] = useState(false);
   const [denied, setDenied] = useState(false);
+
+  // Belt for the CSS approach: once mounted, if this visitor already passed
+  // the gate, drop the modal from the DOM entirely so nothing can un-hide it.
+  useEffect(() => {
+    try {
+      if (localStorage.getItem('aged-and-amber-age-verified') === 'true') setDismissed(true);
+    } catch {
+      // localStorage unavailable — leave the gate showing.
+    }
+  }, []);
 
   const handleVerify = () => {
     try {

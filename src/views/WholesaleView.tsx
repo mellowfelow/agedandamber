@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import { SITE, FORMS } from '../config/site';
 import { Building2, ShieldCheck, Award, ArrowRight, CheckCircle2, Check, X } from 'lucide-react';
 
 type TierId = 'bar' | 'barrel' | 'collector';
@@ -122,7 +121,7 @@ export const WholesaleView: React.FC = () => {
       `Estimated Volume: ${formData.estimatedVolume}\n` +
       `Notes: ${formData.notes}`;
 
-    // Server route: durable log + Resend (if configured).
+    // Server route: logs the inquiry and emails the concierge via Zoho SMTP.
     fetch('/api/inquiry/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -133,23 +132,6 @@ export const WholesaleView: React.FC = () => {
         replyTo: formData.email,
       }),
     }).catch(() => {});
-
-    // Web3Forms, direct from the browser (Web3Forms dashboard copy).
-    // Fire-and-forget — never block the success screen on it.
-    if (FORMS.web3formsKey) {
-      const bodyFormData = new FormData();
-      bodyFormData.append('access_key', FORMS.web3formsKey);
-      bodyFormData.append('subject', `Wholesale Allocation Request from ${formData.businessName}`);
-      bodyFormData.append('from_name', SITE.name);
-      bodyFormData.append('email', formData.email);
-      bodyFormData.append('replyto', formData.email);
-      bodyFormData.append('message', text);
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: bodyFormData,
-      }).catch(() => {});
-    }
 
     setIsSubmitting(false);
     setSubmitted(true);

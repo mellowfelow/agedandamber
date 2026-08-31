@@ -12,8 +12,7 @@ import { SITE, CONTACT, FORMS } from '../config/site';
  *      delivered to your own inbox — Zoho does not spam-filter that, so it
  *      is the reliable path. Enabled by ZOHO_SMTP_USER + ZOHO_SMTP_PASS.
  *   2. Resend, if RESEND_API_KEY is set.
- * The forms also submit to Web3Forms directly from the browser (that
- * populates the Web3Forms dashboard) — independent of this helper.
+ * This is the only notification path — one email per submission.
  */
 
 let cachedTransport: Transporter | null | undefined;

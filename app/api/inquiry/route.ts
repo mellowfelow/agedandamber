@@ -19,9 +19,9 @@ export function OPTIONS() {
 }
 
 /**
- * Contact + wholesale form intake. Durable server-side log plus an email
- * notification fired after the response (so the visitor never waits on
- * SMTP). The forms also post to Web3Forms directly from the browser.
+ * Contact + wholesale form intake. Durable server-side log plus a single
+ * email notification fired after the response (so the visitor never waits
+ * on SMTP).
  */
 export async function POST(req: NextRequest) {
   let body: { kind?: string; subject?: string; text?: string; replyTo?: string };

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight } from 'lucide-react';
-import { SHOP, CONTACT, SITE, FORMS } from '../config/site';
+import { SHOP, CONTACT } from '../config/site';
 import { useAppState } from '../../app/providers';
 
 export const CheckoutModal: React.FC = () => {
@@ -81,8 +81,8 @@ export const CheckoutModal: React.FC = () => {
     let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
 
     // Server route: assigns the order number, logs the full order (durable),
-    // and emails the concierge via Zoho SMTP / Resend after the response.
-    // This is the notification path that matters.
+    // and emails the concierge via Zoho SMTP after the response. One email,
+    // one channel — nothing else fires.
     try {
       const res = await fetch('/api/order/', {
         method: 'POST',
@@ -93,36 +93,6 @@ export const CheckoutModal: React.FC = () => {
       if (data?.ok && data.orderNumber) orderNumber = data.orderNumber;
     } catch {
       // Keep the fallback order number.
-    }
-
-    // Web3Forms, direct from the browser — a second delivery path and the
-    // Web3Forms dashboard copy. Fire-and-forget: it must never delay or
-    // block the confirmation screen (some networks stall the request).
-    if (FORMS.web3formsKey) {
-      const fd = new FormData();
-      fd.append('access_key', FORMS.web3formsKey);
-      fd.append('subject', `New order ${orderNumber} from ${formData.name}`);
-      fd.append('from_name', SITE.name);
-      fd.append('email', formData.email);
-      fd.append('replyto', formData.email);
-      fd.append(
-        'message',
-        `Order ${orderNumber}\n\n` +
-          `Items:\n${payload.items.map((i) => `- ${i.name} x${i.quantity} ($${i.lineTotal.toFixed(2)})`).join('\n')}\n\n` +
-          `Subtotal: $${subtotal.toFixed(2)}\n` +
-          `Crypto discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
-          `Shipping: $${shippingFee.toFixed(2)}\n` +
-          `Total: $${grandTotal.toFixed(2)}\n` +
-          `Payment: ${payload.paymentMethod}\n\n` +
-          `Customer:\n${formData.name}\n${formData.email}\n${formData.phone}\n` +
-          `${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\n` +
-          (formData.notes ? `Notes: ${formData.notes}` : '')
-      );
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: fd,
-      }).catch(() => {});
     }
 
     setCompletedOrder({

@@ -55,7 +55,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${plusJakartaSans.variable}`}>
+    <html
+      lang="en"
+      className={`${cinzel.variable} ${plusJakartaSans.variable}`}
+      // The age-gate check script adds `age-verified` to <html> before
+      // hydration; without this, React 19 flags the className mismatch and
+      // can strip the class, briefly un-hiding the age gate for a visitor
+      // who already passed it.
+      suppressHydrationWarning
+    >
       <body className="min-h-screen bg-[#140D08] text-amber-50 font-sans selection:bg-[#D4AF37] selection:text-[#140D08] flex flex-col justify-between overflow-x-hidden">
         {/* Critical CSS for the age gate — the first thing every fresh visitor sees.
             Inlined so it paints correctly before the ~68KB site-wide stylesheet has

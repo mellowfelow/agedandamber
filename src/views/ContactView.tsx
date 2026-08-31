@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { SITE, CONTACT, FORMS } from '../config/site';
+import { CONTACT } from '../config/site';
 import { Mail, Phone, MapPin, Clock, MessageSquare, CheckCircle2, Send } from 'lucide-react';
 
 export const ContactView: React.FC = () => {
@@ -21,7 +21,7 @@ export const ContactView: React.FC = () => {
 
     const text = `From: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\n${formData.message}`;
 
-    // Server route: durable log + Resend (if configured).
+    // Server route: logs the message and emails the concierge via Zoho SMTP.
     fetch('/api/inquiry/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -32,23 +32,6 @@ export const ContactView: React.FC = () => {
         replyTo: formData.email,
       }),
     }).catch(() => {});
-
-    // Web3Forms, direct from the browser (Web3Forms dashboard copy).
-    // Fire-and-forget — never block the success screen on it.
-    if (FORMS.web3formsKey) {
-      const bodyFormData = new FormData();
-      bodyFormData.append('access_key', FORMS.web3formsKey);
-      bodyFormData.append('subject', `Concierge Message: ${formData.subject}`);
-      bodyFormData.append('from_name', SITE.name);
-      bodyFormData.append('email', formData.email);
-      bodyFormData.append('replyto', formData.email);
-      bodyFormData.append('message', text);
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: bodyFormData,
-      }).catch(() => {});
-    }
 
     setIsSubmitting(false);
     setSubmitted(true);
