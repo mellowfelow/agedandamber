@@ -17,6 +17,16 @@ export const TawkWidget: React.FC = () => {
     if (document.getElementById('tawk-embed-script')) return;
 
     let loaded = false;
+    let cleanup: (() => void) | undefined;
+
+    const isAgeVerified = () => {
+      try {
+        return localStorage.getItem('aged-and-amber-age-verified') === 'true';
+      } catch {
+        return true;
+      }
+    };
+
     const load = () => {
       if (loaded) return;
       loaded = true;
@@ -39,19 +49,35 @@ export const TawkWidget: React.FC = () => {
       window.removeEventListener('touchstart', load);
     };
 
-    const idleTimer = setTimeout(load, 3000);
-    window.addEventListener('scroll', load, { once: true, passive: true });
-    window.addEventListener('click', load, { once: true });
-    window.addEventListener('keydown', load, { once: true });
-    window.addEventListener('touchstart', load, { once: true, passive: true });
-
-    return () => {
-      clearTimeout(idleTimer);
-      window.removeEventListener('scroll', load);
-      window.removeEventListener('click', load);
-      window.removeEventListener('keydown', load);
-      window.removeEventListener('touchstart', load);
+    // Don't load the chat over the age gate — arm it only once the visitor
+    // has passed the gate (or immediately, if they already had).
+    const arm = () => {
+      const idleTimer = setTimeout(load, 3000);
+      window.addEventListener('scroll', load, { once: true, passive: true });
+      window.addEventListener('click', load, { once: true });
+      window.addEventListener('keydown', load, { once: true });
+      window.addEventListener('touchstart', load, { once: true, passive: true });
+      cleanup = () => {
+        clearTimeout(idleTimer);
+        window.removeEventListener('scroll', load);
+        window.removeEventListener('click', load);
+        window.removeEventListener('keydown', load);
+        window.removeEventListener('touchstart', load);
+      };
     };
+
+    if (isAgeVerified()) {
+      arm();
+    } else {
+      const onVerified = () => {
+        window.removeEventListener('aa:age-verified', onVerified);
+        arm();
+      };
+      window.addEventListener('aa:age-verified', onVerified);
+      cleanup = () => window.removeEventListener('aa:age-verified', onVerified);
+    }
+
+    return () => cleanup?.();
   }, []);
 
   return null;

@@ -30,6 +30,9 @@ export const AgeGateModal: React.FC = () => {
       // localStorage unavailable — the session will just re-show the gate next visit
     }
     document.documentElement.classList.add('age-verified');
+    // Lets deferred, non-essential widgets (e.g. the chat) hold off until
+    // the visitor has passed the gate.
+    window.dispatchEvent(new Event('aa:age-verified'));
     setDismissed(true);
   };
 
@@ -40,9 +43,14 @@ export const AgeGateModal: React.FC = () => {
   if (dismissed) return null;
 
   return (
+    // No entrance animation: this is a full-screen compliance gate that
+    // must be solid on the very first paint. `animate-fade-in` restarts
+    // from opacity:0 once the main stylesheet loads over the inlined
+    // critical CSS, which briefly flashed the page content through the
+    // half-transparent overlay.
     <div
       id="age-gate-modal"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/95 animate-fade-in"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black"
     >
       <div id="age-gate-card" className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
         {/* Glow accent */}
