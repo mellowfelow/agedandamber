@@ -68,11 +68,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Runs synchronously during parse, before the age-gate markup below —
             a returning visitor's browser then never paints the gate at all.
             Plain inline <script>, not next/script, so its position (and
-            therefore its timing) is guaranteed. */}
+            therefore its timing) is guaranteed.
+
+            It hides the gate two ways on purpose. The `age-verified` class on
+            <html> drives the scroll lock, but <html>'s className is a prop
+            React owns and re-asserts during hydration — if it ever drops the
+            class, the gate un-hides for the few frames until React's effect
+            removes it, which reads as "the gate appears and disappears
+            immediately". So the authoritative hide is a <style> element
+            injected into <head>: React does not manage it and cannot strip
+            it, so the gate stays hidden no matter what happens to the class. */}
         <script
           id="age-gate-check"
           dangerouslySetInnerHTML={{
-            __html: `(function(){var v=false;try{v=localStorage.getItem('aged-and-amber-age-verified')==='true'}catch(e){}if(!v){try{v=document.cookie.indexOf('aa_age_verified=1')>-1}catch(e){}}if(v){document.documentElement.className+=' age-verified'}})();`,
+            __html: `(function(){var v=false;try{v=localStorage.getItem('aged-and-amber-age-verified')==='true'}catch(e){}if(!v){try{v=document.cookie.indexOf('aa_age_verified=1')>-1}catch(e){}}if(!v)return;document.documentElement.className+=' age-verified';try{var s=document.createElement('style');s.setAttribute('data-age-gate-suppress','');s.appendChild(document.createTextNode('#age-gate-modal{display:none!important}'));(document.head||document.documentElement).appendChild(s)}catch(e){}})();`,
           }}
         />
         {/* Critical CSS for the age gate — the first thing every fresh visitor sees.
