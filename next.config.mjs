@@ -2,6 +2,9 @@
 const nextConfig = {
   trailingSlash: true,
   reactStrictMode: true,
+  // nodemailer uses dynamic requires internally; keep it external to the
+  // serverless bundle so the /api/order + /api/inquiry SMTP send works.
+  serverExternalPackages: ['nodemailer'],
   images: {
     remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }],
     // Vercel's on-the-fly image optimization is metered per source image on

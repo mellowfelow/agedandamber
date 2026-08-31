@@ -42,7 +42,6 @@ export const ContactView: React.FC = () => {
       bodyFormData.append('email', formData.email);
       bodyFormData.append('replyto', formData.email);
       bodyFormData.append('message', text);
-      bodyFormData.append('botcheck', '');
       try {
         await fetch('https://api.web3forms.com/submit', {
           method: 'POST',

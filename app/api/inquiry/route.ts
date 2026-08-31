@@ -1,5 +1,10 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { sendNotification } from '@/src/utils/notify';
+
+// nodemailer (SMTP) needs the Node runtime, not Edge.
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+export const maxDuration = 15;
 
 const CORS = { 'Access-Control-Allow-Origin': '*' };
 
@@ -14,10 +19,9 @@ export function OPTIONS() {
 }
 
 /**
- * Contact + wholesale form intake. Same idea as /api/order: a durable
- * server-side log plus a Resend send when configured. The forms also post
- * to Web3Forms directly from the browser (that path populates the
- * Web3Forms dashboard).
+ * Contact + wholesale form intake. Durable server-side log plus an email
+ * notification fired after the response (so the visitor never waits on
+ * SMTP). The forms also post to Web3Forms directly from the browser.
  */
 export async function POST(req: NextRequest) {
   let body: { kind?: string; subject?: string; text?: string; replyTo?: string };
@@ -33,11 +37,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Missing subject or message' }, { status: 400, headers: CORS });
   }
 
-  const { emailed } = await sendNotification({
-    subject: `[${body.kind || 'inquiry'}] ${subject}`,
-    text,
-    replyTo: body.replyTo && /.+@.+\..+/.test(body.replyTo) ? body.replyTo : undefined,
+  after(async () => {
+    await sendNotification({
+      subject: `[${body.kind || 'inquiry'}] ${subject}`,
+      text,
+      replyTo: body.replyTo && /.+@.+\..+/.test(body.replyTo) ? body.replyTo : undefined,
+    });
   });
 
-  return NextResponse.json({ ok: true, emailDelivered: emailed }, { headers: CORS });
+  return NextResponse.json({ ok: true }, { headers: CORS });
 }

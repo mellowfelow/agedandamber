@@ -1,22 +1,44 @@
+import nodemailer, { type Transporter } from 'nodemailer';
 import { SITE, CONTACT, FORMS } from '../config/site';
 
 /**
- * Server-side notification helper for the order / contact / wholesale
- * forms. Two jobs:
+ * Server-side notification for the order / contact / wholesale forms.
  *
- * 1. Always write the full submission to the function log (Vercel → Logs),
- *    so a submission is never lost even when email delivery fails. This is
- *    the durable copy.
- * 2. Send an email via Resend when RESEND_API_KEY (and optionally
- *    ORDER_NOTIFY_EMAIL) are set in the project env. Resend is the
- *    reliable path — a verified agedandamber.com sender with real delivery
- *    logs — and needs no code change to enable.
+ * Always writes the full submission to the function log (Vercel -> Logs) —
+ * the durable copy, never lost even if every email channel fails.
  *
- * The forms still submit to Web3Forms directly from the browser as well,
- * which is what populates the Web3Forms dashboard. This helper does NOT
- * call Web3Forms: a server-to-server request has no browser origin and
- * Web3Forms' firewall 403s it.
+ * Then tries, in order:
+ *   1. Zoho SMTP (nodemailer). Mail authenticated as your own Zoho mailbox,
+ *      delivered to your own inbox — Zoho does not spam-filter that, so it
+ *      is the reliable path. Enabled by ZOHO_SMTP_USER + ZOHO_SMTP_PASS.
+ *   2. Resend, if RESEND_API_KEY is set.
+ * The forms also submit to Web3Forms directly from the browser (that
+ * populates the Web3Forms dashboard) — independent of this helper.
  */
+
+let cachedTransport: Transporter | null | undefined;
+
+function zohoTransport(): Transporter | null {
+  if (cachedTransport !== undefined) return cachedTransport;
+  const user = process.env.ZOHO_SMTP_USER;
+  const pass = process.env.ZOHO_SMTP_PASS;
+  if (!user || !pass) {
+    cachedTransport = null;
+    return null;
+  }
+  cachedTransport = nodemailer.createTransport({
+    host: process.env.ZOHO_SMTP_HOST || 'smtp.zoho.com',
+    port: Number(process.env.ZOHO_SMTP_PORT || 465),
+    secure: Number(process.env.ZOHO_SMTP_PORT || 465) === 465,
+    auth: { user, pass },
+    dnsTimeout: 5000,
+    connectionTimeout: 6000,
+    greetingTimeout: 6000,
+    socketTimeout: 8000,
+  });
+  return cachedTransport;
+}
+
 export async function sendNotification(opts: {
   subject: string;
   text: string;
@@ -26,40 +48,55 @@ export async function sendNotification(opts: {
 
   console.log(`[notify] ${subject}\n${text}`);
 
-  const resendKey = process.env.RESEND_API_KEY;
   const to = process.env.ORDER_NOTIFY_EMAIL || CONTACT.email;
 
-  if (!resendKey) {
-    console.error(
-      `[notify] no RESEND_API_KEY — "${subject}" is in this log only. ` +
-        `Set RESEND_API_KEY + ORDER_NOTIFY_EMAIL in the Vercel project env, or ` +
-        `fix Web3Forms email delivery (verify the recipient under Linked Emails).`
-    );
-    return { logged: true, emailed: false };
+  // 1) Zoho SMTP — the reliable path. Hard-capped at 8s so a misconfigured
+  //    or slow SMTP host can never hold up the order response (Vercel
+  //    functions time out at 10s on Hobby).
+  const transport = zohoTransport();
+  if (transport) {
+    try {
+      await Promise.race([
+        transport.sendMail({
+          from: `"${SITE.name}" <${process.env.ZOHO_SMTP_USER}>`,
+          to,
+          replyTo: replyTo || undefined,
+          subject,
+          text,
+        }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('SMTP timeout after 8s')), 8000)),
+      ]);
+      return { logged: true, emailed: true };
+    } catch (err) {
+      console.error('[notify] Zoho SMTP send failed', err);
+    }
   }
 
-  try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${resendKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from: `${SITE.name} <${FORMS.resendFrom}>`,
-        to: [to],
-        ...(replyTo ? { reply_to: replyTo } : {}),
-        subject,
-        text,
-      }),
-    });
-    if (!res.ok) {
+  // 2) Resend fallback.
+  const resendKey = process.env.RESEND_API_KEY;
+  if (resendKey) {
+    try {
+      const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${resendKey}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          from: `${SITE.name} <${FORMS.resendFrom}>`,
+          to: [to],
+          ...(replyTo ? { reply_to: replyTo } : {}),
+          subject,
+          text,
+        }),
+      });
+      if (res.ok) return { logged: true, emailed: true };
       console.error(`[notify] Resend ${res.status}`, await res.text().catch(() => ''));
-      return { logged: true, emailed: false };
+    } catch (err) {
+      console.error('[notify] Resend request threw', err);
     }
-    return { logged: true, emailed: true };
-  } catch (err) {
-    console.error('[notify] Resend request threw', err);
-    return { logged: true, emailed: false };
   }
+
+  console.error(
+    `[notify] no email channel delivered "${subject}" — it is in this log only. ` +
+      `Set ZOHO_SMTP_USER + ZOHO_SMTP_PASS (+ ORDER_NOTIFY_EMAIL) in the Vercel project env.`
+  );
+  return { logged: true, emailed: false };
 }

@@ -1,6 +1,11 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { CONTACT, SHOP } from '@/src/config/site';
 import { sendNotification } from '@/src/utils/notify';
+
+// nodemailer (SMTP) needs the Node runtime, not Edge.
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+export const maxDuration = 15;
 
 const CORS = { 'Access-Control-Allow-Origin': '*' };
 
@@ -31,9 +36,10 @@ interface OrderBody {
 
 /**
  * Order intake. Generates the short order reference, logs the full order
- * server-side (durable), and sends the notification via Resend if
- * configured. The checkout also submits to Web3Forms directly from the
- * browser, so the order still lands in the Web3Forms dashboard regardless.
+ * (durable, in the function log), and fires the email notification AFTER
+ * the response so the customer never waits on SMTP. The checkout also
+ * submits to Web3Forms directly from the browser, which populates the
+ * Web3Forms dashboard.
  */
 export async function POST(req: NextRequest) {
   let body: OrderBody;
@@ -70,17 +76,18 @@ export async function POST(req: NextRequest) {
     `  ${c.street}, ${c.city}, ${c.state} ${c.zip}\n` +
     (c.notes ? `  Notes: ${c.notes}\n` : '');
 
-  const { emailed } = await sendNotification({
-    subject: `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`,
-    text,
-    replyTo: c.email,
+  after(async () => {
+    await sendNotification({
+      subject: `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`,
+      text,
+      replyTo: c.email,
+    });
   });
 
   return NextResponse.json(
     {
       ok: true,
       orderNumber,
-      emailDelivered: emailed,
       concierge: { email: CONTACT.email, whatsapp: CONTACT.whatsapp, phone: CONTACT.phone },
       minOrder: SHOP.minOrder,
     },

@@ -83,7 +83,9 @@ export const CheckoutModal: React.FC = () => {
     let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
     let emailDelivered = false;
 
-    // 1) Server route: durable log + short order number + Resend (if set up).
+    // 1) Server route: assigns the short order number, logs the full order
+    //    (durable), and emails the concierge via Zoho SMTP / Resend in the
+    //    background — the customer doesn't wait on that.
     try {
       const res = await fetch('/api/order/', {
         method: 'POST',
@@ -91,18 +93,14 @@ export const CheckoutModal: React.FC = () => {
         body: JSON.stringify(payload),
       });
       const data = await res.json();
-      if (data?.ok && data.orderNumber) {
-        orderNumber = data.orderNumber;
-        emailDelivered = Boolean(data.emailDelivered);
-      }
+      if (data?.ok && data.orderNumber) orderNumber = data.orderNumber;
     } catch {
       // Network failure — keep the fallback order number.
     }
 
-    // 2) Web3Forms, direct from the browser. This is what populates the
-    //    Web3Forms dashboard; a real browser origin also gets past their
-    //    firewall (a server-to-server call does not). Independent of (1) —
-    //    if either channel delivers, the order was notified.
+    // 2) Web3Forms, direct from the browser — populates the Web3Forms
+    //    dashboard and is a second delivery path. Its result is what the
+    //    confirmation screen uses to decide its wording.
     if (FORMS.web3formsKey) {
       try {
         const fd = new FormData();
@@ -124,7 +122,6 @@ export const CheckoutModal: React.FC = () => {
             `${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\n` +
             (formData.notes ? `Notes: ${formData.notes}` : '')
         );
-        fd.append('botcheck', '');
         const w3 = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { Accept: 'application/json' },
