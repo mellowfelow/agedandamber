@@ -41,9 +41,10 @@ function zohoTransport(): Transporter | null {
 export async function sendNotification(opts: {
   subject: string;
   text: string;
+  html?: string;
   replyTo?: string;
 }): Promise<{ logged: true; emailed: boolean }> {
-  const { subject, text, replyTo } = opts;
+  const { subject, text, html, replyTo } = opts;
 
   console.log(`[notify] ${subject}\n${text}`);
 
@@ -62,6 +63,7 @@ export async function sendNotification(opts: {
           replyTo: replyTo || undefined,
           subject,
           text,
+          ...(html ? { html } : {}),
         }),
         new Promise((_, reject) => setTimeout(() => reject(new Error('SMTP timeout after 8s')), 8000)),
       ]);
@@ -84,6 +86,7 @@ export async function sendNotification(opts: {
           ...(replyTo ? { reply_to: replyTo } : {}),
           subject,
           text,
+          ...(html ? { html } : {}),
         }),
       });
       if (res.ok) return { logged: true, emailed: true };

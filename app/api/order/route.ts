@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse, after } from 'next/server';
 import { CONTACT, SHOP } from '@/src/config/site';
 import { sendNotification } from '@/src/utils/notify';
+import { orderEmail, type OrderEmailInput } from '@/src/utils/emailTemplates';
 
 // nodemailer (SMTP) needs the Node runtime, not Edge.
 export const runtime = 'nodejs';
@@ -19,20 +20,7 @@ export function OPTIONS() {
   });
 }
 
-interface OrderItem { name: string; quantity: number; lineTotal: number }
-interface OrderBody {
-  items: OrderItem[];
-  subtotal: number;
-  cryptoDiscount: number;
-  shipping: number;
-  total: number;
-  paymentMethod: string;
-  customer: {
-    name: string; email: string; phone: string;
-    street: string; city: string; state: string; zip: string;
-    notes?: string;
-  };
-}
+type OrderBody = Omit<OrderEmailInput, 'orderNumber'>;
 
 /**
  * Order intake. Generates the short order reference, logs the full order
@@ -56,30 +44,10 @@ export async function POST(req: NextRequest) {
   // reads like a normal running order number.
   const orderNumber = `AA-${String(Date.now()).slice(-6)}`;
 
-  const lines = body.items
-    .map((i) => `  - ${i.name} x${i.quantity} — $${Number(i.lineTotal).toFixed(2)}`)
-    .join('\n');
-
-  const text =
-    `NEW ORDER ${orderNumber}\n` +
-    `Received: ${new Date().toISOString()}\n\n` +
-    `Items:\n${lines}\n\n` +
-    `Subtotal:        $${Number(body.subtotal).toFixed(2)}\n` +
-    `Crypto discount: -$${Number(body.cryptoDiscount || 0).toFixed(2)}\n` +
-    `Shipping:        $${Number(body.shipping || 0).toFixed(2)}\n` +
-    `Total:           $${Number(body.total).toFixed(2)}\n` +
-    `Payment method:  ${body.paymentMethod}\n\n` +
-    `Customer:\n` +
-    `  ${c.name}\n  ${c.email}\n  ${c.phone}\n` +
-    `  ${c.street}, ${c.city}, ${c.state} ${c.zip}\n` +
-    (c.notes ? `  Notes: ${c.notes}\n` : '');
+  const mail = orderEmail({ ...body, orderNumber });
 
   after(async () => {
-    await sendNotification({
-      subject: `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`,
-      text,
-      replyTo: c.email,
-    });
+    await sendNotification({ ...mail, replyTo: c.email });
   });
 
   return NextResponse.json(

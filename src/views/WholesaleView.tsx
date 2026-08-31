@@ -110,26 +110,14 @@ export const WholesaleView: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const selected = TIERS.find((t) => t.id === selectedTier);
-    const text =
-      `Wholesale Inquiry${selected ? ` — ${selected.title}` : ''}\n` +
-      `Business: ${formData.businessName}\n` +
-      `Contact: ${formData.contactName}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `License Type: ${formData.licenseType}\n` +
-      `Estimated Volume: ${formData.estimatedVolume}\n` +
-      `Notes: ${formData.notes}`;
-
     // Server route: logs the inquiry and emails the concierge via Zoho SMTP.
     fetch('/api/inquiry/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         kind: 'wholesale',
-        subject: `Wholesale allocation request from ${formData.businessName}`,
-        text,
-        replyTo: formData.email,
+        ...formData,
+        tier: TIERS.find((t) => t.id === selectedTier)?.title,
       }),
     }).catch(() => {});
 

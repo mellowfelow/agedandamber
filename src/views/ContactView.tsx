@@ -19,18 +19,11 @@ export const ContactView: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const text = `From: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\n${formData.message}`;
-
     // Server route: logs the message and emails the concierge via Zoho SMTP.
     fetch('/api/inquiry/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        kind: 'contact',
-        subject: `Concierge message: ${formData.subject}`,
-        text,
-        replyTo: formData.email,
-      }),
+      body: JSON.stringify({ kind: 'contact', ...formData }),
     }).catch(() => {});
 
     setIsSubmitting(false);
