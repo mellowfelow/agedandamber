@@ -33,8 +33,10 @@ export const SHOP = {
   standardDelivery: '2-5 business days',
   shippingEligibility:
     'We ship only to states with laws permitting direct-to-consumer alcohol shipping, under compliant licensed liquor carrier permits.',
+  // Card payments are not offered. Alcohol is a high-risk MCC that most card
+  // processors decline or freeze for a young DTC merchant, so checkout runs
+  // on Apple Pay, Cash App, Chime, crypto, and bank wire only.
   paymentMethods: [
-    { id: 'card', name: 'Credit / Debit Card', icon: 'CreditCard' },
     { id: 'applepay', name: 'Apple Pay', icon: 'Smartphone' },
     { id: 'cashapp', name: 'Cash App', icon: 'DollarSign' },
     { id: 'chime', name: 'Chime Direct', icon: 'Building' },

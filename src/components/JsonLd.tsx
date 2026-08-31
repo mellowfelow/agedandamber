@@ -64,7 +64,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           sameAs: BRAND.sameAs,
           priceRange: '$$$',
           currenciesAccepted: 'USD, BTC, USDT',
-          paymentAccepted: 'Credit Card, Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',
+          paymentAccepted: 'Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',
           areaServed: 'United States',
           numberOfItems,
           knowsAbout: [

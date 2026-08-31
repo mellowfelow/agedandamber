@@ -145,9 +145,6 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="flex flex-wrap gap-2 pt-1">
               <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
-                Card
-              </span>
-              <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
                 Apple Pay
               </span>
               <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">

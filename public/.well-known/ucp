@@ -24,7 +24,7 @@
   },
   "currency": "USD",
   "minimum_order_usd": "200",
-  "payment_methods": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
+  "payment_methods": ["applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
   "legal": {
     "age_restriction": "21+",
     "product_type": "Spirits, Wine, Champagne, Beer, Cider & Non-Alcoholic Beverages",

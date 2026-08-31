@@ -86,7 +86,7 @@
     ],
     "commerce": {
       "ordering": "human-assisted-order-form",
-      "payment": ["card", "applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
+      "payment": ["applepay", "cashapp", "chime", "crypto-BTC", "crypto-USDT", "bank-transfer"],
       "currency": "USD",
       "minimumOrder": "200",
       "freeShipping": "300"

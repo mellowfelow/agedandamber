@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, ShieldCheck, Coins, CreditCard, CheckCircle2, ArrowRight } from 'lucide-react';
-import { SITE, SHOP, FORMS } from '../config/site';
+import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight } from 'lucide-react';
+import { SHOP, CONTACT } from '../config/site';
 import { useAppState } from '../../app/providers';
 
 export const CheckoutModal: React.FC = () => {
@@ -29,6 +29,7 @@ export const CheckoutModal: React.FC = () => {
     selectedPayment: string;
     name: string;
     email: string;
+    emailDelivered: boolean;
   } | null>(null);
 
   if (!checkoutModalOpen) return null;
@@ -41,7 +42,7 @@ export const CheckoutModal: React.FC = () => {
   const shippingFee = subtotal >= SHOP.freeShippingThreshold ? 0 : SHOP.shippingFee;
   const grandTotal = subtotal - cryptoDiscountAmount + shippingFee;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.ageConfirmed) {
       alert('You must confirm that you are at least 21 years old to place a spirits order.');
@@ -51,54 +52,64 @@ export const CheckoutModal: React.FC = () => {
     setIsSubmitting(true);
 
     // Snapshot the order BEFORE the cart is cleared, so the confirmation
-    // screen shows what was actually ordered and paid, not a recomputed
-    // (by then empty) cart.
-    const orderNumber = `AA-${new Date().toISOString().slice(2, 10).replace(/-/g, '')}-${Math.random()
-      .toString(36)
-      .slice(2, 6)
-      .toUpperCase()}`;
-
-    // Web3Forms CORS fetch submission
-    const accessKey = FORMS.web3formsKey;
-    const bodyFormData = new FormData();
-    bodyFormData.append('access_key', accessKey || 'YOUR-WEB3FORMS-KEY-PENDING');
-    bodyFormData.append('subject', `Spirits Order ${orderNumber} from ${formData.name}`);
-    bodyFormData.append('from_name', SITE.name);
-    bodyFormData.append('email', formData.email);
-    bodyFormData.append('replyto', formData.email);
-    bodyFormData.append(
-      'message',
-      `Order Number: ${orderNumber}\n\n` +
-        `Order Items:\n${cart.map((i) => `- ${i.product.name} x${i.quantity} ($${i.product.price * i.quantity})`).join('\n')}\n\n` +
-        `Subtotal: $${subtotal}\n` +
-        `Crypto Discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
-        `Shipping: $${shippingFee}\n` +
-        `Total: $${grandTotal.toFixed(2)}\n` +
-        `Payment Method: ${selectedPayment}\n\n` +
-        `Customer Info:\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nAddress: ${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\nNotes: ${formData.notes}`
-    );
-
-    const finalizeSuccess = () => {
-      setCompletedOrder({
-        orderNumber,
-        grandTotal,
-        selectedPayment,
+    // screen shows what was actually ordered, not a recomputed (by then
+    // empty) cart.
+    const payload = {
+      items: cart.map((i) => ({
+        name: i.product.name,
+        quantity: i.quantity,
+        lineTotal: i.product.price * i.quantity,
+      })),
+      subtotal,
+      cryptoDiscount: cryptoDiscountAmount,
+      shipping: shippingFee,
+      total: grandTotal,
+      paymentMethod:
+        SHOP.paymentMethods.find((pm) => pm.id === selectedPayment)?.name || selectedPayment,
+      customer: {
         name: formData.name,
         email: formData.email,
-      });
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      clearCart();
+        phone: formData.phone,
+        street: formData.street,
+        city: formData.city,
+        state: formData.state,
+        zip: formData.zip,
+        notes: formData.notes,
+      },
     };
 
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { Accept: 'application/json' },
-      body: bodyFormData,
-    })
-      .then((r) => r.json())
-      .then(finalizeSuccess)
-      .catch(finalizeSuccess); // Fallback for pending key or offline mode
+    // Client-side fallback reference, only used if the API call can't be
+    // reached at all (offline). The server is the source of truth otherwise.
+    let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
+    let emailDelivered = false;
+
+    try {
+      const res = await fetch('/api/order/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (data?.ok && data.orderNumber) {
+        orderNumber = data.orderNumber;
+        emailDelivered = Boolean(data.emailDelivered);
+      }
+    } catch {
+      // Network failure — keep the fallback order number; the confirmation
+      // screen tells the customer to contact the concierge directly.
+    }
+
+    setCompletedOrder({
+      orderNumber,
+      grandTotal,
+      selectedPayment: payload.paymentMethod,
+      name: formData.name,
+      email: formData.email,
+      emailDelivered,
+    });
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    clearCart();
   };
 
   return (
@@ -123,7 +134,7 @@ export const CheckoutModal: React.FC = () => {
             </h2>
 
             <p className="text-amber-200/80 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your spirits order draft has been logged with our Napa Valley concierge.
+              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your order has been logged with our Napa Valley concierge, who will email you shortly with secure payment instructions for <strong className="text-amber-100">{completedOrder.selectedPayment}</strong>.
             </p>
 
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800 text-xs text-left max-w-md mx-auto space-y-2">
@@ -140,7 +151,11 @@ export const CheckoutModal: React.FC = () => {
                 <span className="font-bold text-[#D4AF37]">${completedOrder.grandTotal.toFixed(2)}</span>
               </div>
               <p className="text-[11px] text-amber-300/70 pt-1">
-                A confirmation email has been dispatched to <strong>{completedOrder.email}</strong> with payment routing details and adult signature tracking. Please reference your order number above in any follow-up with our concierge.
+                {completedOrder.emailDelivered ? (
+                  <>A confirmation has been sent to <strong>{completedOrder.email}</strong>. Our concierge will follow up within 2 hours (business hours) with payment routing details and adult-signature tracking.</>
+                ) : (
+                  <>Our concierge will contact you within 2 hours (business hours) with payment details. If you don&apos;t hear from us, reach out directly quoting order <strong>{completedOrder.orderNumber}</strong> — {CONTACT.email} or WhatsApp {CONTACT.phone}.</>
+                )}
               </p>
             </div>
 

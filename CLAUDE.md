@@ -11,7 +11,7 @@ Aged And Amber is a Next.js (App Router) ecommerce application for boutique craf
 - One `<h1>` per main view/page.
 - 21+ adult signature verification gate on checkout and age guard.
 - Form submission uses Web3Forms CORS integration.
-- Standard payment methods: Credit Card, Apple Pay, Cash App, Chime, Crypto (BTC, USDT), Bank Wire.
+- Standard payment methods: Apple Pay, Cash App, Chime, Crypto (BTC, USDT), Bank Wire. Card payments are NOT offered (high-risk alcohol MCC) — never re-add a card option.
 - 10% discount auto-applied on crypto orders.
 
 ## Live Endpoints
