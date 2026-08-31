@@ -20,6 +20,15 @@ html.age-verified #age-gate-modal {
   display: none;
 }
 
+/* While the gate is up, the page behind it must not scroll. Purely CSS and
+   keyed off the same class the gate itself uses, so it applies from the
+   first paint and releases the instant "Yes" adds .age-verified — no JS
+   timing involved, and it still holds if hydration never happens. */
+html:not(.age-verified),
+html:not(.age-verified) body {
+  overflow-y: hidden;
+}
+
 * {
   box-sizing: border-box;
   min-width: 0;

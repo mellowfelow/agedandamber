@@ -50,8 +50,18 @@ export const AgeGateModal: React.FC = () => {
     // half-transparent overlay.
     <div
       id="age-gate-modal"
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black"
+      className="fixed inset-0 z-[100] overflow-y-auto bg-black"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="age-gate-heading"
     >
+      {/* Scroll wrapper: centres the card when it fits, and lets the whole
+          card scroll when the viewport is short (landscape phone, small
+          laptop). Without it the card was centre-cropped — on a 300px-tall
+          viewport the top was cut to -101px and the Yes/No buttons fell
+          below the fold with no way to scroll to them, locking the visitor
+          out of the site entirely. */}
+      <div id="age-gate-scroll" className="min-h-full flex items-center justify-center p-4">
       <div id="age-gate-card" className="w-full max-w-lg p-8 rounded-2xl bg-[#1C140E] border border-[#D4AF37]/30 text-amber-50 text-center shadow-2xl relative overflow-hidden">
         {/* Glow accent */}
         <div className="absolute -top-24 -left-24 w-48 h-48 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />
@@ -107,6 +117,7 @@ export const AgeGateModal: React.FC = () => {
             </p>
           </div>
         )}
+      </div>
       </div>
     </div>
   );
