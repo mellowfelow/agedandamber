@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { SITE, CONTACT, FORMS, SHOP } from '@/src/config/site';
+import { CONTACT, SHOP } from '@/src/config/site';
+import { sendNotification } from '@/src/utils/notify';
 
 const CORS = { 'Access-Control-Allow-Origin': '*' };
 
@@ -29,18 +30,10 @@ interface OrderBody {
 }
 
 /**
- * Server-side order intake.
- *
- * The checkout used to POST straight to api.web3forms.com from the browser.
- * Two problems with that: privacy browsers / ad-blockers (Brave, uBlock,
- * Firefox strict) block requests to web3forms.com outright, so the order
- * email silently never sent; and the client swallowed every failure and
- * still showed "order confirmed". This route makes the Web3Forms call
- * server-to-server (no CORS, nothing to block) and always writes the full
- * order to the function log, so an order is recoverable even if the email
- * provider is down. It returns ok:true whenever the order was received —
- * emailDelivered tells the client whether the notification actually went
- * out.
+ * Order intake. Generates the short order reference, logs the full order
+ * server-side (durable), and sends the notification via Resend if
+ * configured. The checkout also submits to Web3Forms directly from the
+ * browser, so the order still lands in the Web3Forms dashboard regardless.
  */
 export async function POST(req: NextRequest) {
   let body: OrderBody;
@@ -55,19 +48,17 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Missing order details' }, { status: 400, headers: CORS });
   }
 
-  // Short, human-readable order reference. Six digits off the timestamp —
-  // reads like a normal running order number and is unique enough for a
-  // concierge-completed flow.
+  // Short, professional order reference — six digits off the timestamp,
+  // reads like a normal running order number.
   const orderNumber = `AA-${String(Date.now()).slice(-6)}`;
-  const receivedAt = new Date().toISOString();
 
   const lines = body.items
-    .map((i) => `  - ${i.name} ×${i.quantity} — $${Number(i.lineTotal).toFixed(2)}`)
+    .map((i) => `  - ${i.name} x${i.quantity} — $${Number(i.lineTotal).toFixed(2)}`)
     .join('\n');
 
-  const summary =
+  const text =
     `NEW ORDER ${orderNumber}\n` +
-    `Received: ${receivedAt}\n\n` +
+    `Received: ${new Date().toISOString()}\n\n` +
     `Items:\n${lines}\n\n` +
     `Subtotal:        $${Number(body.subtotal).toFixed(2)}\n` +
     `Crypto discount: -$${Number(body.cryptoDiscount || 0).toFixed(2)}\n` +
@@ -79,85 +70,17 @@ export async function POST(req: NextRequest) {
     `  ${c.street}, ${c.city}, ${c.state} ${c.zip}\n` +
     (c.notes ? `  Notes: ${c.notes}\n` : '');
 
-  // Always log — this is the durable copy of the order (Vercel → Logs).
-  console.log(`[order] ${orderNumber}\n${summary}`);
-
-  let emailDelivered = false;
-
-  // Preferred path: Resend, if configured. Set RESEND_API_KEY and
-  // ORDER_NOTIFY_EMAIL in the Vercel project env and orders email through a
-  // verified agedandamber.com sender with real delivery logs — no code
-  // change needed.
-  const resendKey = process.env.RESEND_API_KEY;
-  const notifyTo = process.env.ORDER_NOTIFY_EMAIL || CONTACT.email;
-  if (resendKey) {
-    try {
-      const res = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${resendKey}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          from: `${SITE.name} Orders <${FORMS.resendFrom}>`,
-          to: [notifyTo],
-          reply_to: c.email,
-          subject: `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`,
-          text: summary,
-        }),
-      });
-      emailDelivered = res.ok;
-      if (!res.ok) {
-        console.error(`[order] ${orderNumber} Resend responded`, res.status, await res.text().catch(() => ''));
-      }
-    } catch (err) {
-      console.error(`[order] ${orderNumber} Resend threw`, err);
-    }
-  }
-
-  if (!emailDelivered && FORMS.web3formsKey) {
-    try {
-      const fd = new FormData();
-      fd.append('access_key', FORMS.web3formsKey);
-      fd.append('subject', `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`);
-      fd.append('from_name', `${SITE.name} Orders`);
-      fd.append('email', c.email);
-      fd.append('replyto', c.email);
-      fd.append('to', CONTACT.email); // honoured on Web3Forms plans with custom recipients; ignored otherwise
-      fd.append('message', summary);
-      fd.append('botcheck', '');
-
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          // A Web3Forms access key can be locked to specific domains; a
-          // server-to-server request carries no browser Origin, so send the
-          // site's own origin explicitly or a domain-locked key 403s.
-          Origin: `https://${SITE.domain}`,
-          Referer: `https://${SITE.domain}/`,
-        },
-        body: fd,
-      });
-      const json = await res.json().catch(() => ({}));
-      emailDelivered = res.ok && json?.success === true;
-      if (!emailDelivered) {
-        console.error(`[order] ${orderNumber} email NOT delivered — Web3Forms responded`, res.status, json);
-      }
-    } catch (err) {
-      console.error(`[order] ${orderNumber} email send threw`, err);
-    }
-  }
-
-  if (!emailDelivered) {
-    console.error(
-      `[order] ${orderNumber} — NOTIFICATION NOT SENT. Order is captured in this log only. ` +
-        `Check RESEND_API_KEY / Web3Forms key + spam folder.`
-    );
-  }
+  const { emailed } = await sendNotification({
+    subject: `New order ${orderNumber} — ${c.name} — $${Number(body.total).toFixed(2)}`,
+    text,
+    replyTo: c.email,
+  });
 
   return NextResponse.json(
     {
       ok: true,
       orderNumber,
-      emailDelivered,
+      emailDelivered: emailed,
       concierge: { email: CONTACT.email, whatsapp: CONTACT.whatsapp, phone: CONTACT.phone },
       minOrder: SHOP.minOrder,
     },

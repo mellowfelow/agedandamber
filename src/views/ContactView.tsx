@@ -15,30 +15,47 @@ export const ContactView: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const bodyFormData = new FormData();
-    bodyFormData.append('access_key', FORMS.web3formsKey || 'YOUR-WEB3FORMS-KEY-PENDING');
-    bodyFormData.append('subject', `Concierge Message: ${formData.subject}`);
-    bodyFormData.append('from_name', SITE.name);
-    bodyFormData.append('email', formData.email);
-    bodyFormData.append('message', `From: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\n${formData.message}`);
+    const text = `From: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\n\n${formData.message}`;
 
-    fetch('https://api.web3forms.com/submit', {
+    // Server route: durable log + Resend (if configured).
+    fetch('/api/inquiry/', {
       method: 'POST',
-      headers: { Accept: 'application/json' },
-      body: bodyFormData,
-    })
-      .then(() => {
-        setIsSubmitting(false);
-        setSubmitted(true);
-      })
-      .catch(() => {
-        setIsSubmitting(false);
-        setSubmitted(true);
-      });
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        kind: 'contact',
+        subject: `Concierge message: ${formData.subject}`,
+        text,
+        replyTo: formData.email,
+      }),
+    }).catch(() => {});
+
+    // Web3Forms, direct from the browser (populates the Web3Forms dashboard).
+    if (FORMS.web3formsKey) {
+      const bodyFormData = new FormData();
+      bodyFormData.append('access_key', FORMS.web3formsKey);
+      bodyFormData.append('subject', `Concierge Message: ${formData.subject}`);
+      bodyFormData.append('from_name', SITE.name);
+      bodyFormData.append('email', formData.email);
+      bodyFormData.append('replyto', formData.email);
+      bodyFormData.append('message', text);
+      bodyFormData.append('botcheck', '');
+      try {
+        await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: bodyFormData,
+        });
+      } catch {
+        // Ad-blocker / offline — the server route above still logged it.
+      }
+    }
+
+    setIsSubmitting(false);
+    setSubmitted(true);
   };
 
   return (

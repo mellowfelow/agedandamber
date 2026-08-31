@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight } from 'lucide-react';
-import { SHOP, CONTACT } from '../config/site';
+import { SHOP, CONTACT, SITE, FORMS } from '../config/site';
 import { useAppState } from '../../app/providers';
 
 export const CheckoutModal: React.FC = () => {
@@ -83,6 +83,7 @@ export const CheckoutModal: React.FC = () => {
     let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
     let emailDelivered = false;
 
+    // 1) Server route: durable log + short order number + Resend (if set up).
     try {
       const res = await fetch('/api/order/', {
         method: 'POST',
@@ -95,8 +96,46 @@ export const CheckoutModal: React.FC = () => {
         emailDelivered = Boolean(data.emailDelivered);
       }
     } catch {
-      // Network failure — keep the fallback order number; the confirmation
-      // screen tells the customer to contact the concierge directly.
+      // Network failure — keep the fallback order number.
+    }
+
+    // 2) Web3Forms, direct from the browser. This is what populates the
+    //    Web3Forms dashboard; a real browser origin also gets past their
+    //    firewall (a server-to-server call does not). Independent of (1) —
+    //    if either channel delivers, the order was notified.
+    if (FORMS.web3formsKey) {
+      try {
+        const fd = new FormData();
+        fd.append('access_key', FORMS.web3formsKey);
+        fd.append('subject', `New order ${orderNumber} — ${formData.name} — $${grandTotal.toFixed(2)}`);
+        fd.append('from_name', `${SITE.name} Orders`);
+        fd.append('email', formData.email);
+        fd.append('replyto', formData.email);
+        fd.append(
+          'message',
+          `Order ${orderNumber}\n\n` +
+            `Items:\n${payload.items.map((i) => `- ${i.name} x${i.quantity} ($${i.lineTotal.toFixed(2)})`).join('\n')}\n\n` +
+            `Subtotal: $${subtotal.toFixed(2)}\n` +
+            `Crypto discount: -$${cryptoDiscountAmount.toFixed(2)}\n` +
+            `Shipping: $${shippingFee.toFixed(2)}\n` +
+            `Total: $${grandTotal.toFixed(2)}\n` +
+            `Payment: ${payload.paymentMethod}\n\n` +
+            `Customer:\n${formData.name}\n${formData.email}\n${formData.phone}\n` +
+            `${formData.street}, ${formData.city}, ${formData.state} ${formData.zip}\n` +
+            (formData.notes ? `Notes: ${formData.notes}` : '')
+        );
+        fd.append('botcheck', '');
+        const w3 = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: fd,
+        });
+        const w3json = await w3.json().catch(() => ({}));
+        if (w3.ok && w3json?.success === true) emailDelivered = true;
+      } catch {
+        // Blocked by an ad-blocker / offline — the server route above still
+        // logged the order; the confirmation screen handles the messaging.
+      }
     }
 
     setCompletedOrder({
