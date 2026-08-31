@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           id="age-gate-check"
           dangerouslySetInnerHTML={{
-            __html: `try{if(localStorage.getItem('aged-and-amber-age-verified')==='true'){document.documentElement.className+=' age-verified'}}catch(e){}`,
+            __html: `(function(){var v=false;try{v=localStorage.getItem('aged-and-amber-age-verified')==='true'}catch(e){}if(!v){try{v=document.cookie.indexOf('aa_age_verified=1')>-1}catch(e){}}if(v){document.documentElement.className+=' age-verified'}})();`,
           }}
         />
         {/* Critical CSS for the age gate — the first thing every fresh visitor sees.
@@ -84,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <style
           id="age-gate-critical-css"
           dangerouslySetInnerHTML={{
-            __html: `html.age-verified #age-gate-modal{display:none!important}html:not(.age-verified),html:not(.age-verified) body{overflow-y:hidden!important}#age-gate-modal{position:fixed;inset:0;z-index:100;overflow-y:auto;background-color:#000;opacity:1;animation:none}#age-gate-scroll{min-height:100%;display:flex;align-items:center;justify-content:center;padding:1rem}#age-gate-card{width:100%;max-width:32rem;padding:2rem;border-radius:1rem;background-color:#1C140E;border:1px solid rgba(212,175,55,.3);color:#fffbeb;text-align:center;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);position:relative;overflow:hidden}#age-gate-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#D4AF37;margin-bottom:.5rem;display:block}#age-gate-heading{font-family:var(--font-cinzel),Georgia,"Times New Roman",serif;font-size:1.875rem;line-height:1.2;font-weight:700;color:#fef3c7;margin-bottom:.75rem;letter-spacing:-.025em}#age-gate-desc{color:rgba(253,230,138,.8);font-size:.875rem;line-height:1.43;margin-bottom:1.5rem}`,
+            __html: `html.age-verified #age-gate-modal{display:none!important}html:not(.age-verified),html:not(.age-verified) body{overflow-y:hidden}#age-gate-modal{position:fixed;inset:0;z-index:100;overflow-y:auto;background-color:#000;opacity:1;animation:none}#age-gate-scroll{min-height:100%;display:flex;align-items:center;justify-content:center;padding:1rem}#age-gate-card{width:100%;max-width:32rem;padding:2rem;border-radius:1rem;background-color:#1C140E;border:1px solid rgba(212,175,55,.3);color:#fffbeb;text-align:center;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);position:relative;overflow:hidden}#age-gate-eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#D4AF37;margin-bottom:.5rem;display:block}#age-gate-heading{font-family:var(--font-cinzel),Georgia,"Times New Roman",serif;font-size:1.875rem;line-height:1.2;font-weight:700;color:#fef3c7;margin-bottom:.75rem;letter-spacing:-.025em}#age-gate-desc{color:rgba(253,230,138,.8);font-size:.875rem;line-height:1.43;margin-bottom:1.5rem}`,
           }}
         />
         <Script src="/js/webmcp.js" strategy="beforeInteractive" />

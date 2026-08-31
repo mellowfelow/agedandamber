@@ -5,6 +5,23 @@ import { ShieldCheck, AlertCircle } from 'lucide-react';
 import { SITE, COMPLIANCE } from '../config/site';
 import { BrandLogo } from './BrandLogo';
 
+/** Consent stores. Kept in sync with the inline check in app/layout.tsx. */
+const AGE_KEY = 'aged-and-amber-age-verified';
+const AGE_COOKIE = 'aa_age_verified';
+
+function isAgeVerified(): boolean {
+  try {
+    if (localStorage.getItem(AGE_KEY) === 'true') return true;
+  } catch {
+    /* storage blocked — fall through to the cookie */
+  }
+  try {
+    return document.cookie.includes(`${AGE_COOKIE}=1`);
+  } catch {
+    return false;
+  }
+}
+
 export const AgeGateModal: React.FC = () => {
   // Starts false on both server and client render — matches exactly, so there's
   // no hydration mismatch. Renders the full modal every time on mount; for an
@@ -16,18 +33,48 @@ export const AgeGateModal: React.FC = () => {
   // Belt for the CSS approach: once mounted, if this visitor already passed
   // the gate, drop the modal from the DOM entirely so nothing can un-hide it.
   useEffect(() => {
-    try {
-      if (localStorage.getItem('aged-and-amber-age-verified') === 'true') setDismissed(true);
-    } catch {
-      // localStorage unavailable — leave the gate showing.
-    }
+    if (isAgeVerified()) setDismissed(true);
   }, []);
 
+  // Scroll lock. The inlined CSS handles this before hydration; once mounted
+  // React is authoritative. Critically, the release path also re-asserts
+  // `age-verified` on <html> — if that class were ever lost (a stray
+  // re-render of the root element), the CSS lock keyed on
+  // `html:not(.age-verified)` would otherwise freeze the whole site with no
+  // way to recover.
+  useEffect(() => {
+    const root = document.documentElement;
+    if (dismissed || isAgeVerified()) {
+      // Release explicitly with an inline `auto` rather than by clearing the
+      // inline style. Inline wins over the stylesheet, so the site stays
+      // scrollable even in the pathological case where the `age-verified`
+      // class goes missing — otherwise the CSS rule keyed on
+      // `html:not(.age-verified)` would freeze the page with the gate gone
+      // and no way for the visitor to recover.
+      root.classList.add('age-verified');
+      root.style.overflowY = 'auto';
+      document.body.style.overflowY = 'auto';
+      return;
+    }
+    root.style.overflowY = 'hidden';
+    document.body.style.overflowY = 'hidden';
+  }, [dismissed]);
+
   const handleVerify = () => {
+    // Two independent stores. localStorage alone is not enough: privacy
+    // browsers and Safari Private Browsing can block or wipe it, which made
+    // the gate reappear on every single page load — indistinguishable from
+    // it being broken. The cookie survives those cases; the inline check in
+    // layout.tsx reads either.
     try {
-      localStorage.setItem('aged-and-amber-age-verified', 'true');
+      localStorage.setItem(AGE_KEY, 'true');
     } catch {
-      // localStorage unavailable — the session will just re-show the gate next visit
+      /* storage blocked — the cookie below still carries the consent */
+    }
+    try {
+      document.cookie = `${AGE_COOKIE}=1; path=/; max-age=31536000; SameSite=Lax`;
+    } catch {
+      /* cookies blocked too — gate re-shows next load, which is the safe failure */
     }
     document.documentElement.classList.add('age-verified');
     // Lets deferred, non-essential widgets (e.g. the chat) hold off until
