@@ -8,6 +8,7 @@ import { ProductCard } from '../components/ProductCard';
 import { ArrowLeft, Flame, Shield, Truck, Coins, ShoppingBag, Award, Check } from 'lucide-react';
 import { SITE, SHOP } from '../config/site';
 import { getRouteUrl } from '../utils/routes';
+import { productLabels, strengthLine } from '../utils/productCopy';
 import { useAppState } from '../../app/providers';
 
 interface ProductDetailViewProps {
@@ -17,6 +18,7 @@ interface ProductDetailViewProps {
 
 export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, relatedProducts }) => {
   const { addToCart } = useAppState();
+  const labels = productLabels(product.category);
   const [selectedImg, setSelectedImg] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
@@ -87,7 +89,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
               <span>•</span>
               <span className="flex items-center gap-1 text-amber-400">
                 <Flame className="w-3.5 h-3.5 text-amber-500" />
-                {product.proof} Proof ({product.proof / 2}% ABV)
+                {strengthLine(product.proof, product.category)}
               </span>
             </div>
 
@@ -103,7 +105,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
           {/* Tasting Profile Card */}
           <div className="p-5 rounded-2xl bg-[#1C140E] border border-amber-900/40 space-y-3 text-xs">
             <h3 className="font-serif font-bold text-[#D4AF37] text-sm uppercase tracking-wider">
-              Organoleptic Tasting Profile
+              Tasting Profile
             </h3>
             <div className="space-y-2 text-amber-200/90 leading-relaxed">
               <p><strong className="text-amber-100 font-serif">Nose:</strong> {product.tastingNotes.nose}</p>
@@ -115,11 +117,11 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
           {/* Cask Specifications */}
           <div className="grid grid-cols-2 gap-3 text-xs">
             <div className="p-3.5 rounded-xl bg-stone-900/80 border border-stone-800">
-              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">Cask Wood Finish</span>
+              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">{labels.spec}</span>
               <span className="font-bold text-amber-100">{product.caskType}</span>
             </div>
             <div className="p-3.5 rounded-xl bg-stone-900/80 border border-stone-800">
-              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">Distillery Location</span>
+              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">{labels.origin}</span>
               <span className="font-bold text-amber-100">{product.distilleryLocation}</span>
             </div>
           </div>
@@ -130,7 +132,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
               <span className="text-4xl font-serif font-bold text-[#D4AF37]">
                 {SITE.currencySymbol}{product.price}
               </span>
-              <span className="text-xs text-amber-300/70">USD per 750ml bottle</span>
+              <span className="text-xs text-amber-300/70">USD · {product.volume}</span>
             </div>
 
             <div className="p-3.5 rounded-xl bg-emerald-950/50 border border-emerald-800/50 text-emerald-300 text-xs flex items-center gap-3">

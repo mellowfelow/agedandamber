@@ -51,10 +51,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
           </span>
         )}
 
-        {/* Proof Tag */}
+        {/* Strength tag — ABV reads correctly for beer/wine/zero-proof too */}
         <span className="absolute top-3 right-3 z-10 py-1 px-2.5 rounded-full text-[11px] font-semibold bg-stone-900/80 text-amber-200 backdrop-blur-md flex items-center gap-1">
           <Flame className="w-3 h-3 text-amber-500" />
-          {product.proof} Proof
+          {product.proof > 0
+            ? `${Number.isInteger(product.proof / 2) ? product.proof / 2 : (product.proof / 2).toFixed(1)}% ABV`
+            : 'Alcohol-free'}
         </span>
 
         {/* Image */}
@@ -103,10 +105,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
           </p>
         </div>
 
-        {/* Cask Wood Info */}
-        <div className="pt-2 border-t border-amber-900/30 text-[11px] text-amber-300/60 flex items-center justify-between">
-          <span className="truncate">Cask: {product.caskType}</span>
-          <span className="shrink-0 font-medium text-amber-400/80">{product.age}</span>
+        {/* Base / cask / grain note — the caskType field is reused across all
+            categories, so no "Cask:" prefix (it's a grain bill on a beer). */}
+        <div className="pt-2 border-t border-amber-900/30 text-[11px] text-amber-300/60 flex items-center justify-between gap-2">
+          <span className="truncate">{product.caskType}</span>
+          {product.age && product.age !== 'NV' && (
+            <span className="shrink-0 font-medium text-amber-400/80">{product.age}</span>
+          )}
         </div>
 
         {/* Footer Price & Quantity Stepper Add Button */}

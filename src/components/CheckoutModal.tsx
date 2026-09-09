@@ -229,7 +229,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="Full Legal Name"
+                  aria-label="Full Legal Name" placeholder="Full Legal Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -237,7 +237,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="email"
                   required
-                  placeholder="Email Address"
+                  aria-label="Email Address" placeholder="Email Address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -248,7 +248,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="Street Address"
+                  aria-label="Street Address" placeholder="Street Address"
                   value={formData.street}
                   onChange={(e) => setFormData({ ...formData, street: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37] md:col-span-2"
@@ -256,7 +256,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="tel"
                   required
-                  placeholder="Phone (for 21+ Delivery)"
+                  aria-label="Phone" placeholder="Phone (for 21+ Delivery)"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -267,7 +267,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="City"
+                  aria-label="City" placeholder="City"
                   value={formData.city}
                   onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -275,7 +275,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="State"
+                  aria-label="State" placeholder="State"
                   value={formData.state}
                   onChange={(e) => setFormData({ ...formData, state: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -283,7 +283,7 @@ export const CheckoutModal: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="ZIP Code"
+                  aria-label="ZIP Code" placeholder="ZIP Code"
                   value={formData.zip}
                   onChange={(e) => setFormData({ ...formData, zip: e.target.value })}
                   className="w-full p-3 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"

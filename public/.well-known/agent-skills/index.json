@@ -8,37 +8,43 @@
       "name": "search-products",
       "type": "commerce",
       "description": "Search spirits catalog by keyword, category, or maximum price",
-      "url": "https://www.agedandamber.com/api/mcp/"
+      "url": "https://www.agedandamber.com/api/mcp/",
+      "sha256": "17a96871f9738ad0929f6c98c5cbf23377c0bb30c9af33f9261849e4e7a60ab9"
     },
     {
       "name": "browse-catalog",
       "type": "navigation",
       "description": "Browse spirits catalog by cask category",
-      "url": "https://www.agedandamber.com/shop/"
+      "url": "https://www.agedandamber.com/shop/",
+      "sha256": "a9fd52e0897d23c70388241e785979f63bce5012f5a1ed6b9cec6db8ce1af9ca"
     },
     {
       "name": "order-draft",
       "type": "commerce",
       "description": "Create a prefilled order draft for adult 21+ verification. Human completes order.",
-      "url": "https://www.agedandamber.com/api/mcp/"
+      "url": "https://www.agedandamber.com/api/mcp/",
+      "sha256": "d54ed54ba8b2e782961bf6a897c733528c14d46916a2df4671a38623bb44b94e"
     },
     {
       "name": "wholesale-inquiry",
       "type": "commerce",
       "description": "Wholesale pricing tiers and single barrel allocations",
-      "url": "https://www.agedandamber.com/wholesale/"
+      "url": "https://www.agedandamber.com/wholesale/",
+      "sha256": "a1bd9025cd415702c0beed2c07818bedbb6658dca48cb570f6528c12e1b5a6b9"
     },
     {
       "name": "product-education",
       "type": "content",
       "description": "Educational articles on cask wood finishes and non-chill filtration",
-      "url": "https://www.agedandamber.com/blog/"
+      "url": "https://www.agedandamber.com/blog/",
+      "sha256": "86809584e013d41e97f6cdd4355612a82e1090ce3ff5d7058658fcfc9f9de64a"
     },
     {
       "name": "contact",
       "type": "support",
       "description": "Contact Aged & Amber spirits advisory concierge",
-      "url": "https://www.agedandamber.com/contact/"
+      "url": "https://www.agedandamber.com/contact/",
+      "sha256": "0f6060a49567ce026b1155475c726c4fd7152328f6fa9fe9249651e02734f944"
     }
   ]
 }
