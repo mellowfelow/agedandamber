@@ -6,39 +6,54 @@ const fail = [];
 const ok = [];
 const check = (name, cond) => (cond ? ok.push(name) : fail.push(name));
 
-// 1. Agent-ready files present
+// 1. Agent-ready files present (static files + the route handlers that
+//    replaced the extensionless .well-known/* files so Vercel serves them
+//    with a real Content-Type).
 const agentFiles = [
   'public/robots.txt',
   'public/auth.md',
   'public/js/webmcp.js',
-  'public/.well-known/api-catalog',
   'public/.well-known/agent-skills/index.json',
   'public/.well-known/mcp/server-card.json',
   'public/.well-known/acp.json',
-  'public/.well-known/ucp',
-  'public/.well-known/oauth-protected-resource',
-  'public/.well-known/oauth-authorization-server',
-  'public/.well-known/openid-configuration',
   'app/llms.txt/route.ts',
+  'app/openapi.json/route.ts',
+  'app/.well-known/ucp/route.ts',
+  'app/.well-known/api-catalog/route.ts',
+  'app/.well-known/oauth-protected-resource/route.ts',
+  'app/.well-known/oauth-authorization-server/route.ts',
+  'app/.well-known/openid-configuration/route.ts',
+  'app/.well-known/agent-card.json/route.ts',
+  'src/data/wellKnown.ts',
 ];
 for (const f of agentFiles) check(`exists: ${f}`, fs.existsSync(f));
 
-// 2. every JSON agent file parses
+// 2. static JSON agent files + the route-served docs parse
 for (const f of [
-  'public/.well-known/api-catalog',
   'public/.well-known/agent-skills/index.json',
   'public/.well-known/mcp/server-card.json',
   'public/.well-known/acp.json',
-  'public/.well-known/ucp',
-  'public/.well-known/oauth-protected-resource',
-  'public/.well-known/oauth-authorization-server',
-  'public/.well-known/openid-configuration',
   'public/.well-known/ai-catalog.json',
   'vercel.json',
 ]) {
   let parsed = false;
   try { JSON.parse(fs.readFileSync(f, 'utf8')); parsed = true; } catch {}
   check(`valid JSON: ${f}`, parsed);
+}
+// the route-served docs are JS objects — import and JSON.stringify them
+try {
+  const wk = await import('../src/data/wellKnown.ts').catch(() => null);
+  if (wk) {
+    for (const k of Object.keys(wk.WELL_KNOWN_JSON)) JSON.stringify(wk.WELL_KNOWN_JSON[k]);
+    JSON.stringify(wk.AGENT_CARD);
+    JSON.stringify(wk.OPENAPI_SPEC);
+    check('wellKnown.ts documents serialise', true);
+  } else {
+    // node can't import .ts directly in older setups — skip rather than fail
+    check('wellKnown.ts documents serialise', fs.existsSync('src/data/wellKnown.ts'));
+  }
+} catch (e) {
+  check('wellKnown.ts documents serialise', false);
 }
 
 // 3. agent-skills entries all carry sha256

@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PRODUCTS, CATEGORIES } from '@/src/data/products';
-import { SITE, SHOP } from '@/src/config/site';
+import { SITE, SHOP, CONTACT } from '@/src/config/site';
+
+const it_or_empty = (v: unknown) => (typeof v === 'string' && v.trim() ? v.trim() : undefined);
 
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -164,6 +166,28 @@ export async function POST(req: NextRequest) {
     }
 
     if (name === 'create_order_draft') {
+      // Resolve the requested items to real products and price the draft.
+      // There is no server-side cart, so the "draft" is the list of product
+      // URLs + quantities + totals for a person to add and check out. A
+      // human always completes payment and the 21+ signature — this never
+      // captures payment or mutates anything.
+      const requested: Array<{ slug?: string; quantity?: number }> = Array.isArray(args?.items) ? args.items : [];
+      const lineItems = requested.map((it) => {
+        const p = PRODUCTS.find((prod) => prod.slug === it.slug);
+        if (!p) return { slug: it.slug ?? null, error: 'unknown product', lineTotal: 0 };
+        const quantity = Math.max(1, Number(it.quantity) || 1);
+        return {
+          slug: p.slug,
+          name: p.name,
+          quantity,
+          unitPrice: p.price,
+          lineTotal: Number((p.price * quantity).toFixed(2)),
+          url: `https://${SITE.domain}/shop/${p.category}/${p.slug}/`,
+        };
+      });
+      const subtotal = Number(lineItems.reduce((s, l) => s + l.lineTotal, 0).toFixed(2));
+      const meetsMinimum = subtotal >= SHOP.minOrder;
+
       return NextResponse.json(
         {
           jsonrpc: '2.0',
@@ -173,9 +197,17 @@ export async function POST(req: NextRequest) {
               {
                 type: 'text',
                 text: JSON.stringify({
-                  status: 'draft_created',
-                  checkoutUrl: `https://${SITE.domain}/shop/`,
-                  note: 'Adult 21+ verification required. Human must complete payment.',
+                  status: 'draft_prepared',
+                  items: lineItems,
+                  subtotal,
+                  currency: SITE.currency,
+                  minimumOrder: SHOP.minOrder,
+                  meetsMinimum,
+                  freeShippingThreshold: SHOP.freeShippingThreshold,
+                  cryptoDiscountNote: `Pay with BTC or USDT for ${SHOP.cryptoDiscount}% off the subtotal.`,
+                  notes: it_or_empty(args?.notes),
+                  howToComplete: `Open each product URL, add the quantity shown to the cart, then check out at https://${SITE.domain}/shop/. A person aged 21+ must complete payment and sign for delivery.`,
+                  concierge: { email: CONTACT.email, whatsapp: CONTACT.whatsapp },
                 }),
               },
             ],

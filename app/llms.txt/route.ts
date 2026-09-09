@@ -68,9 +68,11 @@ ${categoryLines}
 
 ## Agent Resources & API Specifications
 
+- [OpenAPI Spec](${base}/openapi.json): OpenAPI 3.1 description of the public REST + MCP endpoints.
 - [API Catalog](${base}/.well-known/api-catalog): RFC 9727 linkset of all public site resources and API endpoints.
 - [Agent Skills Index](${base}/.well-known/agent-skills/index.json): Declarative schema of supported agent skills.
 - [MCP Server Card](${base}/.well-known/mcp/server-card.json): Model Context Protocol server capabilities and tool schema.
+- [A2A Agent Card](${base}/.well-known/agent-card.json): Agent-to-Agent protocol card (also at /.well-known/agent.json).
 - [MCP Streamable Server](${base}/api/mcp/): Live MCP endpoint — search_products, get_product, list_categories, get_policies, create_order_draft.
 - [Authentication Specification](${base}/auth.md): Public access declaration for autonomous AI agents.
 

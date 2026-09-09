@@ -15,8 +15,10 @@ No authentication required. All resources and API endpoints are publicly accessi
 | Wholesale Allocations | https://www.agedandamber.com/wholesale/ |
 | MCP Streamable Server | https://www.agedandamber.com/api/mcp/ |
 | MCP Server Card | https://www.agedandamber.com/.well-known/mcp/server-card.json |
+| A2A Agent Card | https://www.agedandamber.com/.well-known/agent-card.json |
 | API Catalog (RFC 9727) | https://www.agedandamber.com/.well-known/api-catalog |
 | Agent Skills Index | https://www.agedandamber.com/.well-known/agent-skills/index.json |
+| OpenAPI 3.1 spec | https://www.agedandamber.com/openapi.json |
 | llms.txt | https://www.agedandamber.com/llms.txt |
 | Products / Categories / Search API | https://www.agedandamber.com/api/products/ · /api/categories/ · /api/search/ |
 

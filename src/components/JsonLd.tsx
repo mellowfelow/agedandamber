@@ -20,6 +20,13 @@ function organizationNode(stats?: { numberOfItems: number; lowPrice: number; hig
     url: `https://${SITE.domain}/`,
     foundingDate: BRAND.foundingYear,
     foundingLocation: { '@type': 'Place', name: BRAND.foundingLocation },
+    logo: {
+      '@type': 'ImageObject',
+      url: `https://${SITE.domain}/images/brand/logo-512.png`,
+      width: 512,
+      height: 512,
+    },
+    image: `https://${SITE.domain}/images/brand/logo-512.png`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: '72 Bellevue Ave',
@@ -208,7 +215,7 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
       publisher: {
         '@type': 'Organization',
         name: SITE.name,
-        logo: { '@type': 'ImageObject', url: `https://${SITE.domain}/favicon.svg` },
+        logo: { '@type': 'ImageObject', url: `https://${SITE.domain}/images/brand/logo-512.png`, width: 512, height: 512 },
       },
       datePublished: data.isoDate,
       dateModified: data.isoDate,
