@@ -27,10 +27,12 @@ No authentication required. All resources and API endpoints are publicly accessi
 ```json
 {
   "agent_auth": {
-    "register_uri": null,
-    "identity_types_supported": ["none"],
+    "register_uri": "https://www.agedandamber.com/api/agent/register",
+    "registration_endpoint": "https://www.agedandamber.com/api/agent/register",
+    "identity_types_supported": ["none", "anonymous"],
     "credential_types_supported": ["none"],
-    "notes": "No authentication required. All resources are public."
+    "grant_types_supported": [],
+    "notes": "No authentication is required. All resources are public. The register endpoint confirms open access and issues no credentials."
   }
 }
 ```

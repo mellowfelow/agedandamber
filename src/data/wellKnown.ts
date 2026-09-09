@@ -115,10 +115,14 @@ export const WELL_KNOWN_JSON: Record<string, unknown> = {
       `${BASE}/.well-known/mcp/server-card.json`,
     ],
     agent_auth: {
-      register_uri: null,
-      identity_types_supported: ['none'],
+      // Open registration — nothing is gated, so "registering" grants
+      // nothing. The endpoint returns 200 with an explanation.
+      register_uri: `${BASE}/api/agent/register`,
+      registration_endpoint: `${BASE}/api/agent/register`,
+      identity_types_supported: ['none', 'anonymous'],
       credential_types_supported: ['none'],
-      notes: 'No registration required. All content is publicly accessible to agents.',
+      grant_types_supported: [],
+      notes: 'No registration is required — all content is publicly accessible to agents. The register endpoint confirms this and issues no credentials.',
     },
   },
 
