@@ -31,10 +31,10 @@ No authentication required. All resources and API endpoints are publicly accessi
     "registration_endpoint": "https://www.agedandamber.com/api/agent/register",
     "skill": "https://www.agedandamber.com/auth.md",
     "documentation": "https://www.agedandamber.com/auth.md",
-    "identity_types_supported": ["none", "anonymous"],
+    "identity_types_supported": ["none"],
     "credential_types_supported": ["none"],
     "grant_types_supported": [],
-    "notes": "No authentication is required. All resources are public. The register endpoint confirms open access and issues no credentials."
+    "notes": "No authentication, registration, or credential is required. Every resource is public."
   }
 }
 ```

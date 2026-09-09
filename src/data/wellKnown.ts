@@ -121,10 +121,13 @@ export const WELL_KNOWN_JSON: Record<string, unknown> = {
       registration_endpoint: `${BASE}/api/agent/register`,
       skill: `${BASE}/auth.md`,
       documentation: `${BASE}/auth.md`,
-      identity_types_supported: ['none', 'anonymous'],
+      // Genuinely no identity, no credential, no registration flow — the
+      // site gates nothing. Declaring an "anonymous" flow would mean
+      // specifying a claim_uri / credential exchange that doesn't exist.
+      identity_types_supported: ['none'],
       credential_types_supported: ['none'],
       grant_types_supported: [],
-      notes: 'No registration is required — all content is publicly accessible to agents. The register endpoint confirms this and issues no credentials.',
+      notes: 'No registration or credential is required — every resource is public. The register endpoint simply confirms this.',
     },
   },
 
