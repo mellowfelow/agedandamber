@@ -113,10 +113,11 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
       image: data.images,
       description: data.fullDescription,
       sku: data.id,
-      brand: {
-        '@type': 'Brand',
-        name: SITE.name,
-      },
+      // The product's own producer/brand (e.g. "Buffalo Trace"), resolved
+      // from the matching brand hub. Falls back to nothing rather than
+      // asserting the retailer as the brand, which is wrong for Product
+      // schema and a Merchant listings quality issue.
+      ...(data.brandName ? { brand: { '@type': 'Brand', name: data.brandName } } : {}),
       offers: {
         '@type': 'Offer',
         url: `https://${SITE.domain}/shop/${data.category}/${data.slug}/`,
@@ -154,6 +155,12 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
           },
           deliveryTime: {
             '@type': 'ShippingDeliveryTime',
+            handlingTime: {
+              '@type': 'QuantitativeValue',
+              minValue: 0,
+              maxValue: 1,
+              unitCode: 'DAY',
+            },
             transitTime: {
               '@type': 'QuantitativeValue',
               minValue: 2,

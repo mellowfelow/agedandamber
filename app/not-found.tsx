@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { getRouteUrl } from '@/src/utils/routes';
 
+// Next.js already emits `<meta name="robots" content="noindex">` for
+// not-found.tsx and serves it with a 404 status — no extra metadata needed.
+
 export default function NotFound() {
   return (
     <div className="max-w-2xl mx-auto px-4 py-24 text-center space-y-6">

@@ -7,6 +7,7 @@ import { ProductDetailView } from '@/src/views/ProductDetailView';
 import { HubPageView } from '@/src/views/HubPageView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
+import { brandHubProducts, subcategoryHubProducts, hubIsIndexable, productBrandName } from '@/src/utils/hubs';
 
 interface Props {
   params: Promise<{ category: string; slug: string }>;
@@ -46,11 +47,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ogImage = CATEGORIES.find((c) => c.slug === hub.categorySlug)?.image;
     }
 
+    // Thin hubs (fewer than 3 matching products) are noindexed — see
+    // src/utils/hubs.ts. They stay crawlable (follow) and internally linked
+    // so their products remain discoverable; they're also dropped from
+    // sitemap.xml (app/sitemap.ts).
+    const hubProductCount = subHub
+      ? subcategoryHubProducts(subHub, PRODUCTS).length
+      : brandHubProducts(brandHub!, PRODUCTS).length;
+
     return {
       title: hub.seo.titleTag,
       description: hub.seo.metaDescription,
       alternates: { canonical: `https://${SITE.domain}/shop/${hub.categorySlug}/${hub.hubSlug}/` },
       openGraph: ogImage ? { images: [ogImage] } : undefined,
+      robots: hubIsIndexable(hubProductCount) ? undefined : { index: false, follow: true },
     };
   }
 
@@ -136,9 +146,14 @@ export default async function ProductPage({ params }: Props) {
     .filter((p) => p.id !== product.id && p.category === product.category)
     .slice(0, 3);
 
+  // Product schema `brand` must be the product's own brand, not the
+  // retailer. Derived from the matching brand hub (e.g. "Buffalo Trace"),
+  // undefined when none matches — see src/utils/hubs.ts.
+  const brandName = productBrandName(product, BRAND_HUBS);
+
   return (
     <>
-      <JsonLd type="product" data={product} />
+      <JsonLd type="product" data={{ ...product, brandName }} />
       {product.seo?.faqs && product.seo.faqs.length > 0 && <JsonLd type="faq" data={product.seo.faqs} />}
       <JsonLd
         type="breadcrumb"
