@@ -16,10 +16,10 @@ const AGENT_DESC = "Napa Valley cellar for allocated spirits, fine wine, Champag
 
 export const WELL_KNOWN_JSON: Record<string, unknown> = {
   ucp: {
-    ucp: '1.0.0',
-    ucp_version: '1.0.0',
-    version: '1.0.0',
-    protocol_version: '1.0.0',
+    ucp: { version: '1.0', profile: 'commerce' },
+    ucp_version: '1.0',
+    version: '1.0',
+    protocol_version: '1.0',
     spec: 'https://ucp.dev/specification/overview/',
     schema: 'https://ucp.dev/schema/v1.json',
     site: BASE,
@@ -83,7 +83,9 @@ export const WELL_KNOWN_JSON: Record<string, unknown> = {
     // or required.
     resource: BASE,
     resource_name: `${SITE.name} Public Catalog`,
-    authorization_servers: [`${BASE}/.well-known/oauth-authorization-server`],
+    // RFC 8414: this is the issuer identifier, not the metadata URL — a
+    // scanner appends /.well-known/oauth-authorization-server to it.
+    authorization_servers: [BASE],
     scopes_supported: ['public'],
     bearer_methods_supported: ['header'],
     resource_documentation: `${BASE}/auth.md`,
