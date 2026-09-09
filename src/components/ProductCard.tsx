@@ -11,9 +11,11 @@ import { useAppState } from '../../app/providers';
 
 interface ProductCardProps {
   product: Product;
+  /** Set on the first row of a grid so the above-the-fold image isn't lazy-loaded. */
+  priority?: boolean;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = false }) => {
   const { addToCart, setQuickViewProduct } = useAppState();
   const [quantity, setQuantity] = useState(1);
   const [isAdded, setIsAdded] = useState(false);
@@ -63,6 +65,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <SmartImage
             src={product.images[0]}
             alt={product.name}
+            priority={priority}
+            sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 300px"
             className="max-h-full max-w-full object-contain filter drop-shadow-xl"
           />
         </Link>

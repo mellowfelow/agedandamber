@@ -1021,8 +1021,8 @@ export const ShopView: React.FC<ShopViewProps> = ({
           ) : (
             <>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {paginatedProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                {paginatedProducts.map((product, i) => (
+                  <ProductCard key={product.id} product={product} priority={currentPage === 1 && i < 3} />
                 ))}
               </div>
 
