@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { ShieldCheck, Mail, Phone, MapPin, Award, Coins, Lock } from 'lucide-react';
 import { SITE, CONTACT, BRAND, COMPLIANCE, SHOP } from '../config/site';
+import { CATEGORIES } from '../data/categories';
+import { LEGAL_NAV } from '../data/legal';
 import { BrandLogo } from './BrandLogo';
 import { getRouteUrl } from '../utils/routes';
 
@@ -80,96 +82,79 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Shop Vault Col */}
+          {/* Company */}
           <div className="space-y-3">
             <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
-              Spirits Vault
+              Company
             </h4>
             <ul className="space-y-2 text-xs">
-              <li>
-                <Link href={getRouteUrl.shop('bourbon-whiskey')} className="hover:text-[#D4AF37] transition-colors">
-                  Bourbon & Rye Whiskey
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.shop('scotch-whisky')} className="hover:text-[#D4AF37] transition-colors">
-                  Single Malt & Scotch
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.shop('tequila-mezcal')} className="hover:text-[#D4AF37] transition-colors">
-                  Rare Cask & Tequila
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.wholesale()} className="hover:text-[#D4AF37] transition-colors">
-                  Wholesale Allocations
-                </Link>
-              </li>
+              <li><Link href={getRouteUrl.about()} className="hover:text-[#D4AF37]">Our Sourcing Story</Link></li>
+              <li><Link href={getRouteUrl.blog()} className="hover:text-[#D4AF37]">Cask &amp; Wood Journal</Link></li>
+              <li><Link href={getRouteUrl.faq()} className="hover:text-[#D4AF37]">Frequently Asked Questions</Link></li>
+              <li><Link href={getRouteUrl.contact()} className="hover:text-[#D4AF37]">Concierge Support</Link></li>
+              <li><Link href={getRouteUrl.wholesale()} className="hover:text-[#D4AF37]">Wholesale Allocations</Link></li>
+              <li><Link href="/shop/brands/" className="hover:text-[#D4AF37]">Shop by Brand</Link></li>
             </ul>
           </div>
 
-          {/* Company & Info */}
+          {/* Policies */}
           <div className="space-y-3">
             <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
-              Navigation
+              Policies
             </h4>
             <ul className="space-y-2 text-xs">
-              <li>
-                <Link href={getRouteUrl.about()} className="hover:text-[#D4AF37]">
-                  Our Sourcing Story
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.blog()} className="hover:text-[#D4AF37]">
-                  Cask & Wood Journal
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.faq()} className="hover:text-[#D4AF37]">
-                  Frequently Asked Questions
-                </Link>
-              </li>
-              <li>
-                <Link href={getRouteUrl.contact()} className="hover:text-[#D4AF37]">
-                  Concierge Support
-                </Link>
-              </li>
+              {LEGAL_NAV.map((n) => (
+                <li key={n.slug}>
+                  <Link href={`/${n.slug}/`} className="hover:text-[#D4AF37]">{n.title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Compliance & Payment */}
+          {/* Payment */}
           <div className="space-y-3">
             <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
               Accepted Payments
             </h4>
             <div className="flex flex-wrap gap-2 pt-1">
-              <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
-                Apple Pay
-              </span>
-              <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
-                Cash App
-              </span>
-              <span className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
-                Chime
-              </span>
-              <span className="py-1 px-2 rounded bg-emerald-950 border border-emerald-800 text-[10px] font-bold text-emerald-400">
-                BTC (10% Off)
-              </span>
-              <span className="py-1 px-2 rounded bg-emerald-950 border border-emerald-800 text-[10px] font-bold text-emerald-400">
-                USDT (10% Off)
-              </span>
+              {['Apple Pay', 'Cash App', 'Chime'].map((p) => (
+                <span key={p} className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
+                  {p}
+                </span>
+              ))}
+              <span className="py-1 px-2 rounded bg-emerald-950 border border-emerald-800 text-[10px] font-bold text-emerald-400">BTC (10% Off)</span>
+              <span className="py-1 px-2 rounded bg-emerald-950 border border-emerald-800 text-[10px] font-bold text-emerald-400">USDT (10% Off)</span>
             </div>
-
             <div className="pt-2 text-[11px] text-amber-300/80 leading-normal">
-              Minimum Order ${SHOP.minOrder}. Free Shipping on orders ${SHOP.freeShippingThreshold}+.
+              Minimum order ${SHOP.minOrder}. Free shipping on orders ${SHOP.freeShippingThreshold}+.
             </div>
           </div>
         </div>
 
+        {/* Full category list — every category one click from every page */}
+        <div className="space-y-3 border-t border-amber-900/30 pt-8">
+          <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
+            Shop by Category
+          </h4>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-2 text-xs">
+            {CATEGORIES.map((cat) => (
+              <li key={cat.slug}>
+                <Link href={getRouteUrl.shop(cat.slug)} className="hover:text-[#D4AF37] transition-colors">
+                  {cat.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-amber-900/30 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-amber-300/80">
-          <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
+            <span className="hidden md:inline text-amber-800">·</span>
+            <Link href="/privacy/" className="hover:text-[#D4AF37]">Privacy</Link>
+            <Link href="/terms/" className="hover:text-[#D4AF37]">Terms</Link>
+          </div>
           <p className="max-w-xl text-center md:text-right text-[10px] text-amber-300/70">
             {COMPLIANCE.disclaimer}
           </p>

@@ -1,35 +1,35 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import { Cookie, X } from 'lucide-react';
 import { useAppState } from '../../app/providers';
 
 export const GdprBanner: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const { setCookieBannerVisible } = useAppState();
-  const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname !== '/') return;
-    const consent = localStorage.getItem('aged-and-amber-cookie-consent');
-    if (!consent) {
-      setIsVisible(true);
+    // Show on the first visit regardless of which page the visitor lands on
+    // (most arrivals from search hit a product or article, not the homepage).
+    try {
+      const consent = localStorage.getItem('aged-and-amber-cookie-consent');
+      if (!consent) setIsVisible(true);
+    } catch {
+      /* storage blocked — skip the banner rather than nag every load */
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setCookieBannerVisible(isVisible);
   }, [isVisible, setCookieBannerVisible]);
 
-  const handleAccept = () => {
-    localStorage.setItem('aged-and-amber-cookie-consent', 'accepted');
-    setIsVisible(false);
-  };
-
   const handleDismiss = () => {
-    localStorage.setItem('aged-and-amber-cookie-consent', 'dismissed');
+    try {
+      localStorage.setItem('aged-and-amber-cookie-consent', 'acknowledged');
+    } catch {
+      /* storage blocked */
+    }
     setIsVisible(false);
   };
 
@@ -42,22 +42,18 @@ export const GdprBanner: React.FC = () => {
           <Cookie className="w-5 h-5" />
         </div>
         <div className="flex-1 text-xs text-amber-200/80 space-y-2">
-          <p className="font-semibold text-amber-100 text-sm">Cookie & Privacy Notice</p>
+          <p className="font-semibold text-amber-100 text-sm">Cookie &amp; Privacy Notice</p>
           <p>
-            We use essential cookies to maintain your cart session, age verification state, and secure checkout preference.
+            We use only essential browser storage — your cart, your age-verification status, and this
+            notice preference. No advertising or analytics trackers. See our{' '}
+            <Link href="/privacy/" className="text-[#D4AF37] underline">Privacy Policy</Link>.
           </p>
           <div className="flex items-center gap-3 pt-2">
             <button
-              onClick={handleAccept}
+              onClick={handleDismiss}
               className="py-3.5 px-4 rounded-lg bg-[#D4AF37] text-[#140D08] font-semibold text-xs hover:bg-[#E5C158] transition-all"
             >
-              Accept All
-            </button>
-            <button
-              onClick={handleDismiss}
-              className="py-3.5 px-3 text-xs text-amber-300 hover:text-amber-100"
-            >
-              Preferences
+              Got it
             </button>
           </div>
         </div>

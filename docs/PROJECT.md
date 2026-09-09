@@ -86,7 +86,13 @@ _Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 202
 See `docs/keyword-map.md` and the per-category `docs/keyword-map-*.md` files. Blog clusters are
 tracked there; use the next unused cluster for each new post.
 
-## 10. Known issues / audit
+## 10. Policy pages
+`/privacy`, `/terms`, `/shipping`, `/refund` — added 2026-09-09, generated from `src/data/legal.ts`
+(driven by `SHOP` config + FAQ). **Counsel should review** the alcohol direct-shipping, privacy, and
+liability language, and confirm the legal entity name (currently just "Aged & Amber" — add an LLC/Inc
+if one exists) and the effective date.
+
+## 11. Known issues / audit
 Full technical + SEO audit: `docs/audit-2026-09.md` (9 Sep 2026, overall 61/100). Fixes are being
 applied in batches on feature branches. Headline items: ~490 thin brand hubs (crawl-budget drain),
 1,347 auto-generated product titles/metas, a toxic backlink flood (disavow pending), missing legal

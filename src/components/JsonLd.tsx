@@ -2,8 +2,67 @@ import React from 'react';
 import { SITE, CONTACT, BRAND, SHOP } from '../config/site';
 
 interface JsonLdProps {
-  type: 'homepage' | 'product' | 'article' | 'faq' | 'itemlist' | 'breadcrumb';
+  type: 'homepage' | 'about' | 'product' | 'article' | 'faq' | 'itemlist' | 'breadcrumb';
   data?: any;
+}
+
+/**
+ * The rich Store/Organization node, shared by the homepage and the About
+ * page so the brand entity is described identically (and deduped by Google
+ * on its @id). `stats` (item count + price range) is homepage-only.
+ */
+function organizationNode(stats?: { numberOfItems: number; lowPrice: number; highPrice: number }) {
+  const node: any = {
+    '@type': ['Store', 'Organization'],
+    '@id': `https://${SITE.domain}/#organization`,
+    name: SITE.name,
+    description: BRAND.description,
+    url: `https://${SITE.domain}/`,
+    foundingDate: BRAND.foundingYear,
+    foundingLocation: { '@type': 'Place', name: BRAND.foundingLocation },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '72 Bellevue Ave',
+      addressLocality: 'Napa',
+      addressRegion: 'CA',
+      postalCode: '94558',
+      addressCountry: 'US',
+    },
+    telephone: CONTACT.phone,
+    email: CONTACT.email,
+    sameAs: BRAND.sameAs,
+    priceRange: '$$$',
+    currenciesAccepted: 'USD, BTC, USDT',
+    paymentAccepted: 'Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',
+    areaServed: 'United States',
+    knowsAbout: [
+      'Bourbon Whiskey',
+      'Single Malt Scotch',
+      'Irish Whiskey',
+      'Japanese Whisky',
+      'Tequila & Mezcal',
+      'Aged Rum',
+      'Artisanal Gin',
+      'Craft Vodka',
+      'Cognac & Brandy',
+      'Fine Wine',
+      'Champagne & Sparkling Wine',
+      'Craft Beer',
+      'Hard Cider',
+      'Non-Alcoholic Spirits & Beverages',
+    ],
+  };
+  if (stats) {
+    node.numberOfItems = stats.numberOfItems;
+    node.makesOffer = {
+      '@type': 'AggregateOffer',
+      priceCurrency: SITE.currency,
+      lowPrice: stats.lowPrice,
+      highPrice: stats.highPrice,
+      offerCount: stats.numberOfItems,
+    };
+  }
+  return node;
 }
 
 // Matches the published policy (FAQ + llms.txt): once an alcohol order
@@ -34,63 +93,14 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
   let schemaData: any = null;
 
   if (type === 'homepage') {
-    const numberOfItems = data?.numberOfItems ?? 0;
-    const lowPrice = data?.lowPrice ?? 0;
-    const highPrice = data?.highPrice ?? 0;
     schemaData = {
       '@context': 'https://schema.org',
       '@graph': [
-        {
-          '@type': ['Store', 'Organization'],
-          '@id': `https://${SITE.domain}/#organization`,
-          name: SITE.name,
-          description: BRAND.description,
-          url: `https://${SITE.domain}/`,
-          foundingDate: BRAND.foundingYear,
-          foundingLocation: {
-            '@type': 'Place',
-            name: BRAND.foundingLocation,
-          },
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: '72 Bellevue Ave',
-            addressLocality: 'Napa',
-            addressRegion: 'CA',
-            postalCode: '94558',
-            addressCountry: 'US',
-          },
-          telephone: CONTACT.phone,
-          email: CONTACT.email,
-          sameAs: BRAND.sameAs,
-          priceRange: '$$$',
-          currenciesAccepted: 'USD, BTC, USDT',
-          paymentAccepted: 'Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',
-          areaServed: 'United States',
-          numberOfItems,
-          knowsAbout: [
-            'Bourbon Whiskey',
-            'Single Malt Scotch',
-            'Irish Whiskey',
-            'Japanese Whisky',
-            'Tequila & Mezcal',
-            'Aged Rum',
-            'Artisanal Gin',
-            'Craft Vodka',
-            'Cognac & Brandy',
-            'Fine Wine',
-            'Champagne & Sparkling Wine',
-            'Craft Beer',
-            'Hard Cider',
-            'Non-Alcoholic Spirits & Beverages',
-          ],
-          makesOffer: {
-            '@type': 'AggregateOffer',
-            priceCurrency: SITE.currency,
-            lowPrice,
-            highPrice,
-            offerCount: numberOfItems,
-          },
-        },
+        organizationNode({
+          numberOfItems: data?.numberOfItems ?? 0,
+          lowPrice: data?.lowPrice ?? 0,
+          highPrice: data?.highPrice ?? 0,
+        }),
         {
           '@type': 'WebSite',
           '@id': `https://${SITE.domain}/#website`,
@@ -103,6 +113,22 @@ export const JsonLd: React.FC<JsonLdProps> = ({ type, data }) => {
             'query-input': 'required name=search_term_string',
           },
         },
+      ],
+    };
+  } else if (type === 'about') {
+    schemaData = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'AboutPage',
+          '@id': `https://${SITE.domain}/about/#webpage`,
+          url: `https://${SITE.domain}/about/`,
+          name: `About ${SITE.name}`,
+          description: BRAND.description,
+          about: { '@id': `https://${SITE.domain}/#organization` },
+          isPartOf: { '@id': `https://${SITE.domain}/#website` },
+        },
+        organizationNode(),
       ],
     };
   } else if (type === 'product' && data) {

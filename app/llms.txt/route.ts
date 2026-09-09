@@ -42,6 +42,10 @@ Founded ${BRAND.foundingYear} in ${BRAND.foundingLocation}.
 - [About ${SITE.name}](${base}/about/): Sourcing philosophy, wood provenance, and authenticity verification process.
 - [Spirits Journal](${base}/blog/): ${BLOG_POSTS.length} in-depth articles on cask finishes, mash bills, tasting guides, and buying advice.
 - [Policy & FAQ](${base}/faq/): Direct answers on 21+ adult signature shipping, minimum orders, and cryptocurrency discounts.
+- [Shipping Policy](${base}/shipping/): Where we ship, carrier rates, the 21+ adult-signature requirement, same-day states, and delivery timing.
+- [Refund & Returns Policy](${base}/refund/): Alcohol is final sale once shipped; damaged/wrong items replaced free; 30-day window on non-alcoholic products.
+- [Privacy Policy](${base}/privacy/): What we collect, how we use it, and your access/deletion rights. No advertising or analytics trackers.
+- [Terms of Service](${base}/terms/): Eligibility, ordering, pricing, alcohol-shipping compliance, and liability.
 - [Wholesale & Allocations](${base}/wholesale/): Commercial case pricing and private single barrel picks for licensed venues.
 - [Contact Concierge](${base}/contact/): Connect directly with the Napa Valley spirits advisory team.
 
