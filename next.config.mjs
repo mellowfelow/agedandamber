@@ -1,3 +1,27 @@
+// Content-Security-Policy. Kept in one place and applied via both
+// next.config headers() (so `next start` / local testing gets it) and
+// vercel.json (production). 'unsafe-inline' on script/style is required by
+// Next's App Router hydration payload and the inline age-gate script
+// without a nonce setup; everything else is an explicit allowlist. The
+// only third parties are the Tawk.to chat widget and the Unsplash image
+// used as a broken-image fallback.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://embed.tawk.to https://*.tawk.to https://cdn.jsdelivr.net",
+  "style-src 'self' 'unsafe-inline' https://*.tawk.to https://fonts.googleapis.com",
+  "img-src 'self' data: blob: https://images.unsplash.com https://*.tawk.to https://*.amazonaws.com",
+  "font-src 'self' data: https://*.tawk.to https://fonts.gstatic.com",
+  "connect-src 'self' https://*.tawk.to wss://*.tawk.to",
+  "frame-src 'self' https://*.tawk.to",
+  "media-src 'self' blob: https://*.tawk.to",
+  "worker-src 'self' blob:",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self'",
+  "frame-ancestors 'self'",
+  'upgrade-insecure-requests',
+].join('; ');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
@@ -31,6 +55,7 @@ const nextConfig = {
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          { key: 'Content-Security-Policy', value: CSP },
         ],
       },
     ];

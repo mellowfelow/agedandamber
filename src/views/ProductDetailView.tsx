@@ -53,6 +53,8 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
             <SmartImage
               src={product.images[selectedImg] || product.images[0]}
               alt={product.name}
+              priority
+              sizes="(max-width: 1024px) 100vw, 560px"
               className="max-h-full max-w-full object-contain filter drop-shadow-2xl"
             />
           </div>
