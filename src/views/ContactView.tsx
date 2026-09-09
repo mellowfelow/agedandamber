@@ -132,7 +132,7 @@ export const ContactView: React.FC = () => {
                 <input
                   type="text"
                   required
-                  placeholder="Your Full Name"
+                  aria-label="Your Full Name" placeholder="Your Full Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -140,7 +140,7 @@ export const ContactView: React.FC = () => {
                 <input
                   type="email"
                   required
-                  placeholder="Your Email Address"
+                  aria-label="Your Email Address" placeholder="Your Email Address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -150,7 +150,7 @@ export const ContactView: React.FC = () => {
               <input
                 type="text"
                 required
-                placeholder="Subject (e.g. Order Status, Cask Inquiry)"
+                aria-label="Subject" placeholder="Subject (e.g. Order Status, Cask Inquiry)"
                 value={formData.subject}
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -159,7 +159,7 @@ export const ContactView: React.FC = () => {
               <textarea
                 rows={5}
                 required
-                placeholder="How can our cellar team assist you today?"
+                aria-label="How can our cellar team assist you today?" placeholder="How can our cellar team assist you today?"
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"

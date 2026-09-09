@@ -4,6 +4,7 @@ import { SUBCATEGORY_HUBS } from '@/src/data/subcategoryHubs';
 import { BRAND_HUBS } from '@/src/data/brandHubs';
 import { BLOG_POSTS } from '@/src/data/blog';
 import { SITE, BRAND, CONTACT, SHOP } from '@/src/config/site';
+import { productLabels, strengthLine } from '@/src/utils/productCopy';
 
 function notFoundMd(pathname: string) {
   return `# Not found\n\nNo markdown representation exists for \`${pathname}\`.\n`;
@@ -92,13 +93,15 @@ ${hub.seo.faqs?.length ? `## FAQ\n\n${hub.seo.faqs.map((f) => `**${f.question}**
 function productMd(category: string, slug: string) {
   const product = PRODUCTS.find((p) => p.slug === slug && p.category === category);
   if (!product) return null;
+  const labels = productLabels(product.category);
+  const ageLine = product.age && product.age !== 'NV' ? ` | **Age:** ${product.age}` : '';
   return `# ${product.name}
 
 > ${product.shortDescription}
 
 **Price:** $${product.price} ${SITE.currency}
 **Category:** ${product.category} / ${product.subcategory}
-**Proof:** ${product.proof} | **Age:** ${product.age} | **Volume:** ${product.volume}
+**Strength:** ${strengthLine(product.proof, product.category)}${ageLine} | **Volume:** ${product.volume}
 **Availability:** ${product.stock > 0 ? 'In stock' : 'Out of stock'}
 
 ${product.fullDescription}
@@ -109,8 +112,8 @@ ${product.fullDescription}
 - **Palate:** ${product.tastingNotes.palate}
 - **Finish:** ${product.tastingNotes.finish}
 
-**Cask:** ${product.caskType}
-**Distillery location:** ${product.distilleryLocation}
+**${labels.spec}:** ${product.caskType}
+**${labels.origin}:** ${product.distilleryLocation}
 
 [View full product page](https://${SITE.domain}/shop/${product.category}/${product.slug}/)
 `;

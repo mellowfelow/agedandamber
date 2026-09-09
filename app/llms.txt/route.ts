@@ -83,7 +83,9 @@ ${categoryLines}
 
   return new NextResponse(content, {
     headers: {
-      'Content-Type': 'text/markdown; charset=utf-8',
+      // text/plain is what the llms.txt spec and the agent-readiness
+      // scanners expect (the body is still markdown-formatted).
+      'Content-Type': 'text/plain; charset=utf-8',
       'Cache-Control': 'public, max-age=3600, s-maxage=86400',
     },
   });

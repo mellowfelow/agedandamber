@@ -461,7 +461,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
         <div className="relative">
           <input
             type="text"
-            placeholder="Filter categories or subcategories..."
+            aria-label="Filter categories" placeholder="Filter categories or subcategories..."
             value={categorySearch}
             onChange={(e) => setCategorySearch(e.target.value)}
             className="w-full p-2 pl-8 rounded-xl bg-stone-900/90 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -841,7 +841,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
             <div className="relative w-full md:w-80">
               <input
                 type="text"
-                placeholder="Search bottle, distillery, cask..."
+                aria-label="Search products" placeholder="Search bottle, distillery, cask..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full p-2.5 pl-9 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 focus:outline-none focus:border-[#D4AF37]"

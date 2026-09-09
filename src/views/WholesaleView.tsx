@@ -282,7 +282,7 @@ export const WholesaleView: React.FC = () => {
               <input
                 type="text"
                 required
-                placeholder="Business / Legal Venue Name"
+                aria-label="Business / Legal Venue Name" placeholder="Business / Legal Venue Name"
                 value={formData.businessName}
                 onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -290,7 +290,7 @@ export const WholesaleView: React.FC = () => {
               <input
                 type="text"
                 required
-                placeholder="Contact Person Name"
+                aria-label="Contact Person Name" placeholder="Contact Person Name"
                 value={formData.contactName}
                 onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -301,7 +301,7 @@ export const WholesaleView: React.FC = () => {
               <input
                 type="email"
                 required
-                placeholder="Business Email"
+                aria-label="Business Email" placeholder="Business Email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -309,7 +309,7 @@ export const WholesaleView: React.FC = () => {
               <input
                 type="tel"
                 required
-                placeholder="Direct Phone Line"
+                aria-label="Direct Phone Line" placeholder="Direct Phone Line"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -318,6 +318,7 @@ export const WholesaleView: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <select
+                aria-label="License type"
                 value={formData.licenseType}
                 onChange={(e) => setFormData({ ...formData, licenseType: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -329,6 +330,7 @@ export const WholesaleView: React.FC = () => {
               </select>
 
               <select
+                aria-label="Estimated monthly volume"
                 value={formData.estimatedVolume}
                 onChange={(e) => setFormData({ ...formData, estimatedVolume: e.target.value })}
                 className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 text-xs focus:outline-none focus:border-[#D4AF37]"
@@ -342,7 +344,7 @@ export const WholesaleView: React.FC = () => {
 
             <textarea
               rows={3}
-              placeholder="Tell us about your venue, tasting program, or specific cask preferences..."
+              aria-label="Tell us about your venue, tasting program, or specific cask preferences..." placeholder="Tell us about your venue, tasting program, or specific cask preferences..."
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
               className="w-full p-3.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 placeholder-stone-500 text-xs focus:outline-none focus:border-[#D4AF37]"

@@ -39,7 +39,7 @@ export const FaqView: React.FC = () => {
       <div className="relative max-w-xl mx-auto">
         <input
           type="text"
-          placeholder="Search question, e.g. minimum order, crypto discount, 21+ signature..."
+          aria-label="Search questions" placeholder="Search question, e.g. minimum order, crypto discount, 21+ signature..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="w-full p-4 pl-11 rounded-2xl bg-[#1A120B] border border-amber-900/50 text-amber-100 placeholder-stone-500 text-sm focus:outline-none focus:border-[#D4AF37]"

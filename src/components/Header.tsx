@@ -250,7 +250,7 @@ export const Header: React.FC = () => {
             <input
               type="text"
               autoFocus
-              placeholder="Search rare bourbons, single malts, tequila, proof, cask type..."
+              aria-label="Search products" placeholder="Search rare bourbons, single malts, tequila, proof, cask type..."
               value={searchQuery}
               onChange={(e) => handleSearchChange(e.target.value)}
               className="w-full p-3.5 pr-10 rounded-xl bg-stone-900 border border-amber-800/40 text-amber-100 placeholder-stone-500 text-sm focus:outline-none focus:border-[#D4AF37]"
