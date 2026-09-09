@@ -1,5 +1,5 @@
 export const SITE = {
-  name: 'Aged And Amber',
+  name: 'Aged & Amber',
   tagline: 'Crafted Whiskeys, Small-Batch Spirits & Rare Cask Finishes',
   domain: 'www.agedandamber.com',
   locale: 'en-US',
@@ -71,7 +71,7 @@ export const CHAT = {
 export const BRAND = {
   foundingYear: '2018',
   foundingLocation: 'Napa Valley, California, USA',
-  description: 'Aged And Amber is an independent Napa Valley cellar that curates and sells authentic, allocated bottles across rare single barrel bourbons, single malt scotch, tequila, rum, gin, vodka, and cognac, alongside fine wine, Champagne, craft beer, cider, and non-alcoholic alternatives, sourced directly from trusted distilleries, wineries, and licensed distributors.',
+  description: 'Aged & Amber is an independent Napa Valley cellar that curates and sells authentic, allocated bottles across rare single barrel bourbons, single malt scotch, tequila, rum, gin, vodka, and cognac, alongside fine wine, Champagne, craft beer, cider, and non-alcoholic alternatives, sourced directly from trusted distilleries, wineries, and licensed distributors.',
   milestones: [
     { year: '2018', event: 'Founded in Napa Valley as a direct-to-consumer curator of allocated and rare-release spirits.' },
     { year: '2020', event: 'Built out direct sourcing relationships with distilleries across Kentucky, Scotland, and beyond.' },

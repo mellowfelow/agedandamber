@@ -374,7 +374,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         </div>
       </section>
 
-      {/* Authority Section — "About Aged And Amber" */}
+      {/* Authority Section — "About Aged & Amber" */}
       <section className="bg-[#18100A] border-y border-[#D4AF37]/20 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -383,7 +383,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </span>
 
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-amber-100 leading-tight">
-              About Aged And Amber: Napa Valley Curated Spirits House
+              About Aged & Amber: Napa Valley Curated Spirits House
             </h2>
 
             <p className="text-amber-200/80 text-sm leading-relaxed">

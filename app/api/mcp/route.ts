@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
         result: {
           protocolVersion: '2025-03-26',
           capabilities: { tools: {} },
-          serverInfo: { name: 'Aged And Amber MCP', version: '1.0.0' },
+          serverInfo: { name: 'Aged & Amber MCP', version: '1.0.0' },
         },
       },
       { headers: CORS_HEADERS }

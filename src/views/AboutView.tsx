@@ -12,7 +12,7 @@ export const AboutView: React.FC = () => {
           Napa Valley Curated Spirits House
         </span>
         <h1 className="text-4xl sm:text-6xl font-serif font-bold text-amber-100 leading-tight">
-          The Story of Aged And Amber
+          The Story of Aged & Amber
         </h1>
         <p className="text-base text-amber-200/80 leading-relaxed font-sans">
           Careful sourcing, verified authenticity, and direct-to-consumer spirits allocations from our Napa Valley cellar.
@@ -23,7 +23,7 @@ export const AboutView: React.FC = () => {
       <div className="relative aspect-video rounded-3xl overflow-hidden border border-[#D4AF37]/30 shadow-2xl">
         <SmartImage
           src="/images/hero/hero-9.webp"
-          alt="Aged And Amber Napa Valley spirits cellar with rows of bottles resting in a climate-controlled rack"
+          alt="Aged & Amber Napa Valley spirits cellar with rows of bottles resting in a climate-controlled rack"
           priority
           sizes="(max-width: 1024px) 100vw, 1024px"
           className="object-cover"
@@ -97,7 +97,7 @@ export const AboutView: React.FC = () => {
       <div className="p-8 rounded-3xl bg-[#1C140E] border border-[#D4AF37]/30 text-center space-y-4">
         <Award className="w-10 h-10 text-[#D4AF37] mx-auto" />
         <h3 className="font-serif font-bold text-xl text-amber-100">
-          Why Collectors Trust Aged And Amber
+          Why Collectors Trust Aged & Amber
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-amber-200/90">
           {BRAND.differentiation.map((point, i) => (

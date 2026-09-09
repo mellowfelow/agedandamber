@@ -14,20 +14,29 @@ export const ContactView: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(false);
 
-    // Server route: logs the message and emails the concierge via Zoho SMTP.
-    fetch('/api/inquiry/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ kind: 'contact', ...formData }),
-    }).catch(() => {});
-
-    setIsSubmitting(false);
-    setSubmitted(true);
+    // Server route: emails the concierge via Zoho SMTP. Only show success
+    // once the server has actually accepted the message — otherwise the
+    // customer is told it sent when it didn't.
+    try {
+      const res = await fetch('/api/inquiry/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ kind: 'contact', ...formData }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -100,6 +109,25 @@ export const ContactView: React.FC = () => {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
+              {error && (
+                <div
+                  role="alert"
+                  className="rounded-xl bg-red-950/60 border border-red-800/50 text-red-200 text-xs p-4 space-y-1"
+                >
+                  <p className="font-semibold">That didn&apos;t go through.</p>
+                  <p>
+                    Please email us directly at{' '}
+                    <a href={`mailto:${CONTACT.email}`} className="underline font-semibold">
+                      {CONTACT.email}
+                    </a>{' '}
+                    or call{' '}
+                    <a href={`tel:${CONTACT.phone}`} className="underline font-semibold">
+                      {CONTACT.phone}
+                    </a>
+                    , or try again in a moment.
+                  </p>
+                </div>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"

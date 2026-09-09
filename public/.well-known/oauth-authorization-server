@@ -6,7 +6,7 @@
   "grant_types_supported": [],
   "response_types_supported": [],
   "scopes_supported": [],
-  "note": "Aged And Amber has no protected APIs. All resources publicly accessible.",
+  "note": "Aged & Amber has no protected APIs. All resources publicly accessible.",
   "public_resources": [
     "https://www.agedandamber.com/shop/",
     "https://www.agedandamber.com/blog/",

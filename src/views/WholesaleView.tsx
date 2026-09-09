@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import { Building2, ShieldCheck, Award, ArrowRight, CheckCircle2, Check, X } from 'lucide-react';
+import { CONTACT } from '../config/site';
 
 type TierId = 'bar' | 'barrel' | 'collector';
 
@@ -73,6 +74,7 @@ export const WholesaleView: React.FC = () => {
   const [selectedTier, setSelectedTier] = useState<TierId | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(false);
   const formRef = useRef<HTMLDivElement>(null);
 
   // Strip a leading "Interested in: …" line (with its trailing blank line)
@@ -106,23 +108,30 @@ export const WholesaleView: React.FC = () => {
     setFormData((prev) => ({ ...prev, notes: stripTierLine(prev.notes) }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(false);
 
-    // Server route: logs the inquiry and emails the concierge via Zoho SMTP.
-    fetch('/api/inquiry/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        kind: 'wholesale',
-        ...formData,
-        tier: TIERS.find((t) => t.id === selectedTier)?.title,
-      }),
-    }).catch(() => {});
-
-    setIsSubmitting(false);
-    setSubmitted(true);
+    // Server route: emails the concierge via Zoho SMTP. Only confirm once
+    // the server has accepted the application.
+    try {
+      const res = await fetch('/api/inquiry/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kind: 'wholesale',
+          ...formData,
+          tier: TIERS.find((t) => t.id === selectedTier)?.title,
+        }),
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -250,6 +259,25 @@ export const WholesaleView: React.FC = () => {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {error && (
+              <div
+                role="alert"
+                className="rounded-xl bg-red-950/60 border border-red-800/50 text-red-200 text-xs p-4 space-y-1"
+              >
+                <p className="font-semibold">That didn&apos;t go through.</p>
+                <p>
+                  Please email your application to{' '}
+                  <a href={`mailto:${CONTACT.email}`} className="underline font-semibold">
+                    {CONTACT.email}
+                  </a>{' '}
+                  or call{' '}
+                  <a href={`tel:${CONTACT.phone}`} className="underline font-semibold">
+                    {CONTACT.phone}
+                  </a>
+                  , or try again in a moment.
+                </p>
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"

@@ -103,6 +103,22 @@ export const ShopView: React.FC<ShopViewProps> = ({
     lazyLoadFullCatalog && products.length < catalogTotalCount
   );
 
+  // Honor `?q=` in the URL. This is the target the homepage WebSite
+  // SearchAction schema and llms.txt both point at, plus any shared/deep
+  // link into a search. Read once on mount and seed the global search box;
+  // the existing filter logic below does the rest. Kept client-side (via
+  // window.location, not useSearchParams) so the statically-prerendered
+  // shop routes don't need a Suspense boundary.
+  useEffect(() => {
+    try {
+      const q = new URLSearchParams(window.location.search).get('q');
+      if (q && q.trim()) setSearchQuery(q.trim());
+    } catch {
+      /* no window / bad URL — nothing to seed */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     if (!lazyLoadFullCatalog) return;
     let cancelled = false;
