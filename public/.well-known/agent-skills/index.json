@@ -1,6 +1,6 @@
 {
   "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
-  "name": "Aged And Amber",
+  "name": "Aged & Amber",
   "url": "https://www.agedandamber.com",
   "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "skills": [
@@ -37,7 +37,7 @@
     {
       "name": "contact",
       "type": "support",
-      "description": "Contact Aged And Amber spirits advisory concierge",
+      "description": "Contact Aged & Amber spirits advisory concierge",
       "url": "https://www.agedandamber.com/contact/"
     }
   ]

@@ -3,38 +3,38 @@
     {
       "anchor": "https://www.agedandamber.com/",
       "https://www.iana.org/assignments/link-relations/service-doc": [{ "href": "https://www.agedandamber.com/faq/" }],
-      "title": "Aged And Amber — Boutique Craft Whiskey & Spirits"
+      "title": "Aged & Amber — Napa Valley cellar for allocated spirits, fine wine, Champagne, beer & cider"
     },
     {
       "anchor": "https://www.agedandamber.com/shop/",
       "type": "text/html",
-      "title": "Aged And Amber Product Catalog"
+      "title": "Aged & Amber Product Catalog"
     },
     {
       "anchor": "https://www.agedandamber.com/wholesale/",
       "type": "text/html",
-      "title": "Aged And Amber Wholesale Allocations"
+      "title": "Aged & Amber Wholesale Allocations"
     },
     {
       "anchor": "https://www.agedandamber.com/api/products/",
       "type": "application/json",
-      "title": "Aged And Amber Products API"
+      "title": "Aged & Amber Products API"
     },
     {
       "anchor": "https://www.agedandamber.com/api/categories/",
       "type": "application/json",
-      "title": "Aged And Amber Categories API"
+      "title": "Aged & Amber Categories API"
     },
     {
       "anchor": "https://www.agedandamber.com/api/search/",
       "type": "application/json",
-      "title": "Aged And Amber Search API"
+      "title": "Aged & Amber Search API"
     },
     {
       "anchor": "https://www.agedandamber.com/api/mcp/",
       "type": "application/json",
       "https://www.iana.org/assignments/link-relations/service-desc": [{ "href": "https://www.agedandamber.com/.well-known/mcp/server-card.json" }],
-      "title": "Aged And Amber MCP Server"
+      "title": "Aged & Amber MCP Server"
     }
   ]
 }

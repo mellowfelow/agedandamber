@@ -1,16 +1,93 @@
-# Strategy Document — Aged And Amber
+# PROJECT.md — Aged & Amber
 
-## Brand Overview
-Aged And Amber is an independent Napa Valley spirits house and direct-to-consumer curator of authentic, allocated bourbon, scotch, and rare cask spirits — sourced directly from trusted distilleries and licensed distributors, not self-distilled.
+_Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 2026-09-09._
 
-## Products & Pricing
-- Small Batch Bourbon & Straight Rye ($110 - $220)
-- Single Malt Sherry & Mizunara Cask Scotch ($180 - $480)
-- Extra Añejo Oak Aged Tequila ($140 - $280)
+## 1. Identity
+- **Name:** Aged & Amber (canonical spelling — ampersand, never "Aged And Amber")
+- **Domain:** `www.agedandamber.com` (apex 301s to `www`)
+- **Tagline:** Crafted Whiskeys, Small-Batch Spirits & Rare Cask Finishes
+- **What it is:** a Napa Valley cellar that **curates and resells** allocated bottles — it does not
+  distill, brew, vinify, or produce anything. Sourced from trusted distilleries, wineries, and
+  licensed distributors.
+- **Founded:** 2018, Napa Valley, California
+- **Stack:** Next.js 15 App Router, React 19, Tailwind v4, deployed on Vercel (Next.js preset)
+- **Hosting decision:** Vercel + GitHub (`mellowfelow/agedandamber`), no client backend
+- **Brand colours:** primary `#8B4513`, secondary/gold `#D4AF37`, dark canvas `#140D08`
+- **IndexNow key:** `002a541a7ee2c7c51188fb5517599103`
+- **GSC:** URL-prefix property `https://www.agedandamber.com/` (verified). Bing WMT + IndexNow active.
 
-## Order Rules & Policies
-- Minimum Order: $200 USD
-- Free Shipping Threshold: $300 USD
-- Flat Shipping: $15 USD
-- Crypto Discount: 10% off on BTC/USDT
-- Adult Verification: 21+ Adult Signature Required
+## 2. Contact & business (NAP)
+- **Email:** concierge@agedandamber.com
+- **Phone:** +1 (562) 732-4044 · **WhatsApp:** +15627324044
+- **Address:** 72 Bellevue Ave, Napa, CA 94558
+- **HQ signal:** Napa Valley & San Francisco, California, USA
+- ⚠️ **Open item:** the +1 (562) number is a Long Beach area code, not Napa (707). Confirm the phone
+  and street address are real and staffed before they feed `LocalBusiness`-style schema.
+
+## 3. Catalogue (as of 2026-09-09)
+- **1,347 products** · **268 blog posts** · **21 categories** · **18 subcategory hubs** ·
+  **493 brand hubs** → ~2,155 URLs in `sitemap.xml`
+- **Pricing:** $4.49 – $7,500, **median $27.99**, 955 products under $50. This is a broad
+  everyday-to-premium catalogue, not a rare-allocation boutique — keep copy claims credible.
+- **Per-category product counts:** fine-wine 158, tequila-mezcal 138, champagne-sparkling 133,
+  beer 114, rtd-liqueurs 93, other-whiskey 85, craft-vodka 76, bourbon-whiskey 71, cognac-brandy 57,
+  scotch-whisky 57, bar-essentials 52, aged-dark-rum 49, irish-whiskey 48, japanese-whisky 34,
+  artisanal-gin 32, cider 30, na-wine 25, na-spirits 25, na-champagne-sparkling 24,
+  na-rtd-cocktails 23, na-beer-cider 23
+- Non-alcoholic range (`na-*` slugs) ships nationwide with no age gate or state restriction.
+
+## 4. Order rules & policies
+- Minimum order **$200** · free shipping over **$300** · flat shipping **$15** below that
+- **10%** instant discount on BTC / USDT checkout
+- Same-day dispatch (order before 2:00 PM local) to: Arizona, Idaho, Nevada, New Mexico, Oregon, Utah.
+  Standard delivery 2–5 business days elsewhere.
+- Alcohol: 21+ adult signature required at delivery; ships only to compliant DTC-alcohol states.
+- Returns: alcohol is final sale once shipped (state law); damaged/wrong items replaced free.
+  Non-alcoholic products + bar essentials: 30-day unopened return window.
+- **Payment methods:** Apple Pay, Cash App, Chime, Bitcoin (10% off), USDT (10% off), Wire/Bank
+  Transfer. **No card payments** — high-risk alcohol MCC; never re-add.
+
+## 5. Forms & chat
+- **Provider:** `zoho-smtp` — `/api/inquiry` (contact + wholesale) and `/api/order` call
+  `src/utils/notify.ts` → Zoho SMTP (`ZOHO_SMTP_USER` / `ZOHO_SMTP_PASS`), Resend fallback
+  (`orders@agedandamber.com`).
+- ⚠️ **Open item:** notifications send in an `after()` hook, so a client 200 does not prove the email
+  was delivered, and there is no durable server-side order/inquiry store. If SMTP fails the record is
+  lost. A durable log (D1 / KV / a spreadsheet webhook) is recommended.
+- **Chat hub:** WhatsApp, concierge email, direct phone (link channels) + Tawk.to widget
+  (property `6a81e0adffd6811d48496109` / widget `1k05lb9hq`).
+
+## 6. Compliance
+- Age gate: 21+, CSS-first pre-hydration, content stays in DOM. GDPR banner present.
+- Required framings: "Adult 21+ signature required at delivery", "Curated & sourced from licensed
+  distilleries and distributors".
+- Prohibited claims: guaranteed health benefits, cures/ailment claims.
+- No banned-term list configured. Rule 5 (never fabricate brand facts) is the active guardrail.
+
+## 7. Brand authority facts (truthful only — the whole list)
+- Founded 2018 in Napa Valley as a DTC curator of allocated / rare-release bottles.
+- 2020: built direct sourcing relationships with distilleries (Kentucky, Scotland, and beyond).
+- 2022: expanded compliant DTC shipping to states permitting it.
+- 2024: launched the "Rare Vault Reserve" program for private collectors.
+- Differentiators: direct sourcing relationships; every bottle checked for authenticity and stored
+  climate-controlled; 21+ temperature-controlled express delivery; 10% crypto discount.
+- **No awards, no named individuals, no partnerships, no press, no revenue figures have been
+  supplied. Do not invent any.** `BRAND.sameAs` lists Instagram / Facebook / LinkedIn — confirm those
+  profiles actually exist; if not, remove them from schema.
+
+## 8. AI visibility / agent-ready
+- Full agent-ready layer shipped and hand-maintained: `robots.txt` (AI allow-list + `Content-Signal`),
+  live-generated `llms.txt`, all 8 `.well-known/*`, `webmcp.js`, live `/api/mcp` + REST + ACP/UCP,
+  markdown content negotiation.
+- Early payoff: Semrush AI Visibility 14, ~50 pages cited (ChatGPT 40, Gemini 13) while Google
+  organic traffic is still ~20 clicks/month (site is new — first GSC data 19 Aug 2026).
+
+## 9. Keyword strategy
+See `docs/keyword-map.md` and the per-category `docs/keyword-map-*.md` files. Blog clusters are
+tracked there; use the next unused cluster for each new post.
+
+## 10. Known issues / audit
+Full technical + SEO audit: `docs/audit-2026-09.md` (9 Sep 2026, overall 61/100). Fixes are being
+applied in batches on feature branches. Headline items: ~490 thin brand hubs (crawl-budget drain),
+1,347 auto-generated product titles/metas, a toxic backlink flood (disavow pending), missing legal
+pages, no CSP.

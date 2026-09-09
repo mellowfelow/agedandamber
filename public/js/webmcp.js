@@ -4,7 +4,7 @@
     tools: [
       {
         name: "search_products",
-        description: "Search Aged And Amber spirits by keyword, category, or price",
+        description: "Search Aged & Amber spirits by keyword, category, or price",
         inputSchema: {
           type: "object",
           properties: {
@@ -48,7 +48,7 @@
       },
       {
         name: "contact",
-        description: "Contact Aged And Amber spirits concierge",
+        description: "Contact Aged & Amber spirits concierge",
         inputSchema: { type: "object", properties: {} },
         execute: async () => {
           window.location.href = `https://www.agedandamber.com/contact/`;

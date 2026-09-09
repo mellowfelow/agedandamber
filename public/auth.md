@@ -1,6 +1,6 @@
 # Auth.md
 
-## Site: Aged And Amber — E-Commerce Craft Spirits
+## Site: Aged & Amber — E-Commerce Craft Spirits
 
 ## Agent Registration
 No authentication required. All resources and API endpoints are publicly accessible to AI agents.

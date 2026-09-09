@@ -5,7 +5,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     category: 'ordering',
     question: 'What is the minimum order requirement for spirits delivery?',
-    answer: 'Aged And Amber maintains a minimum order requirement of $200 for all direct-to-consumer spirits shipments. Orders exceeding $300 qualify for complimentary temperature-controlled express shipping to every state we ship to.',
+    answer: 'Aged & Amber maintains a minimum order requirement of $200 for all direct-to-consumer spirits shipments. Orders exceeding $300 qualify for complimentary temperature-controlled express shipping to every state we ship to.',
   },
   {
     category: 'shipping',
@@ -19,7 +19,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     category: 'products',
-    question: 'Are Aged And Amber whiskeys chill-filtered or color-added?',
+    question: 'Are Aged & Amber whiskeys chill-filtered or color-added?',
     answer: 'Never. All our bourbons, ryes, single malts, and agave spirits are 100% natural in color and non-chill filtered. This preserves essential oils and rich cask tannins, creating authentic depth and viscosity in your glass.',
   },
   {

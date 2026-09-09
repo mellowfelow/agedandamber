@@ -4,7 +4,7 @@
   "spec": "https://ucp.dev/specification/overview/",
   "schema": "https://ucp.dev/schema/v1.json",
   "site": "https://www.agedandamber.com",
-  "name": "Aged And Amber",
+  "name": "Aged & Amber",
   "description": "Napa Valley's Allocated Spirits, Fine Wine & Rare Beverage Cellar",
   "services": [
     { "id": "product-catalog", "type": "catalog", "url": "https://www.agedandamber.com/shop/", "description": "Full catalog of spirits, wine, Champagne, beer, and cider" },
