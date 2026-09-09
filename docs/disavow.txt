@@ -1,0 +1,73 @@
+# Aged & Amber — Google disavow file
+# Prepared 2026-09-09 as part of the technical & SEO audit (docs/audit-2026-09.md, finding C4).
+#
+# CONTEXT
+# The backlink profile grew from ~11 to 226 backlinks / 118 referring domains
+# (Semrush, 2026-09-09) in roughly three weeks — ~92 new referring domains in the
+# single week of 24-31 Aug. Every link inspected is spam: injected links on hacked
+# government/education/charity pages and foreign forum farms, with commercial anchor
+# text ("hennessy vsop", "macallan 12 price", "fever tree ginger beer", "daniel
+# weller spelt wheat bourbon", "la marca prosecco rose") pointing at random category
+# pages. No follow links of value exist ("Follow backlinks not found" in Semrush).
+# This pattern is consistent with automated spam or negative SEO.
+#
+# GSC status on 2026-09-09: NO manual action ("No issues detected"). Disavowing is a
+# defensive measure — Google usually ignores obvious spam automatically, but the
+# commercial-anchor pattern can read as link buying, so it is worth neutralising.
+#
+# HOW TO FINISH THIS FILE (do this before uploading)
+# The list below is only the domains that could be confirmed by hand from Semrush +
+# Bing WMT + the earlier 31-Aug audit. The full profile is 118 referring domains and
+# none of it is worth keeping, so the file should cover ALL of them:
+#   1. Export the complete referring-domain list:
+#      - Semrush -> Backlink Analytics -> agedandamber.com -> Referring Domains ->
+#        Export (needs a paid/trial plan), OR
+#      - Google Search Console -> Links -> "Top linking sites" -> Export
+#        (GSC's Links report had no data yet on 2026-09-09 — check again in ~2-4 weeks), OR
+#      - Bing Webmaster Tools -> Backlinks -> Export.
+#   2. For each referring domain in the export, add a line:  domain:<the-domain>
+#   3. Keep the "domain:" prefix (disavows the whole domain, including subdomains and
+#      future pages) — for a profile this toxic there is no reason to disavow
+#      individual URLs.
+#   4. Save as plain UTF-8 text, keep it under 100,000 lines / 2 MB.
+#
+# HOW TO UPLOAD (the user's action — never automated)
+#   1. Go to https://search.google.com/search-console/disavow-links
+#   2. Select the property  https://www.agedandamber.com/
+#   3. Upload this file. It replaces any previous disavow file, so keep this file as
+#      the master and re-upload the whole thing whenever new spam domains appear.
+#   4. Re-check the referring-domain export weekly for a while; append new spam
+#      domains and re-upload.
+#   5. Bing has its own tool: Bing Webmaster Tools -> Configure My Site -> Disavow Links
+#      (Bing disavows per-URL/domain individually rather than via a file).
+#
+# ------------------------------------------------------------------------------------
+# Confirmed spam / toxic referring domains (partial — complete from the export above)
+# ------------------------------------------------------------------------------------
+
+# Link-selling / PBN domains (from the 31-Aug 2026 audit)
+domain:8coint.com
+domain:buy-it-now.shop
+domain:backlink-top.shop
+
+# Injected links on otherwise-legitimate domains (hacked pages, commercial anchors).
+# Domain-level is Google's recommended default for spam; 23video.com is a shared
+# corporate-video platform so only the offending subdomain is listed there.
+domain:tandem.edu.co
+domain:csgb.gov.ct.tr
+domain:codeforphilly.org
+domain:vox-sprachschule.ch
+domain:phacility.com
+emento-internal.23video.com
+
+# Spam blogs / forum farms / scraper domains
+domain:dortovysen.cz
+domain:letsknowit.com
+domain:rufox.com
+domain:diskutuje.cz
+domain:newsvuse.com
+domain:zeroken.jp
+
+# ------------------------------------------------------------------------------------
+# Append the remaining referring domains from the full export below this line.
+# ------------------------------------------------------------------------------------
