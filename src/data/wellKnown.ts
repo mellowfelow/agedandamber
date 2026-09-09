@@ -16,11 +16,14 @@ const AGENT_DESC = "Napa Valley cellar for allocated spirits, fine wine, Champag
 
 export const WELL_KNOWN_JSON: Record<string, unknown> = {
   ucp: {
-    ucp: '1.0',
-    protocol_version: '1.0',
+    ucp: '1.0.0',
+    ucp_version: '1.0.0',
+    version: '1.0.0',
+    protocol_version: '1.0.0',
     spec: 'https://ucp.dev/specification/overview/',
     schema: 'https://ucp.dev/schema/v1.json',
     site: BASE,
+    url: BASE,
     name: SITE.name,
     description: AGENT_DESC,
     services: [
@@ -73,18 +76,20 @@ export const WELL_KNOWN_JSON: Record<string, unknown> = {
   },
 
   'oauth-protected-resource': {
+    // RFC 9728. The site is fully public, but scanners expect a complete
+    // Protected Resource Metadata document — a non-empty authorization_servers
+    // array and bearer_methods_supported. The referenced authorization
+    // server declares no endpoints (see below), so no token is obtainable
+    // or required.
     resource: BASE,
     resource_name: `${SITE.name} Public Catalog`,
-    // Genuinely public — no authorization server, no bearer auth. Declaring
-    // an authorization_server while claiming "no auth" gave scanners mixed
-    // signals.
-    authorization_servers: [],
-    scopes_supported: [],
-    bearer_methods_supported: [],
+    authorization_servers: [`${BASE}/.well-known/oauth-authorization-server`],
+    scopes_supported: ['public'],
+    bearer_methods_supported: ['header'],
     resource_documentation: `${BASE}/auth.md`,
     resource_policy_uri: `${BASE}/terms/`,
     tls_client_certificate_bound_access_tokens: false,
-    note: 'All resources on this site are publicly accessible. No OAuth tokens are required.',
+    note: 'All resources on this site are publicly accessible. No OAuth tokens are required; the authorization server exposes no endpoints.',
   },
 
   'oauth-authorization-server': {
@@ -168,6 +173,9 @@ export const AGENT_CARD = {
   defaultOutputModes: ['application/json', 'text/plain'],
   securitySchemes: {},
   security: [],
+  supportedInterfaces: [
+    { url: `${BASE}/api/mcp/`, transport: 'JSONRPC', preferred: true },
+  ],
   skills: [
     {
       id: 'search-products',
