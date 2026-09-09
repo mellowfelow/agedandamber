@@ -738,9 +738,6 @@ export const ShopView: React.FC<ShopViewProps> = ({
             ? activeCategoryObj.seo?.definitionHook || activeCategoryObj.description
             : 'Explore our complete direct allocation list of rare bourbons, cask strength ryes, single malt scotches, aged tequilas, and zero-proof non-alcoholic fine wines and spirits.'}
         </p>
-        {activeCategoryObj?.seo && selectedSubcategory === 'all' && (
-          <div className="text-[11px] text-amber-400/50">Last updated: August 2026</div>
-        )}
         {activeCategoryObj?.seo?.transactionalCTA && selectedSubcategory === 'all' && (
           <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
             {activeCategoryObj.seo.transactionalCTA}

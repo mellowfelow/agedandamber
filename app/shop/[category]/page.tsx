@@ -8,6 +8,7 @@ import { getShopSlugForPost } from '@/src/utils/blogLinks';
 import { ShopView } from '@/src/views/ShopView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
+import { fitTitle, clampDescription } from '@/src/utils/seo';
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -22,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = CATEGORIES.find((c) => c.slug === category);
   if (!cat) return {};
   return {
-    title: cat.seo?.titleTag || `${cat.name} — Shop`,
-    description: cat.seo?.metaDescription || cat.description,
+    title: fitTitle(cat.seo?.titleTag || `${cat.name} — Shop`),
+    description: clampDescription(cat.seo?.metaDescription || cat.description),
     alternates: { canonical: `https://${SITE.domain}/shop/${cat.slug}/` },
     openGraph: { images: [cat.image] },
   };

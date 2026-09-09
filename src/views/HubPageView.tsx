@@ -42,7 +42,6 @@ export const HubPageView: React.FC<HubPageViewProps> = ({ name, seo, category, p
         <p className="text-sm text-amber-200/70 max-w-3xl leading-relaxed">
           {seo.definitionHook}
         </p>
-        <div className="text-[11px] text-amber-400/50">Last updated: August 2026</div>
         {comingSoon ? (
           <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
             <strong className="text-[#D4AF37]">Coming soon.</strong> We're working on adding {name} to our direct allocation vault. In the meantime, explore what's currently in stock in {category.name}, or contact our concierge team to be notified when it arrives.
