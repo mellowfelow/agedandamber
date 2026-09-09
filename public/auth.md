@@ -29,6 +29,8 @@ No authentication required. All resources and API endpoints are publicly accessi
   "agent_auth": {
     "register_uri": "https://www.agedandamber.com/api/agent/register",
     "registration_endpoint": "https://www.agedandamber.com/api/agent/register",
+    "skill": "https://www.agedandamber.com/auth.md",
+    "documentation": "https://www.agedandamber.com/auth.md",
     "identity_types_supported": ["none", "anonymous"],
     "credential_types_supported": ["none"],
     "grant_types_supported": [],

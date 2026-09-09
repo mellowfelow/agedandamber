@@ -119,6 +119,8 @@ export const WELL_KNOWN_JSON: Record<string, unknown> = {
       // nothing. The endpoint returns 200 with an explanation.
       register_uri: `${BASE}/api/agent/register`,
       registration_endpoint: `${BASE}/api/agent/register`,
+      skill: `${BASE}/auth.md`,
+      documentation: `${BASE}/auth.md`,
       identity_types_supported: ['none', 'anonymous'],
       credential_types_supported: ['none'],
       grant_types_supported: [],
