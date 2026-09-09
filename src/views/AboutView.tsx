@@ -48,6 +48,9 @@ export const AboutView: React.FC = () => {
         <p>
           Every bottle that reaches our Napa Valley cellar is sourced from legitimate distillery allocations or licensed distribution channels, checked for condition and authenticity, and stored under climate-controlled conditions until it ships.
         </p>
+        <p>
+          What began as a whiskey vault has grown into a full cellar. Alongside single barrel bourbon, cask-strength rye, single malt Scotch, Irish and Japanese whisky, we carry aged and dark rum, artisanal gin, craft vodka, tequila and mezcal, and Cognac and brandy — plus fine wine from Napa Valley, Bordeaux, and Burgundy, grower-to-prestige Champagne and sparkling wine, craft and import beer, hard cider, and a growing range of non-alcoholic spirits, wine, and sparkling alternatives that ship nationwide with no age restriction. The through-line is the same across every category: buy direct, verify what we buy, store it properly, and ship it compliantly.
+        </p>
 
         <h2 className="text-2xl font-serif font-bold text-amber-100">
           The Philosophy: Provenance & Authenticity First
@@ -66,7 +69,33 @@ export const AboutView: React.FC = () => {
           Through our direct-to-consumer platform, enthusiasts across every state where direct-to-consumer alcohol shipping is legally permitted gain access to single barrel picks, limited cask-strength releases, and allocated bottlings that are often difficult to find at retail. Orders placed before 2:00 PM local time to Arizona, Idaho, Nevada, New Mexico, Oregon, or Utah qualify for same-day dispatch; all other states we serve receive spirits within 2-5 business days.
         </p>
         <p>
-          Every order shipped from our Napa Valley headquarters is packed in climate-controlled temperature shields and dispatched via compliant spirits carriers requiring mandatory adult signature and 21+ ID verification upon delivery.
+          Every order shipped from our Napa Valley headquarters is packed in climate-controlled temperature shields and dispatched via compliant spirits carriers requiring mandatory adult signature and 21+ ID verification upon delivery. Non-alcoholic products carry none of those restrictions and ship to all 50 states.
+        </p>
+
+        <h2 className="text-2xl font-serif font-bold text-amber-100">
+          How We Verify and Store Every Bottle
+        </h2>
+        <p>
+          Because we don&apos;t distill, our value is in what we choose to carry and how we handle it. Every bottle is bought from a distillery&apos;s own allocation program or a state-licensed distributor — never from grey-market resellers or auction lots of unknown provenance. On arrival, each case is checked for fill level, seal and capsule integrity, label condition, and batch or barrel markings against what the producer released. Anything that doesn&apos;t match is sent back.
+        </p>
+        <p>
+          Accepted stock rests in a temperature- and humidity-controlled room, upright or angled by closure type, away from light and vibration, until it&apos;s picked for an order. For allocated and single-barrel releases we record the barrel number, warehouse, and fill date so collectors know exactly which release they&apos;re receiving.
+        </p>
+
+        <h2 className="text-2xl font-serif font-bold text-amber-100">
+          Who We Serve
+        </h2>
+        <p>
+          Aged &amp; Amber ships to private collectors chasing a specific barrel, hospitality venues building a cocktail or wine program through our{' '}
+          <a href="/wholesale/" className="text-[#D4AF37] hover:underline">wholesale tiers</a>, and anyone who simply wants a bottle that&apos;s hard to find locally delivered properly. The{' '}
+          <a href="/blog/" className="text-[#D4AF37] hover:underline">Cask &amp; Wood Journal</a>{' '}
+          covers the how and why behind what we carry — cask finishes, mash bills, regions, and buying guidance — and our{' '}
+          <a href="/faq/" className="text-[#D4AF37] hover:underline">FAQ</a>{' '}
+          and{' '}
+          <a href="/shipping/" className="text-[#D4AF37] hover:underline">shipping</a>{' '}
+          and{' '}
+          <a href="/refund/" className="text-[#D4AF37] hover:underline">returns</a>{' '}
+          policies spell out exactly how ordering works before you check out.
         </p>
       </div>
 

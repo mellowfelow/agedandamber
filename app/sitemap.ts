@@ -18,6 +18,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/faq/`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/wholesale/`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/contact/`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${BASE}/shipping/`, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/refund/`, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${BASE}/privacy/`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${BASE}/terms/`, changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const categoryPages: MetadataRoute.Sitemap = CATEGORIES.map((c) => ({

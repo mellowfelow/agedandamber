@@ -40,6 +40,11 @@ source; never reintroduce "Aged And Amber". Page titles that already contain the
 - Forms send server-side: `/api/inquiry` (contact + wholesale) and `/api/order` → `src/utils/notify.ts`
   via Zoho SMTP (`ZOHO_SMTP_USER` / `ZOHO_SMTP_PASS`), Resend as fallback.
 
+## Policy pages
+`/privacy`, `/terms`, `/shipping`, `/refund` render from `src/data/legal.ts` via
+`src/views/LegalView.tsx`. The content is generated from `SHOP` config + the published FAQ so it
+can't drift from what the store does — edit `legal.ts`, not the route files. Footer links all four.
+
 ## Live endpoints
 `/api/products`, `/api/products/:slug`, `/api/categories`, `/api/search`, `/api/mcp` (MCP streamable),
 `/api/acp/catalog`, `/api/ucp/services`, `/api/markdown` (content negotiation), `/api/order`,

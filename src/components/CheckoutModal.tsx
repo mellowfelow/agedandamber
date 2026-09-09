@@ -23,6 +23,7 @@ export const CheckoutModal: React.FC = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [orderFailed, setOrderFailed] = useState(false);
   const [completedOrder, setCompletedOrder] = useState<{
     orderNumber: string;
     grandTotal: number;
@@ -77,22 +78,30 @@ export const CheckoutModal: React.FC = () => {
       },
     };
 
-    // Fallback reference, only used if /api/order can't be reached (offline).
-    let orderNumber = `AA-${String(Date.now()).slice(-6)}`;
-
-    // Server route: assigns the order number, logs the full order (durable),
-    // and emails the concierge via Zoho SMTP after the response. One email,
-    // one channel — nothing else fires.
+    // Server route: assigns the order number and emails the concierge via
+    // Zoho SMTP. Only treat the order as placed when the server confirms it
+    // — otherwise the customer is told their order is in when the concierge
+    // never received it.
+    let orderNumber: string | null = null;
     try {
       const res = await fetch('/api/order/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (data?.ok && data.orderNumber) orderNumber = data.orderNumber;
+      if (res.ok) {
+        const data = await res.json();
+        if (data?.ok && data.orderNumber) orderNumber = data.orderNumber;
+      }
     } catch {
-      // Keep the fallback order number.
+      /* leave orderNumber null -> show the manual-fallback screen */
+    }
+
+    setIsSubmitting(false);
+
+    if (!orderNumber) {
+      setOrderFailed(true);
+      return; // keep the cart so the customer can retry or send it manually
     }
 
     setCompletedOrder({
@@ -102,7 +111,6 @@ export const CheckoutModal: React.FC = () => {
       name: formData.name,
       email: formData.email,
     });
-    setIsSubmitting(false);
     setIsSubmitted(true);
     clearCart();
   };
@@ -118,7 +126,43 @@ export const CheckoutModal: React.FC = () => {
           <X className="w-5 h-5" />
         </button>
 
-        {isSubmitted && completedOrder ? (
+        {orderFailed ? (
+          <div className="text-center py-8 space-y-4">
+            <div className="w-16 h-16 rounded-full bg-red-950/60 border border-red-500/40 text-red-400 flex items-center justify-center mx-auto">
+              <X className="w-8 h-8" />
+            </div>
+            <h2 className="text-2xl font-serif font-bold text-amber-100">We couldn&apos;t place your order</h2>
+            <p className="text-amber-200/80 text-sm max-w-md mx-auto leading-relaxed">
+              Something went wrong reaching our order desk and your order was <strong>not</strong> submitted.
+              Your cart is still saved. Please try again in a moment, or send your order straight to our
+              concierge and we&apos;ll take it from there.
+            </p>
+            <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800 text-xs text-left max-w-md mx-auto space-y-1.5">
+              <p>
+                Email:{' '}
+                <a href={`mailto:${CONTACT.email}`} className="text-[#D4AF37] underline font-semibold">
+                  {CONTACT.email}
+                </a>
+              </p>
+              <p>
+                WhatsApp / phone:{' '}
+                <a href={`tel:${CONTACT.phone}`} className="text-[#D4AF37] underline font-semibold">
+                  {CONTACT.phone}
+                </a>
+              </p>
+              <p className="text-amber-300/70 pt-1">
+                Order total ${grandTotal.toFixed(2)} · paying by{' '}
+                {SHOP.paymentMethods.find((pm) => pm.id === selectedPayment)?.name || selectedPayment}
+              </p>
+            </div>
+            <button
+              onClick={() => setOrderFailed(false)}
+              className="py-3 px-8 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-sm hover:bg-[#E5C158] transition-all"
+            >
+              Back to Checkout
+            </button>
+          </div>
+        ) : isSubmitted && completedOrder ? (
           <div className="text-center py-8 space-y-4">
             <div className="w-16 h-16 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
               <CheckCircle2 className="w-8 h-8" />

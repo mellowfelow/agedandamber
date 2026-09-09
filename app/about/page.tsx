@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { AboutView } from '@/src/views/AboutView';
+import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
 
 export const metadata: Metadata = {
@@ -12,5 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <AboutView />;
+  return (
+    <>
+      <JsonLd type="about" />
+      <AboutView />
+    </>
+  );
 }
