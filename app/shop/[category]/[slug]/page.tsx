@@ -8,6 +8,7 @@ import { HubPageView } from '@/src/views/HubPageView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
 import { brandHubProducts, subcategoryHubProducts, hubIsIndexable, productBrandName } from '@/src/utils/hubs';
+import { fitTitle, productMetaDescription, clampDescription } from '@/src/utils/seo';
 
 interface Props {
   params: Promise<{ category: string; slug: string }>;
@@ -56,8 +57,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : brandHubProducts(brandHub!, PRODUCTS).length;
 
     return {
-      title: hub.seo.titleTag,
-      description: hub.seo.metaDescription,
+      title: fitTitle(hub.seo.titleTag),
+      description: clampDescription(hub.seo.metaDescription),
       alternates: { canonical: `https://${SITE.domain}/shop/${hub.categorySlug}/${hub.hubSlug}/` },
       openGraph: ogImage ? { images: [ogImage] } : undefined,
       robots: hubIsIndexable(hubProductCount) ? undefined : { index: false, follow: true },
@@ -67,8 +68,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = PRODUCTS.find((p) => p.slug === slug);
   if (!product) return {};
   return {
-    title: product.seo?.titleTag || `${product.name} — Buy Online`,
-    description: product.seo?.metaDescription || product.shortDescription,
+    title: fitTitle(product.seo?.titleTag || product.name),
+    description: productMetaDescription(product),
     alternates: { canonical: `https://${SITE.domain}/shop/${product.category}/${product.slug}/` },
     openGraph: { images: product.images },
   };

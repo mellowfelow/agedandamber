@@ -5,6 +5,7 @@ import { getRelatedPosts } from '@/src/utils/blogLinks';
 import { BlogPostView } from '@/src/views/BlogPostView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
+import { fitTitle, clampDescription } from '@/src/utils/seo';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -19,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = BLOG_POSTS.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: fitTitle(post.title),
+    description: clampDescription(post.excerpt),
     alternates: { canonical: `https://${SITE.domain}/blog/${post.slug}/` },
     openGraph: { images: [post.image], type: 'article' },
   };
