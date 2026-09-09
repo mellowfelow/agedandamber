@@ -92,8 +92,27 @@ tracked there; use the next unused cluster for each new post.
 liability language, and confirm the legal entity name (currently just "Aged & Amber" — add an LLC/Inc
 if one exists) and the effective date.
 
-## 11. Known issues / audit
-Full technical + SEO audit: `docs/audit-2026-09.md` (9 Sep 2026, overall 61/100). Fixes are being
-applied in batches on feature branches. Headline items: ~490 thin brand hubs (crawl-budget drain),
-1,347 auto-generated product titles/metas, a toxic backlink flood (disavow pending), missing legal
-pages, no CSP.
+## 11. Audit & remediation (9 Sep 2026)
+Full audit: `docs/audit-2026-09.md` (overall 61/100). Remediation shipped in 7 batches merged to
+`main` on 9 Sep:
+
+| Batch | Shipped |
+|---|---|
+| 1 | C1 blog dates un-future-dated · C2 `/shop/?q=` search wired · C5 form failure handling · H3 brand name normalised to "Aged & Amber" |
+| 2 | C3 thin hubs (<3 products) → `noindex` + out of sitemap (2,155→1,802 URLs) · Product `brand` = real producer · `handlingTime` · image sitemap |
+| 3 | H1 `fitTitle()` (titles ≤60) + `productMetaDescription()` (thin metas padded) · removed stale "Last updated" |
+| 4 | H5 `/privacy` `/terms` `/shipping` `/refund` · M1 full-category footer · M6 sitewide GDPR notice · M7 About `Organization` schema + expanded copy · C5b checkout failure screen |
+| 5 | H2 LCP image `priority` + preload · H7 Content-Security-Policy (next.config + vercel.json) |
+| 6 | M3 category-aware product copy · M10 beer variant copy differentiated · M5 form `aria-label`s · L1 llms.txt `text/plain` · L3 agent-skills `sha256` · L4 auth.md table · L7 real `crosscheck.mjs` |
+| 7 | `docs/disavow.txt` prepared (C4) |
+
+**Off-page / manual follow-ups** (see `docs/audit-2026-09.md` → "Still needed"):
+- Complete + upload `docs/disavow.txt` (needs the full referring-domain export; GSC Links had no data
+  on 9 Sep — recheck in 2-4 weeks). GSC manual actions: none as of 9 Sep.
+- Verify Zoho SMTP env vars are set and forms/orders actually deliver end-to-end; consider a durable
+  order/inquiry store (D1 / KV / sheet webhook) so nothing is lost if email fails.
+- Counsel review of the 4 policy pages; confirm legal entity name + NAP (562 area code vs Napa).
+- Connect a Google Merchant Center feed once indexing recovers.
+- Article-specific blog images (258/268 posts still share ~21 category stock photos).
+- Confirm the `BRAND.sameAs` social profiles exist, or remove them from schema.
+- Investigate Bing's 4,300 discovered URLs vs 2,155 actual (possible www/non-www duplication).
