@@ -1,21 +1,34 @@
-import { SITE } from '../config/site';
+import { SITE, CONTACT } from '../config/site';
 
 /**
- * Plain, presentable HTML for the internal order / contact / wholesale
- * notification emails. Table-based layout with inline styles only — the
- * subset that renders consistently in Zoho Mail, Gmail, and Apple Mail.
+ * Internal order / contact / wholesale notification emails.
+ *
+ * Table + inline-style layout — the subset that renders consistently in
+ * Zoho Mail, Gmail (web + app), and Apple Mail (macOS + iOS). Light-mode
+ * locked (every surface sets an explicit background) so a client's dark
+ * mode can't wash the letterhead out. No web fonts, no background images,
+ * no <style> block — everything is inlined.
  */
 
 const C = {
-  ink: '#241a12',
-  soft: '#6b5d4a',
-  faint: '#96876f',
-  line: '#e7ddca',
-  panel: '#faf6ec',
-  accent: '#a9701f',
-  good: '#3f7d4f',
-  bg: '#f2ede1',
+  page: '#ECE3D2', // aged paper — the mount the card sits on
+  card: '#FFFFFF',
+  head: '#1C1206', // roasted-brown letterhead band
+  gold: '#E7C15E', // warm gold, for the dark band + accent rule
+  goldInk: '#9A6B15', // deeper gold that holds contrast on white (links)
+  cream: '#FBF3E0',
+  headMeta: '#B9A582',
+  ink: '#2B1D0E',
+  soft: '#6E5C43',
+  faint: '#9C8A6E',
+  rule: '#E6D9BF',
+  panel: '#F8F2E4',
+  good: '#3C7A4C',
 };
+
+const SERIF = "Georgia, 'Times New Roman', serif";
+const SANS =
+  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 
 const esc = (s: unknown) =>
   String(s ?? '')
@@ -29,38 +42,79 @@ const money = (n: number) => `$${Number(n || 0).toFixed(2)}`;
 const stamp = () =>
   new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Los_Angeles',
-    dateStyle: 'medium',
-    timeStyle: 'short',
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
   }).format(new Date()) + ' PT';
 
-function shell(opts: { eyebrow: string; title: string; meta?: string; bodyHtml: string }) {
-  return `<!doctype html><html><body style="margin:0;padding:0;background:${C.bg};">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.bg};padding:28px 12px;">
-<tr><td align="center">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:100%;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:${C.ink};">
-  <tr><td style="background:#1a120b;border-radius:12px 12px 0 0;padding:24px 30px;">
-    <div style="color:#d4af37;font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;">${esc(opts.eyebrow)}</div>
-    <div style="color:#fef3c7;font-size:23px;font-weight:700;margin-top:7px;letter-spacing:-.01em;">${esc(opts.title)}</div>
-    ${opts.meta ? `<div style="color:#b8a88c;font-size:13px;margin-top:5px;">${esc(opts.meta)}</div>` : ''}
+/* ---------------------------- shared pieces --------------------------- */
+
+function shell(o: { eyebrow: string; title: string; meta: string; body: string }) {
+  return `<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>${esc(o.eyebrow)}</title>
+</head>
+<body style="margin:0;padding:0;background:${C.page};-webkit-text-size-adjust:100%;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.page};">
+<tr><td align="center" style="padding:28px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;border:1px solid ${C.rule};border-radius:3px;">
+
+  <tr><td style="background:${C.head};padding:27px 34px 24px;border-radius:3px 3px 0 0;">
+    <div style="font-family:${SANS};font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:${C.gold};">${esc(o.eyebrow)}</div>
+    <div style="font-family:${SERIF};font-size:25px;line-height:1.22;color:${C.cream};margin-top:10px;">${esc(o.title)}</div>
+    <div style="font-family:${SANS};font-size:12px;line-height:1.5;color:${C.headMeta};margin-top:9px;">${esc(o.meta)}</div>
   </td></tr>
-  <tr><td style="background:#ffffff;border:1px solid ${C.line};border-top:none;border-radius:0 0 12px 12px;padding:26px 30px;">
-    ${opts.bodyHtml}
+  <tr><td style="height:3px;background:${C.gold};font-size:0;line-height:0;">&nbsp;</td></tr>
+
+  <tr><td style="background:${C.card};padding:26px 34px 30px;font-family:${SANS};color:${C.ink};">
+    ${o.body}
   </td></tr>
-  <tr><td style="padding:16px 30px;color:${C.faint};font-size:11px;">
-    Sent by ${esc(SITE.name)} · this is an internal order notification.
+
+  <tr><td style="background:${C.page};padding:15px 34px;border-top:1px solid ${C.rule};border-radius:0 0 3px 3px;font-family:${SANS};font-size:11px;line-height:1.6;color:${C.faint};">
+    ${esc(SITE.name)} &nbsp;&middot;&nbsp; internal notification, not sent to the customer<br>
+    ${esc(CONTACT.address)}
   </td></tr>
+
 </table>
 </td></tr></table>
 </body></html>`;
 }
 
-function panel(label: string, innerHtml: string) {
-  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:14px;">
-  <tr><td style="background:${C.panel};border:1px solid ${C.line};border-radius:9px;padding:15px 18px;">
-    <div style="font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:${C.faint};margin-bottom:6px;">${esc(label)}</div>
-    <div style="font-size:14px;line-height:1.6;color:${C.ink};">${innerHtml}</div>
+const label = (t: string) =>
+  `<div style="font-family:${SANS};font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:${C.faint};margin-bottom:5px;">${esc(t)}</div>`;
+
+function field(l: string, valueHtml: string, marginBottom = 18) {
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 ${marginBottom}px;"><tr><td>
+    ${label(l)}
+    <div style="font-family:${SANS};font-size:14px;line-height:1.6;color:${C.ink};">${valueHtml}</div>
   </td></tr></table>`;
 }
+
+const divider = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 18px;"><tr><td style="border-top:1px solid ${C.rule};font-size:0;line-height:0;">&nbsp;</td></tr></table>`;
+
+function callout(innerHtml: string) {
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px;"><tr>
+    <td style="background:${C.panel};border:1px solid ${C.rule};border-left:3px solid ${C.goldInk};border-radius:3px;padding:16px 18px;font-family:${SANS};font-size:13px;line-height:1.6;color:${C.ink};">
+      ${innerHtml}
+    </td></tr></table>`;
+}
+
+function button(href: string, text: string) {
+  return `<a href="${esc(href)}" style="display:inline-block;background:${C.head};color:${C.cream};font-family:${SANS};font-size:13px;font-weight:600;line-height:1;text-decoration:none;padding:11px 22px;border-radius:3px;">${esc(text)} &rarr;</a>`;
+}
+
+const mailLink = (e: string) =>
+  `<a href="mailto:${esc(e)}" style="color:${C.goldInk};text-decoration:none;font-weight:600;">${esc(e)}</a>`;
+
+const telLink = (p: string) =>
+  `<a href="tel:${esc(String(p).replace(/[^\d+]/g, ''))}" style="color:${C.goldInk};text-decoration:none;font-weight:600;">${esc(p)}</a>`;
 
 /* ------------------------------- ORDER ------------------------------- */
 
@@ -81,75 +135,89 @@ export interface OrderEmailInput {
 
 export function orderEmail(o: OrderEmailInput): { subject: string; text: string; html: string } {
   const c = o.customer;
-  const when = stamp();
+  const ts = stamp();
+  const units = o.items.reduce((n, i) => n + i.quantity, 0);
 
   const rows = o.items
     .map(
       (i) => `<tr>
-      <td style="padding:11px 0;border-bottom:1px solid #f1e9d8;font-size:14px;">${esc(i.name)}</td>
-      <td align="center" style="padding:11px 0;border-bottom:1px solid #f1e9d8;font-size:14px;color:${C.soft};white-space:nowrap;">×${i.quantity}</td>
-      <td align="right" style="padding:11px 0;border-bottom:1px solid #f1e9d8;font-size:14px;white-space:nowrap;">${money(i.lineTotal)}</td>
+      <td style="padding:12px 0;border-bottom:1px solid ${C.rule};font-family:${SANS};font-size:14px;line-height:1.4;color:${C.ink};">${esc(i.name)}</td>
+      <td align="center" style="padding:12px 10px;border-bottom:1px solid ${C.rule};font-family:${SANS};font-size:13px;color:${C.soft};white-space:nowrap;">&times;${i.quantity}</td>
+      <td align="right" style="padding:12px 0;border-bottom:1px solid ${C.rule};font-family:${SERIF};font-size:14px;color:${C.ink};white-space:nowrap;">${money(i.lineTotal)}</td>
     </tr>`
     )
     .join('');
 
-  const totalRow = (label: string, value: string, opts: { strong?: boolean; good?: boolean } = {}) => {
-    const labelColor = opts.good ? C.good : opts.strong ? C.ink : C.soft;
-    const valueColor = opts.good ? C.good : opts.strong ? C.accent : C.ink;
-    const size = opts.strong ? '16px' : '13px';
-    const pad = opts.strong ? '10px' : '3px';
-    const topRule = opts.strong ? `border-top:2px solid ${C.line};` : '';
-    const weight = opts.strong ? 'font-weight:700;' : '';
+  const totalRow = (
+    l: string,
+    v: string,
+    opt: { grand?: boolean; good?: boolean } = {}
+  ) => {
+    const lc = opt.good ? C.good : C.soft;
+    const vc = opt.good ? C.good : opt.grand ? C.goldInk : C.ink;
+    const top = opt.grand ? `border-top:2px solid ${C.head};` : '';
     return `<tr>
-      <td align="right" style="padding:${pad} 14px 3px 0;font-size:${size};color:${labelColor};${weight}${topRule}">${esc(label)}</td>
-      <td align="right" width="96" style="padding:${pad} 0 3px 0;font-size:${size};white-space:nowrap;color:${valueColor};${weight}${topRule}">${esc(value)}</td>
+      <td align="right" style="padding:${opt.grand ? '13px' : '4px'} 16px 4px 0;font-family:${SANS};font-size:${opt.grand ? '11px' : '13px'};${opt.grand ? 'font-weight:700;letter-spacing:1.6px;text-transform:uppercase;' : ''}color:${lc};${top}">${esc(l)}</td>
+      <td align="right" width="118" style="padding:${opt.grand ? '13px' : '4px'} 0 4px;font-family:${SERIF};font-size:${opt.grand ? '20px' : '14px'};color:${vc};white-space:nowrap;${top}">${esc(v)}</td>
     </tr>`;
   };
 
-  const bodyHtml = `
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+  const th = `padding:0 0 10px;border-bottom:2px solid ${C.head};font-family:${SANS};font-size:10px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:${C.faint};`;
+
+  const body = `
+  ${callout(
+    `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This is an order request — reply to the customer to confirm the order and arrange payment by <strong>${esc(o.paymentMethod)}</strong>.
+     <div style="margin-top:13px;">${button(
+       `mailto:${c.email}?subject=${encodeURIComponent(`Your ${SITE.name} order ${o.orderNumber}`)}`,
+       'Reply to customer'
+     )}</div>`
+  )}
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
     <tr>
-      <th align="left" style="padding:0 0 8px 0;border-bottom:2px solid ${C.line};font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:${C.faint};">Item</th>
-      <th align="center" style="padding:0 0 8px 0;border-bottom:2px solid ${C.line};font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:${C.faint};">Qty</th>
-      <th align="right" style="padding:0 0 8px 0;border-bottom:2px solid ${C.line};font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:${C.faint};">Amount</th>
+      <td style="${th}">Item</td>
+      <td align="center" style="${th}">Qty</td>
+      <td align="right" style="${th}">Amount</td>
     </tr>
     ${rows}
   </table>
 
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:6px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
     ${totalRow('Subtotal', money(o.subtotal))}
     ${o.cryptoDiscount > 0 ? totalRow('Crypto discount', `−${money(o.cryptoDiscount)}`, { good: true }) : ''}
     ${totalRow('Shipping', o.shipping === 0 ? 'Free' : money(o.shipping))}
-    ${totalRow('Total', money(o.total), { strong: true })}
+    ${totalRow('Total', money(o.total), { grand: true })}
   </table>
 
-  ${panel('Payment method', `<strong>${esc(o.paymentMethod)}</strong>`)}
-  ${panel(
-    'Ship to',
-    `<strong>${esc(c.name)}</strong><br>${esc(c.street)}<br>${esc(c.city)}, ${esc(c.state)} ${esc(c.zip)}<br>
-     <a href="mailto:${esc(c.email)}" style="color:${C.accent};text-decoration:none;">${esc(c.email)}</a> &nbsp;·&nbsp; ${esc(c.phone)}`
-  )}
-  ${c.notes ? panel('Order notes', esc(c.notes)) : ''}`;
+  ${divider}
+
+  ${field('Ship to', `<strong>${esc(c.name)}</strong><br>${esc(c.street)}<br>${esc(c.city)}, ${esc(c.state)} ${esc(c.zip)}`, 16)}
+  ${field('Customer', `${mailLink(c.email)}<br>${telLink(c.phone)}`, 16)}
+  ${field('Payment method', `<strong>${esc(o.paymentMethod)}</strong>`, c.notes ? 16 : 0)}
+  ${c.notes ? divider + field('Order notes', esc(c.notes).replace(/\n/g, '<br>'), 0) : ''}
+  `;
 
   const text =
-    `NEW ORDER — ${o.orderNumber}\n${when}\n\n` +
-    `ITEMS\n${o.items.map((i) => `  ${i.name}  ×${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
-    `Subtotal: ${money(o.subtotal)}\n` +
-    (o.cryptoDiscount > 0 ? `Crypto discount: -${money(o.cryptoDiscount)}\n` : '') +
-    `Shipping: ${o.shipping === 0 ? 'Free' : money(o.shipping)}\n` +
-    `TOTAL: ${money(o.total)}\n\n` +
-    `Payment: ${o.paymentMethod}\n\n` +
-    `SHIP TO\n  ${c.name}\n  ${c.street}\n  ${c.city}, ${c.state} ${c.zip}\n  ${c.email} · ${c.phone}\n` +
-    (c.notes ? `\nNotes: ${c.notes}\n` : '');
+    `NEW ORDER  ${o.orderNumber}\n${ts}  ·  ${units} unit${units === 1 ? '' : 's'}\n\n` +
+    `** Payment not yet collected — reply to ${c.email} to arrange ${o.paymentMethod}. **\n\n` +
+    `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
+    `Subtotal  ${money(o.subtotal)}\n` +
+    (o.cryptoDiscount > 0 ? `Crypto discount  -${money(o.cryptoDiscount)}\n` : '') +
+    `Shipping  ${o.shipping === 0 ? 'Free' : money(o.shipping)}\n` +
+    `TOTAL  ${money(o.total)}\n\n` +
+    `SHIP TO\n  ${c.name}\n  ${c.street}\n  ${c.city}, ${c.state} ${c.zip}\n\n` +
+    `CUSTOMER\n  ${c.email}\n  ${c.phone}\n\n` +
+    `PAYMENT METHOD\n  ${o.paymentMethod}\n` +
+    (c.notes ? `\nORDER NOTES\n  ${c.notes}\n` : '');
 
   return {
-    subject: `New order ${o.orderNumber} — ${c.name} — ${money(o.total)}`,
+    subject: `New order · ${o.orderNumber} · ${money(o.total)} · ${c.name}`,
     text,
     html: shell({
-      eyebrow: `${SITE.name} · New order`,
+      eyebrow: 'New order',
       title: o.orderNumber,
-      meta: when,
-      bodyHtml,
+      meta: `${ts}  ·  ${units} unit${units === 1 ? '' : 's'}`,
+      body,
     }),
   };
 }
@@ -164,18 +232,27 @@ export interface ContactEmailInput {
 }
 
 export function contactEmail(i: ContactEmailInput): { subject: string; text: string; html: string } {
-  const when = stamp();
-  const bodyHtml = `
-  ${panel('From', `<strong>${esc(i.name)}</strong><br><a href="mailto:${esc(i.email)}" style="color:${C.accent};text-decoration:none;">${esc(i.email)}</a>`)}
-  ${panel('Subject', esc(i.subject))}
-  ${panel('Message', esc(i.message).replace(/\n/g, '<br>'))}`;
+  const ts = stamp();
 
-  const text = `CONTACT MESSAGE\n${when}\n\nFrom: ${i.name} <${i.email}>\nSubject: ${i.subject}\n\n${i.message}\n`;
+  const body = `
+  ${field('Email', mailLink(i.email), 14)}
+  ${field('Subject', esc(i.subject), 0)}
+  ${divider}
+  ${field('Message', esc(i.message).replace(/\n/g, '<br>'), 20)}
+  <div>${button(
+    `mailto:${i.email}?subject=${encodeURIComponent(`Re: ${i.subject}`)}`,
+    'Reply'
+  )}</div>
+  `;
+
+  const text =
+    `CONTACT MESSAGE\n${ts}\n\n` +
+    `From: ${i.name} <${i.email}>\nSubject: ${i.subject}\n\n${i.message}\n`;
 
   return {
-    subject: `Concierge message — ${i.subject}`,
+    subject: `Contact · ${i.subject} · ${i.name}`,
     text,
-    html: shell({ eyebrow: `${SITE.name} · Contact form`, title: 'New message', meta: when, bodyHtml }),
+    html: shell({ eyebrow: 'Contact message', title: i.name || 'New message', meta: ts, body }),
   };
 }
 
@@ -193,33 +270,43 @@ export interface WholesaleEmailInput {
 }
 
 export function wholesaleEmail(i: WholesaleEmailInput): { subject: string; text: string; html: string } {
-  const when = stamp();
-  const row = (k: string, v: string) =>
-    `<tr><td style="padding:7px 14px 7px 0;font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:${C.faint};white-space:nowrap;vertical-align:top;">${esc(k)}</td>
-     <td style="padding:7px 0;font-size:14px;color:${C.ink};">${v}</td></tr>`;
+  const ts = stamp();
 
-  const bodyHtml = `
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-    ${row('Business', `<strong>${esc(i.businessName)}</strong>`)}
-    ${row('Contact', esc(i.contactName))}
-    ${row('Email', `<a href="mailto:${esc(i.email)}" style="color:${C.accent};text-decoration:none;">${esc(i.email)}</a>`)}
-    ${row('Phone', esc(i.phone))}
-    ${i.tier ? row('Tier', esc(i.tier)) : ''}
-    ${row('License', esc(i.licenseType))}
-    ${row('Volume', esc(i.estimatedVolume))}
-  </table>
-  ${i.notes ? panel('Notes', esc(i.notes).replace(/\n/g, '<br>')) : ''}`;
+  const tierBadge = i.tier
+    ? `<span style="display:inline-block;background:${C.panel};border:1px solid ${C.rule};border-radius:999px;padding:4px 12px;font-family:${SANS};font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${C.goldInk};margin-bottom:20px;">${esc(i.tier)}</span>`
+    : '';
+
+  const body = `
+  ${tierBadge}
+  ${field('Contact', `<strong>${esc(i.contactName || '—')}</strong>`, 14)}
+  ${field('Email', mailLink(i.email), 14)}
+  ${field('Phone', i.phone ? telLink(i.phone) : '—', 14)}
+  ${divider}
+  ${field('License type', esc(i.licenseType || '—'), 14)}
+  ${field('Estimated volume', esc(i.estimatedVolume || '—'), i.notes ? 14 : 20)}
+  ${i.notes ? field('Notes', esc(i.notes).replace(/\n/g, '<br>'), 20) : ''}
+  <div>${button(
+    `mailto:${i.email}?subject=${encodeURIComponent(`${SITE.name} wholesale — ${i.businessName}`)}`,
+    'Reply with price sheets'
+  )}</div>
+  `;
 
   const text =
-    `WHOLESALE INQUIRY\n${when}\n\n` +
-    `Business: ${i.businessName}\nContact: ${i.contactName}\nEmail: ${i.email}\nPhone: ${i.phone}\n` +
+    `WHOLESALE INQUIRY\n${ts}\n\n` +
+    `Business: ${i.businessName}\n` +
     (i.tier ? `Tier: ${i.tier}\n` : '') +
+    `Contact: ${i.contactName}\nEmail: ${i.email}\nPhone: ${i.phone}\n` +
     `License: ${i.licenseType}\nVolume: ${i.estimatedVolume}\n` +
     (i.notes ? `\nNotes: ${i.notes}\n` : '');
 
   return {
-    subject: `Wholesale inquiry — ${i.businessName}`,
+    subject: `Wholesale inquiry · ${i.businessName}`,
     text,
-    html: shell({ eyebrow: `${SITE.name} · Wholesale`, title: i.businessName, meta: when, bodyHtml }),
+    html: shell({
+      eyebrow: 'Wholesale inquiry',
+      title: i.businessName,
+      meta: ts,
+      body,
+    }),
   };
 }
