@@ -97,11 +97,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         <Script src="/js/webmcp.js" strategy="beforeInteractive" />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[110] focus:rounded-lg focus:bg-[#D4AF37] focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-[#140D08]"
+        >
+          Skip to main content
+        </a>
         <AppStateProvider>
           <AgeGateModal />
           <GdprBanner />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main" className="flex-1">{children}</main>
           <Footer />
           <CartDrawer />
           <CheckoutModal />

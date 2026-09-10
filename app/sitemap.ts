@@ -53,12 +53,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // prefers products with images and it's one of the few free rich-result
   // wins. No lastModified: there's no genuine per-product timestamp, and an
   // always-"now" value on ~1,300 URLs just trains Google to ignore lastmod.
-  const productPages: MetadataRoute.Sitemap = PRODUCTS.map((p) => ({
-    url: `${BASE}/shop/${p.category}/${p.slug}/`,
-    changeFrequency: 'monthly',
-    priority: 0.6,
-    images: p.images?.length ? [`${BASE}${p.images[0]}`] : undefined,
-  }));
+  const productPages: MetadataRoute.Sitemap = PRODUCTS
+    // Skip "Coming Soon" products that only carry a category placeholder
+    // image — they're noindexed until genuinely stocked.
+    .filter((p) => !p.images.every((i) => i.includes('/images/categories/')))
+    .map((p) => ({
+      url: `${BASE}/shop/${p.category}/${p.slug}/`,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+      images: p.images?.length ? [`${BASE}${p.images[0]}`] : undefined,
+    }));
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
     url: `${BASE}/blog/${post.slug}/`,

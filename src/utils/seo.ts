@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import type { Product } from '../types';
 import { SITE, SHOP } from '../config/site';
+import { productLabels } from './productCopy';
 
 const BRAND_TAIL = ` | ${SITE.name}`;
 const MAX_TITLE = 60;
@@ -41,9 +42,20 @@ export function productMetaDescription(p: Product): string {
   const base = (p.shortDescription || '').trim().replace(/\s+/g, ' ');
   if (base.length >= 130) return clampDescription(base);
 
+  const lower = base.toLowerCase();
   const specs: string[] = [];
-  if (p.volume) specs.push(p.volume);
-  if (p.proof > 0) specs.push(`${p.proof} proof`);
+  // Don't repeat the volume if the short description already names it
+  // (beer/cider variants carry "Offered here as 6 x 12oz cans." from the
+  // M10 de-duplication).
+  if (p.volume && !lower.includes(p.volume.toLowerCase())) specs.push(p.volume);
+  if (p.proof > 0) {
+    const abv = p.proof / 2;
+    specs.push(
+      productLabels(p.category).showProof
+        ? `${p.proof} proof`
+        : `${Number.isInteger(abv) ? abv : abv.toFixed(1)}% ABV`
+    );
+  }
   if (p.distilleryLocation) specs.push(p.distilleryLocation);
 
   const palate = (p.tastingNotes?.palate || '').trim();

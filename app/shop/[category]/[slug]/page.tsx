@@ -60,18 +60,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: fitTitle(hub.seo.titleTag),
       description: clampDescription(hub.seo.metaDescription),
       alternates: { canonical: `https://${SITE.domain}/shop/${hub.categorySlug}/${hub.hubSlug}/` },
-      openGraph: ogImage ? { images: [ogImage] } : undefined,
+      openGraph: { type: 'website', ...(ogImage ? { images: [ogImage] } : {}) },
       robots: hubIsIndexable(hubProductCount) ? undefined : { index: false, follow: true },
     };
   }
 
   const product = PRODUCTS.find((p) => p.slug === slug);
   if (!product) return {};
+  // A product whose only image is the category placeholder has no real
+  // photo yet ("Coming Soon") — noindex it until it's genuinely stocked.
+  const notReady = product.images.every((i) => i.includes('/images/categories/'));
   return {
     title: fitTitle(product.seo?.titleTag || product.name),
     description: productMetaDescription(product),
     alternates: { canonical: `https://${SITE.domain}/shop/${product.category}/${product.slug}/` },
-    openGraph: { images: product.images },
+    openGraph: { type: 'website', images: product.images },
+    robots: notReady ? { index: false, follow: true } : undefined,
   };
 }
 
