@@ -565,9 +565,11 @@ export const ShopView: React.FC<ShopViewProps> = ({
                       {catCount}
                     </span>
                     <button
+                      type="button"
                       onClick={() => toggleCategoryExpand(cat.slug)}
                       className="p-1 hover:bg-stone-800 rounded-md text-amber-400/60 hover:text-amber-200 transition-colors"
-                      title={isExpanded ? 'Collapse subcategories' : 'Expand subcategories'}
+                      aria-expanded={isExpanded}
+                      aria-label={`${isExpanded ? 'Collapse' : 'Expand'} ${cat.name} subcategories`}
                     >
                       {isExpanded ? (
                         <ChevronDown className="w-3.5 h-3.5" />
@@ -641,6 +643,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
         <div className="space-y-2">
           <input
             type="range"
+            aria-label={`Maximum price, currently ${SITE.currencySymbol}${maxPrice}`}
             min={0}
             max={catalogMaxPrice}
             step={25}
@@ -877,6 +880,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
               <div className="flex items-center gap-2 shrink-0">
                 <ArrowUpDown className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <select
+                  aria-label="Sort products"
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value as any)}
                   className="p-2.5 rounded-xl bg-stone-900 border border-stone-800 text-amber-100 focus:outline-none focus:border-[#D4AF37]"
@@ -900,6 +904,8 @@ export const ShopView: React.FC<ShopViewProps> = ({
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-amber-200">
                   Category: <strong>{activeCategoryObj?.name || selectedCategory}</strong>
                   <button
+                    type="button"
+                    aria-label="Clear category filter"
                     onClick={() => {
                       setSelectedCategory('all');
                       setSelectedSubcategory('all');
@@ -915,6 +921,8 @@ export const ShopView: React.FC<ShopViewProps> = ({
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#D4AF37]/15 border border-[#D4AF37]/40 text-amber-200">
                   Subcategory: <strong>{selectedSubcategory}</strong>
                   <button
+                    type="button"
+                    aria-label="Clear subcategory filter"
                     onClick={() => setSelectedSubcategory('all')}
                     className="hover:text-white"
                   >
@@ -927,6 +935,8 @@ export const ShopView: React.FC<ShopViewProps> = ({
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-800 border border-stone-700 text-amber-200">
                   Max Price: <strong>{SITE.currencySymbol}{maxPrice}</strong>
                   <button
+                    type="button"
+                    aria-label="Clear price filter"
                     onClick={() => {
                       setMinPrice(0);
                       setMaxPrice(catalogMaxPrice);
@@ -941,7 +951,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
               {proofFilter !== 'all' && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-800 border border-stone-700 text-amber-200">
                   Proof: <strong>{proofFilter}</strong>
-                  <button onClick={() => setProofFilter('all')} className="hover:text-white">
+                  <button onClick={() => setProofFilter('all')} type="button" aria-label="Clear proof filter" className="hover:text-white">
                     <X className="w-3 h-3" />
                   </button>
                 </span>
@@ -950,7 +960,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
               {inStockOnly && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-800 border border-stone-700 text-amber-200">
                   In Stock Only
-                  <button onClick={() => setInStockOnly(false)} className="hover:text-white">
+                  <button onClick={() => setInStockOnly(false)} type="button" aria-label="Clear in-stock filter" className="hover:text-white">
                     <X className="w-3 h-3" />
                   </button>
                 </span>
@@ -959,7 +969,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
               {searchQuery && (
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-800 border border-stone-700 text-amber-200">
                   Search: <strong>"{searchQuery}"</strong>
-                  <button onClick={() => setSearchQuery('')} className="hover:text-white">
+                  <button onClick={() => setSearchQuery('')} type="button" aria-label="Clear search" className="hover:text-white">
                     <X className="w-3 h-3" />
                   </button>
                 </span>

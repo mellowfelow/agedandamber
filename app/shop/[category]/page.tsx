@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: fitTitle(cat.seo?.titleTag || `${cat.name} — Shop`),
     description: clampDescription(cat.seo?.metaDescription || cat.description),
     alternates: { canonical: `https://${SITE.domain}/shop/${cat.slug}/` },
-    openGraph: { images: [cat.image] },
+    openGraph: { type: 'website', images: [cat.image] },
   };
 }
 

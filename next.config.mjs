@@ -62,6 +62,24 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Category slug changes. These were in vercel.json but weren't firing
+      // (Vercel's Next.js build only reliably honours the redirects it emits
+      // from next.config); keeping them here fixes /shop/vodka|gin|rum/*.
+      {
+        source: '/shop/vodka/:path*',
+        destination: '/shop/craft-vodka/:path*',
+        permanent: true,
+      },
+      {
+        source: '/shop/gin/:path*',
+        destination: '/shop/artisanal-gin/:path*',
+        permanent: true,
+      },
+      {
+        source: '/shop/rum/:path*',
+        destination: '/shop/aged-dark-rum/:path*',
+        permanent: true,
+      },
       {
         source: '/shop/aged-dark-rum/plantation-xo-20th-anniversary-rum',
         destination: '/shop/aged-dark-rum/planteray-xo-20th-anniversary-rum',

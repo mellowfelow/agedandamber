@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   // appended — this title already carries the brand name.
   title: { absolute: 'About Aged & Amber — Napa Valley Spirits House' },
   description:
-    "Aged & Amber is a Napa Valley cellar curating allocated spirits, fine wine, Champagne, beer, cider, and non-alcoholic alternatives — sourced from trusted distilleries and licensed distributors, shipped nationwide.",
+    'Aged & Amber — a Napa Valley cellar founded in 2018. We curate and resell allocated spirits, fine wine, Champagne, beer, and zero-proof drinks, shipped nationwide.',
   alternates: { canonical: `https://${SITE.domain}/about/` },
 };
 

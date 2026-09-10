@@ -1,8 +1,13 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getRouteUrl } from '@/src/utils/routes';
 
-// Next.js already emits `<meta name="robots" content="noindex">` for
-// not-found.tsx and serves it with a 404 status — no extra metadata needed.
+// Next already emits `<meta name="robots" content="noindex">` and a 404
+// status for not-found.tsx; this just gives it a real title instead of the
+// sitewide default.
+export const metadata: Metadata = {
+  title: { absolute: 'Page not found — Aged & Amber' },
+};
 
 export default function NotFound() {
   return (
