@@ -37,7 +37,7 @@ function organizationNode(stats?: { numberOfItems: number; lowPrice: number; hig
     },
     telephone: CONTACT.phone,
     email: CONTACT.email,
-    sameAs: BRAND.sameAs,
+    ...(BRAND.sameAs.length ? { sameAs: BRAND.sameAs } : {}),
     priceRange: '$$$',
     currenciesAccepted: 'USD, BTC, USDT',
     paymentAccepted: 'Apple Pay, Cash App, Chime, Bitcoin, USDT, Wire Transfer',

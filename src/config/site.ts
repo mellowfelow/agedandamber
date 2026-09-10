@@ -84,11 +84,10 @@ export const BRAND = {
     '21+ verified temperature-controlled express delivery with adult signature',
     'Exclusive 10% instant discount when checking out with Bitcoin or USDT',
   ],
-  sameAs: [
-    'https://instagram.com/agedandamber',
-    'https://facebook.com/agedandamber',
-    'https://linkedin.com/company/aged-and-amber',
-  ],
+  // No social profiles exist yet. Do not list URLs here until the accounts
+  // are real and controlled by the business — asserting profiles that
+  // don't exist is a fabricated entity signal. Add them back once live.
+  sameAs: [] as string[],
   awards: [],
 };
 
