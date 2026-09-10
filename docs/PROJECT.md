@@ -48,12 +48,16 @@ _Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 202
   Transfer. **No card payments** — high-risk alcohol MCC; never re-add.
 
 ## 5. Forms & chat
-- **Provider:** `zoho-smtp` — `/api/inquiry` (contact + wholesale) and `/api/order` call
-  `src/utils/notify.ts` → Zoho SMTP (`ZOHO_SMTP_USER` / `ZOHO_SMTP_PASS`), Resend fallback
-  (`orders@agedandamber.com`).
-- ⚠️ **Open item:** notifications send in an `after()` hook, so a client 200 does not prove the email
-  was delivered, and there is no durable server-side order/inquiry store. If SMTP fails the record is
-  lost. A durable log (D1 / KV / a spreadsheet webhook) is recommended.
+- **Provider:** `zoho-smtp` only — `/api/inquiry` (contact + wholesale) and `/api/order` call
+  `src/utils/notify.ts` → Zoho SMTP. No third-party form service (Web3Forms and the Resend fallback
+  were both removed 2026-09-10). Env vars: `ZOHO_SMTP_USER` + `ZOHO_SMTP_PASS` (required),
+  `ZOHO_SMTP_HOST` (default `smtp.zoho.com`), `ZOHO_SMTP_PORT` (default `465`), `ORDER_NOTIFY_EMAIL`
+  (default `concierge@agedandamber.com`). `ZOHO_SMTP_PASS` is a Zoho **app-specific password**.
+- Every submission is written to the Vercel function log first (the durable copy) — verified working
+  10 Sep via live test (contact + order `AA-035131`), no SMTP errors.
+- ⚠️ **Open item:** notifications send in an `after()` hook, so a client 200 does not prove delivery,
+  and the function log is the only durable store (1 h retention on Hobby). A real store (D1 / KV /
+  sheet webhook) is still recommended if order volume grows.
 - **Chat hub:** WhatsApp, concierge email, direct phone (link channels) + Tawk.to widget
   (property `6a81e0adffd6811d48496109` / widget `1k05lb9hq`).
 

@@ -48,10 +48,9 @@ export const SHOP = {
 
 export const FORMS = {
   // Order / contact / wholesale notifications are sent server-side by
-  // /api/order + /api/inquiry -> src/utils/notify.ts, using Zoho SMTP
-  // (ZOHO_SMTP_USER / ZOHO_SMTP_PASS env vars), with Resend as a fallback.
+  // /api/order + /api/inquiry -> src/utils/notify.ts, using Zoho SMTP only
+  // (ZOHO_SMTP_USER / ZOHO_SMTP_PASS env vars). No third-party form service.
   provider: 'zoho-smtp',
-  resendFrom: 'orders@agedandamber.com',
   turnstileSiteKey: '',
 };
 
