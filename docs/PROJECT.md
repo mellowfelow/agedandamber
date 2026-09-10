@@ -72,8 +72,8 @@ _Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 202
 - Differentiators: direct sourcing relationships; every bottle checked for authenticity and stored
   climate-controlled; 21+ temperature-controlled express delivery; 10% crypto discount.
 - **No awards, no named individuals, no partnerships, no press, no revenue figures have been
-  supplied. Do not invent any.** `BRAND.sameAs` lists Instagram / Facebook / LinkedIn — confirm those
-  profiles actually exist; if not, remove them from schema.
+  supplied. Do not invent any.** `BRAND.sameAs` is empty (2026-09-10) — no social accounts exist yet;
+  add the URLs back only once the accounts are real and controlled by the business.
 
 ## 8. AI visibility / agent-ready
 - Full agent-ready layer shipped and hand-maintained: `robots.txt` (AI allow-list + `Content-Signal`),
