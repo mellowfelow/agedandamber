@@ -1,18 +1,25 @@
 import nodemailer, { type Transporter } from 'nodemailer';
-import { SITE, CONTACT, FORMS } from '../config/site';
+import { SITE, CONTACT } from '../config/site';
 
 /**
  * Server-side notification for the order / contact / wholesale forms.
  *
- * Always writes the full submission to the function log (Vercel -> Logs) —
- * the durable copy, never lost even if every email channel fails.
+ * Two layers, in order:
+ *   1. The full submission is written to the function log (Vercel -> Logs).
+ *      This is the durable copy — it is never lost, even if the email send
+ *      below fails for any reason.
+ *   2. One email via Zoho SMTP (nodemailer), authenticated as your own Zoho
+ *      mailbox and delivered to your own inbox — Zoho does not spam-filter
+ *      that path. Enabled by ZOHO_SMTP_USER + ZOHO_SMTP_PASS.
  *
- * Then tries, in order:
- *   1. Zoho SMTP (nodemailer). Mail authenticated as your own Zoho mailbox,
- *      delivered to your own inbox — Zoho does not spam-filter that, so it
- *      is the reliable path. Enabled by ZOHO_SMTP_USER + ZOHO_SMTP_PASS.
- *   2. Resend, if RESEND_API_KEY is set.
- * This is the only notification path — one email per submission.
+ * Zoho SMTP is the only email channel. No third-party form service.
+ * Required Vercel env vars:
+ *   ZOHO_SMTP_USER   full mailbox, e.g. concierge@agedandamber.com (also the From)
+ *   ZOHO_SMTP_PASS   Zoho app-specific password (not the login password)
+ * Optional:
+ *   ZOHO_SMTP_HOST   default smtp.zoho.com  (smtp.zoho.eu etc. for other DCs)
+ *   ZOHO_SMTP_PORT   default 465 (SSL); set 587 for STARTTLS
+ *   ORDER_NOTIFY_EMAIL  where mail is delivered; default CONTACT.email
  */
 
 let cachedTransport: Transporter | null | undefined;
@@ -50,9 +57,10 @@ export async function sendNotification(opts: {
 
   const to = process.env.ORDER_NOTIFY_EMAIL || CONTACT.email;
 
-  // 1) Zoho SMTP — the reliable path. Hard-capped at 8s so a misconfigured
-  //    or slow SMTP host can never hold up the order response (Vercel
-  //    functions time out at 10s on Hobby).
+  // Zoho SMTP — the only email channel. Hard-capped at 8s so a misconfigured
+  // or slow SMTP host can never hold up the order response (Vercel functions
+  // time out at 10s on Hobby). On any failure the submission is still safe in
+  // the function log above.
   const transport = zohoTransport();
   if (transport) {
     try {
@@ -73,31 +81,8 @@ export async function sendNotification(opts: {
     }
   }
 
-  // 2) Resend fallback.
-  const resendKey = process.env.RESEND_API_KEY;
-  if (resendKey) {
-    try {
-      const res = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: { Authorization: `Bearer ${resendKey}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          from: `${SITE.name} <${FORMS.resendFrom}>`,
-          to: [to],
-          ...(replyTo ? { reply_to: replyTo } : {}),
-          subject,
-          text,
-          ...(html ? { html } : {}),
-        }),
-      });
-      if (res.ok) return { logged: true, emailed: true };
-      console.error(`[notify] Resend ${res.status}`, await res.text().catch(() => ''));
-    } catch (err) {
-      console.error('[notify] Resend request threw', err);
-    }
-  }
-
   console.error(
-    `[notify] no email channel delivered "${subject}" — it is in this log only. ` +
+    `[notify] Zoho SMTP did not deliver "${subject}" — it is in this log only. ` +
       `Set ZOHO_SMTP_USER + ZOHO_SMTP_PASS (+ ORDER_NOTIFY_EMAIL) in the Vercel project env.`
   );
   return { logged: true, emailed: false };

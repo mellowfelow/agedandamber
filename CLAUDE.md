@@ -38,7 +38,9 @@ source; never reintroduce "Aged And Amber". Page titles that already contain the
 - Keep the big data modules (`products.ts`, `blog.ts`, `brandHubs.ts`) out of client bundles — pass
   server-sliced props into `'use client'` views, never import the arrays there.
 - Forms send server-side: `/api/inquiry` (contact + wholesale) and `/api/order` → `src/utils/notify.ts`
-  via Zoho SMTP (`ZOHO_SMTP_USER` / `ZOHO_SMTP_PASS`), Resend as fallback.
+  via Zoho SMTP only (`ZOHO_SMTP_USER` / `ZOHO_SMTP_PASS`, optional `ZOHO_SMTP_HOST` / `ZOHO_SMTP_PORT` /
+  `ORDER_NOTIFY_EMAIL`). No third-party form service. Every submission is also written to the Vercel
+  function log as the durable copy, so a send failure never loses the order.
 
 ## Policy pages
 `/privacy`, `/terms`, `/shipping`, `/refund` render from `src/data/legal.ts` via
