@@ -1,6 +1,6 @@
 # PROJECT.md — Aged & Amber
 
-_Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 2026-09-09._
+_Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 2026-09-10._
 
 ## 1. Identity
 - **Name:** Aged & Amber (canonical spelling — ampersand, never "Aged And Amber")
@@ -106,9 +106,20 @@ Full audit: `docs/audit-2026-09.md` (overall 61/100). Remediation shipped in 7 b
 | 6 | M3 category-aware product copy · M10 beer variant copy differentiated · M5 form `aria-label`s · L1 llms.txt `text/plain` · L3 agent-skills `sha256` · L4 auth.md table · L7 real `crosscheck.mjs` |
 | 7 | `docs/disavow.txt` prepared (C4) |
 
+**Off-page playbook: `scratchpad/offpage.html` / artifact `5da86bfc-57b3-48af-b3e5-3d9a07cefa18`**
+(delivered 10 Sep). DIY founder execution. Scoped by founder answers: toxic backlinks parked;
+address is a real non-storefront office → GBP as a service-area business (address hidden); no
+distillery/distributor relationships → "direct from the distillery" must not be used in outreach and
+should be softened on-site (M2, pending copy decision). Phases: decide → foundation (GBP, Bing/Apple,
+socials → `BRAND.sameAs`, citations, Merchant Center, Wikidata) → content authority → niche/local.
+
 **Off-page / manual follow-ups** (see `docs/audit-2026-09.md` → "Still needed"):
-- Complete + upload `docs/disavow.txt` (needs the full referring-domain export; GSC Links had no data
-  on 9 Sep — recheck in 2-4 weeks). GSC manual actions: none as of 9 Sep.
+- Complete + upload `docs/disavow.txt` when the founder decides — **parked** ("don't worry about them
+  for now"). GSC manual actions: none as of 9 Sep.
+- Get a Napa **707** phone number to replace the +1 (562) Long Beach number before it feeds any more
+  listings/schema.
+- M2 on-site copy pass: soften "direct from the distillery / direct allocations" (no such
+  relationships exist) — waiting on the founder to decide how far.
 - Verify Zoho SMTP env vars are set and forms/orders actually deliver end-to-end; consider a durable
   order/inquiry store (D1 / KV / sheet webhook) so nothing is lost if email fails.
 - Counsel review of the 4 policy pages; confirm legal entity name + NAP (562 area code vs Napa).
