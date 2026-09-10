@@ -114,5 +114,5 @@ Full audit: `docs/audit-2026-09.md` (overall 61/100). Remediation shipped in 7 b
 - Counsel review of the 4 policy pages; confirm legal entity name + NAP (562 area code vs Napa).
 - Connect a Google Merchant Center feed once indexing recovers.
 - Article-specific blog images (258/268 posts still share ~21 category stock photos).
-- Confirm the `BRAND.sameAs` social profiles exist, or remove them from schema.
+- Create the social accounts (Instagram / Facebook / LinkedIn / etc.), then add the URLs to `BRAND.sameAs` — removed from schema 2026-09-10 because none existed.
 - Investigate Bing's 4,300 discovered URLs vs 2,155 actual (possible www/non-www duplication).
