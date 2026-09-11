@@ -95,6 +95,16 @@ check('product page noindexes thin hubs', fs.readFileSync('app/shop/[category]/[
 // 8. legal pages exist
 for (const p of ['privacy', 'terms', 'shipping', 'refund']) check(`legal page: /${p}`, fs.existsSync(`app/${p}/page.tsx`));
 
+// 9. sitemap XML-escapes urls/images and doesn't double-prefix absolute
+// image URLs — Next's sitemap serializer does zero XML-escaping itself, so
+// a raw "&" in a hotlinked image's query string (e.g. Unsplash) breaks the
+// whole sitemap for Google/Bing. Broke live on 2026-09-11 — guard it here.
+const sitemapSrc = fs.readFileSync('app/sitemap.ts', 'utf8');
+check(
+  'sitemap.ts XML-escapes urls/images (no repeat of the 2026-09-11 GSC parsing error)',
+  sitemapSrc.includes('xmlEscape') && sitemapSrc.includes('absoluteImage')
+);
+
 console.log(`[crosscheck] ${ok.length} passed, ${fail.length} failed`);
 if (fail.length) {
   for (const f of fail) console.error(`  ❌ ${f}`);
