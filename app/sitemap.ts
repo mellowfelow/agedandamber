@@ -8,6 +8,26 @@ import { brandHubProducts, subcategoryHubProducts, hubIsIndexable } from '@/src/
 
 const BASE = `https://${SITE.domain}`;
 
+// Next's built-in sitemap serializer (resolveSitemap in
+// next/dist/.../resolve-route-data.js) does zero XML-escaping — it
+// interpolates url/image strings straight into <loc>/<image:loc>. A raw
+// "&" in a URL's query string (e.g. Unsplash's ?auto=format&fit=crop) is
+// therefore invalid XML, and Google/Bing reject the WHOLE sitemap with a
+// parsing error on that one line. Escape it ourselves before Next ever
+// sees it. (Confirmed live 2026-09-11: GSC flagged exactly this.)
+const xmlEscape = (s: string) =>
+  s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+
+// Most product/post images are relative paths under /images/... but a few
+// are already-absolute (hotlinked stock photos) — only prepend BASE to
+// the relative ones, or it produces a garbage concatenated URL.
+const absoluteImage = (url: string) => (url.startsWith('http') ? url : `${BASE}${url}`);
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${BASE}/`, changeFrequency: 'daily', priority: 1.0 },
@@ -61,7 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/shop/${p.category}/${p.slug}/`,
       changeFrequency: 'monthly',
       priority: 0.6,
-      images: p.images?.length ? [`${BASE}${p.images[0]}`] : undefined,
+      images: p.images?.length ? [xmlEscape(absoluteImage(p.images[0]))] : undefined,
     }));
 
   const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
@@ -69,9 +89,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: post.isoDate ? new Date(post.isoDate) : undefined,
     changeFrequency: 'monthly',
     priority: 0.6,
-    images: post.image ? [post.image.startsWith('http') ? post.image : `${BASE}${post.image}`] : undefined,
+    images: post.image ? [xmlEscape(absoluteImage(post.image))] : undefined,
   }));
 
+  // Defensive: escape every <loc> too, not just images. Slugs never carry
+  // XML-reserved characters today, but one bad entry already took the
+  // whole sitemap down once — this is cheap insurance against the next one.
   return [
     ...staticPages,
     ...categoryPages,
@@ -79,5 +102,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brandHubPages,
     ...productPages,
     ...blogPages,
-  ];
+  ].map((entry) => ({ ...entry, url: xmlEscape(entry.url) }));
 }
