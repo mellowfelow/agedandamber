@@ -442,4 +442,149 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // RTD & LIQUEURS
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'craft-cocktails',
+    subcategoryName: 'Craft Cocktails',
+    name: 'Craft Cocktails',
+    seo: {
+      titleTag: 'Craft Cocktails RTD — Allocated',
+      h1: 'Craft Cocktails — Buy Allocated Ready-to-Drink Bottled Cocktails Online',
+      metaDescription: 'Buy craft cocktails online — allocated ready-to-drink bottled cocktails made with real spirits and bartender-quality recipes. Free shipping $300+.',
+      transactionalCTA: 'Buy craft cocktails online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Craft cocktails, in ready-to-drink form, are professionally batched cocktails bottled or canned at the recipe\'s intended strength — made with real spirits and fresh-style ingredients rather than the syrupy pre-mixes of an earlier RTD generation. They\'re built to be poured over ice or served straight, delivering a bartender-quality drink without the shaker.',
+      faqs: [
+        { question: 'What makes a ready-to-drink cocktail "craft"?', answer: 'A craft RTD cocktail is batched using real spirits and proper cocktail ratios — the same recipe a bartender would build to order — rather than the sugary, artificially flavored pre-mixes that once defined the category. Quality of ingredients and recipe fidelity are what separate craft RTDs from mass-market coolers.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'cream-liqueurs',
+    subcategoryName: 'Cream Liqueurs',
+    name: 'Cream Liqueurs',
+    seo: {
+      titleTag: 'Cream Liqueurs — Allocated',
+      h1: 'Cream Liqueurs — Buy Allocated Irish Cream & Dessert Liqueurs Online',
+      metaDescription: 'Buy cream liqueurs online — allocated Irish cream and dessert liqueurs blending fresh dairy cream with spirit and sugar. Free shipping on $300+.',
+      transactionalCTA: 'Buy cream liqueurs online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Cream liqueurs blend fresh dairy cream with a spirit base — most commonly Irish whiskey — along with sugar and flavoring, specially stabilized so the cream doesn\'t curdle against the alcohol. Typically bottled around 15–20% ABV, they\'re sipped neat, over ice, or added to coffee and dessert cocktails.',
+      faqs: [
+        { question: 'What is Irish cream?', answer: 'Irish cream is a cream liqueur made by blending fresh dairy cream with Irish whiskey, sugar, and flavorings such as cocoa or vanilla. Emulsifiers keep the cream stable against the alcohol so it won\'t curdle, and it\'s typically bottled around 15–17% ABV.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'aperitifs',
+    subcategoryName: 'Aperitifs',
+    name: 'Aperitifs',
+    seo: {
+      titleTag: 'Aperitifs — Allocated',
+      h1: 'Aperitifs — Buy Allocated Pre-Dinner Spirits Online',
+      metaDescription: 'Buy aperitifs online — allocated low-alcohol, bittersweet spirits traditionally served before a meal to stimulate the appetite. Free on $300+.',
+      transactionalCTA: 'Buy aperitifs online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'An aperitif is a lower-alcohol drink traditionally served before a meal to stimulate the appetite — typically bittersweet, herbal, or citrus-forward rather than heavy or sweet, so it doesn\'t dull the palate ahead of dinner. Classic examples include Aperol, Campari, and aromatized wines like vermouth, usually served on ice or with soda.',
+      faqs: [
+        { question: 'What is an aperitif?', answer: 'An aperitif is a lower-alcohol, typically bittersweet or herbal drink served before a meal to stimulate the appetite — the opposite role of a digestif, which is taken after eating to aid digestion. Aperol, Campari, and vermouth are classic examples.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'amaro-digestifs',
+    subcategoryName: 'Amaro & Digestifs',
+    name: 'Amaro & Digestifs',
+    seo: {
+      titleTag: 'Amaro & Digestifs — Allocated',
+      h1: 'Amaro & Digestifs — Buy Allocated Bitter Italian Liqueurs Online',
+      metaDescription: 'Buy amaro and digestifs online — allocated Italian bitter herbal liqueurs traditionally sipped after a meal to aid digestion. Free on $300+.',
+      transactionalCTA: 'Buy amaro and digestifs online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Amaro (Italian for "bitter") is a family of herbal liqueurs infused with roots, barks, citrus peel, and botanicals, traditionally sipped after a meal as a digestif. Styles range from intensely bitter to noticeably sweeter and more approachable, but all share the same after-dinner role of settling the stomach.',
+      faqs: [
+        { question: 'What is amaro?', answer: 'Amaro is a category of Italian bitter herbal liqueurs, infused with roots, barks, citrus peel, and other botanicals, traditionally served after a meal as a digestif. Styles vary widely in bitterness and sweetness — some are famously intense, while others are milder and more approachable.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'coffee-liqueur',
+    subcategoryName: 'Coffee Liqueur',
+    name: 'Coffee Liqueur',
+    seo: {
+      titleTag: 'Coffee Liqueur — Allocated',
+      h1: 'Coffee Liqueur — Buy Allocated Espresso Martini Essentials Online',
+      metaDescription: 'Buy coffee liqueur online — allocated coffee-flavored liqueurs for Espresso Martinis, White Russians, and more. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy coffee liqueur online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Coffee liqueur is made by infusing or blending a spirit base — most often rum or a neutral spirit — with coffee and sugar, producing a rich, sweet, roasted flavor. It\'s the essential ingredient behind the Espresso Martini, White Russian, and Black Russian.',
+      faqs: [
+        { question: 'Is all coffee liqueur the same as Kahlúa?', answer: 'No — Kahlúa is the best-known brand, but coffee liqueur is a broader category made by many producers with their own spirit bases and coffee sourcing. Kahlúa is rum-based; other coffee liqueurs use neutral spirit or even whiskey as their base.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'fruit-liqueur',
+    subcategoryName: 'Fruit Liqueur',
+    name: 'Fruit Liqueur',
+    seo: {
+      titleTag: 'Fruit Liqueur — Allocated',
+      h1: 'Fruit Liqueur — Buy Allocated Berry & Stone Fruit Liqueurs Online',
+      metaDescription: 'Buy fruit liqueur online — allocated berry, stone fruit, and tropical liqueurs for sipping and cocktails. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy fruit liqueur online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Fruit liqueurs are made by macerating or infusing fruit — berries, stone fruit, or tropical varieties — into a spirit base, then sweetening it, producing a lower-proof, concentrated fruit flavor. They\'re used to add sweetness and character to cocktails or sipped on their own over ice.',
+      faqs: [
+        { question: 'What is the difference between a fruit liqueur and a fruit brandy?', answer: 'A fruit brandy is distilled from fermented fruit, so the fruit flavor comes from distillation itself and the spirit is typically unsweetened. A fruit liqueur starts from a neutral or base spirit that has fruit and sugar added to it afterward, producing a sweeter, lower-proof drink.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'herbal-liqueur',
+    subcategoryName: 'Herbal Liqueur',
+    name: 'Herbal Liqueur',
+    seo: {
+      titleTag: 'Herbal Liqueur — Allocated',
+      h1: 'Herbal Liqueur — Buy Allocated Botanical Liqueurs Online',
+      metaDescription: 'Buy herbal liqueur online — allocated liqueurs built on proprietary blends of herbs, roots, and botanicals. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy herbal liqueur online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Herbal liqueurs are built on a proprietary blend of herbs, roots, spices, and other botanicals infused into a spirit base — recipes that are often closely guarded trade secrets. The category spans from intensely bitter, medicinal-tasting styles to sweeter, more aromatic expressions.',
+      faqs: [
+        { question: 'What is a herbal liqueur made from?', answer: 'Herbal liqueurs are made by infusing a spirit base with a blend of herbs, roots, spices, and other botanicals — often dozens of ingredients in a single recipe. Producers typically keep their exact formula a closely guarded secret, which is part of what gives each herbal liqueur its distinct character.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'orange-liqueur',
+    subcategoryName: 'Orange Liqueur',
+    name: 'Orange Liqueur',
+    seo: {
+      titleTag: 'Orange Liqueur — Allocated',
+      h1: 'Orange Liqueur — Buy Allocated Triple Sec & Curaçao Online',
+      metaDescription: 'Buy orange liqueur online — allocated triple sec, curaçao, and premium orange liqueurs for Margaritas, Cosmopolitans, and Sidecars. Free on $300+.',
+      transactionalCTA: 'Buy orange liqueur online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Orange liqueur is made by infusing a spirit base with orange peel, ranging from everyday triple sec (named for its "triple distillation," though the term is now used loosely) to premium expressions like Cointreau and Grand Marnier. It\'s a foundational cocktail ingredient, essential to the Margarita, Cosmopolitan, and Sidecar.',
+      faqs: [
+        { question: 'What is triple sec?', answer: 'Triple sec is a style of orange liqueur made by infusing a spirit base with orange peel — the name references "triple distillation," though usage varies by producer today. It ranges from inexpensive bar-well versions to premium expressions, and is a core ingredient in the Margarita and Cosmopolitan.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
+    hubSlug: 'cordial-liqueurs',
+    subcategoryName: 'Cordial Liqueurs',
+    name: 'Cordial Liqueurs',
+    seo: {
+      titleTag: 'Cordial Liqueurs — Allocated',
+      h1: 'Cordial Liqueurs — Buy Allocated Sweet Sipping Liqueurs Online',
+      metaDescription: 'Buy cordial liqueurs online — allocated sweet, lower-proof sipping liqueurs in a wide range of fruit and botanical flavors. Free on $300+.',
+      transactionalCTA: 'Buy cordial liqueurs online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'In American usage, "cordial" is largely interchangeable with "liqueur" — a sweetened, flavored spirit, typically lower in proof than the base spirit it started from. The term traditionally carried a slightly more refined, delicate connotation, often used for fruit- or botanical-based liqueurs meant for slow sipping rather than mixing.',
+      faqs: [
+        { question: 'What is the difference between a cordial and a liqueur?', answer: 'In the US, the terms are used interchangeably — a cordial is simply a sweetened, flavored spirit, the same definition used for liqueur. In parts of Europe, "cordial" instead refers to a non-alcoholic fruit syrup meant to be diluted, which can cause confusion in imported recipes.' },
+      ],
+    },
+  },
 ];
