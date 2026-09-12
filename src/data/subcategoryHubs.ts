@@ -1414,4 +1414,249 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // NON-ALCOHOLIC WINE
+  {
+    categorySlug: 'na-wine',
+    hubSlug: 'non-alcoholic-red-wine',
+    subcategoryName: 'Non-Alcoholic Red Wine',
+    name: 'Non-Alcoholic Red Wine',
+    seo: {
+      titleTag: 'Non-Alcoholic Red Wine — Zero-Proof',
+      h1: 'Non-Alcoholic Red Wine — Buy De-Alcoholized Red Wine Online',
+      metaDescription: 'Buy non-alcoholic red wine online — de-alcoholized red wine keeping real tannin and dark fruit character. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic red wine online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic red wine starts as real red wine, fully fermented on the skins for color and tannin, then has the alcohol removed — typically through vacuum distillation or reverse osmosis, both of which pull out ethanol at low temperature to preserve as much of the wine\'s original flavor and aroma as possible.',
+      faqs: [
+        { question: 'How is the alcohol removed from non-alcoholic wine?', answer: 'Most producers use vacuum distillation or reverse osmosis, both of which remove alcohol at low temperatures to protect the wine\'s delicate flavor and aroma compounds — a gentler process than simply boiling off the alcohol, which would also cook away much of what makes the wine taste like wine.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-wine',
+    hubSlug: 'non-alcoholic-white-wine',
+    subcategoryName: 'Non-Alcoholic White Wine',
+    name: 'Non-Alcoholic White Wine',
+    seo: {
+      titleTag: 'Non-Alcoholic White Wine — Zero-Proof',
+      h1: 'Non-Alcoholic White Wine — Buy De-Alcoholized White Wine Online',
+      metaDescription: 'Buy non-alcoholic white wine online — de-alcoholized white wine keeping delicate aromatics and crisp character. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic white wine online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic white wine is made the same way as its red counterpart — fully fermented as a real wine, then dealcoholized through vacuum distillation or reverse osmosis. Because white wine relies more on delicate aromatics than tannin, producers pay especially close attention to preserving those aromas through the alcohol-removal process.',
+      faqs: [
+        { question: 'Does non-alcoholic wine taste like real wine?', answer: 'Quality has improved significantly as producers refine gentler alcohol-removal methods, but most non-alcoholic wine still tastes noticeably different from its alcoholic counterpart — alcohol carries body, texture, and some flavor compounds that are difficult to fully replace once removed.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-wine',
+    hubSlug: 'non-alcoholic-rose-wine',
+    subcategoryName: 'Non-Alcoholic Rosé Wine',
+    name: 'Non-Alcoholic Rosé Wine',
+    seo: {
+      titleTag: 'Non-Alcoholic Rosé — Zero-Proof',
+      h1: 'Non-Alcoholic Rosé Wine — Buy De-Alcoholized Rosé Online',
+      metaDescription: 'Buy non-alcoholic rosé wine online — de-alcoholized rosé keeping light, fruity, easy-drinking character. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic rosé online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic rosé follows the same brief skin-contact winemaking as regular rosé, then has the alcohol removed through vacuum distillation or reverse osmosis. The result aims to keep rosé\'s light, fruity, easy-drinking character intact at under 0.5% ABV.',
+      faqs: [
+        { question: 'Is non-alcoholic rosé completely alcohol-free?', answer: 'In the US, wine labeled "non-alcoholic" must contain less than 0.5% ABV — a trace amount can remain even after dealcoholization, similar to what naturally occurs in some fruit juices and breads. It is not the same as a guaranteed 0.0%, so anyone avoiding alcohol entirely should check the specific brand\'s stated ABV.' },
+      ],
+    },
+  },
+  // NON-ALCOHOLIC CHAMPAGNE & SPARKLING
+  {
+    categorySlug: 'na-champagne-sparkling',
+    hubSlug: 'non-alcoholic-sparkling-wine',
+    subcategoryName: 'Non-Alcoholic Sparkling Wine',
+    name: 'Non-Alcoholic Sparkling Wine',
+    seo: {
+      titleTag: 'Non-Alcoholic Sparkling Wine — Zero-Proof',
+      h1: 'Non-Alcoholic Sparkling Wine — Buy Zero-Proof Bubbles Online',
+      metaDescription: 'Buy non-alcoholic sparkling wine online — de-alcoholized sparkling wine with real effervescence for any toast. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic sparkling wine online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic sparkling wine is made by fermenting and carbonating a base wine as usual, then removing the alcohol through vacuum distillation or reverse osmosis and reintroducing carbonation to restore the bubbles lost in processing. It aims to recreate the toast-worthy occasion of Champagne without the alcohol.',
+      faqs: [
+        { question: 'Can non-alcoholic sparkling wine be called Champagne?', answer: 'No — Champagne is a protected name reserved for sparkling wine made with alcohol in the Champagne region of France under strict regional rules. Non-alcoholic versions are labeled "sparkling wine" or similar, regardless of how closely they\'re styled after Champagne.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-champagne-sparkling',
+    hubSlug: 'non-alcoholic-sparkling-rose',
+    subcategoryName: 'Non-Alcoholic Sparkling Rosé',
+    name: 'Non-Alcoholic Sparkling Rosé',
+    seo: {
+      titleTag: 'Non-Alcoholic Sparkling Rosé — Zero-Proof',
+      h1: 'Non-Alcoholic Sparkling Rosé — Buy Zero-Proof Pink Bubbles Online',
+      metaDescription: 'Buy non-alcoholic sparkling rosé online — de-alcoholized pink sparkling wine with bright, fruity character. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic sparkling rosé online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic sparkling rosé combines brief skin-contact winemaking with dealcoholization and re-carbonation, aiming for the same pale pink color and bright, fruity character as its alcoholic counterpart at under 0.5% ABV.',
+      faqs: [
+        { question: 'Why does non-alcoholic sparkling rosé need carbonation added back?', answer: 'The vacuum distillation and reverse osmosis processes used to remove alcohol also strip out much of the wine\'s natural carbonation. Producers reintroduce carbonation afterward — similar to how sparkling water is carbonated — to restore the bubbles that make it feel like a proper sparkling wine.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-champagne-sparkling',
+    hubSlug: 'sparkling-grape-juice',
+    subcategoryName: 'Sparkling Grape Juice',
+    name: 'Sparkling Grape Juice',
+    seo: {
+      titleTag: 'Sparkling Grape Juice — Zero-Proof',
+      h1: 'Sparkling Grape Juice — Buy Zero-Proof Celebratory Bubbles Online',
+      metaDescription: 'Buy sparkling grape juice online — carbonated, unfermented grape juice for any celebration. Shipped nationwide, no age restrictions apply.',
+      transactionalCTA: 'Buy sparkling grape juice online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Sparkling grape juice is unfermented grape juice that has been carbonated, giving it the bubbles of a sparkling wine without any alcohol at any point in its production — unlike de-alcoholized sparkling wine, it was never fermented in the first place. It\'s a long-standing celebratory alternative, familiar from holiday tables well before the modern non-alcoholic wine category existed.',
+      faqs: [
+        { question: 'Is sparkling grape juice the same as non-alcoholic sparkling wine?', answer: 'No — sparkling grape juice is simply carbonated grape juice that was never fermented, so it tends to taste sweeter and simpler than wine. Non-alcoholic sparkling wine is actually fermented like real wine first, then has the alcohol removed afterward, giving it more wine-like complexity and dryness.' },
+      ],
+    },
+  },
+  // NON-ALCOHOLIC SPIRITS
+  {
+    categorySlug: 'na-spirits',
+    hubSlug: 'non-alcoholic-whiskey-alternative',
+    subcategoryName: 'Non-Alcoholic Whiskey Alternative',
+    name: 'Non-Alcoholic Whiskey Alternative',
+    seo: {
+      titleTag: 'Non-Alcoholic Whiskey Alternative',
+      h1: 'Non-Alcoholic Whiskey Alternative — Buy Zero-Proof Online',
+      metaDescription: 'Buy non-alcoholic whiskey alternative online — botanical, oak-flavored zero-proof spirit built to recreate whiskey\'s warmth. Shipped nationwide.',
+      transactionalCTA: 'Buy non-alcoholic whiskey alternative online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic whiskey alternatives aren\'t whiskey with the alcohol removed — they\'re built from scratch using botanical extracts, oak-derived flavoring, and spices blended to recreate whiskey\'s warmth, smokiness, and body without any distillation or alcohol at all.',
+      faqs: [
+        { question: 'How do non-alcoholic whiskey alternatives mimic the "burn" of real whiskey?', answer: 'Producers use ingredients like capsaicin (the compound behind chili heat) or peppery botanicals in careful, small amounts to recreate the warming sensation alcohol normally provides, alongside oak extracts and spices that echo whiskey\'s aroma and flavor.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-spirits',
+    hubSlug: 'non-alcoholic-gin-alternative',
+    subcategoryName: 'Non-Alcoholic Gin Alternative',
+    name: 'Non-Alcoholic Gin Alternative',
+    seo: {
+      titleTag: 'Non-Alcoholic Gin Alternative',
+      h1: 'Non-Alcoholic Gin Alternative — Buy Zero-Proof Online',
+      metaDescription: 'Buy non-alcoholic gin alternative online — juniper and botanical-forward zero-proof spirit for a G&T without the alcohol. Shipped nationwide.',
+      transactionalCTA: 'Buy non-alcoholic gin alternative online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic gin alternatives are built around the same botanicals that define real gin — juniper, citrus peel, coriander, and other aromatics — extracted and blended into a non-alcoholic base rather than distilled into a spirit. The goal is to recreate gin\'s aromatic complexity so it still works in a G&T or a gin-based mocktail.',
+      faqs: [
+        { question: 'Do non-alcoholic gin alternatives use real juniper?', answer: 'Most reputable brands do use real juniper and other traditional gin botanicals, extracted through infusion or distillation of the botanicals themselves (without alcohol) rather than synthetic flavoring — the goal is genuine aromatic complexity, not just a juniper-scented syrup.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-spirits',
+    hubSlug: 'non-alcoholic-tequila-alternative',
+    subcategoryName: 'Non-Alcoholic Tequila Alternative',
+    name: 'Non-Alcoholic Tequila Alternative',
+    seo: {
+      titleTag: 'Non-Alcoholic Tequila Alternative',
+      h1: 'Non-Alcoholic Tequila Alternative — Buy Zero-Proof Online',
+      metaDescription: 'Buy non-alcoholic tequila alternative online — peppery, agave-inspired zero-proof spirit for margaritas without the alcohol. Shipped nationwide.',
+      transactionalCTA: 'Buy non-alcoholic tequila alternative online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic tequila alternatives aim to recreate tequila\'s vegetal, peppery agave character using plant extracts and botanicals rather than actual distilled agave spirit — since real tequila must legally be made from blue Weber agave and contain alcohol, these are built to evoke the flavor rather than replicate the production process.',
+      faqs: [
+        { question: 'Are non-alcoholic tequila alternatives made from real agave?', answer: 'Some incorporate real agave extract for authenticity, but since the product must remain non-alcoholic, none of them use the fermentation and distillation process that legally defines tequila. They\'re built primarily from botanical extracts designed to evoke tequila\'s peppery, vegetal character.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-spirits',
+    hubSlug: 'non-alcoholic-botanical-spirit',
+    subcategoryName: 'Non-Alcoholic Botanical Spirit',
+    name: 'Non-Alcoholic Botanical Spirit',
+    seo: {
+      titleTag: 'Non-Alcoholic Botanical Spirit',
+      h1: 'Non-Alcoholic Botanical Spirit — Buy Zero-Proof Online',
+      metaDescription: 'Buy non-alcoholic botanical spirit online — original-recipe zero-proof spirit built from herbs and botanicals. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic botanical spirit online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic botanical spirits don\'t imitate any single traditional spirit — instead they build their own flavor identity from a distinct blend of herbs, spices, and botanicals, distilled or extracted without alcohol. This original-recipe approach helped popularize the category, rather than every non-alcoholic spirit being defined as an "alternative" to something alcoholic.',
+      faqs: [
+        { question: 'What makes a botanical spirit different from a whiskey or gin alternative?', answer: 'Whiskey and gin alternatives are built to evoke a specific existing spirit\'s character. A botanical spirit instead creates its own original flavor profile from a distinctive blend of herbs and botanicals, without trying to mimic any particular alcoholic category.' },
+      ],
+    },
+  },
+  // NON-ALCOHOLIC BEER & CIDER
+  {
+    categorySlug: 'na-beer-cider',
+    hubSlug: 'non-alcoholic-beer',
+    subcategoryName: 'Non-Alcoholic Beer',
+    name: 'Non-Alcoholic Beer',
+    seo: {
+      titleTag: 'Non-Alcoholic Beer — Zero-Proof',
+      h1: 'Non-Alcoholic Beer — Buy Zero-Proof Craft Beer Online',
+      metaDescription: 'Buy non-alcoholic beer online — craft-brewed zero-proof lager, IPA, and stout. Shipped nationwide, no age restrictions apply.',
+      transactionalCTA: 'Buy non-alcoholic beer online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic beer is brewed largely the same way as regular beer, then has its alcohol removed — through vacuum distillation, reverse osmosis, or by halting fermentation early — to reach under 0.5% ABV in the US. Modern brewing techniques have dramatically closed the flavor gap with full-strength beer compared to a decade ago.',
+      faqs: [
+        { question: 'Is non-alcoholic beer completely alcohol-free?', answer: 'In the US, beer labeled "non-alcoholic" must contain less than 0.5% ABV, which can include a trace amount rather than an absolute zero. Brands labeled specifically "alcohol-free" or "0.0%" typically use more rigorous removal processes to get closer to a true zero, so it\'s worth checking the specific bottle if avoiding alcohol entirely matters.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-beer-cider',
+    hubSlug: 'non-alcoholic-cider',
+    subcategoryName: 'Non-Alcoholic Cider',
+    name: 'Non-Alcoholic Cider',
+    seo: {
+      titleTag: 'Non-Alcoholic Cider — Zero-Proof',
+      h1: 'Non-Alcoholic Cider — Buy Zero-Proof Apple Cider Online',
+      metaDescription: 'Buy non-alcoholic cider online — fermented then de-alcoholized apple cider with real tart, fruity character. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic cider online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic cider is made by fermenting apples into cider as usual, then removing the alcohol — typically through vacuum distillation — to preserve the fruit\'s natural tartness and apple character at under 0.5% ABV.',
+      faqs: [
+        { question: 'Does non-alcoholic cider taste like apple juice?', answer: 'Not quite — because it starts as fermented cider before the alcohol is removed, it retains more of cider\'s tart, slightly funky, fermented character than apple juice, which is never fermented at all.' },
+      ],
+    },
+  },
+  // NON-ALCOHOLIC RTD COCKTAILS
+  {
+    categorySlug: 'na-rtd-cocktails',
+    hubSlug: 'non-alcoholic-cocktails',
+    subcategoryName: 'Non-Alcoholic Cocktails',
+    name: 'Non-Alcoholic Cocktails',
+    seo: {
+      titleTag: 'Non-Alcoholic Cocktails — Zero-Proof',
+      h1: 'Non-Alcoholic Cocktails — Buy Zero-Proof Mocktails Online',
+      metaDescription: 'Buy non-alcoholic cocktails online — pre-mixed mocktails built from real juices, bitters, and botanicals. Shipped nationwide, no age restrictions.',
+      transactionalCTA: 'Buy non-alcoholic cocktails online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic cocktails, or mocktails, are pre-mixed blends of juices, bitters, syrups, and botanicals designed to deliver the same balance and complexity as a classic cocktail recipe, just without any spirit base. Canned and bottled versions bring that bar-quality balance to a ready-to-drink format.',
+      faqs: [
+        { question: 'What is the difference between a mocktail and a non-alcoholic spirit-based drink?', answer: 'A mocktail is typically built from juices, syrups, and bitters alone, without any spirit-style base at all. A drink made with a non-alcoholic spirit alternative swaps in that alcohol-free "spirit" for one of a mocktail\'s components, aiming to more closely replicate the structure of a real cocktail.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-rtd-cocktails',
+    hubSlug: 'non-alcoholic-spritz',
+    subcategoryName: 'Non-Alcoholic Spritz',
+    name: 'Non-Alcoholic Spritz',
+    seo: {
+      titleTag: 'Non-Alcoholic Spritz — Zero-Proof',
+      h1: 'Non-Alcoholic Spritz — Buy Zero-Proof Bitter-Orange Spritz Online',
+      metaDescription: 'Buy non-alcoholic spritz online — bright, bitter-orange zero-proof spritz built for easy sipping. Shipped nationwide, no age restrictions apply.',
+      transactionalCTA: 'Buy non-alcoholic spritz online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'A non-alcoholic spritz recreates the bright, bitter-orange, effervescent profile of an Aperol Spritz or similar drink using non-alcoholic aperitif alternatives and sparkling wine or soda, built for the same easy, low-commitment sipping occasion as the original.',
+      faqs: [
+        { question: 'What gives a non-alcoholic spritz its bitter orange flavor?', answer: 'Most non-alcoholic spritz products use botanical extracts and bitter orange peel to recreate the flavor that alcoholic aperitivos get from their own proprietary bittering ingredients, combined with sparkling wine or soda for the characteristic effervescence.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'na-rtd-cocktails',
+    hubSlug: 'non-alcoholic-canned-cocktails',
+    subcategoryName: 'Non-Alcoholic Canned Cocktails',
+    name: 'Non-Alcoholic Canned Cocktails',
+    seo: {
+      titleTag: 'Non-Alcoholic Canned Cocktails',
+      h1: 'Non-Alcoholic Canned Cocktails — Buy Zero-Proof RTD Online',
+      metaDescription: 'Buy non-alcoholic canned cocktails online — ready-to-drink, zero-proof cocktails built from real juices and botanicals. Shipped nationwide.',
+      transactionalCTA: 'Buy non-alcoholic canned cocktails online — shipped nationwide with no age verification or alcohol shipping restrictions required.',
+      definitionHook: 'Non-alcoholic canned cocktails apply the ready-to-drink format popularized by alcoholic RTD cocktails to alcohol-free recipes — pre-batched, carbonated or still, and packaged for the same grab-and-go convenience, built from juices, botanicals, and non-alcoholic spirit alternatives rather than real spirits.',
+      faqs: [
+        { question: 'Are non-alcoholic canned cocktails just flavored sparkling water?', answer: 'The better ones aren\'t — quality non-alcoholic canned cocktails are built from real juices, bitters, and botanical extracts formulated to recreate a specific cocktail\'s balance, similar to how a mocktail is built, rather than simply flavoring sparkling water.' },
+      ],
+    },
+  },
 ];
