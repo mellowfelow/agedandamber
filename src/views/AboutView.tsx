@@ -43,13 +43,13 @@ export const AboutView: React.FC = () => {
           Founded in Napa Valley: A Curator's Approach to Spirits
         </h2>
         <p>
-          Established in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was born out of a passion for allocated, single barrel, and wood-finished spirits that are difficult to find through ordinary retail channels. Rather than distilling spirits ourselves, we built direct sourcing relationships with distilleries, licensed distributors, and private cask programs so collectors can access verified, authentic bottles they would otherwise struggle to track down.
+          Established in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was born out of a passion for allocated, single barrel, and wood-finished spirits that are difficult to find through ordinary retail channels. Rather than distilling spirits ourselves, we curate through licensed distributors and wholesale channels so collectors can access verified, authentic bottles they would otherwise struggle to track down.
         </p>
         <p>
-          Every bottle that reaches our Napa Valley cellar is sourced from legitimate distillery allocations or licensed distribution channels, checked for condition and authenticity, and stored under climate-controlled conditions until it ships.
+          Every bottle that reaches our Napa Valley cellar is sourced through licensed distribution channels, checked for condition and authenticity, and stored under climate-controlled conditions until it ships.
         </p>
         <p>
-          What began as a whiskey vault has grown into a full cellar. Alongside single barrel bourbon, cask-strength rye, single malt Scotch, Irish and Japanese whisky, we carry aged and dark rum, artisanal gin, craft vodka, tequila and mezcal, and Cognac and brandy — plus fine wine from Napa Valley, Bordeaux, and Burgundy, grower-to-prestige Champagne and sparkling wine, craft and import beer, hard cider, and a growing range of non-alcoholic spirits, wine, and sparkling alternatives that ship nationwide with no age restriction. The through-line is the same across every category: buy direct, verify what we buy, store it properly, and ship it compliantly.
+          What began as a whiskey vault has grown into a full cellar. Alongside single barrel bourbon, cask-strength rye, single malt Scotch, Irish and Japanese whisky, we carry aged and dark rum, artisanal gin, craft vodka, tequila and mezcal, and Cognac and brandy — plus fine wine from Napa Valley, Bordeaux, and Burgundy, grower-to-prestige Champagne and sparkling wine, craft and import beer, hard cider, and a growing range of non-alcoholic spirits, wine, and sparkling alternatives that ship nationwide with no age restriction. The through-line is the same across every category: curate carefully, verify what we buy, store it properly, and ship it compliantly.
         </p>
 
         <h2 className="text-2xl font-serif font-bold text-amber-100">

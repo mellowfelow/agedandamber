@@ -70,15 +70,15 @@ export const CHAT = {
 export const BRAND = {
   foundingYear: '2018',
   foundingLocation: 'Napa Valley, California, USA',
-  description: 'Aged & Amber is an independent Napa Valley cellar that curates and sells authentic, allocated bottles across rare single barrel bourbons, single malt scotch, tequila, rum, gin, vodka, and cognac, alongside fine wine, Champagne, craft beer, cider, and non-alcoholic alternatives, sourced directly from trusted distilleries, wineries, and licensed distributors.',
+  description: 'Aged & Amber is an independent Napa Valley cellar that curates and sells authentic, allocated bottles across rare single barrel bourbons, single malt scotch, tequila, rum, gin, vodka, and cognac, alongside fine wine, Champagne, craft beer, cider, and non-alcoholic alternatives, sourced through trusted, licensed distributors and wholesale channels.',
   milestones: [
     { year: '2018', event: 'Founded in Napa Valley as a direct-to-consumer curator of allocated and rare-release spirits.' },
-    { year: '2020', event: 'Built out direct sourcing relationships with distilleries across Kentucky, Scotland, and beyond.' },
+    { year: '2020', event: 'Grew the catalogue through licensed distributor and wholesale partnerships spanning Kentucky, Scotland, and beyond.' },
     { year: '2022', event: 'Expanded compliant direct-to-consumer spirits shipping to states with laws permitting DTC alcohol delivery.' },
     { year: '2024', event: 'Launched the Rare Vault Reserve program for private collectors and allocated releases.' },
   ],
   differentiation: [
-    'Direct sourcing relationships with distilleries and licensed distributors across Kentucky, Scotland, and beyond',
+    'A hand-curated catalogue of allocated and hard-to-find bottles, sourced through licensed distributors and wholesale channels',
     'Every bottle verified authentic, properly stored, and shipped in temperature-controlled packaging',
     '21+ verified temperature-controlled express delivery with adult signature',
     'Exclusive 10% instant discount when checking out with Bitcoin or USDT',

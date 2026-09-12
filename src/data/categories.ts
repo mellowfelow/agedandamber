@@ -28,7 +28,7 @@ export const CATEGORIES: Category[] = [
     seo: {
       titleTag: 'Bourbon Whiskey — Buy Allocated Online',
       h1: 'Bourbon Whiskey — Buy Allocated Kentucky Straight Bourbon Online',
-      metaDescription: 'Buy bourbon whiskey online — rare allocated single barrel, small batch, wheated, and Kentucky straight bourbon. Direct from distillery. Free shipping $300+.',
+      metaDescription: 'Buy bourbon whiskey online — rare allocated single barrel, small batch, wheated, and Kentucky straight bourbon. Direct allocations. Free shipping $300+.',
       transactionalCTA: 'Buy bourbon online — direct allocations of rare Kentucky straight bourbon, shipped from Napa Valley to every state with compliant direct-to-consumer alcohol shipping laws.',
       definitionHook: "Bourbon whiskey is an American whiskey distilled from a grain mash of at least 51% corn, aged in new charred oak barrels, and produced anywhere in the United States. To be called 'straight bourbon,' it must be aged for a minimum of two years. Our bourbon vault covers single barrel, small batch, wheated, and high-rye expressions from Kentucky and beyond.",
       faqs: [
@@ -126,7 +126,7 @@ export const CATEGORIES: Category[] = [
     seo: {
       titleTag: 'Rye & Other Whiskey — Buy Allocated Online',
       h1: 'Rye Whiskey & Other American Whiskey — Buy Allocated Online',
-      metaDescription: 'Buy rye whiskey online — allocated straight rye, Tennessee whiskey, Canadian whisky, and American single malt. Direct from distillery. Free shipping $300+.',
+      metaDescription: 'Buy rye whiskey online — allocated straight rye, Tennessee whiskey, Canadian whisky, and American single malt. Direct allocations. Free shipping $300+.',
       transactionalCTA: 'Buy rye whiskey online — direct allocations of straight rye, Tennessee, Canadian, and American single malt whiskey shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
       definitionHook: 'Rye whiskey is distilled from a grain mash of at least 51% rye, giving it a spicier, drier profile than corn-forward bourbon — the classic base for a Manhattan or Sazerac. This category also covers Tennessee whiskey (charcoal-mellowed via the Lincoln County Process), Canadian whisky, and the emerging American single malt style.',
       faqs: [
