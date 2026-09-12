@@ -173,23 +173,24 @@ in place — shipped in Batch 1 (`subcategoryRoutes` prop on `ShopView`, real `<
 | 3 | RTD & Liqueurs | Craft Cocktails (53), Cream (7), Aperitifs (3), Amaro & Digestifs (6), Coffee (5), Fruit (7), Herbal (4), Orange (4), Cordial (4) — full category, all 9 subcats | ✅ `1c1bc73` |
 | 4 | Craft Vodka + Cognac & Brandy | Plain (9)/Premium (16)/Flavored (40)/Craft (11) vodka + VS (3)/VSOP (18)/XO (14)/XXO (1)/Rare Brandy (21) cognac — both full categories | ✅ `68fa0c1` |
 | 5 | Fine Wine | All 17: Red (6), White (6), Rosé (18), Cabernet Sauvignon (15), Pinot Noir (8), Chardonnay (7), Sauvignon Blanc (8), Malbec (5), Riesling (7), Zinfandel (7), Pinot Grigio (7), Moscato (7), Merlot (4), Organic & Natural Wine (26), Port (13), Sherry (6), Icewine & Dessert Wine (8) — full category, done in one pass | ✅ `4638b76` |
+| 6 | Aged & Dark Rum + Bar Essentials | Dark (9)/Aged (23)/Spiced (11)/White (6) rum + Bitters (5)/Vermouth (6)/Mixers & Syrups (19)/Cocktail Mixes (8)/Garnishes (9)/Glassware & Barware (5) — both full categories | ✅ `784aa6f` |
+| 7 | Remaining Whiskey/Gin/Bourbon gaps | Rye (32)/Canadian (13)/Tennessee (12)/Taiwanese (1) other-whiskey + Blended (15)/Single Malt (13)/Premium (6) Japanese + Highland (10)/Aged&Premium (12) Scotch + Blended (16)/Premium (6)/Irish Cream (5) Irish + Botanical (13)/Craft (8) Gin + Premium Bourbon (9) — completes 6 categories | ✅ `7892974` |
 
-**Running total: 62/103 subcategories now have a dedicated page** (18 pre-existing + 44 added across
-batches 1–5 — just over 60% done). Every hub verified live before merging: 200 status, ItemList
-product count matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac
-correctly held back at 1 product).
+**Running total: 87/103 subcategories now have a dedicated page** (18 pre-existing + 69 added across
+batches 1–7 — 84% done). Every hub verified live before merging: 200 status, ItemList product count
+matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac and Taiwanese
+Whisky correctly held back at 1 product each).
 
-**Fully-covered categories so far:** Beer, Champagne & Sparkling, RTD & Liqueurs, Craft Vodka,
-Cognac & Brandy, Fine Wine, Tequila & Mezcal (pre-existing).
+**Fully-covered categories:** Beer, Champagne & Sparkling, RTD & Liqueurs, Craft Vodka, Cognac &
+Brandy, Fine Wine, Aged & Dark Rum, Bar Essentials, Bourbon, Scotch, Irish Whiskey, Japanese Whisky,
+Other Whiskey, Artisanal Gin, Tequila & Mezcal (pre-existing) — 15 of 21 categories.
 
-**Remaining, by category** (product counts from the live catalog; categories with an existing partial
-build are marked): Other Whiskey (Rye 32, Canadian 13, Tennessee 12, Taiwanese 1 — 2/6 done: American
-Single Malt, Flavored Whiskey), Japanese Whisky (Blended 15, Single Malt 13, Premium 6 — 0/3), Scotch
-(Highland 10, Aged and Premium 12 — 4/6 done), Irish (Blended 16, Premium 6, Irish Cream 5 — 2/5
-done), Artisanal Gin (Botanical 13, Craft 8 — 1/3 done), Bourbon (Premium Bourbon 9 — 4/5 done), Aged
-Dark Rum (Aged 23, Spiced 11, Dark 9, White 6 — 0/4), Bar Essentials (Mixers 19, Garnishes 9, Cocktail
-Mixes 8, Vermouth 6, Bitters 5, Glassware 5 — 0/6), Cider (Hard Cider 30 — only subcat in category,
-may not be worth a separate hub from the category page itself), all 5 NA-* categories (0/~15 total,
-lower priority — non-alcoholic ships with no age gate but is a smaller commercial signal).
+**Remaining:** Cider (Hard Cider 30 — the only subcat in its category, so a dedicated hub would be
+near-identical to the category page itself; may not be worth building) and the 5 NA-* categories —
+Non-Alcoholic Wine (Red 10, White 9, Rosé 6), Non-Alcoholic Champagne & Sparkling (Sparkling Wine 11,
+Sparkling Rosé 9, Sparkling Grape Juice 4), Non-Alcoholic Spirits (Tequila Alt 9, Whiskey Alt 6, Gin
+Alt 5, Botanical Spirit 5), Non-Alcoholic Beer & Cider (Beer 22, Cider 1), Non-Alcoholic RTD Cocktails
+(Canned Cocktails 11, Spritz 8, Cocktails 4) — 15 subcats, lower commercial priority than the alcohol
+lines but real search terms exist ("non alcoholic beer" etc.) and completes the project.
 
-Next batch: Aged Dark Rum (0/4) + Bar Essentials (0/6) — two more small, clean, full-category sweeps.
+Next batch: the 5 NA-* categories — the last stretch to 100% coverage.
