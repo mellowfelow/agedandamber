@@ -49,6 +49,14 @@ export default async function ShopCategoryPage({ params }: Props) {
     hubSlug: h.hubSlug,
     name: h.name,
   }));
+  // Every subcategory hub across ALL categories (the sidebar spans every
+  // category, not just this page's) — lets its filter buttons link
+  // straight to the SEO page instead of just filtering in place.
+  const subcategoryRoutes = SUBCATEGORY_HUBS.map((h) => ({
+    categorySlug: h.categorySlug,
+    subcategoryName: h.subcategoryName,
+    hubSlug: h.hubSlug,
+  }));
   const journalPosts = BLOG_POSTS.filter((p) => getShopSlugForPost(p) === cat.slug)
     .sort((a, b) => (a.isoDate < b.isoDate ? 1 : -1))
     .slice(0, 3)
@@ -85,6 +93,7 @@ export default async function ShopCategoryPage({ params }: Props) {
         styleHubs={styleHubs}
         brandHubs={brandHubs}
         journalPosts={journalPosts}
+        subcategoryRoutes={subcategoryRoutes}
       />
     </>
   );

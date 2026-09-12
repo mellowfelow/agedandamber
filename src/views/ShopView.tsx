@@ -66,6 +66,16 @@ interface ShopViewProps {
   brandHubs?: ShopHubLink[];
   journalPosts?: ShopJournalPost[];
   /**
+   * Every subcategory that has a dedicated hub page, across ALL categories
+   * (not just the active one — the sidebar's subcategory list spans every
+   * category regardless of which page you're on). Lets the sidebar filter
+   * buttons navigate to the real SEO page instead of just filtering
+   * in-place when one exists; falls back to plain filtering otherwise.
+   * Tiny (one row per hub, ~20 today), unlike the big hub/blog data
+   * modules — safe to compute server-side and pass down whole.
+   */
+  subcategoryRoutes?: { categorySlug: string; subcategoryName: string; hubSlug: string }[];
+  /**
    * The all-catalog `/shop/` page sets this so the full ~1,350-product
    * array is fetched client-side (from `/api/products`) after hydration
    * instead of being serialized into the page HTML — that payload alone
@@ -85,10 +95,19 @@ export const ShopView: React.FC<ShopViewProps> = ({
   styleHubs = [],
   brandHubs = [],
   journalPosts = [],
+  subcategoryRoutes = [],
   lazyLoadFullCatalog = false,
 }) => {
   const router = useRouter();
   const { searchQuery, setSearchQuery } = useAppState();
+
+  // categorySlug|subcategoryName -> hub page slug, for the sidebar filter
+  // buttons below.
+  const hubSlugFor = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const r of subcategoryRoutes) map.set(`${r.categorySlug}|${r.subcategoryName}`, r.hubSlug);
+    return map;
+  }, [subcategoryRoutes]);
 
   // Total allocation count shown in the header eyebrow, the "All Spirits"
   // sidebar badge, and the results summary — always the whole catalog, not
@@ -587,20 +606,18 @@ export const ShopView: React.FC<ShopViewProps> = ({
                       const isSubSelected =
                         selectedCategory === cat.slug && selectedSubcategory === sub;
                       const subCount = subcategoryCounts[sub] || 0;
+                      // A dedicated SEO hub page exists for this subcategory —
+                      // give it a real link instead of an in-place filter, so
+                      // it's crawlable, shareable, and openable in a new tab.
+                      const hubSlug = hubSlugFor.get(`${cat.slug}|${sub}`);
 
-                      return (
-                        <button
-                          key={sub}
-                          onClick={() => {
-                            setSelectedCategory(cat.slug);
-                            setSelectedSubcategory(sub);
-                          }}
-                          className={`w-full flex items-center justify-between p-1.5 rounded-lg text-left transition-all ${
-                            isSubSelected
-                              ? 'bg-[#D4AF37] text-[#140D08] font-bold shadow-sm'
-                              : 'text-amber-300/75 hover:bg-stone-800 hover:text-amber-100'
-                          }`}
-                        >
+                      const rowClassName = `w-full flex items-center justify-between p-1.5 rounded-lg text-left transition-all ${
+                        isSubSelected
+                          ? 'bg-[#D4AF37] text-[#140D08] font-bold shadow-sm'
+                          : 'text-amber-300/75 hover:bg-stone-800 hover:text-amber-100'
+                      }`;
+                      const rowContent = (
+                        <>
                           <div className="flex items-center gap-1.5 truncate">
                             <span
                               className={`w-1.5 h-1.5 rounded-full ${
@@ -620,6 +637,27 @@ export const ShopView: React.FC<ShopViewProps> = ({
                               {subCount}
                             </span>
                           )}
+                        </>
+                      );
+
+                      if (hubSlug) {
+                        return (
+                          <Link key={sub} href={getRouteUrl.product(cat.slug, hubSlug)} className={rowClassName}>
+                            {rowContent}
+                          </Link>
+                        );
+                      }
+
+                      return (
+                        <button
+                          key={sub}
+                          onClick={() => {
+                            setSelectedCategory(cat.slug);
+                            setSelectedSubcategory(sub);
+                          }}
+                          className={rowClassName}
+                        >
+                          {rowContent}
                         </button>
                       );
                     })}
