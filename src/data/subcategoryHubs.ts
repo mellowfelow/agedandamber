@@ -1168,4 +1168,250 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // OTHER WHISKEY
+  {
+    categorySlug: 'other-whiskey',
+    hubSlug: 'rye-whiskey',
+    subcategoryName: 'Rye Whiskey',
+    name: 'Rye Whiskey',
+    seo: {
+      titleTag: 'Rye Whiskey — Allocated',
+      h1: 'Rye Whiskey — Buy Allocated Spicy American Rye Online',
+      metaDescription: 'Buy rye whiskey online — allocated straight rye with a spicier, drier profile than bourbon, essential in classic cocktails. Free on $300+.',
+      transactionalCTA: 'Buy rye whiskey online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Rye whiskey is an American whiskey distilled from a mash bill of at least 51% rye grain, producing a spicier, drier, more peppery profile than corn-forward bourbon. Rye was the dominant American whiskey style before Prohibition and is the backbone of classic cocktails like the Manhattan, Sazerac, and the original Old Fashioned.',
+      faqs: [
+        { question: 'What is the difference between rye whiskey and bourbon?', answer: 'Bourbon must be at least 51% corn in the mash bill, giving it a sweeter profile. Rye whiskey must be at least 51% rye, producing a spicier, drier, more peppery character. Both must be aged in new charred oak barrels and produced in the United States.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'other-whiskey',
+    hubSlug: 'canadian-whisky',
+    subcategoryName: 'Canadian Whisky',
+    name: 'Canadian Whisky',
+    seo: {
+      titleTag: 'Canadian Whisky — Allocated',
+      h1: 'Canadian Whisky — Buy Allocated Smooth Blended Whisky Online',
+      metaDescription: 'Buy Canadian whisky online — allocated smooth, blended whisky aged a minimum of three years in small wood. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Canadian whisky online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Canadian whisky is typically a blend of a lighter base whisky and a small amount of more flavorful "flavoring whisky," often high in rye, producing a smoother, lighter style than most American whiskey. Canadian law requires a minimum of three years aging in small wood barrels but doesn\'t impose the strict mash-bill rules that define bourbon or rye.',
+      faqs: [
+        { question: 'Why is Canadian whisky often called "rye" even when it isn\'t mostly rye?', answer: 'Historically, Canadian distillers used rye grain to add flavor to an otherwise light base whisky, and the nickname "rye" stuck as a colloquial term for Canadian whisky generally — even though, unlike American rye whiskey, there\'s no legal requirement that Canadian whisky contain any specific percentage of rye grain.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'other-whiskey',
+    hubSlug: 'tennessee-whiskey',
+    subcategoryName: 'Tennessee Whiskey',
+    name: 'Tennessee Whiskey',
+    seo: {
+      titleTag: 'Tennessee Whiskey — Allocated',
+      h1: 'Tennessee Whiskey — Buy Allocated Charcoal-Mellowed Whiskey Online',
+      metaDescription: 'Buy Tennessee whiskey online — allocated whiskey charcoal-filtered through the Lincoln County Process before barreling. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Tennessee whiskey online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Tennessee whiskey meets all the legal requirements of bourbon — at least 51% corn, aged in new charred oak — but adds one additional step: the Lincoln County Process, filtering the spirit through a thick bed of sugar maple charcoal before it goes into the barrel. That extra filtration mellows the whiskey and is the legal distinction that keeps it from being labeled bourbon, even though it otherwise qualifies.',
+      faqs: [
+        { question: 'Is Tennessee whiskey the same as bourbon?', answer: 'Tennessee whiskey meets every legal requirement for bourbon, but producers additionally filter it through sugar maple charcoal (the Lincoln County Process) before barreling. That extra step is what distinguishes it on the label, even though a Tennessee whiskey could technically be called bourbon if the producer chose to.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'other-whiskey',
+    hubSlug: 'taiwanese-whisky',
+    subcategoryName: 'Taiwanese Whisky',
+    name: 'Taiwanese Whisky',
+    seo: {
+      titleTag: 'Taiwanese Whisky — Allocated',
+      h1: 'Taiwanese Whisky — Buy Allocated Award-Winning Whisky Online',
+      metaDescription: 'Buy Taiwanese whisky online — allocated whisky from Taiwan\'s tropical climate, which accelerates maturation dramatically. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Taiwanese whisky online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Taiwanese whisky is a remarkably young whisky-producing category — its best-known distillery only opened in 2005 — but Taiwan\'s hot, humid climate accelerates barrel maturation far faster than in Scotland, letting whisky develop remarkable depth in a fraction of the time. That speed, combined with meticulous production, has earned Taiwanese whisky major international awards in a very short span.',
+      faqs: [
+        { question: 'Why has Taiwanese whisky become so acclaimed so quickly?', answer: 'Taiwan\'s hot, humid climate dramatically accelerates barrel aging compared to Scotland\'s cool weather — whisky matures faster and loses more to evaporation, but develops complexity in years rather than decades. Combined with careful production, this let Taiwanese distilleries win major international awards within just a couple of decades of opening.' },
+      ],
+    },
+  },
+  // JAPANESE WHISKY
+  {
+    categorySlug: 'japanese-whisky',
+    hubSlug: 'blended-japanese-whisky',
+    subcategoryName: 'Blended Japanese Whisky',
+    name: 'Blended Japanese Whisky',
+    seo: {
+      titleTag: 'Blended Japanese Whisky — Allocated',
+      h1: 'Blended Japanese Whisky — Buy Allocated Bottles Online',
+      metaDescription: 'Buy blended Japanese whisky online — allocated whisky combining malt and grain components for a refined house style. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy blended Japanese whisky online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Blended Japanese whisky combines malt and grain whiskies, often from multiple distilleries owned by the same producer, crafted by a master blender to achieve a specific, consistent house style. Japan\'s most globally recognized whisky names built their reputation on this blending tradition rather than single malt alone.',
+      faqs: [
+        { question: 'Is blended Japanese whisky lower quality than single malt?', answer: 'No — blended Japanese whisky is a distinct craft, not a lesser one. Master blenders combine malt and grain whiskies with deliberate skill to achieve balance and a signature house character that a single distillery\'s malt alone couldn\'t replicate.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'japanese-whisky',
+    hubSlug: 'single-malt-japanese-whisky',
+    subcategoryName: 'Single Malt Japanese Whisky',
+    name: 'Single Malt Japanese Whisky',
+    seo: {
+      titleTag: 'Single Malt Japanese Whisky — Allocated',
+      h1: 'Single Malt Japanese Whisky — Buy Allocated Bottles Online',
+      metaDescription: 'Buy single malt Japanese whisky online — allocated 100% malted barley whisky from a single distillery. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy single malt Japanese whisky online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Single malt Japanese whisky is made entirely from malted barley at a single distillery, following production principles adapted from Scotch but refined with distinctly Japanese precision — including maturation in native mizunara oak, which imparts unique notes of sandalwood and incense not found in whisky aged in American or European oak.',
+      faqs: [
+        { question: 'What makes single malt Japanese whisky different from single malt Scotch?', answer: 'Both follow similar core production methods — malted barley, pot still distillation, oak aging — but Japanese producers often use native mizunara oak casks, which impart distinctive sandalwood, incense, and coconut notes that Scotch, aged in American or European oak, doesn\'t typically show.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'japanese-whisky',
+    hubSlug: 'premium-japanese-whisky',
+    subcategoryName: 'Premium Japanese Whisky',
+    name: 'Premium Japanese Whisky',
+    seo: {
+      titleTag: 'Premium Japanese Whisky — Allocated',
+      h1: 'Premium Japanese Whisky — Buy Allocated Rare Bottles Online',
+      metaDescription: 'Buy premium Japanese whisky online — allocated top-tier, highly sought-after Japanese whisky releases. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy premium Japanese whisky online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Premium Japanese whisky covers the category\'s top-tier and most limited releases — often age-stated bottlings that have become increasingly scarce as global demand outpaced production capacity built decades earlier. Since the early 2000s, Japanese whisky\'s international acclaim has made these premium expressions some of the most allocated bottles in the world.',
+      faqs: [
+        { question: 'Why is premium Japanese whisky so hard to find?', answer: 'Japanese distilleries built their production capacity decades ago, based on demand levels at the time. When Japanese whisky won major international awards starting in the early 2000s, global demand surged far faster than distilleries could expand supply, making many age-stated and premium releases genuinely scarce.' },
+      ],
+    },
+  },
+  // SCOTCH (continued)
+  {
+    categorySlug: 'scotch-whisky',
+    hubSlug: 'highland-scotch',
+    subcategoryName: 'Highland Scotch',
+    name: 'Highland Scotch',
+    seo: {
+      titleTag: 'Highland Scotch Whisky — Allocated',
+      h1: 'Highland Scotch Whisky — Buy Allocated Bottles Online',
+      metaDescription: 'Buy Highland scotch whisky online — allocated single malt from Scotland\'s largest, most diverse whisky region. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Highland scotch online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'The Highlands are Scotland\'s largest whisky region by geography, spanning the mainland north and west of an imaginary line from Dundee to Greenock. That size means enormous stylistic range — from light and floral in the north to richer and occasionally lightly peated near the coast — making "Highland" more a geographic designation than a single flavor profile.',
+      faqs: [
+        { question: 'What does Highland Scotch taste like?', answer: 'There isn\'t one Highland flavor profile — the region is Scotland\'s largest and most geographically diverse, so Highland malts range from light and floral in the north to fuller-bodied and occasionally lightly peated near the coast. Any single Highland malt reflects its specific distillery and sub-region far more than the "Highland" label alone.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'scotch-whisky',
+    hubSlug: 'aged-premium-scotch',
+    subcategoryName: 'Aged and Premium Scotch',
+    name: 'Aged and Premium Scotch',
+    seo: {
+      titleTag: 'Aged & Premium Scotch — Allocated',
+      h1: 'Aged & Premium Scotch Whisky — Buy Allocated Bottles Online',
+      metaDescription: 'Buy aged and premium scotch online — allocated extra-aged and rare Scotch whisky from across Scotland\'s regions. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy aged and premium scotch online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Aged and premium Scotch spans any region — Speyside, Islay, Highland, or beyond — united by extended cask maturation and greater rarity rather than a single style. Extra time in oak deepens color and complexity, and combined with limited production, is what pushes a bottle from an everyday dram into premium, allocated territory.',
+      faqs: [
+        { question: 'Does a higher age statement always mean better Scotch?', answer: 'Not automatically — age brings more time for oak influence and complexity, but a whisky can also be over-oaked if left too long, and plenty of exceptional Scotch carries no age statement at all. Age is one meaningful factor among several, including cask type and the spirit\'s own character, that determine quality.' },
+      ],
+    },
+  },
+  // IRISH WHISKEY (continued)
+  {
+    categorySlug: 'irish-whiskey',
+    hubSlug: 'blended-irish-whiskey',
+    subcategoryName: 'Blended Irish Whiskey',
+    name: 'Blended Irish Whiskey',
+    seo: {
+      titleTag: 'Blended Irish Whiskey — Allocated',
+      h1: 'Blended Irish Whiskey — Buy Allocated Bottles Online',
+      metaDescription: 'Buy blended Irish whiskey online — allocated smooth, triple-distilled blends combining pot still, malt, and grain whiskey. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy blended Irish whiskey online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Blended Irish whiskey combines pot still, malt, and/or grain whiskeys, typically triple-distilled for an especially smooth, approachable style. It\'s the most widely consumed style of Irish whiskey worldwide.',
+      faqs: [
+        { question: 'Why is Irish whiskey usually described as smoother than Scotch?', answer: 'Most Irish whiskey, including the popular blended style, is triple-distilled rather than the double distillation typical of Scotch, which strips out more congeners and produces a lighter, smoother spirit. Not all Irish whiskey follows this exactly, but it\'s the tradition most associated with the category\'s reputation for approachability.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'irish-whiskey',
+    hubSlug: 'premium-irish-whiskey',
+    subcategoryName: 'Premium Irish Whiskey',
+    name: 'Premium Irish Whiskey',
+    seo: {
+      titleTag: 'Premium Irish Whiskey — Allocated',
+      h1: 'Premium Irish Whiskey — Buy Allocated Rare Bottles Online',
+      metaDescription: 'Buy premium Irish whiskey online — allocated extra-aged and limited-release Irish whiskey. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy premium Irish whiskey online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Premium Irish whiskey covers the category\'s extra-aged, single-cask, and limited-release bottlings — a fast-growing tier as Irish whiskey\'s global popularity has driven distilleries to expand beyond their traditional easy-drinking blends into genuinely collectible, allocated expressions.',
+      faqs: [
+        { question: 'What makes an Irish whiskey "premium" rather than a standard blend?', answer: 'Premium Irish whiskey is typically distinguished by extended cask aging, single-cask or small-batch bottling, and genuine scarcity — as opposed to the larger-volume blended whiskeys most people associate with the category. It reflects Irish whiskey\'s recent expansion into more serious, collector-oriented releases.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'irish-whiskey',
+    hubSlug: 'irish-cream-whiskey',
+    subcategoryName: 'Irish Cream Whiskey',
+    name: 'Irish Cream Whiskey',
+    seo: {
+      titleTag: 'Irish Cream Whiskey — Allocated',
+      h1: 'Irish Cream Whiskey — Buy Allocated Whiskey-Based Cream Liqueur Online',
+      metaDescription: 'Buy Irish cream whiskey online — allocated cream liqueur built on a genuine Irish whiskey base. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Irish cream whiskey online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Irish cream whiskey is a cream liqueur built specifically on an Irish whiskey base, blended with fresh dairy cream, sugar, and flavoring, and stabilized so the cream won\'t curdle against the alcohol. It\'s shelved here as part of the whiskey range because the spirit underneath — not the cream — is what defines it.',
+      faqs: [
+        { question: 'Is Irish cream whiskey the same as a regular cream liqueur?', answer: 'The production method is the same — cream, sugar, and flavoring blended with a spirit base — but Irish cream whiskey specifically uses Irish whiskey as that base, whereas cream liqueurs generally can be built on other spirits too. The whiskey base is what gives it its character and its place in the Irish whiskey category.' },
+      ],
+    },
+  },
+  // ARTISANAL GIN (continued)
+  {
+    categorySlug: 'artisanal-gin',
+    hubSlug: 'botanical-gin',
+    subcategoryName: 'Botanical Gin',
+    name: 'Botanical Gin',
+    seo: {
+      titleTag: 'Botanical Gin — Allocated',
+      h1: 'Botanical Gin — Buy Allocated Contemporary Gin Online',
+      metaDescription: 'Buy botanical gin online — allocated contemporary gin built on an adventurous, wide-ranging botanical palette beyond classic juniper. Free on $300+.',
+      transactionalCTA: 'Buy botanical gin online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Botanical gin is the modern, contemporary style built on a wider and more adventurous botanical palette than classic London Dry — often dialing back juniper\'s dominance in favor of florals, fruit, and unusual local ingredients. It\'s the category responsible for gin\'s recent resurgence among drinkers who found traditional styles too piney.',
+      faqs: [
+        { question: 'How is botanical gin different from London Dry gin?', answer: 'London Dry is defined by a strict production method and a juniper-forward flavor profile. Botanical gin is a looser, more contemporary style that widens the botanical mix — often reducing juniper\'s dominance in favor of florals, citrus, and unusual regional ingredients — without following London Dry\'s specific legal production rules.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'artisanal-gin',
+    hubSlug: 'craft-gin',
+    subcategoryName: 'Craft Gin',
+    name: 'Craft Gin',
+    seo: {
+      titleTag: 'Craft Gin — Allocated',
+      h1: 'Craft Gin — Buy Allocated Small-Batch Gin Online',
+      metaDescription: 'Buy craft gin online — allocated small-batch gin from independent distillers with distinctive local botanicals. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy craft gin online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Craft gin comes from smaller, independent distillers who emphasize distinctive, often locally sourced botanicals and hands-on production over the scale of major gin houses. The result is more experimentation and regional character than the more standardized profiles typical of large commercial gin brands.',
+      faqs: [
+        { question: 'What makes a gin "craft" instead of just another brand?', answer: 'Craft gin generally comes from a smaller, independent distillery that emphasizes distinctive, often locally sourced botanicals and hands-on production methods, rather than the scale and standardization of major gin houses. It tends to prioritize a distinctive regional character over a widely recognizable "safe" profile.' },
+      ],
+    },
+  },
+  // BOURBON (continued)
+  {
+    categorySlug: 'bourbon-whiskey',
+    hubSlug: 'premium-bourbon',
+    subcategoryName: 'Premium Bourbon',
+    name: 'Premium Bourbon',
+    seo: {
+      titleTag: 'Premium Bourbon — Allocated',
+      h1: 'Premium Bourbon — Buy Allocated Rare Bourbon Online',
+      metaDescription: 'Buy premium bourbon online — allocated extra-aged and highly sought-after bourbon releases. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy premium bourbon online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Premium bourbon covers the category\'s most sought-after tier — extra-aged, higher-proof, or extremely limited releases that command significant demand well beyond the everyday bourbon shelf. Scarcity, allocation, and secondary-market attention are as much a part of the premium bourbon story as the whiskey itself.',
+      faqs: [
+        { question: 'What separates premium bourbon from standard bourbon?', answer: 'Premium bourbon is typically distinguished by extended barrel aging, higher proof (including barrel-proof or cask-strength bottlings), and genuine scarcity — often released in limited annual batches. The intense demand this creates is part of why premium bourbon commands such attention beyond everyday releases.' },
+      ],
+    },
+  },
 ];
