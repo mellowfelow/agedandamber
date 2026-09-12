@@ -175,22 +175,19 @@ in place — shipped in Batch 1 (`subcategoryRoutes` prop on `ShopView`, real `<
 | 5 | Fine Wine | All 17: Red (6), White (6), Rosé (18), Cabernet Sauvignon (15), Pinot Noir (8), Chardonnay (7), Sauvignon Blanc (8), Malbec (5), Riesling (7), Zinfandel (7), Pinot Grigio (7), Moscato (7), Merlot (4), Organic & Natural Wine (26), Port (13), Sherry (6), Icewine & Dessert Wine (8) — full category, done in one pass | ✅ `4638b76` |
 | 6 | Aged & Dark Rum + Bar Essentials | Dark (9)/Aged (23)/Spiced (11)/White (6) rum + Bitters (5)/Vermouth (6)/Mixers & Syrups (19)/Cocktail Mixes (8)/Garnishes (9)/Glassware & Barware (5) — both full categories | ✅ `784aa6f` |
 | 7 | Remaining Whiskey/Gin/Bourbon gaps | Rye (32)/Canadian (13)/Tennessee (12)/Taiwanese (1) other-whiskey + Blended (15)/Single Malt (13)/Premium (6) Japanese + Highland (10)/Aged&Premium (12) Scotch + Blended (16)/Premium (6)/Irish Cream (5) Irish + Botanical (13)/Craft (8) Gin + Premium Bourbon (9) — completes 6 categories | ✅ `7892974` |
+| 8 | All 5 Non-Alcoholic categories | NA Wine (Red 10/White 9/Rosé 6), NA Champagne (Sparkling Wine 11/Sparkling Rosé 9/Grape Juice 4), NA Spirits (Whiskey/Gin/Tequila Alt + Botanical Spirit), NA Beer & Cider (Beer 22/Cider 1), NA RTD (Cocktails 4/Spritz 8/Canned 11) — completes 5 categories | ✅ `37661bd` |
 
-**Running total: 87/103 subcategories now have a dedicated page** (18 pre-existing + 69 added across
-batches 1–7 — 84% done). Every hub verified live before merging: 200 status, ItemList product count
-matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac and Taiwanese
-Whisky correctly held back at 1 product each).
+**PROJECT COMPLETE (practically): 102/103 subcategories now have a dedicated page** (18 pre-existing
++ 84 added across batches 1–8 — 99%). Every hub verified live before merging: 200 status, ItemList
+product count matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac,
+Taiwanese Whisky, and Non-Alcoholic Cider correctly held back at 1 product each).
 
-**Fully-covered categories:** Beer, Champagne & Sparkling, RTD & Liqueurs, Craft Vodka, Cognac &
-Brandy, Fine Wine, Aged & Dark Rum, Bar Essentials, Bourbon, Scotch, Irish Whiskey, Japanese Whisky,
-Other Whiskey, Artisanal Gin, Tequila & Mezcal (pre-existing) — 15 of 21 categories.
+**Every category in the catalog is fully covered** except Cider, which has only one subcategory
+(Hard Cider, 30 products) — a dedicated `/shop/cider/hard-cider/` hub would be near-duplicate content
+of the category page itself (`/shop/cider/`), which already targets the same term. Left as a
+deliberate judgment call rather than built reflexively; revisit if the category ever gains a second
+subcategory (e.g. a specialty/craft cider tier) that would make the split meaningful.
 
-**Remaining:** Cider (Hard Cider 30 — the only subcat in its category, so a dedicated hub would be
-near-identical to the category page itself; may not be worth building) and the 5 NA-* categories —
-Non-Alcoholic Wine (Red 10, White 9, Rosé 6), Non-Alcoholic Champagne & Sparkling (Sparkling Wine 11,
-Sparkling Rosé 9, Sparkling Grape Juice 4), Non-Alcoholic Spirits (Tequila Alt 9, Whiskey Alt 6, Gin
-Alt 5, Botanical Spirit 5), Non-Alcoholic Beer & Cider (Beer 22, Cider 1), Non-Alcoholic RTD Cocktails
-(Canned Cocktails 11, Spritz 8, Cocktails 4) — 15 subcats, lower commercial priority than the alcohol
-lines but real search terms exist ("non alcoholic beer" etc.) and completes the project.
-
-Next batch: the 5 NA-* categories — the last stretch to 100% coverage.
+**Filter-to-page linking** (shipped batch 1, `ShopView`'s `subcategoryRoutes` prop) now covers all 102
+hubs sitewide — every sidebar subcategory button with a matching page is a real `<a href>`, not a
+client-side filter.
