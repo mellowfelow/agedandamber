@@ -172,17 +172,19 @@ in place — shipped in Batch 1 (`subcategoryRoutes` prop on `ShopView`, real `<
 | 2 | Champagne & Sparkling | Champagne (80), Prosecco (24), Cava (7), Sparkling Wine (12), Sparkling Rosé (10) — full category | ✅ `a4cdb60` |
 | 3 | RTD & Liqueurs | Craft Cocktails (53), Cream (7), Aperitifs (3), Amaro & Digestifs (6), Coffee (5), Fruit (7), Herbal (4), Orange (4), Cordial (4) — full category, all 9 subcats | ✅ `1c1bc73` |
 | 4 | Craft Vodka + Cognac & Brandy | Plain (9)/Premium (16)/Flavored (40)/Craft (11) vodka + VS (3)/VSOP (18)/XO (14)/XXO (1)/Rare Brandy (21) cognac — both full categories | ✅ `68fa0c1` |
+| 5 | Fine Wine | All 17: Red (6), White (6), Rosé (18), Cabernet Sauvignon (15), Pinot Noir (8), Chardonnay (7), Sauvignon Blanc (8), Malbec (5), Riesling (7), Zinfandel (7), Pinot Grigio (7), Moscato (7), Merlot (4), Organic & Natural Wine (26), Port (13), Sherry (6), Icewine & Dessert Wine (8) — full category, done in one pass | ✅ `4638b76` |
 
-**Running total: 45/103 subcategories now have a dedicated page** (18 pre-existing + 27 added across
-batches 1–4). Every hub verified live: 200 status, ItemList product count matches the catalog exactly,
-included in the sitemap once ≥3 products (XXO Cognac correctly held back at 1 product).
+**Running total: 62/103 subcategories now have a dedicated page** (18 pre-existing + 44 added across
+batches 1–5 — just over 60% done). Every hub verified live before merging: 200 status, ItemList
+product count matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac
+correctly held back at 1 product).
+
+**Fully-covered categories so far:** Beer, Champagne & Sparkling, RTD & Liqueurs, Craft Vodka,
+Cognac & Brandy, Fine Wine, Tequila & Mezcal (pre-existing).
 
 **Remaining, by category** (product counts from the live catalog; categories with an existing partial
-build are marked): Fine Wine (17 subcats — Organic & Natural Wine 26, Rosé 18, Cabernet 15, Port 13,
-Pinot Noir 8, Sauvignon Blanc 8, Icewine & Dessert Wine 8, Zinfandel 7, Moscato 7, Chardonnay 7, Pinot
-Grigio 7, Riesling 7, Red Wine 6, White Wine 6, Sherry 6, Malbec 5, Merlot 4 — 0/17, biggest remaining
-category), Other Whiskey (Rye 32, Canadian 13, Tennessee 12, Taiwanese 1 — 2/6 done: American Single
-Malt, Flavored Whiskey), Japanese Whisky (Blended 15, Single Malt 13, Premium 6 — 0/3), Scotch
+build are marked): Other Whiskey (Rye 32, Canadian 13, Tennessee 12, Taiwanese 1 — 2/6 done: American
+Single Malt, Flavored Whiskey), Japanese Whisky (Blended 15, Single Malt 13, Premium 6 — 0/3), Scotch
 (Highland 10, Aged and Premium 12 — 4/6 done), Irish (Blended 16, Premium 6, Irish Cream 5 — 2/5
 done), Artisanal Gin (Botanical 13, Craft 8 — 1/3 done), Bourbon (Premium Bourbon 9 — 4/5 done), Aged
 Dark Rum (Aged 23, Spiced 11, Dark 9, White 6 — 0/4), Bar Essentials (Mixers 19, Garnishes 9, Cocktail
@@ -190,5 +192,4 @@ Mixes 8, Vermouth 6, Bitters 5, Glassware 5 — 0/6), Cider (Hard Cider 30 — o
 may not be worth a separate hub from the category page itself), all 5 NA-* categories (0/~15 total,
 lower priority — non-alcoholic ships with no age gate but is a smaller commercial signal).
 
-Next batch: Fine Wine (17 subcategories — the largest remaining single category; will likely split
-across 2 batches given the size).
+Next batch: Aged Dark Rum (0/4) + Bar Essentials (0/6) — two more small, clean, full-category sweeps.
