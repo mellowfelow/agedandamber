@@ -361,4 +361,85 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // CHAMPAGNE & SPARKLING
+  {
+    categorySlug: 'champagne-sparkling',
+    hubSlug: 'champagne',
+    subcategoryName: 'Champagne',
+    name: 'Champagne',
+    seo: {
+      titleTag: 'Champagne — Allocated',
+      h1: 'Champagne — Buy Allocated Grower & Prestige Cuvée Online',
+      metaDescription: 'Buy Champagne online — allocated grower Champagne, vintage, and prestige cuvée from the only region legally permitted to use the name. Free on $300+.',
+      transactionalCTA: 'Buy Champagne online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Champagne is sparkling wine made exclusively in the Champagne region of France, using the traditional method of secondary fermentation inside the bottle. Only wine produced there, from permitted grapes — mostly Chardonnay, Pinot Noir, and Pinot Meunier — under strict regional rules may legally carry the name; sparkling wine made anywhere else, however similar the method, is Prosecco, Cava, or simply sparkling wine.',
+      faqs: [
+        { question: 'Does Champagne go bad?', answer: 'Unopened Champagne can age for years, especially vintage bottles, though most non-vintage Champagne is best within three to four years of release. Once opened, it loses its fizz quickly — even refrigerated with a proper stopper, expect it to stay drinkable for only one to three days.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'champagne-sparkling',
+    hubSlug: 'prosecco',
+    subcategoryName: 'Prosecco',
+    name: 'Prosecco',
+    seo: {
+      titleTag: 'Prosecco — Allocated Italian',
+      h1: 'Prosecco — Buy Allocated Italian Sparkling Wine Online',
+      metaDescription: 'Buy Prosecco online — allocated Italian sparkling wine from Veneto, made in the tank method for a lighter, fruitier style than Champagne. Free on $300+.',
+      transactionalCTA: 'Buy Prosecco online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Prosecco is Italian sparkling wine made primarily from the Glera grape in the Veneto and Friuli regions, most notably around Valdobbiadene and Conegliano. Unlike Champagne, Prosecco is typically made using the tank (Charmat) method — secondary fermentation happens in large pressurized tanks rather than individual bottles — producing a lighter, fruitier, more immediately approachable style, usually at a lower price point.',
+      faqs: [
+        { question: 'What is the difference between Prosecco and Champagne?', answer: 'Champagne is made in France using the traditional method, with secondary fermentation inside each bottle, producing a yeasty, complex character. Prosecco is made in Italy using the tank method, where secondary fermentation happens in large pressurized tanks, producing a lighter, fruitier style that is typically less expensive.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'champagne-sparkling',
+    hubSlug: 'cava',
+    subcategoryName: 'Cava',
+    name: 'Cava',
+    seo: {
+      titleTag: 'Cava — Allocated Spanish Sparkling',
+      h1: 'Cava — Buy Allocated Spanish Sparkling Wine Online',
+      metaDescription: 'Buy Cava online — allocated Spanish sparkling wine made in the traditional method from native Catalan grapes. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy Cava online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Cava is Spanish sparkling wine, produced mainly in Catalonia\'s Penedès region using the same traditional method as Champagne — secondary fermentation inside the bottle — but from native Spanish grapes, chiefly Macabeo, Xarel·lo, and Parellada. The shared production method gives Cava genuine bottle-aged complexity, usually at a significantly lower price than Champagne.',
+      faqs: [
+        { question: 'What is Cava?', answer: 'Cava is Spanish sparkling wine made using the traditional method — the same secondary-in-bottle fermentation process used for Champagne — but from native Spanish grapes such as Macabeo, Xarel·lo, and Parellada, mostly in the Penedès region of Catalonia.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'champagne-sparkling',
+    hubSlug: 'sparkling-wine',
+    subcategoryName: 'Sparkling Wine',
+    name: 'Sparkling Wine',
+    seo: {
+      titleTag: 'Sparkling Wine — Allocated',
+      h1: 'Sparkling Wine — Buy Allocated Domestic & International Bubbles Online',
+      metaDescription: 'Buy sparkling wine online — allocated American and international sparkling wine outside the Champagne, Prosecco, and Cava designations. Free on $300+.',
+      transactionalCTA: 'Buy sparkling wine online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Sparkling wine is the broad category covering every carbonated wine style outside the legally protected Champagne, Prosecco, and Cava designations — including American sparkling wine (often made in the traditional method by Champagne-house offshoots), German Sekt, and other regional styles. Production methods vary from traditional bottle fermentation to the simpler tank and injection methods.',
+      faqs: [
+        { question: 'Is sparkling wine the same as Champagne?', answer: 'No — Champagne is a legally protected name for sparkling wine made only in the Champagne region of France. "Sparkling wine" is the broader category that includes Champagne along with Prosecco, Cava, and every other carbonated wine made anywhere in the world, under any production method.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'champagne-sparkling',
+    hubSlug: 'sparkling-rose',
+    subcategoryName: 'Sparkling Rosé',
+    name: 'Sparkling Rosé',
+    seo: {
+      titleTag: 'Sparkling Rosé — Allocated',
+      h1: 'Sparkling Rosé — Buy Allocated Pink Sparkling Wine Online',
+      metaDescription: 'Buy sparkling rosé online — allocated pink sparkling wine made by brief skin contact or blending, from Champagne rosé to sparkling rosé worldwide.',
+      transactionalCTA: 'Buy sparkling rosé online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Sparkling rosé gets its color either from brief skin contact with red grapes during fermentation (the saignée method) or by blending a small amount of still red wine into a white sparkling base — a technique actually permitted in Champagne production, unusual for red-in-white blending. The result ranges from pale salmon to vivid pink, with fruit character typically brighter and redder than a white sparkling wine.',
+      faqs: [
+        { question: 'How is sparkling rosé made?', answer: 'Sparkling rosé gets its pink color either from brief skin contact with red grapes during fermentation (the saignée method) or by blending a small amount of still red wine into a white sparkling wine base — the latter is actually the standard method for rosé Champagne.' },
+      ],
+    },
+  },
 ];
