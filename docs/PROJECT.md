@@ -182,12 +182,36 @@ in place — shipped in Batch 1 (`subcategoryRoutes` prop on `ShopView`, real `<
 product count matches the catalog exactly, included in the sitemap once ≥3 products (XXO Cognac,
 Taiwanese Whisky, and Non-Alcoholic Cider correctly held back at 1 product each).
 
-**Every category in the catalog is fully covered** except Cider, which has only one subcategory
-(Hard Cider, 30 products) — a dedicated `/shop/cider/hard-cider/` hub would be near-duplicate content
-of the category page itself (`/shop/cider/`), which already targets the same term. Left as a
-deliberate judgment call rather than built reflexively; revisit if the category ever gains a second
-subcategory (e.g. a specialty/craft cider tier) that would make the split meaningful.
+**Hard Cider — confirmed as a deliberate skip, not left over (12 Sep 2026).** Checked the actual data:
+Cider has exactly one subcategory (Hard Cider) and it's 100% of the category's 30 products — a
+`/shop/cider/hard-cider/` hub would render the identical 30-product ItemList as `/shop/cider/` itself,
+under near-identical title/H1/meta, since there's no second subcategory to differentiate against. That
+is genuine duplicate content, not a style choice — building it would create the exact ranking risk
+the founder asked to avoid, so it was not built. Revisit only if the catalog ever adds a second real cider
+subcategory (e.g. a flavored/specialty tier) that gives the split something to differentiate.
 
 **Filter-to-page linking** (shipped batch 1, `ShopView`'s `subcategoryRoutes` prop) now covers all 102
 hubs sitewide — every sidebar subcategory button with a matching page is a real `<a href>`, not a
 client-side filter.
+
+## 14. Post-project site-wide QA sweep (12 Sep 2026)
+Full verification pass across the whole site after the 8-batch hub project, specifically to check
+nothing shipped this week could hurt ranking:
+- **Duplicate-content audit** (real TS-transpiled parse, not regex): 0 duplicate titleTag/H1/
+  metaDescription/definitionHook across all 102 subcategory hubs; 0 duplicates within the 493 brand
+  hubs; 0 title clashes between subcategory and brand hubs in the same category.
+- **Route collision audit:** 0 cases of a hub slug colliding with another hub's route, and 0 cases of
+  a hub slug shadowing an actual product slug in the same category (would have made a product
+  permanently unreachable at its own URL).
+- **Full live crawl of all 102 subcategory hubs:** 200 status, valid `<title>`, correct canonical on
+  every one.
+- **JSON-LD validation** (real `JSON.parse`, not visual): 25-page sample across every batch, all
+  `ItemList` + `FAQPage` + `BreadcrumbList` blocks parse cleanly.
+- **Full crawl of all 21 category pages + core site pages** (home, shop, about, faq, contact,
+  wholesale, 4 legal pages, blog, sitemap.xml, robots.txt, llms.txt): all 200.
+- **21-page spread sample of the 493 brand hubs:** all 200.
+- **Browser console check** on a live hub page: no hydration warnings; the only console error is a
+  pre-existing, unrelated Tawk.to widget asset blocked by CSP (cosmetic, not from this project).
+- Sitemap re-verified: 1,884 URLs, 0 unescaped XML characters, `<url>`/`</url>` balanced.
+- **Resubmitted to both GSC and Bing WMT** (12 Sep) since ~81 net new URLs were added since the last
+  submission on 11 Sep — GSC accepted, Bing shows "Processing," 0 errors on either.
