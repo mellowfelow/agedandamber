@@ -63,18 +63,22 @@ _Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 202
 
 ## 6. Compliance
 - Age gate: 21+, CSS-first pre-hydration, content stays in DOM. GDPR banner present.
-- Required framings: "Adult 21+ signature required at delivery", "Curated & sourced from licensed
-  distilleries and distributors".
+- Required framings: "Adult 21+ signature required at delivery", "Curated & sourced through licensed
+  distributors and wholesale channels".
 - Prohibited claims: guaranteed health benefits, cures/ailment claims.
 - No banned-term list configured. Rule 5 (never fabricate brand facts) is the active guardrail.
 
 ## 7. Brand authority facts (truthful only — the whole list)
 - Founded 2018 in Napa Valley as a DTC curator of allocated / rare-release bottles.
-- 2020: built direct sourcing relationships with distilleries (Kentucky, Scotland, and beyond).
+- 2020: grew the catalogue through licensed distributor and wholesale partnerships (Kentucky,
+  Scotland, and beyond). **No distillery-direct relationships exist** (confirmed by the founder
+  10 Sep 2026) — sourcing is through normal wholesale/distributor channels. See M2 (§11) — every
+  "direct from the distillery" claim was removed sitewide 12 Sep 2026.
 - 2022: expanded compliant DTC shipping to states permitting it.
 - 2024: launched the "Rare Vault Reserve" program for private collectors.
-- Differentiators: direct sourcing relationships; every bottle checked for authenticity and stored
-  climate-controlled; 21+ temperature-controlled express delivery; 10% crypto discount.
+- Differentiators: a hand-curated catalogue of allocated/hard-to-find bottles; every bottle checked
+  for authenticity and stored climate-controlled; 21+ temperature-controlled express delivery; 10%
+  crypto discount.
 - **No awards, no named individuals, no partnerships, no press, no revenue figures have been
   supplied. Do not invent any.** `BRAND.sameAs` is empty (2026-09-10) — no social accounts exist yet;
   add the URLs back only once the accounts are real and controlled by the business.
@@ -122,8 +126,11 @@ socials → `BRAND.sameAs`, citations, Merchant Center, Wikidata) → content au
   for now"). GSC manual actions: none as of 9 Sep.
 - Get a Napa **707** phone number to replace the +1 (562) Long Beach number before it feeds any more
   listings/schema.
-- M2 on-site copy pass: soften "direct from the distillery / direct allocations" (no such
-  relationships exist) — waiting on the founder to decide how far.
+- ~~M2 on-site copy pass~~ **done 12 Sep** (`cbf99d7`) — every "direct from the distillery" /
+  "sourced directly from distilleries" / "Direct Import" claim removed sitewide (site.ts, HomeView
+  hero carousel, AboutView narrative, 3 category/hub meta descriptions, ShopView fallback). Kept the
+  "Direct allocations shipped to every state..." phrase everywhere — that's a direct-to-consumer
+  shipping claim (accurate), not a distillery-sourcing one, so it needed no change.
 - Verify Zoho SMTP env vars are set and forms/orders actually deliver end-to-end; consider a durable
   order/inquiry store (D1 / KV / sheet webhook) so nothing is lost if email fails.
 - Counsel review of the 4 policy pages; confirm legal entity name + NAP (562 area code vs Napa).

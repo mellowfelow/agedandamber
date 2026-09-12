@@ -96,6 +96,6 @@ export const COMPLIANCE = {
   gdpr: true,
   disclaimer: 'Must be 21 years of age or older to purchase spirits. Adult signature required upon delivery. Please drink responsibly.',
   bannedTerms: [],
-  requiredFramings: ['Adult 21+ signature required at delivery', 'Curated & sourced from licensed distilleries and distributors'],
+  requiredFramings: ['Adult 21+ signature required at delivery', 'Curated & sourced through licensed distributors and wholesale channels'],
   prohibitedClaims: ['Guaranteed health benefits', 'Cures ailment'],
 };
