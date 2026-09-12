@@ -1006,4 +1006,166 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // AGED & DARK RUM
+  {
+    categorySlug: 'aged-dark-rum',
+    hubSlug: 'dark-rum',
+    subcategoryName: 'Dark Rum',
+    name: 'Dark Rum',
+    seo: {
+      titleTag: 'Dark Rum — Allocated',
+      h1: 'Dark Rum — Buy Allocated Rich, Full-Bodied Rum Online',
+      metaDescription: 'Buy dark rum online — allocated dark rum with toffee, caramel, and baking spice character from Jamaica, Barbados, and beyond. Free on $300+.',
+      transactionalCTA: 'Buy dark rum online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Dark rum gets its deep color and richer flavor from extended barrel aging, caramel coloring, or molasses-forward production — often a combination of all three. It typically shows notes of toffee, dark caramel, and baking spice, and while most dark rum is aged, color alone isn\'t proof of age since some producers add caramel coloring to a younger spirit.',
+      faqs: [
+        { question: 'Is dark rum always aged rum?', answer: 'Not necessarily — while most dark rum does get its color from oak aging, some producers add caramel coloring to a younger spirit to achieve a darker appearance. Checking for an age statement is the only reliable way to know how long a dark rum actually spent in barrel.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'aged-dark-rum',
+    hubSlug: 'aged-rum',
+    subcategoryName: 'Aged Rum',
+    name: 'Aged Rum',
+    seo: {
+      titleTag: 'Aged Rum — Allocated',
+      h1: 'Aged Rum — Buy Allocated Barrel-Matured Rum Online',
+      metaDescription: 'Buy aged rum online — allocated barrel-matured rum with vanilla, dried fruit, and baking spice character. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy aged rum online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Aged rum spends time maturing in oak barrels, developing color, smoothness, and flavors like vanilla, dried fruit, and baking spice that unaged rum doesn\'t have. Aging rules and age-statement practices vary widely by country — some regions use a solera blending system, which can make the printed age reflect only part of the blend — so reading the label carefully matters more with rum than with most spirits.',
+      faqs: [
+        { question: 'Why do rum age statements vary so much between countries?', answer: 'Unlike Scotch or bourbon, there is no single international standard for how rum age is calculated or labeled. Some countries require the age statement to reflect the youngest rum in the blend, while others allow a solera system, where the stated age can represent only a portion of an ever-refreshed blend — so the same age statement doesn\'t always mean the same thing bottle to bottle.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'aged-dark-rum',
+    hubSlug: 'spiced-rum',
+    subcategoryName: 'Spiced Rum',
+    name: 'Spiced Rum',
+    seo: {
+      titleTag: 'Spiced Rum — Allocated',
+      h1: 'Spiced Rum — Buy Allocated Spice-Infused Rum Online',
+      metaDescription: 'Buy spiced rum online — allocated rum infused with cinnamon, vanilla, and clove for easy sipping and mixing. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy spiced rum online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Spiced rum is infused with spices such as cinnamon, vanilla, clove, and nutmeg, sometimes alongside caramel coloring, layered over an aged or unaged rum base. It\'s built for easy sipping and mixing, with the spice blend doing much of the flavor work rather than barrel aging alone.',
+      faqs: [
+        { question: 'Is spiced rum the same as aged rum with spices added?', answer: 'Not exactly — spiced rum can start from either an aged or unaged rum base, with spices and often caramel coloring added afterward specifically to shape its flavor. An aged rum\'s character comes primarily from time in oak, while spiced rum is deliberately flavored on top of whatever base it starts from.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'aged-dark-rum',
+    hubSlug: 'white-rum',
+    subcategoryName: 'White Rum',
+    name: 'White Rum',
+    seo: {
+      titleTag: 'White Rum — Allocated',
+      h1: 'White Rum — Buy Allocated Light & Silver Rum Online',
+      metaDescription: 'Buy white rum online — allocated light, clean rum ideal for Mojitos, Daiquiris, and other classic rum cocktails. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy white rum online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'White rum (also called light or silver rum) is unaged or briefly aged, then typically charcoal-filtered to strip out any color it picked up, resulting in a clean, light-bodied spirit. Its neutral character makes it the classic base for Mojitos, Daiquiris, and other rum cocktails where the mixer, not the rum, is meant to lead.',
+      faqs: [
+        { question: 'Is white rum unaged?', answer: 'Most white rum is either unaged or aged only briefly, then charcoal-filtered to remove any color picked up from the barrel — which is why it stays clear even when some aging did occur. That clean, neutral profile is exactly what makes it work so well in cocktails.' },
+      ],
+    },
+  },
+  // BAR ESSENTIALS
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'bitters',
+    subcategoryName: 'Bitters',
+    name: 'Bitters',
+    seo: {
+      titleTag: 'Bitters — Allocated',
+      h1: 'Bitters — Buy Allocated Cocktail Bitters Online',
+      metaDescription: 'Buy bitters online — allocated aromatic and specialty cocktail bitters for a properly built home bar. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy bitters online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Bitters are a highly concentrated, alcohol-based flavoring made by infusing spirits with bittering agents, herbs, roots, and spices — used in drops, not shots, to season a cocktail the way a dash of salt seasons food. Angostura is the best-known name, but the modern bitters revival has produced dozens of flavor profiles beyond the classic aromatic style.',
+      faqs: [
+        { question: 'What are bitters?', answer: 'Bitters are a concentrated, alcohol-based flavoring made by infusing a spirit with bittering botanicals, herbs, and spices. They\'re used in tiny amounts — a few dashes — to add depth and balance to a cocktail, functioning more like a seasoning than an ingredient you\'d drink on its own.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'vermouth',
+    subcategoryName: 'Vermouth',
+    name: 'Vermouth',
+    seo: {
+      titleTag: 'Vermouth — Allocated',
+      h1: 'Vermouth — Buy Allocated Sweet & Dry Vermouth Online',
+      metaDescription: 'Buy vermouth online — allocated sweet and dry aromatized fortified wine for Martinis, Manhattans, and Negronis. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy vermouth online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Vermouth is an aromatized, fortified wine flavored with a proprietary blend of botanicals, then fortified with additional spirit. Dry vermouth is the pale, herbal backbone of a classic Martini, while sweet vermouth brings the rounder, slightly bitter sweetness essential to a Manhattan or Negroni.',
+      faqs: [
+        { question: 'What is the difference between sweet and dry vermouth?', answer: 'Dry vermouth is pale, herbal, and barely sweet — the classic Martini ingredient. Sweet vermouth (sometimes called red or Italian vermouth) is darker, rounder, and noticeably sweeter, used in drinks like the Manhattan and Negroni. Both are aromatized, fortified wines, just made to very different flavor profiles.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'mixers-syrups',
+    subcategoryName: 'Mixers & Syrups',
+    name: 'Mixers & Syrups',
+    seo: {
+      titleTag: 'Mixers & Syrups — Allocated',
+      h1: 'Mixers & Syrups — Buy Allocated Cocktail Mixers Online',
+      metaDescription: 'Buy cocktail mixers and syrups online — allocated tonic, soda, juice, and specialty syrups for building drinks from scratch. Free on $300+.',
+      transactionalCTA: 'Buy mixers and syrups online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Mixers and syrups are the non-alcoholic building blocks of a cocktail — tonic, soda, and juice for volume and dilution, and simple, flavored, or specialty syrups for sweetness and balance. A quality mixer matters as much as the spirit it\'s paired with, since it makes up a large share of what actually ends up in the glass.',
+      faqs: [
+        { question: 'Why does the quality of a mixer matter if it\'s not the main ingredient?', answer: 'A mixer often makes up half or more of the liquid in a cocktail, so a low-quality tonic, soda, or syrup can flatten or clash with even a great spirit. Bartenders treat mixers as a genuine ingredient to be chosen deliberately, not an afterthought poured on top.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'cocktail-mixes',
+    subcategoryName: 'Cocktail Mixes',
+    name: 'Cocktail Mixes',
+    seo: {
+      titleTag: 'Cocktail Mixes — Allocated',
+      h1: 'Cocktail Mixes — Buy Allocated Ready-to-Use Drink Mixes Online',
+      metaDescription: 'Buy cocktail mixes online — allocated margarita, bloody mary, and piña colada mixes for a consistent drink every time. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy cocktail mixes online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Cocktail mixes are pre-formulated blends — margarita mix, bloody mary mix, piña colada mix, and similar — designed to recreate a specific classic drink by simply adding spirit. They trade some of the control of building a cocktail from scratch for genuine convenience and consistency.',
+      faqs: [
+        { question: 'Are cocktail mixes as good as making a drink from scratch?', answer: 'Quality varies widely — a well-made cocktail mix from a reputable producer can come close to a fresh-made version, while cheaper mixes often lean on excess sugar and artificial flavoring to compensate. The convenience trade-off is real, but it\'s worth choosing a mix the same way you\'d choose any other ingredient.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'garnishes',
+    subcategoryName: 'Garnishes',
+    name: 'Garnishes',
+    seo: {
+      titleTag: 'Cocktail Garnishes — Allocated',
+      h1: 'Cocktail Garnishes — Buy Allocated Bar Garnishes Online',
+      metaDescription: 'Buy cocktail garnishes online — allocated cherries, olives, and citrus garnishes to finish a drink properly. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy cocktail garnishes online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Cocktail garnishes range from purely decorative — an orange peel twist, a cherry, a cocktail umbrella — to genuinely functional, where citrus oils expressed from a peel or a fresh herb sprig actually change the drink\'s aroma and first impression. A good garnish is chosen to complement the drink, not just decorate the glass.',
+      faqs: [
+        { question: 'Do cocktail garnishes actually affect the taste of a drink?', answer: 'Some do meaningfully — expressing a citrus peel over a drink releases aromatic oils that change what you smell (and therefore taste) with the first sip, and a fresh herb sprig like mint works the same way. Purely decorative garnishes like a cherry or umbrella mostly affect presentation rather than flavor.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'bar-essentials',
+    hubSlug: 'glassware-barware',
+    subcategoryName: 'Glassware & Barware',
+    name: 'Glassware & Barware',
+    seo: {
+      titleTag: 'Glassware & Barware — Allocated',
+      h1: 'Glassware & Barware — Buy Allocated Bar Tools Online',
+      metaDescription: 'Buy glassware and barware online — allocated coupes, rocks glasses, shakers, and bar tools for proper cocktail service. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy glassware and barware online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Glassware and barware are the physical tools of proper cocktail service — the coupe, rocks glass, and highball each shaped to suit a specific style of drink, alongside shakers, jiggers, strainers, and bar spoons used to build the cocktail itself. The right glass and tools don\'t just look the part; they affect dilution, temperature, and aroma.',
+      faqs: [
+        { question: 'Does the type of glass actually matter for a cocktail?', answer: 'Yes — glass shape affects how quickly a drink warms, how aroma concentrates at the rim, and even how much ice it holds, all of which change how the drink tastes and how quickly it dilutes. A Martini in a coupe and the same drink in a rocks glass genuinely drink differently.' },
+      ],
+    },
+  },
 ];
