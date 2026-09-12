@@ -1,6 +1,6 @@
 # PROJECT.md — Aged & Amber
 
-_Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 2026-09-10._
+_Full project record. Rules-only summary lives in `/CLAUDE.md`. Last updated 2026-09-11._
 
 ## 1. Identity
 - **Name:** Aged & Amber (canonical spelling — ampersand, never "Aged And Amber")
@@ -131,3 +131,58 @@ socials → `BRAND.sameAs`, citations, Merchant Center, Wikidata) → content au
 - Article-specific blog images (258/268 posts still share ~21 category stock photos).
 - Create the social accounts (Instagram / Facebook / LinkedIn / etc.), then add the URLs to `BRAND.sameAs` — removed from schema 2026-09-10 because none existed.
 - Investigate Bing's 4,300 discovered URLs vs 2,155 actual (possible www/non-www duplication).
+
+## 12. Sitemap XML-escaping fix (11 Sep 2026)
+GSC flagged "Parsing error" on resubmit (0 pages discovered). Root cause: Next's built-in sitemap
+serializer does zero XML-escaping. One product (`orchard-reserve-non-alcoholic-apple-cider`) has a
+raw external Unsplash image; `sitemap.ts` blindly prepended the domain to every product image,
+producing `agedandamber.comhttps://images.unsplash.com/...`, and that URL's `&`-bearing query string
+was invalid XML regardless. Fixed in `app/sitemap.ts`: `absoluteImage()` only prefixes genuinely
+relative paths, `xmlEscape()` escapes every url/image. Crosscheck check #33 guards it. Verified live
++ resubmitted clean on both GSC (Success, 1,803 pages) and Bing.
+
+## 13. Subcategory hub pages — ongoing multi-batch project (started 11 Sep 2026)
+Founder observation: most subcategories (Kentucky Bourbon, Champagne, Lager, etc.) are sidebar
+filter-only with no dedicated URL, metadata, or sitemap entry — real search demand going uncaptured.
+Confirmed: **103 distinct subcategory values across the catalog, only 18 had a hub page** before this
+project (see `src/data/subcategoryHubs.ts` for the full current list — spans bourbon, scotch, irish,
+tequila/mezcal (all 5), other-whiskey, artisanal-gin). Infrastructure already existed
+(`SUBCATEGORY_HUBS` + `hubIsIndexable` + the "Shop by style" row) — the gap was pure content.
+
+**Founder's decision:** build all ~85 remaining, batch by batch (not all at once). Also: sidebar
+subcategory filter buttons should link to the dedicated hub page when one exists, not just filter
+in place — shipped in Batch 1 (`subcategoryRoutes` prop on `ShopView`, real `<a href>` instead of
+`onClick`, falls back to plain filtering when no hub exists yet).
+
+**Source material for content** (founder's local keyword archive,
+`C:\Users\rtutc\Desktop\Aged And Amber\`):
+- `keyword docs\MASTER_SEO_IMPLEMENTATION.md` — the original spirits keyword research (whiskey,
+  tequila, rum, gin, cognac, vodka) with real Semrush volume/KD per page. Section 14 of that doc
+  explicitly flags Fine Wine, Champagne, NA-Wine, NA-Champagne, RTD/Liqueurs, Beer, Cider as
+  "not yet covered" there.
+- `keyword exports\*.csv` (179 files) — raw Semrush Keyword Magic exports for the wine/beer/cider/
+  liqueur side, generated 25–27 Aug 2026 (filename = topic, e.g. `champagne_all-keywords_us_...csv`).
+- The account's live Semrush MCP access is out of API units as of 11 Sep — this local archive is the
+  keyword-data source until it's topped up.
+
+**Batches shipped:**
+| Batch | Category | Hubs added | Status |
+|---|---|---|---|
+| 1 | Beer | Lager (46), IPA (32), Ale & Wheat (22), Stout & Porter (14) — full category coverage | ✅ merged `e908433` |
+
+**Remaining, by category** (product counts from the live catalog; categories with an existing partial
+build are marked): Champagne & Sparkling (Champagne 80, Prosecco 24, Sparkling Wine 12, Sparkling
+Rosé 10, Cava 7 — 0/5 done), RTD & Liqueurs (Craft Cocktails 53, Cream/Fruit/Herbal/Orange/Coffee
+Liqueurs, Amaro, Cordial, Aperitifs — 0/9), Fine Wine (17 subcats — Organic & Natural Wine 26, Rosé
+18, Cabernet 15, Port 13, + 13 more — 0/17, biggest single category), Craft Vodka (Flavored 40,
+Premium 16, Craft 11, Plain 9 — 0/4), Cognac & Brandy (Rare Brandy 21, VSOP 18, XO 14, VS 3, XXO 1 —
+0/5), Other Whiskey (Rye 32, Canadian 13, Tennessee 12, Taiwanese 1 — 2/6 done: American Single Malt,
+Flavored Whiskey), Japanese Whisky (Blended 15, Single Malt 13, Premium 6 — 0/3), Scotch (Highland
+10, Aged and Premium 12 — 4/6 done), Irish (Blended 16, Premium 6, Irish Cream 5 — 2/5 done),
+Artisanal Gin (Botanical 13, Craft 8 — 1/3 done), Bourbon (Premium Bourbon 9 — 4/5 done), Aged Dark
+Rum (Aged 23, Spiced 11, Dark 9, White 6 — 0/4), Bar Essentials (Mixers 19, Garnishes 9, Cocktail
+Mixes 8, Vermouth 6, Bitters 5, Glassware 5 — 0/6), Cider (Hard Cider 30 — only subcat in category,
+may not be worth a separate hub from the category page itself), all 5 NA-* categories (0/~15 total,
+lower priority — non-alcoholic ships with no age gate but is a smaller commercial signal).
+
+Next batch: Champagne & Sparkling (highest remaining product count, real CSV keyword data on hand).
