@@ -1,8 +1,19 @@
 import type { Metadata } from 'next';
 import { PRODUCTS, CATALOG_STATS } from '@/src/data/products';
+import { SUBCATEGORY_HUBS } from '@/src/data/subcategoryHubs';
 import { ShopView } from '@/src/views/ShopView';
 import { JsonLd } from '@/src/components/JsonLd';
 import { SITE } from '@/src/config/site';
+
+// Every subcategory with a dedicated hub page, across all categories — the
+// sidebar (rendered here too) uses this to link straight to the SEO page
+// instead of just filtering in place. Tiny (3 short strings per hub), so
+// safe to send whole rather than scoping it like styleHubs/brandHubs.
+const SUBCATEGORY_ROUTES = SUBCATEGORY_HUBS.map((h) => ({
+  categorySlug: h.categorySlug,
+  subcategoryName: h.subcategoryName,
+  hubSlug: h.hubSlug,
+}));
 
 export const metadata: Metadata = {
   title: `Buy Whiskey Online — ${PRODUCTS.length} Allocated Bottles`,
@@ -27,6 +38,7 @@ export default function ShopPage() {
         products={SEED_PRODUCTS}
         selectedCategory="all"
         catalogStats={CATALOG_STATS}
+        subcategoryRoutes={SUBCATEGORY_ROUTES}
         lazyLoadFullCatalog
       />
     </>

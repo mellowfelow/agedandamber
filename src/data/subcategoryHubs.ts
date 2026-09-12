@@ -296,4 +296,69 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // BEER
+  {
+    categorySlug: 'beer',
+    hubSlug: 'lager',
+    subcategoryName: 'Lager',
+    name: 'Lager',
+    seo: {
+      titleTag: 'Lager Beer — Allocated',
+      h1: 'Lager Beer — Buy Allocated Craft & Import Lagers Online',
+      metaDescription: 'Buy lager beer online — allocated pilsners, helles, and craft lagers with a clean, crisp, bottom-fermented profile. Free shipping on $300+.',
+      transactionalCTA: 'Buy lager online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Lager is beer fermented with bottom-fermenting yeast at cold temperatures over several weeks, then cold-conditioned ("lagered") before release. The slow, cool fermentation produces a cleaner, crisper profile than an ale, with less fruity ester character — the style behind pilsners, helles, and most of the world\'s best-selling beers.',
+      faqs: [
+        { question: 'What is the difference between lager and ale?', answer: 'Lager is fermented with bottom-fermenting yeast at cold temperatures over several weeks, producing a clean, crisp profile. Ale is fermented with top-fermenting yeast at warmer temperatures over just days, producing a fruitier, more complex flavor faster.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'beer',
+    hubSlug: 'ipa',
+    subcategoryName: 'IPA',
+    name: 'IPA',
+    seo: {
+      titleTag: 'IPA Craft Beer — Allocated',
+      h1: 'IPA — Buy Allocated India Pale Ale Craft Beer Online',
+      metaDescription: 'Buy IPA online — allocated India Pale Ale craft beer with bold hop bitterness and aroma, from West Coast to hazy styles. Free shipping on $300+.',
+      transactionalCTA: 'Buy IPA online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'IPA (India Pale Ale) is a hop-forward ale style defined by pronounced bitterness and aroma from generous hop additions. Modern IPA spans West Coast (clear, piney, bitter), New England / hazy (soft, juicy, low bitterness), and double or imperial (higher-strength) variations, and remains the best-selling craft beer style in the US.',
+      faqs: [
+        { question: 'What makes an IPA different from a regular pale ale?', answer: 'IPA uses significantly more hops than a standard pale ale, producing stronger bitterness and more pronounced hop aroma and flavor. The name traces back to extra-hopped pale ales brewed in England for the trade route to India, where the added hops helped preserve the beer.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'beer',
+    hubSlug: 'ale-wheat',
+    subcategoryName: 'Ale & Wheat',
+    name: 'Ale & Wheat',
+    seo: {
+      titleTag: 'Ale & Wheat Beer — Allocated',
+      h1: 'Ale & Wheat Beer — Buy Allocated Craft Ales Online',
+      metaDescription: 'Buy ale and wheat beer online — allocated pale ales, wheat beers, and Belgian-style ales with fruity, top-fermented character. Free on $300+.',
+      transactionalCTA: 'Buy ale and wheat beer online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Ales are fermented with top-fermenting yeast at warmer temperatures than lager, over just a few days, producing fruitier, more complex flavors faster. Wheat beers substitute a portion of the malt bill with wheat, giving styles like hefeweizen and witbier their characteristic light body, haze, and notes of banana, clove, or citrus.',
+      faqs: [
+        { question: 'What is the difference between a wheat beer and a regular ale?', answer: 'A wheat beer replaces a significant portion of the barley malt with wheat, which gives it a lighter body, hazier appearance, and often fruity or spicy yeast notes such as banana, clove, or citrus. Regular pale ales are brewed almost entirely from barley malt.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'beer',
+    hubSlug: 'stout-porter',
+    subcategoryName: 'Stout & Porter',
+    name: 'Stout & Porter',
+    seo: {
+      titleTag: 'Stout & Porter Beer — Allocated',
+      h1: 'Stout & Porter — Buy Allocated Dark Craft Beer Online',
+      metaDescription: 'Buy stout and porter beer online — allocated dark, roasted craft beers with notes of coffee, chocolate, and toasted malt. Free shipping on $300+.',
+      transactionalCTA: 'Buy stout and porter online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Stout and porter are dark ales built on heavily roasted malts, producing flavors of coffee, dark chocolate, and toasted bread. Porter developed first in 18th-century London; stout began as a stronger ("stout") version of porter and has since branched into its own family, including dry stout, milk stout, and imperial stout.',
+      faqs: [
+        { question: 'What is the difference between a stout and a porter?', answer: 'Historically, stout began as a stronger version of porter — the name comes from "stout porter." Today the line is blurrier, but porters generally use malted barley for a smoother, sweeter profile, while stouts often include roasted unmalted barley for a drier, more coffee-like bitterness.' },
+      ],
+    },
+  },
 ];
