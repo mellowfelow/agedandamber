@@ -587,4 +587,150 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
       ],
     },
   },
+  // CRAFT VODKA
+  {
+    categorySlug: 'craft-vodka',
+    hubSlug: 'plain-vodka',
+    subcategoryName: 'Plain Vodka',
+    name: 'Plain Vodka',
+    seo: {
+      titleTag: 'Plain Vodka — Allocated',
+      h1: 'Plain Vodka — Buy Allocated Unflavored Vodka Online',
+      metaDescription: 'Buy plain vodka online — allocated unflavored vodka valued for clean, neutral purity and versatility in any cocktail. Free shipping on $300+.',
+      transactionalCTA: 'Buy plain vodka online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Plain vodka is unflavored vodka, distilled and filtered purely for a clean, neutral character with no added flavoring. Its lack of distinct flavor is the point — a well-made plain vodka is prized for smoothness and versatility, working equally well in a Martini, a Moscow Mule, or sipped chilled on its own.',
+      faqs: [
+        { question: 'If vodka is supposed to be neutral, why do brands taste different?', answer: 'Even within the neutral-spirit category, differences in base ingredient (wheat, rye, potato, corn, or grape), water source, number of distillations, and filtration method all shape subtle differences in mouthfeel and finish — even though none of it is "flavor" in the added-ingredient sense.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'craft-vodka',
+    hubSlug: 'premium-vodka',
+    subcategoryName: 'Premium Vodka',
+    name: 'Premium Vodka',
+    seo: {
+      titleTag: 'Premium Vodka — Allocated',
+      h1: 'Premium Vodka — Buy Allocated Ultra-Smooth Vodka Online',
+      metaDescription: 'Buy premium vodka online — allocated vodka distinguished by superior base ingredients, extra distillation, and refined filtration. Free on $300+.',
+      transactionalCTA: 'Buy premium vodka online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Premium vodka distinguishes itself from everyday vodka through higher-quality base ingredients, additional distillation passes, and more refined filtration methods — techniques like quartz, charcoal, or coconut-husk filtration are common. The goal across all of it is exceptional smoothness with the least possible burn or off-flavor.',
+      faqs: [
+        { question: 'Does more distillation actually make vodka smoother?', answer: 'Generally yes, up to a point — each additional distillation pass removes more impurities and congeners that contribute to harshness, producing a cleaner, smoother spirit. Beyond a handful of passes the gains diminish, which is why premium producers focus on quality distillation and filtration rather than distillation count alone.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'craft-vodka',
+    hubSlug: 'flavored-vodka',
+    subcategoryName: 'Flavored Vodka',
+    name: 'Flavored Vodka',
+    seo: {
+      titleTag: 'Flavored Vodka — Allocated',
+      h1: 'Flavored Vodka — Buy Allocated Infused Vodka Online',
+      metaDescription: 'Buy flavored vodka online — allocated vodka infused with real fruit, vanilla, and spice for cocktails that need no extra mixers. Free on $300+.',
+      transactionalCTA: 'Buy flavored vodka online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Flavored vodka starts from a base vodka and has natural or artificial flavoring added after distillation — fruit, vanilla, and spice are the most common, though the range extends much further. It\'s built for cocktails, letting a simple mixer like soda or lemonade do the rest of the work.',
+      faqs: [
+        { question: 'Is flavored vodka lower quality than plain vodka?', answer: 'Not inherently — flavored vodka starts from the same distilled base as plain vodka, with flavoring added afterward. Quality depends on the base spirit and whether real ingredients or artificial flavoring were used, not on the fact that it\'s flavored at all.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'craft-vodka',
+    hubSlug: 'craft-batch-vodka',
+    subcategoryName: 'Craft Vodka',
+    name: 'Craft Vodka',
+    seo: {
+      titleTag: 'Craft Vodka — Small-Batch Allocated',
+      h1: 'Craft Vodka — Buy Allocated Small-Batch Vodka Online',
+      metaDescription: 'Buy craft vodka online — allocated small-batch vodka from independent distillers using distinctive base ingredients. Direct allocations. Free on $300+.',
+      transactionalCTA: 'Buy craft vodka online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Craft vodka comes from smaller, independent distillers who emphasize distinctive base ingredients — anything from estate-grown grain to grapes, corn, or even quinoa — and hands-on production methods over mass-market scale. The result is more variation in character between brands than the more uniform, ultra-neutral profile typical of large commercial vodka.',
+      faqs: [
+        { question: 'What makes a vodka "craft" instead of just premium?', answer: 'Premium vodka is usually a larger producer refining its process for extra smoothness. Craft vodka comes from smaller, independent distillers who often use unusual or estate-specific base ingredients and hands-on production methods, prioritizing a distinctive character over the near-total neutrality that defines most mass-market vodka.' },
+      ],
+    },
+  },
+  // COGNAC & BRANDY
+  {
+    categorySlug: 'cognac-brandy',
+    hubSlug: 'vs-cognac',
+    subcategoryName: 'VS Cognac',
+    name: 'VS Cognac',
+    seo: {
+      titleTag: 'VS Cognac — Allocated',
+      h1: 'VS Cognac — Buy Allocated Very Special Cognac Online',
+      metaDescription: 'Buy VS cognac online — allocated Very Special cognac aged a minimum of 2 years, the youngest and most versatile cognac tier. Free on $300+.',
+      transactionalCTA: 'Buy VS cognac online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'VS ("Very Special," sometimes marked with three stars) is the youngest official cognac designation, requiring a minimum of two years aging in French oak for the youngest eau-de-vie in the blend. It\'s typically brighter and more fruit-forward than older tiers, and is the classic choice for cognac cocktails like the Sidecar.',
+      faqs: [
+        { question: 'Is VS cognac good for cocktails?', answer: 'Yes — VS is generally the tier bartenders reach for in cocktails. Its brighter, more fruit-forward character (from the shorter minimum aging) holds up well against other cocktail ingredients, while older tiers like XO are usually reserved for sipping neat.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'cognac-brandy',
+    hubSlug: 'vsop-cognac',
+    subcategoryName: 'VSOP Cognac',
+    name: 'VSOP Cognac',
+    seo: {
+      titleTag: 'VSOP Cognac — Allocated',
+      h1: 'VSOP Cognac — Buy Allocated Very Superior Old Pale Online',
+      metaDescription: 'Buy VSOP cognac online — allocated cognac aged a minimum of 4 years, balancing fruit character with barrel-derived depth. Free on $300+.',
+      transactionalCTA: 'Buy VSOP cognac online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'VSOP ("Very Superior Old Pale") requires a minimum of four years aging in French oak for the youngest eau-de-vie in the blend — double the minimum for VS. The extra time in barrel adds depth and roundness while keeping real fruit character intact, making VSOP the most popular tier for sipping neat or on the rocks.',
+      faqs: [
+        { question: 'What does VSOP mean on a cognac bottle?', answer: 'VSOP stands for "Very Superior Old Pale," an official designation requiring the youngest eau-de-vie in the blend to be aged at least four years in French oak — twice the minimum required for VS.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'cognac-brandy',
+    hubSlug: 'xo-cognac',
+    subcategoryName: 'XO Cognac',
+    name: 'XO Cognac',
+    seo: {
+      titleTag: 'XO Cognac — Allocated',
+      h1: 'XO Cognac — Buy Allocated Extra Old Cognac Online',
+      metaDescription: 'Buy XO cognac online — allocated Extra Old cognac aged a minimum of 10 years for deep rancio, dried fruit, and leather complexity. Free on $300+.',
+      transactionalCTA: 'Buy XO cognac online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'XO ("Extra Old") requires a minimum of ten years aging in French oak — the regulator raised this from six years in 2018 to better reflect what top producers were already doing in practice. The extended time in barrel develops rancio, dried fruit, and leather notes well beyond what VS or VSOP typically show.',
+      faqs: [
+        { question: 'Why did the minimum age for XO cognac change?', answer: 'In 2018 the Cognac regulator (the BNIC) raised the minimum age for XO from six years to ten years, formalizing a standard most reputable XO producers already exceeded in practice. The change gave the designation a clearer, more meaningful gap from VSOP.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'cognac-brandy',
+    hubSlug: 'xxo-cognac',
+    subcategoryName: 'XXO Cognac',
+    name: 'XXO Cognac',
+    seo: {
+      titleTag: 'XXO Cognac — Ultra-Aged',
+      h1: 'XXO Cognac — Buy Allocated Extra Extra Old Cognac Online',
+      metaDescription: 'Buy XXO cognac online — allocated Extra Extra Old cognac aged a minimum of 14 years, the newest and oldest official cognac tier. Free on $300+.',
+      transactionalCTA: 'Buy XXO cognac online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'XXO ("Extra Extra Old") is the newest official cognac designation, introduced in 2018 to formally recognize cognacs aged well beyond the XO minimum — requiring at least fourteen years for the youngest eau-de-vie in the blend. It sits above XO as the oldest, rarest, and most expensive tier in the official classification.',
+      faqs: [
+        { question: 'Is XXO older than XO cognac?', answer: 'Yes — XXO requires a minimum of fourteen years aging, compared to ten years for XO. The designation was created in 2018 specifically to give ultra-aged cognacs their own official tier above XO.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'cognac-brandy',
+    hubSlug: 'rare-brandy',
+    subcategoryName: 'Rare Brandy',
+    name: 'Rare Brandy',
+    seo: {
+      titleTag: 'Rare Brandy — Allocated',
+      h1: 'Rare Brandy — Buy Allocated Aged Brandy Online',
+      metaDescription: 'Buy rare brandy online — allocated aged brandy from outside the Cognac designation, including Armagnac and other fine grape brandies. Free on $300+.',
+      transactionalCTA: 'Buy rare brandy online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Brandy is any spirit distilled from fermented fruit, most often grapes, and aged in wood. Cognac is simply the most famous style of brandy — one made under strict regional rules in France — while rare brandy covers everything else worth seeking out, including aged Armagnac, American brandy, and other fine grape spirits made outside the Cognac designation.',
+      faqs: [
+        { question: 'Is Armagnac the same as Cognac?', answer: 'No — both are French grape brandies aged in oak, but Cognac comes from the Cognac region using double pot-still distillation, while Armagnac comes from Gascony and is traditionally distilled just once in a column still, giving it a generally more rustic, robust character.' },
+      ],
+    },
+  },
 ];
