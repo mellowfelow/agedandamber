@@ -11,7 +11,7 @@ export type { CatalogStats } from './categories';
 import type { CatalogStats } from './categories';
 
 export const PRODUCTS: Product[] = [
-  // BOURBON — real, verified bottlings sourced directly from distillery allocations and licensed distributors
+  // BOURBON — real, verified bottlings sourced through licensed distributors and wholesale allocations
   {
     id: 'prod-bourbon-01',
     slug: '1792-small-batch-bourbon',

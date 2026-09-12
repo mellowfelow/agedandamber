@@ -42,7 +42,7 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
     seo: {
       titleTag: 'Small Batch Bourbon — Allocated',
       h1: 'Small Batch Bourbon — Buy Allocated Selections Online',
-      metaDescription: 'Buy small batch bourbon online — allocated selections from the finest small batch producers. Direct from distillery. Free shipping on $300+.',
+      metaDescription: 'Buy small batch bourbon online — allocated selections from the finest small batch producers. Direct allocations. Free shipping on $300+.',
       transactionalCTA: 'Buy small batch bourbon online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
       definitionHook: 'Small batch bourbon is blended from a limited, hand-selected number of barrels — far fewer than a standard large-batch bottling — to achieve a specific, consistent flavour profile while still preserving more barrel character than a mass-produced release.',
       faqs: [

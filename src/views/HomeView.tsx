@@ -59,7 +59,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       badge: 'Napa Valley Curated Spirits House',
       headingText: 'Authentic Allocated Bourbon, Scotch & Rare Cask Spirits',
       isH1: true, // Only slide 1 has H1
-      caption: 'Every bottle is sourced directly from trusted distilleries and licensed distributors, verified for authenticity, and shipped from our Napa Valley cellar.',
+      caption: 'Every bottle is sourced through trusted, licensed distributors, verified for authenticity, and shipped from our Napa Valley cellar.',
       image: '/images/hero/hero-1.webp',
       imageAlt: 'Amber bourbon whiskey poured into a crystal tumbler beside aging oak barrels in a dim spirits cellar',
       slug: 'bourbon-whiskey-pour-napa-valley-cellar',
@@ -71,7 +71,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       badge: 'Hand-Selected Allocations',
       headingText: 'Rare Cask Finishes & Single Barrel Releases',
       isH1: false,
-      caption: 'A rotating lineup of allocated bourbons, single malts, and añejo tequilas sourced directly from distillery partners across Kentucky, Scotland, and Mexico.',
+      caption: 'A rotating lineup of allocated bourbons, single malts, and añejo tequilas, curated from licensed distributors across Kentucky, Scotland, and Mexico.',
       image: '/images/hero/hero-5.webp',
       imageAlt: 'Lineup of rare cask-strength whiskey, vodka, and tequila decanters displayed on a bar shelf',
       slug: 'rare-cask-strength-spirits-lineup',
@@ -80,10 +80,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       id: 'slide-3',
-      badge: 'Direct Import Speyside & Highland Single Malts',
+      badge: 'Curated Speyside & Highland Single Malts',
       headingText: 'First-Fill Sherry & Highland Single Malt Scotch',
       isH1: false,
-      caption: 'Authentic single malt scotch sourced directly from distillery allocations, including sherry-finished and Highland expressions.',
+      caption: 'Authentic single malt scotch curated from licensed allocations, including sherry-finished and Highland expressions.',
       image: '/images/hero/hero-7.webp',
       imageAlt: 'Single malt Scotch whisky bottles lined up in a moody, softly lit bar display',
       slug: 'single-malt-scotch-whisky-collection',
@@ -93,9 +93,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
     {
       id: 'slide-4',
       badge: 'Small Batch & Single Barrel Bourbon',
-      headingText: 'Hand-Selected Bourbon From Trusted Distilleries',
+      headingText: 'Hand-Selected Bourbon, Allocated & Verified',
       isH1: false,
-      caption: '28 real, verified bourbon bottlings sourced directly and shipped with mandatory adult-signature delivery.',
+      caption: '28 real, verified bourbon bottlings, curated and shipped with mandatory adult-signature delivery.',
       image: '/images/hero/hero-10.webp',
       imageAlt: 'Single barrel bourbon whiskey bottles resting in a black presentation case',
       slug: 'small-batch-single-barrel-bourbon-whiskey',
@@ -105,9 +105,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
     {
       id: 'slide-5',
       badge: 'Artisanal Tequila & Mezcal',
-      headingText: 'Blanco Tequila & Artisanal Mezcal, Sourced Direct',
+      headingText: 'Blanco Tequila & Artisanal Mezcal, Hand-Curated',
       isH1: false,
-      caption: '100% agave tequila and small-batch mezcal sourced directly from Jalisco and Oaxaca producers for collectors and mixologists alike.',
+      caption: '100% agave tequila and small-batch mezcal, curated from Jalisco and Oaxaca for collectors and mixologists alike.',
       image: '/images/hero/hero-3.webp',
       imageAlt: 'Close-up of blanco tequila and artisanal mezcal bottles with a cocktail shaker on a bar counter',
       slug: 'artisanal-tequila-mezcal-agave-spirits',
@@ -387,7 +387,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </h2>
 
             <p className="text-amber-200/80 text-sm leading-relaxed">
-              Founded in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was established with a singular vision: to source and curate uncompromised, authentic allocated spirits directly from trusted distilleries and licensed distributors.
+              Founded in {BRAND.foundingYear} in {BRAND.foundingLocation}, {SITE.name} was established with a singular vision: to source and curate uncompromised, authentic allocated spirits through trusted, licensed distributors and wholesale channels.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-2">

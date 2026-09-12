@@ -822,7 +822,7 @@ export const ShopView: React.FC<ShopViewProps> = ({
         })()}
         {!activeCategoryObj && (
           <p className="text-xs text-amber-200/90 bg-[#1A120B] border border-[#D4AF37]/30 rounded-xl px-4 py-3 max-w-3xl leading-relaxed">
-            Buy whiskey online — direct from distillery allocations, shipped to every state with compliant direct-to-consumer alcohol shipping laws. Adult signature required.
+            Buy whiskey online — allocated bottles shipped to every state with compliant direct-to-consumer alcohol shipping laws. Adult signature required.
           </p>
         )}
       </div>
