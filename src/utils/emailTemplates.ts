@@ -1,5 +1,6 @@
 import { SITE, CONTACT } from '../config/site';
 import { paymentTermsHtml, paymentTermsLines } from '../lib/order';
+import { waPaymentConfirmationLink } from '../lib/whatsapp';
 
 /**
  * Internal order / contact / wholesale notification emails.
@@ -413,7 +414,7 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
   <div>${button(
     `https://${SITE.domain}/order/confirm-payment/?id=${encodeURIComponent(i.orderNumber)}`,
     "I've Paid — Upload Confirmation"
-  )} ${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
+  )} ${button(waPaymentConfirmationLink(i.orderNumber), "Confirm via WhatsApp")} ${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
   `;
 
   const text =
@@ -423,7 +424,8 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
     paymentTermsLines(i.orderNumber)
       .map((l) => `- ${l}`)
       .join('\n') +
-    `\nPaid already? Upload a screenshot: https://${SITE.domain}/order/confirm-payment/?id=${i.orderNumber}\n`;
+    `\nPaid already? Upload a screenshot: https://${SITE.domain}/order/confirm-payment/?id=${i.orderNumber}\n` +
+    `Or confirm on WhatsApp: ${waPaymentConfirmationLink(i.orderNumber)}\n`;
 
   return {
     subject: `Payment details for order ${i.orderNumber} · ${money(i.amountDue)} due`,

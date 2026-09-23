@@ -321,6 +321,33 @@ before composing); (3) the admin nav literally overlapped text on mobile ("AGED 
   dashboard, orders list, order detail, and send-payment-email composer at 375px — nav no longer
   overlaps, badges and item rows wrap cleanly instead of colliding.
 
+### 14c. WhatsApp checkout confirm button + live-chat button (23 Sep 2026, same day)
+Founder asks: WhatsApp button on the payment-details email too; a WhatsApp live-chat button bottom-
+left (opposite Tawk.to, which sits bottom-right); confirm WhatsApp-channel orders already save to the
+portal and still send the customer the HTML confirmation email.
+
+- **Payment-details email** now has three CTAs: "I've Paid — Upload Confirmation" (the upload flow),
+  **"Confirm via WhatsApp"** (new — `waPaymentConfirmationLink()`, already existed in `whatsapp.ts` but
+  was unused until now), and "Reply to concierge" (mailto).
+- **WhatsApp live-chat button** (`src/components/WhatsAppFloatingButton.tsx`): fixed bottom-left, real
+  `<a href="wa.me/...">` (no JS/CSP cost), pre-filled greeting. Uses `CONTACT.whatsapp` — confirmed
+  it's the same number as `CONTACT.phone` shown site-wide (562-732-4044), so no separate number to
+  configure. First implementation guessed a fixed pixel offset to avoid colliding with the cookie
+  banner (also bottom-left) when both are visible — measured it live and the guess was wrong (banner
+  is ~177px tall, not the ~128px assumed) so the button sat **on top of** the banner. Fixed properly:
+  the button just hides itself while the banner is visible (reads `cookieBannerVisible` from the
+  existing shared `useAppState()`) instead of guessing a height, and reappears the instant it's
+  dismissed — one-time-per-browser cost, no fragile math.
+- **WhatsApp-channel orders already worked** — verified rather than assumed: `/api/order` saves to the
+  store and sends the customer `orderConfirmationEmail()` unconditionally, with no branch on `channel`.
+  Placed a real `channel:'whatsapp'` order (`AA-999911` test, local) to confirm no crash; the save-to-
+  portal + customer-email behavior was already correct from the original Reply Portal build — nothing
+  needed to change here, just confirmed it explicitly since the founder asked to ensure it.
+- Verified live: floating button renders bottom-left opposite Tawk.to bottom-right (screenshot-
+  confirmed), correctly hidden while cookie banner is up and reappears on dismiss (measured DOM rects
+  before and after to catch the overlap bug, not just eyeballed it), `wa.me` link resolves to the
+  correct number with the greeting pre-filled.
+
 ## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check
 nothing shipped this week could hurt ranking:

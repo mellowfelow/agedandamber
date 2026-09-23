@@ -10,6 +10,7 @@ import { CartDrawer } from './CartDrawer';
 import { CheckoutModal } from './CheckoutModal';
 import { ProductQuickView } from './ProductQuickView';
 import { TawkWidget } from './TawkWidget';
+import { WhatsAppFloatingButton } from './WhatsAppFloatingButton';
 
 /**
  * The admin dashboard and the /order/* transactional flows (e.g. the
@@ -36,6 +37,7 @@ export const SiteChrome: React.FC<{ children: React.ReactNode }> = ({ children }
       <CheckoutModal />
       <ProductQuickView />
       <TawkWidget />
+      <WhatsAppFloatingButton />
     </>
   );
 };

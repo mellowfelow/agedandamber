@@ -87,7 +87,15 @@ confirm-payment` validates the order exists, caps uploads at 4MB (Vercel serverl
 the concierge with the screenshot as a real attachment via `sendMail()`'s new `attachments` param, and
 sets `StoredOrder.status = 'payment-confirmed'` (third status alongside `pending`/`payment-sent` —
 `OrderStatusBadge` in `src/components/admin/StatusBadge.tsx` is the one place that renders it, never
-inline a status→label/color map elsewhere).
+inline a status→label/color map elsewhere). The email also has a "Confirm via WhatsApp" button
+(`waPaymentConfirmationLink()` in `src/lib/whatsapp.ts`) alongside the upload one.
+
+**WhatsApp live chat:** `src/components/WhatsAppFloatingButton.tsx` — a plain `<a href="wa.me/...">`,
+fixed bottom-left, deliberately opposite `TawkWidget` (bottom-right). Reads `CONTACT.whatsapp` (same
+number as `CONTACT.phone` and `REPLY.channels.whatsapp` — keep all three in sync, they're the one
+number). Hides itself while `GdprBanner` is visible (both are bottom-left; the banner's height isn't
+fixed, so this avoids overlap by stepping aside rather than guessing a pixel offset) and reappears the
+instant it's dismissed.
 
 ## Agent-ready layer (hand-maintained — no generator script)
 `public/robots.txt`, `public/.well-known/*`, `public/auth.md`, `public/js/webmcp.js`, and
