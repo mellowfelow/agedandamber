@@ -224,6 +224,78 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
   };
 }
 
+/**
+ * Customer-facing "we've received your order" confirmation — sent immediately
+ * on checkout, alongside (not instead of) the admin notification above. Carries
+ * no payment routing details (those go out separately once the concierge
+ * confirms the order); it exists so the customer has an immediate receipt
+ * instead of waiting up to 2 hours with no record the order was received.
+ */
+export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; text: string; html: string } {
+  const c = o.customer;
+  const ts = stamp();
+  const units = o.items.reduce((n, i) => n + i.quantity, 0);
+
+  const rows = o.items
+    .map(
+      (i) => `<tr>
+      <td style="padding:12px 0;border-bottom:1px solid ${C.rule};font-family:${SANS};font-size:14px;line-height:1.4;color:${C.ink};">${esc(i.name)}</td>
+      <td align="center" style="padding:12px 10px;border-bottom:1px solid ${C.rule};font-family:${SANS};font-size:13px;color:${C.soft};white-space:nowrap;">&times;${i.quantity}</td>
+      <td align="right" style="padding:12px 0;border-bottom:1px solid ${C.rule};font-family:${SERIF};font-size:14px;color:${C.ink};white-space:nowrap;">${money(i.lineTotal)}</td>
+    </tr>`
+    )
+    .join('');
+
+  const body = `
+  ${callout(
+    `<strong style="font-family:${SANS};">Thanks, ${esc(c.name)} — we've received your order.</strong> Keep this email as your reference. You'll receive a second email shortly with payment instructions for <strong>${esc(
+      o.paymentMethod
+    )}</strong>; once that's confirmed we'll finalise your order for dispatch.`
+  )}
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+    ${rows}
+  </table>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;">
+    <tr>
+      <td align="right" style="padding:13px 16px 4px 0;font-family:${SANS};font-size:11px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:${C.soft};border-top:2px solid ${C.head};">Total</td>
+      <td align="right" width="118" style="padding:13px 0 4px;font-family:${SERIF};font-size:20px;color:${C.goldInk};white-space:nowrap;border-top:2px solid ${C.head};">${money(o.total)}</td>
+    </tr>
+  </table>
+
+  ${divider}
+
+  ${callout(
+    `<strong style="font-family:${SANS};">Before delivery</strong>
+     <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(o.orderNumber)}</ul>`
+  )}
+
+  <div>${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Question about order ${o.orderNumber}`)}`, 'Contact concierge')}</div>
+  `;
+
+  const text =
+    `ORDER RECEIVED — ${o.orderNumber}\n${ts}\n\n` +
+    `Thanks, ${c.name} — we've received your order. You'll get a second email shortly with payment instructions for ${o.paymentMethod}.\n\n` +
+    `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
+    `TOTAL  ${money(o.total)}\n\n` +
+    paymentTermsLines(o.orderNumber)
+      .map((l) => `- ${l}`)
+      .join('\n') +
+    '\n';
+
+  return {
+    subject: `Order received — ${o.orderNumber} · ${money(o.total)} · ${SITE.name}`,
+    text,
+    html: shell({
+      eyebrow: 'Order received',
+      title: `Hi ${c.name || 'there'}`,
+      meta: `${ts}  ·  ${units} unit${units === 1 ? '' : 's'}  ·  ${o.orderNumber}`,
+      body,
+    }),
+  };
+}
+
 /* ------------------------------ CONTACT ------------------------------ */
 
 export interface ContactEmailInput {
@@ -332,7 +404,7 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
   <div style="font-family:${SANS};font-size:14px;line-height:1.7;color:${C.ink};margin-bottom:20px;">${i.instructionsHtml}</div>
   ${callout(
     `<strong style="font-family:${SANS};">Before your order ships</strong>
-     <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(C.goldInk)}</ul>`
+     <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(i.orderNumber)}</ul>`
   )}
   <div>${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
   `;
@@ -341,7 +413,7 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
     `PAYMENT DETAILS — ${i.orderNumber}\n${ts}\n\n` +
     `Amount due: ${money(i.amountDue)}\n\n` +
     `${i.instructionsHtml.replace(/<[^>]+>/g, '')}\n\n` +
-    paymentTermsLines()
+    paymentTermsLines(i.orderNumber)
       .map((l) => `- ${l}`)
       .join('\n') +
     '\n';

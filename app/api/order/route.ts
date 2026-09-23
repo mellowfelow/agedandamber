@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse, after } from 'next/server';
 import { CONTACT, SHOP } from '@/src/config/site';
-import { sendNotification } from '@/src/utils/notify';
-import { orderEmail, type OrderEmailInput } from '@/src/utils/emailTemplates';
+import { sendNotification, sendMail } from '@/src/utils/notify';
+import { orderEmail, orderConfirmationEmail, type OrderEmailInput } from '@/src/utils/emailTemplates';
 import { saveOrder } from '@/src/lib/orderStore';
 
 // nodemailer (SMTP) needs the Node runtime, not Edge.
@@ -55,6 +55,7 @@ export async function POST(req: NextRequest) {
     body.orderNumber && /^AA-\d{6}$/.test(body.orderNumber) ? body.orderNumber : `AA-${String(Date.now()).slice(-6)}`;
 
   const mail = orderEmail({ ...body, orderNumber });
+  const confirmation = orderConfirmationEmail({ ...body, orderNumber });
 
   await saveOrder({
     orderNumber,
@@ -71,6 +72,9 @@ export async function POST(req: NextRequest) {
 
   after(async () => {
     await sendNotification({ ...mail, replyTo: c.email });
+    // Customer-facing receipt — separate from the concierge notification above,
+    // and separate again from the payment-details email the admin sends later.
+    await sendMail({ to: c.email, ...confirmation, replyTo: CONTACT.email });
   });
 
   return NextResponse.json(

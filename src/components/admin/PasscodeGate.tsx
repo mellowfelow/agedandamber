@@ -6,7 +6,7 @@ import { Lock } from 'lucide-react';
 const STORAGE_KEY = 'aa-admin-passcode';
 
 /** Reads the stored passcode from localStorage without triggering a network call. */
-export function useAdminPasscode(): [string | null, (p: string) => void] {
+export function useAdminPasscode(): [string | null, (p: string) => void, () => void] {
   const [passcode, setPasscodeState] = useState<string | null>(null);
 
   useEffect(() => {
@@ -27,13 +27,22 @@ export function useAdminPasscode(): [string | null, (p: string) => void] {
     }
   };
 
-  return [passcode, setPasscode];
+  const clearPasscode = () => {
+    setPasscodeState(null);
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch {
+      /* ignore */
+    }
+  };
+
+  return [passcode, setPasscode, clearPasscode];
 }
 
 export const PasscodeGate: React.FC<{
-  children: (passcode: string) => React.ReactNode;
+  children: (passcode: string, signOut: () => void) => React.ReactNode;
 }> = ({ children }) => {
-  const [passcode, setPasscode] = useAdminPasscode();
+  const [passcode, setPasscode, clearPasscode] = useAdminPasscode();
   const [input, setInput] = useState('');
   const [unlocked, setUnlocked] = useState(false);
   const [checking, setChecking] = useState(false);
@@ -57,7 +66,7 @@ export const PasscodeGate: React.FC<{
   }
 
   if (passcode && unlocked) {
-    return <>{children(passcode)}</>;
+    return <>{children(passcode, clearPasscode)}</>;
   }
 
   return (

@@ -238,6 +238,50 @@ wholesale/contact enquiries, backed by Upstash Redis. Built against the existing
 - Verified locally: build + typecheck clean, full checkout flow (email and WhatsApp) tested live
   against a dev server, order correctly appears in the dashboard data path, dashboard reply-CTA link
   correct in the notification email, passcode gate correctly refuses when unconfigured.
+- **Deployed to production 23 Sep:** connected the team's existing `upstash-kv-almond-pillow` Redis
+  database (reused rather than creating a duplicate), set `ADMIN_PASSCODE` in Vercel. Caught + fixed a
+  real mismatch live: the env var names Vercel actually generated
+  (`UPSTASH_REDIS_KV_REST_API_URL/_TOKEN`) didn't match any of the 4 patterns `redis.ts` originally
+  checked — added that exact pair. Verified end-to-end on the live site: a real order posted through
+  `/api/order` landed in Redis and appeared correctly in `/admin/orders`, then cleaned up. Passcode
+  later changed to a founder-chosen value (`orderreply`) — redeployed for the env-var change to reach
+  the running functions (Vercel functions read env vars from the deployment they're baked into, so a
+  bare env-var edit with no new deploy does not take effect on already-running functions).
+
+### 14a. Reply Portal follow-up fixes (23 Sep 2026, same day)
+Founder feedback after the initial ship: **(1)** the customer never received any confirmation email
+after checkout — only the concierge did; **(2)** the admin portal felt "thin." Fixed both by porting
+patterns from more mature sibling builds (`C:\dev\volttrack` — the most complete reference; also
+compared `mr meat & co` / `Australian Electric Motor Co`, which don't yet have this module built out
+to the same depth).
+
+- **C1 (the actual bug) — missing customer confirmation.** `/api/order` only ever called
+  `sendNotification()`, which is hardcoded to the concierge inbox — there was no customer-facing send
+  at all. Added `orderConfirmationEmail()` (`src/utils/emailTemplates.ts`): a light "we've received
+  your order" receipt (items, total, standing terms incl. the adult-signature line) with **no** payment
+  routing details — those still go out separately once the concierge sends payment instructions. Fires
+  via the new general-purpose `sendMail()` in `src/utils/notify.ts` (added alongside the existing
+  concierge-only `sendNotification()`, which now calls `sendMail()` internally instead of duplicating
+  the transport logic).
+- **Payment-method registry.** `REPLY.paymentMethods` in `src/config/site.ts` now mirrors
+  `SHOP.paymentMethods` with real per-method `opening`/`closing` templates (`{amount}`/`{ref}` tokens)
+  — no invented account numbers, just the framing text. `src/lib/order.ts` gained
+  `findMethod()`/`paymentMethodParts()`; `paymentTermsLines(ref)` keeps the adult-signature line
+  (explicitly asked to keep it) plus a real dispatch-timing line sourced from `SHOP` config (not
+  invented) and an order-number-as-reference line.
+- **Richer admin portal.** `app/admin/layout.tsx` is now the single `PasscodeGate` wrapper (was
+  duplicated per-page) with a persistent top nav + **sign-out** button
+  (`src/components/admin/AdminNav.tsx`, `AdminPasscodeContext.tsx`). Dashboard
+  (`app/admin/page.tsx`) now shows the 5 most recent orders/enquiries inline, not just counts. New
+  detail pages `app/admin/orders/[id]/page.tsx` and `app/admin/enquiries/[id]/page.tsx` sit between the
+  list and the composer (list → detail → send/reply), matching the reference builds' information
+  architecture. `send-payment-email` composer replaced the old free-text Paste/Template toggle with a
+  payment-method **dropdown** (registry-driven, defaults to whatever the customer picked at checkout)
+  + one detail field — simpler and the preview is now always accurate to the real method.
+- Verified locally (build + typecheck clean) and confirmed the dev server round-trip: order submit →
+  admin+customer mail fire without throwing (SMTP unconfigured locally, so both gracefully no-op, same
+  as before) → dashboard renders → order/enquiry detail pages resolve "not found" correctly for a
+  bad id, no console errors on a fresh tab.
 
 ## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check

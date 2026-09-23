@@ -18,7 +18,7 @@ export function waMessageText(body: string | string[]): string {
 }
 
 export function waLink(body: string | string[]): string {
-  const number = toWhatsAppNumber(REPLY.whatsapp);
+  const number = toWhatsAppNumber(REPLY.channels.whatsapp);
   return `https://wa.me/${number}?text=${encodeURIComponent(buildText(body))}`;
 }
 
@@ -33,7 +33,7 @@ export function waPaymentDetailsMessage(opts: {
   amountDue: number;
   instructions: string;
 }): string[] {
-  const terms = paymentTermsLines().map((l) => `✅ ${l}`);
+  const terms = paymentTermsLines(opts.orderNumber).map((l) => `✅ ${l}`);
   return [
     `Payment details for order ${opts.orderNumber} — $${opts.amountDue.toFixed(2)} due.`,
     '',

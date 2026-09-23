@@ -63,7 +63,29 @@ export const REPLY = {
     primary: SITE.secondaryColor, // #D4AF37 — accent used across admin UI + emails
     headerDark: SITE.darkCanvas, // #140D08 — email header band / admin shell
   },
-  whatsapp: CONTACT.whatsapp,
+  currency: { code: SITE.currency, symbol: SITE.currencySymbol },
+  headerTagline: SITE.tagline,
+  // Real operational fact from SHOP, not a fabricated policy — reused in the
+  // payment-details email footer and the standing payment terms.
+  dispatchLine: `Ships within 1 business day of confirmed payment (same-day dispatch before ${SHOP.sameDayCutoff} to ${SHOP.sameDayStates.join(', ')}; ${SHOP.standardDelivery} elsewhere).`,
+  channels: {
+    email: CONTACT.email,
+    whatsapp: CONTACT.whatsapp,
+  },
+  // Payment-method registry — data, not code. `opening`/`closing` accept
+  // {amount} / {ref} tokens. Text only, never routing numbers/wallet
+  // addresses/handles — those are real secrets the admin pastes per order
+  // in the send-payment-email composer (Rule 5: never fabricate).
+  paymentMethods: SHOP.paymentMethods.map((pm) => ({
+    id: pm.id,
+    label: pm.name,
+    opening: pm.discount
+      ? `Please send the crypto-discounted total of {amount} to the ${pm.name.replace(/\s*\(.*\)/, '')} address below.`
+      : `Please send {amount} via ${pm.name} using the details below.`,
+    closing:
+      'Once sent, reply to this email (or send a screenshot on WhatsApp) so we can confirm and dispatch your order.',
+    discount: pm.discount ? { percent: pm.discount, label: 'crypto' } : undefined,
+  })),
 };
 
 export const CHAT = {
