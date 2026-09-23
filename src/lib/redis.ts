@@ -10,6 +10,11 @@ const CREDENTIAL_CANDIDATES: [string, string][] = [
   ['KV_REST_API_URL', 'KV_REST_API_TOKEN'],
   ['STORAGE_REST_API_URL', 'STORAGE_REST_API_TOKEN'],
   ['STORAGE_KV_REST_API_URL', 'STORAGE_KV_REST_API_TOKEN'],
+  // Actual pair Vercel's Storage tab generates for an Upstash Redis connection
+  // with Custom Environment Variable Prefix = "UPSTASH_REDIS" (confirmed live
+  // 2026-09-23 — Vercel inserts its own "_KV_" segment, so this does NOT match
+  // the "UPSTASH_REDIS_REST_URL" pattern above despite the identical prefix).
+  ['UPSTASH_REDIS_KV_REST_API_URL', 'UPSTASH_REDIS_KV_REST_API_TOKEN'],
 ];
 
 let cached: Redis | null | undefined;
