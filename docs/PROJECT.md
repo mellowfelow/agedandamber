@@ -314,9 +314,12 @@ before composing); (3) the admin nav literally overlapped text on mobile ("AGED 
   (`src/components/admin/StatusBadge.tsx`) used everywhere status renders, so the third state didn't
   need three more copy-pasted ternaries and can't drift.
 - Verified end-to-end on production: placed a real order, confirmed the order-detail deep link works
-  both from a warm and a cold (logged-out) admin session, uploaded a real 1×1 PNG through the API
-  directly (file-type and size validation both reject correctly), confirmed no console errors, checked
-  the nav at mobile width live.
+  both from a warm and a cold (logged-out) admin session, uploaded a real 1×1 PNG through the confirm-
+  payment API against that order — status flipped to `payment-confirmed`, badge and confirmation note
+  rendered correctly on the order detail page and in the dashboard/orders-list previews. File-type and
+  size validation both reject correctly (checked separately with a bad type). Screenshot-verified the
+  dashboard, orders list, order detail, and send-payment-email composer at 375px — nav no longer
+  overlaps, badges and item rows wrap cleanly instead of colliding.
 
 ## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check
