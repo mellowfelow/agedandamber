@@ -6,7 +6,7 @@ export const config = {
      * Match all paths except:
      * - api routes, _next internals, .well-known, static files, thank-you pages
      */
-    '/((?!api|_next|\\.well-known|thank-you-contact|thank-you-order|thank-you-wholesale|favicon.svg|llms.txt|auth.md|robots.txt|sitemap.xml|images|js|fonts).*)',
+    '/((?!api|admin|_next|\\.well-known|thank-you-contact|thank-you-order|thank-you-wholesale|favicon.svg|llms.txt|auth.md|robots.txt|sitemap.xml|images|js|fonts).*)',
   ],
 };
 

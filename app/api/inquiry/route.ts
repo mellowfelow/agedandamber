@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse, after } from 'next/server';
 import { sendNotification } from '@/src/utils/notify';
 import { contactEmail, wholesaleEmail } from '@/src/utils/emailTemplates';
+import { saveEnquiry, generateEnquiryId } from '@/src/lib/enquiryStore';
 
 // nodemailer (SMTP) needs the Node runtime, not Edge.
 export const runtime = 'nodejs';
@@ -35,6 +36,7 @@ export async function POST(req: NextRequest) {
   }
 
   let mail: { subject: string; text: string; html: string };
+  const enquiryId = generateEnquiryId();
 
   if (body.kind === 'wholesale') {
     if (!body.businessName || !isEmail(body.email)) {
@@ -50,6 +52,17 @@ export async function POST(req: NextRequest) {
       tier: body.tier || undefined,
       notes: body.notes || undefined,
     });
+    await saveEnquiry({
+      id: enquiryId,
+      type: 'wholesale',
+      name: body.contactName || body.businessName,
+      email: body.email,
+      phone: body.phone || '',
+      message: body.notes || `Wholesale enquiry from ${body.businessName}`,
+      meta: { businessName: body.businessName, licenseType: body.licenseType || '', estimatedVolume: body.estimatedVolume || '' },
+      status: 'new',
+      createdAt: new Date().toISOString(),
+    });
   } else {
     if (!isEmail(body.email) || !body.message) {
       return NextResponse.json({ ok: false, error: 'Missing email or message' }, { status: 400, headers: CORS });
@@ -59,6 +72,16 @@ export async function POST(req: NextRequest) {
       email: body.email,
       subject: body.subject || 'General inquiry',
       message: body.message,
+    });
+    await saveEnquiry({
+      id: enquiryId,
+      type: 'contact',
+      name: body.name || '',
+      email: body.email,
+      message: body.message,
+      meta: { subject: body.subject || 'General inquiry' },
+      status: 'new',
+      createdAt: new Date().toISOString(),
     });
   }
 

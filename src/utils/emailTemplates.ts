@@ -1,4 +1,5 @@
 import { SITE, CONTACT } from '../config/site';
+import { paymentTermsHtml, paymentTermsLines } from '../lib/order';
 
 /**
  * Internal order / contact / wholesale notification emails.
@@ -30,12 +31,13 @@ const SERIF = "Georgia, 'Times New Roman', serif";
 const SANS =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 
-const esc = (s: unknown) =>
+export const escapeHtml = (s: unknown) =>
   String(s ?? '')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+const esc = escapeHtml;
 
 const money = (n: number) => `$${Number(n || 0).toFixed(2)}`;
 
@@ -168,8 +170,8 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
   ${callout(
     `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This is an order request — reply to the customer to confirm the order and arrange payment by <strong>${esc(o.paymentMethod)}</strong>.
      <div style="margin-top:13px;">${button(
-       `mailto:${c.email}?subject=${encodeURIComponent(`Your ${SITE.name} order ${o.orderNumber}`)}`,
-       'Reply to customer'
+       `https://${SITE.domain}/admin/send-payment-email/?id=${encodeURIComponent(o.orderNumber)}`,
+       'Reply in Dashboard'
      )}</div>`
   )}
 
@@ -199,7 +201,7 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
 
   const text =
     `NEW ORDER  ${o.orderNumber}\n${ts}  ·  ${units} unit${units === 1 ? '' : 's'}\n\n` +
-    `** Payment not yet collected — reply to ${c.email} to arrange ${o.paymentMethod}. **\n\n` +
+    `** Payment not yet collected — arrange ${o.paymentMethod} at https://${SITE.domain}/admin/send-payment-email/?id=${o.orderNumber} **\n\n` +
     `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
     `Subtotal  ${money(o.subtotal)}\n` +
     (o.cryptoDiscount > 0 ? `Crypto discount  -${money(o.cryptoDiscount)}\n` : '') +
@@ -305,6 +307,81 @@ export function wholesaleEmail(i: WholesaleEmailInput): { subject: string; text:
     html: shell({
       eyebrow: 'Wholesale inquiry',
       title: i.businessName,
+      meta: ts,
+      body,
+    }),
+  };
+}
+
+/* -------------------------- PAYMENT DETAILS (Reply Portal, customer-facing) -------------------------- */
+
+export interface PaymentDetailsEmailInput {
+  orderNumber: string;
+  amountDue: number;
+  customerName: string;
+  instructionsHtml: string; // admin-composed HTML (Template or Paste mode), trusted
+}
+
+export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: string; text: string; html: string } {
+  const ts = stamp();
+
+  const body = `
+  ${field('Order', `<strong>${esc(i.orderNumber)}</strong>`, 14)}
+  ${field('Amount due', `<span style="font-family:${SERIF};font-size:20px;color:${C.goldInk};">${money(i.amountDue)}</span>`, 20)}
+  ${divider}
+  <div style="font-family:${SANS};font-size:14px;line-height:1.7;color:${C.ink};margin-bottom:20px;">${i.instructionsHtml}</div>
+  ${callout(
+    `<strong style="font-family:${SANS};">Before your order ships</strong>
+     <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(C.goldInk)}</ul>`
+  )}
+  <div>${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
+  `;
+
+  const text =
+    `PAYMENT DETAILS — ${i.orderNumber}\n${ts}\n\n` +
+    `Amount due: ${money(i.amountDue)}\n\n` +
+    `${i.instructionsHtml.replace(/<[^>]+>/g, '')}\n\n` +
+    paymentTermsLines()
+      .map((l) => `- ${l}`)
+      .join('\n') +
+    '\n';
+
+  return {
+    subject: `Payment details for order ${i.orderNumber} · ${money(i.amountDue)} due`,
+    text,
+    html: shell({
+      eyebrow: 'Payment details',
+      title: `Hi ${i.customerName || 'there'}`,
+      meta: ts,
+      body,
+    }),
+  };
+}
+
+/* -------------------------- ENQUIRY REPLY (Reply Portal, customer-facing) -------------------------- */
+
+export interface EnquiryReplyEmailInput {
+  customerName: string;
+  originalSubject: string;
+  replyHtml: string; // admin-composed HTML, trusted
+}
+
+export function enquiryReplyEmail(i: EnquiryReplyEmailInput): { subject: string; text: string; html: string } {
+  const ts = stamp();
+
+  const body = `
+  <div style="font-family:${SANS};font-size:14px;line-height:1.7;color:${C.ink};">${i.replyHtml}</div>
+  <div style="margin-top:22px;">${button(`mailto:${CONTACT.email}`, 'Reply to concierge')}</div>
+  `;
+
+  const text = `${i.replyHtml.replace(/<[^>]+>/g, '')}\n\n— ${SITE.name}\n${CONTACT.email}\n`;
+
+  return {
+    subject: `Re: ${i.originalSubject}`,
+    text,
+    html: shell({
+      eyebrow: SITE.name,
+      title: `Hi ${i.customerName || 'there'}`,
       meta: ts,
       body,
     }),

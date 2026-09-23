@@ -45,6 +45,41 @@ function zohoTransport(): Transporter | null {
   return cachedTransport;
 }
 
+/**
+ * Low-level send to an arbitrary recipient. Used both by sendNotification
+ * (below, fixed to the concierge inbox) and by the Reply Portal's
+ * customer-facing sends (payment details, enquiry replies), which need an
+ * arbitrary `to` rather than the concierge address.
+ */
+export async function sendMail(opts: {
+  to: string;
+  subject: string;
+  text: string;
+  html?: string;
+  replyTo?: string;
+}): Promise<{ emailed: boolean }> {
+  const transport = zohoTransport();
+  if (!transport) return { emailed: false };
+
+  try {
+    await Promise.race([
+      transport.sendMail({
+        from: `"${SITE.name}" <${process.env.ZOHO_SMTP_USER}>`,
+        to: opts.to,
+        replyTo: opts.replyTo || undefined,
+        subject: opts.subject,
+        text: opts.text,
+        ...(opts.html ? { html: opts.html } : {}),
+      }),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('SMTP timeout after 8s')), 8000)),
+    ]);
+    return { emailed: true };
+  } catch (err) {
+    console.error('[notify] Zoho SMTP send failed', err);
+    return { emailed: false };
+  }
+}
+
 export async function sendNotification(opts: {
   subject: string;
   text: string;
@@ -61,25 +96,8 @@ export async function sendNotification(opts: {
   // or slow SMTP host can never hold up the order response (Vercel functions
   // time out at 10s on Hobby). On any failure the submission is still safe in
   // the function log above.
-  const transport = zohoTransport();
-  if (transport) {
-    try {
-      await Promise.race([
-        transport.sendMail({
-          from: `"${SITE.name}" <${process.env.ZOHO_SMTP_USER}>`,
-          to,
-          replyTo: replyTo || undefined,
-          subject,
-          text,
-          ...(html ? { html } : {}),
-        }),
-        new Promise((_, reject) => setTimeout(() => reject(new Error('SMTP timeout after 8s')), 8000)),
-      ]);
-      return { logged: true, emailed: true };
-    } catch (err) {
-      console.error('[notify] Zoho SMTP send failed', err);
-    }
-  }
+  const { emailed } = await sendMail({ to, subject, text, html, replyTo });
+  if (emailed) return { logged: true, emailed: true };
 
   console.error(
     `[notify] Zoho SMTP did not deliver "${subject}" — it is in this log only. ` +

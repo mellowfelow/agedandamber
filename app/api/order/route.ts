@@ -2,6 +2,7 @@ import { NextRequest, NextResponse, after } from 'next/server';
 import { CONTACT, SHOP } from '@/src/config/site';
 import { sendNotification } from '@/src/utils/notify';
 import { orderEmail, type OrderEmailInput } from '@/src/utils/emailTemplates';
+import { saveOrder } from '@/src/lib/orderStore';
 
 // nodemailer (SMTP) needs the Node runtime, not Edge.
 export const runtime = 'nodejs';
@@ -20,12 +21,19 @@ export function OPTIONS() {
   });
 }
 
-type OrderBody = Omit<OrderEmailInput, 'orderNumber'>;
+type OrderBody = Omit<OrderEmailInput, 'orderNumber'> & {
+  channel?: 'whatsapp' | 'email';
+  orderNumber?: string; // client-supplied for the WhatsApp checkout path, so the wa.me
+  // message and the saved/emailed order share the same reference (see CheckoutModal —
+  // window.open() must fire synchronously, before this route can assign one)
+};
 
 /**
- * Order intake. Generates the short order reference, logs the full order
- * (durable, in the function log), and fires the single email notification
- * AFTER the response so the customer never waits on SMTP.
+ * Order intake. Generates the short order reference, saves it to the
+ * Reply Portal store (so it shows up in /admin/orders regardless of
+ * channel), logs the full order (durable, in the function log), and fires
+ * the single email notification AFTER the response so the customer never
+ * waits on SMTP.
  */
 export async function POST(req: NextRequest) {
   let body: OrderBody;
@@ -41,10 +49,25 @@ export async function POST(req: NextRequest) {
   }
 
   // Short, professional order reference — six digits off the timestamp,
-  // reads like a normal running order number.
-  const orderNumber = `AA-${String(Date.now()).slice(-6)}`;
+  // reads like a normal running order number. Honour a client-supplied one
+  // (WhatsApp checkout) so the wa.me message and the saved order match.
+  const orderNumber =
+    body.orderNumber && /^AA-\d{6}$/.test(body.orderNumber) ? body.orderNumber : `AA-${String(Date.now()).slice(-6)}`;
 
   const mail = orderEmail({ ...body, orderNumber });
+
+  await saveOrder({
+    orderNumber,
+    customerName: c.name,
+    customerEmail: c.email,
+    customerPhone: c.phone || '',
+    items: body.items,
+    amountDue: body.total,
+    paymentMethod: body.paymentMethod,
+    status: 'pending',
+    channel: body.channel === 'whatsapp' ? 'whatsapp' : 'email',
+    createdAt: new Date().toISOString(),
+  });
 
   after(async () => {
     await sendNotification({ ...mail, replyTo: c.email });

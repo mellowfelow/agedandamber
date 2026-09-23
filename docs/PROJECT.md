@@ -201,7 +201,45 @@ subcategory (e.g. a flavored/specialty tier) that gives the split something to d
 hubs sitewide — every sidebar subcategory button with a matching page is a real `<a href>`, not a
 client-side filter.
 
-## 14. Post-project site-wide QA sweep (12 Sep 2026)
+## 14. Reply Portal (23 Sep 2026)
+Added the WebForge Section P opt-in module: a passcode-gated `/admin` dashboard for orders +
+wholesale/contact enquiries, backed by Upstash Redis. Built against the existing `zoho-smtp` provider
+(satisfies Section P's SMTP requirement — no provider change needed).
+
+- **Storage:** `src/lib/orderStore.ts` / `enquiryStore.ts` (Upstash Redis hash per collection).
+  `src/lib/redis.ts` checks 4 common credential-prefix variants so whatever name Vercel's Storage tab
+  assigns just works. Every store function is a safe no-op when Redis isn't configured — orders and
+  enquiries still save to the function log and email exactly as before, so this ships with zero risk
+  to the existing checkout/contact flow.
+- **Auth:** `ADMIN_PASSCODE` (server-only env var) + `X-Admin-Passcode` header, checked first in
+  every `/api/admin/*` route (`src/lib/adminAuth.ts`). `/admin/*` excluded from the storefront chrome
+  (new `src/components/SiteChrome.tsx` wrapper — no nav/footer/age-gate/cookie-banner/chat widget on
+  admin pages), from markdown-negotiation middleware, `Cache-Control: no-store`, and `Disallow:
+  /admin/` added to every robots.txt bot group (not just the wildcard — each AI-crawler group needed
+  its own line, since groups don't inherit).
+- **Checkout — two channels now:** the existing email form ("Confirm via Email") plus a new
+  "Confirm via WhatsApp" button that opens `wa.me` synchronously (before any await, so pop-up
+  blockers don't fire) and fire-and-forget saves the order server-side. Both channels record
+  `channel: 'whatsapp' | 'email'` on the stored order and show in the Orders list.
+- **Admin pages:** `/admin` (hub with live counts), `/admin/orders`, `/admin/enquiries`,
+  `/admin/send-payment-email` (Paste/Template toggle — Paste is the default and intentional: real
+  payment routing info — wallet addresses, Cash App tag, bank account numbers — is never invented or
+  hardcoded, the admin pastes it per order), `/admin/reply-enquiry`. WhatsApp reply panel on the
+  payment-details composer (`WhatsAppSendPanel`) opens a pre-filled `wa.me` link as a fallback/
+  alternative to the email send.
+- **Payment terms — single source:** `paymentTermsLines()` in `src/lib/order.ts` feeds the WA
+  message, the payment-details email, and the composer preview — they can't drift apart.
+- **Admin order-notification email** (sent on every new order) now links to
+  `/admin/send-payment-email/?id=<orderNumber>` instead of a plain `mailto:` reply.
+- **Deploy requirement:** create an Upstash Redis database from the Vercel Storage tab and set
+  `ADMIN_PASSCODE` — both documented in `.env.example`. Until then `/admin` shows "not configured"
+  rather than falsely unlocking (checked live: a wrong-but-accepted passcode used to unlock the UI
+  when the server had no `ADMIN_PASSCODE` set at all — fixed before shipping).
+- Verified locally: build + typecheck clean, full checkout flow (email and WhatsApp) tested live
+  against a dev server, order correctly appears in the dashboard data path, dashboard reply-CTA link
+  correct in the notification email, passcode gate correctly refuses when unconfigured.
+
+## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check
 nothing shipped this week could hurt ranking:
 - **Duplicate-content audit** (real TS-transpiled parse, not regex): 0 duplicate titleTag/H1/

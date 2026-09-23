@@ -1,9 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight } from 'lucide-react';
+import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight, MessageCircle } from 'lucide-react';
 import { SHOP, CONTACT } from '../config/site';
 import { useAppState } from '../../app/providers';
+import { waOrderLink } from '../lib/whatsapp';
 
 export const CheckoutModal: React.FC = () => {
   const { cart, checkoutModalOpen, setCheckoutModalOpen, clearCart } = useAppState();
@@ -115,6 +116,78 @@ export const CheckoutModal: React.FC = () => {
     clearCart();
   };
 
+  const requiredFieldsFilled = () =>
+    formData.ageConfirmed &&
+    formData.name &&
+    formData.email &&
+    formData.phone &&
+    formData.street &&
+    formData.city &&
+    formData.state &&
+    formData.zip;
+
+  const handleWhatsAppCheckout = () => {
+    if (!formData.ageConfirmed) {
+      alert('You must confirm that you are at least 21 years old to place a spirits order.');
+      return;
+    }
+    if (!requiredFieldsFilled()) {
+      alert('Please fill in your name, email, phone, and delivery address before checking out via WhatsApp.');
+      return;
+    }
+
+    const orderNumber = `AA-${String(Date.now()).slice(-6)}`;
+    const paymentMethod = SHOP.paymentMethods.find((pm) => pm.id === selectedPayment)?.name || selectedPayment;
+    const items = cart.map((i) => ({ name: i.product.name, quantity: i.quantity }));
+
+    // window.open must fire synchronously inside the click handler — pop-up
+    // blockers trigger on anything opened after an await.
+    window.open(
+      waOrderLink(
+        { orderNumber, items, total: grandTotal, paymentMethod },
+        { name: formData.name, email: formData.email, phone: formData.phone }
+      ),
+      '_blank'
+    );
+
+    // Fire-and-forget: save the order + email the concierge. The customer
+    // already has WhatsApp open, so this never blocks their flow.
+    fetch('/api/order/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        orderNumber,
+        channel: 'whatsapp',
+        items: cart.map((i) => ({ name: i.product.name, quantity: i.quantity, lineTotal: i.product.price * i.quantity })),
+        subtotal,
+        cryptoDiscount: cryptoDiscountAmount,
+        shipping: shippingFee,
+        total: grandTotal,
+        paymentMethod,
+        customer: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          street: formData.street,
+          city: formData.city,
+          state: formData.state,
+          zip: formData.zip,
+          notes: formData.notes,
+        },
+      }),
+    }).catch(() => {});
+
+    setCompletedOrder({
+      orderNumber,
+      grandTotal,
+      selectedPayment: paymentMethod,
+      name: formData.name,
+      email: formData.email,
+    });
+    setIsSubmitted(true);
+    clearCart();
+  };
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md p-4 animate-fade-in">
       <div className="min-h-full flex items-start justify-center">
@@ -173,7 +246,7 @@ export const CheckoutModal: React.FC = () => {
             </h2>
 
             <p className="text-amber-200/80 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your order has been logged with our Napa Valley concierge, who will email you shortly with secure payment instructions for <strong className="text-amber-100">{completedOrder.selectedPayment}</strong>.
+              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your order has been logged with our Napa Valley concierge, who will reach out by email or WhatsApp shortly with secure payment instructions for <strong className="text-amber-100">{completedOrder.selectedPayment}</strong>.
             </p>
 
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800 text-xs text-left max-w-md mx-auto space-y-2">
@@ -359,20 +432,33 @@ export const CheckoutModal: React.FC = () => {
               </div>
             </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-sm hover:bg-[#E5C158] transition-all shadow-xl flex items-center justify-center gap-2"
-            >
-              {isSubmitting ? (
-                'Processing Spirits Order...'
-              ) : (
-                <>
-                  Confirm Spirits Order (${grandTotal.toFixed(2)})
-                  <ArrowRight className="w-4 h-4" />
-                </>
-              )}
-            </button>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#140D08] font-bold text-sm hover:bg-[#E5C158] transition-all shadow-xl flex items-center justify-center gap-2"
+              >
+                {isSubmitting ? (
+                  'Processing...'
+                ) : (
+                  <>
+                    Confirm via Email
+                    <ArrowRight className="w-4 h-4" />
+                  </>
+                )}
+              </button>
+              <button
+                type="button"
+                onClick={handleWhatsAppCheckout}
+                className="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-xl flex items-center justify-center gap-2"
+              >
+                <MessageCircle className="w-4 h-4" />
+                Confirm via WhatsApp
+              </button>
+            </div>
+            <p className="text-center text-[11px] text-amber-300/50 -mt-2">
+              Total due (${grandTotal.toFixed(2)}) — either channel reaches our concierge the same way.
+            </p>
           </form>
         )}
       </div>

@@ -11,6 +11,7 @@
     "crosscheck": "node scripts/crosscheck.mjs"
   },
   "dependencies": {
+    "@upstash/redis": "^1.35.5",
     "lucide-react": "^0.546.0",
     "next": "^15.5.4",
     "nodemailer": "^9.0.6",

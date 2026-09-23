@@ -58,6 +58,19 @@ const nextConfig = {
           { key: 'Content-Security-Policy', value: CSP },
         ],
       },
+      {
+        // Admin dashboard + its API: never cached, never indexed even if
+        // robots.txt is ignored.
+        source: '/admin/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-store' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
+        source: '/api/admin/:path*',
+        headers: [{ key: 'Cache-Control', value: 'no-store' }],
+      },
     ];
   },
   async redirects() {

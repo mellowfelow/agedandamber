@@ -3,14 +3,7 @@ import { Cinzel, Plus_Jakarta_Sans } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { AppStateProvider } from './providers';
-import { Header } from '@/src/components/Header';
-import { Footer } from '@/src/components/Footer';
-import { AgeGateModal } from '@/src/components/AgeGateModal';
-import { GdprBanner } from '@/src/components/GdprBanner';
-import { CartDrawer } from '@/src/components/CartDrawer';
-import { CheckoutModal } from '@/src/components/CheckoutModal';
-import { ProductQuickView } from '@/src/components/ProductQuickView';
-import { TawkWidget } from '@/src/components/TawkWidget';
+import { SiteChrome } from '@/src/components/SiteChrome';
 import { SITE, BRAND } from '@/src/config/site';
 
 const cinzel = Cinzel({
@@ -104,15 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to main content
         </a>
         <AppStateProvider>
-          <AgeGateModal />
-          <GdprBanner />
-          <Header />
-          <main id="main" className="flex-1">{children}</main>
-          <Footer />
-          <CartDrawer />
-          <CheckoutModal />
-          <ProductQuickView />
-          <TawkWidget />
+          <SiteChrome>{children}</SiteChrome>
         </AppStateProvider>
       </body>
     </html>

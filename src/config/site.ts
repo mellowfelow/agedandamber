@@ -54,6 +54,18 @@ export const FORMS = {
   turnstileSiteKey: '',
 };
 
+// Reply Portal (Section P) — the /admin dashboard for orders + enquiries.
+// Storage: Upstash Redis (UPSTASH_REDIS_REST_URL / _TOKEN, or the KV_* /
+// STORAGE_* equivalents Vercel's Storage tab assigns — see src/lib/redis.ts).
+// Auth: ADMIN_PASSCODE (server-only env var, never NEXT_PUBLIC_*).
+export const REPLY = {
+  brand: {
+    primary: SITE.secondaryColor, // #D4AF37 — accent used across admin UI + emails
+    headerDark: SITE.darkCanvas, // #140D08 — email header band / admin shell
+  },
+  whatsapp: CONTACT.whatsapp,
+};
+
 export const CHAT = {
   channels: [
     { type: 'whatsapp', name: 'WhatsApp Concierge', value: '+15627324044' },

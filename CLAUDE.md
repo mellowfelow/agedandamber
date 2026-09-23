@@ -52,6 +52,23 @@ can't drift from what the store does — edit `legal.ts`, not the route files. F
 `/api/acp/catalog`, `/api/ucp/services`, `/api/markdown` (content negotiation), `/api/order`,
 `/api/inquiry`. `SearchAction` schema targets `/shop/?q=` — `ShopView` must keep honouring that param.
 
+## Reply Portal (/admin — added 2026-09-23)
+Passcode-gated dashboard for orders + enquiries, backed by Upstash Redis. `/api/order` and
+`/api/inquiry` save every submission to the store (`src/lib/orderStore.ts` / `enquiryStore.ts`) in
+addition to the existing email notification — both still work with zero config (Redis calls are
+no-ops when unconfigured). Checkout has two channels now: email (`Confirm via Email`, existing flow)
+and WhatsApp (`Confirm via WhatsApp` — opens `wa.me` synchronously in the click handler, then
+fire-and-forget saves the order). Every `/api/admin/*` route calls `checkAdminPasscode()`
+(`src/lib/adminAuth.ts`) first — `ADMIN_PASSCODE` env var, `X-Admin-Passcode` header, never a
+`NEXT_PUBLIC_*` var. `/admin/*` is excluded from the site chrome (`src/components/SiteChrome.tsx`),
+excluded from the markdown-negotiation middleware, `Cache-Control: no-store`, and disallowed in
+`robots.txt` for every listed crawler group (not just `User-agent: *` — each bot group needs its own
+`Disallow: /admin/` line, since robots.txt groups don't inherit from the wildcard).
+Payment-terms copy has one source: `paymentTermsLines()` in `src/lib/order.ts` — the WA message, the
+payment-details email, and the composer preview all read from it. Never fabricate payment routing
+details (wallet addresses, Cash App tag, bank account numbers) — the send-payment-email composer's
+"Paste mode" is the default for exactly this reason; the admin pastes the real detail per order.
+
 ## Agent-ready layer (hand-maintained — no generator script)
 `public/robots.txt`, `public/.well-known/*`, `public/auth.md`, `public/js/webmcp.js`, and
 `app/llms.txt/route.ts` (generated from live data). Keep brand name + one-line description consistent
