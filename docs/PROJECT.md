@@ -348,6 +348,29 @@ portal and still send the customer the HTML confirmation email.
   before and after to catch the overlap bug, not just eyeballed it), `wa.me` link resolves to the
   correct number with the greeting pre-filled.
 
+### 14d. Post-change technical/SEO audit (23 Sep 2026, same day)
+Full check after the Reply Portal + WhatsApp work, specifically to catch anything that could hurt
+rankings before moving on. Checked live production, not local:
+- **robots.txt** — valid, `/admin/` and `/order/` disallowed for every bot group (not just the
+  wildcard).
+- **sitemap.xml** — 1,884 URLs, no `/admin` or `/order` leaks, GSC re-read it same day (Success,
+  1,884 discovered — matches exactly).
+- **Crawl check** — 95 URLs sampled evenly across the entire sitemap (every 20th), all HTTP 200.
+- **JSON-LD** — parsed clean on homepage and a product page (0 errors).
+- **Console** — 0 errors on homepage and product page after the new floating button/checkout changes.
+- **Security headers** — CSP, agent-ready `Link` header, HSTS-adjacent headers all intact and
+  unchanged on `/`.
+- **GSC** — 0 security issues, 0 manual actions, indexed count stable/slightly improved (1.75K
+  indexed / 333 not indexed, was 1,746/341 earlier the same day).
+- **Mobile** — no horizontal scroll at 375px on homepage with the new WhatsApp button present.
+- **Found and fixed one real gap:** `/order/confirm-payment` had no `X-Robots-Tag`/`Cache-Control`
+  header, unlike `/admin/*` — robots.txt already blocked crawlers from both, so this was
+  defense-in-depth, not an active leak, but fixed for parity (same headers `/admin/*` gets).
+- **Non-issue investigated and confirmed correct:** homepage briefly showed 0 `<h1>` elements when
+  checked live — traced to the documented hero-carousel behavior (h1 lives on slide 1 only, becomes a
+  styled div after auto-rotation) doing exactly what it's supposed to; confirmed the raw SSR HTML
+  (what crawlers actually parse) has exactly 1 `<h1>`. Not a regression, pre-existing by design.
+
 ## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check
 nothing shipped this week could hurt ranking:
