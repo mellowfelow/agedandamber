@@ -12,15 +12,16 @@ import { ProductQuickView } from './ProductQuickView';
 import { TawkWidget } from './TawkWidget';
 
 /**
- * The admin dashboard is a separate, passcode-gated tool — it doesn't want
- * the storefront chrome (nav, age gate, cookie banner, chat widget, cart).
- * Everything else keeps the full site shell.
+ * The admin dashboard and the /order/* transactional flows (e.g. the
+ * payment-confirmation upload) are focused, single-purpose pages — they
+ * don't want the storefront chrome (nav, age gate, cookie banner, chat
+ * widget, cart). Everything else keeps the full site shell.
  */
 export const SiteChrome: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
-  const isAdmin = pathname?.startsWith('/admin');
+  const isChromeFree = pathname?.startsWith('/admin') || pathname?.startsWith('/order/');
 
-  if (isAdmin) {
+  if (isChromeFree) {
     return <main id="main" className="flex-1">{children}</main>;
   }
 

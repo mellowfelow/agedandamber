@@ -80,6 +80,15 @@ thing — wallet address, Cash App tag, bank details — never fabricate that. `
 the single source for the standing terms (adult-signature line included) — the WA message, the
 payment-details email, the confirmation email, and the composer preview all read from it.
 
+**Payment confirmation screenshots:** the payment-details email has an "I've Paid — Upload
+Confirmation" button → `/order/confirm-payment/?id=<orderNumber>` (public, no passcode; chrome-free
+like `/admin`, excluded from `SiteChrome`/middleware/robots.txt the same way). `/api/order/
+confirm-payment` validates the order exists, caps uploads at 4MB (Vercel serverless body limit), emails
+the concierge with the screenshot as a real attachment via `sendMail()`'s new `attachments` param, and
+sets `StoredOrder.status = 'payment-confirmed'` (third status alongside `pending`/`payment-sent` —
+`OrderStatusBadge` in `src/components/admin/StatusBadge.tsx` is the one place that renders it, never
+inline a status→label/color map elsewhere).
+
 ## Agent-ready layer (hand-maintained — no generator script)
 `public/robots.txt`, `public/.well-known/*`, `public/auth.md`, `public/js/webmcp.js`, and
 `app/llms.txt/route.ts` (generated from live data). Keep brand name + one-line description consistent

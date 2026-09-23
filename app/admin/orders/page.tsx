@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Trash2, MessageCircle, Mail } from 'lucide-react';
 import { useAdminContextPasscode } from '../../../src/components/admin/AdminPasscodeContext';
+import { OrderStatusBadge } from '../../../src/components/admin/StatusBadge';
 import type { StoredOrder } from '../../../src/lib/orderStore';
 
 export default function OrdersPage() {
@@ -80,16 +81,8 @@ export default function OrdersPage() {
                   </div>
                   <div className="text-sm font-mono text-amber-100">${o.amountDue.toFixed(2)}</div>
                   <div className="flex items-center gap-2">
-                    <span
-                      className={`text-[10px] font-bold uppercase tracking-wider py-1 px-2 rounded-full ${
-                        o.status === 'pending'
-                          ? 'bg-amber-950 text-amber-400 border border-amber-800'
-                          : 'bg-emerald-950 text-emerald-400 border border-emerald-800'
-                      }`}
-                    >
-                      {o.status === 'pending' ? 'Pending' : 'Sent'}
-                    </span>
-                    <span className="text-amber-400/50" title={o.channel}>
+                    <OrderStatusBadge status={o.status} />
+                    <span className="text-amber-400/50 shrink-0" title={o.channel}>
                       {o.channel === 'whatsapp' ? <MessageCircle className="w-3.5 h-3.5" /> : <Mail className="w-3.5 h-3.5" />}
                     </span>
                   </div>

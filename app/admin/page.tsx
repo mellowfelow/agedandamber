@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { PackageCheck, MessagesSquare, ArrowRight, MessageCircle, Mail } from 'lucide-react';
 import { useAdminContextPasscode } from '../../src/components/admin/AdminPasscodeContext';
+import { OrderStatusBadge } from '../../src/components/admin/StatusBadge';
 import type { StoredOrder } from '../../src/lib/orderStore';
 import type { StoredEnquiry } from '../../src/lib/enquiryStore';
 
@@ -86,21 +87,13 @@ export default function AdminHubPage() {
                 href={`/admin/orders/${encodeURIComponent(o.orderNumber)}/`}
                 className="flex items-center gap-4 p-3.5 rounded-xl bg-stone-950/80 border border-stone-800 hover:border-stone-700 transition-all"
               >
-                <span className="font-bold text-amber-100 text-sm w-24 shrink-0">{o.orderNumber}</span>
-                <span className="text-sm text-amber-200/80 truncate flex-1">{o.customerName}</span>
+                <span className="font-bold text-amber-100 text-sm shrink-0">{o.orderNumber}</span>
+                <span className="text-sm text-amber-200/80 truncate flex-1 min-w-0">{o.customerName}</span>
                 <span className="text-sm font-mono text-amber-100 shrink-0">${o.amountDue.toFixed(2)}</span>
-                <span className="text-amber-400/50 shrink-0" title={o.channel}>
+                <span className="text-amber-400/50 shrink-0 hidden sm:inline-flex" title={o.channel}>
                   {o.channel === 'whatsapp' ? <MessageCircle className="w-3.5 h-3.5" /> : <Mail className="w-3.5 h-3.5" />}
                 </span>
-                <span
-                  className={`text-[10px] font-bold uppercase tracking-wider py-1 px-2 rounded-full shrink-0 ${
-                    o.status === 'pending'
-                      ? 'bg-amber-950 text-amber-400 border border-amber-800'
-                      : 'bg-emerald-950 text-emerald-400 border border-emerald-800'
-                  }`}
-                >
-                  {o.status === 'pending' ? 'Pending' : 'Sent'}
-                </span>
+                <OrderStatusBadge status={o.status} className="shrink-0" />
               </Link>
             ))}
           </div>

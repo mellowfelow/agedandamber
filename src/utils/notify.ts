@@ -57,6 +57,7 @@ export async function sendMail(opts: {
   text: string;
   html?: string;
   replyTo?: string;
+  attachments?: { filename: string; content: Buffer; contentType?: string }[];
 }): Promise<{ emailed: boolean }> {
   const transport = zohoTransport();
   if (!transport) return { emailed: false };
@@ -70,6 +71,7 @@ export async function sendMail(opts: {
         subject: opts.subject,
         text: opts.text,
         ...(opts.html ? { html: opts.html } : {}),
+        ...(opts.attachments ? { attachments: opts.attachments } : {}),
       }),
       new Promise((_, reject) => setTimeout(() => reject(new Error('SMTP timeout after 8s')), 8000)),
     ]);

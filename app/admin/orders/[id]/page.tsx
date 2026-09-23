@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useParams, useRouter } from 'next/navigation';
 import { Trash2, Mail, MessageCircle, ArrowLeft } from 'lucide-react';
 import { useAdminContextPasscode } from '../../../../src/components/admin/AdminPasscodeContext';
+import { OrderStatusBadge } from '../../../../src/components/admin/StatusBadge';
 import type { StoredOrder } from '../../../../src/lib/orderStore';
 
 export default function OrderDetailPage() {
@@ -51,17 +52,9 @@ export default function OrderDetailPage() {
       <div className="flex items-start justify-between mb-6">
         <div>
           <h1 className="text-2xl font-serif font-bold text-amber-100">{order.orderNumber}</h1>
-          <p className="text-sm text-amber-400/60 mt-1 flex items-center gap-2">
+          <p className="text-sm text-amber-400/60 mt-1 flex items-center gap-2 flex-wrap">
             {new Date(order.createdAt).toLocaleString()}
-            <span
-              className={`text-[10px] font-bold uppercase tracking-wider py-1 px-2 rounded-full ${
-                order.status === 'pending'
-                  ? 'bg-amber-950 text-amber-400 border border-amber-800'
-                  : 'bg-emerald-950 text-emerald-400 border border-emerald-800'
-              }`}
-            >
-              {order.status === 'pending' ? 'Pending' : 'Payment sent'}
-            </span>
+            <OrderStatusBadge status={order.status} />
             <span className="inline-flex items-center gap-1 text-amber-400/50">
               {order.channel === 'whatsapp' ? <MessageCircle className="w-3 h-3" /> : <Mail className="w-3 h-3" />}
               {order.channel}
@@ -121,6 +114,9 @@ export default function OrderDetailPage() {
       >
         {order.status === 'pending' ? 'Send payment details' : 'Resend payment details'}
       </Link>
+      {order.status === 'payment-confirmed' && (
+        <p className="text-xs text-emerald-400 mt-3">✓ Customer uploaded a payment confirmation screenshot — check your email.</p>
+      )}
     </div>
   );
 }

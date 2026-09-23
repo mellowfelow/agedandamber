@@ -8,7 +8,7 @@ export interface StoredOrder {
   items: { name: string; quantity: number; lineTotal: number }[];
   amountDue: number;
   paymentMethod: string;
-  status: 'pending' | 'payment-sent';
+  status: 'pending' | 'payment-sent' | 'payment-confirmed';
   channel: 'whatsapp' | 'email';
   createdAt: string;
 }
@@ -45,6 +45,13 @@ export async function markOrderSent(orderNumber: string): Promise<void> {
   const order = await getOrder(orderNumber);
   if (!order) return;
   order.status = 'payment-sent';
+  await saveOrder(order);
+}
+
+export async function markPaymentConfirmed(orderNumber: string): Promise<void> {
+  const order = await getOrder(orderNumber);
+  if (!order) return;
+  order.status = 'payment-confirmed';
   await saveOrder(order);
 }
 

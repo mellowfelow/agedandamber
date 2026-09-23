@@ -51,6 +51,7 @@ export async function POST(req: NextRequest) {
       estimatedVolume: body.estimatedVolume || '',
       tier: body.tier || undefined,
       notes: body.notes || undefined,
+      enquiryId,
     });
     await saveEnquiry({
       id: enquiryId,
@@ -72,6 +73,7 @@ export async function POST(req: NextRequest) {
       email: body.email,
       subject: body.subject || 'General inquiry',
       message: body.message,
+      enquiryId,
     });
     await saveEnquiry({
       id: enquiryId,

@@ -283,6 +283,41 @@ to the same depth).
   as before) → dashboard renders → order/enquiry detail pages resolve "not found" correctly for a
   bad id, no console errors on a fresh tab.
 
+### 14b. Payment-confirmation upload + nav fix + dashboard-link fix (23 Sep 2026, same day)
+Third round of founder feedback: (1) wanted a way for customers to send a screenshot of completed
+payment, not just a text WA message; (2) "Reply in Dashboard" showed "order not found" (traced to the
+two test orders from the prior round having already been deleted during cleanup — reproduced the exact
+link live against a real order and it worked correctly, including from a cold logged-out state; still
+changed the CTA to open the order **detail** page rather than jump straight to the composer, since
+that's what "lead to the order directly" was actually asking for and it's better UX regardless — review
+before composing); (3) the admin nav literally overlapped text on mobile ("AGED & AMBER" collided with
+"Dashboard") — found live at 375px width, not cosmetic nitpicking.
+
+- **Payment confirmation screenshots:** new public page `/order/confirm-payment/?id=<orderNumber>`
+  (chrome-free, same treatment as `/admin` — see `SiteChrome.tsx`, `middleware.ts`, `robots.txt`, all
+  updated to also exclude `/order/`). Uploads to `/api/order/confirm-payment` (public, no passcode —
+  same trust model as the existing WA "I've paid" link), which validates the order exists, caps the
+  file at 4MB (image/jpeg/png/webp/heic only), emails the concierge with the screenshot as a real
+  attachment (`sendMail()` gained an `attachments` param), and sets a new third order status
+  `payment-confirmed`. Linked from the payment-details email as a new "I've Paid — Upload Confirmation"
+  button, and from the standing payment terms' closing line.
+- **Reply/View-in-Dashboard links now go to the order/enquiry detail page**, not straight to the
+  composer: `orderEmail()`'s CTA is `/admin/orders/<id>/`; `contactEmail()`/`wholesaleEmail()` gained
+  the same "View in Dashboard" CTA pointing at `/admin/enquiries/<id>/` (they only had a `mailto:`
+  button before — `enquiryId` now threads through from `app/api/inquiry/route.ts`).
+- **Nav overlap fixed:** `AdminNav` was one flex row cramming brand + 3 links + sign-out into ~375px
+  with `whitespace-nowrap` on everything, which overflowed and visually overlapped rather than
+  wrapping. Rewrote as two rows (brand+sign-out on top, links below with `overflow-x-auto` as a
+  safety net) — confirmed clean at 375px after the fix, screenshot-verified.
+- Three-state status badge (`pending` / `payment-sent` / `payment-confirmed`) was duplicated inline in
+  3 places with only 2 states handled — pulled into one `OrderStatusBadge` component
+  (`src/components/admin/StatusBadge.tsx`) used everywhere status renders, so the third state didn't
+  need three more copy-pasted ternaries and can't drift.
+- Verified end-to-end on production: placed a real order, confirmed the order-detail deep link works
+  both from a warm and a cold (logged-out) admin session, uploaded a real 1×1 PNG through the API
+  directly (file-type and size validation both reject correctly), confirmed no console errors, checked
+  the nav at mobile width live.
+
 ## 15. Post-project site-wide QA sweep (12 Sep 2026)
 Full verification pass across the whole site after the 8-batch hub project, specifically to check
 nothing shipped this week could hurt ranking:

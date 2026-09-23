@@ -170,8 +170,8 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
   ${callout(
     `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This is an order request — reply to the customer to confirm the order and arrange payment by <strong>${esc(o.paymentMethod)}</strong>.
      <div style="margin-top:13px;">${button(
-       `https://${SITE.domain}/admin/send-payment-email/?id=${encodeURIComponent(o.orderNumber)}`,
-       'Reply in Dashboard'
+       `https://${SITE.domain}/admin/orders/${encodeURIComponent(o.orderNumber)}/`,
+       'View Order in Dashboard'
      )}</div>`
   )}
 
@@ -201,7 +201,7 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
 
   const text =
     `NEW ORDER  ${o.orderNumber}\n${ts}  ·  ${units} unit${units === 1 ? '' : 's'}\n\n` +
-    `** Payment not yet collected — arrange ${o.paymentMethod} at https://${SITE.domain}/admin/send-payment-email/?id=${o.orderNumber} **\n\n` +
+    `** Payment not yet collected — arrange ${o.paymentMethod} at https://${SITE.domain}/admin/orders/${o.orderNumber}/ **\n\n` +
     `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
     `Subtotal  ${money(o.subtotal)}\n` +
     (o.cryptoDiscount > 0 ? `Crypto discount  -${money(o.cryptoDiscount)}\n` : '') +
@@ -303,19 +303,21 @@ export interface ContactEmailInput {
   email: string;
   subject: string;
   message: string;
+  enquiryId?: string;
 }
 
 export function contactEmail(i: ContactEmailInput): { subject: string; text: string; html: string } {
   const ts = stamp();
+  const dashLink = i.enquiryId ? `https://${SITE.domain}/admin/enquiries/${encodeURIComponent(i.enquiryId)}/` : '';
 
   const body = `
   ${field('Email', mailLink(i.email), 14)}
   ${field('Subject', esc(i.subject), 0)}
   ${divider}
   ${field('Message', esc(i.message).replace(/\n/g, '<br>'), 20)}
-  <div>${button(
+  <div>${dashLink ? button(dashLink, 'View in Dashboard') + ' ' : ''}${button(
     `mailto:${i.email}?subject=${encodeURIComponent(`Re: ${i.subject}`)}`,
-    'Reply'
+    'Reply by Email'
   )}</div>
   `;
 
@@ -341,10 +343,12 @@ export interface WholesaleEmailInput {
   estimatedVolume: string;
   tier?: string;
   notes?: string;
+  enquiryId?: string;
 }
 
 export function wholesaleEmail(i: WholesaleEmailInput): { subject: string; text: string; html: string } {
   const ts = stamp();
+  const dashLink = i.enquiryId ? `https://${SITE.domain}/admin/enquiries/${encodeURIComponent(i.enquiryId)}/` : '';
 
   const tierBadge = i.tier
     ? `<span style="display:inline-block;background:${C.panel};border:1px solid ${C.rule};border-radius:999px;padding:4px 12px;font-family:${SANS};font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${C.goldInk};margin-bottom:20px;">${esc(i.tier)}</span>`
@@ -359,7 +363,7 @@ export function wholesaleEmail(i: WholesaleEmailInput): { subject: string; text:
   ${field('License type', esc(i.licenseType || '—'), 14)}
   ${field('Estimated volume', esc(i.estimatedVolume || '—'), i.notes ? 14 : 20)}
   ${i.notes ? field('Notes', esc(i.notes).replace(/\n/g, '<br>'), 20) : ''}
-  <div>${button(
+  <div>${dashLink ? button(dashLink, 'View in Dashboard') + ' ' : ''}${button(
     `mailto:${i.email}?subject=${encodeURIComponent(`${SITE.name} wholesale — ${i.businessName}`)}`,
     'Reply with price sheets'
   )}</div>
@@ -406,7 +410,10 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
     `<strong style="font-family:${SANS};">Before your order ships</strong>
      <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(i.orderNumber)}</ul>`
   )}
-  <div>${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
+  <div>${button(
+    `https://${SITE.domain}/order/confirm-payment/?id=${encodeURIComponent(i.orderNumber)}`,
+    "I've Paid — Upload Confirmation"
+  )} ${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Re: Payment for ${i.orderNumber}`)}`, 'Reply to concierge')}</div>
   `;
 
   const text =
@@ -416,7 +423,7 @@ export function paymentDetailsEmail(i: PaymentDetailsEmailInput): { subject: str
     paymentTermsLines(i.orderNumber)
       .map((l) => `- ${l}`)
       .join('\n') +
-    '\n';
+    `\nPaid already? Upload a screenshot: https://${SITE.domain}/order/confirm-payment/?id=${i.orderNumber}\n`;
 
   return {
     subject: `Payment details for order ${i.orderNumber} · ${money(i.amountDue)} due`,

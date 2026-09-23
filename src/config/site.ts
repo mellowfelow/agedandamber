@@ -83,7 +83,7 @@ export const REPLY = {
       ? `Please send the crypto-discounted total of {amount} to the ${pm.name.replace(/\s*\(.*\)/, '')} address below.`
       : `Please send {amount} via ${pm.name} using the details below.`,
     closing:
-      'Once sent, reply to this email (or send a screenshot on WhatsApp) so we can confirm and dispatch your order.',
+      "Once sent, use the button below to upload a screenshot of your payment (or reply to this email / send it on WhatsApp) so we can confirm and dispatch your order.",
     discount: pm.discount ? { percent: pm.discount, label: 'crypto' } : undefined,
   })),
 };
