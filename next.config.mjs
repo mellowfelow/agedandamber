@@ -71,6 +71,20 @@ const nextConfig = {
         source: '/api/admin/:path*',
         headers: [{ key: 'Cache-Control', value: 'no-store' }],
       },
+      {
+        // /order/* (payment-confirmation upload) — same treatment as /admin:
+        // carries a customer's order number in the URL, never cached, never
+        // indexed even if robots.txt is ignored.
+        source: '/order/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-store' },
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
+        source: '/api/order/confirm-payment/:path*',
+        headers: [{ key: 'Cache-Control', value: 'no-store' }],
+      },
     ];
   },
   async redirects() {
