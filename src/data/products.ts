@@ -2286,7 +2286,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'prod-scotch-12',
-    slug: 'glenmorangie-the-original-12-year-old-single-malt-scotch-whisky',
+    slug: 'glenmorangie-original-10-year-single-malt-scotch-whisky',
     name: "Glenmorangie The Original 10 Year Old Single Malt Scotch Whisky",
     price: 48,
     category: 'scotch-whisky',
@@ -2303,14 +2303,28 @@ export const PRODUCTS: Product[] = [
     },
     badge: "Tallest Stills in Scotland",
     featured: true,
-    images: ["/images/products/scotch-whisky/glenmorangie-the-original-12-year-old-single-malt-scotch-whisky.webp"],
+    images: ["/images/products/scotch-whisky/glenmorangie-original-10-year-single-malt-scotch-whisky.webp"],
     stock: 12,
     caskType: "Ex-Bourbon Oak",
     distilleryLocation: "Highland, Scotland",
     seo: {
       // Glenmorangie The Original does not appear anywhere in the source keyword dataset — generic/inferred keywords based on real brand/product naming, not volume-backed.
       primaryKeyword: "glenmorangie original 10 year",
-      secondaryKeywords: ["glenmorangie 10", "glenmorangie single malt scotch", "glenmorangie original price"],
+      secondaryKeywords: ["glenmorangie 10", "glenmorangie single malt scotch", "glenmorangie original price", "glenmorangie 10 year review", "glenmorangie original vs 18 year", "best glenmorangie to start with"],
+      faqs: [
+        {
+          question: "What age is Glenmorangie The Original?",
+          answer: "Glenmorangie The Original is a 10 year old single malt Scotch, matured in ex-bourbon casks before bottling at 40% ABV (80 proof).",
+        },
+        {
+          question: "What does Glenmorangie Original taste like?",
+          answer: "Light and floral with citrus and vanilla on the nose, peach and floral notes on the palate, and a smooth, easy-drinking finish — a classic entry point into Highland single malt.",
+        },
+        {
+          question: "Why is Glenmorangie known for its stills?",
+          answer: "Glenmorangie distills in the tallest pot stills in Scotland, which produces an unusually light, refined spirit compared to most Highland malts.",
+        },
+      ],
     },
   },
   {
@@ -17258,6 +17272,20 @@ export const PRODUCTS: Product[] = [
     seo: {
       primaryKeyword: "martell blue swift",
       secondaryKeywords: ["martell blue swift cognac", "martell blue swift price", "martell blue swift review", "buy martell blue swift", "martell blue swift vs vsop"],
+      faqs: [
+        {
+          question: "What makes Martell Blue Swift different from regular VSOP?",
+          answer: "Blue Swift starts as Martell's own Borderies-influenced VSOP, then finishes an additional period in first-fill American bourbon casks — giving it a rounder, sweeter profile than a standard VSOP aimed at bourbon drinkers trying cognac for the first time.",
+        },
+        {
+          question: "How should I drink Martell Blue Swift?",
+          answer: "It's built to work in bourbon-style serves — neat, on the rocks, or in a whiskey-style cocktail like an Old Fashioned — as well as the classic cognac sip.",
+        },
+        {
+          question: "Is Martell Blue Swift a good starting point for cognac?",
+          answer: "Yes — it's specifically positioned as a bridge for bourbon drinkers exploring cognac, since the bourbon-cask finish gives it a more familiar vanilla-and-caramel profile than a traditional VSOP or XO.",
+        },
+      ],
     },
   },
   {

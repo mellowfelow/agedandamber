@@ -104,9 +104,9 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
 
           {/* Tasting Profile Card */}
           <div className="p-5 rounded-2xl bg-[#1C140E] border border-amber-900/40 space-y-3 text-xs">
-            <h3 className="font-serif font-bold text-[#D4AF37] text-sm uppercase tracking-wider">
+            <h2 className="font-serif font-bold text-[#D4AF37] text-sm uppercase tracking-wider">
               Tasting Profile
-            </h3>
+            </h2>
             <div className="space-y-2 text-amber-200/90 leading-relaxed">
               <p><strong className="text-amber-100 font-serif">Nose:</strong> {product.tastingNotes.nose}</p>
               <p><strong className="text-amber-100 font-serif">Palate:</strong> {product.tastingNotes.palate}</p>
@@ -117,11 +117,11 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, r
           {/* Cask Specifications */}
           <div className="grid grid-cols-2 gap-3 text-xs">
             <div className="p-3.5 rounded-xl bg-stone-900/80 border border-stone-800">
-              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">{labels.spec}</span>
+              <span className="text-amber-300/90 block text-[10px] uppercase font-semibold">{labels.spec}</span>
               <span className="font-bold text-amber-100">{product.caskType}</span>
             </div>
             <div className="p-3.5 rounded-xl bg-stone-900/80 border border-stone-800">
-              <span className="text-amber-400/60 block text-[10px] uppercase font-semibold">{labels.origin}</span>
+              <span className="text-amber-300/90 block text-[10px] uppercase font-semibold">{labels.origin}</span>
               <span className="font-bold text-amber-100">{product.distilleryLocation}</span>
             </div>
           </div>

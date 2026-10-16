@@ -85,6 +85,19 @@ const nextConfig = {
         source: '/api/order/confirm-payment/:path*',
         headers: [{ key: 'Cache-Control', value: 'no-store' }],
       },
+      {
+        // Product/blog/category images are pre-built static files under
+        // public/images/ with stable filenames — they were serving with the
+        // framework's default `max-age=0, must-revalidate`, forcing a
+        // revalidation round-trip on every repeat view and inflating LCP
+        // (confirmed live: 3.6-4.1s vs the <2.5s target, PageSpeed Insights
+        // Oct 2026). A photo change replaces the file at the same path
+        // rather than renaming it, so this isn't content-hashed like
+        // /_next/static/ — 30 days + a day of stale-while-revalidate is a
+        // safer ceiling than next/static's 1-year immutable.
+        source: '/images/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' }],
+      },
     ];
   },
   async redirects() {
@@ -108,43 +121,57 @@ const nextConfig = {
         permanent: true,
       },
       {
+        // Destinations below carry their own trailing slash — without it,
+        // `trailingSlash: true` fires a SECOND redirect on top of this one
+        // (source -> source/ -> destination -> destination/, a 3-hop chain),
+        // which wastes crawl budget and is exactly what the technical-SEO
+        // audit flags. One hop, not three (caught + fixed Oct 2026).
         source: '/shop/aged-dark-rum/plantation-xo-20th-anniversary-rum',
-        destination: '/shop/aged-dark-rum/planteray-xo-20th-anniversary-rum',
+        destination: '/shop/aged-dark-rum/planteray-xo-20th-anniversary-rum/',
         permanent: true,
       },
       {
         source: '/shop/scotch-whisky/aberlour-16-year-old-single-malt-scotch-whisky',
-        destination: '/shop/scotch-whisky/aberlour-16-year-double-cask',
+        destination: '/shop/scotch-whisky/aberlour-16-year-double-cask/',
         permanent: true,
       },
       {
         source: '/shop/scotch-whisky/glen-scotia-double-cask-single-malt-scotch-whisky',
-        destination: '/shop/scotch-whisky/glen-scotia-double-cask',
+        destination: '/shop/scotch-whisky/glen-scotia-double-cask/',
         permanent: true,
       },
       {
         source: '/shop/scotch-whisky/glendronach-15-year-revival',
-        destination: '/shop/scotch-whisky/glendronach-15-year-old-revival-single-malt-scotch-whisky',
+        destination: '/shop/scotch-whisky/glendronach-15-year-old-revival-single-malt-scotch-whisky/',
         permanent: true,
       },
       {
         source: '/shop/bourbon-whiskey/bookers-bourbon',
-        destination: '/shop/bourbon-whiskey/bookers-small-batch-bourbon',
+        destination: '/shop/bourbon-whiskey/bookers-small-batch-bourbon/',
         permanent: true,
       },
       {
         source: '/shop/beer/samuel-adams-boston-lager',
-        destination: '/shop/beer/samuel-adams-boston-lager-12-x-12oz-bottles',
+        destination: '/shop/beer/samuel-adams-boston-lager-12-x-12oz-bottles/',
         permanent: true,
       },
       {
         source: '/shop/tequila-mezcal/el-tesoro-extra-anejo',
-        destination: '/shop/tequila-mezcal/el-tesoro-extra-anejo-tequila-750ml',
+        destination: '/shop/tequila-mezcal/el-tesoro-extra-anejo-tequila-750ml/',
         permanent: true,
       },
       {
         source: '/shop/beer/bells-two-hearted-ale',
-        destination: '/shop/beer/bells-two-hearted-ale-6-x-12oz-can',
+        destination: '/shop/beer/bells-two-hearted-ale-6-x-12oz-can/',
+        permanent: true,
+      },
+      {
+        // The slug said "12 Year Old" but the product (name, age field, and
+        // real-world bottle) is the 10 Year Old — a data-entry mismatch
+        // caught during the Oct 2026 audit. Renamed the slug to match
+        // reality rather than leave a URL that contradicts its own page.
+        source: '/shop/scotch-whisky/glenmorangie-the-original-12-year-old-single-malt-scotch-whisky',
+        destination: '/shop/scotch-whisky/glenmorangie-original-10-year-single-malt-scotch-whisky/',
         permanent: true,
       },
     ];
