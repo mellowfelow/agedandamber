@@ -57,7 +57,7 @@ export async function sendMail(opts: {
   text: string;
   html?: string;
   replyTo?: string;
-  attachments?: { filename: string; content: Buffer; contentType?: string }[];
+  attachments?: { filename: string; content: Buffer; contentType?: string; cid?: string }[];
 }): Promise<{ emailed: boolean }> {
   const transport = zohoTransport();
   if (!transport) return { emailed: false };

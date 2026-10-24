@@ -5,6 +5,7 @@ import { X, ShieldCheck, Coins, CheckCircle2, ArrowRight, MessageCircle } from '
 import { SHOP, CONTACT } from '../config/site';
 import { useAppState } from '../../app/providers';
 import { waOrderLink } from '../lib/whatsapp';
+import { CryptoPaymentPanel } from './CryptoPaymentPanel';
 
 export const CheckoutModal: React.FC = () => {
   const { cart, checkoutModalOpen, setCheckoutModalOpen, clearCart } = useAppState();
@@ -29,6 +30,7 @@ export const CheckoutModal: React.FC = () => {
     orderNumber: string;
     grandTotal: number;
     selectedPayment: string;
+    paymentMethodId: string;
     name: string;
     email: string;
   } | null>(null);
@@ -39,6 +41,9 @@ export const CheckoutModal: React.FC = () => {
 
   const subtotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
   const isCrypto = selectedPayment.startsWith('crypto-');
+  // 'crypto-BTC' -> 'BTC', 'crypto-USDT' -> 'USDT' — the coin-level choice;
+  // CryptoPaymentPanel handles the USDT network sub-choice itself.
+  const cryptoCoin = isCrypto ? (selectedPayment === 'crypto-BTC' ? 'BTC' : 'USDT') : null;
   const cryptoDiscountAmount = isCrypto ? subtotal * 0.1 : 0;
   const shippingFee = subtotal >= SHOP.freeShippingThreshold ? 0 : SHOP.shippingFee;
   const grandTotal = subtotal - cryptoDiscountAmount + shippingFee;
@@ -67,6 +72,7 @@ export const CheckoutModal: React.FC = () => {
       total: grandTotal,
       paymentMethod:
         SHOP.paymentMethods.find((pm) => pm.id === selectedPayment)?.name || selectedPayment,
+      paymentMethodId: selectedPayment,
       customer: {
         name: formData.name,
         email: formData.email,
@@ -109,6 +115,7 @@ export const CheckoutModal: React.FC = () => {
       orderNumber,
       grandTotal,
       selectedPayment: payload.paymentMethod,
+      paymentMethodId: selectedPayment,
       name: formData.name,
       email: formData.email,
     });
@@ -164,6 +171,7 @@ export const CheckoutModal: React.FC = () => {
         shipping: shippingFee,
         total: grandTotal,
         paymentMethod,
+        paymentMethodId: selectedPayment,
         customer: {
           name: formData.name,
           email: formData.email,
@@ -181,6 +189,7 @@ export const CheckoutModal: React.FC = () => {
       orderNumber,
       grandTotal,
       selectedPayment: paymentMethod,
+      paymentMethodId: selectedPayment,
       name: formData.name,
       email: formData.email,
     });
@@ -246,7 +255,12 @@ export const CheckoutModal: React.FC = () => {
             </h2>
 
             <p className="text-amber-200/80 text-sm max-w-md mx-auto leading-relaxed">
-              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>. Your order has been logged with our Napa Valley concierge, who will reach out by email or WhatsApp shortly with secure payment instructions for <strong className="text-amber-100">{completedOrder.selectedPayment}</strong>.
+              Thank you, <strong className="text-amber-100">{completedOrder.name}</strong>.{' '}
+              {completedOrder.paymentMethodId.startsWith('crypto-') ? (
+                <>Your order has been logged — pay using the details below, then upload your payment confirmation.</>
+              ) : (
+                <>Your order has been logged with our Napa Valley concierge, who will reach out by email or WhatsApp shortly with secure payment instructions for <strong className="text-amber-100">{completedOrder.selectedPayment}</strong>.</>
+              )}
             </p>
 
             <div className="p-4 rounded-xl bg-stone-900/80 border border-stone-800 text-xs text-left max-w-md mx-auto space-y-2">
@@ -262,14 +276,35 @@ export const CheckoutModal: React.FC = () => {
                 <span className="text-amber-400/60">Total Order Amount:</span>
                 <span className="font-bold text-[#D4AF37]">${completedOrder.grandTotal.toFixed(2)}</span>
               </div>
-              <p className="text-[11px] text-amber-300/70 pt-1">
-                Our concierge will email <strong>{completedOrder.email}</strong> within 2 hours (business
-                hours) with secure payment routing details and adult-signature tracking. If you don&apos;t
-                hear from us, reach out directly quoting order{' '}
-                <strong>{completedOrder.orderNumber}</strong> — {CONTACT.email} or WhatsApp{' '}
-                {CONTACT.phone}.
-              </p>
+              {!completedOrder.paymentMethodId.startsWith('crypto-') && (
+                <p className="text-[11px] text-amber-300/70 pt-1">
+                  Our concierge will email <strong>{completedOrder.email}</strong> within 2 hours (business
+                  hours) with secure payment routing details and adult-signature tracking. If you don&apos;t
+                  hear from us, reach out directly quoting order{' '}
+                  <strong>{completedOrder.orderNumber}</strong> — {CONTACT.email} or WhatsApp{' '}
+                  {CONTACT.phone}.
+                </p>
+              )}
             </div>
+
+            {completedOrder.paymentMethodId.startsWith('crypto-') && (
+              <div className="max-w-md mx-auto space-y-3">
+                <CryptoPaymentPanel
+                  coin={completedOrder.paymentMethodId === 'crypto-BTC' ? 'BTC' : 'USDT'}
+                  amount={completedOrder.grandTotal}
+                />
+                <p className="text-[11px] text-amber-300/70">
+                  A copy of these details is also in your confirmation email. Already paid?{' '}
+                  <a
+                    href={`/order/confirm-payment/?id=${completedOrder.orderNumber}`}
+                    className="text-[#D4AF37] underline font-semibold"
+                  >
+                    Upload your payment confirmation
+                  </a>
+                  .
+                </p>
+              </div>
+            )}
 
             <button
               onClick={() => {
@@ -408,6 +443,8 @@ export const CheckoutModal: React.FC = () => {
                   </button>
                 ))}
               </div>
+
+              {cryptoCoin && <CryptoPaymentPanel key={cryptoCoin} coin={cryptoCoin} amount={grandTotal} />}
             </div>
 
             {/* Summary */}

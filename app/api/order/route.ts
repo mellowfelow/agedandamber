@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
     body.orderNumber && /^AA-\d{6}$/.test(body.orderNumber) ? body.orderNumber : `AA-${String(Date.now()).slice(-6)}`;
 
   const mail = orderEmail({ ...body, orderNumber });
-  const confirmation = orderConfirmationEmail({ ...body, orderNumber });
+  const confirmation = await orderConfirmationEmail({ ...body, orderNumber });
 
   await saveOrder({
     orderNumber,

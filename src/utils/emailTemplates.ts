@@ -1,4 +1,5 @@
-import { SITE, CONTACT } from '../config/site';
+import QRCode from 'qrcode';
+import { SITE, CONTACT, CRYPTO_WALLETS } from '../config/site';
 import { paymentTermsHtml, paymentTermsLines } from '../lib/order';
 import { waPaymentConfirmationLink } from '../lib/whatsapp';
 
@@ -129,6 +130,9 @@ export interface OrderEmailInput {
   shipping: number;
   total: number;
   paymentMethod: string;
+  /** Raw id ('crypto-BTC' | 'crypto-USDT' | ...) — lets the confirmation email
+   * tell crypto orders apart from the others without parsing the display name. */
+  paymentMethodId?: string;
   customer: {
     name: string; email: string; phone: string;
     street: string; city: string; state: string; zip: string;
@@ -232,10 +236,19 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
  * confirms the order); it exists so the customer has an immediate receipt
  * instead of waiting up to 2 hours with no record the order was received.
  */
-export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; text: string; html: string } {
+export async function orderConfirmationEmail(
+  o: OrderEmailInput
+): Promise<{
+  subject: string;
+  text: string;
+  html: string;
+  attachments?: { filename: string; content: Buffer; contentType?: string; cid?: string }[];
+}> {
   const c = o.customer;
   const ts = stamp();
   const units = o.items.reduce((n, i) => n + i.quantity, 0);
+  const isCrypto = (o.paymentMethodId || '').startsWith('crypto-');
+  const coin = o.paymentMethodId === 'crypto-BTC' ? 'BTC' : o.paymentMethodId === 'crypto-USDT' ? 'USDT' : null;
 
   const rows = o.items
     .map(
@@ -247,11 +260,65 @@ export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; t
     )
     .join('');
 
+  // Crypto orders carry a known, static address — show it immediately instead
+  // of making the customer wait for a second email. Non-crypto methods are
+  // unchanged: the concierge still sends routing details separately.
+  let attachments: { filename: string; content: Buffer; contentType?: string; cid?: string }[] | undefined;
+  let cryptoBlock = '';
+  let cryptoText = '';
+
+  if (isCrypto && coin) {
+    // USDT runs on 3 networks; the email shows the most common (TRC-20, lowest
+    // fees) as the primary QR + address, and lists the other two as plain-text
+    // alternatives — the full interactive picker lives on the confirmation
+    // page/site, which isn't available inside an email client.
+    const primary = coin === 'BTC' ? CRYPTO_WALLETS[0] : CRYPTO_WALLETS.find((w) => w.id === 'USDT-TRC20')!;
+    const otherNetworks = coin === 'USDT' ? CRYPTO_WALLETS.filter((w) => w.id.startsWith('USDT-') && w.id !== primary.id) : [];
+    const qrPayload = coin === 'BTC' ? `bitcoin:${primary.address}?amount=${o.total.toFixed(8)}` : primary.address;
+
+    try {
+      const qrBuffer = await QRCode.toBuffer(qrPayload, { width: 220, margin: 1, color: { dark: '#140D08', light: '#FFFFFF' } });
+      attachments = [{ filename: 'payment-qr.png', content: qrBuffer, contentType: 'image/png', cid: 'payment-qr' }];
+    } catch {
+      /* QR generation failed — email still sends with the address as text, just no image */
+    }
+
+    const otherNetworksHtml = otherNetworks.length
+      ? `<p style="margin:10px 0 0;font-family:${SANS};font-size:12px;color:${C.soft};">Prefer a different network? ${otherNetworks
+          .map((w) => `<strong>${esc(w.network)}:</strong> <span style="font-family:monospace;">${esc(w.address)}</span>`)
+          .join(' &nbsp;|&nbsp; ')}</p>`
+      : '';
+
+    cryptoBlock = `
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:4px;background:${C.panel};border:1px solid ${C.rule};border-radius:8px;">
+      <tr>
+        <td style="padding:16px;">
+          <p style="margin:0 0 10px;font-family:${SANS};font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${C.soft};">Pay with ${esc(primary.name)} (${esc(primary.network)})</p>
+          ${attachments ? `<img src="cid:payment-qr" width="160" height="160" alt="${esc(primary.name)} deposit QR code" style="display:block;background:#fff;padding:6px;border-radius:6px;" />` : ''}
+          <p style="margin:10px 0 2px;font-family:${SANS};font-size:12px;color:${C.soft};">Address</p>
+          <p style="margin:0;font-family:monospace;font-size:13px;word-break:break-all;color:${C.ink};">${esc(primary.address)}</p>
+          <p style="margin:10px 0 0;font-family:${SANS};font-size:12px;color:${C.soft};">Amount: <strong style="color:${C.ink};">${money(o.total)}</strong> equivalent</p>
+          ${otherNetworksHtml}
+        </td>
+      </tr>
+    </table>`;
+
+    cryptoText =
+      `\nPAY WITH ${primary.name.toUpperCase()} (${primary.network})\n` +
+      `Address: ${primary.address}\n` +
+      `Amount: ${money(o.total)} equivalent\n` +
+      (otherNetworks.length
+        ? otherNetworks.map((w) => `Alt. ${w.network}: ${w.address}`).join('\n') + '\n'
+        : '');
+  }
+
   const body = `
   ${callout(
-    `<strong style="font-family:${SANS};">Thanks, ${esc(c.name)} — we've received your order.</strong> Keep this email as your reference. You'll receive a second email shortly with payment instructions for <strong>${esc(
-      o.paymentMethod
-    )}</strong>; once that's confirmed we'll finalise your order for dispatch.`
+    isCrypto
+      ? `<strong style="font-family:${SANS};">Thanks, ${esc(c.name)} — we've received your order.</strong> Pay using the ${esc(o.paymentMethod)} details below, then upload a payment confirmation and we'll dispatch once verified.`
+      : `<strong style="font-family:${SANS};">Thanks, ${esc(c.name)} — we've received your order.</strong> Keep this email as your reference. You'll receive a second email shortly with payment instructions for <strong>${esc(
+          o.paymentMethod
+        )}</strong>; once that's confirmed we'll finalise your order for dispatch.`
   )}
 
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -265,6 +332,8 @@ export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; t
     </tr>
   </table>
 
+  ${cryptoBlock}
+
   ${divider}
 
   ${callout(
@@ -272,14 +341,21 @@ export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; t
      <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(o.orderNumber)}</ul>`
   )}
 
-  <div>${button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Question about order ${o.orderNumber}`)}`, 'Contact concierge')}</div>
+  <div>${button(
+    isCrypto ? `${process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE.domain}`}/order/confirm-payment/?id=${o.orderNumber}` : `mailto:${CONTACT.email}?subject=${encodeURIComponent(`Question about order ${o.orderNumber}`)}`,
+    isCrypto ? "I've Paid — Upload Confirmation" : 'Contact concierge'
+  )}</div>
   `;
 
   const text =
     `ORDER RECEIVED — ${o.orderNumber}\n${ts}\n\n` +
-    `Thanks, ${c.name} — we've received your order. You'll get a second email shortly with payment instructions for ${o.paymentMethod}.\n\n` +
-    `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
-    `TOTAL  ${money(o.total)}\n\n` +
+    (isCrypto
+      ? `Thanks, ${c.name} — we've received your order. Pay using the ${o.paymentMethod} details below, then upload a payment confirmation.\n`
+      : `Thanks, ${c.name} — we've received your order. You'll get a second email shortly with payment instructions for ${o.paymentMethod}.\n`) +
+    `\nITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
+    `TOTAL  ${money(o.total)}\n` +
+    cryptoText +
+    '\n' +
     paymentTermsLines(o.orderNumber)
       .map((l) => `- ${l}`)
       .join('\n') +
@@ -294,6 +370,7 @@ export function orderConfirmationEmail(o: OrderEmailInput): { subject: string; t
       meta: `${ts}  ·  ${units} unit${units === 1 ? '' : 's'}  ·  ${o.orderNumber}`,
       body,
     }),
+    attachments,
   };
 }
 

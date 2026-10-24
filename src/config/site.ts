@@ -23,6 +23,20 @@ export const CONTACT = {
   country: 'USA',
 };
 
+// Crypto wallet addresses — real, static, business-provided (confirmed with the
+// founder 24 Oct 2026). Unlike bank-wire details these are receive-only public
+// addresses, not secrets, and don't change per order, so unlike the rest of
+// REPLY.paymentMethods they're safe to hold in config and shown immediately at
+// checkout rather than sent later by the admin. USDT runs on three separate
+// networks with three separate addresses — sending to the wrong one loses
+// funds, so never collapse these into one "USDT" entry.
+export const CRYPTO_WALLETS = [
+  { id: 'BTC', name: 'Bitcoin', network: 'Bitcoin', address: 'bc1q95huj62jcxq4pvsa09herj0ssh4aeanc3v8jn2' },
+  { id: 'USDT-TRC20', name: 'USDT', network: 'TRC-20 (Tron)', address: 'TReykodL93PS3mtobzHEz3nZdtimDhWFVB' },
+  { id: 'USDT-ERC20', name: 'USDT', network: 'ERC-20 (Ethereum)', address: '0x3819109CAdeE74becf86F5Ddff8e8A57681ACd04' },
+  { id: 'USDT-SOL', name: 'USDT', network: 'Solana', address: '3ZeKxzf8ao7DRiK74KxRmQE5wHBnsTRMH7Q2x88VHoA4' },
+] as const;
+
 export const SHOP = {
   minOrder: 200,
   freeShippingThreshold: 300,
