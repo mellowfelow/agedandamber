@@ -4775,7 +4775,7 @@ export const BRAND_HUBS: BrandHub[] = [
       titleTag: 'ACE Cider — Apple, Mango & Pineapple Hard Cider',
       h1: 'ACE Hard Cider — Apple, Mango & Pineapple Allocations',
       metaDescription: 'Buy ACE Hard Cider online — Apple, Mango, and Pineapple. Direct allocations at Aged & Amber. Free shipping on $300+.',
-      hook: 'Founded by Jeffrey House in Sebastopol/Graton, California in July 1993, ACE was the first California hard cider producer and one of the first cideries formed in the US after Prohibition — House even opened the first modern cider-focused pub in the country in 1999. The brand built its reputation on fruit-forward, easy-drinking ciders, with Pineapple standing out as ACE’s biggest seller by real search demand.',
+      hook: 'Founded by Jeffrey House in Sebastopol/Graton, California in July 1993, ACE was the first California hard cider producer and one of the first cideries formed in the US after Prohibition — House even opened the first modern cider-focused pub in the country in 1999. The brand built its reputation on fruit-forward, easy-drinking ciders across its Apple, Mango, and Pineapple range.',
       faqs: [
         { question: 'Is ACE Cider gluten free?', answer: 'Yes — ACE’s fruit ciders are apple-based and naturally gluten-free, though it’s always worth confirming current labeling.' },
         { question: 'Where is ACE Cider made?', answer: 'Sonoma County, California (Sebastopol), where the brand has operated since 1993.' },

@@ -461,6 +461,23 @@ export const SUBCATEGORY_HUBS: SubcategoryHub[] = [
   },
   {
     categorySlug: 'rtd-liqueurs',
+    hubSlug: 'hard-seltzers',
+    subcategoryName: 'Hard Seltzers',
+    name: 'Hard Seltzers',
+    seo: {
+      titleTag: 'Vodka & Hard Seltzers — Allocated',
+      h1: 'Vodka Seltzer & Hard Seltzer — Buy Allocated Online',
+      metaDescription: 'Buy vodka seltzer and hard seltzer online — White Claw, Truly, High Noon, Nütrl, Topo Chico. Direct allocations, free shipping $300+.',
+      transactionalCTA: 'Buy vodka seltzer and hard seltzer online — direct allocations shipped to every state with compliant direct-to-consumer alcohol shipping laws.',
+      definitionHook: 'Hard seltzer is carbonated water fermented or blended with alcohol — either malt-based or, in the case of brands like High Noon and Nütrl, built on real vodka — then lightly flavored with fruit. It typically runs 4-5% ABV, lower in calories and carbs than beer or a mixed drink, which is the core of its appeal.',
+      faqs: [
+        { question: 'Is hard seltzer the same as vodka soda?', answer: 'Not quite. A vodka soda is vodka mixed with plain soda water at pour time; hard seltzer is pre-batched and carbonated at the brewery or distillery, and some brands (like White Claw and Truly) ferment their base rather than starting from distilled spirit. Vodka-based seltzers like High Noon and Nütrl are closer to a canned vodka soda in spirit, if not in process.' },
+        { question: 'How many calories are in a hard seltzer?', answer: 'Most hard seltzers run 90-110 calories per 12oz can, noticeably lighter than a 150-plus-calorie beer or a sugary canned cocktail — the main reason the category took off.' },
+      ],
+    },
+  },
+  {
+    categorySlug: 'rtd-liqueurs',
     hubSlug: 'cream-liqueurs',
     subcategoryName: 'Cream Liqueurs',
     name: 'Cream Liqueurs',
