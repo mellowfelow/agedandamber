@@ -272,9 +272,14 @@ export async function orderConfirmationEmail(
     // fees) as the primary QR + address, and lists the other two as plain-text
     // alternatives — the full interactive picker lives on the confirmation
     // page/site, which isn't available inside an email client.
-    const primary = coin === 'BTC' ? CRYPTO_WALLETS[0] : CRYPTO_WALLETS.find((w) => w.id === 'USDT-TRC20')!;
+    const primary = CRYPTO_WALLETS.find((w) => w.id === (coin === 'BTC' ? 'BTC' : 'USDT-TRC20'))!;
     const otherNetworks = coin === 'USDT' ? CRYPTO_WALLETS.filter((w) => w.id.startsWith('USDT-') && w.id !== primary.id) : [];
-    const qrPayload = coin === 'BTC' ? `bitcoin:${primary.address}?amount=${o.total.toFixed(8)}` : primary.address;
+    // Address-only — BIP21's `amount` param is denominated in BTC, and this
+    // app has no live BTC/USD price feed to convert `o.total` (a USD figure)
+    // correctly. Encoding it directly would tell the wallet to pre-fill the
+    // wrong magnitude (e.g. "324" read as 324 BTC, not $324 of BTC). The
+    // USD-equivalent is still shown as text next to the QR, same as USDT.
+    const qrPayload = primary.address;
 
     try {
       const qrBuffer = await QRCode.toBuffer(qrPayload, { width: 220, margin: 1, color: { dark: '#140D08', light: '#FFFFFF' } });

@@ -24,15 +24,20 @@ export const CryptoPaymentPanel: React.FC<CryptoPaymentPanelProps> = ({ coin, am
     setNetworkId(coin === 'BTC' ? 'BTC' : USDT_NETWORKS[0].id);
   }, [coin]);
 
-  const wallet = CRYPTO_WALLETS.find((w) => w.id === networkId) || CRYPTO_WALLETS[0];
+  // Fallback by explicit id, never by array position — CRYPTO_WALLETS[0] being
+  // "BTC" is an ordering assumption that silently breaks if the array is ever
+  // reordered, which is the last thing a payment address should depend on.
+  const wallet =
+    CRYPTO_WALLETS.find((w) => w.id === networkId) || CRYPTO_WALLETS.find((w) => w.id === 'BTC')!;
 
   useEffect(() => {
-    // BTC wallets widely support the BIP21 URI (bitcoin:<address>?amount=<btc>),
-    // auto-filling the amount on scan. USDT has no equivalent standard honoured
-    // across TRC20/ERC20/SOL wallets, so its QR carries the address only — the
-    // customer enters the amount themselves, same as any exchange deposit QR.
-    const payload =
-      wallet.id === 'BTC' ? `bitcoin:${wallet.address}?amount=${amount.toFixed(8)}` : wallet.address;
+    // BIP21's `amount` param must be denominated in BTC, not USD — this app has
+    // no live BTC/USD price feed to convert `amount` (a USD figure) correctly,
+    // so encoding it directly would tell the customer's wallet to pre-fill the
+    // wrong magnitude entirely (e.g. "324" read as 324 BTC, not $324 of BTC).
+    // Address-only avoids that; the USD-equivalent figure is still shown as
+    // text below the QR, same as the USDT networks already do it.
+    const payload = wallet.address;
 
     let cancelled = false;
     QRCode.toDataURL(payload, { width: 220, margin: 1, color: { dark: '#140D08', light: '#FFFFFF' } })
@@ -45,7 +50,10 @@ export const CryptoPaymentPanel: React.FC<CryptoPaymentPanelProps> = ({ coin, am
     return () => {
       cancelled = true;
     };
-  }, [wallet, amount]);
+    // `amount` intentionally excluded — it no longer feeds the QR payload
+    // (see the comment above); only the selected wallet does.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wallet]);
 
   const handleCopy = async () => {
     try {
