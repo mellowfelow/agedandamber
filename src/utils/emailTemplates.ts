@@ -288,6 +288,11 @@ export async function orderConfirmationEmail(
       /* QR generation failed — email still sends with the address as text, just no image */
     }
 
+    // BTC's "network" is literally "Bitcoin" — same as its name — so
+    // appending it produces "Bitcoin (Bitcoin)". Only qualify with the
+    // network when it adds information (USDT, which has three).
+    const primaryLabel = primary.network === primary.name ? primary.name : `${primary.name} (${primary.network})`;
+
     const otherNetworksHtml = otherNetworks.length
       ? `<p style="margin:10px 0 0;font-family:${SANS};font-size:12px;color:${C.soft};">Prefer a different network? ${otherNetworks
           .map((w) => `<strong>${esc(w.network)}:</strong> <span style="font-family:monospace;">${esc(w.address)}</span>`)
@@ -298,8 +303,8 @@ export async function orderConfirmationEmail(
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:4px;background:${C.panel};border:1px solid ${C.rule};border-radius:8px;">
       <tr>
         <td style="padding:16px;">
-          <p style="margin:0 0 10px;font-family:${SANS};font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${C.soft};">Pay with ${esc(primary.name)} (${esc(primary.network)})</p>
-          ${attachments ? `<img src="cid:payment-qr" width="160" height="160" alt="${esc(primary.name)} deposit QR code" style="display:block;background:#fff;padding:6px;border-radius:6px;" />` : ''}
+          <p style="margin:0 0 10px;font-family:${SANS};font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:${C.soft};">Pay with ${esc(primaryLabel)}</p>
+          ${attachments ? `<img src="cid:payment-qr" width="160" height="160" alt="${esc(primaryLabel)} deposit QR code" style="display:block;background:#fff;padding:6px;border-radius:6px;" />` : ''}
           <p style="margin:10px 0 2px;font-family:${SANS};font-size:12px;color:${C.soft};">Address</p>
           <p style="margin:0;font-family:monospace;font-size:13px;word-break:break-all;color:${C.ink};">${esc(primary.address)}</p>
           <p style="margin:10px 0 0;font-family:${SANS};font-size:12px;color:${C.soft};">Amount: <strong style="color:${C.ink};">${money(o.total)}</strong> equivalent</p>
@@ -309,7 +314,7 @@ export async function orderConfirmationEmail(
     </table>`;
 
     cryptoText =
-      `\nPAY WITH ${primary.name.toUpperCase()} (${primary.network})\n` +
+      `\nPAY WITH ${primaryLabel.toUpperCase()}\n` +
       `Address: ${primary.address}\n` +
       `Amount: ${money(o.total)} equivalent\n` +
       (otherNetworks.length

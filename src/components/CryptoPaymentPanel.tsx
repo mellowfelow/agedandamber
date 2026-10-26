@@ -29,6 +29,10 @@ export const CryptoPaymentPanel: React.FC<CryptoPaymentPanelProps> = ({ coin, am
   // reordered, which is the last thing a payment address should depend on.
   const wallet =
     CRYPTO_WALLETS.find((w) => w.id === networkId) || CRYPTO_WALLETS.find((w) => w.id === 'BTC')!;
+  // BTC's "network" is literally "Bitcoin" — same as its name — so appending
+  // it produces "Bitcoin (Bitcoin)". Only show the network qualifier when it
+  // actually adds information (i.e. for USDT, which has three).
+  const walletLabel = wallet.network === wallet.name ? wallet.name : `${wallet.name} (${wallet.network})`;
 
   useEffect(() => {
     // BIP21's `amount` param must be denominated in BTC, not USD — this app has
@@ -99,7 +103,7 @@ export const CryptoPaymentPanel: React.FC<CryptoPaymentPanelProps> = ({ coin, am
         <div className="shrink-0 bg-white p-2 rounded-xl">
           {qrDataUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={qrDataUrl} alt={`${wallet.name} (${wallet.network}) deposit QR code`} width={160} height={160} />
+            <img src={qrDataUrl} alt={`${walletLabel} deposit QR code`} width={160} height={160} />
           ) : (
             <div className="w-40 h-40 bg-stone-200 animate-pulse rounded" />
           )}
@@ -108,7 +112,7 @@ export const CryptoPaymentPanel: React.FC<CryptoPaymentPanelProps> = ({ coin, am
         <div className="flex-1 w-full space-y-2">
           <div>
             <span className="text-[10px] font-bold text-amber-300 uppercase tracking-wider block mb-1">
-              {wallet.name} address ({wallet.network})
+              {walletLabel} address
             </span>
             <button
               type="button"
