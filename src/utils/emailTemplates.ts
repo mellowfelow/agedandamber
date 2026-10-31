@@ -144,6 +144,7 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
   const c = o.customer;
   const ts = stamp();
   const units = o.items.reduce((n, i) => n + i.quantity, 0);
+  const isCrypto = (o.paymentMethodId || '').startsWith('crypto-');
 
   const rows = o.items
     .map(
@@ -173,7 +174,13 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
 
   const body = `
   ${callout(
-    `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This is an order request — reply to the customer to confirm the order and arrange payment by <strong>${esc(o.paymentMethod)}</strong>.
+    isCrypto
+      ? `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This order paid by <strong>${esc(o.paymentMethod)}</strong> — the wallet address and QR were already shown to the customer at checkout, so there's nothing to arrange. Watch for their "I've Paid" confirmation (a separate email with their payment screenshot attached), verify it against the wallet, then dispatch.
+     <div style="margin-top:13px;">${button(
+         `https://${SITE.domain}/admin/orders/${encodeURIComponent(o.orderNumber)}/`,
+         'View Order in Dashboard'
+       )}</div>`
+      : `<strong style="font-family:${SANS};">Payment not yet collected.</strong> This is an order request — reply to the customer to confirm the order and arrange payment by <strong>${esc(o.paymentMethod)}</strong>.
      <div style="margin-top:13px;">${button(
        `https://${SITE.domain}/admin/orders/${encodeURIComponent(o.orderNumber)}/`,
        'View Order in Dashboard'
@@ -206,7 +213,9 @@ export function orderEmail(o: OrderEmailInput): { subject: string; text: string;
 
   const text =
     `NEW ORDER  ${o.orderNumber}\n${ts}  ·  ${units} unit${units === 1 ? '' : 's'}\n\n` +
-    `** Payment not yet collected — arrange ${o.paymentMethod} at https://${SITE.domain}/admin/orders/${o.orderNumber}/ **\n\n` +
+    (isCrypto
+      ? `** Payment not yet collected — wallet/QR already shown to the customer, nothing to arrange. Watch for their "I've Paid" confirmation email, verify, then dispatch: https://${SITE.domain}/admin/orders/${o.orderNumber}/ **\n\n`
+      : `** Payment not yet collected — arrange ${o.paymentMethod} at https://${SITE.domain}/admin/orders/${o.orderNumber}/ **\n\n`) +
     `ITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
     `Subtotal  ${money(o.subtotal)}\n` +
     (o.cryptoDiscount > 0 ? `Crypto discount  -${money(o.cryptoDiscount)}\n` : '') +

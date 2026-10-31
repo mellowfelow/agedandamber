@@ -8,7 +8,8 @@ import { CRYPTO_WALLETS } from '../config/site';
 interface CryptoPaymentPanelProps {
   /** Which coin the customer picked at the payment-method step. */
   coin: 'BTC' | 'USDT';
-  /** Exact amount due, for display and (BTC only) baked into the QR. */
+  /** Exact amount due, USD. Display only — never baked into the QR (see the
+   * comment on the QR-generation effect below for why). */
   amount: number;
 }
 
