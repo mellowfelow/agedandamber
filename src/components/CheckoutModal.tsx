@@ -293,15 +293,15 @@ export const CheckoutModal: React.FC = () => {
                   coin={completedOrder.paymentMethodId === 'crypto-BTC' ? 'BTC' : 'USDT'}
                   amount={completedOrder.grandTotal}
                 />
+                <a
+                  href={`/order/confirm-payment/?id=${completedOrder.orderNumber}`}
+                  className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-xl"
+                >
+                  <CheckCircle2 className="w-5 h-5" />
+                  I&apos;ve Paid — Upload Confirmation
+                </a>
                 <p className="text-[11px] text-amber-300/70">
-                  A copy of these details is also in your confirmation email. Already paid?{' '}
-                  <a
-                    href={`/order/confirm-payment/?id=${completedOrder.orderNumber}`}
-                    className="text-[#D4AF37] underline font-semibold"
-                  >
-                    Upload your payment confirmation
-                  </a>
-                  .
+                  A copy of these details, and this same button, is also in your confirmation email.
                 </p>
               </div>
             )}
@@ -444,7 +444,13 @@ export const CheckoutModal: React.FC = () => {
                 ))}
               </div>
 
-              {cryptoCoin && <CryptoPaymentPanel key={cryptoCoin} coin={cryptoCoin} amount={grandTotal} />}
+              {cryptoCoin && (
+                <p className="text-[11px] text-amber-300/60 px-1">
+                  You&apos;ll see the {cryptoCoin} wallet address and QR code on the next screen, right
+                  after you place your order — the same details also go out in your confirmation email,
+                  each with an &quot;I&apos;ve Paid&quot; button to confirm once you&apos;ve sent payment.
+                </p>
+              )}
             </div>
 
             {/* Summary */}

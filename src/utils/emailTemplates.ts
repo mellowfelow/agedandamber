@@ -114,6 +114,18 @@ function button(href: string, text: string) {
   return `<a href="${esc(href)}" style="display:inline-block;background:${C.head};color:${C.cream};font-family:${SANS};font-size:13px;font-weight:600;line-height:1;text-decoration:none;padding:11px 22px;border-radius:3px;">${esc(text)} &rarr;</a>`;
 }
 
+// Full-width, high-contrast variant for the one action that matters most in a
+// given email (e.g. confirming a crypto payment) — table-based so it renders
+// as a solid block in Outlook, not just the plain-link fallback it gives
+// display:inline-block anchors.
+function bigButton(href: string, text: string) {
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0;"><tr>
+    <td align="center" style="background:${C.good};border-radius:6px;">
+      <a href="${esc(href)}" style="display:block;padding:17px 20px;font-family:${SANS};font-size:16px;font-weight:700;line-height:1.2;color:#FFFFFF;text-decoration:none;text-align:center;">${esc(text)}</a>
+    </td>
+  </tr></table>`;
+}
+
 const mailLink = (e: string) =>
   `<a href="mailto:${esc(e)}" style="color:${C.goldInk};text-decoration:none;font-weight:600;">${esc(e)}</a>`;
 
@@ -258,6 +270,7 @@ export async function orderConfirmationEmail(
   const units = o.items.reduce((n, i) => n + i.quantity, 0);
   const isCrypto = (o.paymentMethodId || '').startsWith('crypto-');
   const coin = o.paymentMethodId === 'crypto-BTC' ? 'BTC' : o.paymentMethodId === 'crypto-USDT' ? 'USDT' : null;
+  const confirmPaymentUrl = `${process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE.domain}`}/order/confirm-payment/?id=${o.orderNumber}`;
 
   const rows = o.items
     .map(
@@ -360,10 +373,11 @@ export async function orderConfirmationEmail(
      <ul style="margin:10px 0 0;padding-left:18px;">${paymentTermsHtml(o.orderNumber)}</ul>`
   )}
 
-  <div>${button(
-    isCrypto ? `${process.env.NEXT_PUBLIC_SITE_URL || `https://${SITE.domain}`}/order/confirm-payment/?id=${o.orderNumber}` : `mailto:${CONTACT.email}?subject=${encodeURIComponent(`Question about order ${o.orderNumber}`)}`,
-    isCrypto ? "I've Paid — Upload Confirmation" : 'Contact concierge'
-  )}</div>
+  <div>${
+    isCrypto
+      ? bigButton(confirmPaymentUrl, "I've Paid — Upload Confirmation")
+      : button(`mailto:${CONTACT.email}?subject=${encodeURIComponent(`Question about order ${o.orderNumber}`)}`, 'Contact concierge')
+  }</div>
   `;
 
   const text =
@@ -374,6 +388,7 @@ export async function orderConfirmationEmail(
     `\nITEMS\n${o.items.map((i) => `  ${i.name}  x${i.quantity}  ${money(i.lineTotal)}`).join('\n')}\n\n` +
     `TOTAL  ${money(o.total)}\n` +
     cryptoText +
+    (isCrypto ? `\nI'VE PAID — UPLOAD CONFIRMATION\n${confirmPaymentUrl}\n` : '') +
     '\n' +
     paymentTermsLines(o.orderNumber)
       .map((l) => `- ${l}`)
