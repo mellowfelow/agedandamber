@@ -51,6 +51,14 @@ export const HomeView: React.FC<HomeViewProps> = ({
   const [activeSlide, setActiveSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [openFaqIdx, setOpenFaqIdx] = useState<number | null>(0);
+  // Only slide 0's image is in the initial render — the other 4 hero images
+  // are absolutely positioned full-bleed (`inset-0`), so the browser treats
+  // them as in-viewport and downloads them immediately regardless of
+  // `loading="lazy"` (native lazy-load only checks geometric intersection,
+  // not CSS opacity). On throttled mobile that competes with the actual LCP
+  // image for bandwidth. Mount the rest only after first paint, well before
+  // the 6s auto-advance needs them.
+  const [slidesMounted, setSlidesMounted] = useState(false);
 
   // Hero Carousel Data with SEO captions and image slugs
   const heroSlides = [
@@ -125,6 +133,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
     return () => clearInterval(interval);
   }, [isPaused, heroSlides.length]);
 
+  // Mount slides 2-5's images after the LCP image has had a clear run —
+  // idle callback when available, short timeout fallback. Well under the
+  // 6s before the carousel first advances.
+  useEffect(() => {
+    const mount = () => setSlidesMounted(true);
+    if (typeof window.requestIdleCallback === 'function') {
+      const id = window.requestIdleCallback(mount, { timeout: 2000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const id = setTimeout(mount, 1500);
+    return () => clearTimeout(id);
+  }, []);
+
   return (
     <div className="space-y-16 pb-16">
       {/* Hero Carousel Section */}
@@ -141,16 +162,18 @@ export const HomeView: React.FC<HomeViewProps> = ({
               activeSlide === idx ? 'opacity-100 z-0' : 'opacity-0 -z-10'
             }`}
           >
-            <Image
-              src={slide.image}
-              alt={slide.imageAlt}
-              fill
-              sizes="100vw"
-              priority={idx === 0}
-              loading={idx === 0 ? 'eager' : 'lazy'}
-              fetchPriority={idx === 0 ? 'high' : 'auto'}
-              className="object-cover filter brightness-[0.38] contrast-125 scale-105"
-            />
+            {(idx === 0 || slidesMounted) && (
+              <Image
+                src={slide.image}
+                alt={slide.imageAlt}
+                fill
+                sizes="100vw"
+                priority={idx === 0}
+                loading={idx === 0 ? 'eager' : 'lazy'}
+                fetchPriority={idx === 0 ? 'high' : 'auto'}
+                className="object-cover filter brightness-[0.38] contrast-125 scale-105"
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-[#140D08] via-[#140D08]/60 to-transparent" />
           </div>
         ))}

@@ -6,7 +6,7 @@ Disallow: /admin/
 Disallow: /order/
 Sitemap: https://www.agedandamber.com/sitemap.xml
 
-Content-Signal: search=yes, ai-input=yes, ai-train=no
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 
 # AI crawlers — welcome to index product and content pages, not the admin dashboard
 User-agent: GPTBot
@@ -19,17 +19,42 @@ Allow: /
 Disallow: /admin/
 Disallow: /order/
 
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
 User-agent: ClaudeBot
 Allow: /
 Disallow: /admin/
 Disallow: /order/
 
-User-agent: Claude-Web
+User-agent: Claude-User
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
+User-agent: Claude-SearchBot
 Allow: /
 Disallow: /admin/
 Disallow: /order/
 
 User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
+User-agent: MistralAI-Index
 Allow: /
 Disallow: /admin/
 Disallow: /order/
@@ -60,6 +85,11 @@ Disallow: /admin/
 Disallow: /order/
 
 User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /admin/
+Disallow: /order/
+
+User-agent: Meta-WebIndexer
 Allow: /
 Disallow: /admin/
 Disallow: /order/

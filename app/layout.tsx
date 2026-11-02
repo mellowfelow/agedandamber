@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     // for a representative image, had nothing to show at all. Individual
     // product pages, and now blog posts and category pages, override this
     // with their own more specific image.
-    images: ['/images/hero/hero-1.webp'],
+    images: [{ url: '/images/hero/hero-og.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

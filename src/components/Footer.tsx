@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
               <ShieldCheck className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-serif font-bold text-amber-100 text-sm">21+ Verified Carrier</h4>
+              <h3 className="font-serif font-bold text-amber-100 text-sm">21+ Verified Carrier</h3>
               <p className="text-xs text-amber-300/60">Adult signature required upon delivery</p>
             </div>
           </div>
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
               <Award className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-serif font-bold text-amber-100 text-sm">100% Cask Provenance</h4>
+              <h3 className="font-serif font-bold text-amber-100 text-sm">100% Cask Provenance</h3>
               <p className="text-xs text-amber-300/60">Direct from Napa & Kentucky barrels</p>
             </div>
           </div>
@@ -38,7 +38,7 @@ export const Footer: React.FC = () => {
               <Coins className="w-6 h-6 text-emerald-400" />
             </div>
             <div>
-              <h4 className="font-serif font-bold text-amber-100 text-sm">10% Crypto Discount</h4>
+              <h3 className="font-serif font-bold text-amber-100 text-sm">10% Crypto Discount</h3>
               <p className="text-xs text-emerald-400">Save instantly with BTC or USDT</p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
               <Lock className="w-6 h-6" />
             </div>
             <div>
-              <h4 className="font-serif font-bold text-amber-100 text-sm">Insured Shipping</h4>
+              <h3 className="font-serif font-bold text-amber-100 text-sm">Insured Shipping</h3>
               <p className="text-xs text-amber-300/60">Free express shipping on ${SHOP.freeShippingThreshold}+</p>
             </div>
           </div>
@@ -84,9 +84,9 @@ export const Footer: React.FC = () => {
 
           {/* Company */}
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
+            <h3 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
               Company
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs">
               <li><Link href={getRouteUrl.about()} className="hover:text-[#D4AF37]">Our Sourcing Story</Link></li>
               <li><Link href={getRouteUrl.blog()} className="hover:text-[#D4AF37]">Cask &amp; Wood Journal</Link></li>
@@ -99,9 +99,9 @@ export const Footer: React.FC = () => {
 
           {/* Policies */}
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
+            <h3 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
               Policies
-            </h4>
+            </h3>
             <ul className="space-y-2 text-xs">
               {LEGAL_NAV.map((n) => (
                 <li key={n.slug}>
@@ -113,9 +113,9 @@ export const Footer: React.FC = () => {
 
           {/* Payment */}
           <div className="space-y-3">
-            <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
+            <h3 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
               Accepted Payments
-            </h4>
+            </h3>
             <div className="flex flex-wrap gap-2 pt-1">
               {['Apple Pay', 'Cash App', 'Chime'].map((p) => (
                 <span key={p} className="py-1 px-2 rounded bg-stone-900 border border-stone-800 text-[10px] font-bold text-amber-200">
@@ -133,9 +133,9 @@ export const Footer: React.FC = () => {
 
         {/* Full category list — every category one click from every page */}
         <div className="space-y-3 border-t border-amber-900/30 pt-8">
-          <h4 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
+          <h3 className="font-serif font-bold text-amber-100 text-sm uppercase tracking-wider">
             Shop by Category
-          </h4>
+          </h3>
           <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-2 text-xs">
             {CATEGORIES.map((cat) => (
               <li key={cat.slug}>
